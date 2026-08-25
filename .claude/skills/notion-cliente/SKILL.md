@@ -70,28 +70,35 @@ Se a duplicação falhar, recrie do zero seguindo `reference.md` (schemas + cont
   Gravações** e marque `Calendário da jornada` como `Concluído` no Processo
 - Se a cliente já tiver preenchido alguma ferramenta, marque o Status correspondente
 
-## 5. Artes (só se pedirem algo diferente do padrão)
+## 5. Capas dos cards
 
-As capas vêm na duplicação. Para uma arte nova (hero personalizado, por exemplo), clone o molde
-no Canva e troque o texto — passo a passo e IDs em `reference.md`.
+As capas vêm prontas na duplicação: a propriedade **Capa** de cada card aponta para um PNG
+hospedado no repositório público `martinsscamila13-ui/claude` (pasta `artes/lucro-anti-exaustao/`),
+e a view Galeria já usa `COVER "Capa"`. Não precisa refazer nada.
+
+Se a duplicação não trouxer as capas, refaça em duas chamadas:
+1. `notion-update-page` (`update_properties`) com
+   `{"Capa": ["https://raw.githubusercontent.com/martinsscamila13-ui/claude/claude/notion-camila-structure-dtwrok/artes/lucro-anti-exaustao/<arte>.png"]}`
+   (arquivos: `boas-vindas`, `fase1`, `fase2`, `fase3`, `fase4`, `sessoes`)
+2. `notion-update-view` com `COVER "Capa" SIZE medium ASPECT cover`
+
+Para uma arte nova (hero personalizado, por exemplo), clone o molde no Canva, troque o texto e
+publique o PNG no repositório — passo a passo em `reference.md`.
 
 ## 6. Entregar
 
 Informe ao usuário, nesta ordem:
 
 1. O link da página da cliente
-2. **Dois passos manuais que a API não faz:**
-   - **Compartilhar**: abrir a página → Compartilhar → convidar o e-mail da cliente
-     (ou "Publicar na web" e mandar o link)
-   - **Capa dos cards**: na galeria 🗺️ Jornada → ••• → Layout → Card preview →
-     **Conteúdo da página** (faz os 6 cards exibirem as artes)
+2. **O passo manual que a API não faz** — **compartilhar**: abrir a página → Compartilhar →
+   convidar o e-mail da cliente (ou "Publicar na web" e mandar o link)
 3. O que ficou em branco na ficha e por quê
 
 ## Erros conhecidos
 
-- **Capa de card por API**: não dá. `cover` só aceita URL externa permanente e a propriedade
-  Files não aceita id de upload. Por isso a arte entra como primeira imagem do card e o preview
-  é trocado na interface.
+- **Capa de card por API**: só funciona com URL externa **permanente** na propriedade Files —
+  daí as artes ficarem no repositório público. Não aceita `file-upload://` nem link do Canva
+  (que expira em horas). O `cover` da página tem a mesma restrição.
 - **Domínios do Canva bloqueados** neste ambiente: não é possível baixar/ver o PNG exportado,
   mas o Notion baixa server-side via `notion-create-attachment` com `source_url`. Os thumbnails
   retornados pelo `edit-design` são visíveis — use-os para conferir a arte.

@@ -95,3 +95,24 @@ assinatura "Lucro Anti-Exaustão®" itálica #8C8C8C. Formato 851x315.
 
 Cada `file-upload` serve para uma inserção só — para usar a mesma arte em duas páginas, faça dois
 attachments a partir da mesma URL de export.
+
+## Capas dos cards (hospedagem permanente)
+
+As artes ficam no repositório público `martinsscamila13-ui/claude`, em
+`artes/lucro-anti-exaustao/`, servidas por raw.githubusercontent:
+
+```
+https://raw.githubusercontent.com/martinsscamila13-ui/claude/claude/notion-camila-structure-dtwrok/artes/lucro-anti-exaustao/<arquivo>.png
+```
+
+Arquivos: `boas-vindas` · `fase1` · `fase2` · `fase3` · `fase4` · `sessoes`
+
+A propriedade `Capa` (FILES) de cada card recebe essa URL, e a view Galeria usa
+`COVER "Capa" SIZE medium ASPECT cover`. É o único caminho que funciona por API — upload direto
+e link do Canva não servem como capa.
+
+**Para publicar uma arte nova no repositório:** exporte no Canva → `notion-create-attachment`
+com a URL do export → insira a imagem em qualquer página → `notion-fetch` dessa página para pegar
+a URL assinada do S3 (`prod-files-secure...`, vale 300s) → baixe com `curl` → commit em
+`artes/lucro-anti-exaustao/` → push. O domínio do Canva é bloqueado para download direto neste
+ambiente; o S3 do Notion, não.
