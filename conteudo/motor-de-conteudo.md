@@ -163,6 +163,55 @@ quem você quer.
 
 ---
 
+## Duas estruturas narrativas — como contar, não o que contar
+
+Os quatro bancos acima dizem **do que falar**. Estas duas dizem **como contar**. Toda
+cliente sua cabe nas duas — a escolha depende de uma coisa só: você tem número ou não.
+
+| | ANTES E DEPOIS | JORNADA DO HERÓI |
+|---|---|---|
+| Use quando | você tem número | a história é boa, o número não |
+| Formato | carrossel de 5, ou estático | Reels de 60–90s, carrossel de 8–10, ou 6 stories |
+| Emoção | reconhecimento imediato | identificação lenta |
+| Risco | soar promessa de resultado | você virar a heroína |
+
+### ANTES E DEPOIS — 5 lâminas
+
+1. **Capa · o contraste** — os dois números, um riscado
+2. **O antes** — 4 linhas, só fatos, zero adjetivo
+3. **A frase** — entre aspas, o que ela dizia
+4. **O depois** — 4 linhas, respondendo o antes **na mesma ordem**
+5. **CTA**
+
+**Regra 1 · o depois espelha o antes.** Linha 1 do depois resolve a linha 1 do antes. É
+esse paralelo que dá a sensação de "deu certo" — não o número.
+
+**Regra 2 · o antes nunca humilha.** A espectadora *está* no antes. Se você ridiculariza o
+antes, você ridiculariza ela.
+
+> **Sobre a regra da prova (nunca faturamento):** "guardou 17 mil" não fere a regra —
+> dinheiro guardado é resultado de decisão e de patrimônio, não promessa de receita. A meta
+> era dela, não sua. Faturamento é o que você continua não postando.
+
+### JORNADA DO HERÓI — 7 passos
+
+1. **O mundo comum** — a rotina dela, nunca o faturamento
+2. **O chamado** — o momento em que ela viu que não dava mais
+3. **A recusa** — o que ela tentou sozinha e não funcionou
+4. **A mentora** — *você entra aqui, no passo 4, nunca antes*
+5. **A provação** — o que doeu, o que ela teve que largar
+6. **A recompensa** — onde ela chegou
+7. **O retorno** — quem ela é agora + o convite
+
+**O erro que mata:** a heroína é a cliente, não você. Quando a mentora vira heroína ("eu
+descobri", "eu sempre soube"), não converte — a espectadora não se vê em você, ela se vê na
+cliente. Você é quem aparece no meio do caminho e entrega o mapa.
+
+**Passo 3 é obrigatório** — sem a recusa vira propaganda, e é ali que a espectadora está
+agora. **Passo 5 é obrigatório** — sem o preço pago, ninguém acredita.
+
+---
+
 ## Camada de profissão — o mesmo post, trocando a cena
 
 Você tem 21 profissões no ecossistema. **Não escreva 21 posts.** Escreva um post e troque
