@@ -1,9 +1,12 @@
 # Script de Conteúdo — 06 a 13/09/2026
 ### Método Lucro Anti-Exaustão® · Objetivo: leads → Sessão Estratégica → Programa de Aceleração
 
-Montado seguindo o **Guia Semanal de Conteúdo** (feed de domingo a quinta, alternando os
-4 pilares · sexta e sábado OFF). Feed **e** Stories escritos e prontos, com o domingo 13/09
-fechando o ciclo e já abrindo o da semana seguinte.
+Baseado no **Guia Semanal de Conteúdo**, com os 4 pilares alternando. Feed **e** Stories
+escritos e prontos, de domingo 06 a domingo 13 — só o sábado fica sem post.
+
+> **Nota sobre descanso.** O guia prevê 2 dias OFF (sexta e sábado). Com sexta virando dia
+> de feed, sobra 1. Você decidiu assim e faz sentido numa semana de vagas abertas — só não
+> transforme em padrão, porque o descanso é o que você vende. Sábado ficou OFF de verdade.
 
 ## O eixo da semana
 
@@ -16,9 +19,9 @@ diagnóstico, dor nomeada e prova social. A semana colhe isso.
 
 | Dom 06 | Seg 07 | Ter 08 | Qua 09 | Qui 10 | Sex 11 | Sáb 12 | Dom 13 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| CONEXÃO | ISCA | AUTORIDADE | OPINIÃO | CONEXÃO (reforço) | OFF | OFF | CONEXÃO |
-| Leve · familiar | Captura de lead | Prova + método | Quebra de objeção | Convite direto | Última chamada | Repescagem | Abre o ciclo novo |
-| Sem CTA | Palavra-chave MAPA | 1ª menção à sessão | Abre as vagas | CTA mais forte | Só Stories | Só Stories | Feed leve, sem CTA duro |
+| CONEXÃO | ISCA | AUTORIDADE | OPINIÃO | CONEXÃO (reforço) | AUTORIDADE | OFF | CONEXÃO |
+| Leve · familiar | Captura de lead | Prova + método | Quebra de objeção | Convite direto | Tira o medo de chamar | Repescagem | Abre o ciclo novo |
+| Sem CTA | Palavra-chave MAPA | 1ª menção à sessão | Abre as vagas | CTA mais forte | Última chamada | Só Stories | Feed leve, sem CTA duro |
 
 ### A escada da semana
 
@@ -27,8 +30,9 @@ diagnóstico, dor nomeada e prova social. A semana colhe isso.
 3. **Terça** — prova. Mostra que o método funciona e que existe um programa por trás.
 4. **Quarta** — derruba a objeção número um ("não tenho tempo pra isso agora").
 5. **Quinta** — convida com clareza total: o que é, como funciona, quanto custa.
-6. **Sexta/Sábado** — sem feed. Só Stories e conversas na direct.
-7. **Domingo** — volta pro feed leve. Colhe o que você ouviu na semana e abre a roda de novo.
+6. **Sexta** — tira o medo de chamar. Mostra a Sessão Estratégica por dentro, hora a hora.
+7. **Sábado** — sem feed. Só Stories leves.
+8. **Domingo** — feed leve de novo. Colhe o que você ouviu na semana e abre a roda outra vez.
 
 ---
 
@@ -369,28 +373,76 @@ mulher tomar essa decisão sentada na sua frente.
 ---
 ---
 
-# SEXTA 11/09 e SÁBADO 12/09 — OFF
+# SEXTA 11/09 — AUTORIDADE
 
-Sem feed. Isso é parte do método: você não pode vender descanso e postar sete dias por semana.
-A incoerência aparece, e ela custa mais caro que o alcance que você perde.
+**Pilar:** Autoridade · **Objetivo do dia:** tirar o último obstáculo entre a lead e a direct.
+**Por que este post e não outro:** na quinta você colocou a oferta na mesa. Quem não chamou
+até agora, na maioria das vezes, não é porque não quer — é porque não sabe o que vai acontecer
+se chamar. Tem medo de cair numa call de vendas disfarçada de conversa. Sexta você abre a
+caixa preta e esse medo acaba.
 
-### Stories de sexta (4) — última chamada, leve
+## FEED
+
+**Formato:** Carrossel de 6 lâminas. Carrossel é melhor que Reel aqui porque as pessoas salvam
+— e quem salva volta pra chamar depois.
+**Tema:** o que acontece dentro da Sessão Estratégica, a hora inteira, sem mistério.
+
+### Roteiro (lâmina a lâmina)
+
+1. **Capa:** "O que acontece na Sessão Estratégica. A hora inteira, sem mistério." Fundo limpo, tipografia grande.
+2. **Antes da conversa:** "Você me manda três coisas: o que você faz, como é a sua semana hoje, e o que te deixou mais cansada nos últimos 30 dias. Só isso. Sem formulário de 40 perguntas."
+3. **Primeiros 15 minutos — eu escuto:** "Você me conta a sua rotina, não o seu faturamento. Eu não pergunto quanto você ganha, pergunto onde vai a sua energia."
+4. **20 minutos do meio — eu mapeio:** "A gente separa o que sustenta o seu lucro do que só consome a sua semana. Quase sempre aparece uma coisa que você carrega há mais de um ano sem perceber."
+5. **Últimos 20 minutos — você decide:** "Você sai com três decisões escritas. Não com um resumo bonito: com três coisas pra fazer na segunda-feira."
+6. **O final:** "No fim eu digo se eu sou o caminho pra você — e às vezes eu digo que não sou. Você sai com as três decisões de qualquer jeito." + CTA.
+
+### Legenda pronta
+
+> Muita gente não me chama porque acha que vai cair numa call de vendas disfarçada de conversa.
+>
+> Então eu vou abrir a caixa preta. É isso que acontece na Sessão Estratégica:
+>
+> Antes, você me manda três coisas. O que você faz, como é a sua semana hoje, e o que te deixou mais cansada nos últimos trinta dias. Sem formulário de quarenta perguntas.
+>
+> Nos primeiros quinze minutos eu só escuto. Você me conta a sua rotina, não o seu faturamento. Eu não pergunto quanto você ganha — eu pergunto pra onde vai a sua energia.
+>
+> Nos vinte minutos do meio a gente separa o que sustenta o seu lucro do que só consome a sua semana. Quase sempre aparece uma coisa que você carrega há mais de um ano sem ter percebido.
+>
+> Nos últimos vinte minutos você decide. Você sai com três decisões escritas — não com um resumo bonito, com três coisas pra fazer na segunda-feira.
+>
+> E no fim eu digo se eu sou o caminho pra você. Às vezes eu digo que não sou. Já aconteceu de eu mandar mulher resolver uma coisa com o contador antes de falar comigo de novo.
+>
+> Você sai com as três decisões de qualquer jeito. Isso não é cortesia, é o mínimo por uma hora da sua vida.
+>
+> Das cinco sessões dessa semana ainda sobra vaga. Escreve SESSÃO na direct.
+
+### Stories de sexta (5)
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
-| 1 | Bastidor | Sua agenda da semana que vem, com os blocos das sessões marcados | "As sessões da semana que vem já estão na agenda." |
-| 2 | Escassez honesta | Texto na tela | "Das 5 sessões dessa semana, sobrou [X]. Semana que vem eu abro outras 5 — mas essa agenda já está de pé." |
-| 3 | Prova | Print de uma conversa de direct desta semana (com autorização, nome coberto) | "Isso aqui foi essa semana." |
-| 4 | Encerramento | Você falando, 10s | "Vou desligar. Volto domingo. Quem quiser a vaga que sobrou, escreve que eu vejo amanhã." |
+| 1 | Abertura | Você falando, 15s | "Hoje eu vou abrir a caixa preta: o que acontece na Sessão Estratégica, minuto a minuto." |
+| 2 | Ensino | Texto na tela, fundo limpo | "Eu não pergunto quanto você ganha. Eu pergunto pra onde vai a sua energia." |
+| 3 | Confiança | Você falando, 20s — **este é o story que converte** | "Já aconteceu de eu terminar uma sessão dizendo que não era comigo. A mulher saiu com as três decisões do mesmo jeito." |
+| 4 | Escassez honesta | Texto na tela | "Das 5 sessões dessa semana, sobrou [X]. Semana que vem eu abro outras 5 — mas essa agenda já está de pé." |
+| 5 | Encerramento | Você falando, 10s | "Vou desligar. Volto domingo. Quem quiser a vaga que sobrou, escreve que eu vejo amanhã." |
 
-### Sábado (2) — presença sem trabalho
+---
+---
+
+# SÁBADO 12/09 — OFF
+
+Sem feed. É o único dia de descanso que sobrou nesta semana — proteja ele.
+Você não pode vender descanso e postar todos os dias; a incoerência aparece e custa mais caro
+que o alcance que você ganha.
+
+### Stories de sábado (2) — presença sem trabalho
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
 | 1 | Repescagem | Recompartilhe o carrossel de terça | "Quem chegou essa semana ainda não viu isso." |
 | 2 | Pessoal | Qualquer coisa do seu sábado | Sem texto de venda. Nada. |
 
-**Banco de conteúdo:** separe 20 minutos na sexta pra gravar 2 vídeos extras e guardar.
+**Banco de conteúdo:** se sobrar 20 minutos, grave 2 vídeos extras e guarde.
 É o que salva a semana corrida.
 
 ---
@@ -486,7 +538,8 @@ perfil em qualquer semana encontra a oferta explicada, sem você ter que repetir
 - [ ] **Qua 09** — Responder todos os comentários no mesmo dia
 - [ ] **Qui 10** — Reel Conexão + valores comunicados com clareza
 - [ ] **Qui 10** — Contador de vagas atualizado
-- [ ] **Sex 11** — Última chamada nos Stories, sem post no feed
+- [ ] **Sex 11** — Carrossel Autoridade (a sessão por dentro) publicado
+- [ ] **Sex 11** — 5 Stories, com o story 3 (o "às vezes eu digo que não") gravado
 - [ ] **Sáb 12** — OFF de verdade
 - [ ] **Dom 13** — Reel Conexão gravado e postado
 - [ ] **Dom 13** — Caixinha de pauta no ar (story 3) e respostas salvas
