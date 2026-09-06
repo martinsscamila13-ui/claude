@@ -20,7 +20,7 @@ diagnóstico, dor nomeada e prova social. A semana colhe isso.
 | Dom 06 | Seg 07 | Ter 08 | Qua 09 | Qui 10 | Sex 11 | Sáb 12 | Dom 13 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | CONEXÃO | ISCA | AUTORIDADE | OPINIÃO | CONEXÃO (reforço) | AUTORIDADE | OFF | CONEXÃO |
-| Leve · familiar | Captura de lead | Prova + método | Quebra de objeção | Convite direto | Tira o medo de chamar | Repescagem | Abre o ciclo novo |
+| Sábado + metas 2026 | Captura de lead | Prova + método | Quebra de objeção | Convite direto | Tira o medo de chamar | Repescagem | Abre o ciclo novo |
 | Sem CTA | Palavra-chave MAPA | 1ª menção à sessão | Abre as vagas | CTA mais forte | Última chamada | Só Stories | Feed leve, sem CTA duro |
 
 ### A escada da semana
@@ -85,46 +85,69 @@ de R$ 997 na mesma conversa. Você não perde a lead, você a coloca no degrau c
 
 # DOMINGO 06/09 — CONEXÃO
 
-**Pilar:** Conexão · **Objetivo do dia:** humanizar. Zero venda, zero CTA de negócio.
-**Por que hoje é leve:** você vai pedir a atenção dela a semana inteira. Domingo é o dia
-de mostrar quem está pedindo.
+**Pilar:** Conexão · **Objetivo do dia:** leve. Zero venda, zero CTA de negócio.
 
-## FEED
+## O que você já postou hoje (e por que funcionou)
 
-**Formato:** Carrossel de 4 fotos que você já tem no celular — ou 1 foto única, se preferir
-o caminho mais rápido. Não precisa de produção nova.
-**Tema:** o domingo que você protege, e o que ele tem a ver com o resto.
+1. **Story 1** — você indo trabalhar um pouco hoje, porque ontem foi cinema com a família e você não postou nada.
+2. **Story 2** — enquete: *"como andam as suas metas de 2026?"* com as opções **Estou concluindo · Não estou conseguindo · Acho que não dá mais tempo.**
+
+Essa enquete é a melhor coisa que aconteceu na semana, e ela não estava no plano. Ela
+**segmenta a sua audiência por dor** sem você ter que perguntar nada constrangedor. Quem
+marcou "não estou conseguindo" e "acho que não dá mais tempo" é exatamente o perfil do
+Programa de Aceleração — e agora você sabe quantas são.
+
+**Guarde o print do resultado.** Ele é prova social e argumento de venda a semana inteira.
+
+### O dado que amarra tudo
+
+De hoje até 31/12 faltam **116 dias — 16 semanas.** Isso muda o enquadramento do ano inteiro:
+não é "o ano acabou", é "sobrou um trimestre". E o Programa de Aceleração de 3 meses,
+começando agora, **fecha dentro de 2026.** Esse é o fio que costura a semana toda, e ele é
+verdade — não é urgência inventada.
+
+## FEED — postagem leve
+
+**Formato:** Carrossel de 3–4 fotos de ontem (cinema, casa, família) — ou 1 foto única.
+Do celular, sem edição. É domingo.
+**Tema:** o sábado que você não postou e o domingo em que você escolheu trabalhar.
 
 ### Roteiro (foto a foto)
 
-1. **Foto 1:** você com a família, em algo comum — mesa, cozinha, rua, sofá. Nada posado.
-2. **Foto 2:** um detalhe pequeno do dia. Café, mão, pé na grama, cachorro, bagunça.
-3. **Foto 3:** uma foto sua sozinha, tranquila. Sem cara de foto de perfil.
-4. **Foto 4:** o celular longe, a agenda fechada, ou nada — a foto mais boba das quatro.
+1. O cinema, ou a saída pro cinema. Pode ser a pipoca, a fila, o ingresso.
+2. A casa depois — sofá, cozinha, bagunça boa.
+3. Uma foto sua de hoje, trabalhando. Sem pose de escritório: o real.
+4. *(opcional)* O celular ou a agenda, fechados.
 
 ### Legenda pronta
 
-> Domingo de manhã eu não abro o celular pra trabalho. Nem pra "só dar uma olhadinha".
+> Ontem eu não postei nada. Fui no cinema com a minha família e depois a gente ficou em casa fazendo bobagem até tarde.
 >
-> Levou anos pra isso virar normal. Por muito tempo eu achei que estar disponível era o que me fazia profissional. Não percebia que era exatamente o que me fazia cansada.
+> Hoje eu vim trabalhar um pouco. Domingo, sim.
 >
-> A verdade é que eu construí um negócio inteiro em cima de uma pergunta simples: dá pra lucrar mais sem entregar a vida em troca?
+> Isso não é desorganização. É a única conta que funcionou pra mim: eu escolho quando eu paro, em vez de parar quando o corpo obriga.
 >
-> Dá. Mas não por acidente, e não por força de vontade.
+> Perguntei nos stories como estão as metas de vocês pra 2026. As respostas estão chegando, e tem muita gente na opção "acho que não dá mais tempo".
 >
-> Hoje é o dia em que eu não respondo nada. Amanhã eu volto.
+> Faltam dezesseis semanas pra fechar o ano.
+>
+> Dá tempo. Só não dá pra fazer do mesmo jeito que não deu até agora.
+>
+> Semana que vem eu falo disso aqui.
 
-### Stories de domingo (4)
-
-Domingo é dia de presença, não de trabalho. Grave tudo de uma vez, pela manhã, e agende
-ou poste ao longo do dia.
+### Stories — continuando a sequência (do 3 ao 7)
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
-| 1 | Bastidor | Um pedaço do seu domingo — café, mesa posta, família de longe | "Domingo. Nada de trabalho aqui até amanhã." |
-| 2 | Bastidor | Vídeo curto de 8s, você falando sem roteiro | "Uma coisa que eu só consegui fazer depois que organizei o negócio: parar no domingo sem culpa." |
-| 3 | Caixinha | Fundo simples, sticker de pergunta | "Me conta: você consegue parar no domingo? Responde aí que eu leio depois." |
-| 4 | Desafio (leve) | Print do grupo, nomes borrados | "As meninas do desafio estão na reta final. Termina terça. Quarta eu conto tudo aqui." |
+| 3 | Resultado parcial | Print da própria enquete | "Olha o resultado até agora. Repara onde está a maioria — não é em 'estou concluindo'." |
+| 4 | Resposta · 20s | Você falando, pra quem marcou *não estou conseguindo* | "'Não estou conseguindo' quase nunca é falta de meta. É excesso de coisa entre você e ela." |
+| 5 | Resposta · 25s | Você falando, pra quem marcou *acho que não dá mais tempo* — **este é o story mais importante do dia** | "Faltam 16 semanas pra fechar 2026. Dá tempo de fazer uma coisa bem feita. Não dá pra fazer as cinco que você listou em janeiro." |
+| 6 | Caixinha | Sticker de pergunta — **isso vira a sua pauta da semana** | "Qual meta de 2026 travou aí? Me conta que eu vou respondendo aqui essa semana." |
+| 7 | Ponte pro feed | Print do carrossel + sticker de link | "Postei o meu sábado ali no feed. É sobre exatamente isso." |
+
+> **Não venda hoje.** Nenhuma menção a sessão, vaga ou valor. Você acabou de fazer a pergunta
+> certa — deixa as respostas chegarem. A oferta entra na quarta, e vai entrar muito mais forte
+> por causa do que você colheu hoje.
 
 ---
 ---
@@ -173,7 +196,7 @@ não de manhã. Os Stories rodam normal, e é neles que o desafio está vivo.
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
-| 1 | Abertura | Você falando, 10s | "Feriado, mas o desafio não para. Faltam dois dias e tem coisa importante acontecendo aqui." |
+| 1 | Abertura | Você falando, 15s — **puxando a enquete de ontem** | "Ontem eu perguntei das metas de 2026 e a maioria de vocês não marcou 'estou concluindo'. Então hoje eu vou te dar a primeira coisa que eu faria no seu lugar." |
 | 2 | Prova social | Print de prova de participante, sem identificação | "Isso aqui é uma empresária percebendo que o que mais consome a semana dela não sustenta o negócio dela." |
 | 3 | Ensino | Você falando, 15s | "Eu vou te dar de graça a pergunta que abre esse buraco. É a mesma do post de hoje." |
 | 4 | Ensino | Texto na tela, fundo limpo | "Essa tarefa me aproxima da minha meta dos próximos 90 dias? Sim ou não. Sem 'depende'." |
@@ -526,8 +549,10 @@ perfil em qualquer semana encontra a oferta explicada, sem você ter que repetir
 
 # Checklist da semana
 
-- [ ] **Dom 06** — Carrossel familiar postado (fotos que você já tem)
-- [ ] **Dom 06** — 4 Stories, gravados de manhã de uma vez só
+- [ ] **Dom 06** — Print do resultado da enquete salvo (usa a semana toda)
+- [ ] **Dom 06** — Carrossel do sábado postado — fotos do celular
+- [ ] **Dom 06** — Stories 3 a 7 no ar, sem nenhuma menção a venda
+- [ ] **Dom 06** — Respostas da caixinha salvas: é a pauta da semana
 - [ ] **Seg 07** — Reel Isca publicado **às 19h30** (feriado)
 - [ ] **Seg 07** — Palavra-chave MAPA configurada e planilha pronta pra enviar
 - [ ] **Seg 07** — 3 mensagens de direct salvas em respostas rápidas
