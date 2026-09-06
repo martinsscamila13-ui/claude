@@ -166,15 +166,48 @@ não de manhã. Os Stories rodam normal, e é neles que o desafio está vivo.
 
 ### Roteiro (cena a cena)
 
-1. **0–4s — gancho, sem introdução:** "Tem uma pergunta que corta a sua semana pela metade. Leva dez segundos por tarefa."
-2. **4–12s:** A pergunta na tela e falada: **"Essa tarefa me aproxima da minha meta dos próximos 90 dias?"**
-3. **12–25s:** Aplique ao vivo. Abra sua agenda (pode ser papel), passe por 3 tarefas reais e responda sim ou não em voz alta. Sem justificar.
-4. **25–35s:** A regra de decisão: tudo que for "não" vai pra uma de três pilhas — **eliminar, delegar ou renegociar.** Não existe quarta pilha. "Deixar como está" é escolher continuar cansada.
-5. **35–40s — CTA:** "Comenta MAPA que eu te mando a planilha completa que eu uso pra fazer esse corte com as minhas mentoradas."
+1. **0–6s — GANCHO.** Olhando na câmera, sem introdução nenhuma, sem "oi gente". Duas frases, com uma pausa curta entre elas:
+   > "Se eu abrir a sua agenda dessa semana agora, eu acho pelo menos uma coisa que você faz há mais de um ano sem precisar."
+   >
+   > *(pausa)* "E você vai defender ela pra mim. Todo mundo defende."
+2. **6–14s:** "A pergunta que desmonta essa defesa leva dez segundos." Ela entra na tela e falada: **"Essa tarefa me aproxima da minha meta dos próximos 90 dias?"**
+3. **14–27s:** Aplique ao vivo. Abra sua agenda (pode ser papel), passe por 3 tarefas reais e responda sim ou não em voz alta. Sem justificar.
+4. **27–36s:** A regra de decisão: tudo que for "não" vai pra uma de três pilhas — **eliminar, delegar ou renegociar.** Não existe quarta pilha. "Deixar como está" é escolher continuar cansada.
+5. **36–42s — CTA:** "Comenta MAPA que eu te mando a planilha completa que eu uso pra fazer esse corte com as minhas mentoradas."
+
+### Por que este gancho e não o outro
+
+O gancho antigo ("tem uma pergunta que corta a sua semana pela metade") **prometia** valor e
+adiava o soco. Quem está rolando o feed não espera a promessa se cumprir.
+
+Este faz três coisas nos primeiros 6 segundos:
+
+- **Aposta contra ela.** "Eu acho pelo menos uma coisa" é uma afirmação sobre a vida dela, não sobre o seu conteúdo. Ela precisa conferir se você acertou.
+- **Faz ela abrir a agenda na cabeça** antes de você pedir — que é exatamente o que o Reel manda fazer aos 14 segundos.
+- **A segunda frase corta a fuga.** "Você vai defender ela pra mim, todo mundo defende" antecipa a reação e transforma a discordância em prova de que você tem razão. Quem ia parar de assistir pra discordar, fica pra provar que é exceção.
+
+E é verdade: foi o que aconteceu no desafio. Quase todas cortaram algo que carregavam há mais
+de um ano.
+
+### Banco de hooks — se quiser trocar
+
+| Gancho | Por que funciona |
+|---|---|
+| "Eu apaguei quatro coisas da minha semana com uma pergunta só. Nenhuma fez falta." | Confissão + número específico. O "nenhuma fez falta" é a virada que prende. |
+| "Ontem eu perguntei das metas de 2026 e a maioria de vocês não marcou 'estou concluindo'. Faltam 16 semanas. O problema não é o tempo que sobrou." | **O mais forte desta semana** — usa o dado real da sua enquete. Só use se o resultado sair como você espera. |
+| "Você não precisa de mais uma hora no dia. Você precisa tirar três coisas da semana — e eu vou te mostrar quais." | Contradiz a crença antes de entregar. Bom pra quem já te segue há tempo. |
+
+> **Regra pros próximos ganchos:** os 3 primeiros segundos não podem apresentar o assunto —
+> têm que fazer uma afirmação sobre a vida de quem assiste. "Vou falar sobre X" perde.
+> "Você faz X" ganha.
 
 ### Legenda pronta
 
-> Uma pergunta. Dez segundos por tarefa.
+> Se eu abrir a sua agenda dessa semana, eu acho pelo menos uma coisa que você faz há mais de um ano sem precisar.
+>
+> E você vai defender ela pra mim. Todo mundo defende.
+>
+> A pergunta que desmonta a defesa leva dez segundos:
 >
 > "Essa tarefa me aproxima da minha meta dos próximos 90 dias?"
 >
