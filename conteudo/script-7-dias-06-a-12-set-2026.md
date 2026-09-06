@@ -248,51 +248,54 @@ Não entregue a planilha e vá embora. É aqui que o lead vira sessão. Salve em
 ---
 ---
 
-# TERÇA 08/09 · AUTORIDADE
-## Carrossel de 8 lâminas — o caminho completo de uma mentorada
+# TERÇA 08/09 · PROVA SOCIAL
+## Carrossel de 8 lâminas — ela pediu 10 mil, guardou 17
 
 Último dia do desafio. **Primeira menção à Sessão Estratégica no feed.**
 
+> ⚠️ **Sem nome e sem foto da cliente**, a menos que ela autorize por escrito. "Uma profissional da beleza" já basta.
+> ✅ **Os R$ 17 mil são resultado real, não meta.** Esse número pode ser cravado.
+
 ### 🎣 GANCHO — lâmina de capa
 
-> **"Ela me procurou pra saber como fechar a empresa. Não pra saber como crescer."**
+> **"Ela queria guardar R$ 10 mil em três meses. Guardou R$ 17 mil."**
 
 ### Roteiro — lâmina a lâmina
 
-| # | Lâmina | O que dizer |
-|:-:|---|---|
-| 1 | Capa | O gancho acima. Fundo limpo, tipografia grande, sem foto de rosto. |
-| 2 | Onde ela estava | A rotina, não o faturamento: trabalhava sábado, respondia cliente às 23h, dois anos sem férias. |
-| 3 | Fase 1 · Diagnóstico | O que o Mapa da Sobrecarga revelou. **Uma** descoberta específica e contraintuitiva. |
-| 4 | Fase 2 · Priorização | O que ficou, o que saiu, o que mudou de formato. Diga o que doeu. |
-| 5 | Fase 3 · Estrutura | O que foi delegado e documentado. Mostre o custo: ela teve que ver ser feito diferente do jeito dela. |
-| 6 | Fase 4 · Patrimônio | Onde ela chegou. Em rotina e em decisão, não em número. |
-| 7 | O formato | "Não foi num curso gravado. Foi encontro individual comigo, hotseat todo mês e um grupo de outras empresárias. É o Programa de Aceleração — tem versão de 3 e de 6 meses." |
-| 8 | Fechamento | "Antes de entrar, toda mentorada passa por uma Sessão Estratégica. Uma hora, eu e você — e você decide depois." |
+| # | Lâmina | O que dizer | Imagem |
+|:-:|---|---|---|
+| 1 | Capa | "META: R$ 10 MIL" (menor, cinza, riscado) / "GUARDOU: R$ 17 MIL" (gigante, o 17 em laranja) | ⬜ fundo branco, sem foto |
+| 2 | Como ela chegou | sem meta definida · sem planejamento de semana · sem ação planejada pro negócio · sem dinheiro guardado, e sem conseguir guardar | ⬜ fundo branco, lista de 4 linhas |
+| 3 | Quem é ela | "Profissional da beleza. Três meses de mentoria." | 📷 foto de ambiente (bancada, secador, mãos trabalhando) — nunca a cliente |
+| 4 | O pedido dela · **a virada** | "Ela não me pediu pra faturar mais. Ela pediu uma meta, um plano de semana e ações pra executar." | 🟧 laranja #E8912A, texto branco |
+| 5 | O que entrou no lugar | 1. Meta escrita, com número e prazo. 2. A semana decidida antes da semana começar. 3. Ações definidas, no lugar de apagar incêndio. | ⬜ fundo branco, números em laranja |
+| 6 | O resultado | "R$ 17.000" + "Sete mil a mais do que ela achava possível." | ⬜ fundo branco, **mesma tipografia da capa** — fecha o arco |
+| 7 | O que não cabe em número | "Ela saiu acreditando mais em si mesma. Com clareza no que quer e no caminho até lá." | 📷 foto sua — é aqui que você entra na imagem |
+| 8 | Fechamento + CTA | "Se você pensou 'eu nem sei quanto eu consigo guardar' — é exatamente daí que ela partiu." + **"Comenta SESSÃO"** + "1h comigo, de graça. Cinco vagas essa semana." | 🟧 laranja — o 2º e último do carrossel |
 
 ### Legenda
 
-> Ela me procurou pra saber como fechar a empresa. Não pra saber como crescer.
+> Ela queria guardar dez mil reais em três meses.
 >
-> E não era falta de cliente. Era excesso.
+> Guardou dezessete.
 >
-> Faturava. Entregava bem. Respondia mensagem às onze da noite e trabalhava todo sábado. Fazia dois anos que não tirava férias de verdade.
+> É uma profissional da beleza. Quando ela chegou pra mim, ela não tinha dinheiro guardado. E não era só isso: ela não conseguia guardar.
 >
-> A Fase 1 do método é diagnóstico, e o dela mostrou uma coisa que ela não esperava: o serviço que mais consumia a semana era justamente o que menos sustentava o negócio. Ela carregava aquilo por costume, não por estratégia.
+> Também não tinha meta definida. Não tinha planejamento de semana. Não planejava ação nenhuma pro negócio.
 >
-> Fase 2 foi decidir o que fica, o que sai e o que muda de formato. Doeu.
+> E olha o que ela me pediu — não foi faturar mais. Foi ter uma meta, um planejamento de semana e ações definidas pra executar em três meses.
 >
-> Fase 3 foi tirar da cabeça dela o que só ela sabia fazer. Documentar, ensinar, e aguentar ver ser feito de um jeito que não era o dela.
+> Foi isso que a gente fez. A meta escrita, com número e com prazo. A semana decidida antes da semana começar. Ações definidas, no lugar de apagar incêndio.
 >
-> Fase 4 é onde ela está hoje: o negócio roda três dias por semana sem ela dentro.
+> Três meses depois: dezessete mil guardados. Sete mil a mais do que ela achava possível.
 >
-> Isso não aconteceu num curso gravado nem numa virada de chave. Aconteceu em encontro individual comigo, hotseat todo mês e um grupo de outras empresárias passando exatamente pela mesma coisa. É o Programa de Aceleração — tem versão de três e de seis meses, e eu digo qual é a sua depois de olhar o seu negócio.
+> E tem uma parte que não cabe em número. Ela saiu acreditando mais em si mesma, com clareza no que quer e no caminho até lá.
 >
-> E ninguém entra nele sem antes sentar comigo numa Sessão Estratégica — uma hora, eu e você, olhando o seu negócio de verdade.
+> Se você leu até aqui e pensou "eu nem sei quanto eu consigo guardar" — é exatamente desse ponto que ela partiu.
 >
-> Se você se reconheceu na primeira linha, comenta SESSÃO ou me chama na direct. Eu abri cinco vagas essa semana.
-
-*(Use uma mentorada real sua. Peça autorização mesmo anonimizando, e mude o que possa identificá-la.)*
+> 👉 **Comenta SESSÃO aqui embaixo** que eu te chamo na direct com o link.
+>
+> São cinco Sessões Estratégicas essa semana. Uma hora, eu e você, de graça — e você sai com três decisões escritas, entrando na mentoria ou não.
 
 ### Stories
 
@@ -300,10 +303,10 @@ Não entregue a planilha e vá embora. É aqui que o lead vira sessão. Salve em
 |:-:|---|---|---|
 | 1 | Encerramento · 15s | Você falando | "Hoje é o último dia do desafio. Amanhã eu conto o que aconteceu — e tem gente que mudou de decisão em uma semana." |
 | 2 | Prova social | 2 prints de participantes em sequência | "Dia 3 e Dia 5. Sem eu ter dito nada além da pergunta certa." |
-| 3 | Bastidor de entrega | Foto de sessão, ou Mapa preenchido e borrado | "Isso aqui é uma sessão do Programa de Aceleração. Uma hora, eu e ela, sem plateia." |
+| 3 | O número | Print do carrossel, lâmina 6 | "17 mil guardados em 3 meses. A meta dela era 10." |
 | 4 | Autoridade | Texto na tela | "Encontro individual comigo. Hotseat todo mês. Grupo com outras empresárias. 3 ou 6 meses." |
 | 5 | Convite · 20s | Você falando, calma | "Antes de qualquer mentorada entrar, a gente senta pra uma Sessão Estratégica. Uma hora. Sem compromisso de comprar nada." |
-| 6 | CTA | Link pro carrossel + caixinha | "Carrossel de hoje conta o caminho inteiro. Quem quiser a sessão, escreve SESSÃO aqui." |
+| 6 | CTA | Link pro carrossel + caixinha | "O carrossel de hoje conta o caminho inteiro. Quem quiser a sessão, escreve SESSÃO aqui." |
 
 ---
 ---
