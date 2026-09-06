@@ -30,30 +30,47 @@ diagnóstico, dor nomeada e prova social. A semana colhe isso.
 
 ---
 
-## Dados do Programa de Aceleração (para usar no conteúdo)
+## A oferta — o que dizer quando perguntarem
 
 Estes são os fatos que a **Regra de Ouro do guia** manda comunicar com clareza — nada
-relevante pra decisão dela fica escondido:
+relevante pra decisão dela fica escondido.
 
-- **Duração:** 3 meses
-- **12 encontros individuais online**, de 1 hora cada
-- **1 hotseat em grupo por mês**
-- **1 encontro presencial em grupo por mês**
-- **Material digital e impresso** entregue no primeiro encontro
-- **Investimento:** R$ 3.500 — ou 10x de R$ 350 (cobrança quinzenal, dias 02 e 17)
-- **Entrada:** Sessão Estratégica gratuita, 1:1, sem compromisso de compra
+### Programa de Aceleração — 6 meses · R$ 5.000
+- 6 encontros individuais
+- 1 hotseat por mês
+- Grupo com as outras mentoradas
 
-> ⚠️ **Confirme o valor antes de postar.** R$ 3.500 / 10x R$ 350 é o que consta no contrato
-> mais recente que eu encontrei no Drive (julho/2026). Se você reajustou ou está com campanha,
-> troque nos Stories de quinta e no post fixado.
+### Programa de Aceleração — 3 meses · R$ 3.500
+- 2 encontros individuais
+- Grupo com as outras mentoradas
+- Hotseat
 
-> ⚠️ **Como ela agenda a sessão.** Escrevi tudo com "me chama no direct com a palavra SESSÃO",
-> porque não depende de link nem de ferramenta. Se você tem link de agendamento (Calendly,
-> agenda do Google), troque — é menos fricção e você não perde ninguém na caixa de mensagens.
+### Consultoria de 1 dia · R$ 997
+- 3 horas de imersão
+- Encontro de retorno em 30 dias
 
-> ⚠️ **Quantas vagas.** Usei **5 sessões estratégicas nesta semana**. É um número que cria
-> escassez real e cabe na sua agenda. Ajuste se quiser mais ou menos — mas escolha um número
-> e mantenha ele, porque você vai repetir isso em vários Stories.
+### Como isso entra no conteúdo
+
+O feed **não vende nenhum dos três.** O feed leva pra **Sessão Estratégica** — 1 hora, 1:1,
+gratuita. É na sessão que você diagnostica e diz qual dos três é o caminho dela.
+
+Isso resolve a objeção de preço de graça: quem acha R$ 5.000 fora de hora tem a consultoria
+de R$ 997 na mesma conversa. Você não perde a lead, você a coloca no degrau certo.
+
+> ⚠️ **Parcelamento.** Você não me disse como parcela os novos valores, então eu não coloquei
+> parcela em lugar nenhum — só o valor cheio. Me passa as condições e eu insiro nos Stories
+> de quinta e no post fixado.
+
+> ⚠️ **O encontro presencial.** O contrato antigo tinha 1 presencial por mês. Você não citou
+> isso agora, então eu tirei de todo o conteúdo. Se ainda existe, me fala que eu recoloco —
+> é um diferencial forte e vale estar no carrossel de terça.
+
+> ⚠️ **Como ela agenda.** Escrevi tudo com "me chama no direct com a palavra SESSÃO", porque
+> não depende de ferramenta nenhuma. Se você tem link de agendamento, troque — é menos
+> fricção e você não perde ninguém na caixa de mensagens.
+
+> ⚠️ **Vagas.** Usei **5 sessões nesta semana**. Cria escassez real e cabe na agenda. Ajuste
+> se quiser, mas escolha um número e mantenha, porque ele se repete em vários Stories.
 
 ---
 ---
@@ -192,13 +209,13 @@ existe um programa estruturado por trás. **Primeira menção à Sessão Estrat�
 
 ### Roteiro (lâmina a lâmina)
 
-1. **Capa:** "Ela faturava bem e queria fechar as portas. Doze encontros depois, o negócio roda sem ela três dias por semana." Fundo limpo, sem foto de rosto.
+1. **Capa:** "Ela faturava bem e queria fechar as portas. Seis meses depois, o negócio roda sem ela três dias por semana." Fundo limpo, sem foto de rosto.
 2. **Onde ela estava:** a rotina, não o faturamento. Trabalhava sábado, respondia cliente às 23h, dois anos sem férias de verdade.
 3. **O diagnóstico (Fase 1):** o que o Mapa da Sobrecarga revelou. Nomeie **uma** descoberta específica e contraintuitiva — o serviço que mais consumia a semana era o que menos sustentava o negócio.
 4. **A decisão (Fase 2):** o que ficou, o que saiu, o que mudou de formato. Diga o que doeu.
 5. **A estrutura (Fase 3):** o que foi delegado e documentado. Mostre o custo: ela teve que aguentar ver ser feito diferente do jeito dela.
 6. **O patrimônio (Fase 4):** onde ela chegou. Em rotina e em decisão, não em número.
-7. **Como isso acontece:** "Não foi num curso. Foi em 12 encontros individuais, ao longo de 3 meses, com hotseat em grupo e um encontro presencial por mês. Isso é o Programa de Aceleração."
+7. **Como isso acontece:** "Não foi num curso gravado. Foi encontro individual comigo, hotseat todo mês e um grupo de outras empresárias passando pela mesma coisa. Isso é o Programa de Aceleração — tem versão de 3 e de 6 meses."
 8. **Fechamento:** "Antes de entrar, toda mentorada passa por uma Sessão Estratégica. É uma conversa de 1 hora onde a gente olha o seu negócio — e você decide depois."
 
 ### Legenda pronta
@@ -215,7 +232,7 @@ existe um programa estruturado por trás. **Primeira menção à Sessão Estrat�
 >
 > Fase 4 é onde ela está hoje: o negócio roda três dias por semana sem ela dentro.
 >
-> Isso não aconteceu num curso gravado, nem numa virada de chave. Aconteceu em doze encontros individuais ao longo de três meses, com hotseat em grupo e um encontro presencial por mês. É o Programa de Aceleração.
+> Isso não aconteceu num curso gravado, nem numa virada de chave. Aconteceu em encontro individual comigo, hotseat todo mês e um grupo de outras empresárias passando exatamente pela mesma coisa. É o Programa de Aceleração — tem versão de três e de seis meses, e eu digo qual é a sua depois de olhar o seu negócio.
 >
 > E ninguém entra nele sem antes sentar comigo numa Sessão Estratégica — uma hora, eu e você, olhando o seu negócio de verdade.
 >
@@ -230,7 +247,7 @@ existe um programa estruturado por trás. **Primeira menção à Sessão Estrat�
 | 1 | Encerramento | Você falando, 15s | "Hoje é o último dia do desafio. Amanhã eu conto o que aconteceu — e tem gente que mudou de decisão em uma semana." |
 | 2 | Prova social | Sequência de 2 prints de participantes, sem identificação | "Dia 3 e Dia 5. Sem eu ter dito nada além da pergunta certa." |
 | 3 | Bastidor de entrega | Foto de sessão, tela do Notion da mentorada, ou Mapa preenchido borrado | "Isso aqui é uma sessão do Programa de Aceleração. Uma hora, eu e ela, sem plateia." |
-| 4 | Autoridade | Texto na tela, fundo limpo | "12 encontros individuais. 3 meses. 1 hotseat e 1 presencial por mês. É esse o formato." |
+| 4 | Autoridade | Texto na tela, fundo limpo | "Encontro individual comigo. Hotseat todo mês. Grupo com outras empresárias. 3 ou 6 meses." |
 | 5 | Convite | Você falando, 20s | "Antes de qualquer mentorada entrar, a gente senta pra uma Sessão Estratégica. Uma hora. Sem compromisso de comprar nada." |
 | 6 | CTA | Sticker de link pro carrossel + caixinha | "Carrossel de hoje conta o caminho inteiro. Quem quiser a sessão, escreve SESSÃO aqui." |
 
@@ -327,9 +344,9 @@ mulher tomar essa decisão sentada na sua frente.
 >
 > Você sai de lá com clareza do próximo passo. Comprando ou não comprando nada de mim.
 >
-> Quem quiser continuar comigo depois, o caminho é o Programa de Aceleração: 3 meses, 12 encontros individuais de uma hora, um hotseat em grupo e um encontro presencial por mês. R$ 3.500, ou 10x de R$ 350.
+> Quem quiser continuar comigo depois tem três caminhos, e eu digo qual é o seu na sessão: uma consultoria de um dia por R$ 997, o Programa de Aceleração de três meses por R$ 3.500, ou o de seis meses por R$ 5.000.
 >
-> Eu falo o valor aqui de propósito. Você não precisa entrar numa conversa comigo pra descobrir se cabe no seu bolso.
+> Eu falo os valores aqui de propósito. Você não precisa entrar numa conversa comigo pra descobrir se cabe no seu bolso.
 >
 > Cinco vagas de sessão essa semana. Escreve SESSÃO na direct.
 
@@ -339,8 +356,8 @@ mulher tomar essa decisão sentada na sua frente.
 |:-:|---|---|---|
 | 1 | Abertura | Você falando, 15s | "Hoje eu vou falar de dinheiro e de vaga, sem rodeio. Se não for pra você, pula." |
 | 2 | História | Trecho do Reel | "Eu recusei um cliente que ia me pagar bem. Contei a história inteira no post de hoje." |
-| 3 | Transparência | Texto na tela, fundo limpo | "Programa de Aceleração: 3 meses · 12 encontros individuais de 1h · 1 hotseat/mês · 1 presencial/mês · R$3.500 ou 10x R$350." |
-| 4 | Objeção | Você falando, 25s | "'É caro?' Faz a conta do que te custa mais um trimestre trabalhando desse jeito. É essa a comparação, não com um curso de R$97." |
+| 3 | Transparência | Três cards em sequência, fundo limpo | Card 1: "Consultoria de 1 dia · 3h + retorno em 30 dias · R$997" / Card 2: "Aceleração 3 meses · 2 individuais + grupo + hotseat · R$3.500" / Card 3: "Aceleração 6 meses · 6 individuais + hotseat mensal + grupo · R$5.000" |
+| 4 | Objeção | Você falando, 25s | "'É caro?' Tem porta de R$997 e tem porta de R$5.000. O que muda não é o quanto você paga, é quanto tempo eu fico do seu lado. Na sessão eu te digo qual é a sua." |
 | 5 | Prova social | Print de mentorada, com autorização | "Ela entrou achando que precisava de mais disciplina. Precisava de menos coisa." |
 | 6 | Escassez real | Contador simples, feito por você | "5 sessões. Já foram [X]. Restam [Y]." |
 | 7 | CTA final | Sticker de link ou caixinha | "SESSÃO na direct. Eu respondo hoje." |
@@ -384,9 +401,9 @@ Use fotos que você já tem.
 
 1. **Pra quem é.** "Pra empresária que fatura, entrega bem e está exausta." Nomeie o perfil com precisão — tamanho de negócio, momento, sintoma.
 2. **A transformação.** O que ela sai tendo, em rotina e em decisão: negócio que roda sem ela dentro, semana com espaço, decisão tomada com a cabeça descansada.
-3. **Como funciona.** As 4 fases, uma linha cada: Diagnóstico → Priorização → Delegação e estrutura → Patrimônio Valioso. E o formato: 3 meses, 12 encontros individuais de 1h, hotseat mensal, presencial mensal.
+3. **Como funciona.** As 4 fases, uma linha cada: Diagnóstico → Priorização → Delegação e estrutura → Patrimônio Valioso. E os formatos: consultoria de 1 dia, Aceleração de 3 meses, Aceleração de 6 meses.
 4. **Prova.** 1 case em 3 linhas, anonimizado.
-5. **CTA e valores.** Como entrar (Sessão Estratégica, 1h, gratuita), o que acontece depois, e o investimento do Programa: R$ 3.500 ou 10x R$ 350.
+5. **CTA e valores.** Como entrar (Sessão Estratégica, 1h, gratuita), o que acontece depois, e os três investimentos: R$ 997 (consultoria de 1 dia), R$ 3.500 (3 meses), R$ 5.000 (6 meses).
 
 ### Destaque fixo nos Stories: "SESSÃO"
 
