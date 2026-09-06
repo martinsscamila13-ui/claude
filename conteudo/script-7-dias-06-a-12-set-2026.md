@@ -1,81 +1,128 @@
-# Script de Conteúdo — 7 dias
-### 06/09 a 12/09 de 2026 · Método Lucro Anti-Exaustão®
+# Script de Conteúdo — Semana de 06 a 12/09/2026
+### Método Lucro Anti-Exaustão® · Objetivo: leads → Sessão Estratégica → Programa de Aceleração
 
 Montado seguindo o **Guia Semanal de Conteúdo** (5 dias de feed, domingo a quinta,
-alternando os 4 pilares · sexta e sábado OFF).
+alternando os 4 pilares · sexta e sábado OFF). Feed **e** Stories escritos e prontos.
 
-**Contexto desta semana:** hoje (dom, 06/09) é o **Dia 7 do Desafio Lucro Anti-Exaustão**
-e o resultado sai amanhã (07/09). A semana inteira foi construída pra colher o desafio:
-transformar o que aconteceu lá dentro em prova social, autoridade e convite pra mentoria.
+## O eixo da semana
 
-**Regras de linguagem aplicadas em todas as legendas:** sem saudação genérica na abertura,
-sem "não é sobre… é sobre", frases curtas, tom direto, emoji só quando faz falta.
+Todo conteúdo de segunda em diante trabalha para **uma única conversão: a Sessão Estratégica.**
+O Programa de Aceleração não é vendido no feed — ele é vendido na sessão. O feed e os Stories
+existem pra fazer a mulher certa levantar a mão.
 
-| Domingo 06/09 | Segunda 07/09 | Terça 08/09 | Quarta 09/09 | Quinta 10/09 | Sexta 11/09 | Sábado 12/09 |
+O **desafio que ainda está rolando até terça** é o combustível da semana: ele já gerou
+diagnóstico, dor nomeada e prova social. A semana colhe isso.
+
+| Domingo 06 | Segunda 07 | Terça 08 | Quarta 09 | Quinta 10 | Sexta 11 | Sábado 12 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | CONEXÃO | ISCA | AUTORIDADE | OPINIÃO | CONEXÃO (reforço) | OFF | OFF |
-| O que 7 dias revelaram | A pergunta que corta a semana | As 4 fases na prática | Organizar não cura exaustão | A agenda que eu protejo | — | — |
+| Leve · familiar | Captura de lead | Prova + método | Quebra de objeção | Convite direto | Última chamada | Repescagem |
+| Sem CTA | Palavra-chave MAPA | 1ª menção à sessão | Abre as vagas | CTA mais forte | Só Stories | Só Stories |
 
-> ⚠️ **Atenção ao feriado:** 07/09 é feriado (Independência). Alcance de feed costuma cair.
-> Se preferir, publique o Reel de segunda às 19h30 (e não de manhã) — ou empurre o post
-> de segunda pra terça e rode a semana em 4 posts. Os Stories de segunda valem do mesmo jeito,
-> porque é neles que sai o resultado do desafio.
+### A escada da semana
+
+1. **Domingo** — humaniza. Ninguém compra de quem não conhece. Zero venda.
+2. **Segunda** — captura. Entrega valor real e pega o contato de quem se identificou.
+3. **Terça** — prova. Mostra que o método funciona e que existe um programa por trás.
+4. **Quarta** — derruba a objeção número um ("não tenho tempo pra isso agora").
+5. **Quinta** — convida com clareza total: o que é, como funciona, quanto custa.
+6. **Sexta/Sábado** — sem feed. Só Stories de última chamada e conversas na direct.
 
 ---
 
-## DOMINGO 06/09 — CONEXÃO
+## Dados do Programa de Aceleração (para usar no conteúdo)
 
-**Objetivo do pilar:** identificação. Não vende nada.
-**Formato:** Reel falado, 45–60s, gravado no celular, sem roteiro decorado.
-**Tema:** o que 7 dias de desafio revelaram — e por que isso não é sobre organização.
+Estes são os fatos que a **Regra de Ouro do guia** manda comunicar com clareza — nada
+relevante pra decisão dela fica escondido:
 
-### Roteiro (cena a cena)
+- **Duração:** 3 meses
+- **12 encontros individuais online**, de 1 hora cada
+- **1 hotseat em grupo por mês**
+- **1 encontro presencial em grupo por mês**
+- **Material digital e impresso** entregue no primeiro encontro
+- **Investimento:** R$ 3.500 — ou 10x de R$ 350 (cobrança quinzenal, dias 02 e 17)
+- **Entrada:** Sessão Estratégica gratuita, 1:1, sem compromisso de compra
 
-1. **0–5s (gancho, olhando pra câmera):** "Hoje fecha o sétimo dia do desafio. E eu vou contar o que mais apareceu — porque não foi falta de meta."
-2. **5–20s:** Conte o padrão que se repetiu nas provas das participantes. Ex.: quase todas descobriram que o que mais consome energia delas nem estava ligado à meta que elas mesmas escreveram no Dia 1.
-3. **20–40s:** Vire pra sua própria história. Um momento em que você fez exatamente isso — trabalhou muito numa coisa que não te levava a lugar nenhum. Seja concreta: o que era, quanto tempo durou, o que te fez parar.
-4. **40–55s:** Feche com o que você aprendeu ali. Sem lição de moral, só o que ficou.
-5. **Último frame:** "Amanhã sai o resultado." (sem CTA de venda)
+> ⚠️ **Confirme o valor antes de postar.** R$ 3.500 / 10x R$ 350 é o que consta no contrato
+> mais recente que eu encontrei no Drive (julho/2026). Se você reajustou ou está com campanha,
+> troque nos Stories de quinta e no post fixado.
+
+> ⚠️ **Como ela agenda a sessão.** Escrevi tudo com "me chama no direct com a palavra SESSÃO",
+> porque não depende de link nem de ferramenta. Se você tem link de agendamento (Calendly,
+> agenda do Google), troque — é menos fricção e você não perde ninguém na caixa de mensagens.
+
+> ⚠️ **Quantas vagas.** Usei **5 sessões estratégicas nesta semana**. É um número que cria
+> escassez real e cabe na sua agenda. Ajuste se quiser mais ou menos — mas escolha um número
+> e mantenha ele, porque você vai repetir isso em vários Stories.
+
+---
+---
+
+# DOMINGO 06/09 — CONEXÃO
+
+**Pilar:** Conexão · **Objetivo do dia:** humanizar. Zero venda, zero CTA de negócio.
+**Por que hoje é leve:** você vai pedir a atenção dela a semana inteira. Domingo é o dia
+de mostrar quem está pedindo.
+
+## FEED
+
+**Formato:** Carrossel de 4 fotos que você já tem no celular — ou 1 foto única, se preferir
+o caminho mais rápido. Não precisa de produção nova.
+**Tema:** o domingo que você protege, e o que ele tem a ver com o resto.
+
+### Roteiro (foto a foto)
+
+1. **Foto 1:** você com a família, em algo comum — mesa, cozinha, rua, sofá. Nada posado.
+2. **Foto 2:** um detalhe pequeno do dia. Café, mão, pé na grama, cachorro, bagunça.
+3. **Foto 3:** uma foto sua sozinha, tranquila. Sem cara de foto de perfil.
+4. **Foto 4:** o celular longe, a agenda fechada, ou nada — a foto mais boba das quatro.
 
 ### Legenda pronta
 
-> Sete dias atrás eu pedi pra cada uma escrever uma meta. Sem número, sem faturamento — só a direção.
+> Domingo de manhã eu não abro o celular pra trabalho. Nem pra "só dar uma olhadinha".
 >
-> Hoje, no último dia, eu li os planos de 30 dias que chegaram no grupo.
+> Levou anos pra isso virar normal. Por muito tempo eu achei que estar disponível era o que me fazia profissional. Não percebia que era exatamente o que me fazia cansada.
 >
-> O que mais apareceu não foi falta de meta. Foi o contrário: quase todo mundo tinha meta. O que ninguém tinha era espaço na semana pra persegui-la.
+> A verdade é que eu construí um negócio inteiro em cima de uma pergunta simples: dá pra lucrar mais sem entregar a vida em troca?
 >
-> A agenda estava cheia de coisas que não levavam a lugar nenhum. Cliente que drena. Processo que só existe porque sempre foi assim. Tarefa que só você sabe fazer porque nunca teve tempo de ensinar.
+> Dá. Mas não por acidente, e não por força de vontade.
 >
-> Eu passei três anos assim. Trabalhando muito, entregando bem, e sem sair do lugar.
->
-> O que me tirou de lá não foi acordar mais cedo.
->
-> Amanhã sai o resultado do desafio. E na quarta eu volto pra falar da parte que ninguém quer ouvir.
+> Hoje é o dia em que eu não respondo nada. Amanhã eu volto.
 
-### Stories do dia (4)
+### Stories de domingo (4)
 
-1. **Bastidor:** print (borrado nos nomes) do grupo do WhatsApp com as provas do Dia 7 chegando. Texto: "Último dia. Chegando plano de 30 dias aqui."
-2. **Prova social:** um trecho de resposta de participante, com autorização e sem identificação. Texto: "Isso aqui é o Dia 3."
-3. **Caixinha de pergunta:** "Qual foi a coisa mais difícil de cortar essa semana?"
-4. **CTA suave:** "Resultado amanhã, aqui e no grupo." + figurinha de lembrete.
+Domingo é dia de presença, não de trabalho. Grave tudo de uma vez, pela manhã, e agende
+ou poste ao longo do dia.
+
+| # | Tipo | O que aparece | Texto na tela |
+|:-:|---|---|---|
+| 1 | Bastidor | Um pedaço do seu domingo — café, mesa posta, família de longe | "Domingo. Nada de trabalho aqui até amanhã." |
+| 2 | Bastidor | Vídeo curto de 8s, você falando sem roteiro | "Uma coisa que eu só consegui fazer depois que organizei o negócio: parar no domingo sem culpa." |
+| 3 | Caixinha | Fundo simples, sticker de pergunta | "Me conta: você consegue parar no domingo? Responde aí que eu leio depois." |
+| 4 | Desafio (leve) | Print do grupo, nomes borrados | "As meninas do desafio estão na reta final. Termina terça. Quarta eu conto tudo aqui." |
 
 ---
+---
 
-## SEGUNDA 07/09 — ISCA
+# SEGUNDA 07/09 — ISCA
 
-**Objetivo do pilar:** ensinar 1 coisa prática e rápida, e abrir espaço pra oferecer mais.
-**Formato:** Reel de 30–40s. Simples, direto, pode ser você falando ou texto na tela com voz off.
+**Pilar:** Isca · **Objetivo do dia:** capturar contato de quem se identificou.
+**Contexto:** feriado da Independência — o alcance de feed cai. **Publique o Reel às 19h30**,
+não de manhã. Os Stories rodam normal, e é neles que o desafio está vivo.
+**Isca:** o **Mapa da Sobrecarga** — a planilha que você usa na Fase 1 do método.
+
+## FEED
+
+**Formato:** Reel de 30–40s, gravado no celular. Simples ganha de bonito.
 **Tema:** a pergunta que corta a semana pela metade.
-**O que você oferece em troca:** o **Mapa da Sobrecarga** (a planilha) — enviada na direct de quem comentar a palavra-chave.
 
 ### Roteiro (cena a cena)
 
-1. **0–4s (gancho):** "Tem uma pergunta que corta a sua semana pela metade. Leva 10 segundos por tarefa."
-2. **4–12s:** Apresente a pergunta com clareza, na tela e falada: **"Essa tarefa me aproxima da minha meta dos próximos 90 dias?"**
-3. **12–25s:** Mostre como aplicar. Abra sua agenda da semana (pode ser papel), passe tarefa por tarefa e responda sim ou não em voz alta. Faça com 3 exemplos reais.
-4. **25–35s:** A regra de decisão: tudo que for "não" vai pra uma de três pilhas — **eliminar, delegar ou renegociar**. Não existe quarta pilha.
-5. **35–40s (CTA):** "Comente MAPA que eu te mando a planilha que eu uso pra fazer isso com as minhas mentoradas."
+1. **0–4s — gancho, sem introdução:** "Tem uma pergunta que corta a sua semana pela metade. Leva dez segundos por tarefa."
+2. **4–12s:** A pergunta na tela e falada: **"Essa tarefa me aproxima da minha meta dos próximos 90 dias?"**
+3. **12–25s:** Aplique ao vivo. Abra sua agenda (pode ser papel), passe por 3 tarefas reais e responda sim ou não em voz alta. Sem justificar.
+4. **25–35s:** A regra de decisão: tudo que for "não" vai pra uma de três pilhas — **eliminar, delegar ou renegociar.** Não existe quarta pilha. "Deixar como está" é escolher continuar cansada.
+5. **35–40s — CTA:** "Comenta MAPA que eu te mando a planilha completa que eu uso pra fazer esse corte com as minhas mentoradas."
 
 ### Legenda pronta
 
@@ -87,198 +134,290 @@ sem "não é sobre… é sobre", frases curtas, tom direto, emoji só quando faz
 >
 > Tudo que for não vai pra uma de três pilhas:
 >
-> Eliminar — ninguém sente falta.
-> Delegar — outra pessoa faz, mesmo que faça 80% do jeito que você faria.
+> Eliminar — ninguém vai sentir falta.
+> Delegar — outra pessoa faz, mesmo que faça oitenta por cento do jeito que você faria.
 > Renegociar — continua existindo, mas com outro prazo, outro preço ou outro combinado.
 >
-> Não tem quarta pilha. "Deixar como está" é escolher continuar cansada.
+> Não tem quarta pilha. "Deixar como está" é escolher continuar cansada por mais noventa dias.
 >
-> As mulheres que fizeram isso no Dia 3 do desafio cortaram, em média, uma coisa que carregavam há mais de um ano.
+> Essa é a primeira coisa que a gente faz na Fase 1 do meu método — e é o que as mulheres do desafio fizeram essa semana. Quase todas cortaram algo que carregavam há mais de um ano.
 >
-> Comenta MAPA que eu te mando a planilha que eu uso pra fazer esse corte com as minhas mentoradas.
+> Comenta MAPA que eu te mando a planilha completa.
 
-### Stories do dia (4)
+### Stories de segunda (6)
 
-1. **Resultado do desafio:** anúncio das três primeiras colocadas. Card com os nomes. Texto curto, sem enrolação.
-2. **Prova social:** repost dos stories das participantes que marcaram você durante a semana (junte 2 ou 3 numa sequência).
-3. **Bastidor:** você aplicando a pergunta do Reel na sua própria agenda da semana. Mostre a caneta riscando.
-4. **CTA suave:** "Post de hoje tem a planilha. Comenta MAPA lá." + sticker de link pro Reel.
+| # | Tipo | O que aparece | Texto na tela |
+|:-:|---|---|---|
+| 1 | Abertura | Você falando, 10s | "Feriado, mas o desafio não para. Faltam dois dias e tem coisa importante acontecendo aqui." |
+| 2 | Prova social | Print de prova de participante, sem identificação | "Isso aqui é uma empresária percebendo que o que mais consome a semana dela não sustenta o negócio dela." |
+| 3 | Ensino | Você falando, 15s | "Eu vou te dar de graça a pergunta que abre esse buraco. É a mesma do post de hoje." |
+| 4 | Ensino | Texto na tela, fundo limpo | "Essa tarefa me aproxima da minha meta dos próximos 90 dias? Sim ou não. Sem 'depende'." |
+| 5 | Captura | Print do Reel + sticker de link | "Postei agora. Comenta MAPA no post que eu te mando a planilha." |
+| 6 | Caixinha | Sticker de pergunta | "Qual foi a última coisa que você tirou da sua semana? Eu respondo uma por uma." |
+
+### Sequência de direct — quem comentar MAPA
+
+Não entregue a planilha e vá embora. É aqui que o lead vira sessão.
+
+**Mensagem 1 — na hora (entrega):**
+> Oi! Aqui está o Mapa da Sobrecarga. [anexo/link]
+>
+> Ele tem três abas: o que você faz, quanto isso te custa de energia, e o que fazer com cada coisa. Preenche a primeira aba hoje, mesmo que seja incompleta — é ela que abre o resto.
+
+**Mensagem 2 — 24h depois (abertura):**
+> Conseguiu abrir o Mapa? Me conta uma coisa: qual foi o item que te surpreendeu?
+>
+> Pergunto porque quase sempre tem um. E normalmente é o que a pessoa carrega há mais tempo.
+
+**Mensagem 3 — quando ela responder (convite):**
+> Isso que você descreveu é exatamente o que eu destravo numa Sessão Estratégica.
+>
+> É uma conversa de 1 hora, eu e você, onde a gente olha o seu negócio e identifica o que está consumindo a sua energia sem sustentar o seu lucro. Você sai com clareza do próximo passo, comprando ou não comprando nada de mim.
+>
+> Eu abri 5 vagas essa semana. Quer uma?
 
 ---
+---
 
-## TERÇA 08/09 — AUTORIDADE
+# TERÇA 08/09 — AUTORIDADE
 
-**Objetivo do pilar:** mostrar domínio real do assunto, sem arrogância.
-**Formato:** Carrossel de 7 lâminas.
-**Tema:** as 4 fases do Método Lucro Anti-Exaustão® explicadas por um case real (anonimizado).
+**Pilar:** Autoridade · **Objetivo do dia:** provar que o método funciona e revelar que
+existe um programa estruturado por trás. **Primeira menção à Sessão Estratégica no feed.**
+**Contexto:** último dia do desafio.
+
+## FEED
+
+**Formato:** Carrossel de 8 lâminas.
+**Tema:** o caminho completo de uma mentorada — e o que existe entre o diagnóstico e o resultado.
 
 ### Roteiro (lâmina a lâmina)
 
-1. **Capa:** "Ela faturava bem e queria fechar as portas. O que a gente fez em 4 fases." — fundo limpo, sem foto de rosto.
-2. **Lâmina 2 — o ponto de partida:** o retrato de quando ela chegou. Descreva a rotina, não o faturamento. Ex.: trabalhava sábado, respondia cliente às 23h, não tirava férias havia dois anos.
-3. **Lâmina 3 — FASE 1 · Diagnóstico:** o que o Mapa da Sobrecarga revelou. Nomeie 1 descoberta específica e contraintuitiva.
-4. **Lâmina 4 — FASE 2:** a decisão de priorização que ela tomou. O que entrou, o que saiu.
-5. **Lâmina 5 — FASE 3:** o que foi delegado ou documentado — e o que doeu nessa parte. Mostrar o custo dá credibilidade.
-6. **Lâmina 6 — FASE 4 · Patrimônio Valioso:** onde ela chegou. Fale em rotina e em decisão, não em número. Ex.: hoje o negócio roda três dias sem ela.
-7. **Lâmina 7 — fechamento:** "Não foi motivação. Foi método, na ordem certa." + convite pra chamar na direct.
+1. **Capa:** "Ela faturava bem e queria fechar as portas. Doze encontros depois, o negócio roda sem ela três dias por semana." Fundo limpo, sem foto de rosto.
+2. **Onde ela estava:** a rotina, não o faturamento. Trabalhava sábado, respondia cliente às 23h, dois anos sem férias de verdade.
+3. **O diagnóstico (Fase 1):** o que o Mapa da Sobrecarga revelou. Nomeie **uma** descoberta específica e contraintuitiva — o serviço que mais consumia a semana era o que menos sustentava o negócio.
+4. **A decisão (Fase 2):** o que ficou, o que saiu, o que mudou de formato. Diga o que doeu.
+5. **A estrutura (Fase 3):** o que foi delegado e documentado. Mostre o custo: ela teve que aguentar ver ser feito diferente do jeito dela.
+6. **O patrimônio (Fase 4):** onde ela chegou. Em rotina e em decisão, não em número.
+7. **Como isso acontece:** "Não foi num curso. Foi em 12 encontros individuais, ao longo de 3 meses, com hotseat em grupo e um encontro presencial por mês. Isso é o Programa de Aceleração."
+8. **Fechamento:** "Antes de entrar, toda mentorada passa por uma Sessão Estratégica. É uma conversa de 1 hora onde a gente olha o seu negócio — e você decide depois."
 
 ### Legenda pronta
 
-> Ela chegou pra mim dizendo que ia fechar. Não por falta de cliente — por excesso.
+> Ela chegou dizendo que ia fechar. Não por falta de cliente — por excesso.
 >
 > Faturava. Entregava bem. Respondia mensagem às onze da noite e trabalhava todo sábado. Fazia dois anos que não tirava férias de verdade.
 >
-> O diagnóstico da Fase 1 mostrou uma coisa que ela não esperava: o serviço que mais consumia a semana dela era justamente o que menos sustentava o negócio. Ela carregava esse serviço por costume, não por estratégia.
+> A Fase 1 do método é diagnóstico, e o diagnóstico dela mostrou uma coisa que ela não esperava: o serviço que mais consumia a semana era justamente o que menos sustentava o negócio. Ela carregava aquilo por costume, não por estratégia.
 >
-> Fase 2 foi decidir. O que fica, o que sai, o que muda de formato.
+> Fase 2 foi decidir o que fica, o que sai e o que muda de formato. Doeu.
 >
-> Fase 3 foi a mais difícil. Tirar da cabeça dela o que só ela sabia fazer. Documentar, ensinar, e aguentar ver ser feito diferente do jeito dela.
+> Fase 3 foi tirar da cabeça dela o que só ela sabia fazer. Documentar, ensinar, e aguentar ver ser feito de um jeito que não era o dela.
 >
-> Fase 4 é onde ela está hoje: o negócio roda três dias sem ela precisar estar dentro.
+> Fase 4 é onde ela está hoje: o negócio roda três dias por semana sem ela dentro.
 >
-> Levou meses. Não teve atalho e não teve hack de produtividade.
+> Isso não aconteceu num curso gravado, nem numa virada de chave. Aconteceu em doze encontros individuais ao longo de três meses, com hotseat em grupo e um encontro presencial por mês. É o Programa de Aceleração.
 >
-> Se você se reconheceu na primeira linha, me chama na direct. Eu te digo em qual fase você está.
+> E ninguém entra nele sem antes sentar comigo numa Sessão Estratégica — uma hora, eu e você, olhando o seu negócio de verdade.
+>
+> Se você se reconheceu na primeira linha, comenta SESSÃO ou me chama na direct. Eu abri cinco vagas essa semana.
 
-*(Ajuste os detalhes do case pra uma mentorada real sua. Peça autorização mesmo anonimizando — e troque os detalhes que possam identificá-la.)*
+*(Troque os detalhes por uma mentorada real sua. Peça autorização mesmo anonimizando.)*
 
-### Stories do dia (4)
+### Stories de terça (6)
 
-1. **Enquete:** "Você tira férias de verdade?" — Sim / Faz mais de 1 ano / O que é isso.
-2. **Prova social:** um print de mensagem de mentorada (nome coberto) falando de uma virada de rotina.
-3. **Bastidor de entrega:** foto/print de uma sessão ou do Mapa da Sobrecarga preenchido, borrado.
-4. **CTA suave:** "Carrossel de hoje é o passo a passo das 4 fases." + link pro post.
+| # | Tipo | O que aparece | Texto na tela |
+|:-:|---|---|---|
+| 1 | Encerramento | Você falando, 15s | "Hoje é o último dia do desafio. Amanhã eu conto o que aconteceu — e tem gente que mudou de decisão em uma semana." |
+| 2 | Prova social | Sequência de 2 prints de participantes, sem identificação | "Dia 3 e Dia 5. Sem eu ter dito nada além da pergunta certa." |
+| 3 | Bastidor de entrega | Foto de sessão, tela do Notion da mentorada, ou Mapa preenchido borrado | "Isso aqui é uma sessão do Programa de Aceleração. Uma hora, eu e ela, sem plateia." |
+| 4 | Autoridade | Texto na tela, fundo limpo | "12 encontros individuais. 3 meses. 1 hotseat e 1 presencial por mês. É esse o formato." |
+| 5 | Convite | Você falando, 20s | "Antes de qualquer mentorada entrar, a gente senta pra uma Sessão Estratégica. Uma hora. Sem compromisso de comprar nada." |
+| 6 | CTA | Sticker de link pro carrossel + caixinha | "Carrossel de hoje conta o caminho inteiro. Quem quiser a sessão, escreve SESSÃO aqui." |
 
 ---
+---
 
-## QUARTA 09/09 — OPINIÃO
+# QUARTA 09/09 — OPINIÃO
 
-**Objetivo do pilar:** ponto de vista claro, gera alcance e identificação forte.
+**Pilar:** Opinião · **Objetivo do dia:** derrubar a objeção número um — *"eu não tenho tempo
+pra fazer uma mentoria agora."* É a objeção que mata a sua venda, e é a mais fácil de virar,
+porque ela é exatamente o sintoma que você trata.
+**Contexto:** resultado do desafio sai hoje.
+
+## FEED
+
 **Formato:** Vídeo falado, 50–70s, uma tomada só, olhando pra câmera. Sem corte, sem trilha.
-**Tema:** organização não cura exaustão de empresária.
+**Tema:** "não tenho tempo pra mentoria" é o diagnóstico, não o obstáculo.
 
 ### Roteiro (cena a cena)
 
-1. **0–6s (gancho, sem introdução):** "Eu vou falar uma coisa impopular: não adianta você comprar mais uma agenda."
-2. **6–20s:** A crença do mercado que você discorda — a ideia de que empresária cansada é empresária desorganizada, e que a solução é método de produtividade, app novo, rotina matinal.
-3. **20–40s:** Por que isso não funciona. Organização otimiza o que já existe. Se o que existe é grande demais pra uma pessoa só, organizar melhor só faz você caber mais rápido no mesmo buraco.
-4. **40–60s:** O que resolve de fato: reduzir o que existe antes de organizar o que sobrou. Diga a ordem — primeiro cortar, depois estruturar. Nunca o contrário.
-5. **60–70s:** Feche com a frase que resume sua posição. Sem CTA de venda; convide pro comentário.
+1. **0–6s — sem introdução:** "Toda semana alguém me diz que não tem tempo pra fazer uma mentoria. E eu vou falar uma coisa impopular sobre isso."
+2. **6–22s:** Nomeie a crença: existe a ideia de que primeiro você organiza o negócio, e *depois* busca ajuda. Que mentoria é pra quando as coisas estiverem mais calmas.
+3. **22–42s:** Por que isso não funciona. As coisas não ficam calmas sozinhas. Se o negócio depende de você pra tudo, ele nunca vai te dar folga pra você resolver o fato de que ele depende de você pra tudo. É um círculo que se alimenta.
+4. **42–60s:** A virada: falta de tempo não é o motivo de adiar. É o sintoma exato do problema. Quem diz "não tenho tempo" acabou de descrever o diagnóstico em voz alta.
+5. **60–70s:** Feche com sua posição, firme. Convide pro comentário, não pra venda.
 
 ### Legenda pronta
 
-> Empresária cansada não é empresária desorganizada.
+> "Eu faço mentoria quando as coisas acalmarem."
 >
-> Essa confusão custa caro. Vende curso de produtividade, vende planner, vende rotina das cinco da manhã. E deixa a mulher achando que o problema é falha de caráter dela.
+> Elas não vão acalmar. Não sozinhas.
 >
-> Organização otimiza o que já existe. Só isso. Se o que existe é grande demais pra uma pessoa só, organizar melhor não te salva — te faz chegar mais rápido no mesmo esgotamento, só que com a agenda bonita.
+> Essa é a frase que eu mais escuto, e ela tem uma lógica que parece boa: primeiro eu organizo, depois eu busco ajuda. Primeiro eu respiro, depois eu penso no longo prazo.
 >
-> A ordem que funciona é outra.
+> Só que se o negócio depende de você pra funcionar, ele nunca vai te devolver o tempo que você precisaria pra resolver o fato de que ele depende de você. Você fica presa esperando uma folga que o próprio problema impede de existir.
 >
-> Primeiro você reduz. Corta cliente que drena, serviço que não sustenta, processo que existe por hábito.
+> Falta de tempo não é o motivo de adiar. É o diagnóstico.
 >
-> Depois você organiza o que sobrou.
+> Quando você me diz que não tem tempo, você acabou de descrever, com precisão, exatamente aquilo que eu trato.
 >
-> Fazer o contrário é arrumar a casa inteira antes de jogar fora o que não cabe.
+> Foi por isso que eu criei um desafio de sete dias em vez de um curso de quarenta horas. Terminou ontem. Hoje eu divulgo o resultado nos Stories.
 >
-> Discorda? Comenta aí. Eu leio tudo.
+> Discorda? Comenta. Eu leio tudo e respondo.
 
-### Stories do dia (4)
+### Stories de quarta (7) — **este é o dia que abre as vagas**
 
-1. **Enquete:** "Você já comprou curso/app de produtividade achando que ia resolver?" — Já / Mais de um / Nunca.
-2. **Bastidor real:** você mostrando sua agenda da semana — inclusive os buracos vazios de propósito.
-3. **Repost de comentário:** print de alguém discordando ou concordando forte no post. Responda em vídeo, 15s.
-4. **CTA suave:** "Se isso bateu, o post de hoje é pra você." + link.
+| # | Tipo | O que aparece | Texto na tela |
+|:-:|---|---|---|
+| 1 | Resultado | Card com as três primeiras colocadas | "Resultado do Desafio Lucro Anti-Exaustão. Primeiro, segundo e terceiro lugar." |
+| 2 | Prova social | Repost dos stories em que te marcaram durante o desafio | "Sete dias. Isso aqui é o que aconteceu." |
+| 3 | Ponte | Você falando, 20s | "Muita gente me perguntou o que vem depois do desafio. Vem isso aqui." |
+| 4 | Objeção | Texto na tela, fundo limpo | "'Faço quando acalmar.' Não acalma. Se dependesse de acalmar, você já teria feito." |
+| 5 | Oferta | Você falando, 25s | "Eu abri 5 Sessões Estratégicas essa semana. Uma hora, eu e você, olhando o seu negócio. Você sai com clareza, comprando ou não." |
+| 6 | Transparência | Texto na tela | "O que a sessão NÃO é: não é aula, não é call de vendas de 15 minutos, não é gratuita porque é rasa. É uma hora inteira." |
+| 7 | CTA | Sticker de link ou caixinha | "Escreve SESSÃO aqui. Eu respondo hoje ainda." |
 
 ---
+---
 
-## QUINTA 10/09 — CONEXÃO (reforço)
+# QUINTA 10/09 — CONEXÃO (reforço)
 
-**Objetivo do pilar:** fechar a semana com identificação, já com a lead aquecida pelos três posts anteriores.
-**Formato:** Reel bastidor, 40–50s, gravado no ambiente real (carro, cozinha, escritório bagunçado — real mesmo).
-**Tema:** o bloqueio de agenda que você defende, e o que aconteceu na primeira vez que você tentou.
+**Pilar:** Conexão · **Objetivo do dia:** converter. É o dia mais forte da semana.
+A lead já viu você por dentro (domingo), recebeu valor (segunda), viu prova (terça)
+e teve a objeção derrubada (quarta). Hoje ela decide.
+
+## FEED
+
+**Formato:** Reel bastidor, 40–50s, no ambiente real — carro, cozinha, escritório bagunçado.
+Nada de estúdio. O contraste entre a conversa séria e o cenário real é o que faz funcionar.
+**Tema:** a decisão que fez o seu negócio parar de te consumir — e por que você faz outra
+mulher tomar essa decisão sentada na sua frente.
 
 ### Roteiro (cena a cena)
 
-1. **0–5s:** Mostre o bloco na sua agenda. "Isso aqui é sagrado. E na primeira vez que eu tentei, durou uma semana."
-2. **5–20s:** Conte a primeira tentativa que falhou. O que te fez furar o bloqueio. Seja específica e honesta — cliente, culpa, medo de perder oportunidade.
-3. **20–38s:** O que mudou na segunda vez. O combinado que você fez consigo mesma (o mesmo do Dia 5 do desafio) e a regra prática que sustenta ele.
-4. **38–50s:** O que você ganhou com isso. Diga em rotina, não em número.
-5. **CTA suave:** "Quem quiser fazer isso com método, a comunidade abre de novo em breve. Link na bio pra entrar na lista."
+1. **0–6s:** "Teve um dia em que eu recusei um cliente que eu precisava do dinheiro. E foi a melhor decisão que eu tomei no negócio."
+2. **6–22s:** Conte a história de verdade. Qual cliente, por que você recusou, o que você sentiu na hora. Seja específica e admita o medo.
+3. **22–35s:** O que aconteceu depois. Não romantize — diga o que foi difícil também.
+4. **35–45s:** A ponte: "Eu levei anos pra conseguir tomar essa decisão sozinha. Hoje eu faço mulher tomar essa decisão em uma hora, sentada na minha frente."
+5. **45–50s — CTA direto:** "Cinco Sessões Estratégicas essa semana. Escreve SESSÃO na direct."
 
 ### Legenda pronta
 
-> Esse bloco na minha agenda durou uma semana, na primeira vez que eu tentei.
+> Teve um dia em que eu recusei um cliente que ia me pagar bem. E eu precisava daquele dinheiro.
 >
-> Furei por causa de um cliente que "só precisava de dez minutos". Os dez minutos viraram a tarde inteira, e a tarde inteira virou o hábito de estar disponível sempre.
+> A conta na minha cabeça na hora foi essa: se eu aceitar, eu volto a trabalhar sábado. Volto a responder às onze da noite. Volto a ser a mulher que eu passei dois anos deixando de ser.
 >
-> A segunda tentativa foi diferente porque eu parei de tratar como intenção e passei a tratar como compromisso — igualzinho a uma reunião com cliente. Reunião com cliente eu não desmarco porque bateu culpa.
+> Eu recusei com medo. Não com convicção. Fiquei três dias achando que tinha feito besteira.
 >
-> A regra que sustenta: se eu preciso furar o bloco, eu remarco ele antes de fechar o compromisso novo. Não depois. Antes.
+> Não fiz. Aquele espaço que eu protegi virou o espaço onde eu construí o que eu faço hoje.
 >
-> Faz dois anos que ele está de pé.
+> Levei anos pra conseguir fazer essa conta sozinha. Hoje eu faço mulher fazer essa conta em uma hora, sentada na minha frente.
 >
-> O que eu ganhei não foi tempo livre. Foi conseguir tomar decisão de negócio com a cabeça descansada — que é a única condição em que eu tomo decisão boa.
+> Chama Sessão Estratégica. É de graça, dura uma hora, é só eu e você, e a gente olha o seu negócio de verdade: o que consome a sua energia, o que sustenta o seu lucro, e o que precisa sair da sua semana.
 >
-> Foi exatamente isso que a gente fez no Dia 5 do desafio. Quem quiser fazer com método e com rede, a comunidade abre de novo em breve — link na bio pra entrar na lista.
+> Você sai de lá com clareza do próximo passo. Comprando ou não comprando nada de mim.
+>
+> Quem quiser continuar comigo depois, o caminho é o Programa de Aceleração: 3 meses, 12 encontros individuais de uma hora, um hotseat em grupo e um encontro presencial por mês. R$ 3.500, ou 10x de R$ 350.
+>
+> Eu falo o valor aqui de propósito. Você não precisa entrar numa conversa comigo pra descobrir se cabe no seu bolso.
+>
+> Cinco vagas de sessão essa semana. Escreve SESSÃO na direct.
 
-### Stories do dia (4)
+### Stories de quinta (7) — **dia de conversão**
 
-1. **Bastidor:** foto do seu bloco na agenda, de verdade.
-2. **Caixinha:** "Me conta um compromisso que você fura por culpa."
-3. **Prova social:** print do Dia 5 de uma participante (agenda bloqueada, sem identificação).
-4. **CTA:** este é o dia mais forte da semana pra chamar. "Lista da comunidade tá aberta." + link.
+| # | Tipo | O que aparece | Texto na tela |
+|:-:|---|---|---|
+| 1 | Abertura | Você falando, 15s | "Hoje eu vou falar de dinheiro e de vaga, sem rodeio. Se não for pra você, pula." |
+| 2 | História | Trecho do Reel | "Eu recusei um cliente que ia me pagar bem. Contei a história inteira no post de hoje." |
+| 3 | Transparência | Texto na tela, fundo limpo | "Programa de Aceleração: 3 meses · 12 encontros individuais de 1h · 1 hotseat/mês · 1 presencial/mês · R$3.500 ou 10x R$350." |
+| 4 | Objeção | Você falando, 25s | "'É caro?' Faz a conta do que te custa mais um trimestre trabalhando desse jeito. É essa a comparação, não com um curso de R$97." |
+| 5 | Prova social | Print de mentorada, com autorização | "Ela entrou achando que precisava de mais disciplina. Precisava de menos coisa." |
+| 6 | Escassez real | Contador simples, feito por você | "5 sessões. Já foram [X]. Restam [Y]." |
+| 7 | CTA final | Sticker de link ou caixinha | "SESSÃO na direct. Eu respondo hoje." |
+
+---
+---
+
+# SEXTA 11/09 e SÁBADO 12/09 — OFF
+
+Sem feed. Isso é parte do método: você não pode vender descanso e postar sete dias por semana.
+A incoerência aparece, e ela custa mais caro que o alcance que você perde.
+
+### Stories de sexta (4) — última chamada, leve
+
+| # | Tipo | O que aparece | Texto na tela |
+|:-:|---|---|---|
+| 1 | Bastidor | Sua agenda da semana que vem, com os blocos das sessões marcados | "As sessões da semana que vem já estão na agenda." |
+| 2 | Escassez | Texto na tela | "Sobrou [X] vaga. Depois disso, próxima leva só daqui a algumas semanas." |
+| 3 | Prova | Print de uma conversa de direct desta semana (com autorização, nome coberto) | "Isso aqui foi essa semana." |
+| 4 | Encerramento | Você falando, 10s | "Vou desligar. Volto domingo. Quem quiser a última vaga, escreve agora." |
+
+### Sábado (2) — presença sem trabalho
+
+| # | Tipo | O que aparece | Texto na tela |
+|:-:|---|---|---|
+| 1 | Repescagem | Recompartilhe o carrossel de terça | "Quem chegou essa semana ainda não viu isso." |
+| 2 | Pessoal | Qualquer coisa do seu sábado | Sem texto de venda. Nada. |
+
+**Banco de conteúdo:** separe 20 minutos na sexta pra gravar 2 vídeos extras e guardar.
+É o que salva a semana corrida.
+
+---
+---
+
+# Conteúdo fixo / destaque do perfil
+
+Atualize esta semana — toda lead nova que chegar pelos posts vai bater aqui antes de te chamar.
+Use fotos que você já tem.
+
+### Carrossel de 5 lâminas
+
+1. **Pra quem é.** "Pra empresária que fatura, entrega bem e está exausta." Nomeie o perfil com precisão — tamanho de negócio, momento, sintoma.
+2. **A transformação.** O que ela sai tendo, em rotina e em decisão: negócio que roda sem ela dentro, semana com espaço, decisão tomada com a cabeça descansada.
+3. **Como funciona.** As 4 fases, uma linha cada: Diagnóstico → Priorização → Delegação e estrutura → Patrimônio Valioso. E o formato: 3 meses, 12 encontros individuais de 1h, hotseat mensal, presencial mensal.
+4. **Prova.** 1 case em 3 linhas, anonimizado.
+5. **CTA e valores.** Como entrar (Sessão Estratégica, 1h, gratuita), o que acontece depois, e o investimento do Programa: R$ 3.500 ou 10x R$ 350.
+
+### Destaque fixo nos Stories: "SESSÃO"
+
+Crie um destaque só com os Stories de quarta (5, 6, 7) e quinta (3, 4). Quem chegar pelo
+perfil em qualquer semana encontra a oferta explicada, sem você ter que repetir.
 
 ---
 
-## SEXTA 11/09 e SÁBADO 12/09 — OFF
+# Checklist da semana
 
-Sem feed. É parte do método — você não pode vender descanso e postar sete dias por semana.
-
-- **Sexta:** 1 ou 2 Stories leves, se der vontade. Nada de venda.
-- **Sábado:** se quiser manter presença sem trabalhar, use **conteúdo preguiçoso**: recompartilhe nos Stories um post seu que já performou bem (o carrossel das 4 fases é um bom candidato).
-- **Banco de conteúdo:** aproveite 20 minutos de sexta pra gravar 2 vídeos extras e guardar. É o que salva a semana corrida.
-
----
-
-## Conteúdo pessoal da semana (1x)
-
-**Quando postar:** terça ou quinta, nos Stories, ou como post de sábado se quiser feed.
-**Tema sugerido:** algo seu fora do trabalho, na mesma semana em que você falou de descanso — a coerência faz o conteúdo trabalhar por você.
-
-### Legenda pronta (mínimo 3 linhas, conforme o guia)
-
-> Domingo de manhã eu não abro o celular pra trabalho. Nem pra "só dar uma olhadinha".
->
-> Levou tempo pra isso virar normal. Por muito tempo eu achava que estar disponível era o que me fazia profissional — e não percebia que era o que me fazia cansada.
->
-> Hoje eu sei que a parte da minha vida que não rende dinheiro é justamente a que sustenta a parte que rende.
+- [ ] **Dom 06** — Carrossel familiar postado (fotos que você já tem)
+- [ ] **Dom 06** — 4 Stories, gravados de manhã de uma vez só
+- [ ] **Seg 07** — Reel Isca publicado **às 19h30** (feriado)
+- [ ] **Seg 07** — Palavra-chave MAPA configurada e planilha pronta pra enviar
+- [ ] **Seg 07** — 3 mensagens de direct salvas em respostas rápidas
+- [ ] **Ter 08** — Carrossel Autoridade (com autorização da mentorada do case)
+- [ ] **Ter 08** — Encerramento do desafio anunciado nos Stories e no grupo
+- [ ] **Qua 09** — Resultado do desafio divulgado
+- [ ] **Qua 09** — Vídeo Opinião + **abertura das 5 vagas** nos Stories
+- [ ] **Qua 09** — Responder todos os comentários no mesmo dia
+- [ ] **Qui 10** — Reel Conexão + valores comunicados com clareza
+- [ ] **Qui 10** — Contador de vagas atualizado
+- [ ] **Sex 11** — Última chamada nos Stories, sem post no feed
+- [ ] **Sáb 12** — OFF de verdade
+- [ ] **Na semana** — Post fixado atualizado
+- [ ] **Na semana** — Destaque "SESSÃO" criado
 
 ---
 
-## Conteúdo fixo / destaque do perfil
+### Regras de linguagem aplicadas em todas as legendas
 
-Se o seu post fixado ainda não responde às quatro perguntas do guia, atualize esta semana. Pode usar fotos que você já tem — não espere produção nova.
-
-**Estrutura sugerida (carrossel de 5 lâminas):**
-
-1. **Pra quem é:** "Pra empresária que fatura, entrega bem e está exausta." Nomeie o perfil com precisão — faixa de negócio, momento, sintoma.
-2. **A transformação:** o que ela sai tendo. Fale em rotina e em decisão: negócio que roda sem ela dentro, semana com espaço, decisão tomada com a cabeça descansada.
-3. **Como funciona na prática:** as 4 fases, uma linha cada. Diagnóstico → Priorização → Delegação/Estrutura → Patrimônio Valioso. Diga a duração (3 ou 6 meses) e o formato (sessões, ferramentas, comunidade).
-4. **Prova:** 1 case em 3 linhas, anonimizado.
-5. **CTA claro:** como entrar, o que acontece depois que ela chamar, e onde ver os valores. **Regra de ouro do guia: preço, formato e resultado esperado não ficam escondidos.**
-
----
-
-## Checklist da semana
-
-- [ ] Domingo — Reel Conexão gravado e postado
-- [ ] Segunda — Reel Isca postado + palavra-chave MAPA configurada na automação/direct
-- [ ] Segunda — resultado do desafio divulgado nos Stories e no grupo
-- [ ] Terça — Carrossel Autoridade (com autorização da mentorada do case)
-- [ ] Quarta — Vídeo Opinião postado + responder comentários no mesmo dia
-- [ ] Quinta — Reel Conexão + link da lista da comunidade na bio
-- [ ] Stories em todos os 5 dias de feed
-- [ ] Conteúdo pessoal publicado 1x
-- [ ] Post fixado atualizado
-- [ ] Sexta e sábado: OFF de verdade
+Conforme o seu Prompt de Conteúdo Semanal: sem saudação genérica na abertura, sem apelido
+carinhoso forçado, sem a construção "não é sobre… é sobre", frases curtas, tom direto,
+sem exagero de entusiasmo, emoji só quando faz falta. Toda legenda entregue pronta.
