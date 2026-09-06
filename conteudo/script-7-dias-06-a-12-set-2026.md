@@ -1,127 +1,131 @@
 # Script de Conteúdo — 06 a 13/09/2026
-### Método Lucro Anti-Exaustão® · Objetivo: leads → Sessão Estratégica → Programa de Aceleração
+### Método Lucro Anti-Exaustão® · Leads → Sessão Estratégica → Programa de Aceleração
 
-Baseado no **Guia Semanal de Conteúdo**, com os 4 pilares alternando. Feed **e** Stories
-escritos e prontos, de domingo 06 a domingo 13 — só o sábado fica sem post.
+Cada dia tem sempre a mesma estrutura: **Gancho · Roteiro · Legenda · Stories.**
+O gancho já vem escolhido — é pra falar exatamente como está.
 
-> **Nota sobre descanso.** O guia prevê 2 dias OFF (sexta e sábado). Com sexta virando dia
-> de feed, sobra 1. Você decidiu assim e faz sentido numa semana de vagas abertas — só não
-> transforme em padrão, porque o descanso é o que você vende. Sábado ficou OFF de verdade.
-
-## O eixo da semana
-
-Todo conteúdo de segunda em diante trabalha para **uma única conversão: a Sessão Estratégica.**
-O Programa de Aceleração não é vendido no feed — ele é vendido na sessão. O feed e os Stories
-existem pra fazer a mulher certa levantar a mão.
-
-O **desafio que ainda está rolando até terça** é o combustível da semana: ele já gerou
-diagnóstico, dor nomeada e prova social. A semana colhe isso.
+**A regra do gancho:** os 3 primeiros segundos não apresentam o assunto. Eles afirmam algo
+sobre a vida de quem assiste. *"Vou falar sobre X"* perde. *"Você faz X"* ganha.
 
 | Dom 06 | Seg 07 | Ter 08 | Qua 09 | Qui 10 | Sex 11 | Sáb 12 | Dom 13 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| CONEXÃO | ISCA | AUTORIDADE | OPINIÃO | CONEXÃO (reforço) | AUTORIDADE | OFF | CONEXÃO |
-| Sábado + metas 2026 | Captura de lead | Prova + método | Quebra de objeção | Convite direto | Tira o medo de chamar | Repescagem | Abre o ciclo novo |
-| Sem CTA | Palavra-chave MAPA | 1ª menção à sessão | Abre as vagas | CTA mais forte | Última chamada | Só Stories | Feed leve, sem CTA duro |
+| CONEXÃO | ISCA | AUTORIDADE | OPINIÃO | CONEXÃO | AUTORIDADE | OFF | CONEXÃO |
+| Carrossel | **Reel** | Carrossel | **Vídeo** | **Reel** | Carrossel | — | **Reel** |
+| Sábado + metas | Captura | Prova + método | Objeção · abre vagas | Convite | Tira o medo | Descanso | Fecha e reabre |
 
 ### A escada da semana
 
-1. **Domingo** — humaniza. Ninguém compra de quem não conhece. Zero venda.
-2. **Segunda** — captura. Entrega valor real e pega o contato de quem se identificou.
-3. **Terça** — prova. Mostra que o método funciona e que existe um programa por trás.
-4. **Quarta** — derruba a objeção número um ("não tenho tempo pra isso agora").
+1. **Domingo** — humaniza. Zero venda.
+2. **Segunda** — captura contato de quem se identificou.
+3. **Terça** — prova que o método funciona e revela o programa.
+4. **Quarta** — derruba a objeção nº 1 e abre as vagas.
 5. **Quinta** — convida com clareza total: o que é, como funciona, quanto custa.
-6. **Sexta** — tira o medo de chamar. Mostra a Sessão Estratégica por dentro, hora a hora.
-7. **Sábado** — sem feed. Só Stories leves.
-8. **Domingo** — feed leve de novo. Colhe o que você ouviu na semana e abre a roda outra vez.
+6. **Sexta** — tira o medo de chamar: a sessão por dentro.
+7. **Sábado** — sem feed. Único descanso da semana.
+8. **Domingo** — feed leve. Colhe o que ouviu e abre a roda de novo.
 
 ---
 
 ## A oferta — o que dizer quando perguntarem
 
-Estes são os fatos que a **Regra de Ouro do guia** manda comunicar com clareza — nada
-relevante pra decisão dela fica escondido.
+**Programa de Aceleração · 6 meses — R$ 5.000**
+6 encontros individuais · 1 hotseat por mês · grupo com as outras mentoradas
 
-### Programa de Aceleração — 6 meses · R$ 5.000
-- 6 encontros individuais
-- 1 hotseat por mês
-- Grupo com as outras mentoradas
+**Programa de Aceleração · 3 meses — R$ 3.500**
+2 encontros individuais · grupo com as outras mentoradas · hotseat
 
-### Programa de Aceleração — 3 meses · R$ 3.500
-- 2 encontros individuais
-- Grupo com as outras mentoradas
-- Hotseat
+**Consultoria de 1 dia — R$ 997**
+3 horas de imersão · encontro de retorno em 30 dias
 
-### Consultoria de 1 dia · R$ 997
-- 3 horas de imersão
-- Encontro de retorno em 30 dias
+**Porta de entrada — Sessão Estratégica**
+1 hora · 1:1 · gratuita · é nela que você diz qual dos três é o caminho dela
 
-### Como isso entra no conteúdo
+O feed não vende nenhum dos três. O feed leva pra sessão. Isso resolve a objeção de preço de
+graça: quem acha R$ 5.000 fora de hora tem a consultoria de R$ 997 na mesma conversa.
 
-O feed **não vende nenhum dos três.** O feed leva pra **Sessão Estratégica** — 1 hora, 1:1,
-gratuita. É na sessão que você diagnostica e diz qual dos três é o caminho dela.
+### O dado que costura a semana
 
-Isso resolve a objeção de preço de graça: quem acha R$ 5.000 fora de hora tem a consultoria
-de R$ 997 na mesma conversa. Você não perde a lead, você a coloca no degrau certo.
+De hoje até 31/12 faltam **116 dias — 16 semanas.** Não é "o ano acabou", é "sobrou um
+trimestre". E o Programa de 3 meses, começando agora, **fecha dentro de 2026.** Urgência
+verdadeira, sem data de corte inventada.
 
-> ⚠️ **Parcelamento.** Você não me disse como parcela os novos valores, então eu não coloquei
-> parcela em lugar nenhum — só o valor cheio. Me passa as condições e eu insiro nos Stories
-> de quinta e no post fixado.
+### Pendências suas
 
-> ⚠️ **O encontro presencial.** O contrato antigo tinha 1 presencial por mês. Você não citou
-> isso agora, então eu tirei de todo o conteúdo. Se ainda existe, me fala que eu recoloco —
-> é um diferencial forte e vale estar no carrossel de terça.
-
-> ⚠️ **Como ela agenda.** Escrevi tudo com "me chama no direct com a palavra SESSÃO", porque
-> não depende de ferramenta nenhuma. Se você tem link de agendamento, troque — é menos
-> fricção e você não perde ninguém na caixa de mensagens.
-
-> ⚠️ **Vagas.** Usei **5 sessões nesta semana** — é o que cabe na sua agenda, e é verdade.
-> Como você decidiu manter as vagas rolando, sem data de corte, eu **tirei toda promessa de
-> fechamento** ("depois disso só daqui a algumas semanas"). Escassez que não se cumpre queima
-> a confiança na segunda vez que você usa. O número de sessões da semana já basta.
+- **Parcelamento** — você não passou as condições dos novos valores, então só aparece valor cheio.
+- **Encontro presencial mensal** — estava no contrato antigo, não na oferta nova. Tirei de tudo. Se ainda existe, me fala.
+- **Agendamento** — escrevi "chama na direct com a palavra SESSÃO". Se tem link, troque.
+- **Vagas** — usei 5 sessões nesta semana, sem data de corte.
 
 ---
 ---
 
-# DOMINGO 06/09 — CONEXÃO
+# DOMINGO 06/09 · CONEXÃO
+## Carrossel leve — o sábado que você não postou
 
-**Pilar:** Conexão · **Objetivo do dia:** leve. Zero venda, zero CTA de negócio.
+### Já foi ao ar hoje
 
-## O que você já postou hoje (e por que funcionou)
+1. Story do sábado em família e do domingo em que você escolheu trabalhar um pouco.
+2. Enquete: *metas de 2026* — Estou concluindo · Não estou conseguindo · Acho que não dá mais tempo.
 
-1. **Story 1** — você indo trabalhar um pouco hoje, porque ontem foi cinema com a família e você não postou nada.
-2. **Story 2** — enquete: *"como andam as suas metas de 2026?"* com as opções **Estou concluindo · Não estou conseguindo · Acho que não dá mais tempo.**
+## ⚠️ Correção de rota — a enquete não está sendo votada
 
-Essa enquete é a melhor coisa que aconteceu na semana, e ela não estava no plano. Ela
-**segmenta a sua audiência por dor** sem você ter que perguntar nada constrangedor. Quem
-marcou "não estou conseguindo" e "acho que não dá mais tempo" é exatamente o perfil do
-Programa de Aceleração — e agora você sabe quantas são.
+**Não apague nada.** Diagnóstico primeiro, em 10 segundos: **olhe as visualizações do story.**
 
-**Guarde o print do resultado.** Ele é prova social e argumento de venda a semana inteira.
+- **Views normais, votos baixos** → o problema são as opções.
+- **Views também baixas** → é só horário. Domingo de manhã é o pior slot da semana pra esse público: elas estão com a família, não no Instagram.
 
-### O dado que amarra tudo
+### O problema provável: duas das três opções exigem confessar fracasso
 
-De hoje até 31/12 faltam **116 dias — 16 semanas.** Isso muda o enquadramento do ano inteiro:
-não é "o ano acabou", é "sobrou um trimestre". E o Programa de Aceleração de 3 meses,
-começando agora, **fecha dentro de 2026.** Esse é o fio que costura a semana toda, e ele é
-verdade — não é urgência inventada.
+No Instagram ela sabe que **você vê quem votou o quê.** Admitir "não estou conseguindo" pra uma
+mentora que ela admira tem custo social. Então ela lê, se identifica, e não vota — o pior dos
+mundos, porque ela sentiu e você não ficou sabendo.
 
-## FEED — postagem leve
+### O que fazer hoje, entre 19h e 21h
 
-**Formato:** Carrossel de 3–4 fotos de ontem (cinema, casa, família) — ou 1 foto única.
-Do celular, sem edição. É domingo.
-**Tema:** o sábado que você não postou e o domingo em que você escolheu trabalhar.
+Esse é o horário mais forte da semana pra esse público — é quando bate a ansiedade de domingo à
+noite e a cabeça já está na segunda-feira. Rode a sequência nova ali, não agora.
 
-### Roteiro (foto a foto)
+**Enquete nova, com 2 opções e custo social zero:**
 
-1. O cinema, ou a saída pro cinema. Pode ser a pipoca, a fila, o ingresso.
-2. A casa depois — sofá, cozinha, bagunça boa.
-3. Uma foto sua de hoje, trabalhando. Sem pose de escritório: o real.
-4. *(opcional)* O celular ou a agenda, fechados.
+> **"Você já tinha parado pra pensar que faltam 16 semanas pra fechar 2026?"**
+>
+> · Já pensei · Acabei de parar
 
-### Legenda pronta
+Ninguém precisa admitir nada. As duas respostas são dignas, uma delas é quase piada — e o número
+faz o trabalho sozinho. Enquete serve pra **engajamento e choque**, não pra diagnóstico.
 
-> Ontem eu não postei nada. Fui no cinema com a minha família e depois a gente ficou em casa fazendo bobagem até tarde.
+**O diagnóstico vem depois, na caixinha** — que é o formato certo pra isso, porque parece anônimo
+e é aberto:
+
+> "Qual meta de 2026 travou aí? Me conta que eu vou respondendo aqui a semana toda."
+
+### A regra que vale pra sempre
+
+**Enquete = pergunta que qualquer pessoa responde sem se expor.**
+**Caixinha = pergunta que dói.**
+
+Quando você inverte os dois, o engajamento morre.
+
+*(Guarde o print do que a enquete nova der. Ele é argumento a semana toda.)*
+
+### 🎣 GANCHO — primeira linha da legenda
+
+> **"Ontem eu não postei nada. E não foi por falta de conteúdo."**
+
+### Roteiro — carrossel de 3 a 4 fotos do celular, sem edição
+
+| # | O que aparece |
+|:-:|---|
+| 1 | O cinema, ou a saída pro cinema — pipoca, fila, ingresso |
+| 2 | A casa depois — sofá, cozinha, bagunça boa |
+| 3 | Você hoje, trabalhando. Sem pose de escritório |
+| 4 | *(opcional)* O celular ou a agenda, fechados |
+
+### Legenda
+
+> Ontem eu não postei nada. E não foi por falta de conteúdo.
+>
+> Fui no cinema com a minha família e depois a gente ficou em casa fazendo bobagem até tarde.
 >
 > Hoje eu vim trabalhar um pouco. Domingo, sim.
 >
@@ -135,73 +139,57 @@ Do celular, sem edição. É domingo.
 >
 > Semana que vem eu falo disso aqui.
 
-### Stories — continuando a sequência (do 3 ao 7)
+### Stories — continuando do 3 ao 7
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
-| 3 | Resultado parcial | Print da própria enquete | "Olha o resultado até agora. Repara onde está a maioria — não é em 'estou concluindo'." |
-| 4 | Resposta · 20s | Você falando, pra quem marcou *não estou conseguindo* | "'Não estou conseguindo' quase nunca é falta de meta. É excesso de coisa entre você e ela." |
-| 5 | Resposta · 25s | Você falando, pra quem marcou *acho que não dá mais tempo* — **este é o story mais importante do dia** | "Faltam 16 semanas pra fechar 2026. Dá tempo de fazer uma coisa bem feita. Não dá pra fazer as cinco que você listou em janeiro." |
-| 6 | Caixinha | Sticker de pergunta — **isso vira a sua pauta da semana** | "Qual meta de 2026 travou aí? Me conta que eu vou respondendo aqui essa semana." |
-| 7 | Ponte pro feed | Print do carrossel + sticker de link | "Postei o meu sábado ali no feed. É sobre exatamente isso." |
+| 3 | Retomada · 15s | Você falando, leve — **poste 19h–21h** | "Voltei. Ninguém votou na enquete de manhã e eu sei por quê: eu perguntei uma coisa difícil num domingo de manhã. Vou perguntar de novo, mais fácil." |
+| 4 | **Enquete nova** | 2 opções, custo social zero | "Você já tinha parado pra pensar que faltam 16 semanas pra fechar 2026?" · Já pensei · Acabei de parar |
+| 5 | O choque · 25s | Você falando — **o mais importante do dia** | "Dezesseis semanas. Dá tempo de fazer uma coisa bem feita. Não dá pra fazer as cinco que você listou em janeiro." |
+| 6 | Caixinha | Aqui sim vem a pergunta que dói — **vira a sua pauta** | "Qual meta de 2026 travou aí? Me conta que eu vou respondendo aqui a semana toda." |
+| 7 | Ponte | Print do carrossel + link | "Postei o meu sábado ali no feed. É sobre exatamente isso." |
 
-> **Não venda hoje.** Nenhuma menção a sessão, vaga ou valor. Você acabou de fazer a pergunta
-> certa — deixa as respostas chegarem. A oferta entra na quarta, e vai entrar muito mais forte
-> por causa do que você colheu hoje.
+> **Não venda hoje.** Nenhuma menção a sessão, vaga ou valor. A oferta entra na quarta, e vai
+> entrar mais forte por causa do que você colher hoje.
 
 ---
 ---
 
-# SEGUNDA 07/09 — ISCA
+# SEGUNDA 07/09 · ISCA
+## Reel de 42s — a pergunta que desmonta a defesa
 
-**Pilar:** Isca · **Objetivo do dia:** capturar contato de quem se identificou.
-**Contexto:** feriado da Independência — o alcance de feed cai. **Publique o Reel às 19h30**,
-não de manhã. Os Stories rodam normal, e é neles que o desafio está vivo.
-**Isca:** o **Mapa da Sobrecarga** — a planilha que você usa na Fase 1 do método.
+**Feriado.** Publique **às 19h30**, não de manhã.
+**Isca:** o Mapa da Sobrecarga, pra quem comentar **MAPA**.
 
-## FEED
+### 🎣 GANCHO — 0 a 6s
 
-**Formato:** Reel de 30–40s, gravado no celular. Simples ganha de bonito.
-**Tema:** a pergunta que corta a semana pela metade.
+Olhando na câmera. Sem "oi gente". Duas frases, com uma pausa entre elas.
 
-### Roteiro (cena a cena)
+> **"Se eu abrir a sua agenda dessa semana agora, eu acho pelo menos uma coisa que você faz há mais de um ano sem precisar."**
+>
+> *(pausa)*
+>
+> **"E você vai defender ela pra mim. Todo mundo defende."**
 
-1. **0–6s — GANCHO.** Olhando na câmera, sem introdução nenhuma, sem "oi gente". Duas frases, com uma pausa curta entre elas:
-   > "Se eu abrir a sua agenda dessa semana agora, eu acho pelo menos uma coisa que você faz há mais de um ano sem precisar."
-   >
-   > *(pausa)* "E você vai defender ela pra mim. Todo mundo defende."
-2. **6–14s:** "A pergunta que desmonta essa defesa leva dez segundos." Ela entra na tela e falada: **"Essa tarefa me aproxima da minha meta dos próximos 90 dias?"**
-3. **14–27s:** Aplique ao vivo. Abra sua agenda (pode ser papel), passe por 3 tarefas reais e responda sim ou não em voz alta. Sem justificar.
-4. **27–36s:** A regra de decisão: tudo que for "não" vai pra uma de três pilhas — **eliminar, delegar ou renegociar.** Não existe quarta pilha. "Deixar como está" é escolher continuar cansada.
-5. **36–42s — CTA:** "Comenta MAPA que eu te mando a planilha completa que eu uso pra fazer esse corte com as minhas mentoradas."
+### Roteiro
 
-### Por que este gancho e não o outro
+**6–14s · A pergunta**
+- **Fala:** "A pergunta que desmonta essa defesa leva dez segundos."
+- **Tela:** *Essa tarefa me aproxima da minha meta dos próximos 90 dias?*
 
-O gancho antigo ("tem uma pergunta que corta a sua semana pela metade") **prometia** valor e
-adiava o soco. Quem está rolando o feed não espera a promessa se cumprir.
+**14–27s · Aplica ao vivo**
+- **Faz:** abre a sua agenda da semana na frente da câmera (pode ser papel).
+- **Faz:** passa por 3 tarefas reais, uma por uma.
+- **Fala:** responde sim ou não em voz alta. Sem justificar, sem "depende".
 
-Este faz três coisas nos primeiros 6 segundos:
+**27–36s · A regra**
+- **Tela:** *Eliminar · Delegar · Renegociar*
+- **Fala:** "Tudo que for não vai pra uma dessas três. Não existe quarta pilha. 'Deixar como está' é escolher continuar cansada."
 
-- **Aposta contra ela.** "Eu acho pelo menos uma coisa" é uma afirmação sobre a vida dela, não sobre o seu conteúdo. Ela precisa conferir se você acertou.
-- **Faz ela abrir a agenda na cabeça** antes de você pedir — que é exatamente o que o Reel manda fazer aos 14 segundos.
-- **A segunda frase corta a fuga.** "Você vai defender ela pra mim, todo mundo defende" antecipa a reação e transforma a discordância em prova de que você tem razão. Quem ia parar de assistir pra discordar, fica pra provar que é exceção.
+**36–42s · CTA**
+- **Fala:** "Comenta MAPA que eu te mando a planilha completa que eu uso com as minhas mentoradas."
 
-E é verdade: foi o que aconteceu no desafio. Quase todas cortaram algo que carregavam há mais
-de um ano.
-
-### Banco de hooks — se quiser trocar
-
-| Gancho | Por que funciona |
-|---|---|
-| "Eu apaguei quatro coisas da minha semana com uma pergunta só. Nenhuma fez falta." | Confissão + número específico. O "nenhuma fez falta" é a virada que prende. |
-| "Ontem eu perguntei das metas de 2026 e a maioria de vocês não marcou 'estou concluindo'. Faltam 16 semanas. O problema não é o tempo que sobrou." | **O mais forte desta semana** — usa o dado real da sua enquete. Só use se o resultado sair como você espera. |
-| "Você não precisa de mais uma hora no dia. Você precisa tirar três coisas da semana — e eu vou te mostrar quais." | Contradiz a crença antes de entregar. Bom pra quem já te segue há tempo. |
-
-> **Regra pros próximos ganchos:** os 3 primeiros segundos não podem apresentar o assunto —
-> têm que fazer uma afirmação sobre a vida de quem assiste. "Vou falar sobre X" perde.
-> "Você faz X" ganha.
-
-### Legenda pronta
+### Legenda
 
 > Se eu abrir a sua agenda dessa semana, eu acho pelo menos uma coisa que você faz há mais de um ano sem precisar.
 >
@@ -225,32 +213,32 @@ de um ano.
 >
 > Comenta MAPA que eu te mando a planilha completa.
 
-### Stories de segunda (6)
+### Stories
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
-| 1 | Abertura | Você falando, 15s — **puxando a enquete de ontem** | "Ontem eu perguntei das metas de 2026 e a maioria de vocês não marcou 'estou concluindo'. Então hoje eu vou te dar a primeira coisa que eu faria no seu lugar." |
+| 1 | Abertura · 15s | Puxa a enquete de ontem | "Ontem eu perguntei se vocês tinham parado pra pensar que faltam 16 semanas pra fechar 2026. Hoje eu vou te dar a primeira coisa que eu faria no seu lugar." |
 | 2 | Prova social | Print de prova de participante, sem identificação | "Isso aqui é uma empresária percebendo que o que mais consome a semana dela não sustenta o negócio dela." |
-| 3 | Ensino | Você falando, 15s | "Eu vou te dar de graça a pergunta que abre esse buraco. É a mesma do post de hoje." |
+| 3 | Ensino · 15s | Você falando | "Eu vou te dar de graça a pergunta que abre esse buraco. É a mesma do post de hoje." |
 | 4 | Ensino | Texto na tela, fundo limpo | "Essa tarefa me aproxima da minha meta dos próximos 90 dias? Sim ou não. Sem 'depende'." |
 | 5 | Captura | Print do Reel + sticker de link | "Postei agora. Comenta MAPA no post que eu te mando a planilha." |
 | 6 | Caixinha | Sticker de pergunta | "Qual foi a última coisa que você tirou da sua semana? Eu respondo uma por uma." |
 
-### Sequência de direct — quem comentar MAPA
+### Direct — quem comentar MAPA
 
-Não entregue a planilha e vá embora. É aqui que o lead vira sessão.
+Não entregue a planilha e vá embora. É aqui que o lead vira sessão. Salve em respostas rápidas.
 
-**Mensagem 1 — na hora (entrega):**
+**1 · na hora**
 > Oi! Aqui está o Mapa da Sobrecarga. [anexo/link]
 >
 > Ele tem três abas: o que você faz, quanto isso te custa de energia, e o que fazer com cada coisa. Preenche a primeira aba hoje, mesmo que seja incompleta — é ela que abre o resto.
 
-**Mensagem 2 — 24h depois (abertura):**
+**2 · 24h depois**
 > Conseguiu abrir o Mapa? Me conta uma coisa: qual foi o item que te surpreendeu?
 >
 > Pergunto porque quase sempre tem um. E normalmente é o que a pessoa carrega há mais tempo.
 
-**Mensagem 3 — quando ela responder (convite):**
+**3 · quando ela responder**
 > Isso que você descreveu é exatamente o que eu destravo numa Sessão Estratégica.
 >
 > É uma conversa de 1 hora, eu e você, onde a gente olha o seu negócio e identifica o que está consumindo a sua energia sem sustentar o seu lucro. Você sai com clareza do próximo passo, comprando ou não comprando nada de mim.
@@ -260,35 +248,37 @@ Não entregue a planilha e vá embora. É aqui que o lead vira sessão.
 ---
 ---
 
-# TERÇA 08/09 — AUTORIDADE
+# TERÇA 08/09 · AUTORIDADE
+## Carrossel de 8 lâminas — o caminho completo de uma mentorada
 
-**Pilar:** Autoridade · **Objetivo do dia:** provar que o método funciona e revelar que
-existe um programa estruturado por trás. **Primeira menção à Sessão Estratégica no feed.**
-**Contexto:** último dia do desafio.
+Último dia do desafio. **Primeira menção à Sessão Estratégica no feed.**
 
-## FEED
+### 🎣 GANCHO — lâmina de capa
 
-**Formato:** Carrossel de 8 lâminas.
-**Tema:** o caminho completo de uma mentorada — e o que existe entre o diagnóstico e o resultado.
+> **"Ela me procurou pra saber como fechar a empresa. Não pra saber como crescer."**
 
-### Roteiro (lâmina a lâmina)
+### Roteiro — lâmina a lâmina
 
-1. **Capa:** "Ela faturava bem e queria fechar as portas. Seis meses depois, o negócio roda sem ela três dias por semana." Fundo limpo, sem foto de rosto.
-2. **Onde ela estava:** a rotina, não o faturamento. Trabalhava sábado, respondia cliente às 23h, dois anos sem férias de verdade.
-3. **O diagnóstico (Fase 1):** o que o Mapa da Sobrecarga revelou. Nomeie **uma** descoberta específica e contraintuitiva — o serviço que mais consumia a semana era o que menos sustentava o negócio.
-4. **A decisão (Fase 2):** o que ficou, o que saiu, o que mudou de formato. Diga o que doeu.
-5. **A estrutura (Fase 3):** o que foi delegado e documentado. Mostre o custo: ela teve que aguentar ver ser feito diferente do jeito dela.
-6. **O patrimônio (Fase 4):** onde ela chegou. Em rotina e em decisão, não em número.
-7. **Como isso acontece:** "Não foi num curso gravado. Foi encontro individual comigo, hotseat todo mês e um grupo de outras empresárias passando pela mesma coisa. Isso é o Programa de Aceleração — tem versão de 3 e de 6 meses."
-8. **Fechamento:** "Antes de entrar, toda mentorada passa por uma Sessão Estratégica. É uma conversa de 1 hora onde a gente olha o seu negócio — e você decide depois."
+| # | Lâmina | O que dizer |
+|:-:|---|---|
+| 1 | Capa | O gancho acima. Fundo limpo, tipografia grande, sem foto de rosto. |
+| 2 | Onde ela estava | A rotina, não o faturamento: trabalhava sábado, respondia cliente às 23h, dois anos sem férias. |
+| 3 | Fase 1 · Diagnóstico | O que o Mapa da Sobrecarga revelou. **Uma** descoberta específica e contraintuitiva. |
+| 4 | Fase 2 · Priorização | O que ficou, o que saiu, o que mudou de formato. Diga o que doeu. |
+| 5 | Fase 3 · Estrutura | O que foi delegado e documentado. Mostre o custo: ela teve que ver ser feito diferente do jeito dela. |
+| 6 | Fase 4 · Patrimônio | Onde ela chegou. Em rotina e em decisão, não em número. |
+| 7 | O formato | "Não foi num curso gravado. Foi encontro individual comigo, hotseat todo mês e um grupo de outras empresárias. É o Programa de Aceleração — tem versão de 3 e de 6 meses." |
+| 8 | Fechamento | "Antes de entrar, toda mentorada passa por uma Sessão Estratégica. Uma hora, eu e você — e você decide depois." |
 
-### Legenda pronta
+### Legenda
 
-> Ela chegou dizendo que ia fechar. Não por falta de cliente — por excesso.
+> Ela me procurou pra saber como fechar a empresa. Não pra saber como crescer.
+>
+> E não era falta de cliente. Era excesso.
 >
 > Faturava. Entregava bem. Respondia mensagem às onze da noite e trabalhava todo sábado. Fazia dois anos que não tirava férias de verdade.
 >
-> A Fase 1 do método é diagnóstico, e o diagnóstico dela mostrou uma coisa que ela não esperava: o serviço que mais consumia a semana era justamente o que menos sustentava o negócio. Ela carregava aquilo por costume, não por estratégia.
+> A Fase 1 do método é diagnóstico, e o dela mostrou uma coisa que ela não esperava: o serviço que mais consumia a semana era justamente o que menos sustentava o negócio. Ela carregava aquilo por costume, não por estratégia.
 >
 > Fase 2 foi decidir o que fica, o que sai e o que muda de formato. Doeu.
 >
@@ -296,49 +286,59 @@ existe um programa estruturado por trás. **Primeira menção à Sessão Estrat�
 >
 > Fase 4 é onde ela está hoje: o negócio roda três dias por semana sem ela dentro.
 >
-> Isso não aconteceu num curso gravado, nem numa virada de chave. Aconteceu em encontro individual comigo, hotseat todo mês e um grupo de outras empresárias passando exatamente pela mesma coisa. É o Programa de Aceleração — tem versão de três e de seis meses, e eu digo qual é a sua depois de olhar o seu negócio.
+> Isso não aconteceu num curso gravado nem numa virada de chave. Aconteceu em encontro individual comigo, hotseat todo mês e um grupo de outras empresárias passando exatamente pela mesma coisa. É o Programa de Aceleração — tem versão de três e de seis meses, e eu digo qual é a sua depois de olhar o seu negócio.
 >
 > E ninguém entra nele sem antes sentar comigo numa Sessão Estratégica — uma hora, eu e você, olhando o seu negócio de verdade.
 >
 > Se você se reconheceu na primeira linha, comenta SESSÃO ou me chama na direct. Eu abri cinco vagas essa semana.
 
-*(Troque os detalhes por uma mentorada real sua. Peça autorização mesmo anonimizando.)*
+*(Use uma mentorada real sua. Peça autorização mesmo anonimizando, e mude o que possa identificá-la.)*
 
-### Stories de terça (6)
+### Stories
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
-| 1 | Encerramento | Você falando, 15s | "Hoje é o último dia do desafio. Amanhã eu conto o que aconteceu — e tem gente que mudou de decisão em uma semana." |
-| 2 | Prova social | Sequência de 2 prints de participantes, sem identificação | "Dia 3 e Dia 5. Sem eu ter dito nada além da pergunta certa." |
-| 3 | Bastidor de entrega | Foto de sessão, tela do Notion da mentorada, ou Mapa preenchido borrado | "Isso aqui é uma sessão do Programa de Aceleração. Uma hora, eu e ela, sem plateia." |
-| 4 | Autoridade | Texto na tela, fundo limpo | "Encontro individual comigo. Hotseat todo mês. Grupo com outras empresárias. 3 ou 6 meses." |
-| 5 | Convite | Você falando, 20s | "Antes de qualquer mentorada entrar, a gente senta pra uma Sessão Estratégica. Uma hora. Sem compromisso de comprar nada." |
-| 6 | CTA | Sticker de link pro carrossel + caixinha | "Carrossel de hoje conta o caminho inteiro. Quem quiser a sessão, escreve SESSÃO aqui." |
+| 1 | Encerramento · 15s | Você falando | "Hoje é o último dia do desafio. Amanhã eu conto o que aconteceu — e tem gente que mudou de decisão em uma semana." |
+| 2 | Prova social | 2 prints de participantes em sequência | "Dia 3 e Dia 5. Sem eu ter dito nada além da pergunta certa." |
+| 3 | Bastidor de entrega | Foto de sessão, ou Mapa preenchido e borrado | "Isso aqui é uma sessão do Programa de Aceleração. Uma hora, eu e ela, sem plateia." |
+| 4 | Autoridade | Texto na tela | "Encontro individual comigo. Hotseat todo mês. Grupo com outras empresárias. 3 ou 6 meses." |
+| 5 | Convite · 20s | Você falando, calma | "Antes de qualquer mentorada entrar, a gente senta pra uma Sessão Estratégica. Uma hora. Sem compromisso de comprar nada." |
+| 6 | CTA | Link pro carrossel + caixinha | "Carrossel de hoje conta o caminho inteiro. Quem quiser a sessão, escreve SESSÃO aqui." |
 
 ---
 ---
 
-# QUARTA 09/09 — OPINIÃO
+# QUARTA 09/09 · OPINIÃO
+## Vídeo falado de 70s — a objeção que mata a sua venda
 
-**Pilar:** Opinião · **Objetivo do dia:** derrubar a objeção número um — *"eu não tenho tempo
-pra fazer uma mentoria agora."* É a objeção que mata a sua venda, e é a mais fácil de virar,
-porque ela é exatamente o sintoma que você trata.
-**Contexto:** resultado do desafio sai hoje.
+Resultado do desafio sai hoje. **Hoje abre as 5 vagas.**
 
-## FEED
+### 🎣 GANCHO — 0 a 8s
 
-**Formato:** Vídeo falado, 50–70s, uma tomada só, olhando pra câmera. Sem corte, sem trilha.
-**Tema:** "não tenho tempo pra mentoria" é o diagnóstico, não o obstáculo.
+Uma tomada só, sem corte, sem trilha. A primeira frase é a fala da sua cliente, não a sua.
 
-### Roteiro (cena a cena)
+> **"'Eu faço isso quando as coisas acalmarem.'"**
+>
+> *(pausa curta)*
+>
+> **"Elas não vão acalmar. Não sozinhas."**
 
-1. **0–6s — sem introdução:** "Toda semana alguém me diz que não tem tempo pra fazer uma mentoria. E eu vou falar uma coisa impopular sobre isso."
-2. **6–22s:** Nomeie a crença: existe a ideia de que primeiro você organiza o negócio, e *depois* busca ajuda. Que mentoria é pra quando as coisas estiverem mais calmas.
-3. **22–42s:** Por que isso não funciona. As coisas não ficam calmas sozinhas. Se o negócio depende de você pra tudo, ele nunca vai te dar folga pra você resolver o fato de que ele depende de você pra tudo. É um círculo que se alimenta.
-4. **42–60s:** A virada: falta de tempo não é o motivo de adiar. É o sintoma exato do problema. Quem diz "não tenho tempo" acabou de descrever o diagnóstico em voz alta.
-5. **60–70s:** Feche com sua posição, firme. Convide pro comentário, não pra venda.
+### Roteiro
 
-### Legenda pronta
+**8–24s · A crença**
+- **Fala:** "A lógica parece boa: primeiro eu organizo, depois eu busco ajuda. Primeiro eu respiro, depois eu penso no longo prazo."
+
+**24–44s · Por que não funciona**
+- **Fala:** "Se o negócio depende de você pra funcionar, ele nunca vai te devolver o tempo que você precisaria pra resolver o fato de que ele depende de você. Você fica presa esperando uma folga que o próprio problema impede de existir."
+
+**44–62s · A virada**
+- **Fala:** "Falta de tempo não é o motivo de adiar. É o diagnóstico. Quando você me diz que não tem tempo, você acabou de descrever com precisão exatamente aquilo que eu trato."
+
+**62–70s · Fecho**
+- **Fala:** "Foi por isso que eu criei um desafio de sete dias em vez de um curso de quarenta horas. Terminou ontem. Hoje eu divulgo o resultado nos stories."
+- **Sem CTA de venda.** Convide pro comentário.
+
+### Legenda
 
 > "Eu faço mentoria quando as coisas acalmarem."
 >
@@ -356,45 +356,54 @@ porque ela é exatamente o sintoma que você trata.
 >
 > Discorda? Comenta. Eu leio tudo e respondo.
 
-### Stories de quarta (7) — **este é o dia que abre as vagas**
+### Stories — dia de abrir as vagas
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
 | 1 | Resultado | Card com as três primeiras colocadas | "Resultado do Desafio Lucro Anti-Exaustão. Primeiro, segundo e terceiro lugar." |
-| 2 | Prova social | Repost dos stories em que te marcaram durante o desafio | "Sete dias. Isso aqui é o que aconteceu." |
-| 3 | Ponte | Você falando, 20s | "Muita gente me perguntou o que vem depois do desafio. Vem isso aqui." |
-| 4 | Objeção | Texto na tela, fundo limpo | "'Faço quando acalmar.' Não acalma. Se dependesse de acalmar, você já teria feito." |
-| 5 | Oferta | Você falando, 25s | "Eu abri 5 Sessões Estratégicas essa semana. Uma hora, eu e você, olhando o seu negócio. Você sai com clareza, comprando ou não." |
+| 2 | Prova social | Repost dos stories em que te marcaram | "Sete dias. Isso aqui é o que aconteceu." |
+| 3 | Ponte · 20s | Você falando | "Muita gente me perguntou o que vem depois do desafio. Vem isso aqui." |
+| 4 | Objeção | Texto na tela | "'Faço quando acalmar.' Não acalma. Se dependesse de acalmar, você já teria feito." |
+| 5 | Oferta · 25s | Você falando, sem pressa | "Eu abri 5 Sessões Estratégicas essa semana. Uma hora, eu e você, olhando o seu negócio. Você sai com clareza, comprando ou não." |
 | 6 | Transparência | Texto na tela | "O que a sessão NÃO é: não é aula, não é call de vendas de 15 minutos, não é gratuita porque é rasa. É uma hora inteira." |
-| 7 | CTA | Sticker de link ou caixinha | "Escreve SESSÃO aqui. Eu respondo hoje ainda." |
+| 7 | CTA | Link ou caixinha | "Escreve SESSÃO aqui. Eu respondo hoje ainda." |
 
 ---
 ---
 
-# QUINTA 10/09 — CONEXÃO (reforço)
+# QUINTA 10/09 · CONEXÃO
+## Reel bastidor de 50s — o dia mais forte da semana
 
-**Pilar:** Conexão · **Objetivo do dia:** converter. É o dia mais forte da semana.
-A lead já viu você por dentro (domingo), recebeu valor (segunda), viu prova (terça)
-e teve a objeção derrubada (quarta). Hoje ela decide.
+Ela já viu você por dentro (dom), recebeu valor (seg), viu prova (ter) e teve a objeção
+derrubada (qua). Hoje ela decide.
 
-## FEED
+### 🎣 GANCHO — 0 a 7s
 
-**Formato:** Reel bastidor, 40–50s, no ambiente real — carro, cozinha, escritório bagunçado.
-Nada de estúdio. O contraste entre a conversa séria e o cenário real é o que faz funcionar.
-**Tema:** a decisão que fez o seu negócio parar de te consumir — e por que você faz outra
-mulher tomar essa decisão sentada na sua frente.
+No ambiente real: carro, cozinha, escritório bagunçado. O contraste entre a conversa séria e
+o cenário real é o que faz funcionar.
 
-### Roteiro (cena a cena)
+> **"Eu disse não pra um cliente num mês em que eu não tinha como dizer não."**
 
-1. **0–6s:** "Teve um dia em que eu recusei um cliente que eu precisava do dinheiro. E foi a melhor decisão que eu tomei no negócio."
-2. **6–22s:** Conte a história de verdade. Qual cliente, por que você recusou, o que você sentiu na hora. Seja específica e admita o medo.
-3. **22–35s:** O que aconteceu depois. Não romantize — diga o que foi difícil também.
-4. **35–45s:** A ponte: "Eu levei anos pra conseguir tomar essa decisão sozinha. Hoje eu faço mulher tomar essa decisão em uma hora, sentada na minha frente."
-5. **45–50s — CTA direto:** "Cinco Sessões Estratégicas essa semana. Escreve SESSÃO na direct."
+### Roteiro
 
-### Legenda pronta
+**7–24s · A história**
+- **Fala:** qual cliente era, por que você recusou, o que sentiu na hora. Específica — e admita o medo.
+- **Fala:** "Eu recusei com medo, não com convicção. Fiquei três dias achando que tinha feito besteira."
 
-> Teve um dia em que eu recusei um cliente que ia me pagar bem. E eu precisava daquele dinheiro.
+**24–36s · O que aconteceu depois**
+- **Fala:** não romantize. Diga o que foi difícil também, e depois o que aquele espaço virou.
+
+**36–46s · A ponte**
+- **Fala:** "Levei anos pra conseguir fazer essa conta sozinha. Hoje eu faço mulher fazer essa conta em uma hora, sentada na minha frente."
+
+**46–50s · CTA direto**
+- **Fala:** "Cinco Sessões Estratégicas essa semana. Escreve SESSÃO na direct."
+
+### Legenda
+
+> Eu disse não pra um cliente num mês em que eu não tinha como dizer não.
+>
+> Ele ia me pagar bem. E eu precisava daquele dinheiro.
 >
 > A conta na minha cabeça na hora foi essa: se eu aceitar, eu volto a trabalhar sábado. Volto a responder às onze da noite. Volto a ser a mulher que eu passei dois anos deixando de ser.
 >
@@ -414,49 +423,47 @@ mulher tomar essa decisão sentada na sua frente.
 >
 > Cinco vagas de sessão essa semana. Escreve SESSÃO na direct.
 
-### Stories de quinta (7) — **dia de conversão**
+### Stories — dia de conversão
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
-| 1 | Abertura | Você falando, 15s | "Hoje eu vou falar de dinheiro e de vaga, sem rodeio. Se não for pra você, pula." |
-| 2 | História | Trecho do Reel | "Eu recusei um cliente que ia me pagar bem. Contei a história inteira no post de hoje." |
-| 3 | Transparência | Três cards em sequência, fundo limpo | Card 1: "Consultoria de 1 dia · 3h + retorno em 30 dias · R$997" / Card 2: "Aceleração 3 meses · 2 individuais + grupo + hotseat · R$3.500" / Card 3: "Aceleração 6 meses · 6 individuais + hotseat mensal + grupo · R$5.000" |
-| 4 | Objeção | Você falando, 25s | "'É caro?' Tem porta de R$997 e tem porta de R$5.000. O que muda não é o quanto você paga, é quanto tempo eu fico do seu lado. Na sessão eu te digo qual é a sua." |
+| 1 | Abertura · 15s | Você falando, direta | "Hoje eu vou falar de dinheiro e de vaga, sem rodeio. Se não for pra você, pula." |
+| 2 | História | Trecho do Reel | "Eu disse não pra um cliente num mês em que eu não podia. Contei a história inteira no post." |
+| 3 | Transparência | **3 cards em sequência**, um valor em cada | Card 1: "Consultoria de 1 dia · 3h + retorno em 30 dias · R$997" · Card 2: "Aceleração 3 meses · 2 individuais + grupo + hotseat · R$3.500" · Card 3: "Aceleração 6 meses · 6 individuais + hotseat mensal + grupo · R$5.000" |
+| 4 | Objeção · 25s | Você falando, sem defensividade | "'É caro?' Tem porta de R$997 e tem porta de R$5.000. O que muda não é o quanto você paga, é quanto tempo eu fico do seu lado. Na sessão eu te digo qual é a sua." |
 | 5 | Prova social | Print de mentorada, com autorização | "Ela entrou achando que precisava de mais disciplina. Precisava de menos coisa." |
-| 6 | Escassez real | Contador simples, feito por você | "5 sessões. Já foram [X]. Restam [Y]." |
-| 7 | CTA final | Sticker de link ou caixinha | "SESSÃO na direct. Eu respondo hoje." |
+| 6 | Escassez | Contador simples | "5 sessões. Já foram [X]. Restam [Y]." |
+| 7 | CTA final | Link ou caixinha | "SESSÃO na direct. Eu respondo hoje." |
 
 ---
 ---
 
-# SEXTA 11/09 — AUTORIDADE
+# SEXTA 11/09 · AUTORIDADE
+## Carrossel de 6 lâminas — a sessão por dentro
 
-**Pilar:** Autoridade · **Objetivo do dia:** tirar o último obstáculo entre a lead e a direct.
-**Por que este post e não outro:** na quinta você colocou a oferta na mesa. Quem não chamou
-até agora, na maioria das vezes, não é porque não quer — é porque não sabe o que vai acontecer
-se chamar. Tem medo de cair numa call de vendas disfarçada de conversa. Sexta você abre a
-caixa preta e esse medo acaba.
+Quem não chamou até agora quase nunca é porque não quer. É porque não sabe o que vai
+acontecer se chamar. Hoje esse medo acaba.
 
-## FEED
+### 🎣 GANCHO — lâmina de capa
 
-**Formato:** Carrossel de 6 lâminas. Carrossel é melhor que Reel aqui porque as pessoas salvam
-— e quem salva volta pra chamar depois.
-**Tema:** o que acontece dentro da Sessão Estratégica, a hora inteira, sem mistério.
+> **"Você não me chama porque acha que vai cair numa call de vendas. Então olha o que realmente acontece."**
 
-### Roteiro (lâmina a lâmina)
+### Roteiro — lâmina a lâmina
 
-1. **Capa:** "O que acontece na Sessão Estratégica. A hora inteira, sem mistério." Fundo limpo, tipografia grande.
-2. **Antes da conversa:** "Você me manda três coisas: o que você faz, como é a sua semana hoje, e o que te deixou mais cansada nos últimos 30 dias. Só isso. Sem formulário de 40 perguntas."
-3. **Primeiros 15 minutos — eu escuto:** "Você me conta a sua rotina, não o seu faturamento. Eu não pergunto quanto você ganha, pergunto onde vai a sua energia."
-4. **20 minutos do meio — eu mapeio:** "A gente separa o que sustenta o seu lucro do que só consome a sua semana. Quase sempre aparece uma coisa que você carrega há mais de um ano sem perceber."
-5. **Últimos 20 minutos — você decide:** "Você sai com três decisões escritas. Não com um resumo bonito: com três coisas pra fazer na segunda-feira."
-6. **O final:** "No fim eu digo se eu sou o caminho pra você — e às vezes eu digo que não sou. Você sai com as três decisões de qualquer jeito." + CTA.
+| # | Lâmina | O que dizer |
+|:-:|---|---|
+| 1 | Capa | O gancho acima. Fundo limpo, tipografia grande. |
+| 2 | Antes | "Você me manda três coisas: o que você faz, como é a sua semana hoje, e o que te deixou mais cansada nos últimos 30 dias. Sem formulário de 40 perguntas." |
+| 3 | Primeiros 15 min | "Eu só escuto. Você me conta a sua rotina, não o seu faturamento. Eu não pergunto quanto você ganha, pergunto pra onde vai a sua energia." |
+| 4 | 20 min do meio | "A gente separa o que sustenta o seu lucro do que só consome a sua semana. Quase sempre aparece uma coisa que você carrega há mais de um ano sem perceber." |
+| 5 | Últimos 20 min | "Você sai com três decisões escritas. Não um resumo bonito: três coisas pra fazer na segunda-feira." |
+| 6 | O final — **é esta que converte** | "No fim eu digo se eu sou o caminho pra você. Às vezes eu digo que não sou. Você sai com as três decisões de qualquer jeito." + CTA |
 
-### Legenda pronta
+### Legenda
 
-> Muita gente não me chama porque acha que vai cair numa call de vendas disfarçada de conversa.
+> Você não me chama porque acha que vai cair numa call de vendas disfarçada de conversa.
 >
-> Então eu vou abrir a caixa preta. É isso que acontece na Sessão Estratégica:
+> Então olha o que realmente acontece na Sessão Estratégica:
 >
 > Antes, você me manda três coisas. O que você faz, como é a sua semana hoje, e o que te deixou mais cansada nos últimos trinta dias. Sem formulário de quarenta perguntas.
 >
@@ -472,65 +479,67 @@ caixa preta e esse medo acaba.
 >
 > Das cinco sessões dessa semana ainda sobra vaga. Escreve SESSÃO na direct.
 
-### Stories de sexta (5)
+### Stories
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
-| 1 | Abertura | Você falando, 15s | "Hoje eu vou abrir a caixa preta: o que acontece na Sessão Estratégica, minuto a minuto." |
-| 2 | Ensino | Texto na tela, fundo limpo | "Eu não pergunto quanto você ganha. Eu pergunto pra onde vai a sua energia." |
-| 3 | Confiança | Você falando, 20s — **este é o story que converte** | "Já aconteceu de eu terminar uma sessão dizendo que não era comigo. A mulher saiu com as três decisões do mesmo jeito." |
-| 4 | Escassez honesta | Texto na tela | "Das 5 sessões dessa semana, sobrou [X]. Semana que vem eu abro outras 5 — mas essa agenda já está de pé." |
-| 5 | Encerramento | Você falando, 10s | "Vou desligar. Volto domingo. Quem quiser a vaga que sobrou, escreve que eu vejo amanhã." |
+| 1 | Abertura · 15s | Você falando | "Hoje eu vou abrir a caixa preta: o que acontece na Sessão Estratégica, minuto a minuto." |
+| 2 | Ensino | Texto na tela | "Eu não pergunto quanto você ganha. Eu pergunto pra onde vai a sua energia." |
+| 3 | Confiança · 20s | **É este que converte** — sem defensividade nenhuma | "Já aconteceu de eu terminar uma sessão dizendo que não era comigo. A mulher saiu com as três decisões do mesmo jeito." |
+| 4 | Escassez | Texto na tela | "Das 5 sessões dessa semana, sobrou [X]. Semana que vem eu abro outras 5 — mas essa agenda já está de pé." |
+| 5 | Encerramento · 10s | Você falando, leve | "Vou desligar. Volto domingo. Quem quiser a vaga que sobrou, escreve que eu vejo amanhã." |
 
 ---
 ---
 
-# SÁBADO 12/09 — OFF
+# SÁBADO 12/09 · OFF
 
-Sem feed. É o único dia de descanso que sobrou nesta semana — proteja ele.
-Você não pode vender descanso e postar todos os dias; a incoerência aparece e custa mais caro
-que o alcance que você ganha.
-
-### Stories de sábado (2) — presença sem trabalho
+Sem feed. É o único descanso da semana — proteja. Você não pode vender descanso e postar
+todos os dias; a incoerência aparece e custa mais que o alcance que você ganha.
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
 | 1 | Repescagem | Recompartilhe o carrossel de terça | "Quem chegou essa semana ainda não viu isso." |
-| 2 | Pessoal | Qualquer coisa do seu sábado | Sem texto de venda. Nada. |
+| 2 | Pessoal | Qualquer coisa do seu sábado | Nenhum texto de venda. |
 
 **Banco de conteúdo:** se sobrar 20 minutos, grave 2 vídeos extras e guarde.
-É o que salva a semana corrida.
 
 ---
 ---
 
-# DOMINGO 13/09 — CONEXÃO
+# DOMINGO 13/09 · CONEXÃO
+## Reel falado de 60s — fecha o ciclo e abre o próximo
 
-**Pilar:** Conexão · **Objetivo do dia:** fechar o ciclo e abrir a roda de novo, leve.
-**Por que este é o post certo pra hoje:** você passou a semana falando. Hoje você conta o que
-**ouviu.** É conexão de verdade, é prova social sem parecer venda, e dá pauta pra semana toda.
+Você passou a semana falando. Hoje você conta o que **ouviu**. Sem CTA duro — a conversão
+foi feita de quarta a sexta.
 
-> Sem CTA duro. Nada de "últimas vagas". O trabalho de conversão foi feito de quarta a sexta —
-> domingo é o dia que faz a próxima semana existir.
+### 🎣 GANCHO — 0 a 10s
 
-## FEED
+Uma tomada, sem produção. A surpresa entra no gancho, não depois dele.
 
-**Formato:** Reel falado, 45–60s, uma tomada. Domingo não é dia de produção.
-**Tema:** a frase que se repetiu em todas as conversas da semana.
-
-### Roteiro (cena a cena)
-
-1. **0–6s — gancho:** "Essa semana eu sentei com [número] empresárias diferentes. Todas disseram alguma versão da mesma frase."
-2. **6–20s:** Diga a frase. **"Eu sei o que eu preciso fazer. Eu só não consigo fazer."** Deixe respirar antes de continuar.
-3. **20–40s:** Por que isso se repete. Não é falta de informação — nenhuma delas era desinformada. É que quando você é a única pessoa que sustenta tudo, não sobra cabeça pra executar o que você já sabe. Saber e conseguir são coisas diferentes.
-4. **40–55s:** O que muda isso: não é mais um curso. É alguém olhando de fora e decidindo junto com você, porque de dentro você não enxerga.
-5. **55–60s:** Feche leve. "Semana nova começa amanhã. Boa semana."
-
-### Legenda pronta
-
-> Essa semana eu sentei com empresárias diferentes, em negócios diferentes, com problemas que pareciam não ter nada a ver um com o outro.
+> **"Cinco empresárias diferentes. Cinco negócios diferentes. E a mesma frase, em todas as conversas:"**
 >
-> Todas disseram alguma versão da mesma frase:
+> *(pausa)*
+>
+> **"'Eu sei o que eu preciso fazer. Eu só não consigo fazer.'"**
+
+### Roteiro
+
+**10–26s · Por que isso se repete**
+- **Fala:** "Nenhuma delas era desinformada. Nenhuma precisava de mais um curso, mais um livro, mais uma newsletter."
+
+**26–44s · A explicação**
+- **Fala:** "Quando você é a única pessoa que sustenta o negócio, não sobra cabeça pra executar o que você já sabe. Saber e conseguir são duas coisas diferentes, e ninguém te avisa disso."
+
+**44–55s · O ponto**
+- **Fala:** "Você não está travada por burrice. Está travada porque está sozinha dentro de uma coisa que precisa de você o tempo inteiro. De dentro, ninguém enxerga."
+
+**55–60s · Fecho leve**
+- **Fala:** "Semana nova começa amanhã. Boa semana."
+
+### Legenda
+
+> Cinco empresárias diferentes. Cinco negócios diferentes. E a mesma frase em todas as conversas dessa semana:
 >
 > "Eu sei o que eu preciso fazer. Eu só não consigo fazer."
 >
@@ -544,70 +553,61 @@ que o alcance que você ganha.
 >
 > Semana nova começa amanhã. Boa semana.
 
-### Stories de domingo (4)
+### Stories
 
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
-| 1 | Bastidor | Seu domingo de novo — sem repetir a foto do dia 06 | "Domingo. Segunda semana seguida cumprindo o combinado comigo mesma." |
-| 2 | Colheita | Texto na tela, fundo limpo | "A frase que eu mais ouvi essa semana: 'eu sei o que preciso fazer, eu só não consigo fazer'." |
-| 3 | Caixinha | Sticker de pergunta — **isso vira sua pauta da semana** | "O que você sabe que precisa fazer no seu negócio e não consegue? Manda que eu respondo aqui a semana toda." |
-| 4 | Ponte leve | Você falando, 10s | "Semana que vem eu abro mais 5 sessões. Quem quiser, já pode escrever SESSÃO que eu organizo a agenda amanhã." |
-
-> **Aproveite a caixinha do story 3.** As respostas que chegarem são o conteúdo da semana
-> seguinte pronto, escrito pelas suas próprias leads. É assim que você para de decidir "o que
-> eu posto hoje" no domingo à noite.
+| 1 | Bastidor | Seu domingo — sem repetir a foto do dia 06 | "Domingo. Segunda semana seguida cumprindo o combinado comigo mesma." |
+| 2 | Colheita | Texto na tela | "A frase que eu mais ouvi essa semana: 'eu sei o que preciso fazer, eu só não consigo fazer'." |
+| 3 | Caixinha | **Vira sua pauta da semana** | "O que você sabe que precisa fazer no seu negócio e não consegue? Manda que eu respondo aqui a semana toda." |
+| 4 | Ponte leve · 10s | Você falando, sem urgência | "Semana que vem eu abro mais 5 sessões. Quem quiser, já pode escrever SESSÃO que eu organizo a agenda amanhã." |
 
 ---
 ---
 
-# Conteúdo fixo / destaque do perfil
+# Conteúdo fixo do perfil
 
-Atualize esta semana — toda lead nova que chegar pelos posts vai bater aqui antes de te chamar.
-Use fotos que você já tem.
+Toda lead nova bate aqui antes de te chamar. Use fotos que você já tem.
 
-### Carrossel de 5 lâminas
+| # | Lâmina | O que dizer |
+|:-:|---|---|
+| 1 | Pra quem é | "Pra empresária que fatura, entrega bem e está exausta." Nomeie tamanho de negócio, momento, sintoma. |
+| 2 | A transformação | Em rotina e em decisão: negócio que roda sem ela dentro, semana com espaço, decisão com a cabeça descansada. |
+| 3 | Como funciona | As 4 fases, uma linha cada. E os formatos: consultoria de 1 dia, Aceleração de 3 meses, Aceleração de 6 meses. |
+| 4 | Prova | 1 case em 3 linhas, anonimizado. |
+| 5 | CTA e valores | Sessão Estratégica (1h, gratuita), o que acontece depois, e os três investimentos: R$ 997, R$ 3.500 e R$ 5.000. |
 
-1. **Pra quem é.** "Pra empresária que fatura, entrega bem e está exausta." Nomeie o perfil com precisão — tamanho de negócio, momento, sintoma.
-2. **A transformação.** O que ela sai tendo, em rotina e em decisão: negócio que roda sem ela dentro, semana com espaço, decisão tomada com a cabeça descansada.
-3. **Como funciona.** As 4 fases, uma linha cada: Diagnóstico → Priorização → Delegação e estrutura → Patrimônio Valioso. E os formatos: consultoria de 1 dia, Aceleração de 3 meses, Aceleração de 6 meses.
-4. **Prova.** 1 case em 3 linhas, anonimizado.
-5. **CTA e valores.** Como entrar (Sessão Estratégica, 1h, gratuita), o que acontece depois, e os três investimentos: R$ 997 (consultoria de 1 dia), R$ 3.500 (3 meses), R$ 5.000 (6 meses).
-
-### Destaque fixo nos Stories: "SESSÃO"
-
-Crie um destaque só com os Stories de quarta (5, 6, 7) e quinta (3, 4). Quem chegar pelo
-perfil em qualquer semana encontra a oferta explicada, sem você ter que repetir.
+**Destaque "SESSÃO":** monte com os Stories de quarta (5, 6, 7) e de quinta (3, 4). Quem chegar
+pelo perfil em qualquer semana encontra a oferta explicada sem você repetir.
 
 ---
 
-# Checklist da semana
+# Checklist
 
-- [ ] **Dom 06** — Print do resultado da enquete salvo (usa a semana toda)
-- [ ] **Dom 06** — Carrossel do sábado postado — fotos do celular
-- [ ] **Dom 06** — Stories 3 a 7 no ar, sem nenhuma menção a venda
+- [ ] **Dom 06** — Views do story conferidas (diagnóstico da enquete)
+- [ ] **Dom 06** — Carrossel do sábado postado
+- [ ] **Dom 06** — Enquete nova e stories 3 a 7 no ar **entre 19h e 21h**
+- [ ] **Dom 06** — Print do resultado da enquete nova salvo
 - [ ] **Dom 06** — Respostas da caixinha salvas: é a pauta da semana
-- [ ] **Seg 07** — Reel Isca publicado **às 19h30** (feriado)
-- [ ] **Seg 07** — Palavra-chave MAPA configurada e planilha pronta pra enviar
+- [ ] **Seg 07** — Reel publicado às 19h30
+- [ ] **Seg 07** — Palavra-chave MAPA configurada e planilha pronta
 - [ ] **Seg 07** — 3 mensagens de direct salvas em respostas rápidas
-- [ ] **Ter 08** — Carrossel Autoridade (com autorização da mentorada do case)
-- [ ] **Ter 08** — Encerramento do desafio anunciado nos Stories e no grupo
+- [ ] **Ter 08** — Carrossel com autorização da mentorada do case
+- [ ] **Ter 08** — Encerramento do desafio nos Stories e no grupo
 - [ ] **Qua 09** — Resultado do desafio divulgado
-- [ ] **Qua 09** — Vídeo Opinião + **abertura das 5 vagas** nos Stories
-- [ ] **Qua 09** — Responder todos os comentários no mesmo dia
-- [ ] **Qui 10** — Reel Conexão + valores comunicados com clareza
+- [ ] **Qua 09** — Vídeo publicado + 5 vagas abertas nos Stories
+- [ ] **Qua 09** — Comentários respondidos no mesmo dia
+- [ ] **Qui 10** — Reel + 3 cards de valores nos Stories
 - [ ] **Qui 10** — Contador de vagas atualizado
-- [ ] **Sex 11** — Carrossel Autoridade (a sessão por dentro) publicado
-- [ ] **Sex 11** — 5 Stories, com o story 3 (o "às vezes eu digo que não") gravado
+- [ ] **Sex 11** — Carrossel da sessão por dentro publicado
+- [ ] **Sex 11** — Story 3 ("às vezes eu digo que não") gravado
 - [ ] **Sáb 12** — OFF de verdade
-- [ ] **Dom 13** — Reel Conexão gravado e postado
-- [ ] **Dom 13** — Caixinha de pauta no ar (story 3) e respostas salvas
-- [ ] **Na semana** — Post fixado atualizado
-- [ ] **Na semana** — Destaque "SESSÃO" criado
+- [ ] **Dom 13** — Reel gravado e postado
+- [ ] **Dom 13** — Caixinha de pauta no ar
+- [ ] **Na semana** — Post fixado atualizado e destaque "SESSÃO" criado
 
 ---
 
-### Regras de linguagem aplicadas em todas as legendas
-
-Conforme o seu Prompt de Conteúdo Semanal: sem saudação genérica na abertura, sem apelido
-carinhoso forçado, sem a construção "não é sobre… é sobre", frases curtas, tom direto,
-sem exagero de entusiasmo, emoji só quando faz falta. Toda legenda entregue pronta.
+**Regras de linguagem em todas as legendas:** sem saudação genérica na abertura, sem apelido
+carinhoso forçado, sem a construção "não é sobre… é sobre", frases curtas, tom direto, sem
+exagero de entusiasmo, emoji só quando faz falta.
