@@ -1,8 +1,9 @@
-# Script de Conteúdo — Semana de 06 a 12/09/2026
+# Script de Conteúdo — 06 a 13/09/2026
 ### Método Lucro Anti-Exaustão® · Objetivo: leads → Sessão Estratégica → Programa de Aceleração
 
-Montado seguindo o **Guia Semanal de Conteúdo** (5 dias de feed, domingo a quinta,
-alternando os 4 pilares · sexta e sábado OFF). Feed **e** Stories escritos e prontos.
+Montado seguindo o **Guia Semanal de Conteúdo** (feed de domingo a quinta, alternando os
+4 pilares · sexta e sábado OFF). Feed **e** Stories escritos e prontos, com o domingo 13/09
+fechando o ciclo e já abrindo o da semana seguinte.
 
 ## O eixo da semana
 
@@ -13,11 +14,11 @@ existem pra fazer a mulher certa levantar a mão.
 O **desafio que ainda está rolando até terça** é o combustível da semana: ele já gerou
 diagnóstico, dor nomeada e prova social. A semana colhe isso.
 
-| Domingo 06 | Segunda 07 | Terça 08 | Quarta 09 | Quinta 10 | Sexta 11 | Sábado 12 |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| CONEXÃO | ISCA | AUTORIDADE | OPINIÃO | CONEXÃO (reforço) | OFF | OFF |
-| Leve · familiar | Captura de lead | Prova + método | Quebra de objeção | Convite direto | Última chamada | Repescagem |
-| Sem CTA | Palavra-chave MAPA | 1ª menção à sessão | Abre as vagas | CTA mais forte | Só Stories | Só Stories |
+| Dom 06 | Seg 07 | Ter 08 | Qua 09 | Qui 10 | Sex 11 | Sáb 12 | Dom 13 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| CONEXÃO | ISCA | AUTORIDADE | OPINIÃO | CONEXÃO (reforço) | OFF | OFF | CONEXÃO |
+| Leve · familiar | Captura de lead | Prova + método | Quebra de objeção | Convite direto | Última chamada | Repescagem | Abre o ciclo novo |
+| Sem CTA | Palavra-chave MAPA | 1ª menção à sessão | Abre as vagas | CTA mais forte | Só Stories | Só Stories | Feed leve, sem CTA duro |
 
 ### A escada da semana
 
@@ -26,7 +27,8 @@ diagnóstico, dor nomeada e prova social. A semana colhe isso.
 3. **Terça** — prova. Mostra que o método funciona e que existe um programa por trás.
 4. **Quarta** — derruba a objeção número um ("não tenho tempo pra isso agora").
 5. **Quinta** — convida com clareza total: o que é, como funciona, quanto custa.
-6. **Sexta/Sábado** — sem feed. Só Stories de última chamada e conversas na direct.
+6. **Sexta/Sábado** — sem feed. Só Stories e conversas na direct.
+7. **Domingo** — volta pro feed leve. Colhe o que você ouviu na semana e abre a roda de novo.
 
 ---
 
@@ -69,8 +71,10 @@ de R$ 997 na mesma conversa. Você não perde a lead, você a coloca no degrau c
 > não depende de ferramenta nenhuma. Se você tem link de agendamento, troque — é menos
 > fricção e você não perde ninguém na caixa de mensagens.
 
-> ⚠️ **Vagas.** Usei **5 sessões nesta semana**. Cria escassez real e cabe na agenda. Ajuste
-> se quiser, mas escolha um número e mantenha, porque ele se repete em vários Stories.
+> ⚠️ **Vagas.** Usei **5 sessões nesta semana** — é o que cabe na sua agenda, e é verdade.
+> Como você decidiu manter as vagas rolando, sem data de corte, eu **tirei toda promessa de
+> fechamento** ("depois disso só daqui a algumas semanas"). Escassez que não se cumpre queima
+> a confiança na segunda vez que você usa. O número de sessões da semana já basta.
 
 ---
 ---
@@ -375,9 +379,9 @@ A incoerência aparece, e ela custa mais caro que o alcance que você perde.
 | # | Tipo | O que aparece | Texto na tela |
 |:-:|---|---|---|
 | 1 | Bastidor | Sua agenda da semana que vem, com os blocos das sessões marcados | "As sessões da semana que vem já estão na agenda." |
-| 2 | Escassez | Texto na tela | "Sobrou [X] vaga. Depois disso, próxima leva só daqui a algumas semanas." |
+| 2 | Escassez honesta | Texto na tela | "Das 5 sessões dessa semana, sobrou [X]. Semana que vem eu abro outras 5 — mas essa agenda já está de pé." |
 | 3 | Prova | Print de uma conversa de direct desta semana (com autorização, nome coberto) | "Isso aqui foi essa semana." |
-| 4 | Encerramento | Você falando, 10s | "Vou desligar. Volto domingo. Quem quiser a última vaga, escreve agora." |
+| 4 | Encerramento | Você falando, 10s | "Vou desligar. Volto domingo. Quem quiser a vaga que sobrou, escreve que eu vejo amanhã." |
 
 ### Sábado (2) — presença sem trabalho
 
@@ -388,6 +392,62 @@ A incoerência aparece, e ela custa mais caro que o alcance que você perde.
 
 **Banco de conteúdo:** separe 20 minutos na sexta pra gravar 2 vídeos extras e guardar.
 É o que salva a semana corrida.
+
+---
+---
+
+# DOMINGO 13/09 — CONEXÃO
+
+**Pilar:** Conexão · **Objetivo do dia:** fechar o ciclo e abrir a roda de novo, leve.
+**Por que este é o post certo pra hoje:** você passou a semana falando. Hoje você conta o que
+**ouviu.** É conexão de verdade, é prova social sem parecer venda, e dá pauta pra semana toda.
+
+> Sem CTA duro. Nada de "últimas vagas". O trabalho de conversão foi feito de quarta a sexta —
+> domingo é o dia que faz a próxima semana existir.
+
+## FEED
+
+**Formato:** Reel falado, 45–60s, uma tomada. Domingo não é dia de produção.
+**Tema:** a frase que se repetiu em todas as conversas da semana.
+
+### Roteiro (cena a cena)
+
+1. **0–6s — gancho:** "Essa semana eu sentei com [número] empresárias diferentes. Todas disseram alguma versão da mesma frase."
+2. **6–20s:** Diga a frase. **"Eu sei o que eu preciso fazer. Eu só não consigo fazer."** Deixe respirar antes de continuar.
+3. **20–40s:** Por que isso se repete. Não é falta de informação — nenhuma delas era desinformada. É que quando você é a única pessoa que sustenta tudo, não sobra cabeça pra executar o que você já sabe. Saber e conseguir são coisas diferentes.
+4. **40–55s:** O que muda isso: não é mais um curso. É alguém olhando de fora e decidindo junto com você, porque de dentro você não enxerga.
+5. **55–60s:** Feche leve. "Semana nova começa amanhã. Boa semana."
+
+### Legenda pronta
+
+> Essa semana eu sentei com empresárias diferentes, em negócios diferentes, com problemas que pareciam não ter nada a ver um com o outro.
+>
+> Todas disseram alguma versão da mesma frase:
+>
+> "Eu sei o que eu preciso fazer. Eu só não consigo fazer."
+>
+> Nenhuma delas era desinformada. Nenhuma precisava de mais um curso, mais um livro, mais uma newsletter.
+>
+> O que acontece é o seguinte: quando você é a única pessoa que sustenta o negócio, não sobra cabeça pra executar aquilo que você já sabe. Saber e conseguir são duas coisas diferentes, e ninguém te avisa disso.
+>
+> Você não está travada por burrice. Você está travada porque está sozinha dentro de uma coisa que precisa de você o tempo inteiro.
+>
+> De dentro, ninguém enxerga. Foi por isso que eu parei de tentar resolver o meu sozinha.
+>
+> Semana nova começa amanhã. Boa semana.
+
+### Stories de domingo (4)
+
+| # | Tipo | O que aparece | Texto na tela |
+|:-:|---|---|---|
+| 1 | Bastidor | Seu domingo de novo — sem repetir a foto do dia 06 | "Domingo. Segunda semana seguida cumprindo o combinado comigo mesma." |
+| 2 | Colheita | Texto na tela, fundo limpo | "A frase que eu mais ouvi essa semana: 'eu sei o que preciso fazer, eu só não consigo fazer'." |
+| 3 | Caixinha | Sticker de pergunta — **isso vira sua pauta da semana** | "O que você sabe que precisa fazer no seu negócio e não consegue? Manda que eu respondo aqui a semana toda." |
+| 4 | Ponte leve | Você falando, 10s | "Semana que vem eu abro mais 5 sessões. Quem quiser, já pode escrever SESSÃO que eu organizo a agenda amanhã." |
+
+> **Aproveite a caixinha do story 3.** As respostas que chegarem são o conteúdo da semana
+> seguinte pronto, escrito pelas suas próprias leads. É assim que você para de decidir "o que
+> eu posto hoje" no domingo à noite.
 
 ---
 ---
@@ -428,6 +488,8 @@ perfil em qualquer semana encontra a oferta explicada, sem você ter que repetir
 - [ ] **Qui 10** — Contador de vagas atualizado
 - [ ] **Sex 11** — Última chamada nos Stories, sem post no feed
 - [ ] **Sáb 12** — OFF de verdade
+- [ ] **Dom 13** — Reel Conexão gravado e postado
+- [ ] **Dom 13** — Caixinha de pauta no ar (story 3) e respostas salvas
 - [ ] **Na semana** — Post fixado atualizado
 - [ ] **Na semana** — Destaque "SESSÃO" criado
 
