@@ -524,7 +524,7 @@
   <p class="lede">O nosso primeiro encontro presencial tem dress code: preto, do começo ao fim. Aqui está o porquê, as regras e seis looks prontos — para você chegar na Trattoria sem ter gastado um grama de energia decidindo o que vestir.</p>
 
   <dl class="facts">
-    <div class="fact"><dt>Data</dt><dd><span class="soon">A confirmar</span></dd></div>
+    <div class="fact"><dt>Data</dt><dd><time datetime="2026-09-17">17 de setembro</time><span class="sub" id="contagem">Quinta-feira</span></dd></div>
     <div class="fact"><dt>Horário</dt><dd>19:30 — 22:00</dd></div>
     <div class="fact"><dt>Onde</dt><dd>Trattoria Carbone<span class="sub">Top Market · Centro, Florianópolis</span></dd></div>
     <div class="fact"><dt>Dress code</dt><dd>Preto inteiro</dd></div>
@@ -952,5 +952,20 @@
     });
 
     aplicar('todos');
+
+    // Contagem até o jantar (17/09, 19:30, horário de Brasília)
+    var alvo = new Date('2026-09-17T19:30:00-03:00');
+    var linha = document.getElementById('contagem');
+    if (linha && !isNaN(alvo)) {
+      var hoje = new Date();
+      var d0 = Date.UTC(hoje.getFullYear(), hoje.getMonth(), hoje.getDate());
+      var d1 = Date.UTC(alvo.getFullYear(), alvo.getMonth(), alvo.getDate());
+      var dias = Math.round((d1 - d0) / 86400000);
+      var sufixo = '';
+      if (dias > 1) { sufixo = ' · faltam ' + dias + ' dias'; }
+      else if (dias === 1) { sufixo = ' · é amanhã'; }
+      else if (dias === 0) { sufixo = ' · é hoje'; }
+      linha.textContent = 'Quinta-feira' + sufixo;
+    }
   })();
 </script>
