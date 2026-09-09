@@ -466,11 +466,131 @@
     margin: 0 auto 22px;
   }
 
+
+  /* ---------- carta ---------- */
+  .carta{
+    max-width: 58ch;
+    font-size: clamp(1.02rem, 2.2vw, 1.14rem);
+    line-height: 1.78;
+  }
+  .carta .abre{
+    font-family: var(--display);
+    font-size: .9rem;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--clay);
+    margin-bottom: 1.4em;
+  }
+  .carta .fecha{
+    margin-top: 2em;
+    font-family: var(--display);
+    font-size: .72rem;
+    letter-spacing: .26em;
+    text-transform: uppercase;
+    color: var(--bone-3);
+  }
+
+  /* ---------- promessa ---------- */
+  .porque{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(30px, 5vw, 52px);
+    align-items: start;
+  }
+  .porque ul{ list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .porque li{ position: relative; padding-left: 26px; font-size: .99rem; line-height: 1.55; }
+  .porque li::before{
+    content: "";
+    position: absolute; left: 0; top: .68em;
+    width: 14px; height: 1px; background: var(--clay);
+  }
+  .selo{
+    margin-top: clamp(36px, 5vw, 52px);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding-block: 26px;
+    font-family: var(--display);
+    font-weight: 200;
+    font-size: clamp(1.1rem, 2.8vw, 1.45rem);
+    line-height: 1.4;
+    color: var(--bone);
+    max-width: 40ch;
+  }
+
+  /* ---------- onde ---------- */
+  .onde{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .onde > div{ background: var(--ink-1); padding: 28px 26px 32px; display: flex; flex-direction: column; gap: 10px; }
+  .onde p{ font-size: .98rem; }
+  .onde .grande{
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--bone);
+    font-variant-numeric: tabular-nums;
+  }
+  .aviso{
+    margin-top: 24px;
+    font-size: .95rem;
+    color: var(--bone-2);
+    border-left: 2px solid var(--clay-dim);
+    padding-left: 18px;
+    max-width: 56ch;
+  }
+
+  /* ---------- paleta & texturas ---------- */
+  .paleta{ display: flex; flex-wrap: wrap; gap: clamp(18px, 4vw, 38px); margin-top: 6px; }
+  .tom{ display: flex; flex-direction: column; align-items: center; gap: 12px; width: 92px; }
+  .tom i{
+    display: block;
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+  }
+  .tom span{
+    font-family: var(--display);
+    font-size: .58rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--bone-3);
+    text-align: center;
+    line-height: 1.5;
+  }
+  .texturas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-top: clamp(34px, 5vw, 48px);
+  }
+  .tex{ background: var(--ink-1); }
+  .tex svg{ display: block; width: 100%; height: 96px; }
+  .tex span{
+    display: block;
+    padding: 14px 16px 18px;
+    font-family: var(--display);
+    font-size: .6rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--bone-2);
+  }
+
   /* ---------- svg ---------- */
   .fab{ fill: url(#fabric); stroke: #3C3B43; stroke-width: .6; stroke-opacity: .6; }
   .fab-soft{ fill: url(#fabric-soft); stroke: #3C3B43; stroke-width: .6; stroke-opacity: .45; }
   .shoe{ fill: #08080A; stroke: #3C3B43; stroke-width: .5; stroke-opacity: .6; }
   .hair{ fill: #121216; }
+  .belt{ fill: #0A0A0C; stroke: #3C3B43; stroke-width: .6; stroke-opacity: .7; }
+  .buckle{ fill: #A28963; }
+  .renda{ fill: url(#renda); stroke: #3C3B43; stroke-width: .6; stroke-opacity: .5; }
   .detail{ fill: none; stroke: #46454E; stroke-width: .7; stroke-opacity: .75; }
 
   @media (prefers-reduced-motion: reduce){
@@ -491,6 +611,13 @@
       <stop offset=".55" stop-color="#131317"/>
       <stop offset="1" stop-color="#0B0B0D"/>
     </linearGradient>
+    <pattern id="renda" width="7" height="7" patternUnits="userSpaceOnUse">
+      <rect width="7" height="7" fill="#1B1A20"/>
+      <circle cx="2" cy="2" r="1.1" fill="#3E3D47"/>
+      <circle cx="5.5" cy="5.5" r="1.1" fill="#3E3D47"/>
+      <circle cx="5.5" cy="1.5" r=".6" fill="#33323B"/>
+      <circle cx="1.5" cy="5.5" r=".6" fill="#33323B"/>
+    </pattern>
     <radialGradient id="glow" cx="50%" cy="42%" r="62%">
       <stop offset="0" stop-color="#EDE8E0" stop-opacity=".13"/>
       <stop offset="1" stop-color="#EDE8E0" stop-opacity="0"/>
@@ -509,11 +636,12 @@
 <nav class="nav">
   <div class="wrap nav-inner">
     <span class="mark">Cartilha do Preto</span>
-    <a href="#acordo">O acordo</a>
-    <a href="#regras">As regras</a>
+    <a href="#carta">A carta</a>
+    <a href="#acordo">O preto</a>
     <a href="#looks">Os looks</a>
-    <a href="#sim-evite">Sim &amp; evite</a>
+    <a href="#moodboard">Moodboard</a>
     <a href="#noite">A noite</a>
+    <a href="#onde">Onde</a>
   </div>
 </nav>
 
@@ -532,6 +660,45 @@
 </header>
 
 <main>
+
+<section id="carta" class="wrap">
+  <div class="carta">
+    <p class="abre">Mentora,</p>
+    <p>Existe uma expressão que toda cozinha profissional respeita antes de abrir as portas: <em>mise en place</em>. Tudo no seu lugar. As facas afiadas, os molhos prontos, cada ingrediente na altura da mão — decidido antes, quando ainda dava para pensar com calma.</p>
+    <p>Nenhum restaurante bom improvisa no meio do serviço. O que chega leve na mesa foi decidido horas antes, na cozinha, por alguém que não estava com pressa.</p>
+    <p><strong>No seu negócio acontece exatamente a mesma coisa.</strong></p>
+    <p>A maior parte do que te esgota não é o trabalho em si — é decidir tudo no calor da hora. O preço, a resposta, a prioridade do dia, a roupa. Sem <em>mise en place</em>, todo dia começa do zero, e você termina a semana exausta de decidir, não de produzir.</p>
+    <p>Este jantar é o convite para montar a sua.</p>
+    <p>E ele começa pela decisão mais boba de todas, que eu já tomei por você: <strong>a gente vai de preto.</strong></p>
+  </div>
+</section>
+
+<section id="proposito" class="wrap">
+  <div class="sec-head prose">
+    <p class="eyebrow">O que é esta noite</p>
+    <h2>Você não está vindo só jantar</h2>
+  </div>
+
+  <div class="porque">
+    <div class="prose">
+      <p>É a nossa primeira vez na mesma mesa. Uma noite estratégica, simbólica e relacional — e a única do ciclo em que ninguém tem slide, cronômetro ou tarefa para entregar.</p>
+      <p>Você vai comer bem, conversar com quem entende exatamente o tamanho do seu problema, e sair com pelo menos uma coisa decidida.</p>
+    </div>
+    <div>
+      <p class="eyebrow" style="margin-bottom:18px">Uma noite para</p>
+      <ul>
+        <li>olhar para o trimestre que passou com honestidade;</li>
+        <li>nomear o que está drenando a sua energia — e o seu lucro;</li>
+        <li>conhecer as mulheres que vão caminhar com você nos próximos 90 dias;</li>
+        <li>trazer para a mesa o assunto que você vem adiando;</li>
+        <li>dizer o que você quer ver a gente destrinchar no programa;</li>
+        <li>e começar a montar uma rotina que não dependa do seu heroísmo.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="selo">Você sai daqui com mais clareza do que chegou — e com pelo menos uma decisão tomada.</p>
+</section>
 
 <section id="acordo" class="wrap">
   <div class="sec-head prose">
@@ -600,184 +767,262 @@
 
   <div class="looks" id="grid">
 
-    <!-- 1 · Alfaiataria fluida -->
-    <button class="look" type="button" data-tags="calca trabalho" data-nome="Alfaiataria fluida"
-      data-pieces="Blazer oversized · calça wide leg · regata de malha · mocassim ou mule"
-      data-why="Senta, cruza a perna, levanta e continua alinhada. É o look de quem vem direto do escritório: funciona às três da tarde na reunião e às oito da noite na mesa — a diferença é só o blazer aberto e o batom."
-      data-fig="fig1">
+    <button class="look" type="button" data-tags="calca trabalho" data-nome="Gola alta &amp; wide leg"
+      data-pieces="Gola alta de malha · calça wide leg de alfaiataria · cinto de fivela · scarpin bico fino"
+      data-why="É o mais fácil de acertar e o mais difícil de errar. A gola alta limpa o corpo todo, o cinto marca a cintura e a wide leg alonga a perna até o chão. Se você tem quinze minutos e nenhuma vontade de pensar, é este.">
       <figure>
-        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: blazer oversized sobre regata e calça wide leg, com mocassim">
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui: blusa de gola alta, cinto de fivela, calça wide leg de alfaiataria e scarpin bico fino">
           <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
-          <path class="hair" d="M100,16 C82,16 76,28 77,44 C78,70 74,98 78,122 L90,118 C86,94 87,64 90,44 L110,44 C113,64 114,94 110,118 L122,122 C126,98 122,70 123,44 C124,28 118,16 100,16 Z"/>
+          <path class="hair" d="M100,18 C88,18 82,27 82,40 L118,40 C118,27 112,18 100,18 Z"/><path class="hair" d="M114,32 C126,38 132,58 128,80 C126,92 121,100 116,104 L110,94 C115,88 118,76 118,64 C118,52 114,42 109,37 Z"/>
           <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#E0BE9E"/>
+          <path class="hair" d="M85,33 C89,24 112,24 116,33 C115,26 110,20 100,20 C90,20 86,26 85,33 Z"/>
           <use href="#croqui" fill="#E0BE9E"/>
-          <path class="fab-soft" d="M84,74 C90,85 110,85 116,74 L120,120 C120,150 119,176 118,196 L82,196 C81,176 80,150 80,120 Z"/>
-          <path class="fab" d="M72,188 L128,188 C130,224 132,262 135,300 L138,378 L106,378 L102,262 L98,262 L94,378 L62,378 L65,300 C68,262 70,224 72,188 Z"/>
-          <path class="fab" d="M88,76 L70,90 C63,112 60,142 60,172 L62,220 L84,220 C82,182 84,142 90,110 Z"/>
-          <path class="fab" d="M112,76 L130,90 C137,112 140,142 140,172 L138,220 L116,220 C118,182 116,142 110,110 Z"/>
-          <path class="fab" d="M70,88 C59,102 54,128 54,152 C54,174 57,192 59,208 L74,206 C72,190 70,170 70,150 C70,128 74,104 82,92 Z"/>
-          <path class="fab" d="M130,88 C141,102 146,128 146,152 C146,174 143,192 141,208 L126,206 C128,190 130,170 130,150 C130,128 126,104 118,92 Z"/>
-          <path class="detail" d="M100,80 L100,168"/>
-          <path class="shoe" d="M84,372 L96,372 L98,388 L74,388 C73,380 77,374 84,372 Z"/>
-          <path class="shoe" d="M116,372 L104,372 L102,388 L126,388 C127,380 123,374 116,372 Z"/>
+          <path class="fab" d="M76,172 L124,172 C127,220 131,270 136,320 L139,382 L106,382 L101,240 L99,240 L94,382 L61,382 L64,320 C69,270 73,220 76,172 Z"/>
+          <path class="detail" d="M118,182 C122,240 126,310 128,378 M82,182 C78,240 74,310 72,378"/>
+          <path class="fab-soft" d="M91,59 L109,59 L112,76 C126,80 133,88 133,100 L129,134 C128,154 124,164 122,178 L78,178 C76,164 72,154 71,134 L67,100 C67,88 74,80 88,76 Z"/>
+          <path class="fab" d="M92,77 C74,86 60,118 56,148 C53,172 54,194 57,213 L77,211 C74,192 73,172 76,150 C80,122 88,98 100,84 Z"/>
+          <path class="fab" d="M108,77 C126,86 140,118 144,148 C147,172 146,194 143,213 L123,211 C126,192 127,172 124,150 C120,122 112,98 100,84 Z"/>
+          <path class="belt" d="M77,165 L123,165 L123,181 L77,181 Z"/>
+          <rect class="buckle" x="95" y="167" width="10" height="12"/>
+          <path class="shoe" d="M84,374 L98,374 L98,386 L68,393 C68,383 75,377 84,374 Z"/>
+          <path class="shoe" d="M116,374 L102,374 L102,386 L132,393 C132,383 125,377 116,374 Z"/>
         </svg>
       </figure>
       <div class="look-body">
-        <h3>Alfaiataria fluida</h3>
-        <p class="pieces">Blazer oversized · calça wide leg · regata de malha · mocassim</p>
-        <p class="why">Vem direto do escritório e vira noite sem escala em casa.</p>
+        <h3>Gola alta &amp; wide leg</h3>
+        <p class="pieces">Gola alta de malha · calça wide leg de alfaiataria · cinto de fivela · scarpin bico fino</p>
+        <p class="why">Cintura marcada e perna longa. O mais difícil de errar.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
 
-    <!-- 2 · Malha midi -->
-    <button class="look" type="button" data-tags="vestido vento" data-nome="Malha midi"
-      data-pieces="Vestido de malha manga longa · bota de cano curto · cinto fino"
-      data-why="Uma peça só e zero combinação para acertar. A manga longa de malha resolve o ar-condicionado do salão e ainda segura o vento do Centro na hora de ir embora."
-      data-fig="fig2">
+    <button class="look" type="button" data-tags="calca trabalho" data-nome="Manga bufante"
+      data-pieces="Blusa de gola alta com manga ampla · cinto largo · calça wide leg · bolsa estruturada"
+      data-why="Mesma base do primeiro, com uma peça que faz barulho sozinha: a manga ampla. Como o volume já é o ponto de atenção, tudo em volta fica quieto — cinto, cintura alta e nada mais. É o mais fotogênico dos seis.">
       <figure>
-        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: vestido de malha midi manga longa com bota de cano curto">
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui: blusa preta de gola alta com manga bufante, cinto largo, calça wide leg e bolsa estruturada">
           <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
-          <path class="hair" d="M100,20 C88,20 81,29 81,43 L119,43 C119,29 112,20 100,20 Z"/>
-          <circle class="hair" cx="100" cy="14" r="9"/>
+          <path class="hair" d="M100,20 C88,20 81,29 81,43 L119,43 C120,29 112,20 100,20 Z"/><circle class="hair" cx="100" cy="14" r="9"/>
           <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#A0714B"/>
-          <path class="hair" d="M84,34 C87,25 113,25 116,34 C115,27 110,21 100,21 C90,21 85,27 84,34 Z"/>
           <use href="#croqui" fill="#A0714B"/>
-          <path class="fab-soft" d="M88,74 L112,74 C126,78 136,86 136,98 L132,140 C130,172 134,226 138,268 L136,306 L64,306 L62,268 C66,226 70,172 68,140 L64,98 C64,86 74,78 88,74 Z"/>
-          <path class="fab-soft" d="M74,88 C58,102 52,128 52,152 C52,174 55,194 57,210 L76,208 C74,192 72,172 72,152 C72,128 78,102 90,92 Z"/>
-          <path class="fab-soft" d="M126,88 C142,102 148,128 148,152 C148,174 145,194 143,210 L124,208 C126,192 128,172 128,152 C128,128 122,102 110,92 Z"/>
-          <path class="detail" d="M74,176 C88,182 112,182 126,176"/>
-          <path class="shoe" d="M82,298 L96,298 L97,352 C97,364 99,376 100,386 L76,386 C77,372 79,356 80,340 Z"/>
-          <path class="shoe" d="M118,298 L104,298 L103,352 C103,364 101,376 100,386 L124,386 C123,372 121,356 120,340 Z"/>
+          <path class="fab" d="M76,172 L124,172 C127,220 131,270 136,320 L139,382 L106,382 L101,240 L99,240 L94,382 L61,382 L64,320 C69,270 73,220 76,172 Z"/>
+          <path class="detail" d="M118,182 C122,240 126,310 128,378 M82,182 C78,240 74,310 72,378"/>
+          <path class="fab-soft" d="M91,59 L109,59 L112,76 C127,80 135,88 135,100 L131,134 C129,154 125,164 123,177 L77,177 C75,164 71,154 69,134 L65,100 C65,88 73,80 88,76 Z"/>
+          <path class="fab" d="M92,77 C66,84 48,118 44,150 C42,172 48,190 58,200 L77,191 C68,180 62,162 62,142 C62,116 74,96 98,82 Z"/>
+          <path class="fab" d="M108,77 C134,84 152,118 156,150 C158,172 152,190 142,200 L123,191 C132,180 138,162 138,142 C138,116 126,96 102,82 Z"/>
+          <path class="fab" d="M58,196 L78,188 L81,212 L64,216 Z"/>
+          <path class="fab" d="M142,196 L122,188 L119,212 L136,216 Z"/>
+          <path class="belt" d="M76,163 L124,163 L124,182 L76,182 Z"/>
+          <rect class="buckle" x="94" y="166" width="12" height="13"/>
+          <path class="fab" d="M132,204 L162,204 L164,236 L134,236 Z"/>
+          <path class="detail" d="M135,214 L163,214 M140,204 C142,194 154,194 156,204"/>
+          <rect class="buckle" x="144" y="215" width="9" height="7"/>
+          <path class="shoe" d="M84,374 L98,374 L98,386 L68,393 C68,383 75,377 84,374 Z"/>
+          <path class="shoe" d="M116,374 L102,374 L102,386 L132,393 C132,383 125,377 116,374 Z"/>
+        </svg>
+      </figure>
+      <div class="look-body">
+        <h3>Manga bufante</h3>
+        <p class="pieces">Blusa de gola alta com manga ampla · cinto largo · calça wide leg · bolsa estruturada</p>
+        <p class="why">O volume da manga já é o acessório. O resto fica quieto.</p>
+        <p class="open">Ver detalhes</p>
+      </div>
+    </button>
+
+    <button class="look" type="button" data-tags="calca vento" data-nome="Blazer &amp; renda"
+      data-pieces="Blazer de alfaiataria · blusa de renda gola alta · cinto · calça wide leg · scarpin"
+      data-why="O blazer dá a estrutura, a renda dá a textura: as duas coisas que a regra quatro pede, num look só. É o mais formal dos seis sem virar traje de gala, e a camada de fora sai quando o salão esquenta e volta na hora de encarar a rua.">
+      <figure>
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui: blazer de alfaiataria aberto sobre blusa de renda gola alta, cinto, calça wide leg e scarpin">
+          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
+          <path class="hair" d="M100,16 C82,16 76,28 77,44 C78,70 74,98 78,122 L90,118 C86,94 87,64 90,44 L110,44 C113,64 114,94 110,118 L122,122 C126,98 122,70 123,44 C124,28 118,16 100,16 Z"/>
+          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#D8AE8C"/>
+          <use href="#croqui" fill="#D8AE8C"/>
+          <path class="fab" d="M76,172 L124,172 C127,220 131,270 136,320 L139,382 L106,382 L101,240 L99,240 L94,382 L61,382 L64,320 C69,270 73,220 76,172 Z"/>
+          <path class="detail" d="M118,182 C122,240 126,310 128,378 M82,182 C78,240 74,310 72,378"/>
+          <path class="renda" d="M91,59 L109,59 L112,76 C126,80 133,88 133,100 L129,134 C128,154 124,164 122,178 L78,178 C76,164 72,154 71,134 L67,100 C67,88 74,80 88,76 Z"/>
+          <path class="renda" d="M92,77 C74,86 60,118 56,148 C53,172 54,194 57,213 L77,211 C74,192 73,172 76,150 C80,122 88,98 100,84 Z"/>
+          <path class="renda" d="M108,77 C126,86 140,118 144,148 C147,172 146,194 143,213 L123,211 C126,192 127,172 124,150 C120,122 112,98 100,84 Z"/>
+          <path class="belt" d="M77,165 L123,165 L123,181 L77,181 Z"/>
+          <circle class="buckle" cx="96" cy="173" r="4.5"/>
+          <circle class="buckle" cx="104" cy="173" r="4.5"/>
+          <path class="fab" d="M88,74 L68,90 C61,114 58,146 58,176 L60,232 L84,232 C82,190 84,146 90,110 Z"/>
+          <path class="fab" d="M112,74 L132,90 C139,114 142,146 142,176 L140,232 L116,232 C118,190 116,146 110,110 Z"/>
+          <path class="fab" d="M92,76 C68,84 52,118 48,150 C45,176 46,198 50,218 L72,214 C69,196 68,176 71,152 C75,122 84,96 96,82 Z"/>
+          <path class="fab" d="M108,76 C132,84 148,118 152,150 C155,176 154,198 150,218 L128,214 C131,196 132,176 129,152 C125,122 116,96 104,82 Z"/>
+          <path class="detail" d="M88,76 L84,120 M112,76 L116,120"/>
+          <path class="shoe" d="M84,374 L98,374 L98,386 L68,393 C68,383 75,377 84,374 Z"/>
+          <path class="shoe" d="M116,374 L102,374 L102,386 L132,393 C132,383 125,377 116,374 Z"/>
+        </svg>
+      </figure>
+      <div class="look-body">
+        <h3>Blazer &amp; renda</h3>
+        <p class="pieces">Blazer de alfaiataria · blusa de renda gola alta · cinto · calça wide leg · scarpin</p>
+        <p class="why">Estrutura e textura no mesmo look — e o blazer sai quando esquenta.</p>
+        <p class="open">Ver detalhes</p>
+      </div>
+    </button>
+
+    <button class="look" type="button" data-tags="vestido vento" data-nome="Malha midi"
+      data-pieces="Vestido de malha gola alta · cinto fino · bota de cano curto"
+      data-why="Uma peça só e zero combinação para acertar. A malha de manga longa resolve o ar-condicionado do salão e ainda segura o vento do Centro na hora de ir embora — e o cinto fino é o que impede o vestido de virar camisola.">
+      <figure>
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui: vestido de malha midi com gola alta, cinto fino e bota de cano curto">
+          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
+          <path class="hair" d="M100,17 C84,17 78,29 79,45 C79,58 80,66 82,74 L91,71 C89,60 89,48 91,40 L109,40 C111,48 111,60 109,71 L118,74 C120,66 121,58 121,45 C122,29 116,17 100,17 Z"/>
+          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#6E4A32"/>
+          <use href="#croqui" fill="#6E4A32"/>
+          <path class="fab-soft" d="M91,59 L109,59 L112,76 C127,80 136,86 136,98 L132,140 C130,172 134,226 138,268 L136,306 L64,306 L62,268 C66,226 70,172 68,140 L64,98 C64,86 73,80 88,76 Z"/>
+          <path class="fab" d="M92,77 C74,86 59,118 55,148 C52,172 53,194 56,213 L76,211 C73,192 72,172 75,150 C79,122 88,98 100,84 Z"/>
+          <path class="fab" d="M108,77 C126,86 141,118 145,148 C148,172 147,194 144,213 L124,211 C127,192 128,172 125,150 C121,122 112,98 100,84 Z"/>
+          <path class="belt" d="M76,168 L124,168 L124,178 L76,178 Z"/>
+          <rect class="buckle" x="96" y="169" width="8" height="8"/>
+          <path class="detail" d="M74,196 C88,202 112,202 126,196"/>
+          <path class="shoe" d="M82,298 L96,298 L97,352 C97,364 99,376 100,388 L76,388 C77,374 79,356 80,340 Z"/>
+          <path class="shoe" d="M118,298 L104,298 L103,352 C103,364 101,376 100,388 L124,388 C123,374 121,356 120,340 Z"/>
         </svg>
       </figure>
       <div class="look-body">
         <h3>Malha midi</h3>
-        <p class="pieces">Vestido de malha manga longa · bota de cano curto · cinto fino</p>
+        <p class="pieces">Vestido de malha gola alta · cinto fino · bota de cano curto</p>
         <p class="why">Uma peça só. Resolve o ar-condicionado e o vento da saída.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
 
-    <!-- 3 · Camisa & reta -->
-    <button class="look" type="button" data-tags="calca trabalho" data-nome="Camisa &amp; reta"
-      data-pieces="Camisa de viscose ou seda · calça reta · sapatilha ou mule"
-      data-why="O clássico que atravessa o dia inteiro e ainda ganha a noite. Por dentro da calça no trabalho; solte da cintura, dobre o punho e abra um botão a mais antes de entrar no restaurante."
-      data-fig="fig3">
-      <figure>
-        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: camisa de seda por dentro de calça reta com sapatilha">
-          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
-          <path class="hair" d="M100,18 C88,18 82,27 82,40 L118,40 C118,27 112,18 100,18 Z"/>
-          <path class="hair" d="M114,32 C126,38 132,58 128,80 C126,92 121,100 116,104 L110,94 C115,88 118,76 118,64 C118,52 114,42 109,37 Z"/>
-          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#6E4A32"/>
-          <path class="hair" d="M85,33 C89,24 112,24 116,33 C115,26 110,20 100,20 C90,20 86,26 85,33 Z"/>
-          <use href="#croqui" fill="#6E4A32"/>
-          <path class="fab" d="M91,68 L109,68 L112,80 C126,84 134,90 134,102 L130,134 C129,156 124,168 122,184 L78,184 C76,168 71,156 70,134 L66,102 C66,90 74,84 88,80 Z"/>
-          <path class="fab" d="M76,88 C60,104 53,130 53,154 C53,176 56,194 58,210 L77,207 C75,192 73,172 73,154 C73,130 80,104 92,92 Z"/>
-          <path class="fab" d="M124,88 C140,104 147,130 147,154 C147,176 144,194 142,210 L123,207 C125,192 127,172 127,154 C127,130 120,104 108,92 Z"/>
-          <path class="detail" d="M100,74 L100,178 M91,70 L100,84 L109,70"/>
-          <path class="fab" d="M76,180 L124,180 C126,214 127,252 128,290 L130,378 L104,378 L101,240 L99,240 L96,378 L70,378 L72,290 C73,252 74,214 76,176 Z"/>
-          <path class="detail" d="M76,196 L124,196"/>
-          <path class="shoe" d="M84,372 L96,372 L97,387 L76,387 C75,380 79,374 84,372 Z"/>
-          <path class="shoe" d="M116,372 L104,372 L103,387 L124,387 C125,380 121,374 116,372 Z"/>
-        </svg>
-      </figure>
-      <div class="look-body">
-        <h3>Camisa &amp; reta</h3>
-        <p class="pieces">Camisa de viscose ou seda · calça reta · sapatilha ou mule</p>
-        <p class="why">Sai do trabalho e vira jantar com dois ajustes.</p>
-        <p class="open">Ver detalhes</p>
-      </div>
-    </button>
-
-    <!-- 4 · Macacão -->
-    <button class="look" type="button" data-tags="calca trabalho" data-nome="Macacão"
-      data-pieces="Macacão preto · brinco de assinatura · sandália ou scarpin baixo"
-      data-why="Veste em um minuto e resolve a noite inteira. Como a peça já é o look completo, o brinco é o único acessório de que você precisa — e vira o seu ponto final. Para a noite em que você tem quinze minutos entre uma coisa e outra."
-      data-fig="fig4">
-      <figure>
-        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: macacão de alça larga com sandália baixa">
-          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
-          <ellipse class="hair" cx="100" cy="33" rx="25" ry="23"/>
-          <ellipse class="hair" cx="77" cy="45" rx="10" ry="12"/>
-          <ellipse class="hair" cx="123" cy="45" rx="10" ry="12"/>
-          <ellipse cx="100" cy="46" rx="14" ry="18" fill="#C79A72"/>
-          <use href="#croqui" fill="#C79A72"/>
-          <path class="fab" d="M80,80 L94,80 C96,94 104,94 106,80 L120,80 C128,86 131,94 131,106 L126,140 C124,160 121,176 120,190 L128,190 C130,226 132,264 134,300 L136,378 L106,378 L102,258 L98,258 L94,378 L64,378 L66,300 C68,264 70,226 72,190 L80,190 C79,176 76,160 74,140 L69,106 C69,94 72,86 80,80 Z"/>
-          <path class="detail" d="M74,148 C88,154 112,154 126,148"/>
-          <circle cx="86" cy="60" r="3" fill="#8E8B86"/>
-          <path class="shoe" d="M82,372 L96,372 L97,387 L78,387 C77,381 79,375 82,372 Z"/>
-          <path class="shoe" d="M118,372 L104,372 L103,387 L122,387 C123,381 121,375 118,372 Z"/>
-        </svg>
-      </figure>
-      <div class="look-body">
-        <h3>Macacão</h3>
-        <p class="pieces">Macacão preto · brinco de assinatura · sandália ou scarpin baixo</p>
-        <p class="why">Veste em um minuto. Para a noite corrida.</p>
-        <p class="open">Ver detalhes</p>
-      </div>
-    </button>
-
-    <!-- 5 · Tricô & saia longa -->
     <button class="look" type="button" data-tags="vestido vento" data-nome="Tricô &amp; saia longa"
-      data-pieces="Tricô canelado · saia longa fluida · bota ou coturno"
-      data-why="Para quem congela no ar-condicionado e não quer abrir mão do movimento. A saia fluida faz o contraponto com o tricô encorpado — é a mistura de texturas da regra quatro, na prática, e é ela que aparece na luz baixa do salão."
-      data-fig="fig5">
+      data-pieces="Tricô canelado gola alta · saia longa fluida · bota ou coturno"
+      data-why="Para quem congela no ar-condicionado e não quer abrir mão do movimento. A saia fluida faz o contraponto com o tricô encorpado — é a mistura de texturas da regra quatro, na prática, e é ela que aparece na luz baixa do salão.">
       <figure>
-        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: tricô canelado com saia longa fluida e bota">
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui: tricô canelado de gola alta com saia longa fluida e bota">
           <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
-          <path class="hair" d="M100,17 C84,17 78,29 79,45 C79,58 80,66 82,74 L91,71 C89,60 89,48 91,40 L109,40 C111,48 111,60 109,71 L118,74 C120,66 121,58 121,45 C122,29 116,17 100,17 Z"/>
-          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#D8AE8C"/>
-          <use href="#croqui" fill="#D8AE8C"/>
+          <path class="hair" d="M100,16 C82,16 76,28 77,44 C78,70 74,98 78,122 L90,118 C86,94 87,64 90,44 L110,44 C113,64 114,94 110,118 L122,122 C126,98 122,70 123,44 C124,28 118,16 100,16 Z"/>
+          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#C79A72"/>
+          <use href="#croqui" fill="#C79A72"/>
           <path class="fab-soft" d="M66,272 C70,236 74,204 76,176 L124,176 C126,204 130,236 134,272 C136,300 138,330 139,358 L61,358 C62,330 64,300 66,272 Z"/>
           <path class="detail" d="M84,200 C86,250 84,310 82,356 M116,200 C114,250 116,310 118,356 M100,196 L100,356"/>
-          <path class="fab" d="M88,74 L112,74 C124,78 132,86 132,96 L129,130 C128,152 126,170 126,186 L74,186 C74,170 72,152 71,130 L68,96 C68,86 76,78 88,74 Z"/>
-          <path class="fab" d="M70,90 C60,104 55,128 55,152 C55,174 58,194 60,210 L74,208 C72,192 70,172 70,152 C70,130 74,106 82,94 Z"/>
-          <path class="fab" d="M130,90 C140,104 145,128 145,152 C145,174 142,194 140,210 L126,208 C128,192 130,172 130,152 C130,130 126,106 118,94 Z"/>
-          <path class="detail" d="M82,96 L79,182 M91,90 L89,184 M109,90 L111,184 M118,96 L121,182"/>
-          <path class="shoe" d="M84,352 L96,352 L97,387 L76,387 C77,376 80,364 84,352 Z"/>
-          <path class="shoe" d="M116,352 L104,352 L103,387 L124,387 C123,376 120,364 116,352 Z"/>
+          <path class="fab" d="M91,59 L109,59 L112,76 C126,80 134,88 134,100 L130,132 C129,154 127,170 127,186 L73,186 C73,170 71,154 70,132 L66,100 C66,88 74,80 88,76 Z"/>
+          <path class="fab" d="M92,77 C74,86 58,118 54,148 C51,172 52,194 55,213 L76,211 C73,192 72,172 75,150 C79,122 88,98 100,84 Z"/>
+          <path class="fab" d="M108,77 C126,86 142,118 146,148 C149,172 148,194 145,213 L124,211 C127,192 128,172 125,150 C121,122 112,98 100,84 Z"/>
+          <path class="detail" d="M82,94 L79,182 M91,88 L89,184 M109,88 L111,184 M118,94 L121,182"/>
+          <path class="shoe" d="M84,352 L96,352 L97,388 L76,388 C77,377 80,364 84,352 Z"/>
+          <path class="shoe" d="M116,352 L104,352 L103,388 L124,388 C123,377 120,364 116,352 Z"/>
         </svg>
       </figure>
       <div class="look-body">
         <h3>Tricô &amp; saia longa</h3>
-        <p class="pieces">Tricô canelado · saia longa fluida · bota ou coturno</p>
+        <p class="pieces">Tricô canelado gola alta · saia longa fluida · bota ou coturno</p>
         <p class="why">Para quem congela no ar-condicionado do salão.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
 
-    <!-- 6 · Camadas -->
     <button class="look" type="button" data-tags="calca vento trabalho" data-nome="Camadas"
-      data-pieces="Camiseta preta de algodão pesado · colete alongado · calça reta · bota baixa ou tênis preto"
-      data-why="O look que se ajusta sozinho: o colete sai quando o salão esquenta e volta na hora de sair para a rua. É o mais confortável dos seis e continua sendo o mais alinhado."
-      data-fig="fig6">
+      data-pieces="Gola alta · colete alongado · calça wide leg · bota bico fino"
+      data-why="O look que se ajusta sozinho: o colete alongado sai quando o salão esquenta e volta na hora de sair para a rua, sem trocar nada por baixo. É o mais confortável dos seis e continua sendo o mais alinhado.">
       <figure>
-        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: camiseta com colete alongado, calça reta e tênis">
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui: gola alta sob colete alongado, calça wide leg e bota de bico fino">
           <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
-          <path class="hair" d="M100,16 C82,16 76,28 77,44 C78,66 76,88 79,106 L89,103 C86,86 87,62 90,44 L110,44 C113,62 114,86 111,103 L121,106 C124,88 122,66 123,44 C124,28 118,16 100,16 Z"/>
+          <path class="hair" d="M100,16 C82,16 76,28 77,44 C78,70 74,98 78,122 L90,118 C86,94 87,64 90,44 L110,44 C113,64 114,94 110,118 L122,122 C126,98 122,70 123,44 C124,28 118,16 100,16 Z"/>
           <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#8A5A3C"/>
           <use href="#croqui" fill="#8A5A3C"/>
-          <path class="fab-soft" d="M89,72 L111,72 L114,82 C124,86 128,92 128,102 L125,126 C124,146 121,162 120,178 L80,178 C79,162 76,146 75,126 L72,102 C72,92 76,86 86,82 Z"/>
-          <path class="fab-soft" d="M74,86 C68,94 64,106 62,118 L72,122 C74,112 77,102 82,94 Z"/>
-          <path class="fab-soft" d="M126,86 C132,94 136,106 138,118 L128,122 C126,112 123,102 118,94 Z"/>
-          <path class="fab" d="M74,174 L126,174 C128,212 129,250 130,288 L132,378 L104,378 L101,244 L99,244 L96,378 L68,378 L70,288 C71,250 72,212 74,174 Z"/>
-          <path class="fab" d="M86,78 L68,92 C64,116 62,150 62,182 L63,246 L84,246 C82,206 83,160 88,116 Z"/>
-          <path class="fab" d="M114,78 L132,92 C136,116 138,150 138,182 L137,246 L116,246 C118,206 117,160 112,116 Z"/>
-          <path class="detail" d="M100,246 L100,254 M84,246 L84,254 M116,246 L116,254"/>
-          <path class="shoe" d="M80,368 L98,368 L98,388 L74,388 C72,380 74,372 80,368 Z"/>
-          <path class="shoe" d="M120,368 L102,368 L102,388 L126,388 C128,380 126,372 120,368 Z"/>
-          <path class="detail" d="M76,381 L96,381 M124,381 L104,381"/>
+          <path class="fab" d="M76,172 L124,172 C127,220 131,270 136,320 L139,382 L106,382 L101,240 L99,240 L94,382 L61,382 L64,320 C69,270 73,220 76,172 Z"/>
+          <path class="detail" d="M118,182 C122,240 126,310 128,378 M82,182 C78,240 74,310 72,378"/>
+          <path class="fab-soft" d="M91,59 L109,59 L112,76 C126,80 133,88 133,100 L129,134 C128,154 124,164 122,178 L78,178 C76,164 72,154 71,134 L67,100 C67,88 74,80 88,76 Z"/>
+          <path class="fab" d="M92,77 C74,86 60,118 56,148 C53,172 54,194 57,213 L77,211 C74,192 73,172 76,150 C80,122 88,98 100,84 Z"/>
+          <path class="fab" d="M108,77 C126,86 140,118 144,148 C147,172 146,194 143,213 L123,211 C126,192 127,172 124,150 C120,122 112,98 100,84 Z"/>
+          <path class="fab" d="M88,74 L70,88 C65,114 62,150 62,184 L63,252 L85,252 C83,208 84,158 90,112 Z"/>
+          <path class="fab" d="M112,74 L130,88 C135,114 138,150 138,184 L137,252 L115,252 C117,208 116,158 110,112 Z"/>
+          <path class="detail" d="M85,252 L85,262 M115,252 L115,262"/>
+          <path class="shoe" d="M84,374 L98,374 L98,386 L68,393 C68,383 75,377 84,374 Z"/>
+          <path class="shoe" d="M116,374 L102,374 L102,386 L132,393 C132,383 125,377 116,374 Z"/>
         </svg>
       </figure>
       <div class="look-body">
         <h3>Camadas</h3>
-        <p class="pieces">Camiseta preta · colete alongado · calça reta · bota baixa</p>
+        <p class="pieces">Gola alta · colete alongado · calça wide leg · bota bico fino</p>
         <p class="why">O colete sai no salão e volta na hora de encarar a rua.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
 
+  </div>
+</section>
+
+<section id="moodboard" class="wrap">
+  <div class="sec-head prose">
+    <p class="eyebrow">Moodboard</p>
+    <h2>A paleta da noite</h2>
+    <p>Preto é a peça inteira. Dos tons ao lado dele, você escolhe <em>um</em> — e só num acessório: o fecho da bolsa, o brinco, a fivela do cinto.</p>
+  </div>
+
+  <div class="paleta">
+    <div class="tom"><i style="background:#0A0A0A"></i><span>Preto<br>absoluto</span></div>
+    <div class="tom"><i style="background:#15141A"></i><span>Couro<br>preto</span></div>
+    <div class="tom"><i style="background:#A28963"></i><span>Dourado<br>velho</span></div>
+    <div class="tom"><i style="background:#A9A6A0"></i><span>Prata<br>escovada</span></div>
+    <div class="tom"><i style="background:#E8E3D9"></i><span>Off-white</span></div>
+  </div>
+
+  <div class="sec-head prose" style="margin-top: clamp(50px, 8vw, 78px); margin-bottom: 22px">
+    <h3>As texturas</h3>
+    <p style="margin-top:.8em">Uma cor só, cinco acabamentos. É a mistura deles que faz o preto ter profundidade na luz baixa do salão — e o que separa um look pensado de uma roupa preta qualquer.</p>
+  </div>
+
+  <div class="texturas">
+    <div class="tex">
+      <svg viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true">
+        <rect width="100" height="60" fill="#1A1A1F"/>
+        <g stroke="#2E2D36" stroke-width="1.6">
+          <path d="M-10,10 L20,-20 M0,20 L30,-10 M10,30 L40,0 M20,40 L50,10 M30,50 L60,20 M40,60 L70,30 M50,70 L80,40 M60,80 L90,50 M70,90 L100,60 M80,100 L110,70"/>
+        </g>
+      </svg>
+      <span>Alfaiataria</span>
+    </div>
+    <div class="tex">
+      <svg viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true">
+        <rect width="100" height="60" fill="#171720"/>
+        <g stroke="#31303B" stroke-width="2">
+          <path d="M6,0 V60 M16,0 V60 M26,0 V60 M36,0 V60 M46,0 V60 M56,0 V60 M66,0 V60 M76,0 V60 M86,0 V60 M96,0 V60"/>
+        </g>
+      </svg>
+      <span>Malha canelada</span>
+    </div>
+    <div class="tex">
+      <svg viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="cetim" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#0C0C10"/>
+            <stop offset=".38" stop-color="#3A3945"/>
+            <stop offset=".52" stop-color="#4A4956"/>
+            <stop offset=".7" stop-color="#22212A"/>
+            <stop offset="1" stop-color="#0C0C10"/>
+          </linearGradient>
+        </defs>
+        <rect width="100" height="60" fill="url(#cetim)"/>
+      </svg>
+      <span>Cetim</span>
+    </div>
+    <div class="tex">
+      <svg viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <filter id="grao">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7"/>
+            <feColorMatrix type="saturate" values="0"/>
+            <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+          </filter>
+        </defs>
+        <rect width="100" height="60" fill="#16161A"/>
+        <rect width="100" height="60" filter="url(#grao)" opacity=".9"/>
+      </svg>
+      <span>Couro</span>
+    </div>
+    <div class="tex">
+      <svg viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true">
+        <rect width="100" height="60" fill="url(#renda)"/>
+      </svg>
+      <span>Renda</span>
+    </div>
   </div>
 </section>
 
@@ -863,10 +1108,47 @@
   </div>
 </section>
 
+
+<section id="onde" class="wrap">
+  <div class="sec-head prose">
+    <p class="eyebrow">Onde</p>
+    <h2>Trattoria Carbone</h2>
+  </div>
+
+  <div class="onde">
+    <div>
+      <p class="eyebrow">Quando</p>
+      <p class="grande">Quinta, 17 de setembro</p>
+      <p>Das 19:30 às 22:00.</p>
+    </div>
+    <div>
+      <p class="eyebrow">Endereço</p>
+      <p class="grande">Top Market</p>
+      <p>Centro — Florianópolis, Santa Catarina.</p>
+    </div>
+    <div>
+      <p class="eyebrow">Chegada</p>
+      <p class="grande">Até 19:30</p>
+      <p>A primeira meia hora é o networking. Quem chega às oito perde a melhor parte.</p>
+    </div>
+  </div>
+
+  <p class="aviso">Se você vem de carro, saia de casa com folga: é Centro, é quinta-feira e o estacionamento leva tempo. Chegar com pressa começa a noite com a energia errada — e a gente está aqui justamente para tratar disso.</p>
+</section>
+
 <section class="end wrap">
   <p class="eyebrow">Antes de sair de casa</p>
   <p class="lede" style="margin-top:1.2em">Se bateu dúvida sobre uma peça, manda a foto no grupo. A regra é uma só: se você precisa perguntar se está preto o bastante, não está.</p>
-  <p class="sig"><span class="dash"></span>Nos vemos de preto · Método Lucro Anti-Exaustão®</p>
+
+  <div class="carta" style="margin: clamp(50px, 8vw, 80px) auto 0; text-align: left">
+    <p class="abre">Mentora,</p>
+    <p>Você não precisa dar conta de tudo. Precisa decidir antes — e sustentar a decisão depois, quando o dia apertar.</p>
+    <p>Quando esta noite terminar, o preto vai ter feito o trabalho dele: ninguém vai lembrar do que você vestiu. Vão lembrar do que você disse.</p>
+    <p>Que você volte para casa sabendo <strong>qual decisão você vinha adiando e tomou hoje</strong>, e quem, dessa mesa, você vai chamar antes do próximo encontro.</p>
+    <p>Nos vemos no dia 17.</p>
+  </div>
+
+  <p class="sig"><span class="dash"></span>Método Lucro Anti-Exaustão®</p>
 </section>
 
 </main>
