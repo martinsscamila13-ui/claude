@@ -1,0 +1,942 @@
+<title>Cartilha do Preto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,300&display=swap">
+
+<style>
+  :root{
+    color-scheme: dark;
+    --ink:      #0B0B0C;
+    --ink-1:    #111113;
+    --ink-2:    #17171A;
+    --line:     #26252A;
+    --line-soft:#1B1B1E;
+    --bone:     #EDE8E0;
+    --bone-2:   #B3ACA3;
+    --bone-3:   #7A746D;
+    --clay:     #BFA08A;
+    --clay-dim: #7E6858;
+
+    --display: "Jost", "Futura", "Century Gothic", sans-serif;
+    --body: "Newsreader", "Iowan Old Style", Georgia, serif;
+
+    --gutter: clamp(20px, 6vw, 64px);
+    --stack: clamp(56px, 9vw, 104px);
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    background: var(--ink);
+    color: var(--bone-2);
+    font-family: var(--body);
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.72;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: var(--gutter);
+  }
+
+  .prose{ max-width: 60ch; }
+
+  a{ color: var(--bone); text-decoration-color: var(--clay-dim); text-underline-offset: 3px; }
+
+  :focus-visible{
+    outline: 1px solid var(--clay);
+    outline-offset: 3px;
+  }
+
+  /* ---------- tipografia ---------- */
+  .eyebrow{
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: .66rem;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: var(--clay);
+    margin: 0;
+  }
+
+  h1{
+    font-family: var(--display);
+    font-weight: 200;
+    font-size: clamp(2.7rem, 11vw, 5.6rem);
+    line-height: .98;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--bone);
+    margin: .5em 0 0;
+    text-wrap: balance;
+  }
+
+  h2{
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: clamp(1.5rem, 4.4vw, 2.15rem);
+    line-height: 1.15;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--bone);
+    margin: .35em 0 0;
+    text-wrap: balance;
+  }
+
+  h3{
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: .95rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--bone);
+    margin: 0;
+  }
+
+  p{ margin: 0 0 1.05em; }
+  p:last-child{ margin-bottom: 0; }
+
+  .lede{
+    font-size: clamp(1.06rem, 2.4vw, 1.28rem);
+    line-height: 1.62;
+    color: var(--bone);
+    font-weight: 200;
+  }
+
+  em{ font-style: italic; color: var(--bone); }
+  strong{ font-weight: 400; color: var(--bone); }
+
+  /* ---------- navegação ---------- */
+  .nav{
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: color-mix(in srgb, var(--ink) 88%, transparent);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .nav-inner{
+    display: flex;
+    gap: clamp(16px, 3.4vw, 34px);
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-block: 14px;
+  }
+  .nav-inner::-webkit-scrollbar{ display: none; }
+  .nav a{
+    font-family: var(--display);
+    font-size: .64rem;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: var(--bone-3);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color .25s ease;
+  }
+  .nav a:hover{ color: var(--bone); }
+  .nav .mark{ color: var(--bone); letter-spacing: .3em; }
+
+  /* ---------- hero ---------- */
+  .hero{
+    padding-block: clamp(60px, 13vw, 130px) clamp(44px, 8vw, 76px);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .hero .rule{
+    width: 68px;
+    height: 1px;
+    background: var(--clay-dim);
+    margin: clamp(26px, 5vw, 40px) 0 clamp(24px, 4vw, 34px);
+  }
+  .hero .lede{ max-width: 46ch; }
+
+  .facts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    margin-top: clamp(36px, 6vw, 58px);
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .fact{
+    flex: 1 1 180px;
+    background: var(--ink-1);
+    padding: 18px 20px 20px;
+  }
+  .fact dt{
+    font-family: var(--display);
+    font-size: .58rem;
+    letter-spacing: .26em;
+    text-transform: uppercase;
+    color: var(--bone-3);
+  }
+  .fact dd{
+    margin: 8px 0 0;
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: 1.02rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--bone);
+    font-variant-numeric: tabular-nums;
+  }
+  .fact dd .soon{ color: var(--bone-3); }
+
+  /* ---------- seções ---------- */
+  section{ padding-block: var(--stack); border-bottom: 1px solid var(--line-soft); }
+  .sec-head{ margin-bottom: clamp(30px, 5vw, 46px); }
+  .sec-head p{ margin-top: 1em; }
+
+  /* ---------- manifesto ---------- */
+  .pull{
+    margin: clamp(34px, 6vw, 52px) 0 0;
+    padding: 26px 0 0;
+    border-top: 1px solid var(--line);
+    font-family: var(--display);
+    font-weight: 200;
+    font-size: clamp(1.2rem, 3.2vw, 1.7rem);
+    line-height: 1.35;
+    letter-spacing: .02em;
+    color: var(--bone);
+    max-width: 24ch;
+  }
+  .pull span{ color: var(--clay); }
+
+  /* ---------- regras ---------- */
+  .rules{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .rule-item{
+    background: var(--ink-1);
+    padding: 26px 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .rule-item p{ font-size: .96rem; color: var(--bone-2); }
+
+  /* ---------- filtros ---------- */
+  .filters{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 26px;
+  }
+  .chip{
+    font-family: var(--display);
+    font-size: .62rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--bone-3);
+    background: transparent;
+    border: 1px solid var(--line);
+    padding: 9px 15px;
+    cursor: pointer;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  .chip:hover{ color: var(--bone); border-color: var(--bone-3); }
+  .chip[aria-pressed="true"]{
+    color: var(--ink);
+    background: var(--bone);
+    border-color: var(--bone);
+  }
+  .count{
+    font-family: var(--display);
+    font-size: .62rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--bone-3);
+    margin-bottom: 22px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- galeria ---------- */
+  .looks{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .look{
+    background: var(--ink-1);
+    border: 0;
+    padding: 0 0 26px;
+    text-align: left;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  .look figure{ margin: 0; background: var(--ink-2); }
+  .look-svg{ display: block; width: 100%; max-width: 100%; height: auto; }
+  .look-body{ padding: 22px 22px 0; display: flex; flex-direction: column; gap: 9px; flex: 1; }
+  @media (max-width: 800px){ .looks{ grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 470px){ .looks{ grid-template-columns: 1fr; } }
+  .look h3{ transition: color .2s ease; }
+  .look:hover h3, .look:focus-visible h3{ color: var(--clay); }
+  .pieces{
+    font-size: .92rem;
+    line-height: 1.55;
+    color: var(--bone-2);
+    margin: 0;
+  }
+  .why{
+    font-size: .86rem;
+    line-height: 1.55;
+    color: var(--bone-3);
+    font-style: italic;
+    margin: 0;
+  }
+  .look .open{
+    font-family: var(--display);
+    font-size: .58rem;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: var(--clay-dim);
+    margin-top: auto;
+    padding-top: 8px;
+  }
+
+  /* ---------- lightbox ---------- */
+  dialog{
+    border: 1px solid var(--line);
+    background: var(--ink-1);
+    color: var(--bone-2);
+    padding: 0;
+    width: min(760px, calc(100vw - 32px));
+    max-width: 100%;
+  }
+  dialog::backdrop{ background: rgba(6,6,7,.86); }
+  .modal{
+    display: grid;
+    grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
+  }
+  .modal figure{ margin: 0; background: var(--ink-2); }
+  .modal .mbody{ padding: 30px 30px 34px; display: flex; flex-direction: column; gap: 14px; }
+  .modal h3{ font-size: 1.1rem; }
+  .close{
+    align-self: flex-start;
+    margin-top: 6px;
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--bone-3);
+    font-family: var(--display);
+    font-size: .6rem;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    padding: 9px 16px;
+    cursor: pointer;
+  }
+  .close:hover{ color: var(--bone); border-color: var(--bone-3); }
+  @media (max-width: 620px){
+    .modal{ grid-template-columns: 1fr; }
+    .modal figure{ max-height: 320px; display: flex; justify-content: center; }
+    .modal figure svg{ height: 320px; width: auto; }
+  }
+
+  /* ---------- sim & evite ---------- */
+  .two{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .col{ background: var(--ink-1); padding: 28px 26px 32px; }
+  .col ul{ list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .col li{ font-size: .96rem; line-height: 1.5; padding-left: 24px; position: relative; }
+  .col.yes li::before{
+    content: "";
+    position: absolute;
+    left: 0; top: .68em;
+    width: 12px; height: 1px;
+    background: var(--clay);
+  }
+  .col.no li{ color: var(--bone-3); }
+  .col.no li::before{
+    content: "";
+    position: absolute;
+    left: 0; top: .68em;
+    width: 12px; height: 1px;
+    background: var(--bone-3);
+    opacity: .5;
+  }
+  .col.yes h3 span{ color: var(--clay); }
+
+  /* ---------- kit ---------- */
+  .kit{ display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+  .kit li{
+    list-style: none;
+    font-family: var(--display);
+    font-size: .68rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--bone-2);
+    border: 1px solid var(--line);
+    padding: 10px 14px;
+  }
+
+  /* ---------- agenda ---------- */
+  .agenda{ margin-top: 8px; }
+  .slot{
+    display: grid;
+    grid-template-columns: 84px 1px minmax(0, 1fr);
+    gap: 0 22px;
+    padding-block: 22px;
+    border-bottom: 1px solid var(--line-soft);
+    align-items: start;
+  }
+  .slot:first-child{ border-top: 1px solid var(--line-soft); }
+  .slot time{
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: .1em;
+    color: var(--bone);
+    font-variant-numeric: tabular-nums;
+    padding-top: 2px;
+  }
+  .slot .rail{
+    background: var(--line);
+    width: 1px;
+    height: 100%;
+    position: relative;
+  }
+  .slot .rail::before{
+    content: "";
+    position: absolute;
+    left: -2px; top: 8px;
+    width: 5px; height: 5px;
+    background: var(--bone-3);
+    border-radius: 50%;
+  }
+  .slot.key .rail::before{ background: var(--clay); }
+  .slot h3{ margin-bottom: 7px; }
+  .slot p{ font-size: .94rem; color: var(--bone-3); margin: 0; }
+  @media (max-width: 520px){
+    .slot{ grid-template-columns: 66px 1px minmax(0, 1fr); gap: 0 16px; }
+  }
+
+  /* ---------- fecho ---------- */
+  .end{ border-bottom: 0; text-align: center; }
+  .end .lede{ margin: 0 auto; max-width: 34ch; }
+  .sig{
+    font-family: var(--display);
+    font-size: .62rem;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: var(--bone-3);
+    margin-top: clamp(40px, 7vw, 64px);
+  }
+  .sig .dash{
+    display: block;
+    width: 48px;
+    height: 1px;
+    background: var(--line);
+    margin: 0 auto 22px;
+  }
+
+  /* ---------- svg ---------- */
+  .fab{ fill: url(#fabric); stroke: #3C3B43; stroke-width: .6; stroke-opacity: .6; }
+  .fab-soft{ fill: url(#fabric-soft); stroke: #3C3B43; stroke-width: .6; stroke-opacity: .45; }
+  .shoe{ fill: #08080A; stroke: #3C3B43; stroke-width: .5; stroke-opacity: .6; }
+  .hair{ fill: #121216; }
+  .detail{ fill: none; stroke: #46454E; stroke-width: .7; stroke-opacity: .75; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  }
+  html{ scroll-behavior: smooth; }
+</style>
+
+<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <linearGradient id="fabric" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2C2B33"/>
+      <stop offset=".42" stop-color="#151519"/>
+      <stop offset="1" stop-color="#08080A"/>
+    </linearGradient>
+    <linearGradient id="fabric-soft" x1=".1" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#24232A"/>
+      <stop offset=".55" stop-color="#131317"/>
+      <stop offset="1" stop-color="#0B0B0D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#EDE8E0" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#EDE8E0" stop-opacity="0"/>
+    </radialGradient>
+
+    <symbol id="croqui" viewBox="0 0 200 400">
+      <path d="M91,62 L109,62 L112,80 C122,83 130,86 132,94 L128,118 C126,140 120,150 118,168 C122,180 124,188 124,198 L100,206 L76,198 C76,188 78,180 82,168 C80,150 74,140 72,118 L68,94 C70,86 78,83 88,80 Z"/>
+      <path d="M76,200 C74,240 80,262 84,292 C86,326 86,350 87,372 L93,372 C94,350 95,326 96,292 C98,262 100,232 99,206 Z"/>
+      <path d="M124,200 C126,240 120,262 116,292 C114,326 114,350 113,372 L107,372 C106,350 105,326 104,292 C102,262 100,232 101,206 Z"/>
+      <path d="M70,92 C62,104 58,124 58,144 C58,164 60,180 62,196 C63,204 64,210 65,214 L72,213 C71,206 70,198 70,190 C70,170 72,150 74,132 C76,116 78,104 80,96 Z"/>
+      <path d="M130,92 C138,104 142,124 142,144 C142,164 140,180 138,196 C137,204 136,210 135,214 L128,213 C129,206 130,198 130,190 C130,170 128,150 126,132 C124,116 122,104 120,96 Z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <span class="mark">Cartilha do Preto</span>
+    <a href="#acordo">O acordo</a>
+    <a href="#regras">As regras</a>
+    <a href="#looks">Os looks</a>
+    <a href="#sim-evite">Sim &amp; evite</a>
+    <a href="#dia">O dia</a>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <p class="eyebrow">Programa de Aceleração · Método Lucro Anti-Exaustão®</p>
+  <h1>Cartilha<br>do Preto</h1>
+  <div class="rule"></div>
+  <p class="lede">O nosso primeiro encontro presencial tem dress code: preto, do começo ao fim. Aqui está o porquê, as regras e seis looks prontos — para você não gastar um grama de energia decidindo o que vestir.</p>
+
+  <dl class="facts">
+    <div class="fact"><dt>Data</dt><dd><span class="soon">A confirmar</span></dd></div>
+    <div class="fact"><dt>Local</dt><dd><span class="soon">A confirmar</span></dd></div>
+    <div class="fact"><dt>Dress code</dt><dd>Preto inteiro</dd></div>
+    <div class="fact"><dt>Encontro</dt><dd>O primeiro</dd></div>
+  </dl>
+</header>
+
+<main>
+
+<section id="acordo" class="wrap">
+  <div class="sec-head prose">
+    <p class="eyebrow">O acordo</p>
+    <h2>Por que preto</h2>
+  </div>
+  <div class="prose">
+    <p>Toda decisão que você toma antes das nove da manhã cobra um preço. A roupa é a mais silenciosa delas — e a que mais rende culpa: o provador improvisado em cima da cama, as três trocas, a foto que você depois não quis postar.</p>
+    <p>O preto resolve isso por decreto. Uma cor só, nenhuma combinação para acertar, nada disputando atenção com o que você veio fazer aqui.</p>
+    <p>E existe um segundo motivo, mais importante: quando todas nós estamos de preto, ninguém está sendo medida pela roupa. O que sobra na sala é o que interessa — o negócio de cada uma, do jeito que ele está hoje.</p>
+    <p class="pull">Não é sobre elegância. É sobre <span>economia de decisão</span> — a primeira ferramenta anti-exaustão do nosso encontro.</p>
+  </div>
+</section>
+
+<section id="regras" class="wrap">
+  <div class="sec-head prose">
+    <p class="eyebrow">As regras</p>
+    <h2>Seis combinados</h2>
+    <p>Curtos e sem exceção. Se você seguir só estes seis, está vestida.</p>
+  </div>
+
+  <div class="rules">
+    <div class="rule-item">
+      <h3>Preto de verdade</h3>
+      <p>Preto muito lavado vira grafite. Se a peça já puxou para o cinza, ela conta como cinza — deixe em casa.</p>
+    </div>
+    <div class="rule-item">
+      <h3>Preto inteiro</h3>
+      <p>Da blusa ao sapato, passando pela meia. Jeans azul, mesmo o mais escuro, não entra.</p>
+    </div>
+    <div class="rule-item">
+      <h3>Um contraste só</h3>
+      <p>Se quiser quebrar, escolha <em>um</em>: prata, dourado ou off-white, num acessório. Um. Não três.</p>
+    </div>
+    <div class="rule-item">
+      <h3>Textura é o que dá vida</h3>
+      <p>Misture acabamentos na mesma cor — malha, alfaiataria, couro, cetim. É o que impede o preto de virar uniforme.</p>
+    </div>
+    <div class="rule-item">
+      <h3>Teste sentada</h3>
+      <p>Você vai passar o dia nessa roupa: sentar, escrever, levantar, abraçar, ser fotografada. Sente antes de sair de casa.</p>
+    </div>
+    <div class="rule-item">
+      <h3>Sapato que anda</h3>
+      <p>Salto é bem-vindo se ele já é o seu salto. Se não é, tênis preto e rasteira estão liberados — sem justificativa.</p>
+    </div>
+  </div>
+</section>
+
+<section id="looks" class="wrap">
+  <div class="sec-head prose">
+    <p class="eyebrow">Os looks</p>
+    <h2>Seis prontos</h2>
+    <p>Todos montados com peças que você provavelmente já tem no armário. Filtre pelo que importa para o seu dia e toque no look para ver os detalhes.</p>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filtrar looks">
+    <button class="chip" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+    <button class="chip" type="button" data-filter="calca" aria-pressed="false">De calça</button>
+    <button class="chip" type="button" data-filter="vestido" aria-pressed="false">Vestido &amp; saia</button>
+    <button class="chip" type="button" data-filter="viagem" aria-pressed="false">Não amassa na viagem</button>
+    <button class="chip" type="button" data-filter="frio" aria-pressed="false">Camada extra</button>
+  </div>
+
+  <p class="count" id="count">Seis looks</p>
+
+  <div class="looks" id="grid">
+
+    <!-- 1 · Alfaiataria fluida -->
+    <button class="look" type="button" data-tags="calca frio" data-nome="Alfaiataria fluida"
+      data-pieces="Blazer oversized · calça wide leg · regata de malha · mocassim ou mule"
+      data-why="Senta, cruza a perna, levanta e continua alinhada. O blazer funciona como botão de “modo trabalho”: você veste na abertura e tira no almoço."
+      data-fig="fig1">
+      <figure>
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: blazer oversized sobre regata e calça wide leg, com mocassim">
+          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
+          <path class="hair" d="M100,16 C82,16 76,28 77,44 C78,70 74,98 78,122 L90,118 C86,94 87,64 90,44 L110,44 C113,64 114,94 110,118 L122,122 C126,98 122,70 123,44 C124,28 118,16 100,16 Z"/>
+          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#E0BE9E"/>
+          <use href="#croqui" fill="#E0BE9E"/>
+          <path class="fab-soft" d="M84,74 C90,85 110,85 116,74 L120,120 C120,150 119,176 118,196 L82,196 C81,176 80,150 80,120 Z"/>
+          <path class="fab" d="M72,188 L128,188 C130,224 132,262 135,300 L138,378 L106,378 L102,262 L98,262 L94,378 L62,378 L65,300 C68,262 70,224 72,188 Z"/>
+          <path class="fab" d="M88,76 L70,90 C63,112 60,142 60,172 L62,220 L84,220 C82,182 84,142 90,110 Z"/>
+          <path class="fab" d="M112,76 L130,90 C137,112 140,142 140,172 L138,220 L116,220 C118,182 116,142 110,110 Z"/>
+          <path class="fab" d="M70,88 C59,102 54,128 54,152 C54,174 57,192 59,208 L74,206 C72,190 70,170 70,150 C70,128 74,104 82,92 Z"/>
+          <path class="fab" d="M130,88 C141,102 146,128 146,152 C146,174 143,192 141,208 L126,206 C128,190 130,170 130,150 C130,128 126,104 118,92 Z"/>
+          <path class="detail" d="M100,80 L100,168"/>
+          <path class="shoe" d="M84,372 L96,372 L98,388 L74,388 C73,380 77,374 84,372 Z"/>
+          <path class="shoe" d="M116,372 L104,372 L102,388 L126,388 C127,380 123,374 116,372 Z"/>
+        </svg>
+      </figure>
+      <div class="look-body">
+        <h3>Alfaiataria fluida</h3>
+        <p class="pieces">Blazer oversized · calça wide leg · regata de malha · mocassim</p>
+        <p class="why">Senta, cruza a perna, levanta e continua alinhada.</p>
+        <p class="open">Ver detalhes</p>
+      </div>
+    </button>
+
+    <!-- 2 · Malha midi -->
+    <button class="look" type="button" data-tags="vestido viagem" data-nome="Malha midi"
+      data-pieces="Vestido de malha manga longa · bota de cano curto · cinto fino"
+      data-why="Uma peça só, zero combinação para acertar e nada que amasse dentro da mala. Se você chega de viagem no mesmo dia, é este."
+      data-fig="fig2">
+      <figure>
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: vestido de malha midi manga longa com bota de cano curto">
+          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
+          <path class="hair" d="M100,20 C88,20 81,29 81,43 L119,43 C119,29 112,20 100,20 Z"/>
+          <circle class="hair" cx="100" cy="14" r="9"/>
+          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#A0714B"/>
+          <path class="hair" d="M84,34 C87,25 113,25 116,34 C115,27 110,21 100,21 C90,21 85,27 84,34 Z"/>
+          <use href="#croqui" fill="#A0714B"/>
+          <path class="fab-soft" d="M88,74 L112,74 C126,78 136,86 136,98 L132,140 C130,172 134,226 138,268 L136,306 L64,306 L62,268 C66,226 70,172 68,140 L64,98 C64,86 74,78 88,74 Z"/>
+          <path class="fab-soft" d="M74,88 C58,102 52,128 52,152 C52,174 55,194 57,210 L76,208 C74,192 72,172 72,152 C72,128 78,102 90,92 Z"/>
+          <path class="fab-soft" d="M126,88 C142,102 148,128 148,152 C148,174 145,194 143,210 L124,208 C126,192 128,172 128,152 C128,128 122,102 110,92 Z"/>
+          <path class="detail" d="M74,176 C88,182 112,182 126,176"/>
+          <path class="shoe" d="M82,298 L96,298 L97,352 C97,364 99,376 100,386 L76,386 C77,372 79,356 80,340 Z"/>
+          <path class="shoe" d="M118,298 L104,298 L103,352 C103,364 101,376 100,386 L124,386 C123,372 121,356 120,340 Z"/>
+        </svg>
+      </figure>
+      <div class="look-body">
+        <h3>Malha midi</h3>
+        <p class="pieces">Vestido de malha manga longa · bota de cano curto · cinto fino</p>
+        <p class="why">Uma peça só, zero combinação, não amassa na mala.</p>
+        <p class="open">Ver detalhes</p>
+      </div>
+    </button>
+
+    <!-- 3 · Camisa & reta -->
+    <button class="look" type="button" data-tags="calca viagem" data-nome="Camisa &amp; reta"
+      data-pieces="Camisa de viscose ou seda · calça reta · sapatilha ou mule"
+      data-why="O clássico que atravessa o dia: resolve o calor da chegada e o ar-condicionado da tarde só com o botão do punho. Por dentro da calça na abertura, por fora depois do almoço."
+      data-fig="fig3">
+      <figure>
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: camisa de seda por dentro de calça reta com sapatilha">
+          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
+          <path class="hair" d="M100,18 C88,18 82,27 82,40 L118,40 C118,27 112,18 100,18 Z"/>
+          <path class="hair" d="M114,32 C126,38 132,58 128,80 C126,92 121,100 116,104 L110,94 C115,88 118,76 118,64 C118,52 114,42 109,37 Z"/>
+          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#6E4A32"/>
+          <path class="hair" d="M85,33 C89,24 112,24 116,33 C115,26 110,20 100,20 C90,20 86,26 85,33 Z"/>
+          <use href="#croqui" fill="#6E4A32"/>
+          <path class="fab" d="M91,68 L109,68 L112,80 C126,84 134,90 134,102 L130,134 C129,156 124,168 122,184 L78,184 C76,168 71,156 70,134 L66,102 C66,90 74,84 88,80 Z"/>
+          <path class="fab" d="M76,88 C60,104 53,130 53,154 C53,176 56,194 58,210 L77,207 C75,192 73,172 73,154 C73,130 80,104 92,92 Z"/>
+          <path class="fab" d="M124,88 C140,104 147,130 147,154 C147,176 144,194 142,210 L123,207 C125,192 127,172 127,154 C127,130 120,104 108,92 Z"/>
+          <path class="detail" d="M100,74 L100,178 M91,70 L100,84 L109,70"/>
+          <path class="fab" d="M76,180 L124,180 C126,214 127,252 128,290 L130,378 L104,378 L101,240 L99,240 L96,378 L70,378 L72,290 C73,252 74,214 76,176 Z"/>
+          <path class="detail" d="M76,196 L124,196"/>
+          <path class="shoe" d="M84,372 L96,372 L97,387 L76,387 C75,380 79,374 84,372 Z"/>
+          <path class="shoe" d="M116,372 L104,372 L103,387 L124,387 C125,380 121,374 116,372 Z"/>
+        </svg>
+      </figure>
+      <div class="look-body">
+        <h3>Camisa &amp; reta</h3>
+        <p class="pieces">Camisa de viscose ou seda · calça reta · sapatilha ou mule</p>
+        <p class="why">Resolve calor e ar-condicionado com o botão do punho.</p>
+        <p class="open">Ver detalhes</p>
+      </div>
+    </button>
+
+    <!-- 4 · Macacão -->
+    <button class="look" type="button" data-tags="calca viagem" data-nome="Macacão"
+      data-pieces="Macacão preto · brinco de assinatura · tênis preto ou sandália baixa"
+      data-why="Veste em um minuto e resolve o dia inteiro. Como a peça já é o look completo, o brinco é o único acessório de que você precisa — e vira o seu ponto final."
+      data-fig="fig4">
+      <figure>
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: macacão de alça larga com sandália baixa">
+          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
+          <ellipse class="hair" cx="100" cy="33" rx="25" ry="23"/>
+          <ellipse class="hair" cx="77" cy="45" rx="10" ry="12"/>
+          <ellipse class="hair" cx="123" cy="45" rx="10" ry="12"/>
+          <ellipse cx="100" cy="46" rx="14" ry="18" fill="#C79A72"/>
+          <use href="#croqui" fill="#C79A72"/>
+          <path class="fab" d="M80,80 L94,80 C96,94 104,94 106,80 L120,80 C128,86 131,94 131,106 L126,140 C124,160 121,176 120,190 L128,190 C130,226 132,264 134,300 L136,378 L106,378 L102,258 L98,258 L94,378 L64,378 L66,300 C68,264 70,226 72,190 L80,190 C79,176 76,160 74,140 L69,106 C69,94 72,86 80,80 Z"/>
+          <path class="detail" d="M74,148 C88,154 112,154 126,148"/>
+          <circle cx="86" cy="60" r="3" fill="#8E8B86"/>
+          <path class="shoe" d="M82,372 L96,372 L97,387 L78,387 C77,381 79,375 82,372 Z"/>
+          <path class="shoe" d="M118,372 L104,372 L103,387 L122,387 C123,381 121,375 118,372 Z"/>
+        </svg>
+      </figure>
+      <div class="look-body">
+        <h3>Macacão</h3>
+        <p class="pieces">Macacão preto · brinco de assinatura · tênis preto ou sandália baixa</p>
+        <p class="why">Veste em um minuto e resolve o dia inteiro.</p>
+        <p class="open">Ver detalhes</p>
+      </div>
+    </button>
+
+    <!-- 5 · Tricô & saia longa -->
+    <button class="look" type="button" data-tags="vestido frio" data-nome="Tricô &amp; saia longa"
+      data-pieces="Tricô canelado · saia longa fluida · bota ou coturno"
+      data-why="Para quem congela no ar-condicionado e não quer abrir mão do movimento. A saia fluida faz o contraponto com o tricô encorpado — é a mistura de texturas da regra quatro, na prática."
+      data-fig="fig5">
+      <figure>
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: tricô canelado com saia longa fluida e bota">
+          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
+          <path class="hair" d="M100,17 C84,17 78,29 79,45 C79,58 80,66 82,74 L91,71 C89,60 89,48 91,40 L109,40 C111,48 111,60 109,71 L118,74 C120,66 121,58 121,45 C122,29 116,17 100,17 Z"/>
+          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#D8AE8C"/>
+          <use href="#croqui" fill="#D8AE8C"/>
+          <path class="fab-soft" d="M66,272 C70,236 74,204 76,176 L124,176 C126,204 130,236 134,272 C136,300 138,330 139,358 L61,358 C62,330 64,300 66,272 Z"/>
+          <path class="detail" d="M84,200 C86,250 84,310 82,356 M116,200 C114,250 116,310 118,356 M100,196 L100,356"/>
+          <path class="fab" d="M88,74 L112,74 C124,78 132,86 132,96 L129,130 C128,152 126,170 126,186 L74,186 C74,170 72,152 71,130 L68,96 C68,86 76,78 88,74 Z"/>
+          <path class="fab" d="M70,90 C60,104 55,128 55,152 C55,174 58,194 60,210 L74,208 C72,192 70,172 70,152 C70,130 74,106 82,94 Z"/>
+          <path class="fab" d="M130,90 C140,104 145,128 145,152 C145,174 142,194 140,210 L126,208 C128,192 130,172 130,152 C130,130 126,106 118,94 Z"/>
+          <path class="detail" d="M82,96 L79,182 M91,90 L89,184 M109,90 L111,184 M118,96 L121,182"/>
+          <path class="shoe" d="M84,352 L96,352 L97,387 L76,387 C77,376 80,364 84,352 Z"/>
+          <path class="shoe" d="M116,352 L104,352 L103,387 L124,387 C123,376 120,364 116,352 Z"/>
+        </svg>
+      </figure>
+      <div class="look-body">
+        <h3>Tricô &amp; saia longa</h3>
+        <p class="pieces">Tricô canelado · saia longa fluida · bota ou coturno</p>
+        <p class="why">Para quem congela no ar-condicionado e não quer perder o movimento.</p>
+        <p class="open">Ver detalhes</p>
+      </div>
+    </button>
+
+    <!-- 6 · Camadas -->
+    <button class="look" type="button" data-tags="calca frio viagem" data-nome="Camadas"
+      data-pieces="Camiseta preta de algodão pesado · colete alongado · calça reta · tênis preto"
+      data-why="O look que se ajusta sozinho: você tira e põe a camada conforme a sala esfria, sem trocar de roupa. É o mais confortável dos seis e continua sendo o mais alinhado."
+      data-fig="fig6">
+      <figure>
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: camiseta com colete alongado, calça reta e tênis">
+          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
+          <path class="hair" d="M100,16 C82,16 76,28 77,44 C78,66 76,88 79,106 L89,103 C86,86 87,62 90,44 L110,44 C113,62 114,86 111,103 L121,106 C124,88 122,66 123,44 C124,28 118,16 100,16 Z"/>
+          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#8A5A3C"/>
+          <use href="#croqui" fill="#8A5A3C"/>
+          <path class="fab-soft" d="M89,72 L111,72 L114,82 C124,86 128,92 128,102 L125,126 C124,146 121,162 120,178 L80,178 C79,162 76,146 75,126 L72,102 C72,92 76,86 86,82 Z"/>
+          <path class="fab-soft" d="M74,86 C68,94 64,106 62,118 L72,122 C74,112 77,102 82,94 Z"/>
+          <path class="fab-soft" d="M126,86 C132,94 136,106 138,118 L128,122 C126,112 123,102 118,94 Z"/>
+          <path class="fab" d="M74,174 L126,174 C128,212 129,250 130,288 L132,378 L104,378 L101,244 L99,244 L96,378 L68,378 L70,288 C71,250 72,212 74,174 Z"/>
+          <path class="fab" d="M86,78 L68,92 C64,116 62,150 62,182 L63,246 L84,246 C82,206 83,160 88,116 Z"/>
+          <path class="fab" d="M114,78 L132,92 C136,116 138,150 138,182 L137,246 L116,246 C118,206 117,160 112,116 Z"/>
+          <path class="detail" d="M100,246 L100,254 M84,246 L84,254 M116,246 L116,254"/>
+          <path class="shoe" d="M80,368 L98,368 L98,388 L74,388 C72,380 74,372 80,368 Z"/>
+          <path class="shoe" d="M120,368 L102,368 L102,388 L126,388 C128,380 126,372 120,368 Z"/>
+          <path class="detail" d="M76,381 L96,381 M124,381 L104,381"/>
+        </svg>
+      </figure>
+      <div class="look-body">
+        <h3>Camadas</h3>
+        <p class="pieces">Camiseta preta · colete alongado · calça reta · tênis preto</p>
+        <p class="why">Você tira e põe a camada conforme a sala esfria — sem trocar de look.</p>
+        <p class="open">Ver detalhes</p>
+      </div>
+    </button>
+
+  </div>
+</section>
+
+<section id="sim-evite" class="wrap">
+  <div class="sec-head prose">
+    <p class="eyebrow">Sim &amp; evite</p>
+    <h2>A lista curta</h2>
+    <p>Quando bater dúvida na frente do armário, é por aqui que você decide.</p>
+  </div>
+
+  <div class="two">
+    <div class="col yes">
+      <h3>Sim <span>—</span></h3>
+      <ul>
+        <li>Tecidos com peso: caem melhor e não marcam o dia inteiro.</li>
+        <li>Texturas diferentes na mesma cor.</li>
+        <li>Manga que você pode dobrar.</li>
+        <li>Bolso — você vai querer as mãos livres.</li>
+        <li>Um acessório de assinatura, o seu de sempre.</li>
+        <li>Maquiagem que aguenta oito horas e uma foto no fim.</li>
+      </ul>
+    </div>
+    <div class="col no">
+      <h3>Evite</h3>
+      <ul>
+        <li>Preto desbotado ou já acinzentado.</li>
+        <li>Estampa, mesmo miúda.</li>
+        <li>Jeans azul.</li>
+        <li>Transparência que exige vigilância.</li>
+        <li>Sapato comprado essa semana.</li>
+        <li>Qualquer peça que você precise ajustar toda vez que levanta.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sec-head prose" style="margin-top: clamp(44px, 7vw, 66px)">
+    <h3>Kit de sobrevivência do preto</h3>
+  </div>
+  <ul class="kit">
+    <li>Rolo tira-fiapos</li>
+    <li>Meia ou collant reserva</li>
+    <li>Antitranspirante que não deixa marca</li>
+    <li>Lenço escuro</li>
+    <li>Uma terceira peça dobrada na bolsa</li>
+    <li>Carregador</li>
+  </ul>
+</section>
+
+<section id="dia" class="wrap">
+  <div class="sec-head prose">
+    <p class="eyebrow">O dia</p>
+    <h2>Como o encontro corre</h2>
+    <p>Nosso primeiro dia é a <strong>Fase 1 — Raio-X Operacional</strong>: clareza antes de qualquer expansão. Você sai daqui sabendo exatamente onde o seu lucro e a sua energia estão vazando.</p>
+  </div>
+
+  <div class="agenda">
+    <div class="slot">
+      <time>08:30</time><div class="rail"></div>
+      <div><h3>Credenciamento &amp; café</h3><p>Chegue com folga. Ninguém começa esse dia correndo.</p></div>
+    </div>
+    <div class="slot key">
+      <time>09:00</time><div class="rail"></div>
+      <div><h3>Abertura &amp; combinados</h3><p>Quem está na sala, o que cada uma veio resolver e como vamos trabalhar juntas nos próximos 90 dias.</p></div>
+    </div>
+    <div class="slot key">
+      <time>09:45</time><div class="rail"></div>
+      <div><h3>Bloco 1 · Diagnóstico Operacional</h3><p>O raio-X da sua empresa hoje, feito ao vivo. Traga os números que você tem — mesmo os incompletos.</p></div>
+    </div>
+    <div class="slot">
+      <time>12:00</time><div class="rail"></div>
+      <div><h3>Almoço</h3><p>Mesa coletiva. Faz parte do encontro.</p></div>
+    </div>
+    <div class="slot key">
+      <time>13:30</time><div class="rail"></div>
+      <div><h3>Bloco 2 · Mapa da Sobrecarga</h3><p>Onde a sua energia vaza — e por que quase sempre é no mesmo lugar em que o lucro vaza.</p></div>
+    </div>
+    <div class="slot">
+      <time>15:30</time><div class="rail"></div>
+      <div><h3>Intervalo</h3><p>Vinte minutos de pé, longe da cadeira.</p></div>
+    </div>
+    <div class="slot key">
+      <time>15:50</time><div class="rail"></div>
+      <div><h3>Bloco 3 · Roda da Empresária</h3><p>Suas prioridades inteligentes para as próximas três semanas, escritas antes de você ir embora.</p></div>
+    </div>
+    <div class="slot">
+      <time>17:30</time><div class="rail"></div>
+      <div><h3>Encerramento &amp; foto oficial</h3><p>A razão de todas nós estarmos de preto aparece aqui.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="end wrap">
+  <p class="eyebrow">Antes de fechar a mala</p>
+  <p class="lede" style="margin-top:1.2em">Se bateu dúvida sobre uma peça, manda a foto no grupo. A regra é uma só: se você precisa perguntar se está preto o bastante, não está.</p>
+  <p class="sig"><span class="dash"></span>Nos vemos de preto · Método Lucro Anti-Exaustão®</p>
+</section>
+
+</main>
+
+<dialog id="modal">
+  <div class="modal">
+    <figure id="m-fig"></figure>
+    <div class="mbody">
+      <p class="eyebrow" id="m-tags"></p>
+      <h3 id="m-nome"></h3>
+      <p class="pieces" id="m-pieces"></p>
+      <p id="m-why" style="font-size:.98rem"></p>
+      <button class="close" type="button" id="m-close">Fechar</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  (function () {
+    var grid = document.getElementById('grid');
+    var looks = Array.prototype.slice.call(grid.querySelectorAll('.look'));
+    var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+    var count = document.getElementById('count');
+    var nomes = ['Nenhum', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis'];
+    var rotulos = {
+      todos: 'Todos os looks',
+      calca: 'De calça',
+      vestido: 'Vestido & saia',
+      viagem: 'Não amassa na viagem',
+      frio: 'Camada extra'
+    };
+
+    function aplicar(filtro) {
+      var visiveis = 0;
+      looks.forEach(function (look) {
+        var tags = look.getAttribute('data-tags').split(' ');
+        var mostra = filtro === 'todos' || tags.indexOf(filtro) > -1;
+        look.hidden = !mostra;
+        if (mostra) { visiveis++; }
+      });
+      chips.forEach(function (chip) {
+        chip.setAttribute('aria-pressed', String(chip.getAttribute('data-filter') === filtro));
+      });
+      var quanto = nomes[visiveis] || visiveis;
+      count.textContent = filtro === 'todos'
+        ? quanto + ' looks'
+        : quanto + (visiveis === 1 ? ' look · ' : ' looks · ') + rotulos[filtro];
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        aplicar(chip.getAttribute('data-filter'));
+      });
+    });
+
+    var modal = document.getElementById('modal');
+    var mFig = document.getElementById('m-fig');
+    var mNome = document.getElementById('m-nome');
+    var mPieces = document.getElementById('m-pieces');
+    var mWhy = document.getElementById('m-why');
+    var mTags = document.getElementById('m-tags');
+
+    looks.forEach(function (look) {
+      look.addEventListener('click', function () {
+        var svg = look.querySelector('svg').cloneNode(true);
+        svg.removeAttribute('class');
+        svg.setAttribute('style', 'display:block;width:100%;height:auto');
+        mFig.textContent = '';
+        mFig.appendChild(svg);
+        mNome.textContent = look.getAttribute('data-nome');
+        mPieces.textContent = look.getAttribute('data-pieces');
+        mWhy.textContent = look.getAttribute('data-why');
+        mTags.textContent = look.getAttribute('data-tags').split(' ').map(function (t) {
+          return rotulos[t];
+        }).join(' · ');
+        if (typeof modal.showModal === 'function') { modal.showModal(); }
+      });
+    });
+
+    document.getElementById('m-close').addEventListener('click', function () { modal.close(); });
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) { modal.close(); }
+    });
+
+    aplicar('todos');
+  })();
+</script>
