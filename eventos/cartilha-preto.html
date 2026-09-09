@@ -185,6 +185,26 @@
     font-variant-numeric: tabular-nums;
   }
   .fact dd .soon{ color: var(--bone-3); }
+  .fact dd .sub{
+    display: block;
+    margin-top: 7px;
+    font-size: .58rem;
+    letter-spacing: .2em;
+    color: var(--bone-3);
+  }
+
+  .prep{
+    margin-top: clamp(40px, 6vw, 60px);
+    border: 1px solid var(--line);
+    border-left: 2px solid var(--clay-dim);
+    background: var(--ink-1);
+    padding: 28px clamp(22px, 4vw, 34px) 32px;
+    max-width: 62ch;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .prep p:last-child{ font-size: .96rem; }
 
   /* ---------- seções ---------- */
   section{ padding-block: var(--stack); border-bottom: 1px solid var(--line-soft); }
@@ -493,21 +513,21 @@
     <a href="#regras">As regras</a>
     <a href="#looks">Os looks</a>
     <a href="#sim-evite">Sim &amp; evite</a>
-    <a href="#dia">O dia</a>
+    <a href="#noite">A noite</a>
   </div>
 </nav>
 
 <header class="hero wrap">
   <p class="eyebrow">Programa de Aceleração · Método Lucro Anti-Exaustão®</p>
-  <h1>Cartilha<br>do Preto</h1>
+  <h1>Jantar das<br>Empresárias</h1>
   <div class="rule"></div>
-  <p class="lede">O nosso primeiro encontro presencial tem dress code: preto, do começo ao fim. Aqui está o porquê, as regras e seis looks prontos — para você não gastar um grama de energia decidindo o que vestir.</p>
+  <p class="lede">O nosso primeiro encontro presencial tem dress code: preto, do começo ao fim. Aqui está o porquê, as regras e seis looks prontos — para você chegar na Trattoria sem ter gastado um grama de energia decidindo o que vestir.</p>
 
   <dl class="facts">
     <div class="fact"><dt>Data</dt><dd><span class="soon">A confirmar</span></dd></div>
-    <div class="fact"><dt>Local</dt><dd><span class="soon">A confirmar</span></dd></div>
+    <div class="fact"><dt>Horário</dt><dd>19:30 — 22:00</dd></div>
+    <div class="fact"><dt>Onde</dt><dd>Trattoria Carbone<span class="sub">Top Market · Centro, Florianópolis</span></dd></div>
     <div class="fact"><dt>Dress code</dt><dd>Preto inteiro</dd></div>
-    <div class="fact"><dt>Encontro</dt><dd>O primeiro</dd></div>
   </dl>
 </header>
 
@@ -519,9 +539,9 @@
     <h2>Por que preto</h2>
   </div>
   <div class="prose">
-    <p>Toda decisão que você toma antes das nove da manhã cobra um preço. A roupa é a mais silenciosa delas — e a que mais rende culpa: o provador improvisado em cima da cama, as três trocas, a foto que você depois não quis postar.</p>
+    <p>A pior hora do dia para decidir o que vestir é às seis da tarde, depois de um dia inteiro decidindo outras coisas. É quando a gente abre o armário, tira três peças, devolve as três e sai atrasada — com a sensação de que não ficou bom.</p>
     <p>O preto resolve isso por decreto. Uma cor só, nenhuma combinação para acertar, nada disputando atenção com o que você veio fazer aqui.</p>
-    <p>E existe um segundo motivo, mais importante: quando todas nós estamos de preto, ninguém está sendo medida pela roupa. O que sobra na sala é o que interessa — o negócio de cada uma, do jeito que ele está hoje.</p>
+    <p>E existe um segundo motivo, mais importante: quando todas nós estamos de preto, ninguém está sendo medida pela roupa. O que sobra na mesa é o que interessa — o negócio de cada uma, do jeito que ele está hoje.</p>
     <p class="pull">Não é sobre elegância. É sobre <span>economia de decisão</span> — a primeira ferramenta anti-exaustão do nosso encontro.</p>
   </div>
 </section>
@@ -548,15 +568,15 @@
     </div>
     <div class="rule-item">
       <h3>Textura é o que dá vida</h3>
-      <p>Misture acabamentos na mesma cor — malha, alfaiataria, couro, cetim. É o que impede o preto de virar uniforme.</p>
+      <p>Misture acabamentos na mesma cor — malha, alfaiataria, couro, cetim. À luz baixa do restaurante a cor some: o que aparece é a textura.</p>
     </div>
     <div class="rule-item">
       <h3>Teste sentada</h3>
-      <p>Você vai passar o dia nessa roupa: sentar, escrever, levantar, abraçar, ser fotografada. Sente antes de sair de casa.</p>
+      <p>São duas horas e meia à mesa. Sente em casa antes de sair: a roupa precisa continuar bonita sentada, não só em pé no espelho.</p>
     </div>
     <div class="rule-item">
       <h3>Sapato que anda</h3>
-      <p>Salto é bem-vindo se ele já é o seu salto. Se não é, tênis preto e rasteira estão liberados — sem justificativa.</p>
+      <p>Tem calçada do estacionamento até a mesa. Salto é bem-vindo se ele já é o seu salto; se não é, bota baixa e rasteira preta estão liberadas — sem justificativa.</p>
     </div>
   </div>
 </section>
@@ -565,15 +585,15 @@
   <div class="sec-head prose">
     <p class="eyebrow">Os looks</p>
     <h2>Seis prontos</h2>
-    <p>Todos montados com peças que você provavelmente já tem no armário. Filtre pelo que importa para o seu dia e toque no look para ver os detalhes.</p>
+    <p>Todos montados com peças que você provavelmente já tem no armário. Filtre pelo que importa para a sua noite e toque no look para ver os detalhes.</p>
   </div>
 
   <div class="filters" role="group" aria-label="Filtrar looks">
     <button class="chip" type="button" data-filter="todos" aria-pressed="true">Todos</button>
     <button class="chip" type="button" data-filter="calca" aria-pressed="false">De calça</button>
     <button class="chip" type="button" data-filter="vestido" aria-pressed="false">Vestido &amp; saia</button>
-    <button class="chip" type="button" data-filter="viagem" aria-pressed="false">Não amassa na viagem</button>
-    <button class="chip" type="button" data-filter="frio" aria-pressed="false">Camada extra</button>
+    <button class="chip" type="button" data-filter="trabalho" aria-pressed="false">Direto do trabalho</button>
+    <button class="chip" type="button" data-filter="vento" aria-pressed="false">Vento na saída</button>
   </div>
 
   <p class="count" id="count">Seis looks</p>
@@ -581,9 +601,9 @@
   <div class="looks" id="grid">
 
     <!-- 1 · Alfaiataria fluida -->
-    <button class="look" type="button" data-tags="calca frio" data-nome="Alfaiataria fluida"
+    <button class="look" type="button" data-tags="calca trabalho" data-nome="Alfaiataria fluida"
       data-pieces="Blazer oversized · calça wide leg · regata de malha · mocassim ou mule"
-      data-why="Senta, cruza a perna, levanta e continua alinhada. O blazer funciona como botão de “modo trabalho”: você veste na abertura e tira no almoço."
+      data-why="Senta, cruza a perna, levanta e continua alinhada. É o look de quem vem direto do escritório: funciona às três da tarde na reunião e às oito da noite na mesa — a diferença é só o blazer aberto e o batom."
       data-fig="fig1">
       <figure>
         <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: blazer oversized sobre regata e calça wide leg, com mocassim">
@@ -605,15 +625,15 @@
       <div class="look-body">
         <h3>Alfaiataria fluida</h3>
         <p class="pieces">Blazer oversized · calça wide leg · regata de malha · mocassim</p>
-        <p class="why">Senta, cruza a perna, levanta e continua alinhada.</p>
+        <p class="why">Vem direto do escritório e vira noite sem escala em casa.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
 
     <!-- 2 · Malha midi -->
-    <button class="look" type="button" data-tags="vestido viagem" data-nome="Malha midi"
+    <button class="look" type="button" data-tags="vestido vento" data-nome="Malha midi"
       data-pieces="Vestido de malha manga longa · bota de cano curto · cinto fino"
-      data-why="Uma peça só, zero combinação para acertar e nada que amasse dentro da mala. Se você chega de viagem no mesmo dia, é este."
+      data-why="Uma peça só e zero combinação para acertar. A manga longa de malha resolve o ar-condicionado do salão e ainda segura o vento do Centro na hora de ir embora."
       data-fig="fig2">
       <figure>
         <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: vestido de malha midi manga longa com bota de cano curto">
@@ -634,15 +654,15 @@
       <div class="look-body">
         <h3>Malha midi</h3>
         <p class="pieces">Vestido de malha manga longa · bota de cano curto · cinto fino</p>
-        <p class="why">Uma peça só, zero combinação, não amassa na mala.</p>
+        <p class="why">Uma peça só. Resolve o ar-condicionado e o vento da saída.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
 
     <!-- 3 · Camisa & reta -->
-    <button class="look" type="button" data-tags="calca viagem" data-nome="Camisa &amp; reta"
+    <button class="look" type="button" data-tags="calca trabalho" data-nome="Camisa &amp; reta"
       data-pieces="Camisa de viscose ou seda · calça reta · sapatilha ou mule"
-      data-why="O clássico que atravessa o dia: resolve o calor da chegada e o ar-condicionado da tarde só com o botão do punho. Por dentro da calça na abertura, por fora depois do almoço."
+      data-why="O clássico que atravessa o dia inteiro e ainda ganha a noite. Por dentro da calça no trabalho; solte da cintura, dobre o punho e abra um botão a mais antes de entrar no restaurante."
       data-fig="fig3">
       <figure>
         <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: camisa de seda por dentro de calça reta com sapatilha">
@@ -665,15 +685,15 @@
       <div class="look-body">
         <h3>Camisa &amp; reta</h3>
         <p class="pieces">Camisa de viscose ou seda · calça reta · sapatilha ou mule</p>
-        <p class="why">Resolve calor e ar-condicionado com o botão do punho.</p>
+        <p class="why">Sai do trabalho e vira jantar com dois ajustes.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
 
     <!-- 4 · Macacão -->
-    <button class="look" type="button" data-tags="calca viagem" data-nome="Macacão"
-      data-pieces="Macacão preto · brinco de assinatura · tênis preto ou sandália baixa"
-      data-why="Veste em um minuto e resolve o dia inteiro. Como a peça já é o look completo, o brinco é o único acessório de que você precisa — e vira o seu ponto final."
+    <button class="look" type="button" data-tags="calca trabalho" data-nome="Macacão"
+      data-pieces="Macacão preto · brinco de assinatura · sandália ou scarpin baixo"
+      data-why="Veste em um minuto e resolve a noite inteira. Como a peça já é o look completo, o brinco é o único acessório de que você precisa — e vira o seu ponto final. Para a noite em que você tem quinze minutos entre uma coisa e outra."
       data-fig="fig4">
       <figure>
         <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: macacão de alça larga com sandália baixa">
@@ -692,16 +712,16 @@
       </figure>
       <div class="look-body">
         <h3>Macacão</h3>
-        <p class="pieces">Macacão preto · brinco de assinatura · tênis preto ou sandália baixa</p>
-        <p class="why">Veste em um minuto e resolve o dia inteiro.</p>
+        <p class="pieces">Macacão preto · brinco de assinatura · sandália ou scarpin baixo</p>
+        <p class="why">Veste em um minuto. Para a noite corrida.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
 
     <!-- 5 · Tricô & saia longa -->
-    <button class="look" type="button" data-tags="vestido frio" data-nome="Tricô &amp; saia longa"
+    <button class="look" type="button" data-tags="vestido vento" data-nome="Tricô &amp; saia longa"
       data-pieces="Tricô canelado · saia longa fluida · bota ou coturno"
-      data-why="Para quem congela no ar-condicionado e não quer abrir mão do movimento. A saia fluida faz o contraponto com o tricô encorpado — é a mistura de texturas da regra quatro, na prática."
+      data-why="Para quem congela no ar-condicionado e não quer abrir mão do movimento. A saia fluida faz o contraponto com o tricô encorpado — é a mistura de texturas da regra quatro, na prática, e é ela que aparece na luz baixa do salão."
       data-fig="fig5">
       <figure>
         <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: tricô canelado com saia longa fluida e bota">
@@ -722,15 +742,15 @@
       <div class="look-body">
         <h3>Tricô &amp; saia longa</h3>
         <p class="pieces">Tricô canelado · saia longa fluida · bota ou coturno</p>
-        <p class="why">Para quem congela no ar-condicionado e não quer perder o movimento.</p>
+        <p class="why">Para quem congela no ar-condicionado do salão.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
 
     <!-- 6 · Camadas -->
-    <button class="look" type="button" data-tags="calca frio viagem" data-nome="Camadas"
-      data-pieces="Camiseta preta de algodão pesado · colete alongado · calça reta · tênis preto"
-      data-why="O look que se ajusta sozinho: você tira e põe a camada conforme a sala esfria, sem trocar de roupa. É o mais confortável dos seis e continua sendo o mais alinhado."
+    <button class="look" type="button" data-tags="calca vento trabalho" data-nome="Camadas"
+      data-pieces="Camiseta preta de algodão pesado · colete alongado · calça reta · bota baixa ou tênis preto"
+      data-why="O look que se ajusta sozinho: o colete sai quando o salão esquenta e volta na hora de sair para a rua. É o mais confortável dos seis e continua sendo o mais alinhado."
       data-fig="fig6">
       <figure>
         <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui de look preto: camiseta com colete alongado, calça reta e tênis">
@@ -752,8 +772,8 @@
       </figure>
       <div class="look-body">
         <h3>Camadas</h3>
-        <p class="pieces">Camiseta preta · colete alongado · calça reta · tênis preto</p>
-        <p class="why">Você tira e põe a camada conforme a sala esfria — sem trocar de look.</p>
+        <p class="pieces">Camiseta preta · colete alongado · calça reta · bota baixa</p>
+        <p class="why">O colete sai no salão e volta na hora de encarar a rua.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
@@ -773,11 +793,11 @@
       <h3>Sim <span>—</span></h3>
       <ul>
         <li>Tecidos com peso: caem melhor e não marcam o dia inteiro.</li>
-        <li>Texturas diferentes na mesma cor.</li>
+        <li>Textura: na luz baixa do restaurante, é ela que aparece.</li>
         <li>Manga que você pode dobrar.</li>
-        <li>Bolso — você vai querer as mãos livres.</li>
+        <li>Bolso: no networking as duas mãos estão ocupadas.</li>
         <li>Um acessório de assinatura, o seu de sempre.</li>
-        <li>Maquiagem que aguenta oito horas e uma foto no fim.</li>
+        <li>Maquiagem que aguenta o jantar e a foto do fim.</li>
       </ul>
     </div>
     <div class="col no">
@@ -787,70 +807,64 @@
         <li>Estampa, mesmo miúda.</li>
         <li>Jeans azul.</li>
         <li>Transparência que exige vigilância.</li>
-        <li>Sapato comprado essa semana.</li>
+        <li>Sapato estreando hoje.</li>
         <li>Qualquer peça que você precise ajustar toda vez que levanta.</li>
       </ul>
     </div>
   </div>
 
   <div class="sec-head prose" style="margin-top: clamp(44px, 7vw, 66px)">
-    <h3>Kit de sobrevivência do preto</h3>
+    <h3>O que cabe na bolsa</h3>
   </div>
   <ul class="kit">
     <li>Rolo tira-fiapos</li>
-    <li>Meia ou collant reserva</li>
+    <li>Batom para retocar depois do jantar</li>
+    <li>Casaco ou pashmina preta para a saída</li>
     <li>Antitranspirante que não deixa marca</li>
-    <li>Lenço escuro</li>
-    <li>Uma terceira peça dobrada na bolsa</li>
-    <li>Carregador</li>
+    <li>Seu @ fácil de achar no celular</li>
+    <li>A sua sugestão de conteúdo anotada</li>
   </ul>
 </section>
 
-<section id="dia" class="wrap">
+<section id="noite" class="wrap">
   <div class="sec-head prose">
-    <p class="eyebrow">O dia</p>
-    <h2>Como o encontro corre</h2>
-    <p>Nosso primeiro dia é a <strong>Fase 1 — Raio-X Operacional</strong>: clareza antes de qualquer expansão. Você sai daqui sabendo exatamente onde o seu lucro e a sua energia estão vazando.</p>
+    <p class="eyebrow">A noite</p>
+    <h2>Como o jantar corre</h2>
+    <p>Duas horas e meia à mesa, na <strong>Trattoria Carbone</strong> — Top Market, no Centro. Networking, uma dinâmica e a roda de sugestões, nesta ordem.</p>
   </div>
 
   <div class="agenda">
     <div class="slot">
-      <time>08:30</time><div class="rail"></div>
-      <div><h3>Credenciamento &amp; café</h3><p>Chegue com folga. Ninguém começa esse dia correndo.</p></div>
+      <time>19:30</time><div class="rail"></div>
+      <div><h3>Chegada &amp; networking</h3><p>Meia hora de pé, antes de sentar. Chegue nesse horário: é aqui que você conhece quem ainda não conhece.</p></div>
     </div>
     <div class="slot key">
-      <time>09:00</time><div class="rail"></div>
-      <div><h3>Abertura &amp; combinados</h3><p>Quem está na sala, o que cada uma veio resolver e como vamos trabalhar juntas nos próximos 90 dias.</p></div>
+      <time>20:00</time><div class="rail"></div>
+      <div><h3>Jantar &amp; apresentações</h3><p>Cada uma se apresenta à mesa: quem é você, o que a sua empresa faz hoje e o que te trouxe até aqui.</p></div>
     </div>
     <div class="slot key">
-      <time>09:45</time><div class="rail"></div>
-      <div><h3>Bloco 1 · Diagnóstico Operacional</h3><p>O raio-X da sua empresa hoje, feito ao vivo. Traga os números que você tem — mesmo os incompletos.</p></div>
+      <time>21:00</time><div class="rail"></div>
+      <div><h3>Dinâmica</h3><p>A parte em que a gente trabalha. Não precisa se preparar — você entende no lugar.</p></div>
+    </div>
+    <div class="slot key">
+      <time>21:30</time><div class="rail"></div>
+      <div><h3>Roda de sugestões de conteúdo</h3><p>Cada uma apresenta a sua. É desta roda que sai a pauta dos nossos próximos encontros.</p></div>
     </div>
     <div class="slot">
-      <time>12:00</time><div class="rail"></div>
-      <div><h3>Almoço</h3><p>Mesa coletiva. Faz parte do encontro.</p></div>
+      <time>22:00</time><div class="rail"></div>
+      <div><h3>Encerramento &amp; foto</h3><p>A razão de todas nós estarmos de preto aparece aqui.</p></div>
     </div>
-    <div class="slot key">
-      <time>13:30</time><div class="rail"></div>
-      <div><h3>Bloco 2 · Mapa da Sobrecarga</h3><p>Onde a sua energia vaza — e por que quase sempre é no mesmo lugar em que o lucro vaza.</p></div>
-    </div>
-    <div class="slot">
-      <time>15:30</time><div class="rail"></div>
-      <div><h3>Intervalo</h3><p>Vinte minutos de pé, longe da cadeira.</p></div>
-    </div>
-    <div class="slot key">
-      <time>15:50</time><div class="rail"></div>
-      <div><h3>Bloco 3 · Roda da Empresária</h3><p>Suas prioridades inteligentes para as próximas três semanas, escritas antes de você ir embora.</p></div>
-    </div>
-    <div class="slot">
-      <time>17:30</time><div class="rail"></div>
-      <div><h3>Encerramento &amp; foto oficial</h3><p>A razão de todas nós estarmos de preto aparece aqui.</p></div>
-    </div>
+  </div>
+
+  <div class="prep">
+    <p class="eyebrow">A sua única tarefa</p>
+    <h3>Traga uma sugestão de conteúdo</h3>
+    <p>Um tema que você quer ver a gente destrinchar: o que está travando você agora, o assunto que você adiaria por vergonha de perguntar, a dúvida que volta toda semana. Uma frase basta — e anote no celular antes de sair de casa, porque às nove e meia da noite ninguém lembra.</p>
   </div>
 </section>
 
 <section class="end wrap">
-  <p class="eyebrow">Antes de fechar a mala</p>
+  <p class="eyebrow">Antes de sair de casa</p>
   <p class="lede" style="margin-top:1.2em">Se bateu dúvida sobre uma peça, manda a foto no grupo. A regra é uma só: se você precisa perguntar se está preto o bastante, não está.</p>
   <p class="sig"><span class="dash"></span>Nos vemos de preto · Método Lucro Anti-Exaustão®</p>
 </section>
@@ -881,8 +895,8 @@
       todos: 'Todos os looks',
       calca: 'De calça',
       vestido: 'Vestido & saia',
-      viagem: 'Não amassa na viagem',
-      frio: 'Camada extra'
+      trabalho: 'Direto do trabalho',
+      vento: 'Vento na saída'
     };
 
     function aplicar(filtro) {
