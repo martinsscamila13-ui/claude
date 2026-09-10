@@ -543,24 +543,48 @@
   .detail{ fill: none; stroke: #46454E; stroke-width: .7; stroke-opacity: .75; }
 
 
-  /* ---------- impressão / PDF ---------- */
+  /* ---------- impressão / PDF: uma seção por página ---------- */
   @media print{
     .nav{ display: none; }
-    html, body{ background: #0B0B0C !important; }
-    section{ padding-block: 26px; }
-    .hero{ padding-block: 40px 30px; }
-    h1{ font-size: 3.4rem; }
-    h2{ font-size: 1.7rem; }
-    .looks{ grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .look-body{ padding: 12px 12px 0; gap: 6px; }
-    .look h3{ font-size: .72rem; letter-spacing: .12em; }
-    .pieces{ font-size: .68rem; line-height: 1.4; }
-    .why{ font-size: .64rem; line-height: 1.4; }
-    .look{ padding-bottom: 14px; }
-    .look, .prep, .selo, .tex, .onde > div, .slot, .col{ break-inside: avoid; }
-    .look .open{ display: none; }
-    section, .sec-head{ break-after: auto; }
     dialog{ display: none !important; }
+    html, body{ background: #0B0B0C !important; font-size: 15px; }
+
+    header.hero{
+      padding-block: 46px 30px;
+      border-bottom: 0;
+      break-after: page;
+    }
+    h1{ font-size: 3.2rem; }
+
+    section{
+      break-before: page;
+      border-bottom: 0;
+      padding-block: 34px 0;
+    }
+    h2{ font-size: 1.62rem; }
+    .sec-head{ margin-bottom: 24px; }
+    .prose, .carta{ max-width: 58ch; }
+    .carta{ font-size: .98rem; line-height: 1.7; }
+    .pull, .selo{ margin-top: 26px; padding-top: 20px; }
+
+    /* nada de bloco partido no meio */
+    .look, .tex, .onde > div, .slot, .col, .prep, .selo, .pull,
+    .carta p, .porque > div, .kit, .aviso{ break-inside: avoid; }
+
+    .looks{ grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .look-body{ padding: 12px 12px 0; gap: 5px; }
+    .look h3{ font-size: .7rem; letter-spacing: .12em; }
+    .pieces{ font-size: .66rem; line-height: 1.4; }
+    .why{ font-size: .62rem; line-height: 1.4; }
+    .look{ padding-bottom: 12px; }
+    .look .open{ display: none; }
+
+    .texturas{ margin-top: 26px; }
+    .tex svg{ height: 76px; }
+    .agenda{ margin-top: 0; }
+    .slot{ padding-block: 16px; }
+    .kit{ margin-top: 18px; }
+    .end{ text-align: center; }
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -662,8 +686,7 @@
         <li>nomear o que está drenando a sua energia — e o seu lucro;</li>
         <li>conhecer as mulheres que vão caminhar com você nos próximos meses;</li>
         <li>trazer para a mesa o assunto que você vem adiando;</li>
-        <li>dizer o que você quer ver a gente destrinchar no programa;</li>
-        <li>e começar a montar uma rotina que não dependa do seu heroísmo.</li>
+          <li>e começar a montar uma rotina que não dependa do seu heroísmo.</li>
       </ul>
     </div>
   </div>
@@ -919,13 +942,13 @@
   <div class="sec-head prose" style="margin-top: clamp(44px, 7vw, 66px)">
     <h3>O que cabe na bolsa</h3>
   </div>
+  <p class="aviso" style="margin-block: 0 22px">Venha com a menor bolsa que couber isso tudo. Você vai entender por quê.</p>
   <ul class="kit">
     <li>Rolo tira-fiapos</li>
     <li>Batom para retocar depois do jantar</li>
     <li>Casaco ou pashmina preta para a saída</li>
     <li>Antitranspirante que não deixa marca</li>
     <li>Seu @ fácil de achar no celular</li>
-    <li>A sua sugestão de conteúdo anotada</li>
   </ul>
 </section>
 
@@ -933,7 +956,7 @@
   <div class="sec-head prose">
     <p class="eyebrow">A noite</p>
     <h2>Como o jantar corre</h2>
-    <p>Duas horas e meia à mesa, na <strong>Trattoria Carbone</strong> — Top Market, no Centro. Networking, uma dinâmica e a roda de sugestões, nesta ordem.</p>
+    <p>Duas horas e meia à mesa, na <strong>Trattoria Carbone</strong> — Top Market, no Centro. Networking, jantar e uma dinâmica, nesta ordem.</p>
   </div>
 
   <div class="agenda">
@@ -947,11 +970,7 @@
     </div>
     <div class="slot key">
       <time>21:00</time><div class="rail"></div>
-      <div><h3>Dinâmica · O cardápio invisível</h3><p>Trinta minutos e uma folha em branco. Não precisa preparar nada — você entende no lugar.</p></div>
-    </div>
-    <div class="slot key">
-      <time>21:30</time><div class="rail"></div>
-      <div><h3>Roda de sugestões de conteúdo</h3><p>Cada uma apresenta a sua. É desta roda que sai a pauta dos nossos próximos encontros.</p></div>
+      <div><h3>Dinâmica · O cardápio invisível</h3><p>Uma hora e uma folha em branco. Não precisa preparar nada — nem trazer nada. Você entende no lugar.</p></div>
     </div>
     <div class="slot">
       <time>22:00</time><div class="rail"></div>
@@ -959,11 +978,6 @@
     </div>
   </div>
 
-  <div class="prep">
-    <p class="eyebrow">A sua única tarefa</p>
-    <h3>Traga uma sugestão de conteúdo</h3>
-    <p>Um tema que você quer ver a gente destrinchar nos próximos encontros: o que está travando você agora, o assunto que você adiaria por vergonha de perguntar, a dúvida que volta toda semana. Vale precificação, delegar sem retrabalho, contratar a primeira pessoa, depender só de indicação, sócio, sucessão. Uma frase basta — anote no celular antes de sair de casa, porque às nove e meia da noite ninguém lembra.</p>
-  </div>
 </section>
 
 
@@ -1002,6 +1016,7 @@
     <p class="abre">Empresária,</p>
     <p>Você não precisa dar conta de tudo. Precisa decidir antes — e sustentar a decisão depois, quando o dia apertar.</p>
     <p>Quando esta noite terminar, o preto vai ter feito o trabalho dele: ninguém vai lembrar do que você vestiu. Vão lembrar do que você disse.</p>
+    <p>Vamos estar todas iguais, da gola ao sapato. A única coisa que não vai ser igual à da mulher ao seu lado é <strong>o que leva o seu nome</strong>.</p>
     <p>Que você volte para casa sabendo <strong>qual decisão você vinha adiando e tomou hoje</strong>, e quem, dessa mesa, você vai chamar antes do próximo encontro.</p>
     <p>Nos vemos no dia 17.</p>
   </div>
