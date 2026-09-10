@@ -193,6 +193,38 @@
     color: var(--bone-3);
   }
 
+  .nota-hero{
+    margin: 16px 0 0;
+    font-family: var(--display);
+    font-size: .6rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--bone-3);
+  }
+
+  /* ---------- a mesa ---------- */
+  .mesa{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .mesa figure{ margin: 0; background: var(--ink-1); }
+  .mesa svg{ display: block; width: 100%; height: auto; }
+  .mesa figcaption{
+    padding: 0 18px 20px;
+    font-family: var(--display);
+    font-size: .6rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--bone-3);
+  }
+  @media (max-width: 620px){ .mesa{ grid-template-columns: 1fr; } }
+  .linha{ fill: none; stroke: #8C877F; stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; }
+  .linha-fina{ fill: none; stroke: #5E5A54; stroke-width: .9; stroke-linecap: round; }
+  .chama{ fill: #C9BFAE; }
+
   .prep{
     margin-top: clamp(40px, 6vw, 60px);
     border: 1px solid var(--line);
@@ -580,6 +612,8 @@
     .look{ padding-bottom: 12px; }
     .look .open{ display: none; }
 
+    .mesa svg{ height: 300px; }
+    .mesa figcaption{ padding-bottom: 26px; }
     .texturas{ margin-top: 26px; }
     .tex svg{ height: 76px; }
     .agenda{ margin-top: 0; }
@@ -636,6 +670,7 @@
     <a href="#acordo">O preto</a>
     <a href="#looks">Os looks</a>
     <a href="#moodboard">Moodboard</a>
+    <a href="#mesa">A mesa</a>
     <a href="#noite">A noite</a>
     <a href="#onde">Onde</a>
   </div>
@@ -653,6 +688,7 @@
     <div class="fact"><dt>Onde</dt><dd>Trattoria Carbone<span class="sub">Top Market · Centro, Florianópolis</span></dd></div>
     <div class="fact"><dt>Dress code</dt><dd>Preto inteiro</dd></div>
   </dl>
+  <p class="nota-hero">Consumação por conta de cada uma · conta individual por lugar</p>
 </header>
 
 <main>
@@ -952,6 +988,64 @@
     <li>Seu @ fácil de achar no celular</li>
     <li>Cartão para a sua conta</li>
   </ul>
+</section>
+
+<section id="mesa" class="wrap">
+  <div class="sec-head prose">
+    <p class="eyebrow">A mesa</p>
+    <h2>Mise en place</h2>
+    <p>Tudo no lugar antes de a noite começar — o mesmo princípio que a gente vai aplicar no seu negócio, posto na mesa em que vamos sentar.</p>
+  </div>
+
+  <div class="mesa">
+    <figure>
+      <svg viewBox="0 0 200 150" role="img" aria-label="Ilustração de uma mesa posta vista de cima: prato, talheres, taças e guardanapo">
+        <circle class="linha" cx="104" cy="80" r="42"/>
+        <circle class="linha-fina" cx="104" cy="80" r="33"/>
+        <circle class="linha-fina" cx="104" cy="80" r="25"/>
+        <circle class="linha" cx="44" cy="44" r="15"/>
+        <path class="linha" d="M50,58 L38,58"/>
+        <path class="linha" d="M52,74 L52,116 M48,68 L48,80 M52,66 L52,80 M56,68 L56,80 M48,80 C48,84 56,84 56,80"/>
+        <path class="linha" d="M156,74 L156,116 M152,66 C150,74 152,80 156,80 C160,80 162,74 160,66 Z"/>
+        <path class="linha" d="M170,76 L170,116 M166,64 C164,72 166,78 170,78 C174,78 176,72 174,64 Z"/>
+        <path class="linha" d="M148,28 C148,40 152,45 156,47 M164,28 C164,40 160,45 156,47 M156,47 L156,58 M149,59 C152,61 160,61 163,59 M147,28 L165,28"/>
+        <path class="linha" d="M176,36 C176,48 178,52 180,54 M188,36 C188,48 186,52 184,54 M180,54 L180,58 M176,36 L188,36"/>
+        <path class="linha-fina" d="M18,96 L44,96 L44,132 L18,132 Z M18,104 L44,104 M18,112 L44,112"/>
+      </svg>
+      <figcaption>O lugar de cada uma</figcaption>
+    </figure>
+
+    <figure>
+      <svg viewBox="0 0 200 150" role="img" aria-label="Ilustração de três taças de vinho e água">
+        <path class="linha" d="M34,26 C34,58 42,74 52,80 M70,26 C70,58 62,74 52,80 M52,80 L52,116 M38,120 C43,124 61,124 66,120 M32,26 L72,26"/>
+        <path class="linha-fina" d="M37,46 C42,52 62,52 67,46"/>
+        <path class="linha" d="M86,30 C86,58 92,72 100,78 M114,30 C114,58 108,72 100,78 M100,78 L100,116 M88,120 C93,124 107,124 112,120 M85,30 L115,30"/>
+        <path class="linha-fina" d="M89,52 C94,57 106,57 111,52"/>
+        <path class="linha" d="M136,44 L140,116 C144,120 160,120 164,116 L168,44 Z"/>
+        <path class="linha-fina" d="M137,62 C144,66 160,66 167,62"/>
+      </svg>
+      <figcaption>O brinde do começo</figcaption>
+    </figure>
+
+    <figure>
+      <svg viewBox="0 0 200 150" role="img" aria-label="Ilustração de uma vela acesa em castiçal">
+        <defs>
+          <radialGradient id="brilho" cx="50%" cy="34%" r="46%">
+            <stop offset="0" stop-color="#D8C9AE" stop-opacity=".28"/>
+            <stop offset="1" stop-color="#D8C9AE" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="100" cy="52" rx="66" ry="52" fill="url(#brilho)"/>
+        <path class="chama" d="M100,20 C110,32 110,44 100,50 C90,44 90,32 100,20 Z"/>
+        <path class="linha-fina" d="M100,50 L100,56"/>
+        <path class="linha" d="M90,56 L90,104 L110,104 L110,56 C110,52 90,52 90,56 Z"/>
+        <path class="linha-fina" d="M90,66 C96,70 104,70 110,66"/>
+        <path class="linha" d="M78,104 L122,104 L128,116 L72,116 Z"/>
+        <path class="linha" d="M66,120 C78,126 122,126 134,120 L134,124 C122,130 78,130 66,124 Z"/>
+      </svg>
+      <figcaption>A luz que a noite pede</figcaption>
+    </figure>
+  </div>
 </section>
 
 <section id="noite" class="wrap">
