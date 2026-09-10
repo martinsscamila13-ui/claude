@@ -226,62 +226,10 @@
   }
   .pull span{ color: var(--clay); }
 
-  /* ---------- regras ---------- */
-  .rules{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-  }
-  .rule-item{
-    background: var(--ink-1);
-    padding: 26px 24px 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .rule-item p{ font-size: .96rem; color: var(--bone-2); }
-
-  /* ---------- filtros ---------- */
-  .filters{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 26px;
-  }
-  .chip{
-    font-family: var(--display);
-    font-size: .62rem;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    color: var(--bone-3);
-    background: transparent;
-    border: 1px solid var(--line);
-    padding: 9px 15px;
-    cursor: pointer;
-    transition: color .2s ease, border-color .2s ease;
-  }
-  .chip:hover{ color: var(--bone); border-color: var(--bone-3); }
-  .chip[aria-pressed="true"]{
-    color: var(--ink);
-    background: var(--bone);
-    border-color: var(--bone);
-  }
-  .count{
-    font-family: var(--display);
-    font-size: .62rem;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    color: var(--bone-3);
-    margin-bottom: 22px;
-    font-variant-numeric: tabular-nums;
-  }
-
   /* ---------- galeria ---------- */
   .looks{
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1px;
     background: var(--line);
     border: 1px solid var(--line);
@@ -300,7 +248,7 @@
   .look figure{ margin: 0; background: var(--ink-2); }
   .look-svg{ display: block; width: 100%; max-width: 100%; height: auto; }
   .look-body{ padding: 22px 22px 0; display: flex; flex-direction: column; gap: 9px; flex: 1; }
-  @media (max-width: 800px){ .looks{ grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 900px){ .looks{ grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 470px){ .looks{ grid-template-columns: 1fr; } }
   .look h3{ transition: color .2s ease; }
   .look:hover h3, .look:focus-visible h3{ color: var(--clay); }
@@ -743,19 +691,9 @@
 <section id="looks" class="wrap">
   <div class="sec-head prose">
     <p class="eyebrow">Os looks</p>
-    <h2>Seis prontos</h2>
-    <p>Todos montados com peças que você provavelmente já tem no armário. Filtre pelo que importa para a sua noite e toque no look para ver os detalhes.</p>
+    <h2>Quatro prontos</h2>
+    <p>Quatro combinações que funcionam de 19h30 às 22h, montadas com peças que você provavelmente já tem no armário. Toque no look para ver os detalhes.</p>
   </div>
-
-  <div class="filters" role="group" aria-label="Filtrar looks">
-    <button class="chip" type="button" data-filter="todos" aria-pressed="true">Todos</button>
-    <button class="chip" type="button" data-filter="calca" aria-pressed="false">De calça</button>
-    <button class="chip" type="button" data-filter="vestido" aria-pressed="false">Vestido &amp; saia</button>
-    <button class="chip" type="button" data-filter="trabalho" aria-pressed="false">Direto do trabalho</button>
-    <button class="chip" type="button" data-filter="vento" aria-pressed="false">Vento na saída</button>
-  </div>
-
-  <p class="count" id="count">Seis looks</p>
 
   <div class="looks" id="grid">
 
@@ -784,6 +722,34 @@
         <h3>Gola alta &amp; wide leg</h3>
         <p class="pieces">Gola alta de malha · calça wide leg de alfaiataria · cinto de fivela · scarpin bico fino</p>
         <p class="why">Cintura marcada e perna longa. O mais difícil de errar.</p>
+        <p class="open">Ver detalhes</p>
+      </div>
+    </button>
+    <button class="look" type="button" data-tags="calca trabalho" data-nome="Manga curta &amp; pregas"
+      data-pieces="Blusa de gola alta manga curta · calça de pregas wide leg · cinto fino · scarpin bico fino"
+      data-why="A silhueta mais limpa das quatro: colado em cima, amplo embaixo. As pregas dão volume à calça sem pedir salto, e o cinto fino é quem entrega a cintura. Se o salão estiver quente, é este.">
+      <figure>
+        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui: blusa de gola alta de manga curta, calça de pregas wide leg com cinto fino e scarpin">
+          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
+          <path class="hair" d="M100,18 C88,18 82,27 82,40 L118,40 C118,27 112,18 100,18 Z"/><path class="hair" d="M114,32 C126,38 132,58 128,80 C126,92 121,100 116,104 L110,94 C115,88 118,76 118,64 C118,52 114,42 109,37 Z"/>
+          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#E0BE9E"/>
+          <path class="hair" d="M85,33 C89,24 112,24 116,33 C115,26 110,20 100,20 C90,20 86,26 85,33 Z"/>
+          <use href="#croqui" fill="#E0BE9E"/>
+          <path class="fab" d="M76,172 L124,172 C127,220 131,270 136,320 L139,382 L106,382 L101,240 L99,240 L94,382 L61,382 L64,320 C69,270 73,220 76,172 Z"/>
+          <path class="detail" d="M118,182 C122,240 126,310 128,378 M82,182 C78,240 74,310 72,378 M89,178 L87,228 M111,178 L113,228"/>
+          <path class="fab-soft" d="M91,59 L109,59 L112,76 C126,80 133,88 133,100 L129,134 C128,154 124,164 122,178 L78,178 C76,164 72,154 71,134 L67,100 C67,88 74,80 88,76 Z"/>
+          <path class="fab" d="M92,77 C74,86 62,102 58,122 C56,132 56,140 58,148 L77,144 C75,136 75,127 77,119 C81,106 88,94 100,84 Z"/>
+          <path class="fab" d="M108,77 C126,86 138,102 142,122 C144,132 144,140 142,148 L123,144 C125,136 125,127 123,119 C119,106 112,94 100,84 Z"/>
+          <path class="belt" d="M78,168 L122,168 L122,179 L78,179 Z"/>
+          <rect class="buckle" x="96" y="169" width="8" height="9"/>
+          <path class="shoe" d="M84,374 L98,374 L98,386 L68,393 C68,383 75,377 84,374 Z"/>
+          <path class="shoe" d="M116,374 L102,374 L102,386 L132,393 C132,383 125,377 116,374 Z"/>
+        </svg>
+      </figure>
+      <div class="look-body">
+        <h3>Manga curta &amp; pregas</h3>
+        <p class="pieces">Gola alta manga curta · calça de pregas wide leg · cinto fino · scarpin</p>
+        <p class="why">Colado em cima, amplo embaixo. A silhueta mais limpa.</p>
         <p class="open">Ver detalhes</p>
       </div>
     </button>
@@ -855,88 +821,8 @@
       </div>
     </button>
 
-    <button class="look" type="button" data-tags="vestido vento" data-nome="Malha midi"
-      data-pieces="Vestido de malha gola alta · cinto fino · bota de cano curto"
-      data-why="Uma peça só e zero combinação para acertar. A malha de manga longa resolve o ar-condicionado do salão e ainda segura o vento do Centro na hora de ir embora — e o cinto fino é o que impede o vestido de virar camisola.">
-      <figure>
-        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui: vestido de malha midi com gola alta, cinto fino e bota de cano curto">
-          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
-          <path class="hair" d="M100,17 C84,17 78,29 79,45 C79,58 80,66 82,74 L91,71 C89,60 89,48 91,40 L109,40 C111,48 111,60 109,71 L118,74 C120,66 121,58 121,45 C122,29 116,17 100,17 Z"/>
-          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#6E4A32"/>
-          <use href="#croqui" fill="#6E4A32"/>
-          <path class="fab-soft" d="M91,59 L109,59 L112,76 C127,80 136,86 136,98 L132,140 C130,172 134,226 138,268 L136,306 L64,306 L62,268 C66,226 70,172 68,140 L64,98 C64,86 73,80 88,76 Z"/>
-          <path class="fab" d="M92,77 C74,86 59,118 55,148 C52,172 53,194 56,213 L76,211 C73,192 72,172 75,150 C79,122 88,98 100,84 Z"/>
-          <path class="fab" d="M108,77 C126,86 141,118 145,148 C148,172 147,194 144,213 L124,211 C127,192 128,172 125,150 C121,122 112,98 100,84 Z"/>
-          <path class="belt" d="M76,168 L124,168 L124,178 L76,178 Z"/>
-          <rect class="buckle" x="96" y="169" width="8" height="8"/>
-          <path class="detail" d="M74,196 C88,202 112,202 126,196"/>
-          <path class="shoe" d="M82,298 L96,298 L97,352 C97,364 99,376 100,388 L76,388 C77,374 79,356 80,340 Z"/>
-          <path class="shoe" d="M118,298 L104,298 L103,352 C103,364 101,376 100,388 L124,388 C123,374 121,356 120,340 Z"/>
-        </svg>
-      </figure>
-      <div class="look-body">
-        <h3>Malha midi</h3>
-        <p class="pieces">Vestido de malha gola alta · cinto fino · bota de cano curto</p>
-        <p class="why">Uma peça só. Resolve o ar-condicionado e o vento da saída.</p>
-        <p class="open">Ver detalhes</p>
-      </div>
-    </button>
 
-    <button class="look" type="button" data-tags="vestido vento" data-nome="Tricô &amp; saia longa"
-      data-pieces="Tricô canelado gola alta · saia longa fluida · bota ou coturno"
-      data-why="Para quem congela no ar-condicionado e não quer abrir mão do movimento. A saia fluida faz o contraponto com o tricô encorpado: dois acabamentos bem diferentes na mesma cor, que é exatamente o que aparece na luz baixa do salão.">
-      <figure>
-        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui: tricô canelado de gola alta com saia longa fluida e bota">
-          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
-          <path class="hair" d="M100,16 C82,16 76,28 77,44 C78,70 74,98 78,122 L90,118 C86,94 87,64 90,44 L110,44 C113,64 114,94 110,118 L122,122 C126,98 122,70 123,44 C124,28 118,16 100,16 Z"/>
-          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#C79A72"/>
-          <use href="#croqui" fill="#C79A72"/>
-          <path class="fab-soft" d="M66,272 C70,236 74,204 76,176 L124,176 C126,204 130,236 134,272 C136,300 138,330 139,358 L61,358 C62,330 64,300 66,272 Z"/>
-          <path class="detail" d="M84,200 C86,250 84,310 82,356 M116,200 C114,250 116,310 118,356 M100,196 L100,356"/>
-          <path class="fab" d="M91,59 L109,59 L112,76 C126,80 134,88 134,100 L130,132 C129,154 127,170 127,186 L73,186 C73,170 71,154 70,132 L66,100 C66,88 74,80 88,76 Z"/>
-          <path class="fab" d="M92,77 C74,86 58,118 54,148 C51,172 52,194 55,213 L76,211 C73,192 72,172 75,150 C79,122 88,98 100,84 Z"/>
-          <path class="fab" d="M108,77 C126,86 142,118 146,148 C149,172 148,194 145,213 L124,211 C127,192 128,172 125,150 C121,122 112,98 100,84 Z"/>
-          <path class="detail" d="M82,94 L79,182 M91,88 L89,184 M109,88 L111,184 M118,94 L121,182"/>
-          <path class="shoe" d="M84,352 L96,352 L97,388 L76,388 C77,377 80,364 84,352 Z"/>
-          <path class="shoe" d="M116,352 L104,352 L103,388 L124,388 C123,377 120,364 116,352 Z"/>
-        </svg>
-      </figure>
-      <div class="look-body">
-        <h3>Tricô &amp; saia longa</h3>
-        <p class="pieces">Tricô canelado gola alta · saia longa fluida · bota ou coturno</p>
-        <p class="why">Para quem congela no ar-condicionado do salão.</p>
-        <p class="open">Ver detalhes</p>
-      </div>
-    </button>
 
-    <button class="look" type="button" data-tags="calca vento trabalho" data-nome="Camadas"
-      data-pieces="Gola alta · colete alongado · calça wide leg · bota bico fino"
-      data-why="O look que se ajusta sozinho: o colete alongado sai quando o salão esquenta e volta na hora de sair para a rua, sem trocar nada por baixo. É o mais confortável dos seis e continua sendo o mais alinhado.">
-      <figure>
-        <svg class="look-svg" viewBox="0 0 200 400" role="img" aria-label="Croqui: gola alta sob colete alongado, calça wide leg e bota de bico fino">
-          <ellipse cx="100" cy="196" rx="96" ry="192" fill="url(#glow)"/>
-          <path class="hair" d="M100,16 C82,16 76,28 77,44 C78,70 74,98 78,122 L90,118 C86,94 87,64 90,44 L110,44 C113,64 114,94 110,118 L122,122 C126,98 122,70 123,44 C124,28 118,16 100,16 Z"/>
-          <ellipse cx="100" cy="44" rx="14.5" ry="18.5" fill="#8A5A3C"/>
-          <use href="#croqui" fill="#8A5A3C"/>
-          <path class="fab" d="M76,172 L124,172 C127,220 131,270 136,320 L139,382 L106,382 L101,240 L99,240 L94,382 L61,382 L64,320 C69,270 73,220 76,172 Z"/>
-          <path class="detail" d="M118,182 C122,240 126,310 128,378 M82,182 C78,240 74,310 72,378"/>
-          <path class="fab-soft" d="M91,59 L109,59 L112,76 C126,80 133,88 133,100 L129,134 C128,154 124,164 122,178 L78,178 C76,164 72,154 71,134 L67,100 C67,88 74,80 88,76 Z"/>
-          <path class="fab" d="M92,77 C74,86 60,118 56,148 C53,172 54,194 57,213 L77,211 C74,192 73,172 76,150 C80,122 88,98 100,84 Z"/>
-          <path class="fab" d="M108,77 C126,86 140,118 144,148 C147,172 146,194 143,213 L123,211 C126,192 127,172 124,150 C120,122 112,98 100,84 Z"/>
-          <path class="fab" d="M88,74 L70,88 C65,114 62,150 62,184 L63,252 L85,252 C83,208 84,158 90,112 Z"/>
-          <path class="fab" d="M112,74 L130,88 C135,114 138,150 138,184 L137,252 L115,252 C117,208 116,158 110,112 Z"/>
-          <path class="detail" d="M85,252 L85,262 M115,252 L115,262"/>
-          <path class="shoe" d="M84,374 L98,374 L98,386 L68,393 C68,383 75,377 84,374 Z"/>
-          <path class="shoe" d="M116,374 L102,374 L102,386 L132,393 C132,383 125,377 116,374 Z"/>
-        </svg>
-      </figure>
-      <div class="look-body">
-        <h3>Camadas</h3>
-        <p class="pieces">Gola alta · colete alongado · calça wide leg · bota bico fino</p>
-        <p class="why">O colete sai no salão e volta na hora de encarar a rua.</p>
-        <p class="open">Ver detalhes</p>
-      </div>
-    </button>
 
   </div>
 </section>
@@ -1149,42 +1035,7 @@
 
 <script>
   (function () {
-    var grid = document.getElementById('grid');
-    var looks = Array.prototype.slice.call(grid.querySelectorAll('.look'));
-    var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
-    var count = document.getElementById('count');
-    var nomes = ['Nenhum', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis'];
-    var rotulos = {
-      todos: 'Todos os looks',
-      calca: 'De calça',
-      vestido: 'Vestido & saia',
-      trabalho: 'Direto do trabalho',
-      vento: 'Vento na saída'
-    };
-
-    function aplicar(filtro) {
-      var visiveis = 0;
-      looks.forEach(function (look) {
-        var tags = look.getAttribute('data-tags').split(' ');
-        var mostra = filtro === 'todos' || tags.indexOf(filtro) > -1;
-        look.hidden = !mostra;
-        if (mostra) { visiveis++; }
-      });
-      chips.forEach(function (chip) {
-        chip.setAttribute('aria-pressed', String(chip.getAttribute('data-filter') === filtro));
-      });
-      var quanto = nomes[visiveis] || visiveis;
-      count.textContent = filtro === 'todos'
-        ? quanto + ' looks'
-        : quanto + (visiveis === 1 ? ' look · ' : ' looks · ') + rotulos[filtro];
-    }
-
-    chips.forEach(function (chip) {
-      chip.addEventListener('click', function () {
-        aplicar(chip.getAttribute('data-filter'));
-      });
-    });
-
+    var looks = Array.prototype.slice.call(document.querySelectorAll('.look'));
     var modal = document.getElementById('modal');
     var mFig = document.getElementById('m-fig');
     var mNome = document.getElementById('m-nome');
@@ -1194,17 +1045,16 @@
 
     looks.forEach(function (look) {
       look.addEventListener('click', function () {
-        var svg = look.querySelector('svg').cloneNode(true);
-        svg.removeAttribute('class');
-        svg.setAttribute('style', 'display:block;width:100%;height:auto');
+        var arte = look.querySelector('svg') || look.querySelector('img');
+        var copia = arte.cloneNode(true);
+        copia.removeAttribute('class');
+        copia.setAttribute('style', 'display:block;width:100%;height:auto');
         mFig.textContent = '';
-        mFig.appendChild(svg);
+        mFig.appendChild(copia);
         mNome.textContent = look.getAttribute('data-nome');
         mPieces.textContent = look.getAttribute('data-pieces');
         mWhy.textContent = look.getAttribute('data-why');
-        mTags.textContent = look.getAttribute('data-tags').split(' ').map(function (t) {
-          return rotulos[t];
-        }).join(' · ');
+        mTags.textContent = 'O look';
         if (typeof modal.showModal === 'function') { modal.showModal(); }
       });
     });
@@ -1213,8 +1063,6 @@
     modal.addEventListener('click', function (e) {
       if (e.target === modal) { modal.close(); }
     });
-
-    aplicar('todos');
 
     // Contagem até o jantar (17/09, 19:30, horário de Brasília)
     var alvo = new Date('2026-09-17T19:30:00-03:00');
