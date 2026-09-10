@@ -468,7 +468,7 @@
   /* ---------- onde ---------- */
   .onde{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1px;
     background: var(--line);
     border: 1px solid var(--line);
@@ -484,6 +484,7 @@
     color: var(--bone);
     font-variant-numeric: tabular-nums;
   }
+  @media (max-width: 560px){ .onde{ grid-template-columns: 1fr; } }
   .aviso{
     margin-top: 24px;
     font-size: .95rem;
@@ -644,7 +645,7 @@
   <p class="eyebrow">Programa de Aceleração · Método Lucro Anti-Exaustão®</p>
   <h1>Jantar das<br>Empresárias</h1>
   <div class="rule"></div>
-  <p class="lede">O nosso primeiro encontro presencial tem dress code: preto, do começo ao fim. Aqui está o porquê, as regras e seis looks prontos — para você chegar na Trattoria sem ter gastado um grama de energia decidindo o que vestir.</p>
+  <p class="lede">O nosso primeiro encontro presencial tem dress code: preto, do começo ao fim. Aqui está o porquê e oito looks prontos — para você chegar na Trattoria sem ter gastado um grama de energia decidindo o que vestir.</p>
 
   <dl class="facts">
     <div class="fact"><dt>Data</dt><dd><time datetime="2026-09-17">17 de setembro</time><span class="sub" id="contagem">Quinta-feira</span></dd></div>
@@ -677,13 +678,13 @@
   <div class="porque">
     <div class="prose">
       <p>É a nossa primeira vez na mesma mesa. Uma noite estratégica, simbólica e relacional — e a única do ciclo em que ninguém tem slide, cronômetro ou tarefa para entregar.</p>
-      <p>Você vai comer bem, conversar com quem entende exatamente o tamanho do seu problema, e sair com pelo menos uma coisa decidida.</p>
+      <p>Tem quem esteja escalando e quem esteja tirando a primeira oferta do papel — e as duas saem daqui com a mesma coisa. Você vai comer bem, conversar com quem entende o tamanho do seu problema, e sair com pelo menos uma decisão tomada.</p>
     </div>
     <div>
       <p class="eyebrow" style="margin-bottom:18px">Uma noite para</p>
       <ul>
-        <li>olhar para o trimestre que passou com honestidade;</li>
-        <li>nomear o que está drenando a sua energia — e o seu lucro;</li>
+        <li>olhar para os últimos meses com honestidade;</li>
+        <li>nomear o que está drenando a sua energia e o seu dinheiro;</li>
         <li>conhecer as mulheres que vão caminhar com você nos próximos meses;</li>
         <li>trazer para a mesa o assunto que você vem adiando;</li>
           <li>e começar a montar uma rotina que não dependa do seu heroísmo.</li>
@@ -702,17 +703,17 @@
 
   <div class="porque">
     <div class="prose">
-      <p>Toda empresária exausta tem um cardápio invisível: coisas que ela entrega e não cobra — nem em dinheiro, nem em energia.</p>
-      <p>O “vou dar uma olhadinha” de domingo. O áudio respondido às onze da noite. O desconto dado para não ter conflito. O escopo que cresceu e virou cortesia porque ficou constrangedor cobrar. A reunião que podia ter sido uma mensagem. O cliente que você carrega há dois anos porque foi o primeiro.</p>
+      <p>Toda empresária tem um cardápio invisível: o que ela entrega sem cobrar — nem em dinheiro, nem em tempo, nem em energia. Ele existe em quem fatura há dez anos e em quem ainda está tirando o projeto do papel. Muda só o que está escrito nele.</p>
+      <p>O “vou dar uma olhadinha” de domingo. O áudio respondido às onze da noite. O desconto dado para não ter conflito. O escopo que cresceu e virou cortesia porque ficou constrangedor cobrar. O trabalho feito de graça para “montar portfólio”. O favor que virou rotina. A semana inteira gasta resolvendo a vida dos outros enquanto o seu projeto espera a sua vez.</p>
       <p><strong>Nada disso aparece no seu financeiro. Tudo isso aparece no seu cansaço.</strong></p>
-      <p>Na dinâmica desta noite a gente escreve o seu cardápio invisível — e você decide, ali na mesa, qual é o primeiro item que sai da carta.</p>
+      <p>Na dinâmica desta noite a gente escreve o seu cardápio invisível — e você decide, ali na mesa, qual é o primeiro item que sai da carta. Não importa em que ponto você está: quem ainda não tem cliente costuma ter o cardápio mais cheio de todos.</p>
     </div>
     <div>
       <p class="eyebrow" style="margin-bottom:18px">Você sai com</p>
       <ul>
         <li>o seu cardápio invisível escrito, item por item;</li>
         <li>um item riscado, com data para valer;</li>
-        <li>e a frase pronta para comunicar isso ao cliente na segunda-feira.</li>
+        <li>e a frase pronta para dizer isso em voz alta na segunda-feira.</li>
       </ul>
     </div>
   </div>
@@ -949,6 +950,7 @@
     <li>Casaco ou pashmina preta para a saída</li>
     <li>Antitranspirante que não deixa marca</li>
     <li>Seu @ fácil de achar no celular</li>
+    <li>Cartão para a sua conta</li>
   </ul>
 </section>
 
@@ -1002,6 +1004,11 @@
       <p class="eyebrow">Chegada</p>
       <p class="grande">Até 19:30</p>
       <p>A primeira meia hora é o networking. Quem chega às oito perde a melhor parte.</p>
+    </div>
+    <div>
+      <p class="eyebrow">Consumação</p>
+      <p class="grande">Por conta de cada uma</p>
+      <p>A casa abre uma conta individual por lugar. Você pede o que quiser e paga só o seu — sem divisão, sem cálculo no fim da noite.</p>
     </div>
   </div>
 
