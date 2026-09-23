@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Ativação da Audiência</title>
+<style>
+@font-face{font-family:Display;src:url(fonts/michroma.woff2)}
+@font-face{font-family:Mont;src:url(fonts/mont.woff2);font-weight:300 600;font-style:normal}
+@font-face{font-family:Mont;src:url(fonts/monti.woff2);font-weight:300 600;font-style:italic}
+:root{--ink:#1F1F1F;--line:#C9C9C9;--gray:#8C8C8C;--soft:#F4F4F3;--mid:#5E5E5E}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Mont,sans-serif;font-weight:400;color:var(--ink);font-size:10pt;line-height:1.5;background:#fff}
+.page{width:210mm;height:297mm;padding:17mm 20mm 20mm;position:relative;page-break-after:always;overflow:hidden}
+.page:last-child{page-break-after:auto}
+h1,h2,h3,.display{font-family:Display,sans-serif;font-weight:400;letter-spacing:.02em;text-transform:uppercase}
+.rule{width:140px;height:1px;background:var(--line);margin:0 auto}
+.sig{font-style:italic;font-weight:300;color:var(--gray);font-size:9pt}
+.foot{position:absolute;left:20mm;right:20mm;bottom:9mm;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:3mm}
+.foot .n{font-family:Display;font-size:7.5pt;color:var(--gray);letter-spacing:.1em}
+.eyebrow{font-family:Display;font-size:7.5pt;letter-spacing:.25em;color:var(--gray);text-transform:uppercase}
+em{font-weight:300}
+b,strong{font-weight:600}
+
+/* capa */
+.cover{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.cover h1{font-size:30pt;line-height:1.25;margin:10mm 0 12mm}
+.cover .lead{font-style:italic;font-weight:300;font-size:12.5pt;color:var(--mid);max-width:120mm;margin-top:12mm}
+.cover .sig{margin-top:8mm;font-size:10pt}
+.cover .list{margin-top:26mm;display:grid;grid-template-columns:1fr 1fr;gap:3mm 14mm;font-family:Display;font-size:7.5pt;letter-spacing:.14em;color:var(--mid);text-align:left}
+.cover .list span{color:var(--gray);margin-right:3mm}
+
+/* intro */
+h2{font-size:17pt;line-height:1.3;margin:4mm 0 5mm}
+p+p{margin-top:3mm}
+.intro p{max-width:150mm}
+.quote{font-style:italic;font-weight:300;font-size:12pt;line-height:1.45;border-left:1px solid var(--ink);padding:1mm 0 1mm 6mm;margin:6mm 0}
+.map{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:5mm}
+.map .c{border:1px solid var(--line);padding:4mm 5mm 3.5mm}
+.map .num{font-family:Display;font-size:18pt;color:var(--line);line-height:1}
+.map h3{font-size:9pt;margin:3mm 0 2mm;letter-spacing:.08em}
+.map p{font-size:9.2pt;color:var(--mid);line-height:1.5}
+.map .when{margin-top:2.5mm;font-size:8.6pt;font-style:italic;font-weight:300;color:var(--ink)}
+.rules{margin-top:5mm;background:var(--soft);padding:4.5mm 6mm}
+.rules h3{font-size:8.5pt;letter-spacing:.14em;margin-bottom:3mm}
+.rules ol{padding-left:5mm;font-size:9.6pt}
+.rules li+li{margin-top:.8mm}
+
+/* funil */
+.fhead{display:flex;align-items:flex-end;gap:6mm;border-bottom:1px solid var(--line);padding-bottom:4mm;margin-bottom:4.5mm}
+.fhead .big{font-family:Display;font-size:38pt;line-height:.85;color:var(--line)}
+.fhead h2{margin:0;font-size:18pt;line-height:1.15}
+.fhead .eyebrow{margin-bottom:2mm;display:block}
+.what{display:grid;grid-template-columns:1.35fr 1fr;gap:6mm;margin-bottom:3mm}
+.what .lbl{font-family:Display;font-size:7pt;letter-spacing:.2em;color:var(--gray);display:block;margin-bottom:1.5mm}
+.what p{font-size:9.3pt}
+.what .box{background:var(--soft);padding:4mm 5mm}
+.step{display:grid;grid-template-columns:13mm 1fr;gap:0 4mm;padding:3.2mm 0;border-top:1px solid #EAEAEA}
+.step:first-of-type{border-top:0}
+.step .sn{font-family:Display;font-size:15pt;color:var(--ink);line-height:1.1}
+.step h3{font-size:9.4pt;letter-spacing:.06em;line-height:1.35;margin-bottom:1.5mm}
+.step p{font-size:9.1pt;line-height:1.45}
+.step ul{margin:1mm 0 0 4.5mm;font-size:9pt;line-height:1.45}
+.step li+li{margin-top:.3mm}
+.ex{margin-top:1.8mm;border-left:1px solid var(--ink);padding:.5mm 0 .5mm 4mm;font-style:italic;font-weight:300;font-size:9pt;line-height:1.45;color:var(--ink)}
+.ex b{font-style:normal;font-family:Display;font-weight:400;font-size:6.8pt;letter-spacing:.2em;color:var(--gray);display:block;margin-bottom:.8mm}
+
+.check{margin-top:3mm;border:1px solid var(--ink);padding:4mm 6mm}
+.check h3{font-size:8.5pt;letter-spacing:.16em;margin-bottom:3mm}
+.check ul{list-style:none;display:grid;grid-template-columns:1fr;gap:1.2mm}
+.check li{display:flex;gap:3mm;font-size:9.1pt;line-height:1.45}
+.check li:before{content:"";flex:0 0 3.4mm;height:3.4mm;border:1px solid var(--ink);margin-top:.6mm}
+.care{margin-top:4.5mm;display:flex;gap:4mm;font-size:9.2pt;color:var(--mid)}
+.care .lbl{font-family:Display;font-size:7pt;letter-spacing:.2em;color:var(--ink);white-space:nowrap;padding-top:.8mm}
+
+/* plano */
+.plan{width:100%;border-collapse:collapse;margin-top:6mm;font-size:9.4pt}
+.plan th{font-family:Display;font-weight:400;font-size:7pt;letter-spacing:.18em;color:var(--gray);text-align:left;padding:0 3mm 2.5mm 0;border-bottom:1px solid var(--ink)}
+.plan td{padding:3.2mm 3mm 3.2mm 0;border-bottom:1px solid var(--line);vertical-align:top}
+.plan td:first-child{font-family:Display;font-size:8pt;letter-spacing:.08em;width:26mm}
+.fill{margin-top:9mm}
+.fill .row{display:flex;gap:4mm;align-items:flex-end;margin-top:6.5mm}
+.fill .row span{font-size:9.2pt;white-space:nowrap}
+.fill .row i{flex:1;border-bottom:1px solid var(--line);height:5mm}
+
+.end{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.end h2{font-size:20pt;margin:0 0 10mm;line-height:1.35}
+.end p{font-style:italic;font-weight:300;font-size:12pt;max-width:125mm;color:var(--mid);line-height:1.65}
+.end .sig{margin-top:10mm}
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<section class="page cover">
+  <span class="eyebrow">Guia prático · passo a passo</span>
+  <h1>Ativação<br>da audiência</h1>
+  <div class="rule"></div>
+  <p class="sig">Lucro Anti-Exaustão®</p>
+  <p class="lead">4 funis para transformar quem já te segue em cliente — com estratégia, no seu ritmo e sem precisar postar o dia inteiro.</p>
+  <div class="list">
+    <div><span>01</span>Venda social</div>
+    <div><span>02</span>Pesquisa estratégica</div>
+    <div><span>03</span>Proposta irrecusável</div>
+    <div><span>04</span>Stories</div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="page intro">
+  <span class="eyebrow">Antes de começar</span>
+  <h2>Você não precisa de mais seguidores.<br>Precisa ativar os que já tem.</h2>
+  <p>A maior parte das empresárias que chegam até mim acredita que o problema é alcance. Na maioria das vezes, não é. Existe uma audiência inteira — gente que te acompanha, confia no seu trabalho e ainda não comprou — simplesmente porque ninguém conduziu essa pessoa até a decisão.</p>
+  <p>É isso que um funil faz: organiza o caminho. Em vez de postar e torcer, você sabe exatamente o que publicar, em que ordem e qual é o próximo passo de quem está do outro lado.</p>
+  <div class="quote">Venda não precisa ser cansativa. Quando existe método, você trabalha menos no improviso e colhe mais no resultado.</div>
+
+  <div class="map">
+    <div class="c"><div class="num">01</div><h3>Venda social</h3><p>Relacionamento e conteúdo que conduzem naturalmente até a sua oferta.</p><p class="when">Use quando: sua audiência te acompanha, mas não sabe bem o que você vende.</p></div>
+    <div class="c"><div class="num">02</div><h3>Pesquisa estratégica</h3><p>Perguntas que revelam o que sua cliente quer — e abrem conversas de venda.</p><p class="when">Use quando: você quer vender com mais precisão ou validar uma oferta nova.</p></div>
+    <div class="c"><div class="num">03</div><h3>Proposta irrecusável</h3><p>Uma oferta forte, com prazo e bônus, para acelerar a decisão.</p><p class="when">Use quando: sua audiência já está aquecida e precisa de um motivo para agir agora.</p></div>
+    <div class="c"><div class="num">04</div><h3>Stories</h3><p>Uma sequência curta que educa, gera desejo e termina em convite.</p><p class="when">Use quando: você precisa gerar vendas na semana, de forma rápida e próxima.</p></div>
+  </div>
+
+  <div class="rules">
+    <h3>Como usar este guia</h3>
+    <ol>
+      <li><b>Escolha um funil por vez.</b> Os quatro juntos viram sobrecarga — e sobrecarga não vende.</li>
+      <li><b>Siga os passos na ordem.</b> Cada etapa prepara a próxima; pular etapa esfria a audiência.</li>
+      <li><b>Adapte os exemplos à sua voz.</b> Eles são ponto de partida, não roteiro para copiar.</li>
+      <li><b>Marque o checklist e anote os números.</b> O que você mede, você repete.</li>
+    </ol>
+  </div>
+  <div class="foot"><span class="sig">Lucro Anti-Exaustão®</span><span class="n">02</span></div>
+</section>
+
+<!-- FUNIL 1 -->
+<section class="page">
+  <div class="fhead"><div class="big">01</div><div><span class="eyebrow">Funil</span><h2>Venda social</h2></div></div>
+  <div class="what">
+    <div><span class="lbl">O que é</span><p>É vender pelo relacionamento. Você usa o conteúdo para criar conexão, mostrar como pensa e trabalha, e vai conduzindo a audiência até a oferta — sem parecer que está “empurrando” nada.</p></div>
+    <div class="box"><span class="lbl">Objetivo</span><p>Fazer sua seguidora sair de “eu gosto dela” para “eu quero o que ela oferece”.</p></div>
+  </div>
+
+  <div class="step"><div class="sn">1</div><div>
+    <h3>Engaje seus seguidores com conteúdo interativo</h3>
+    <p>Antes de vender, faça sua audiência participar. Quem interage está mais perto de comprar — e o algoritmo passa a te mostrar mais para essas pessoas.</p>
+    <ul><li>Use caixinha de perguntas, enquete, “responde com um emoji”, “comenta EU QUERO”.</li><li>Responda cada interação: é ali que a conversa começa.</li><li>Faça isso por 3 a 5 dias antes de falar da oferta.</li></ul>
+    <div class="ex"><b>Na prática</b>“Qual dessas situações mais parece com a sua semana? A) Trabalho muito e o lucro não aparece B) Faço tudo sozinha C) As duas 🙈”</div>
+  </div></div>
+
+  <div class="step"><div class="sn">2</div><div>
+    <h3>Crie uma narrativa que leve à oferta</h3>
+    <p>Conte uma história com começo, meio e fim — de uma cliente ou sua. A oferta aparece como a solução natural, não como um anúncio solto.</p>
+    <ul><li><b>Antes:</b> qual era o problema, o que ela sentia.</li><li><b>Virada:</b> o que mudou, a decisão que ela tomou.</li><li><b>Depois:</b> o resultado concreto — e o caminho que levou até ele (sua oferta).</li></ul>
+    <div class="ex"><b>Na prática</b>“Há 3 meses a Ana trabalhava 12h por dia e não conseguia tirar pró-labore. Hoje ela tem rotina, equipe e lucro. O que mudou não foi esforço — foi método.”</div>
+  </div></div>
+
+  <div class="step"><div class="sn">3</div><div>
+    <h3>Use CTAs sutis para despertar interesse</h3>
+    <p>Em vez de “compre agora”, convide para o próximo passo. O CTA sutil abre a porta sem pressionar — e leva a conversa para o direct, onde a venda acontece.</p>
+    <div class="ex"><b>Na prática</b>“Se você se viu nessa história, me manda ‘MÉTODO’ no direct que eu te conto como funciona.”</div>
+  </div></div>
+
+  <div class="check"><h3>Checklist · Venda social</h3><ul>
+    <li>Publiquei ao menos 3 conteúdos interativos antes de falar da oferta</li>
+    <li>Respondi todas as interações (comentários, enquetes, caixinhas)</li>
+    <li>Contei uma história com antes, virada e depois</li>
+    <li>Terminei com um CTA leve que leva para o direct</li>
+  </ul></div>
+  <div class="foot"><span class="sig">Lucro Anti-Exaustão®</span><span class="n">03</span></div>
+</section>
+
+<!-- FUNIL 2 -->
+<section class="page">
+  <div class="fhead"><div class="big">02</div><div><span class="eyebrow">Funil</span><h2>Pesquisa estratégica</h2></div></div>
+  <div class="what">
+    <div><span class="lbl">O que é</span><p>É perguntar antes de oferecer. Você descobre o que sua audiência quer, em que ponto ela está e o que a impede de avançar — e usa essas respostas para abrir conversas e ajustar sua oferta.</p></div>
+    <div class="box"><span class="lbl">Objetivo</span><p>Vender com precisão: a oferta certa, para a pessoa certa, com as palavras dela.</p></div>
+  </div>
+
+  <div class="step"><div class="sn">1</div><div>
+    <h3>Crie enquetes e perguntas para identificar interesses</h3>
+    <p>Faça perguntas simples, que qualquer pessoa responde em um toque. Comece amplo e vá afunilando.</p>
+    <ul><li><b>Dia 1:</b> qual é o seu maior desafio hoje? (enquete com 2 opções)</li><li><b>Dia 2:</b> o que você já tentou para resolver? (caixinha)</li><li><b>Dia 3:</b> se eu abrisse uma turma / horário para isso, você teria interesse? (sim / quero saber mais)</li></ul>
+    <div class="ex"><b>Na prática</b>“O que mais te trava hoje? ▢ Falta de tempo  ▢ Falta de lucro”</div>
+  </div></div>
+
+  <div class="step"><div class="sn">2</div><div>
+    <h3>Transforme as respostas em iscas para conversas</h3>
+    <p>Cada voto é uma porta aberta. Chame no direct quem respondeu — de forma pessoal, sem script de vendedora.</p>
+    <div class="ex"><b>Na prática</b>“Oi, Ju! Vi que você votou em ‘falta de lucro’. Posso te perguntar: hoje você sabe quanto sobra no fim do mês, ou ainda é no escuro?”</div>
+    <ul><li>Faça uma pergunta de cada vez e escute de verdade.</li><li>Só apresente a oferta quando ela disser o problema com as palavras dela.</li></ul>
+  </div></div>
+
+  <div class="step"><div class="sn">3</div><div>
+    <h3>Use os dados coletados para personalizar ofertas</h3>
+    <p>Anote as respostas que mais se repetem. Elas mostram qual dor destacar, qual bônus faz sentido e quais palavras usar na sua comunicação.</p>
+    <ul><li>Monte uma listinha com as 3 dores mais votadas.</li><li>Use exatamente essas frases nos próximos posts e na página de vendas.</li><li>Ofereça a quem demonstrou interesse primeiro — antes de abrir para todos.</li></ul>
+  </div></div>
+
+  <div class="check"><h3>Checklist · Pesquisa estratégica</h3><ul>
+    <li>Publiquei a sequência de perguntas (do amplo para o específico)</li>
+    <li>Chamei no direct quem respondeu, com mensagem personalizada</li>
+    <li>Anotei as dores e as palavras que mais se repetiram</li>
+    <li>Ajustei a oferta e a comunicação com base nas respostas</li>
+  </ul></div>
+  <div class="foot"><span class="sig">Lucro Anti-Exaustão®</span><span class="n">04</span></div>
+</section>
+
+<!-- FUNIL 3 -->
+<section class="page">
+  <div class="fhead"><div class="big">03</div><div><span class="eyebrow">Funil</span><h2>Proposta irrecusável</h2></div></div>
+  <div class="what">
+    <div><span class="lbl">O que é</span><p>É uma oferta tão clara e vantajosa que dizer “não” parece perder uma oportunidade. Benefício forte, condição especial e um motivo real para decidir agora.</p></div>
+    <div class="box"><span class="lbl">Objetivo</span><p>Converter quem já estava interessada, mas vinha adiando a decisão.</p></div>
+  </div>
+
+  <div class="step"><div class="sn">1</div><div>
+    <h3>Crie uma oferta com benefício imediato e forte</h3>
+    <p>Sua cliente não compra o serviço — compra o resultado. Deixe claro o que muda na vida dela, e o quanto antes ela sente isso.</p>
+    <ul><li>Troque “mentoria de 12 semanas” por “sua empresa com rotina organizada e lucro previsível em 12 semanas”.</li><li>Mostre o primeiro ganho rápido: o que ela conquista já na primeira semana.</li></ul>
+    <div class="ex"><b>Na prática</b>“Em 7 dias você sai com o mapa de onde seu dinheiro e seu tempo estão escapando.”</div>
+  </div></div>
+
+  <div class="step"><div class="sn">2</div><div>
+    <h3>Aplique um desconto estratégico, sem desvalorizar</h3>
+    <p>Desconto não é liquidação. Ele precisa ter motivo, prazo e limite — assim valoriza quem decide, em vez de ensinar a audiência a esperar promoção.</p>
+    <ul><li>Dê um motivo: aniversário da marca, turma de lançamento, primeiras vagas.</li><li>Limite em tempo (48h, 72h) ou em quantidade (5 vagas).</li><li>Mostre o valor cheio — e cumpra o prazo.</li></ul>
+  </div></div>
+
+  <div class="step"><div class="sn">3</div><div>
+    <h3>Ofereça um bônus matador para quem decidir rápido</h3>
+    <p>O bônus certo resolve a próxima dor da cliente e faz a decisão ficar fácil. Ele vale mais que o desconto — e não mexe no seu preço.</p>
+    <ul><li>Bons bônus: sessão individual extra, planilha/ferramenta pronta, acesso a um grupo, revisão de algo dela.</li><li>Só para quem fechar até a data — depois, some.</li></ul>
+    <div class="ex"><b>Na prática</b>“Quem entrar até sexta, 23h59, ganha uma sessão individual para montar o plano de delegação da equipe.”</div>
+  </div></div>
+
+  <div class="check"><h3>Checklist · Proposta irrecusável</h3><ul>
+    <li>Escrevi a oferta como resultado, não como serviço</li>
+    <li>Defini motivo, prazo e limite para a condição especial</li>
+    <li>Escolhi um bônus que resolve a próxima dor da cliente</li>
+    <li>Comuniquei o prazo com clareza — e vou cumpri-lo</li>
+  </ul></div>
+  <div class="foot"><span class="sig">Lucro Anti-Exaustão®</span><span class="n">05</span></div>
+</section>
+
+<!-- FUNIL 4 -->
+<section class="page">
+  <div class="fhead"><div class="big">04</div><div><span class="eyebrow">Funil</span><h2>Stories</h2></div></div>
+  <div class="what">
+    <div><span class="lbl">O que é</span><p>É uma sequência curta de stories, pensada para ser vista em ordem: começa ensinando, desperta desejo, prova que funciona e termina com um convite claro.</p></div>
+    <div class="box"><span class="lbl">Objetivo</span><p>Gerar conversas e vendas em poucos dias, com a proximidade que só os stories têm.</p></div>
+  </div>
+
+  <div class="step"><div class="sn">1</div><div>
+    <h3>Crie uma sequência que eduque e gere desejo</h3>
+    <p>Planeje de 6 a 10 stories, como se fossem cenas de um mesmo roteiro:</p>
+    <ul><li><b>Gancho:</b> uma frase que faça parar. “Você trabalha mais do que nunca e o lucro não acompanha?”</li><li><b>Problema:</b> por que isso acontece (o erro comum).</li><li><b>Ensino:</b> 1 dica prática que ela pode aplicar hoje.</li><li><b>Desejo:</b> como fica a vida quando isso está resolvido.</li></ul>
+  </div></div>
+
+  <div class="step"><div class="sn">2</div><div>
+    <h3>Inclua prova social para reforçar autoridade</h3>
+    <p>Depois de ensinar, mostre que funciona — com resultados de quem já passou pelo seu trabalho.</p>
+    <ul><li>Prints de mensagens e depoimentos (com autorização).</li><li>Antes e depois com números: horas economizadas, faturamento, equipe.</li><li>Um vídeo rápido seu contando o caso de uma cliente.</li></ul>
+    <div class="ex"><b>Na prática</b>“Olha o que a Carla me mandou hoje: ‘Primeiro mês que tirei férias sem o celular grudado na mão.’”</div>
+  </div></div>
+
+  <div class="step"><div class="sn">3</div><div>
+    <h3>Finalize com uma chamada para ação forte</h3>
+    <p>O último story diz exatamente o que fazer — um único caminho, sem opções demais.</p>
+    <ul><li>Use a figurinha de link ou peça uma palavra no direct.</li><li>Repita o CTA no dia seguinte para quem não respondeu.</li></ul>
+    <div class="ex"><b>Na prática</b>“Tenho 3 vagas para esse mês. Me manda ‘QUERO’ aqui no direct que eu te explico tudo.”</div>
+  </div></div>
+
+  <div class="check"><h3>Checklist · Stories</h3><ul>
+    <li>Roteirizei a sequência: gancho, problema, ensino, desejo</li>
+    <li>Incluí ao menos 2 provas sociais reais</li>
+    <li>Fechei com um único CTA claro</li>
+    <li>Respondi todos os directs em até 24h</li>
+  </ul></div>
+  <div class="foot"><span class="sig">Lucro Anti-Exaustão®</span><span class="n">06</span></div>
+</section>
+
+<!-- PLANO -->
+<section class="page">
+  <span class="eyebrow">Mãos à obra</span>
+  <h2>Meu plano de ativação</h2>
+  <p>Escolha o funil da vez e distribua as etapas na semana. Poucas ações, bem feitas, valem mais do que postar todos os dias sem direção.</p>
+
+  <div class="fill">
+    <div class="row"><span>Funil escolhido:</span><i></i></div>
+    <div class="row"><span>Oferta que vou apresentar:</span><i></i></div>
+    <div class="row"><span>Meta (conversas / vendas):</span><i></i></div>
+    <div class="row"><span>Período:</span><i></i><span>até</span><i></i></div>
+  </div>
+
+  <table class="plan">
+    <thead><tr><th>Dia</th><th>O que vou fazer</th><th>Feito</th></tr></thead>
+    <tbody>
+      <tr><td>Segunda</td><td></td><td></td></tr>
+      <tr><td>Terça</td><td></td><td></td></tr>
+      <tr><td>Quarta</td><td></td><td></td></tr>
+      <tr><td>Quinta</td><td></td><td></td></tr>
+      <tr><td>Sexta</td><td></td><td></td></tr>
+      <tr><td>Fim de semana</td><td><i class="sig">Descanso também faz parte da estratégia.</i></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rules" style="margin-top:9mm">
+    <h3>Meus números</h3>
+    <div class="fill" style="margin-top:0">
+      <div class="row" style="margin-top:3mm"><span>Pessoas que interagiram:</span><i></i><span>Conversas no direct:</span><i></i></div>
+      <div class="row"><span>Vendas fechadas:</span><i></i><span>O que eu repetiria:</span><i></i></div>
+    </div>
+  </div>
+  <div class="foot"><span class="sig">Lucro Anti-Exaustão®</span><span class="n">07</span></div>
+</section>
+
+<!-- FECHO -->
+<section class="page end">
+  <h2>Vender com leveza<br>é uma escolha de método.</h2>
+  <div class="rule"></div>
+  <p style="margin-top:10mm">Comece pelo funil que faz mais sentido para o seu momento, aplique com calma e observe o que sua audiência responde. Consistência leve vence esforço exaustivo — sempre.</p>
+  <p class="sig">Lucro Anti-Exaustão®</p>
+</section>
+
+</body>
+</html>
