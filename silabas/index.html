@@ -1,0 +1,346 @@
+<title>Brincando com Sílabas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Baloo+2:wght@600;800&display=swap">
+<style>
+/* Layout: um "caderno de brincar" — abas grandes no topo, um cartão de jogo central, tudo tocável com o dedo.
+   Tema único e claro por escolha (mundo infantil de céu e sol). */
+:root {
+  --sky: #E6F3FF;
+  --paper: #FFFFFF;
+  --ink: #1D2657;
+  --ink-soft: #5A648F;
+  --sun: #FFC93C;
+  --line: #C9DDF2;
+  /* cores das sílabas, pela posição na palavra */
+  --s1: #FF6B6B;
+  --s2: #3D8BFF;
+  --s3: #22B573;
+  --s4: #A45CFF;
+  /* cores das vogais nas famílias */
+  --va: #FF6B6B; --ve: #FF9F1C; --vi: #22B573; --vo: #3D8BFF; --vu: #A45CFF;
+  --ok: #22B573;
+  --no: #E5484D;
+  --f-display: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+  --f-read: "Andika", "Verdana", system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--sky); color: var(--ink); }
+body { font-family: var(--f-read); font-size: 18px; padding-inline: 16px; padding-block: 12px 32px; }
+.wrap { max-width: 760px; margin: 0 auto; display: grid; gap: 16px; }
+button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; -webkit-tap-highlight-color: transparent; }
+button:focus-visible { outline: 4px solid var(--sun); outline-offset: 3px; }
+
+header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(28px, 6vw, 40px); line-height: 1; margin: 0; letter-spacing: .5px; }
+h1 span:nth-child(1){color:var(--s1)} h1 span:nth-child(2){color:var(--s2)} h1 span:nth-child(3){color:var(--s3)}
+.tools { display: flex; gap: 8px; align-items: center; }
+.pill { background: var(--paper); border: 2px solid var(--line); border-radius: 999px; padding: 6px 14px; font-family: var(--f-display); font-weight: 700; font-size: 18px; display: inline-flex; align-items: center; gap: 6px; }
+.stars { background: var(--sun); border-color: var(--sun); font-variant-numeric: tabular-nums; }
+
+nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+nav button { background: var(--paper); border: 3px solid var(--line); border-radius: 18px; padding: 10px 6px; font-family: var(--f-display); font-weight: 700; font-size: 16px; line-height: 1.1; display: grid; justify-items: center; gap: 2px; }
+nav button .ic { font-size: 28px; }
+nav button[aria-selected="true"] { border-color: var(--ink); background: var(--sun); }
+@media (max-width: 480px) { nav { grid-template-columns: repeat(2, 1fr); } }
+
+.card { background: var(--paper); border-radius: 28px; border: 3px solid var(--line); padding: 20px 16px 24px; display: grid; gap: 18px; justify-items: center; text-align: center; position: relative; }
+.ask { font-family: var(--f-display); font-weight: 700; font-size: 22px; margin: 0; text-wrap: balance; }
+.pic { font-size: clamp(96px, 26vw, 150px); line-height: 1; padding: 6px; border-radius: 24px; }
+.pic:active { transform: scale(.96); }
+.hint { color: var(--ink-soft); font-size: 15px; margin: -8px 0 0; }
+
+.txt { font-family: var(--f-read); font-weight: 700; }
+body[data-case="lower"] .txt { text-transform: lowercase; }
+
+/* Montar palavra */
+.slots, .tiles, .opts, .fam, .nums, .split { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.slot { min-width: 88px; height: 76px; border-radius: 18px; border: 3px dashed var(--line); display: grid; place-items: center; font-size: 40px; padding: 0 10px; }
+.slot.full { border-style: solid; color: #fff; }
+.tile, .opt { min-width: 88px; height: 76px; border-radius: 18px; background: var(--paper); border: 3px solid var(--ink); box-shadow: 0 5px 0 var(--ink); font-size: 40px; padding: 0 12px; transition: transform .08s; }
+.tile:active, .opt:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--ink); }
+.tile.used { visibility: hidden; }
+.shake { animation: shake .35s; border-color: var(--no) !important; }
+@keyframes shake { 20%,60%{transform:translateX(-8px)} 40%,80%{transform:translateX(8px)} }
+.opt.right { background: var(--ok); color: #fff; border-color: var(--ok); box-shadow: 0 5px 0 #168a56; }
+
+/* Palmas */
+.word { font-size: clamp(44px, 12vw, 72px); letter-spacing: 2px; margin: 0; }
+.split span { font-size: clamp(36px, 10vw, 60px); color: #fff; border-radius: 16px; padding: 2px 14px; }
+.num { width: 72px; height: 72px; border-radius: 50%; background: var(--paper); border: 3px solid var(--ink); box-shadow: 0 5px 0 var(--ink); font-family: var(--f-display); font-weight: 800; font-size: 34px; }
+.num:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--ink); }
+.num.right { background: var(--ok); border-color: var(--ok); color: #fff; box-shadow: 0 5px 0 #168a56; }
+.claps { font-size: 34px; min-height: 42px; letter-spacing: 4px; }
+
+/* Famílias */
+.letters { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+.letters button { width: 48px; height: 48px; border-radius: 14px; border: 2px solid var(--line); background: var(--sky); font-family: var(--f-read); font-weight: 700; font-size: 24px; }
+.letters button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.fam button { width: 104px; height: 104px; border-radius: 24px; color: #fff; font-size: 44px; box-shadow: 0 6px 0 rgba(29,38,87,.35); }
+.fam button:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(29,38,87,.35); }
+.fam button b { color: var(--ink); background: #fff; border-radius: 10px; padding: 0 6px; margin-right: 2px; }
+.examples { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.ex { display: grid; justify-items: center; gap: 2px; background: var(--sky); border-radius: 16px; padding: 8px 12px; font-size: 20px; }
+.ex .e { font-size: 40px; line-height: 1; }
+.ex mark { background: var(--sun); color: var(--ink); border-radius: 6px; padding: 0 2px; }
+
+.next { background: var(--ink); color: #fff; border-radius: 999px; padding: 14px 28px; font-family: var(--f-display); font-weight: 800; font-size: 22px; box-shadow: 0 5px 0 #0c1235; }
+.next:active { transform: translateY(4px); box-shadow: 0 1px 0 #0c1235; }
+.soft { background: var(--sky); color: var(--ink); box-shadow: none; font-size: 18px; padding: 10px 20px; }
+.cheer { font-family: var(--f-display); font-weight: 800; font-size: 28px; color: var(--ok); margin: 0; min-height: 1.2em; }
+
+.parents { color: var(--ink-soft); font-size: 15px; line-height: 1.55; max-width: 62ch; margin: 0 auto; }
+.parents strong { color: var(--ink); }
+
+#confetti { position: fixed; inset: 0; pointer-events: none; z-index: 10; width: 100%; height: 100%; }
+@media (prefers-reduced-motion: reduce) { .shake { animation: none; } }
+</style>
+
+<canvas id="confetti"></canvas>
+<div class="wrap">
+  <header>
+    <h1><span>SÍ</span><span>LA</span><span>BAS</span></h1>
+    <div class="tools">
+      <button class="pill" id="caseBtn" aria-label="Trocar entre letra maiúscula e minúscula">ABC</button>
+      <span class="pill stars" aria-live="polite">⭐ <span id="starCount">0</span></span>
+    </div>
+  </header>
+
+  <nav role="tablist" aria-label="Jogos">
+    <button role="tab" data-mode="montar" aria-selected="true"><span class="ic">🧩</span>Montar</button>
+    <button role="tab" data-mode="comeca" aria-selected="false"><span class="ic">🔍</span>Começa com</button>
+    <button role="tab" data-mode="palmas" aria-selected="false"><span class="ic">👏</span>Palmas</button>
+    <button role="tab" data-mode="familias" aria-selected="false"><span class="ic">🌈</span>Famílias</button>
+  </nav>
+
+  <main class="card" id="game" aria-live="polite"></main>
+
+  <p class="parents"><strong>Para os pais:</strong> toque na figura para ouvir a palavra e em cada sílaba para ouvir o som dela. Cada sílaba ganha uma cor pela posição na palavra (1ª vermelha, 2ª azul, 3ª verde), o que ajuda a ver que a palavra se divide em pedaços. O botão <strong>ABC / abc</strong> troca maiúsculas por minúsculas quando ela estiver pronta.</p>
+</div>
+
+<script>
+const WORDS = [
+  { s: ['BO','LA'], e: '⚽' }, { s: ['CA','SA'], e: '🏠' }, { s: ['GA','TO'], e: '🐱' },
+  { s: ['PA','TO'], e: '🦆' }, { s: ['SA','PO'], e: '🐸' }, { s: ['BO','LO'], e: '🎂' },
+  { s: ['DA','DO'], e: '🎲' }, { s: ['LU','A'], e: '🌙' }, { s: ['VA','CA'], e: '🐄' },
+  { s: ['RA','TO'], e: '🐭' }, { s: ['FO','CA'], e: '🦭' }, { s: ['PI','PA'], e: '🪁' },
+  { s: ['MA','LA'], e: '🧳' }, { s: ['BO','TA'], e: '👢' }, { s: ['LU','VA'], e: '🧤' },
+  { s: ['CA','MA'], e: '🛏️' }, { s: ['SI','NO'], e: '🔔' }, { s: ['U','VA'], e: '🍇' },
+  { s: ['O','VO'], e: '🥚' }, { s: ['PE','RA'], e: '🍐' }, { s: ['MO','TO'], e: '🏍️' },
+  { s: ['CO','CO'], e: '🥥' }, { s: ['FA','DA'], e: '🧚' }, { s: ['BO','NÉ'], e: '🧢' },
+  { s: ['CO','PO'], e: '🥤' }, { s: ['MA','CA','CO'], e: '🐒' }, { s: ['BA','NA','NA'], e: '🍌' },
+  { s: ['CA','VA','LO'], e: '🐴' }, { s: ['JA','CA','RÉ'], e: '🐊' }, { s: ['PI','PO','CA'], e: '🍿' },
+  { s: ['TO','MA','TE'], e: '🍅' }, { s: ['SA','PA','TO'], e: '👞' }, { s: ['GI','RA','FA'], e: '🦒' },
+  { s: ['CE','BO','LA'], e: '🧅' }, { s: ['JA','NE','LA'], e: '🪟' }, { s: ['CA','ME','LO'], e: '🐪' },
+  { s: ['BO','NE','CA'], e: '🪆' }, { s: ['PI','RU','LI','TO'], e: '🍭' }, { s: ['BOR','BO','LE','TA'], e: '🦋' },
+].map(w => ({ ...w, w: w.s.join('') }));
+
+const POS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)'];
+const VOW = { A: 'var(--va)', E: 'var(--ve)', I: 'var(--vi)', O: 'var(--vo)', U: 'var(--vu)' };
+const CHEERS = ['Muito bem!', 'Isso aí!', 'Arrasou!', 'Parabéns!', 'Que leitora!', 'Incrível!'];
+const $ = s => document.querySelector(s);
+const game = $('#game');
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const pick = a => a[Math.floor(Math.random() * a.length)];
+const el = (tag, props = {}, kids = []) => { const n = Object.assign(document.createElement(tag), props); kids.forEach(k => n.append(k)); return n; };
+
+/* ---------- voz ---------- */
+let voice = null;
+function loadVoice() {
+  try {
+    const vs = speechSynthesis.getVoices();
+    voice = vs.find(v => v.lang === 'pt-BR') || vs.find(v => v.lang && v.lang.startsWith('pt')) || null;
+  } catch (e) {}
+}
+try { loadVoice(); speechSynthesis.onvoiceschanged = loadVoice; } catch (e) {}
+function falar(t, rate = 0.8) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(t.toLowerCase());
+    u.lang = 'pt-BR'; u.rate = rate; if (voice) u.voice = voice;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+function falarPartes(sils) { falar(sils.join(' ... '), 0.6); }
+
+/* ---------- estrelas e preferências ---------- */
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+};
+let stars = store.get('silabas-estrelas', 0);
+$('#starCount').textContent = stars;
+function ganhar() {
+  stars++; $('#starCount').textContent = stars; store.set('silabas-estrelas', stars);
+  confete();
+}
+let lower = store.get('silabas-minusculas', false);
+function aplicarCase() { document.body.dataset.case = lower ? 'lower' : 'upper'; $('#caseBtn').textContent = lower ? 'abc' : 'ABC'; }
+aplicarCase();
+$('#caseBtn').onclick = () => { lower = !lower; store.set('silabas-minusculas', lower); aplicarCase(); };
+
+/* ---------- confete ---------- */
+const cv = $('#confetti'), cx = cv.getContext('2d');
+let bits = [], raf = 0;
+function confete() {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  cv.width = innerWidth; cv.height = innerHeight;
+  const cols = ['#FF6B6B', '#3D8BFF', '#22B573', '#FFC93C', '#A45CFF'];
+  for (let i = 0; i < 90; i++) bits.push({ x: innerWidth / 2, y: innerHeight / 2.4, vx: (Math.random() - .5) * 14, vy: -Math.random() * 14 - 4, r: Math.random() * 6 + 4, c: pick(cols), a: Math.random() * 6, life: 90 });
+  if (!raf) tick();
+}
+function tick() {
+  cx.clearRect(0, 0, cv.width, cv.height);
+  bits = bits.filter(b => b.life-- > 0);
+  bits.forEach(b => { b.vy += .45; b.x += b.vx; b.y += b.vy; b.a += .2; cx.save(); cx.translate(b.x, b.y); cx.rotate(b.a); cx.fillStyle = b.c; cx.fillRect(-b.r, -b.r / 2, b.r * 2, b.r); cx.restore(); });
+  raf = bits.length ? requestAnimationFrame(tick) : 0;
+  if (!raf) cx.clearRect(0, 0, cv.width, cv.height);
+}
+
+/* ---------- utilidades de tela ---------- */
+function figura(w) {
+  return el('button', { className: 'pic', textContent: w.e, ariaLabel: 'Ouvir a palavra', onclick: () => falar(w.w) });
+}
+function sacudir(n) { n.classList.remove('shake'); void n.offsetWidth; n.classList.add('shake'); }
+function botaoProxima(fn) { return el('button', { className: 'next', textContent: 'Próxima ➜', onclick: fn }); }
+function palavraColorida(w) {
+  return el('div', { className: 'split' }, w.s.map((s, i) => {
+    const sp = el('span', { className: 'txt', textContent: s }); sp.style.background = POS[i % 4]; return sp;
+  }));
+}
+let fila = {};
+function proxima(modo, filtro = () => true) {
+  if (!fila[modo] || !fila[modo].length) fila[modo] = shuffle(WORDS.filter(filtro));
+  return fila[modo].pop();
+}
+
+/* ---------- 1. Montar a palavra ---------- */
+function montar() {
+  const w = proxima('montar');
+  let pos = 0;
+  const slots = w.s.map(() => el('div', { className: 'slot txt' }));
+  const cheer = el('p', { className: 'cheer' });
+  const tiles = shuffle(w.s.map((s, i) => ({ s, i }))).map(t => {
+    const b = el('button', { className: 'tile txt', textContent: t.s });
+    b.onclick = () => {
+      falar(t.s);
+      if (t.s === w.s[pos]) {
+        b.classList.add('used');
+        slots[pos].textContent = t.s; slots[pos].classList.add('full'); slots[pos].style.background = POS[pos % 4]; slots[pos].style.borderColor = POS[pos % 4];
+        pos++;
+        if (pos === w.s.length) {
+          setTimeout(() => falar(w.w), 500);
+          cheer.textContent = pick(CHEERS); ganhar();
+          game.append(botaoProxima(montar));
+        }
+      } else sacudir(b);
+    };
+    return b;
+  });
+  game.replaceChildren(
+    el('p', { className: 'ask', textContent: 'Monte o nome da figura' }),
+    figura(w), el('p', { className: 'hint', textContent: 'Toque na figura para ouvir' }),
+    el('div', { className: 'slots' }, slots),
+    el('div', { className: 'tiles' }, tiles),
+    cheer
+  );
+}
+
+/* ---------- 2. Começa com ---------- */
+function comeca() {
+  const w = proxima('comeca');
+  const outras = shuffle([...new Set(WORDS.map(x => x.s[0]).filter(s => s !== w.s[0]))]).slice(0, 2);
+  const cheer = el('p', { className: 'cheer' });
+  let feito = false;
+  const opts = shuffle([w.s[0], ...outras]).map(s => {
+    const b = el('button', { className: 'opt txt', textContent: s });
+    b.onclick = () => {
+      if (feito) return;
+      falar(s);
+      if (s === w.s[0]) {
+        feito = true; b.classList.add('right');
+        cheer.textContent = pick(CHEERS); ganhar();
+        setTimeout(() => falar(w.w), 500);
+        game.append(palavraColorida(w), botaoProxima(comeca));
+      } else sacudir(b);
+    };
+    return b;
+  });
+  game.replaceChildren(
+    el('p', { className: 'ask', textContent: 'Com qual sílaba começa?' }),
+    figura(w), el('p', { className: 'hint', textContent: 'Toque na figura para ouvir' }),
+    el('div', { className: 'opts' }, opts), cheer
+  );
+}
+
+/* ---------- 3. Palmas ---------- */
+function palmas() {
+  const w = proxima('palmas');
+  const cheer = el('p', { className: 'cheer' });
+  const claps = el('div', { className: 'claps', ariaHidden: 'true' });
+  const palavra = el('p', { className: 'word txt', textContent: w.w });
+  let feito = false;
+  const nums = [1, 2, 3, 4].map(n => {
+    const b = el('button', { className: 'num', textContent: n, ariaLabel: n + ' palmas' });
+    b.onclick = () => {
+      if (feito) return;
+      if (n === w.s.length) {
+        feito = true; b.classList.add('right');
+        cheer.textContent = pick(CHEERS); ganhar();
+        palavra.replaceWith(palavraColorida(w));
+        claps.textContent = '👏'.repeat(n);
+        falarPartes(w.s);
+        game.append(botaoProxima(palmas));
+      } else sacudir(b);
+    };
+    return b;
+  });
+  game.replaceChildren(
+    el('p', { className: 'ask', textContent: 'Fale a palavra batendo palmas. Quantas palmas?' }),
+    figura(w), palavra, claps,
+    el('button', { className: 'next soft', textContent: '🔊 Ouvir devagar', onclick: () => falarPartes(w.s) }),
+    el('div', { className: 'nums' }, nums), cheer
+  );
+}
+
+/* ---------- 4. Famílias silábicas ---------- */
+const LETRAS = 'BCDFGJLMNPRSTV'.split('');
+let letraAtual = store.get('silabas-letra', 'B');
+function familias() {
+  const letras = el('div', { className: 'letters' }, LETRAS.map(l => el('button', {
+    className: 'txt', textContent: l, ariaPressed: String(l === letraAtual),
+    onclick: () => { letraAtual = l; store.set('silabas-letra', l); familias(); falar(l); },
+  })));
+  const fam = 'AEIOU'.split('').map(v => {
+    const s = letraAtual + v;
+    const b = el('button', { className: 'txt', ariaLabel: 'Ouvir ' + s, onclick: () => falar(s) });
+    b.append(el('b', { textContent: letraAtual }), v);
+    b.style.background = VOW[v];
+    return b;
+  });
+  const ex = WORDS.filter(w => w.s.some(s => s[0] === letraAtual && s.length === 2 && 'AEIOUÉ'.includes(s[1]))).slice(0, 6).map(w => {
+    const b = el('button', { className: 'ex', onclick: () => falar(w.w) });
+    const t = el('span', { className: 'txt' });
+    w.s.forEach(s => t.append(s[0] === letraAtual ? el('mark', { textContent: s }) : s));
+    b.append(el('span', { className: 'e', textContent: w.e }), t);
+    return b;
+  });
+  game.replaceChildren(
+    el('p', { className: 'ask', textContent: 'Escolha uma letra e ouça a família' }),
+    letras,
+    el('div', { className: 'fam' }, fam),
+    ...(ex.length ? [el('p', { className: 'hint', textContent: 'Palavras com essa família:' }), el('div', { className: 'examples' }, ex)] : [])
+  );
+}
+
+/* ---------- navegação ---------- */
+const MODOS = { montar, comeca, palmas, familias };
+document.querySelectorAll('nav button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('nav button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
+  store.set('silabas-modo', b.dataset.mode);
+  MODOS[b.dataset.mode]();
+});
+const inicial = store.get('silabas-modo', 'montar');
+(document.querySelector(`nav button[data-mode="${MODOS[inicial] ? inicial : 'montar'}"]`)).click();
+</script>
