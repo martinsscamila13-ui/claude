@@ -43,7 +43,6 @@ nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 nav button { background: var(--paper); border: 3px solid var(--line); border-radius: 18px; padding: 10px 6px; font-family: var(--f-display); font-weight: 700; font-size: 16px; line-height: 1.1; display: grid; justify-items: center; gap: 2px; }
 nav button .ic { font-size: 28px; }
 nav button[aria-selected="true"] { border-color: var(--ink); background: var(--sun); }
-@media (max-width: 480px) { nav { grid-template-columns: repeat(2, 1fr); } }
 
 .card { background: var(--paper); border-radius: 28px; border: 3px solid var(--line); padding: 20px 16px 24px; display: grid; gap: 18px; justify-items: center; text-align: center; position: relative; }
 .ask { font-family: var(--f-display); font-weight: 700; font-size: 22px; margin: 0; text-wrap: balance; }
@@ -77,12 +76,17 @@ body[data-case="lower"] .txt { text-transform: lowercase; }
 .letters { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
 .letters button { width: 48px; height: 48px; border-radius: 14px; border: 2px solid var(--line); background: var(--sky); font-family: var(--f-read); font-weight: 700; font-size: 24px; }
 .letters button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
-.fam button { width: 104px; height: 104px; border-radius: 24px; color: #fff; font-size: 44px; box-shadow: 0 6px 0 rgba(29,38,87,.35); }
-.fam button:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(29,38,87,.35); }
-.fam button b { color: var(--ink); background: #fff; border-radius: 10px; padding: 0 6px; margin-right: 2px; }
+.famlist { display: grid; gap: 12px; width: 100%; }
+.famrow { display: grid; grid-template-columns: 96px 1fr; gap: 12px; align-items: center; padding: 10px; border-radius: 22px; background: var(--sky); }
+.famrow .examples { justify-content: flex-start; min-width: 0; }
+.famrow .ex { background: var(--paper); }
+.syl { width: 96px; height: 96px; border-radius: 22px; color: #fff; font-size: 40px; box-shadow: 0 6px 0 rgba(29,38,87,.35); }
+.syl:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(29,38,87,.35); }
+.syl b { color: var(--ink); background: #fff; border-radius: 10px; padding: 0 6px; margin-right: 2px; }
 .examples { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.trainbar { display: flex; gap: 10px; align-items: center; justify-content: space-between; width: 100%; }
 .ex { display: grid; justify-items: center; gap: 2px; background: var(--sky); border-radius: 16px; padding: 8px 12px; font-size: 20px; }
-.ex .e { font-size: 40px; line-height: 1; }
+.ex .e { font-size: 36px; line-height: 1; }
 .ex mark { background: var(--sun); color: var(--ink); border-radius: 6px; padding: 0 2px; }
 
 .next { background: var(--ink); color: #fff; border-radius: 999px; padding: 14px 28px; font-family: var(--f-display); font-weight: 800; font-size: 22px; box-shadow: 0 5px 0 #0c1235; }
@@ -95,6 +99,13 @@ body[data-case="lower"] .txt { text-transform: lowercase; }
 
 #confetti { position: fixed; inset: 0; pointer-events: none; z-index: 10; width: 100%; height: 100%; }
 @media (prefers-reduced-motion: reduce) { .shake { animation: none; } }
+@media (max-width: 480px) {
+  nav { grid-template-columns: repeat(2, 1fr); }
+  .famrow { grid-template-columns: 1fr; justify-items: center; }
+  .famrow .examples { justify-content: center; }
+  .slot, .tile { min-width: 70px; height: 66px; font-size: 32px; padding: 0 8px; }
+  .slots, .tiles { gap: 8px; }
+}
 </style>
 
 <canvas id="confetti"></canvas>
@@ -210,14 +221,14 @@ function palavraColorida(w) {
   }));
 }
 let fila = {};
-function proxima(modo, filtro = () => true) {
-  if (!fila[modo] || !fila[modo].length) fila[modo] = shuffle(WORDS.filter(filtro));
+function proxima(modo, lista = WORDS) {
+  if (!fila[modo] || !fila[modo].length) fila[modo] = shuffle(lista);
   return fila[modo].pop();
 }
 
 /* ---------- 1. Montar a palavra ---------- */
-function montar() {
-  const w = proxima('montar');
+function montar(treino) {
+  const w = treino ? proxima('fam-' + treino.letra, treino.lista) : proxima('montar');
   let pos = 0;
   const slots = w.s.map(() => el('div', { className: 'slot txt' }));
   const cheer = el('p', { className: 'cheer' });
@@ -232,13 +243,17 @@ function montar() {
         if (pos === w.s.length) {
           setTimeout(() => falar(w.w), 500);
           cheer.textContent = pick(CHEERS); ganhar();
-          game.append(botaoProxima(montar));
+          game.append(botaoProxima(() => montar(treino)));
         }
       } else sacudir(b);
     };
     return b;
   });
   game.replaceChildren(
+    ...(treino ? [el('div', { className: 'trainbar' }, [
+      el('button', { className: 'next soft', textContent: '← Voltar', onclick: familias }),
+      el('span', { className: 'pill txt', textContent: 'Família ' + treino.letra }),
+    ])] : []),
     el('p', { className: 'ask', textContent: 'Monte o nome da figura' }),
     figura(w), el('p', { className: 'hint', textContent: 'Toque na figura para ouvir' }),
     el('div', { className: 'slots' }, slots),
@@ -305,32 +320,116 @@ function palmas() {
 }
 
 /* ---------- 4. Famílias silábicas ---------- */
+/* Banco de palavras de cada sílaba. Formato: sílabas separadas por hífen + figura. */
+const BANCO = {
+  BA: 'BA-NA-NA 🍌, BA-LÃO 🎈, BA-LEI-A 🐋, BA-TA-TA 🥔',
+  BE: 'BE-BÊ 👶, BE-SOU-RO 🪲',
+  BI: 'BI-CI-CLE-TA 🚲, BI-GO-DE 🥸, BI-QUÍ-NI 👙',
+  BO: 'BO-LA ⚽, BO-LO 🎂, BO-TA 👢, BO-NE-CA 🪆',
+  BU: 'BU-ZI-NA 📯, BU-QUÊ 💐, BU-LE 🫖',
+  CA: 'CA-SA 🏠, CA-VA-LO 🐴, CA-MA 🛏️, CA-ME-LO 🐪',
+  CE: 'CE-BO-LA 🧅, CE-NOU-RA 🥕, CE-RE-JA 🍒, CE-LU-LAR 📱',
+  CI: 'CI-NE-MA 🎬, CI-DA-DE 🏙️, BI-CI-CLE-TA 🚲',
+  CO: 'CO-CO 🥥, CO-PO 🥤, CO-E-LHO 🐰, CO-RA-ÇÃO ❤️',
+  CU: 'CU-BO 🧊, CU-RA-TI-VO 🩹, ES-CU-DO 🛡️',
+  DA: 'DA-DO 🎲, FA-DA 🧚, ES-CA-DA 🪜',
+  DE: 'DE-DO ☝️, BI-GO-DE 🥸, CI-DA-DE 🏙️',
+  DI: 'DI-NOS-SAU-RO 🦕, DI-A-MAN-TE 💎, DI-NHEI-RO 💰',
+  DO: 'DO-CE 🍬, DA-DO 🎲, CA-DE-A-DO 🔒',
+  DU: 'DU-CHA 🚿, DU-EN-DE 🧝',
+  FA: 'FA-DA 🧚, GI-RA-FA 🦒, SO-FÁ 🛋️',
+  FE: 'CA-FÉ ☕, FÉ-RIAS 🏖️, FE-CHA-DU-RA 🔐',
+  FI: 'FI-TA 🎀, FI-LHO-TE 🐶',
+  FO: 'FO-CA 🦭, FO-GO 🔥, FO-GUE-TE 🚀, FO-LHA 🍃',
+  FU: 'FU-MA-ÇA 💨, FU-TE-BOL ⚽, FU-RA-CÃO 🌀',
+  GA: 'GA-TO 🐱, GA-LI-NHA 🐔, GA-LO 🐓, TAR-TA-RU-GA 🐢',
+  GE: 'GE-LO 🧊, GE-LA-TI-NA 🍮',
+  GI: 'GI-RA-FA 🦒, GI-RAS-SOL 🌻',
+  GO: 'GO-TA 💧, GO-RI-LA 🦍, FO-GO 🔥',
+  GU: 'A-GU-LHA 🪡, GU-LO-SO 😋',
+  JA: 'JA-CA-RÉ 🐊, JA-NE-LA 🪟',
+  JE: 'HO-JE 📅, JE-RI-MUM 🎃',
+  JI: 'JI-BOI-A 🐍, JI-PE 🚙',
+  JO: 'JO-A-NI-NHA 🐞, JO-GO 🎮',
+  JU: 'JU-BA 🦁, JU-DÔ 🥋',
+  LA: 'LA-RAN-JA 🍊, BO-LA ⚽, LA-GAR-TA 🐛, LA-TA 🥫',
+  LE: 'LE-ÃO 🦁, BU-LE 🫖',
+  LI: 'LI-MÃO 🍋, LI-VRO 📖, LI-XO 🗑️',
+  LO: 'LO-BO 🐺, BO-LO 🎂, LO-JA 🏪, GA-LO 🐓',
+  LU: 'LU-A 🌙, LU-VA 🧤, LU-PA 🔍',
+  MA: 'MA-CA-CO 🐒, MA-ÇÃ 🍎, MA-LA 🧳, CA-MA 🛏️',
+  ME: 'ME-NI-NA 👧, ME-NI-NO 👦, ME-LAN-CI-A 🍉, CA-ME-LO 🐪',
+  MI: 'MI-LHO 🌽, MI-NHO-CA 🪱',
+  MO: 'MO-TO 🏍️, MO-RAN-GO 🍓, MO-E-DA 🪙, MO-CHI-LA 🎒',
+  MU: 'MÚ-SI-CA 🎵, MU-RO 🧱',
+  NA: 'BA-NA-NA 🍌, NA-RIZ 👃, NA-VI-O 🚢',
+  NE: 'NE-VE ❄️, BO-NE-CA 🪆, JA-NE-LA 🪟',
+  NI: 'NI-NHO 🪹, ME-NI-NA 👧',
+  NO: 'NO-VE 9️⃣, SI-NO 🔔, NO-VE-LO 🧶',
+  NU: 'NU-VEM ☁️, CA-NU-DO 🥤',
+  PA: 'PA-TO 🦆, PA-PA-GAI-O 🦜, PI-PA 🪁',
+  PE: 'PE-RA 🍐, PE-RU 🦃, PE-NA 🪶',
+  PI: 'PI-PO-CA 🍿, PI-RU-LI-TO 🍭, PI-PA 🪁, PI-A-NO 🎹',
+  PO: 'SA-PO 🐸, CO-PO 🥤, PI-PO-CA 🍿',
+  PU: 'PU-DIM 🍮, PU-MA 🐆',
+  RA: 'RA-TO 🐭, RA-PO-SA 🦊, RA-QUE-TE 🎾',
+  RE: 'RE-LÓ-GIO ⏰, RE-MÉ-DIO 💊',
+  RI: 'RI-SA-DA 😂, RI-O 🏞️',
+  RO: 'RO-DA 🛞, RO-SA 🌹, RO-BÔ 🤖',
+  RU: 'RU-A 🛣️, PE-RU 🦃, PI-RU-LI-TO 🍭',
+  SA: 'SA-PO 🐸, SA-PA-TO 👞, CA-SA 🏠, SA-LA-DA 🥗',
+  SE: 'SE-MÁ-FO-RO 🚦, SE-REI-A 🧜‍♀️',
+  SI: 'SI-NO 🔔, SI-RI 🦀, SI-RE-NE 🚨',
+  SO: 'SO-FÁ 🛋️, SO-PA 🍲',
+  SU: 'SU-CO 🧃, SU-SHI 🍣',
+  TA: 'TA-ÇA 🏆, BO-TA 👢, BA-TA-TA 🥔',
+  TE: 'TE-LE-FO-NE ☎️, TE-SOU-RA ✂️, TO-MA-TE 🍅',
+  TI: 'TI-GRE 🐅, TI-JO-LO 🧱',
+  TO: 'TO-MA-TE 🍅, GA-TO 🐱, PA-TO 🦆, TO-MA-DA 🔌',
+  TU: 'TU-BA-RÃO 🦈, TU-LI-PA 🌷',
+  VA: 'VA-CA 🐄, LU-VA 🧤, U-VA 🍇',
+  VE: 'VE-LA 🕯️, NE-VE ❄️, VE-A-DO 🦌',
+  VI: 'VI-O-LÃO 🎸, VI-O-LI-NO 🎻, NA-VI-O 🚢',
+  VO: 'VO-VÔ 👴, VO-VÓ 👵, O-VO 🥚',
+  VU: '',
+};
+const semAcento = t => t.normalize('NFD').replace(/[̀-ͯ]/g, '');
+const palavrasDe = sil => (BANCO[sil] || '').split(',').map(x => x.trim()).filter(Boolean).map(x => {
+  const i = x.indexOf(' '); const s = x.slice(0, i).split('-');
+  return { s, w: s.join(''), e: x.slice(i + 1), alvo: sil };
+});
 const LETRAS = 'BCDFGJLMNPRSTV'.split('');
 let letraAtual = store.get('silabas-letra', 'B');
+if (!LETRAS.includes(letraAtual)) letraAtual = 'B';
 function familias() {
   const letras = el('div', { className: 'letters' }, LETRAS.map(l => el('button', {
     className: 'txt', textContent: l, ariaPressed: String(l === letraAtual),
     onclick: () => { letraAtual = l; store.set('silabas-letra', l); familias(); falar(l); },
   })));
-  const fam = 'AEIOU'.split('').map(v => {
-    const s = letraAtual + v;
-    const b = el('button', { className: 'txt', ariaLabel: 'Ouvir ' + s, onclick: () => falar(s) });
+  const todas = [];
+  const linhas = 'AEIOU'.split('').map(v => {
+    const sil = letraAtual + v;
+    const b = el('button', { className: 'syl txt', ariaLabel: 'Ouvir ' + sil, onclick: () => falar(sil) });
     b.append(el('b', { textContent: letraAtual }), v);
     b.style.background = VOW[v];
-    return b;
+    const ps = palavrasDe(sil);
+    todas.push(...ps);
+    const chips = ps.length ? ps.map(w => {
+      const c = el('button', { className: 'ex', onclick: () => falar(w.w) });
+      const t = el('span', { className: 'txt' });
+      w.s.forEach(x => t.append(semAcento(x) === sil ? el('mark', { textContent: x }) : x));
+      c.append(el('span', { className: 'e', textContent: w.e }), t);
+      return c;
+    }) : [el('span', { className: 'hint', textContent: 'Quase não tem palavras com ' + sil + '!' })];
+    return el('div', { className: 'famrow' }, [b, el('div', { className: 'examples' }, chips)]);
   });
-  const ex = WORDS.filter(w => w.s.some(s => s[0] === letraAtual && s.length === 2 && 'AEIOUÉ'.includes(s[1]))).slice(0, 6).map(w => {
-    const b = el('button', { className: 'ex', onclick: () => falar(w.w) });
-    const t = el('span', { className: 'txt' });
-    w.s.forEach(s => t.append(s[0] === letraAtual ? el('mark', { textContent: s }) : s));
-    b.append(el('span', { className: 'e', textContent: w.e }), t);
-    return b;
-  });
+  const unicas = [...new Map(todas.map(w => [w.w, w])).values()];
   game.replaceChildren(
     el('p', { className: 'ask', textContent: 'Escolha uma letra e ouça a família' }),
     letras,
-    el('div', { className: 'fam' }, fam),
-    ...(ex.length ? [el('p', { className: 'hint', textContent: 'Palavras com essa família:' }), el('div', { className: 'examples' }, ex)] : [])
+    el('div', { className: 'famlist' }, linhas),
+    el('button', { className: 'next', textContent: '🧩 Treinar a família ' + letraAtual,
+      onclick: () => { montar({ letra: letraAtual, lista: unicas }); game.scrollIntoView({ block: 'start' }); } })
   );
 }
 
