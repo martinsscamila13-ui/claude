@@ -1,6 +1,8 @@
 import math, pathlib
 
 OUT = pathlib.Path(__file__).parent
+QR = (OUT / "qr.svg").read_text()
+TEST_URL = "16personalities.com/br/teste-de-personalidade"
 
 def waves(w=900, h=520, n=14, color="#FBF6F1", op=0.55, amp=70, freq=1.25, tilt=0.35, sw=1.4):
     paths = []
@@ -18,27 +20,6 @@ SLIDES = []
 def add(html, cls="cream", deco=""):
     SLIDES.append((cls, html, deco))
 
-FOOT = True
-
-# ---------- 1 CAPA ----------
-add(f"""
-<div class="cover-l">
-  <div class="kicker light">FURB · Graduação em Farmácia · Administração e Economia Farmacêutica</div>
-  <h1 class="mega">Do sonho<br>ao plano</h1>
-  <p class="lead light">Como construir um Plano de Negócios farmacêutico viável — e apresentá-lo com segurança.</p>
-  <div class="cover-meta">
-    <div><b>Camila Martins Finger</b><br>@martinsscamila</div>
-    <div class="vr"></div>
-    <div>16 de outubro de 2026<br>09h30 – 11h30</div>
-  </div>
-</div>
-<div class="cover-card">
-  {waves(620, 760, 22, "#B65F3A", 0.85, 90, 1.1, 0.55, 1.6)}
-  <div class="cc-txt"><span class="script">plano</span><br><span>11 blocos · 1 história</span></div>
-</div>
-""", "terra", waves(1000, 420, 14, "#FBF6F1", 0.35))
-
-# ---------- 2 QUOTE ----------
 def quote(text, sub=None):
     add(f"""
 <div class="topbar"></div>
@@ -51,45 +32,6 @@ def quote(text, sub=None):
 <div class="bottombars"><div></div><div></div></div>
 """, "paper nofoot")
 
-quote("Quem não define seu caminho acaba vivendo o plano de outra pessoa.")
-
-# ---------- 3 DINÂMICA ABERTURA ----------
-add("""
-<div class="tag">Dinâmica · 5 min</div>
-<h2 class="title light">Quero conhecer vocês</h2>
-<div class="prompts">
-  <div class="prompt"><span class="pn">01</span><p>Em <b>uma palavra</b>: o que é empreender para você?</p></div>
-  <div class="prompt"><span class="pn">02</span><p>Se você abrisse um negócio <b>amanhã</b>, o que ele seria?</p></div>
-</div>
-""", "dark", waves(900, 460, 16, "#FBF6F1", 0.28))
-
-# ---------- 4 QUEM SOU EU ----------
-add("""
-<h2 class="title">Prazer, Camila.</h2>
-<p class="sub">Uma jornada que começou exatamente onde vocês estão: na saúde.</p>
-<div class="timeline">
-  <div class="tl"><div class="dot"></div><div class="tl-k">Origem</div><h4>Técnica de enfermagem</h4><p>Conheço a rotina do cuidado na prática — e o peso de um atendimento bem ou mal feito.</p></div>
-  <div class="tl"><div class="dot"></div><div class="tl-k">Virada</div><h4>Empresária na pandemia</h4><p>Aprendi a empreender empreendendo: errando, ajustando e estruturando.</p></div>
-  <div class="tl"><div class="dot"></div><div class="tl-k">Método</div><h4>Lucro Anti-Exaustão®</h4><p>Raio-X Operacional, Extração Comportamental, Rotina Anti-Exaustão e Ativação de Patrimônio.</p></div>
-  <div class="tl"><div class="dot"></div><div class="tl-k">Hoje</div><h4>Mentora de empresárias</h4><p>Programas de aceleração, workshops in company e palestras.</p></div>
-</div>
-<p class="statement">Cuidar do negócio também é uma forma de cuidar das pessoas.</p>
-""")
-
-# ---------- 5 AGENDA ----------
-add("""
-<h2 class="title">Como vamos trabalhar hoje</h2>
-<div class="agenda">
-  <div class="ag"><span class="t">09h30</span><span class="n"></span><span class="d">Abertura e conexão</span></div>
-  <div class="ag"><span class="t">09h45</span><span class="n">01</span><span class="d">Por que planejar</span></div>
-  <div class="ag"><span class="t">09h55</span><span class="n">02</span><span class="d">O mapa do plano · blocos 1 a 7</span></div>
-  <div class="ag pause"><span class="t">10h30</span><span class="n"></span><span class="d">Pausa · 10 min</span></div>
-  <div class="ag"><span class="t">10h40</span><span class="n">03</span><span class="d">Os números · blocos 8 a 11</span></div>
-  <div class="ag"><span class="t">11h05</span><span class="n">04</span><span class="d">Mão na massa · plano em 1 página</span></div>
-  <div class="ag"><span class="t">11h20</span><span class="n">05</span><span class="d">Como apresentar + encerramento</span></div>
-</div>
-""", "cream", waves(700, 380, 12, "#B65F3A", 0.35))
-
 def section(num, title, sub):
     add(f"""
 <div class="sec">
@@ -99,73 +41,81 @@ def section(num, title, sub):
 </div>
 """, "dark nofoot", waves(1100, 520, 18, "#B65F3A", 0.55))
 
-# ---------- 6 SEÇÃO 01 ----------
-section("01", "Por que planejar", "Antes da planilha, a mentalidade.")
-
-# ---------- 7 ----------
-add("""
-<div class="split">
-  <div>
-    <p class="bigserif">A faculdade nos forma para cuidar do paciente.<br><em>Quase ninguém nos ensina a cuidar do negócio.</em></p>
-  </div>
-  <div class="card soft">
-    <p class="card-lead">O plano de negócios é o lugar onde você <b>erra no papel</b> — antes de errar com dinheiro.</p>
-    <ul class="checks">
-      <li>Testa a ideia antes do investimento</li>
-      <li>Mostra se os números fecham</li>
-      <li>Organiza a operação antes da inauguração</li>
-      <li>Comunica a proposta a sócios, bancos e investidores</li>
-    </ul>
+# ---------- 1 CAPA ----------
+add(f"""
+<div class="cover-l">
+  <div class="kicker light">FURB · Farmácia · Administração e Economia Farmacêutica</div>
+  <h1 class="mega">Do papel<br>à entrega</h1>
+  <p class="lead light">Gestão do tempo, produtividade e um plano de ação para tirar o seu Plano de Negócios do papel.</p>
+  <div class="cover-meta">
+    <div><b>Camila Martins Finger</b><br>@martinsscamila</div>
+    <div class="vr"></div>
+    <div>16 de outubro de 2026<br>09h30 – 11h30</div>
   </div>
 </div>
-""")
-
-# ---------- 8 IMPROVISO x PLANO ----------
-add("""
-<h2 class="title">Improviso ou plano?</h2>
-<div class="vs">
-  <div class="vs-col">
-    <h3>Empreender no improviso</h3>
-    <ul class="dash">
-      <li>Abre porque “tem movimento na rua”</li>
-      <li>Descobre os custos depois da inauguração</li>
-      <li>Quer atender “todo mundo”</li>
-      <li>Confunde faturamento com lucro</li>
-      <li>O dono faz tudo — e se esgota</li>
-    </ul>
-  </div>
-  <div class="vs-mid">vs</div>
-  <div class="vs-col on">
-    <h3>Empreender com plano</h3>
-    <ul class="dash">
-      <li>Valida público e localização antes</li>
-      <li>Conhece o ponto de equilíbrio desde o dia 1</li>
-      <li>Tem um público e um diferencial claros</li>
-      <li>Acompanha margem, caixa e lucro</li>
-      <li>Estrutura processos e equipe</li>
-    </ul>
-  </div>
+<div class="cover-card">
+  {waves(620, 760, 22, "#B65F3A", 0.85, 90, 1.1, 0.55, 1.6)}
+  <div class="cc-txt"><span class="script">entrega</span><br><span>13 de novembro</span></div>
 </div>
-""")
+""", "terra", waves(1000, 420, 14, "#FBF6F1", 0.35))
 
-# ---------- 9 ONDE EMPREENDER ----------
+# ---------- 2 ----------
+quote("Quem não define seu caminho acaba vivendo o plano de outra pessoa.")
+
+# ---------- 3 ----------
 add("""
-<h2 class="title">Onde o farmacêutico pode empreender</h2>
-<div class="grid3">
-  <div class="tile"><span class="ti">01</span><h4>Farmácia comunitária</h4><p>Dispensação com cuidado e serviços no bairro.</p></div>
-  <div class="tile"><span class="ti">02</span><h4>Consultório farmacêutico</h4><p>Cuidado clínico, revisão da farmacoterapia, acompanhamento.</p></div>
-  <div class="tile"><span class="ti">03</span><h4>Farmácia de manipulação</h4><p>Personalização de doses, formas e fórmulas.</p></div>
-  <div class="tile"><span class="ti">04</span><h4>Startup / healthtech</h4><p>Tecnologia aplicada à adesão, ao acesso e à gestão.</p></div>
-  <div class="tile"><span class="ti">05</span><h4>Consultoria e treinamento</h4><p>Regularização sanitária, boas práticas, capacitação de equipes.</p></div>
-  <div class="tile"><span class="ti">06</span><h4>Serviços de saúde</h4><p>Vacinação, testes rápidos, cuidado ao paciente crônico.</p></div>
+<div class="tag light">Dinâmica · 5 min</div>
+<h2 class="title light">Quero conhecer vocês</h2>
+<div class="prompts">
+  <div class="prompt"><span class="pn">01</span><p>Qual <b>palavra</b> define o seu momento hoje?</p></div>
+  <div class="prompt"><span class="pn">02</span><p>De 0 a 10: quanto do projeto do seu grupo <b>já saiu do papel</b>?</p></div>
 </div>
-<p class="note">Desde a Lei 13.021/2014, a farmácia é <b>estabelecimento de saúde</b> — não apenas comércio.</p>
+""", "dark", waves(900, 460, 16, "#FBF6F1", 0.28))
+
+# ---------- 4 ----------
+add("""
+<h2 class="title">Prazer, Camila.</h2>
+<p class="sub">Uma jornada que começou exatamente onde vocês estão: na saúde.</p>
+<div class="timeline">
+  <div class="tl"><div class="dot"></div><div class="tl-k">Origem</div><h4>Técnica de enfermagem</h4><p>Rotina das 7h às 17h, ônibus, plantão. Sei o que é não ter tempo.</p></div>
+  <div class="tl"><div class="dot"></div><div class="tl-k">Virada</div><h4>Maternidade e empresa na pandemia</h4><p>Aprendi a empreender empreendendo — com pouco tempo e muita coisa ao mesmo tempo.</p></div>
+  <div class="tl"><div class="dot"></div><div class="tl-k">Método</div><h4>Lucro Anti-Exaustão®</h4><p>Rotina, perfil comportamental e planejamento a serviço de resultados sem exaustão.</p></div>
+  <div class="tl"><div class="dot"></div><div class="tl-k">Hoje</div><h4>Mentora de empresárias</h4><p>Programas de aceleração, workshops in company e palestras.</p></div>
+</div>
+<p class="statement">Se eu saí da exaustão sem tempo sobrando, <em>vocês também conseguem.</em></p>
 """)
 
-# ---------- 10 SEÇÃO 02 ----------
-section("02", "O mapa do plano", "11 blocos que contam uma única história.")
+# ---------- 5 AGENDA ----------
+add("""
+<h2 class="title">Como vamos trabalhar hoje</h2>
+<div class="agenda">
+  <div class="ag"><span class="t">09h30</span><span class="n"></span><span class="d">Abertura e conexão</span></div>
+  <div class="ag"><span class="t">09h45</span><span class="n">01</span><span class="d">O desafio · 11 blocos em 4 semanas</span></div>
+  <div class="ag"><span class="t">09h55</span><span class="n">02</span><span class="d">Gestão do tempo e produtividade</span></div>
+  <div class="ag"><span class="t">10h20</span><span class="n">03</span><span class="d">MBTI · teste ao vivo</span></div>
+  <div class="ag pause"><span class="t">10h45</span><span class="n"></span><span class="d">Pausa · 10 min</span></div>
+  <div class="ag"><span class="t">10h55</span><span class="n">04</span><span class="d">Ferramentas de planejamento</span></div>
+  <div class="ag"><span class="t">11h05</span><span class="n">05</span><span class="d">Plano de ação até 13/11 · mão na massa</span></div>
+  <div class="ag"><span class="t">11h25</span><span class="n"></span><span class="d">Encerramento</span></div>
+</div>
+""", "cream", waves(700, 380, 12, "#B65F3A", 0.35))
 
-# ---------- 11 VISÃO GERAL ----------
+# ---------- 6 ----------
+section("01", "O desafio", "Um projeto, 11 blocos, 4 semanas.")
+
+# ---------- 7 COUNTDOWN ----------
+add("""
+<div class="count">
+  <div class="cd"><span class="v">28</span><span class="l">dias</span></div>
+  <div class="cd"><span class="v">4</span><span class="l">semanas</span></div>
+  <div class="cd"><span class="v">11</span><span class="l">blocos</span></div>
+  <div class="cd hl"><span class="v">1</span><span class="l">entrega</span></div>
+</div>
+<div class="range"><span>Hoje · 16/10</span><div class="bar"><i></i></div><span><b>Entrega · 13/11</b></span></div>
+<p class="statement">Parece muito tempo. <em>É exatamente por isso que costuma faltar.</em></p>
+""")
+
+# ---------- 8 BLOCOS ----------
 blocks = [("Resumo executivo","O negócio em 1 minuto"),("Descrição do negócio","Missão, visão, valores, problema"),
           ("Análise de mercado","Público, concorrência, oportunidades"),("Legal e regulatório","Normas, licenças, RT"),
           ("Produtos e serviços","O que vende e o que diferencia"),("Estrutura e operação","Espaço, pessoas, tecnologia"),
@@ -173,328 +123,317 @@ blocks = [("Resumo executivo","O negócio em 1 minuto"),("Descrição do negóci
           ("O primeiro ano","Como a empresa nasce e cresce"),("Análise SWOT","Só no documento escrito"),("Conclusão","É viável? Por quê?")]
 cells = "".join(f'<div class="bk{" off" if i==9 else ""}"><span>{i+1:02d}</span><h5>{t}</h5><p>{d}</p></div>' for i,(t,d) in enumerate(blocks))
 add(f"""
-<h2 class="title">Os 11 blocos do seu plano</h2>
-<div class="blocks">{cells}<div class="bk legend"><p>Cada bloco responde a uma pergunta que a banca — ou o banco — vai fazer.</p></div></div>
+<h2 class="title">O que vocês vão entregar</h2>
+<div class="blocks">{cells}<div class="bk legend"><p>Visto inteiro, assusta. Dividido em semanas, cabe na rotina.</p></div></div>
 """)
 
-# ---------- 12 CASO ----------
+# ---------- 9 ----------
+quote("Projeto grande não se faz de uma vez.<br>Projeto grande se divide.")
+
+# ---------- 10 ----------
+section("02", "Gestão do tempo e produtividade", "Antes da ferramenta, a mentalidade.")
+
+# ---------- 11 ----------
 add("""
-<div class="tag light">Exemplo ilustrativo · criado para esta aula</div>
-<h2 class="title light huge">Nosso caso de hoje:<br>Farmácia Bem Viver</h2>
-<div class="case-row">
-  <div><span>Tipo</span><p>Farmácia comunitária com consultório farmacêutico</p></div>
-  <div><span>Onde</span><p>Bairro residencial de Blumenau/SC</p></div>
-  <div><span>Para quem</span><p>Idosos e pacientes com doenças crônicas</p></div>
-</div>
-<p class="lead light small">Vamos usá-la para preencher cada bloco junto — e vocês aplicam no projeto do grupo.</p>
-""", "terra", waves(900, 420, 14, "#FBF6F1", 0.3))
-
-# ---------- 13 BLOCO 1 ----------
-def bh(n, t):
-    return f'<div class="bh"><span>Bloco {n:02d}</span></div><h2 class="title">{t}</h2>'
-
-add(f"""
-{bh(1,"Resumo executivo")}
-<div class="split s46">
-  <div>
-    <ul class="checks big">
-      <li>Nome do negócio</li><li>Tipo de empreendimento</li><li>Local de atuação</li>
-      <li>Público-alvo</li><li>Diferencial</li><li>Breve descrição da proposta</li>
-    </ul>
-    <p class="pill">Escreva por último. Apresente primeiro.</p>
-  </div>
-  <div class="card dark">
-    <div class="ck">A fórmula do pitch em 1 frase</div>
-    <p class="formula">Ajudamos <u>[público]</u> a <u>[resolver um problema]</u> por meio de <u>[solução]</u>, diferente de <u>[alternativa]</u> porque <u>[diferencial]</u>.</p>
-    <div class="hr"></div>
-    <p class="ex">“Ajudamos idosos e pacientes crônicos de Blumenau a usar seus medicamentos com segurança, por meio de uma farmácia com consultório farmacêutico — diferente das grandes redes, porque cada paciente tem acompanhamento individual.”</p>
-  </div>
-</div>
-""")
-
-# ---------- 14 BLOCO 2 ----------
-add(f"""
-{bh(2,"Descrição do negócio")}
-<div class="cols3">
-  <div class="col"><h3>Missão</h3><p class="q">Por que existimos?</p><p class="ex">Cuidar da saúde de quem mais precisa, com atenção farmacêutica próxima e humanizada.</p></div>
-  <div class="col"><h3>Visão</h3><p class="q">Onde queremos chegar?</p><p class="ex">Ser referência em cuidado ao paciente crônico no Vale do Itajaí até 2031.</p></div>
-  <div class="col"><h3>Valores</h3><p class="q">Como agimos?</p><p class="ex">Ética · Acolhimento · Segurança do paciente · Proximidade</p></div>
-</div>
-<div class="band"><span>Problema que resolvemos</span><p>Pacientes polimedicados, sem orientação, com baixa adesão ao tratamento.</p></div>
-""")
-
-# ---------- 15 BLOCO 3.1 ----------
-add(f"""
-{bh(3,"Público-alvo × persona")}
 <div class="split">
-  <div class="card soft">
-    <div class="ck">Público-alvo · um grupo</div>
-    <ul class="dash">
-      <li>Adultos com 60 anos ou mais</li><li>Classes B e C, bairro residencial</li>
-      <li>Hipertensão, diabetes, dislipidemia</li><li>Uso contínuo de medicamentos</li>
-    </ul>
-  </div>
-  <div class="card terra">
-    <div class="ck">Persona · uma pessoa</div>
-    <h3 class="persona">Dona Marli, 68</h3>
-    <p>Aposentada, hipertensa e diabética. Toma 6 medicamentos por dia e confunde os horários. A filha mora em outra cidade.</p>
-    <p class="want">O que ela procura: <b>alguém que conheça a história dela.</b></p>
-  </div>
-</div>
-<p class="note">A persona pode se parecer com você — mas não pode ser você.</p>
-""")
-
-# ---------- 16 BLOCO 3.2 ----------
-add(f"""
-{bh(3,"Concorrência")}
-<table class="tbl">
-  <tr><th>Concorrente</th><th>O que oferece</th><th>Ponto forte</th><th>Ponto fraco</th></tr>
-  <tr><td>Grandes redes</td><td>Mix amplo, app, programas de desconto</td><td>Preço e conveniência</td><td>Atendimento impessoal, alta rotatividade</td></tr>
-  <tr><td>Farmácias do bairro</td><td>Dispensação e relacionamento</td><td>Proximidade</td><td>Pouca estrutura de serviços</td></tr>
-  <tr><td>E-commerce e apps</td><td>Entrega rápida</td><td>Comodidade</td><td>Nenhum acompanhamento clínico</td></tr>
-</table>
-<p class="pill">Visite como cliente oculto: atendimento, preço, espera e serviços.</p>
-""")
-
-# ---------- 17 BLOCO 3.3 ----------
-add(f"""
-{bh(3,"Oportunidades de mercado")}
-<div class="grid3 trends">
-  <div class="tile"><h4>Envelhecimento da população</h4><p>Mais pessoas usando mais medicamentos por mais tempo.</p></div>
-  <div class="tile"><h4>Doenças crônicas</h4><p>Demanda contínua por acompanhamento e adesão.</p></div>
-  <div class="tile"><h4>Serviços farmacêuticos clínicos</h4><p>O farmacêutico assumindo o cuidado, não só a dispensação.</p></div>
-  <div class="tile"><h4>Saúde digital e delivery</h4><p>WhatsApp, entrega, lembretes, telessaúde.</p></div>
-  <div class="tile"><h4>Prevenção e vacinação</h4><p>A farmácia como porta de entrada do cuidado.</p></div>
-  <div class="tile"><h4>Personalização</h4><p>Manipulação, dermocosméticos, nutrição.</p></div>
-</div>
-<p class="note">Qual dessas tendências o negócio do seu grupo aproveita?</p>
-""")
-
-# ---------- 18 BLOCO 4 ----------
-add(f"""
-{bh(4,"Aspectos legais e regulatórios")}
-<div class="split s55">
   <div>
-    <div class="ck dk">Legislação de referência</div>
-    <ul class="law">
-      <li><b>Lei 5.991/1973</b> controle sanitário do comércio de medicamentos</li>
-      <li><b>Lei 13.021/2014</b> farmácia como estabelecimento de saúde</li>
-      <li><b>RDC 44/2009</b> Boas Práticas Farmacêuticas e serviços</li>
-      <li><b>RDC 67/2007</b> Boas Práticas de Manipulação (se aplicável)</li>
-      <li><b>Portaria SVS/MS 344/1998</b> medicamentos sujeitos a controle especial</li>
-      <li><b>RDC 222/2018</b> gerenciamento de resíduos de serviços de saúde</li>
-      <li><b>Res. CFF 585 e 586/2013</b> atribuições clínicas e prescrição farmacêutica</li>
-    </ul>
+    <h2 class="title">O que é gestão do tempo?</h2>
+    <p class="bigserif sm">Não é organizar a agenda.<br><em>É decidir o que realmente importa</em> — e proteger tempo para isso.</p>
   </div>
   <div class="card soft">
-    <div class="ck">Checklist de licenças</div>
-    <ul class="checks">
-      <li>CNPJ e alvará de funcionamento municipal</li>
-      <li>Licença sanitária (Vigilância Sanitária)</li>
-      <li>AFE na Anvisa (+ AE para controlados)</li>
-      <li>Registro no CRF-SC e Certidão de Regularidade Técnica</li>
-      <li>Farmacêutico RT presente em todo o horário de funcionamento</li>
-      <li>Vistoria do Corpo de Bombeiros</li>
-    </ul>
-  </div>
-</div>
-<p class="note">Licenças levam tempo: coloque-as no cronograma <b>antes</b> da inauguração.</p>
-""")
-
-# ---------- 19 BLOCO 5 ----------
-add(f"""
-{bh(5,"Produtos e serviços")}
-<div class="split">
-  <div class="card soft">
-    <div class="ck">Produtos · o que você vende</div>
+    <div class="ck">Sem gestão do tempo</div>
     <ul class="dash">
-      <li>Medicamentos: referência, genéricos e similares</li><li>MIPs</li>
-      <li>Dermocosméticos</li><li>Higiene e cuidados pessoais</li><li>Nutrição e suplementos</li>
+      <li><b>Estresse:</b> sensação constante de atraso e sobrecarga</li>
+      <li><b>Desempenho:</b> entregas feitas às pressas, abaixo do que você é capaz</li>
+      <li><b>Saúde:</b> noites viradas, ansiedade, cansaço</li>
+      <li><b>Grupo:</b> conflitos, retrabalho e “eu fiz tudo sozinha”</li>
     </ul>
   </div>
-  <div class="card terra">
-    <div class="ck">Serviços · o que te diferencia</div>
+</div>
+""")
+
+# ---------- 12 ----------
+add("""
+<h2 class="title">Produtiva ou ocupada?</h2>
+<div class="vs">
+  <div class="vs-col">
+    <h3>Ocupada</h3>
     <ul class="dash">
-      <li>Aferição de pressão e glicemia capilar</li><li>Revisão da farmacoterapia</li>
-      <li>Acompanhamento farmacoterapêutico</li><li>Testes rápidos e vacinação</li>
-      <li>Organização de medicamentos e tabela de horários</li>
+      <li>Acumula tarefas e não sabe por onde começar</li>
+      <li>Lota a agenda, mas o projeto não anda</li>
+      <li>Quer dar conta de tudo sozinha</li>
+      <li>Deixa tudo para a última semana</li>
+      <li>Sempre sente que “falta tempo”</li>
+    </ul>
+  </div>
+  <div class="vs-mid">vs</div>
+  <div class="vs-col on">
+    <h3>Produtiva</h3>
+    <ul class="dash">
+      <li>Planeja a semana com antecedência</li>
+      <li>Faz primeiro o que é prioridade</li>
+      <li>Divide e delega no grupo</li>
+      <li>Entrega por partes, com folga</li>
+      <li>Descansa sem culpa</li>
     </ul>
   </div>
 </div>
-<p class="statement sm">Produto se compara por preço. <em>Serviço se escolhe por confiança.</em></p>
+<p class="note">Produtividade não é exaustão: é fazer o que importa com menos esforço e menos estresse.</p>
 """)
 
-# ---------- 20 BLOCO 6 ----------
-add(f"""
-{bh(6,"Estrutura e operação")}
-<div class="cols3">
-  <div class="col"><h3>Espaço</h3><ul class="dash">
-    <li>Área de dispensação</li><li>Sala de serviços farmacêuticos</li><li>Estoque e área de controlados</li><li>Área administrativa</li><li>Sanitário e DML</li></ul></div>
-  <div class="col"><h3>Pessoas</h3><ul class="dash">
-    <li>Farmacêuticos cobrindo 100% do horário</li><li>Atendentes</li><li>Apoio administrativo e financeiro</li></ul></div>
-  <div class="col"><h3>Tecnologia</h3><ul class="dash">
-    <li>Sistema de gestão (ERP) e PDV</li><li>Escrituração de controlados</li><li>Geladeira para termolábeis com registro de temperatura</li><li>Termo-higrômetro, esfigmomanômetro, glicosímetro</li></ul></div>
-</div>
-<div class="band"><span>Conta rápida</span><p>Aberta 12 h × 7 dias = <b>84 h/semana</b> ÷ 44 h por farmacêutico ≈ <b>2 farmacêuticos</b> + cobertura de folgas e férias.</p></div>
-""")
-
-# ---------- 21 BLOCO 7 ----------
-add(f"""
-{bh(7,"Plano de marketing")}
-<div class="quad">
-  <div><span>Posicionamento</span><h4>Como quero ser lembrada?</h4><p>“A farmácia que conhece você pelo nome.”</p></div>
-  <div><span>Divulgação</span><h4>Como as pessoas me encontram?</h4><p>Conteúdo educativo no Instagram, ações de saúde no bairro, parcerias com médicos, UBS, academias e grupos de idosos.</p></div>
-  <div><span>Canais</span><h4>Como conversamos?</h4><p>Balcão, WhatsApp, telefone e delivery.</p></div>
-  <div><span>Fidelização</span><h4>Por que o paciente volta?</h4><p>Lembrete de recompra, programa de acompanhamento, cartão fidelidade, contato pós-atendimento.</p></div>
-</div>
-<p class="note">A imagem que você transmite fica no subconsciente do cliente.</p>
-""")
-
-# ---------- 22 PAUSA ----------
+# ---------- 13 ----------
 add("""
 <div class="center">
-  <div class="tag light">10h30 · 10 minutos</div>
-  <h2 class="mega">Pausa</h2>
-  <p class="lead light">Voltamos às 10h40. Enquanto isso, pense:<br><b>qual seria o diferencial do seu negócio?</b></p>
+  <div class="tag light">Dinâmica</div>
+  <h2 class="title light huge c">Quanto tempo têm<br>30 segundos?</h2>
+  <p class="lead light">Fechem os olhos. Abram quando acharem que passaram 30 segundos.</p>
 </div>
 """, "terra nofoot", waves(1100, 480, 16, "#FBF6F1", 0.3))
 
-# ---------- 23 SEÇÃO 03 ----------
-section("03", "Os números", "Faturamento não é saúde.")
+# ---------- 14 ----------
+quote("O que é procrastinar?", "É adiar o que é importante, colocando tarefas menores ou distrações no lugar.<br><b>Procrastinação não é preguiça. É um sintoma.</b>")
 
-# ---------- 24 BLOCO 8 ----------
-add(f"""
-{bh(8,"Planejamento financeiro")}
-<div class="fin">
-  <div><span>8.1</span><h4>Investimento inicial</h4><p>Reforma · equipamentos · estoque inicial · licenças e registros</p><p class="warn">+ capital de giro</p></div>
-  <div><span>8.2</span><h4>Custos fixos</h4><p>Aluguel · salários e encargos · energia, água, internet · sistema de gestão · contabilidade</p></div>
-  <div><span>8.3</span><h4>Custos variáveis</h4><p>Reposição de estoque (CMV) · insumos · impostos sobre a venda</p><p class="warn">+ taxas de cartão</p></div>
-  <div><span>8.4</span><h4>Faturamento</h4><p>Receita mensal estimada · fontes: medicamentos, não medicamentos e serviços</p></div>
-</div>
-<p class="note">Capital de giro e taxas de cartão são os esquecidos que mais custam caro.</p>
-""")
-
-# ---------- 25 4 NÚMEROS ----------
+# ---------- 15 ----------
 add("""
-<h2 class="title light">Os 4 números que dizem se o negócio é saudável</h2>
-<div class="nums">
-  <div><span>1</span><h4>Margem de contribuição</h4><p class="f">Vendas − custos variáveis</p><p>Quanto cada venda deixa para pagar a estrutura.</p></div>
-  <div><span>2</span><h4>Ponto de equilíbrio</h4><p class="f">Custos fixos ÷ % de margem</p><p>Quanto preciso vender para não ter prejuízo.</p></div>
-  <div><span>3</span><h4>Capital de giro</h4><p class="f">Estoque + prazos − fornecedores</p><p>O fôlego para operar até a venda virar caixa.</p></div>
-  <div><span>4</span><h4>Lucro líquido</h4><p class="f">O que sobra depois de tudo</p><p>E em quantos meses ele paga o investimento (payback).</p></div>
+<h2 class="title">Por que adiamos o que importa?</h2>
+<div class="grid4">
+  <div class="tile"><span class="ti">01</span><h4>Falta de clareza</h4><p>“Fazer o plano de negócios” não é tarefa. É um projeto inteiro.</p></div>
+  <div class="tile"><span class="ti">02</span><h4>Medo de errar</h4><p>Esperar a ideia perfeita para começar a escrever.</p></div>
+  <div class="tile"><span class="ti">03</span><h4>Distrações</h4><p>Celular, notificações, multitarefa.</p></div>
+  <div class="tile"><span class="ti">04</span><h4>Recompensa distante</h4><p>A nota só vem em novembro. O celular recompensa agora.</p></div>
 </div>
-""", "dark", waves(800, 360, 12, "#B65F3A", 0.45))
+<div class="band"><span>No trabalho em grupo</span><p>Ainda tem o clássico: <b>“alguém vai fazer”</b>. Quando é de todo mundo, não é de ninguém.</p></div>
+""")
 
-# ---------- 26 EXEMPLO ----------
+# ---------- 16 ----------
 add("""
-<div class="tag">Exemplo ilustrativo · Farmácia Bem Viver</div>
-<h2 class="title">Quanto preciso vender?</h2>
-<div class="calc">
-  <div><span class="v">R$ 45 mil</span><span class="l">custos fixos por mês</span></div>
-  <div class="op">÷</div>
-  <div><span class="v">30%</span><span class="l">margem de contribuição média</span></div>
-  <div class="op">=</div>
-  <div class="hl"><span class="v">R$ 150 mil</span><span class="l">ponto de equilíbrio mensal</span></div>
+<h2 class="title">Onde a sua energia está vazando?</h2>
+<div class="errs light-on-cream">
+  <div><span>01</span><p>Celular e redes sociais entre uma tarefa e outra</p></div>
+  <div><span>02</span><p>Reunião de grupo sem pauta e sem decisão</p></div>
+  <div><span>03</span><p>Retrabalho por falta de combinado</p></div>
+  <div><span>04</span><p>Multitarefa: estudar, responder, rolar o feed</p></div>
+  <div><span>05</span><p>“Vou fazer tudo no último fim de semana”</p></div>
+  <div><span>06</span><p>Perfeccionismo no layout antes do conteúdo</p></div>
 </div>
-<div class="calc2">
-  <div><b>≈ R$ 5.770</b> por dia <small>(26 dias úteis)</small></div>
-  <div><b>≈ 77 atendimentos</b> por dia <small>(ticket médio de R$ 75)</small></div>
-  <div><b>≈ 29 meses</b> de payback <small>(R$ 350 mil investidos ÷ R$ 12 mil de lucro/mês)</small></div>
-</div>
-<p class="note">Isso é realista para a sua localização? Se não for, o plano mudou <b>antes</b> de você perder dinheiro.</p>
+<p class="note">Clareza antes de tudo. Não adianta acelerar uma rotina que funciona no improviso.</p>
 """)
 
-# ---------- 27 BLOCO 9 ----------
-add(f"""
-{bh(9,"Como você pensa o primeiro ano")}
-<div class="year">
-  <div class="yr pre"><span>Pré-abertura</span><h4>Preparar</h4><p>Licenças, reforma, equipe, estoque e sistema.</p></div>
-  <div class="yr"><span>Meses 1–3</span><h4>Abrir as portas</h4><p>Captação, rotina da equipe, primeiros indicadores.</p></div>
-  <div class="yr"><span>Meses 4–6</span><h4>Ajustar a rota</h4><p>Rever mix, preços, escalas e o que não vende.</p></div>
-  <div class="yr"><span>Meses 7–9</span><h4>Ganhar ritmo</h4><p>Ampliar serviços e parcerias.</p></div>
-  <div class="yr"><span>Meses 10–12</span><h4>Consolidar</h4><p>Fidelização, revisão do plano, metas do ano 2.</p></div>
-</div>
-<p class="statement sm">Um negócio saudável <em>não depende da exaustão do dono.</em></p>
+# ---------- 17 ----------
+section("03", "MBTI e gestão do tempo", "Entender como você funciona para planejar do seu jeito.")
+
+# ---------- 18 ----------
+quote("Por que a mesma agenda não funciona para todo mundo?")
+
+# ---------- 19 ----------
+add("""
+<h2 class="title">MBTI · as 4 preferências</h2>
+<table class="tbl mbti">
+  <tr><th>Dimensão</th><th>De um lado</th><th></th><th>Do outro lado</th></tr>
+  <tr><td>Energia</td><td><b>E</b> · Extroversão<small>recarrega na troca, na ação</small></td><td class="x">×</td><td><b>I</b> · Introversão<small>recarrega no foco, no silêncio</small></td></tr>
+  <tr><td>Percepção</td><td><b>S</b> · Sensação<small>concreto, prático, dados</small></td><td class="x">×</td><td><b>N</b> · Intuição<small>ideias, padrões, futuro</small></td></tr>
+  <tr><td>Decisão</td><td><b>T</b> · Pensamento<small>lógica, critérios, números</small></td><td class="x">×</td><td><b>F</b> · Sentimento<small>impacto nas pessoas</small></td></tr>
+  <tr><td>Organização</td><td><b>J</b> · Julgamento<small>estrutura, prazo, plano</small></td><td class="x">×</td><td><b>P</b> · Percepção<small>flexibilidade, adaptação</small></td></tr>
+</table>
+<p class="note">Não é rótulo, é <b>manual de uso</b>: mostra como você recupera energia, decide e se organiza.</p>
 """)
 
-# ---------- 28 BLOCO 10 SWOT ----------
-add(f"""
-{bh(10,"Análise SWOT")}
-<p class="pill warnpill">Vai no documento escrito · não entra na apresentação</p>
-<div class="split s46">
-  <div class="swot">
-    <div><b>Forças</b><span>interno · ajuda</span></div>
-    <div><b>Fraquezas</b><span>interno · atrapalha</span></div>
-    <div><b>Oportunidades</b><span>externo · ajuda</span></div>
-    <div><b>Ameaças</b><span>externo · atrapalha</span></div>
+# ---------- 20 ----------
+add("""
+<h2 class="title">O eixo do tempo: J × P</h2>
+<div class="split">
+  <div class="card soft">
+    <div class="ck">Perfil J · você planeja</div>
+    <h3 class="persona dk">Estrutura e prazo</h3>
+    <ul class="dash"><li><b>Potência:</b> organiza, antecipa, cumpre combinados</li><li><b>Risco:</b> rigidez e ansiedade quando o plano muda</li><li><b>Dica:</b> deixe 20% da semana livre para imprevistos</li></ul>
   </div>
+  <div class="card terra">
+    <div class="ck">Perfil P · você improvisa</div>
+    <h3 class="persona">Flexibilidade e pressão</h3>
+    <ul class="dash"><li><b>Potência:</b> criatividade, adaptação, rende sob pressão</li><li><b>Risco:</b> tudo na última hora</li><li><b>Dica:</b> crie prazos internos antes do prazo real</li></ul>
+  </div>
+</div>
+""")
+
+# ---------- 21 TESTE ----------
+add(f"""
+<div class="qr-wrap">
   <div>
-    <div class="ck dk">Cruze os quadrantes (TOWS)</div>
-    <ul class="law">
-      <li><b>F + O · Ofensiva</b> use as forças para aproveitar as oportunidades</li>
-      <li><b>F + A · Confrontativa</b> use as forças para se proteger das ameaças</li>
-      <li><b>Fr + O · Reforço</b> corrija fraquezas para não perder oportunidades</li>
-      <li><b>Fr + A · Defensiva</b> reduza fraquezas onde as ameaças batem</li>
+    <div class="tag light">Agora · 15 min</div>
+    <h2 class="title light huge">Hora do teste</h2>
+    <ol class="steps-v">
+      <li>Aponte a câmera para o QR code</li>
+      <li>Responda com sinceridade — não existe resposta certa</li>
+      <li>Anote o seu tipo de <b>4 letras</b> (ex.: ENFJ)</li>
+    </ol>
+    <p class="url">{TEST_URL}</p>
+  </div>
+  <div class="qr">{QR}</div>
+</div>
+""", "dark nofoot", "")
+
+# ---------- 22 RELATÓRIO ----------
+add("""
+<h2 class="title">O seu relatório personalizado</h2>
+<div class="split s55">
+  <div>
+    <ul class="checks big">
+      <li><b>Leitura essencial do perfil:</b> sua potência natural e o seu ponto de atenção</li>
+      <li><b>Como você planeja melhor:</b> o que a sua personalidade precisa para render</li>
+      <li><b>Rotina ideal:</b> blocos de estudo, execução e autocuidado</li>
+      <li><b>Regra das 3 prioridades semanais</b></li>
+      <li><b>Plano de ação de 7 dias</b> pensado para o seu perfil</li>
+    </ul>
+  </div>
+  <div class="card dark cta">
+    <div class="ck">Quer o seu?</div>
+    <p class="formula">Me mande o seu resultado no direct com a palavra <u>FURB</u>.</p>
+    <div class="hr"></div>
+    <p class="handle-big">@martinsscamila</p>
+  </div>
+</div>
+""")
+
+# ---------- 23 ----------
+add("""
+<h2 class="title">Ferramentas por perfil</h2>
+<div class="cols3">
+  <div class="col"><h3>Time blocking</h3><p class="q">Ideal para perfil J</p><p>Blocos fixos na agenda para cada atividade. Ex.: terça, 19h–21h · Bloco 3, análise de mercado.</p></div>
+  <div class="col"><h3>Temas do dia</h3><p class="q">Ideal para perfil P</p><p>Cada dia tem um tema, não um horário rígido. Ex.: “quarta é dia de pesquisa”.</p></div>
+  <div class="col"><h3>Pomodoro</h3><p class="q">Para foco curto · todos os perfis</p><p>25 minutos de foco total, 5 de pausa. A cada 4 ciclos, uma pausa maior.</p></div>
+</div>
+<p class="note">Não existe ferramenta certa ou errada. Existe a ferramenta que você realmente usa.</p>
+""")
+
+# ---------- 24 PERFIS NO GRUPO ----------
+add("""
+<h2 class="title">Usem os perfis para dividir o trabalho</h2>
+<div class="roles">
+  <div><b>E</b><p>Entrevistas, contato com farmácias, apresentação oral</p></div>
+  <div><b>I</b><p>Pesquisa aprofundada e redação</p></div>
+  <div><b>S</b><p>Legislação, números, detalhes e revisão</p></div>
+  <div><b>N</b><p>Diferencial, visão, marketing</p></div>
+  <div><b>T</b><p>Planejamento financeiro e análise</p></div>
+  <div><b>F</b><p>Público-alvo, persona, missão e valores</p></div>
+  <div><b>J</b><p>Guardiã do cronograma e dos prazos</p></div>
+  <div><b>P</b><p>Soluções criativas quando o plano muda</p></div>
+</div>
+<p class="note">Preferência não é limite: é por onde cada uma rende mais com menos desgaste.</p>
+""")
+
+# ---------- 25 PAUSA ----------
+add("""
+<div class="center">
+  <div class="tag light">10h45 · 10 minutos</div>
+  <h2 class="mega">Pausa</h2>
+  <p class="lead light">Voltamos às 10h55. Compartilhe o seu tipo com o seu grupo:<br><b>quem é J e quem é P?</b></p>
+</div>
+""", "terra nofoot", waves(1100, 480, 16, "#FBF6F1", 0.3))
+
+# ---------- 26 ----------
+section("04", "Ferramentas de planejamento", "Planejamento não é burocracia. É ferramenta de liberdade.")
+
+# ---------- 27 EISENHOWER ----------
+add("""
+<h2 class="title">Matriz de Eisenhower</h2>
+<div class="eis">
+  <div class="axis-y"><span>Importante</span><span>Não importante</span></div>
+  <div class="eis-grid">
+    <div class="q1"><span>Urgente e importante</span><h4>Faça agora</h4><p>Definir a ideia do negócio e dividir os blocos entre o grupo</p></div>
+    <div class="q2"><span>Importante, não urgente</span><h4>Agende</h4><p>Pesquisa de mercado, legislação, planilha financeira</p></div>
+    <div class="q3"><span>Urgente, não importante</span><h4>Delegue</h4><p>Formatação, padronização, revisão de texto</p></div>
+    <div class="q4"><span>Nem urgente, nem importante</span><h4>Elimine</h4><p>Reunião sem pauta, layout perfeito antes do conteúdo</p></div>
+  </div>
+</div>
+""")
+
+# ---------- 28 KANBAN ----------
+add("""
+<h2 class="title">Quadro do grupo · kanban</h2>
+<div class="kanban">
+  <div><h4>A fazer</h4><i>Bloco 5 · Produtos e serviços<small>Ana · até 30/10</small></i><i>Bloco 7 · Marketing<small>Júlia · até 30/10</small></i></div>
+  <div><h4>Fazendo</h4><i>Bloco 3 · Concorrência<small>Bia · até 23/10</small></i></div>
+  <div><h4>Revisão</h4><i>Bloco 2 · Missão e visão<small>Carol · até 23/10</small></i></div>
+  <div class="done"><h4>Feito</h4><i>Ideia e nome do negócio<small>grupo · 18/10</small></i></div>
+</div>
+<div class="tips">
+  <div>1 card = 1 entrega</div><div>1 responsável</div><div>1 prazo</div><div>Trello · Notion · post-its</div>
+</div>
+""")
+
+# ---------- 29 RITUAIS ----------
+add("""
+<h2 class="title">Três hábitos que sustentam o plano</h2>
+<div class="cols3 qs">
+  <div class="col"><span class="bign">3</span><h3>Prioridades por semana</h3><p>No máximo três. Se tudo é prioridade, nada é.</p></div>
+  <div class="col"><span class="bign">15′</span><h3>Revisão de domingo</h3><p>O que foi feito? O que travou? Quais as 3 prioridades da semana?</p></div>
+  <div class="col"><span class="bign">1×</span><h3>Check-in do grupo</h3><p>Um dia fixo por semana, 20 minutos, com pauta e decisões anotadas.</p></div>
+</div>
+""")
+
+# ---------- 30 ----------
+section("05", "Plano de ação até 13/11", "Do conceito para o cronograma do seu grupo.")
+
+# ---------- 31 CRONOGRAMA ----------
+weeks = [
+  ("Semana 0","16 – 18/10","Largada",["Fechar ideia e nome","Dividir papéis pelo MBTI","Criar quadro e documento compartilhado"],"Plano do grupo pronto"),
+  ("Semana 1","19 – 25/10","Fundamentos",["Bloco 2 · Descrição","Bloco 3 · Mercado","Bloco 4 · Legal"],"Pesquisa concluída"),
+  ("Semana 2","26/10 – 01/11","Operação",["Bloco 5 · Produtos e serviços","Bloco 6 · Estrutura","Bloco 7 · Marketing"],"Metade do plano escrita"),
+  ("Semana 3","02 – 08/11","Números",["Bloco 8 · Financeiro","Bloco 9 · Primeiro ano","Bloco 10 · SWOT"],"Feriado 02/11: planeje!"),
+  ("Semana 4","09 – 13/11","Fechamento",["Bloco 11 · Conclusão","Bloco 1 · Resumo (por último)","Revisão, slides e ensaio"],"Entrega 13/11"),
+]
+wk = "".join(
+  f'<div class="wk{" last" if i==4 else ""}"><span class="wn">{n}</span><span class="wd">{d}</span><h4>{t}</h4>'
+  + "".join(f"<p>{x}</p>" for x in items) + f'<div class="ms">{m}</div></div>'
+  for i,(n,d,t,items,m) in enumerate(weeks))
+add(f"""
+<h2 class="title">O cronograma até a entrega</h2>
+<div class="weeks">{wk}</div>
+""")
+
+# ---------- 32 DINÂMICA PLANO ----------
+add("""
+<div class="tag">Dinâmica · em grupos · 15 min</div>
+<h2 class="title">Montem o plano do grupo</h2>
+<div class="split s55">
+  <table class="tbl plan">
+    <tr><th>Bloco</th><th>Responsável</th><th>Prazo</th><th>Status</th></tr>
+    <tr><td>02 · Descrição</td><td></td><td>23/10</td><td></td></tr>
+    <tr><td>03 · Mercado</td><td></td><td>25/10</td><td></td></tr>
+    <tr><td>04 · Legal</td><td></td><td>25/10</td><td></td></tr>
+    <tr><td>…</td><td></td><td></td><td></td></tr>
+    <tr><td>01 · Resumo</td><td></td><td>11/11</td><td></td></tr>
+  </table>
+  <div class="card soft">
+    <div class="ck">Combinados do grupo</div>
+    <ul class="checks">
+      <li>Dia e horário fixos do check-in semanal</li>
+      <li>Onde fica o documento e o quadro</li>
+      <li>Prazo interno: 2 dias antes do real</li>
+      <li>O que fazemos se alguém atrasar</li>
     </ul>
   </div>
 </div>
+<p class="note"><b>Filtro de energia:</b> esse plano respeita a agenda, a energia e a fase de vida de cada uma?</p>
 """)
 
-# ---------- 29 BLOCO 11 ----------
-add(f"""
-{bh(11,"Conclusão")}
-<div class="cols3 qs">
-  <div class="col"><span class="bign">?</span><h3>É viável?</h3><p>Justifique com números: ponto de equilíbrio, payback e demanda.</p></div>
-  <div class="col"><span class="bign">!</span><h3>Quais os desafios?</h3><p>Seja honesto. A banca confia em quem conhece os próprios riscos.</p></div>
-  <div class="col"><span class="bign">→</span><h3>Quais as perspectivas?</h3><p>Para onde o negócio cresce em 3 a 5 anos?</p></div>
-</div>
-""")
-
-# ---------- 30 SEÇÃO 04 ----------
-section("04", "Mão na massa", "Do conceito para o projeto do seu grupo.")
-
-# ---------- 31 DINÂMICA ----------
-items = ["Nome do negócio","Tipo de empreendimento","Persona","Problema que resolve","Diferencial","Serviço-âncora","Custo fixo estimado","Pitch de 30 segundos"]
-cells = "".join(f'<div><span>{i+1:02d}</span><p>{t}</p></div>' for i,t in enumerate(items))
-add(f"""
-<div class="tag">Dinâmica · em grupos · 15 min</div>
-<h2 class="title">Plano em 1 página</h2>
-<div class="onepage">{cells}</div>
-<p class="note">No final, 2 ou 3 grupos apresentam o pitch. <b>Quanto tempo têm 30 segundos?</b></p>
-""")
-
-# ---------- 32 SEÇÃO 05 ----------
-section("05", "Como apresentar", "O plano precisa convencer — não só existir.")
-
-# ---------- 33 PITCH ----------
-steps = [("Gancho","O problema, contado pela persona"),("Solução","O que o negócio faz"),("Mercado","Quem compra e quanto"),
-         ("Operação","Como funciona na prática"),("Números","Investimento, equilíbrio, payback"),("Por que vai dar certo","Diferencial + equipe")]
-st = "".join(f'<div class="st"><span>{i+1}</span><h4>{a}</h4><p>{b}</p></div>' for i,(a,b) in enumerate(steps))
-add(f"""
-<h2 class="title">A estrutura de uma boa apresentação</h2>
-<div class="steps">{st}</div>
-<div class="tips">
-  <div>Uma ideia por slide</div><div>Números grandes, texto pequeno</div><div>Conte a história da persona</div><div>Ensaie com cronômetro</div>
-</div>
-""")
-
-# ---------- 34 ERROS ----------
+# ---------- 33 ----------
 add("""
-<h2 class="title light">Os erros mais comuns</h2>
+<h2 class="title light">Como manter a constância</h2>
 <div class="errs">
-  <div><span>01</span><p>Faturamento otimista demais</p></div>
-  <div><span>02</span><p>Esquecer capital de giro e taxas</p></div>
-  <div><span>03</span><p>Subestimar o prazo das licenças</p></div>
-  <div><span>04</span><p>Público-alvo “todo mundo”</p></div>
-  <div><span>05</span><p>Copiar o concorrente sem diferencial</p></div>
-  <div><span>06</span><p>O dono que faz tudo sozinho</p></div>
+  <div><span>01</span><p>Volte ao seu porquê</p></div>
+  <div><span>02</span><p>Faça a revisão semanal, mesmo curta</p></div>
+  <div><span>03</span><p>Tenha coragem de adaptar, não de abandonar</p></div>
+  <div><span>04</span><p>Aprenda com as recaídas, sem culpa</p></div>
+  <div><span>05</span><p>Cobre e apoie: ninguém entrega sozinha</p></div>
+  <div><span>06</span><p>Comemore cada bloco entregue</p></div>
 </div>
 """, "dark", waves(800, 380, 12, "#B65F3A", 0.45))
 
-# ---------- 35 QUOTE ----------
+# ---------- 34 ----------
 quote("Quem decide, realiza.<br>Quem adia, apenas sonha.")
 
-# ---------- 36 PALAVRA ----------
+# ---------- 35 ----------
 add("""
 <div class="center">
   <div class="tag light">Encerramento</div>
@@ -502,13 +441,13 @@ add("""
 </div>
 """, "dark nofoot", waves(1100, 480, 18, "#B65F3A", 0.5))
 
-# ---------- 37 OBRIGADA ----------
+# ---------- 36 ----------
 add("""
 <div class="center">
   <h2 class="mega">Obrigada!</h2>
   <p class="lead light">Transforme sua visão em ação: o futuro começa agora.</p>
   <div class="cover-meta c">
-    <div><b>Camila Martins Finger</b><br>Método Lucro Anti-Exaustão®</div>
+    <div><b>Seu relatório MBTI</b><br>direct com a palavra FURB</div>
     <div class="vr"></div>
     <div>Instagram<br><b>@martinsscamila</b></div>
   </div>
@@ -518,10 +457,9 @@ add("""
 # ---------------- RENDER ----------------
 css = (OUT / "style.css").read_text()
 pages = []
-total = len(SLIDES)
 for i, (cls, html, deco) in enumerate(SLIDES, 1):
-    foot = "" if "nofoot" in cls else f'<div class="foot"><span>Plano de Negócios Farmacêutico · FURB</span><span>@martinsscamila &nbsp;·&nbsp; {i:02d}</span></div>'
+    foot = "" if "nofoot" in cls else f'<div class="foot"><span>Do papel à entrega · FURB</span><span>@martinsscamila &nbsp;·&nbsp; {i:02d}</span></div>'
     pages.append(f'<section class="s {cls}">{deco}{html}{foot}</section>')
-doc = f"<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><title>Do sonho ao plano</title><style>{css}</style></head><body>{''.join(pages)}</body></html>"
+doc = f"<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><title>Do papel à entrega</title><style>{css}</style></head><body>{''.join(pages)}</body></html>"
 (OUT / "deck.html").write_text(doc)
-print("slides:", total)
+print("slides:", len(SLIDES))
