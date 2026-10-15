@@ -92,9 +92,9 @@ add("""
   <div class="ag"><span class="t">09h30</span><span class="n"></span><span class="d">Abertura e conexão</span></div>
   <div class="ag"><span class="t">09h45</span><span class="n">01</span><span class="d">O desafio · 11 blocos em 4 semanas</span></div>
   <div class="ag"><span class="t">09h55</span><span class="n">02</span><span class="d">Gestão do tempo e produtividade</span></div>
-  <div class="ag"><span class="t">10h20</span><span class="n">03</span><span class="d">MBTI · teste ao vivo</span></div>
-  <div class="ag pause"><span class="t">10h45</span><span class="n"></span><span class="d">Pausa · 10 min</span></div>
-  <div class="ag"><span class="t">10h55</span><span class="n">04</span><span class="d">Ferramentas de planejamento</span></div>
+  <div class="ag"><span class="t">10h15</span><span class="n">03</span><span class="d">MBTI · teste ao vivo</span></div>
+  <div class="ag pause"><span class="t">10h40</span><span class="n"></span><span class="d">Pausa · 10 min</span></div>
+  <div class="ag"><span class="t">10h50</span><span class="n">04</span><span class="d">Planejamento: marcos, tarefas e evolução</span></div>
   <div class="ag"><span class="t">11h05</span><span class="n">05</span><span class="d">Plano de ação até 13/11 · mão na massa</span></div>
   <div class="ag"><span class="t">11h25</span><span class="n"></span><span class="d">Encerramento</span></div>
 </div>
@@ -324,14 +324,53 @@ add("""
 # ---------- 25 PAUSA ----------
 add("""
 <div class="center">
-  <div class="tag light">10h45 · 10 minutos</div>
+  <div class="tag light">10h40 · 10 minutos</div>
   <h2 class="mega">Pausa</h2>
-  <p class="lead light">Voltamos às 10h55. Compartilhe o seu tipo com o seu grupo:<br><b>quem é J e quem é P?</b></p>
+  <p class="lead light">Voltamos às 10h50. Compartilhe o seu tipo com o seu grupo:<br><b>quem é J e quem é P?</b></p>
 </div>
 """, "terra nofoot", waves(1100, 480, 16, "#FBF6F1", 0.3))
 
 # ---------- 26 ----------
-section("04", "Ferramentas de planejamento", "Planejamento não é burocracia. É ferramenta de liberdade.")
+section("04", "Planejamento", "Não é burocracia. É ferramenta de liberdade.")
+
+
+# ---------- NOVO A · ANATOMIA ----------
+add("""
+<h2 class="title">Por que planejar?</h2>
+<p class="sub">Porque prazo sem plano vira susto.</p>
+<div class="anat">
+  <div class="an"><span>01</span><h4>Meta</h4><p class="w">Aonde vamos chegar?</p><p class="ex">Entregar o Plano de Negócios completo em <b>13/11</b>.</p></div>
+  <div class="arr">→</div>
+  <div class="an"><span>02</span><h4>Marcos</h4><p class="w">O que precisa estar pronto, e quando?</p><p class="ex">Pontos de controle semanais. Ex.: <b>25/10 · blocos 2 a 4 prontos</b>.</p></div>
+  <div class="arr">→</div>
+  <div class="an"><span>03</span><h4>Tarefas</h4><p class="w">O que cada uma faz esta semana?</p><p class="ex">Ações pequenas, com <b>dona e prazo</b>.</p></div>
+  <div class="arr">→</div>
+  <div class="an hl"><span>04</span><h4>Evolução</h4><p class="w">Estamos no ritmo?</p><p class="ex">Acompanhar <b>toda semana</b> e ajustar a rota.</p></div>
+</div>
+<p class="statement sm">Sem marcos, você só descobre o atraso <em>na véspera da entrega.</em></p>
+""")
+
+# ---------- NOVO B · BLOCO EM TAREFAS ----------
+add("""
+<h2 class="title">Do bloco à tarefa</h2>
+<div class="split s46">
+  <div class="card terra">
+    <div class="ck">Isso não é tarefa</div>
+    <h3 class="persona">“Fazer o Bloco 3 · Análise de mercado”</h3>
+    <p>Grande demais, vago demais, sem dona. É assim que a gente procrastina.</p>
+  </div>
+  <table class="tbl tasks">
+    <tr><th>Tarefa</th><th>Dona</th><th>Tempo</th><th>Prazo</th></tr>
+    <tr><td>Definir público-alvo e persona</td><td>Ana</td><td>1 h</td><td>20/10</td></tr>
+    <tr><td>Listar 3 concorrentes e comparar</td><td>Bia</td><td>1 h 30</td><td>21/10</td></tr>
+    <tr><td>Visitar 1 farmácia como cliente oculto</td><td>Bia</td><td>2 h</td><td>22/10</td></tr>
+    <tr><td>Levantar 3 tendências do mercado</td><td>Carol</td><td>1 h</td><td>22/10</td></tr>
+    <tr><td>Redigir a seção no documento</td><td>Ana</td><td>2 h</td><td>24/10</td></tr>
+    <tr><td>Revisar e marcar como concluído</td><td>Júlia</td><td>30 min</td><td>25/10</td></tr>
+  </table>
+</div>
+<p class="note"><b>Regra:</b> se não cabe em uma sessão de até 2 horas, ainda não é tarefa. Quebre de novo.</p>
+""")
 
 # ---------- 27 EISENHOWER ----------
 add("""
@@ -391,16 +430,56 @@ add(f"""
 <div class="weeks">{wk}</div>
 """)
 
+
+# ---------- NOVO C · MARCOS E EVOLUÇÃO ----------
+ms = [("18/10","Plano do grupo pronto","Quadro, documento e tarefas da semana 1",0),
+      ("25/10","Blocos 2, 3 e 4","3 de 11 blocos",27),
+      ("01/11","Blocos 5, 6 e 7","6 de 11 blocos",55),
+      ("08/11","Blocos 8, 9 e 10","9 de 11 blocos",82),
+      ("11/11","Versão final","11 de 11 + revisão",100),
+      ("13/11","Entrega","Plano entregue",100)]
+rows = "".join(f'<div class="mr{" end" if i==5 else ""}"><span class="md">{d}</span><div class="mt"><h4>{t}</h4><p>{x}</p></div><div class="mb"><i style="width:{pc}%"></i></div><span class="mp">{pc}%</span></div>' for i,(d,t,x,pc) in enumerate(ms))
+add(f"""
+<h2 class="title">Marcos: como saber se estão no ritmo</h2>
+<div class="miles">{rows}</div>
+<p class="note">Evolução = blocos <b>concluídos e revisados</b> ÷ 11. “Quase pronto” não conta.</p>
+""")
+
+# ---------- NOVO D · ACOMPANHAMENTO ----------
+add("""
+<h2 class="title">Acompanhando a evolução</h2>
+<div class="split">
+  <div>
+    <div class="ck dk">Semáforo de cada tarefa</div>
+    <div class="sem">
+      <div><i class="g"></i><p><b>No prazo</b>Segue o plano.</p></div>
+      <div><i class="y"></i><p><b>Em risco</b>Avise no check-in, não no dia da entrega.</p></div>
+      <div><i class="r"></i><p><b>Atrasado</b>Replaneje: redistribua, simplifique ou peça ajuda.</p></div>
+    </div>
+  </div>
+  <div class="card dark">
+    <div class="ck">Pauta do check-in semanal · 20 min</div>
+    <ol class="agenda-ci">
+      <li><b>5′</b> O que foi concluído?</li>
+      <li><b>5′</b> O que travou, e por quê?</li>
+      <li><b>5′</b> O marco da semana está verde, amarelo ou vermelho?</li>
+      <li><b>5′</b> Tarefas, donas e prazos da próxima semana</li>
+    </ol>
+  </div>
+</div>
+<p class="note">Atrasou? Não abandone o plano: <b>ajuste o plano</b>. Adaptar é parte de planejar.</p>
+""")
+
 # ---------- 32 DINÂMICA PLANO ----------
 add("""
 <div class="tag">Dinâmica · em grupos · 15 min</div>
 <h2 class="title">Montem o plano do grupo</h2>
 <div class="split s55">
   <table class="tbl plan">
-    <tr><th>Bloco</th><th>Responsável</th><th>Prazo</th><th>Status</th></tr>
-    <tr><td>02 · Descrição</td><td></td><td>23/10</td><td></td></tr>
-    <tr><td>03 · Mercado</td><td></td><td>25/10</td><td></td></tr>
-    <tr><td>04 · Legal</td><td></td><td>25/10</td><td></td></tr>
+    <tr><th>Bloco</th><th>Dona</th><th>Prazo</th><th>Status</th></tr>
+    <tr><td>02 · Descrição</td><td></td><td>23/10</td><td><i class="dot-s g"></i></td></tr>
+    <tr><td>03 · Mercado</td><td></td><td>25/10</td><td><i class="dot-s y"></i></td></tr>
+    <tr><td>04 · Legal</td><td></td><td>25/10</td><td><i class="dot-s y"></i></td></tr>
     <tr><td>…</td><td></td><td></td><td></td></tr>
     <tr><td>01 · Resumo</td><td></td><td>11/11</td><td></td></tr>
   </table>
@@ -415,6 +494,22 @@ add("""
   </div>
 </div>
 <p class="note"><b>Filtro de energia:</b> esse plano respeita a agenda, a energia e a fase de vida de cada uma?</p>
+""")
+
+
+# ---------- NOVO E · IMPLEMENTAÇÃO ----------
+imp = [("Hoje · 16/10","Em sala","Plano do grupo montado: blocos, donas e prazos"),
+       ("Até sáb · 17/10","Ferramenta","Criar o quadro (Trello, Notion ou post-its) e o documento compartilhado"),
+       ("Dom · 18/10","Primeira revisão","Quebrar os blocos da semana 1 em tarefas de até 2 h"),
+       ("Seg · 19/10","Execução","Cada uma agenda suas tarefas: time blocking ou temas do dia"),
+       ("Toda semana","Check-in","Dia fixo, 20 min, semáforo e próximas tarefas"),
+       ("Todo domingo","Revisão","15 min: o que foi feito, o que travou, 3 prioridades"),
+       ("11/11","Versão final","Documento congelado, 2 dias de folga antes da entrega"),
+       ("13/11","Entrega","Entreguem e comemorem cada etapa vencida")]
+steps_ = "".join(f'<div class="im{" hl" if i==0 else (" dk" if i==7 else "")}"><span class="id">{d}</span><h4>{t}</h4><p>{x}</p></div>' for i,(d,t,x) in enumerate(imp))
+add(f"""
+<h2 class="title">Implementação: o plano começa hoje</h2>
+<div class="impl">{steps_}</div>
 """)
 
 # ---------- 33 ----------
