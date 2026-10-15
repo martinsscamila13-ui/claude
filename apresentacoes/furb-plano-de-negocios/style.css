@@ -391,3 +391,9 @@ b{font-weight:600}
 .im p{font-size:29px}.im{min-height:270px}
 .im.dk{background:var(--graph);border:none}.im.dk .id{color:#E9A07F}.im.dk h4,.im.dk p{color:var(--cream)}
 .tbl.tasks td,.tbl.tasks td:first-child{font-size:30px}
+/* ---- capa minimalista ---- */
+.min-cover{margin:auto 0;display:flex;flex-direction:column}
+.mc-top{font-size:24px;letter-spacing:5px;text-transform:uppercase;font-weight:500;opacity:.8;margin-bottom:70px}
+.min-cover .mega{font-size:230px;line-height:.92}
+.mc-line{width:120px;height:2px;background:var(--cream);opacity:.7;margin:80px 0 34px}
+.mc-name{font-size:30px;letter-spacing:2px;font-weight:400}

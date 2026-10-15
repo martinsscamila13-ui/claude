@@ -2,6 +2,7 @@ import math, pathlib
 
 OUT = pathlib.Path(__file__).parent
 QR = (OUT / "qr.svg").read_text()
+QR2 = (OUT / "qr_prompt.svg").read_text()
 TEST_URL = "16personalities.com/br/teste-de-personalidade"
 
 def waves(w=900, h=520, n=14, color="#FBF6F1", op=0.55, amp=70, freq=1.25, tilt=0.35, sw=1.4):
@@ -42,22 +43,14 @@ def section(num, title, sub):
 """, "dark nofoot", waves(1100, 520, 18, "#B65F3A", 0.55))
 
 # ---------- 1 CAPA ----------
-add(f"""
-<div class="cover-l">
-  <div class="kicker light">FURB · Farmácia · Administração e Economia Farmacêutica</div>
+add("""
+<div class="min-cover">
+  <div class="mc-top">FURB · 16.10.2026</div>
   <h1 class="mega">Do papel<br>à entrega</h1>
-  <p class="lead light">Gestão do tempo, produtividade e um plano de ação para tirar o seu Plano de Negócios do papel.</p>
-  <div class="cover-meta">
-    <div><b>Camila Martins Finger</b><br>@martinsscamila</div>
-    <div class="vr"></div>
-    <div>16 de outubro de 2026<br>09h30 – 11h30</div>
-  </div>
+  <div class="mc-line"></div>
+  <div class="mc-name">Camila Martins Finger</div>
 </div>
-<div class="cover-card">
-  {waves(620, 760, 22, "#B65F3A", 0.85, 90, 1.1, 0.55, 1.6)}
-  <div class="cc-txt"><span class="script">entrega</span><br><span>13 de novembro</span></div>
-</div>
-""", "terra", waves(1000, 420, 14, "#FBF6F1", 0.35))
+""", "terra nofoot", waves(900, 360, 12, "#FBF6F1", 0.22))
 
 # ---------- 2 ----------
 quote("Quem não define seu caminho acaba vivendo o plano de outra pessoa.")
@@ -511,6 +504,24 @@ add(f"""
 <h2 class="title">Implementação: o plano começa hoje</h2>
 <div class="impl">{steps_}</div>
 """)
+
+
+# ---------- NOVO F · PROMPT MESTRE ----------
+add(f"""
+<div class="qr-wrap">
+  <div>
+    <div class="tag light">Bônus · prompt mestre</div>
+    <h2 class="title light huge">Seu cronograma<br>com IA</h2>
+    <ol class="steps-v">
+      <li>Aponte a câmera para o QR code</li>
+      <li>Copie o prompt e preencha: <b>seu tipo MBTI</b>, seus blocos e seus horários</li>
+      <li>Cole no <b>Claude</b> ou no <b>ChatGPT</b> e receba seu cronograma em <b>Excel</b></li>
+    </ol>
+    <p class="url">Já adaptado aos 16 perfis · marcos, tarefas, semáforo e check-in</p>
+  </div>
+  <div class="qr">{QR2}</div>
+</div>
+""", "dark nofoot", "")
 
 # ---------- 33 ----------
 add("""
