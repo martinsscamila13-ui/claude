@@ -2,6 +2,8 @@
 
 > Quem faz a busca é a Camila, no navegador dela. O pePI bloqueia robôs, então não dá para fazer essa consulta de forma automática.
 > Status: **aguardando os resultados da Camila.**
+>
+> Tentativa automática em 18/10/2026: com a rede do ambiente liberada, o servidor `busca.inpi.gov.br` encerrou a conexão (connection reset), tanto via curl quanto no Chromium. Provavelmente o INPI bloqueia acessos de fora do Brasil ou de servidores em nuvem. Nenhum resultado foi obtido por esse caminho.
 
 ## Termos a pesquisar
 
