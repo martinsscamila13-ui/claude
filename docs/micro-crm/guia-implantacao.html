@@ -119,7 +119,7 @@ footer{margin-top:40px;font-size:.85rem;color:var(--muted)}
   <div><b>WhatsApp Business</b><span>Coexistence direto na Meta</span></div>
   <div><b>Instagram profissional</b><span>API de mensagens</span></div>
   <div><b>Painel: Grok Bot</b><span>app Android no Tab S7</span></div>
-  <div><b>CRM no Notion</b><span>kanban por estágio</span></div>
+  <div><b>CRM no Notion</b><span>kanban e metas</span></div>
 </div>
 
 <div class="flow" aria-label="Arquitetura"><pre>WhatsApp Business ─┐  Coexistence (direto)
@@ -312,7 +312,9 @@ resumo de cada lead; leads quentes sem resposta há mais de 24h; uma prioridade 
       <tr><td>Processar conversas novas (fase 7)</td><td class="num">a cada 2 h, 8h–20h</td><td>Gerente Comercial</td></tr>
       <tr><td>Preparar call</td><td class="num">1 h antes do evento</td><td>Preparadora</td></tr>
       <tr><td>Pós-call (fase 8)</td><td class="num">de hora em hora, ou por e-mail no alias</td><td>Preparadora</td></tr>
-      <tr><td>Relatório da semana + ideias de conteúdo a partir das objeções</td><td class="num">dom 18h</td><td>Gerente Comercial</td></tr>
+      <tr><td>Revisão da semana (metas × realizado) + ideias de conteúdo a partir das objeções</td><td class="num">sex 17h</td><td>Gerente Comercial</td></tr>
+      <tr><td>Cobrança de metas: check-in e fechamento do dia (fase 8)</td><td class="num">seg–sex 13h · 18h30</td><td>Gerente Comercial</td></tr>
+      <tr><td>Metas do mês (fase 8)</td><td class="num">último dia útil 17h</td><td>Gerente Comercial</td></tr>
     </tbody>
   </table></div>
 
@@ -410,8 +412,55 @@ resumo de cada lead; leads quentes sem resposta há mais de 24h; uma prioridade 
 </section>
 
 <!-- FASE 8 -->
-<section class="fase" id="f8" data-title="Google Meet">
-  <div class="fase-head"><span class="num">8</span><h2>Google Meet: bot de anotações</h2></div>
+<section class="fase" id="f8" data-title="Metas e cobrança">
+  <div class="fase-head"><span class="num">8</span><h2>Metas e cobrança pelo Grok Bot</h2></div>
+  <div class="meta"><span class="chip tec">técnico: 1–4</span><span class="chip voce">você: 5–7</span><span class="chip">1–2 dias</span></div>
+  <p>Metas <b>diárias, semanais e mensais</b> de atividades e social selling, de vendas e financeiras. O n8n mede, você decide as metas e o Grok Bot pergunta, mostra o placar e cobra. Especificação completa: <code>metas-e-cobranca.md</code>.</p>
+
+  <div class="tbl"><table>
+    <thead><tr><th>Frente</th><th>Indicadores</th><th>Período</th></tr></thead>
+    <tbody>
+      <tr><td>Atividades e social selling</td><td>novas pessoas abordadas (automático: 1ª mensagem enviada por você no IG ou WA) · conversas respondidas · follow-ups feitos · interações em perfis e stories (você declara) · conteúdos publicados</td><td>dia → semana → mês</td></tr>
+      <tr><td>Vendas</td><td>calls agendadas e realizadas · propostas enviadas · vendas fechadas · conversões</td><td>semana · mês</td></tr>
+      <tr><td>Financeiro</td><td>faturamento vendido · caixa recebido (você declara) · ticket médio · previsão do mês</td><td>mês, visto toda semana</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="code"><span class="label">Meta reversa: o Bot propõe, você ajusta</span><pre>faturamento desejado        R$ 30.000
+÷ ticket médio              R$ 6.000   → 5 vendas
+÷ conversão call→venda      25%        → 20 calls realizadas
+÷ comparecimento            85%        → 24 calls agendadas
+÷ conversão abordagem→call  10%        → 240 abordagens no mês
+÷ 20 dias úteis                        → 12 abordagens por dia</pre><button type="button">Copiar</button></div>
+
+  <div class="tbl"><table>
+    <thead><tr><th>Ritual</th><th>Quando</th><th>O Bot…</th></tr></thead>
+    <tbody>
+      <tr><td>Metas do mês</td><td class="num">último dia útil 17h</td><td>fecha o mês, propõe a meta reversa e pergunta as metas do próximo</td></tr>
+      <tr><td>Plano da semana</td><td class="num">seg 7h30</td><td>recalcula a semana pelo que falta e pede a prioridade</td></tr>
+      <tr><td>Meta do dia</td><td class="num">seg–sex 7h30</td><td>traz as metas do dia e a lista de quem abordar e seguir</td></tr>
+      <tr><td>Check-in</td><td class="num">seg–sex 13h</td><td>só se estiver abaixo de 40%: placar e uma sugestão concreta</td></tr>
+      <tr><td>Fechamento do dia</td><td class="num">seg–sex 18h30</td><td>placar e pergunta o que você declara (interações, pagamentos)</td></tr>
+      <tr><td>Revisão da semana</td><td class="num">sex 17h</td><td>o que funcionou, onde travou e "ajusta o plano ou a meta?"</td></tr>
+    </tbody>
+  </table></div>
+
+  <ol class="tasks">
+    <li><input type="checkbox" id="tm-1"><label for="tm-1">Criar as tabelas de metas no Postgres e o banco <b>Metas</b> no Notion (visualizações Hoje / Esta semana / Este mês, com 🟢 🟡 🔴).</label></li>
+    <li><input type="checkbox" id="tm-2"><label for="tm-2">Fluxos do n8n: sincronizar estágios (histórico), apurar metas de hora em hora, propor a meta do mês, recalcular a semana.</label></li>
+    <li><input type="checkbox" id="tm-3"><label for="tm-3">Ferramentas no MCP: <code>progresso_metas</code>, <code>propor_metas_mes</code>, <code>definir_meta</code>, <code>registrar_resultado</code>, <code>marcar_dia_off</code>, <code>sugestoes_de_acao</code>.</label></li>
+    <li><input type="checkbox" id="tm-4"><label for="tm-4">Gerar o bloco "METAS E COBRANÇA" para as instruções do Gerente Comercial.</label></li>
+    <li><input type="checkbox" id="tm-5"><label for="tm-5">Colar o bloco no Bot e criar as rotinas da tabela acima no app do computador.</label></li>
+    <li><input type="checkbox" id="tm-6"><label for="tm-6">Primeira conversa de metas: conferir as taxas iniciais (ticket, conversões) e confirmar a meta do mês corrente.</label></li>
+    <li><input type="checkbox" id="tm-7"><label for="tm-7">Testar pelo Tab S7: <i>"hoje estou off"</i> e <i>"recebi 3 mil da Ana"</i>.</label></li>
+  </ol>
+  <div class="note" style="border-left-color:var(--accent);background:var(--accent-soft)"><b>Regras anti-exaustão:</b> nada de cobrança depois das 20h nem no fim de semana; folga, viagem ou doença saem do cálculo e a meta se redistribui; no máximo 2 cobranças da mesma meta por dia. O Bot nunca muda uma meta sem você confirmar.</div>
+  <div class="done-when"><b>Pronto quando:</b> depois de você abordar 5 pessoas novas, o placar do dia mostra 5 em até 1 hora, e o fechamento das 18h30 chega com o placar e as perguntas do dia.</div>
+</section>
+
+<!-- FASE 9 -->
+<section class="fase" id="f9" data-title="Google Meet">
+  <div class="fase-head"><span class="num">9</span><h2>Google Meet: bot de anotações</h2></div>
   <div class="meta"><span class="chip tec">técnico: 1–4</span><span class="chip voce">você: 5–6</span><span class="chip">1 dia</span></div>
   <p>Um participante "Notas da Camila" entra pelo link da reunião. Funciona com você no app do Meet no Tab S7, porque o bot roda no servidor.</p>
   <ol class="tasks">
@@ -427,8 +476,8 @@ resumo de cada lead; leads quentes sem resposta há mais de 24h; uma prioridade 
 </section>
 
 <!-- FASE 9 -->
-<section class="fase" id="f9" data-title="Playbook">
-  <div class="fase-head"><span class="num">9</span><h2>Playbook a partir das suas conversas reais</h2></div>
+<section class="fase" id="f10" data-title="Playbook">
+  <div class="fase-head"><span class="num">10</span><h2>Playbook a partir das suas conversas reais</h2></div>
   <div class="meta"><span class="chip voce">você faz</span><span class="chip">1 tarefa do Bot + 1 h de revisão</span></div>
   <p>A ideia vem do copiloto da tecpet, cujo playbook saiu de 277 calls reais. Aqui, a base é o histórico do WhatsApp e as transcrições das suas calls.</p>
   <ol class="tasks">
@@ -440,8 +489,8 @@ resumo de cada lead; leads quentes sem resposta há mais de 24h; uma prioridade 
 </section>
 
 <!-- FASE 10 -->
-<section class="fase" id="f10" data-title="Sussurro ao vivo">
-  <div class="fase-head"><span class="num">10</span><h2>Opcional: sussurro ao vivo durante a call</h2></div>
+<section class="fase" id="f11" data-title="Sussurro ao vivo">
+  <div class="fase-head"><span class="num">11</span><h2>Opcional: sussurro ao vivo durante a call</h2></div>
   <div class="meta"><span class="chip tec">técnico</span><span class="chip">2–3 dias</span></div>
   <p>Só vale fazer depois de 1 mês de uso, se você sentir falta. O pré e o pós-call já entregam a maior parte do valor.</p>
   <ol class="tasks">

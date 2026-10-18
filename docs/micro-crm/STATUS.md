@@ -13,9 +13,10 @@
 | 5. WhatsApp (Coexistence direto) | ⬜ não iniciada | | |
 | 6. Cérebro LLM e regras | ⬜ não iniciada | | |
 | 7. MCP para o Grok Bot | ⬜ não iniciada | | |
-| 8. Google Meet | ⬜ não iniciada | | |
-| 9. Playbook | ⬜ não iniciada | | |
-| 10. Sussurro ao vivo (opcional) | ⬜ não iniciada | | |
+| 8. Metas e cobrança | ⬜ não iniciada | | |
+| 9. Google Meet | ⬜ não iniciada | | |
+| 10. Playbook | ⬜ não iniciada | | |
+| 11. Sussurro ao vivo (opcional) | ⬜ não iniciada | | |
 
 Legenda: ⬜ não iniciada · 🟡 em andamento · 🛑 aguardando a Camila · ✅ aceite passou
 

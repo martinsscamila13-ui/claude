@@ -9,6 +9,7 @@
 > - [`analise-micro-crm-ai-first.md`](analise-micro-crm-ai-first.md): o porquê de cada decisão (leia as seções 1, 5, 6 e 7)
 > - [`whatsapp-meta-direto.md`](whatsapp-meta-direto.md): runbook detalhado do WhatsApp (fase 5)
 > - [`instagram-meta-direto.md`](instagram-meta-direto.md): runbook detalhado do Instagram (fase 4)
+> - [`metas-e-cobranca.md`](metas-e-cobranca.md): metas diárias, semanais e mensais e a cobrança pelo Grok Bot (fase 8)
 > - `guia-implantacao.html`: a mesma sequência em formato de checklist para a Camila
 >
 > **Decisões já tomadas (não reabrir):** WhatsApp **Business** em Coexistence **direto na Meta (sem BSP)** ·
@@ -76,6 +77,7 @@ crm/
     Caddyfile               # se precisar de algo além do reverse-proxy simples
   sql/
     001_schema.sql          # tabelas WA + IG + visão "mensagens" + controle
+    002_metas.sql           # metas, resultados declarados, histórico de estágios (fase 8)
   notion/
     schema.json             # definição dos 4 bancos (fase 2)
     criar_bancos.py         # cria os bancos pela API do Notion
@@ -258,14 +260,39 @@ o estágio sugerido "Qualificado" com a evidência e uma Atividade com rascunho.
 3. **[CAMILA]** no Grok Bot desktop → Connect apps → **servidor MCP personalizado (Remote HTTPS)** → URL +
    token. Se a opção não existir na conta individual, registrar no `STATUS.md` e seguir só com o conector
    do Notion.
-4. **[CAMILA]** Rotina "Processar conversas" a cada 2h, das 8h às 20h, e rotina "Relatório" aos domingos às 18h.
+4. **[CAMILA]** Rotina "Processar conversas" a cada 2h, das 8h às 20h, e rotina "Relatório" às sextas às 17h (sem cobranças no fim de semana: ver fase 8).
 
 **Aceite:** a Camila pergunta no Tab S7 "como está meu pipeline?" e recebe a contagem por estágio e os 3 mais urgentes.
 Ela dita "registra: a Ana vai falar com o sócio e me responde sexta" e a nota aparece no Notion.
 
 ---
 
-## Fase 8: Google Meet (bot de anotações)
+## Fase 8: Metas e cobrança
+
+Especificação completa em **[`metas-e-cobranca.md`](metas-e-cobranca.md)**: indicadores de atividades e social
+selling, vendas e financeiro; meta reversa; rituais; regras anti-exaustão.
+
+1. **[CLAUDE·TERMINAL]** Rodar `crm/sql/002_metas.sql` (metas, resultados declarados, dias de folga,
+   fotografia dos leads, histórico de estágios, parâmetros do funil) e criar a visão `realizado_diario`.
+2. **[CLAUDE·TERMINAL]** Criar no Notion o banco **Metas** (e **Resultados declarados**, que é o caminho
+   sem MCP), com as visualizações "Hoje", "Esta semana" e "Este mês".
+3. **[CLAUDE·TERMINAL]** Fluxos: **Estágios · sincronizar**, **Metas · apurar**, **Metas · propor mês**,
+   **Metas · recalcular semana**.
+4. **[CLAUDE·TERMINAL]** Acrescentar ao "MCP crm-camila": `progresso_metas`, `propor_metas_mes`,
+   `definir_meta`, `registrar_resultado`, `marcar_dia_off`, `sugestoes_de_acao`.
+5. **[CLAUDE·TERMINAL]** Acrescentar o bloco "METAS E COBRANÇA" (seção 7 da especificação) a
+   `crm/prompts/grok_bot_gerente.md`. **[CAMILA]** cola o bloco no Bot.
+6. **[CAMILA]** No Grok Bot desktop, criar as rotinas: metas do mês (último dia útil, 17h), check-in
+   (seg–sex 13h), fechamento do dia (seg–sex 18h30) e revisão da semana (sexta 17h). Na rotina de
+   briefing (7h30), incluir a meta do dia e, às segundas, o plano da semana.
+7. **[CAMILA]** Primeira conversa de metas: o Bot apresenta a meta reversa e ela confirma ou ajusta as taxas
+   iniciais (`parametros_funil`) e a meta do mês corrente.
+
+**Aceite:** os testes da seção 8 da especificação, com mensagens reais.
+
+---
+
+## Fase 9: Google Meet (bot de anotações)
 
 1. **[CLAUDE·CHROME]** recall.ai: criar a conta (🛑 R2.2/R2.3), escolher a região, criar a chave de API
    (a Camila guarda). Conferir na doc a **transcrição em português** e o formato do webhook de fim de
@@ -287,12 +314,12 @@ Ela dita "registra: a Ana vai falar com o sócio e me responde sexta" e a nota a
 
 ---
 
-## Fase 9: Playbook a partir de dados reais
+## Fase 10: Playbook a partir de dados reais
 
 1. **[CLAUDE·TERMINAL]** Exportar do Postgres as conversas dos últimos 6 meses (histórico do WhatsApp +
    Instagram) e as transcrições das calls, **anonimizando** os telefones e trocando os nomes por iniciais.
    Separar por desfecho (Ganho/Perdido/sem desfecho, conforme o Notion).
-2. **[CAMILA]** Enviar o pacote ao Bot "Gerente Comercial" com o pedido da fase 9 do guia. Ou, se ela
+2. **[CAMILA]** Enviar o pacote ao Bot "Gerente Comercial" com o pedido da fase 10 do guia. Ou, se ela
    preferir, **você** gera o playbook localmente com a mesma estrutura.
 3. **[CLAUDE·TERMINAL]** Salvar em `crm/playbook/playbook_mentoria.md`, revisar com a Camila e anexar ao
    `extracao.md`, ao `pos_call.md` e às instruções dos Bots.
@@ -301,7 +328,7 @@ Ela dita "registra: a Ana vai falar com o sócio e me responde sexta" e a nota a
 
 ---
 
-## Fase 10 (opcional, só depois de 1 mês de uso): sussurro ao vivo
+## Fase 11 (opcional, só depois de 1 mês de uso): sussurro ao vivo
 
 Transcrição em tempo real em pt-BR no bot do Meet (provedor de streaming), regras por palavra-chave e
 LLM rápida → cartões no **celular** da Camila. Detalhes: seção 4.4 da análise. Não iniciar sem pedido explícito.

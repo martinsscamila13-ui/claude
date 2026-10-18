@@ -88,7 +88,7 @@ ensinada **gravando você fazendo a tarefa no navegador** (até 10 min).
 
 | Capacidade | O que a documentação diz | Uso no seu caso |
 |---|---|---|
-| **Rotinas agendadas** | Até 50 por Bot, intervalo mínimo de 5 min, fuso configurável. Cada execução consome uso, e uma rotina a cada 15 min roda 96×/dia | Briefing 7h30, varredura de follow-ups a cada 1–2h, relatório de domingo |
+| **Rotinas agendadas** | Até 50 por Bot, intervalo mínimo de 5 min, fuso configurável. Cada execução consome uso, e uma rotina a cada 15 min roda 96×/dia | Briefing 7h30, varredura de follow-ups a cada 1–2h, revisão de sexta, rituais de metas |
 | **Gatilhos por evento** | Documentados: mensagem no Slack e eventos do GitHub. Segundo a AlphaSignal (não confirmado na doc), também **e-mail que chega a um alias** (`voce+crm@…`) | **Gancho importante:** o n8n pode mandar um e-mail para o alias quando uma conversa nova fechar, e esse e-mail dispara a rotina do Bot. Validar no beta |
 | **Conectores** | Citados em fontes diferentes: Gmail, Google Calendar, Drive, Docs, Sheets, Slides, Notion, Outlook/Teams, Salesforce, Slack, Trello, X, Stripe, Plaid… Há um marketplace aberto a terceiros | Notion (CRM), Calendar (reuniões), Gmail (propostas e contratos), Drive (contratos e transcrições), Sheets (relatórios) |
 | **MCP próprio** | "Custom MCP server, Remote HTTPS" (precisa estar acessível publicamente). Composio é um plugin com mais de 1.000 apps | O **n8n expõe o seu CRM como ferramentas MCP**: `conversas_novas`, `buscar_lead`, `atualizar_lead`, `criar_atividade`. Mais confiável que clicar em telas |
@@ -130,7 +130,7 @@ unitário. ➜ Para começar, o **plano mais barato com teste** basta: o volume 
 
 | Bot | Função | Rotinas e gatilhos | Ferramentas |
 |---|---|---|---|
-| **Gerente Comercial** (principal) | Mantém o pipeline vivo | 7h30 briefing do dia · a cada 2h (8h–20h) processa conversas novas · domingo 18h relatório | MCP do CRM (n8n), Notion, Calendar, Gmail |
+| **Gerente Comercial** (principal) | Mantém o pipeline vivo | 7h30 briefing com meta do dia · a cada 2h (8h–20h) processa conversas novas · 13h e 18h30 cobrança de metas · sexta 17h revisão | MCP do CRM (n8n), Notion, Calendar, Gmail |
 | **Preparadora de Reuniões** | Antes de cada call: ficha da lead, dores, histórico, roteiro de diagnóstico personalizado. Depois: resumo, próximos passos, rascunho de proposta | 1h antes de cada evento com link do Meet · gatilho por e-mail quando a transcrição chega | Calendar, Drive (transcrições), Notion |
 | **Pesquisadora** (opcional) | Enriquece leads novos: nicho, porte, presença digital | Sob demanda ("pesquisa a @fulana") | Navegador (Instagram e site públicos) |
 
@@ -377,6 +377,16 @@ custa", "como funciona o pagamento", "quando começa a próxima turma").
 Cada follow-up vira uma **Atividade** com **rascunho da mensagem no seu tom** (a LLM aprende com as
 suas mensagens enviadas). Você copia e envia, porque o CRM é somente leitura no WhatsApp.
 
+### Metas e cobrança
+
+O CRM também acompanha **metas diárias, semanais e mensais** em três frentes: **atividades e social
+selling** (novas pessoas abordadas, conversas respondidas, follow-ups, interações, conteúdos), **vendas**
+(calls agendadas e realizadas, propostas, vendas fechadas) e **financeiro** (faturamento vendido, caixa
+recebido, ticket médio, previsão). O n8n mede o que é automático, por exemplo abordagem = primeira
+mensagem enviada pela Camila. A Camila declara ao Bot o que a API não vê. O **Grok Bot pergunta a
+meta** (com uma proposta de "meta reversa" calculada pelo funil), **cobra o resultado** em rituais
+diários e semanais e respeita regras anti-exaustão. Especificação completa: [`metas-e-cobranca.md`](metas-e-cobranca.md).
+
 ### Métricas (relatório semanal)
 
 Leads novos por origem · conversão por estágio · tempo médio em cada estágio · follow-ups
@@ -413,7 +423,8 @@ os **alertas urgentes por push do n8n** (Telegram ou e-mail) como rede de segura
    - a cada 2h, das 8h às 20h: processar conversas novas → atualizar leads e criar atividades
    - 1h antes de cada call com link do Meet: ficha + roteiro de diagnóstico
    - quando chegar a transcrição (gatilho por e-mail, se disponível; senão, rotina de hora em hora): pós-call
-   - domingo 18h: relatório da semana + objeções mais frequentes → ideias de conteúdo para o Instagram
+   - sexta 17h: revisão da semana (metas × realizado) + objeções mais frequentes → ideias de conteúdo para o Instagram
+   - metas: definição no último dia útil do mês, check-in às 13h, fechamento às 18h30 (ver `metas-e-cobranca.md`)
 5. **Tarefas pontuais:** "Analise as conversas exportadas e as transcrições em /workspace e escreva o
    playbook de vendas da mentoria" (seção 4.3). "Pesquisa a @fulana."
 6. **No dia a dia, pelo Tab S7:** "como está meu pipeline?", "prepara a call das 15h", "registra:
