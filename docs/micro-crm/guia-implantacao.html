@@ -1,0 +1,532 @@
+<title>Micro-CRM da Camila</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: coluna de leitura com trilho de fases fixo à esquerda (desktop) e faixa de fases rolável (tablet/celular) */
+:root{
+  --bg:#F5F7F6; --surface:#FFFFFF; --sunk:#ECF0EE; --fg:#17211D; --muted:#56635D; --line:#D6DEDA;
+  --accent:#0E6656; --accent-soft:#DCEFEA; --warn:#9A3B5C; --warn-soft:#F6E3EA; --ok:#2E7D4F;
+  --code-bg:#1C2622; --code-fg:#E3ECE8;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111715; --surface:#18201D; --sunk:#1E2824; --fg:#E4ECE8; --muted:#9AA9A2; --line:#2C3833;
+  --accent:#5CC6AE; --accent-soft:#183A32; --warn:#E28AA8; --warn-soft:#3A1F29; --ok:#6BCB8E;
+  --code-bg:#0B100E; --code-fg:#DCE6E1; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111715; --surface:#18201D; --sunk:#1E2824; --fg:#E4ECE8; --muted:#9AA9A2; --line:#2C3833;
+  --accent:#5CC6AE; --accent-soft:#183A32; --warn:#E28AA8; --warn-soft:#3A1F29; --ok:#6BCB8E;
+  --code-bg:#0B100E; --code-fg:#DCE6E1; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--f-body);
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:clamp(2rem,5vw,3rem);font-weight:700;letter-spacing:-.01em}
+h2{font-size:1.55rem;font-weight:700}
+h3{font-size:1.1rem;font-weight:500;margin-top:1.4rem}
+p{margin:.6rem 0}
+a{color:var(--accent);text-underline-offset:2px}
+code{font-family:var(--f-mono);font-size:.86em;background:var(--sunk);padding:.08em .35em;border-radius:4px}
+.eyebrow{font:500 .78rem/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+.wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:48px;padding-block:40px 80px}
+@media (max-width:900px){.wrap{grid-template-columns:minmax(0,1fr);gap:0;padding-block:24px 64px}}
+
+/* trilho de fases */
+nav.rail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px);align-self:start;display:flex;flex-direction:column;gap:4px}
+nav.rail a{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:8px;padding:6px 8px;border-radius:6px;text-decoration:none;color:var(--fg);font-size:.95rem}
+nav.rail a:hover,nav.rail a:focus-visible{background:var(--sunk);outline:none}
+nav.rail .n{font:500 .8rem var(--f-mono);color:var(--muted)}
+nav.rail .c{font:500 .72rem var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+nav.rail a.done .c{color:var(--ok)}
+nav.rail .total{margin:14px 8px 0;font-size:.85rem;color:var(--muted)}
+.bar{height:6px;background:var(--sunk);border-radius:99px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+@media (max-width:900px){
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+  nav.rail{top:env(safe-area-inset-top,0px);z-index:5;flex-direction:row;overflow-x:auto;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:24px}
+  nav.rail a{grid-template-columns:auto auto;flex:0 0 auto;border:1px solid var(--line);padding:4px 10px}
+  nav.rail a .t{display:none}
+  nav.rail .total{display:none}
+}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+
+main{min-width:0;max-width:760px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:62ch}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:28px 0}
+.facts div{background:var(--surface);padding:12px 14px}
+.facts b{display:block;font-family:var(--f-display);font-weight:500;font-size:1.02rem}
+.facts span{font-size:.85rem;color:var(--muted)}
+
+.flow{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;margin:20px 0}
+.flow pre{margin:0;font:400 .8rem/1.5 var(--f-mono);color:var(--fg);white-space:pre}
+
+section.fase{border-top:1px solid var(--line);padding-top:36px;margin-top:44px;scroll-margin-top:80px}
+.fase-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
+.fase-head .num{font:700 2.2rem/1 var(--f-display);color:var(--accent);font-variant-numeric:tabular-nums}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+.chip{font:500 .74rem/1 var(--f-mono);padding:5px 8px;border-radius:99px;background:var(--sunk);color:var(--muted)}
+.chip.tec{background:var(--warn-soft);color:var(--warn)}
+.chip.voce{background:var(--accent-soft);color:var(--accent)}
+
+ol.tasks{list-style:none;padding:0;margin:16px 0;display:flex;flex-direction:column;gap:2px}
+ol.tasks li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:6px;padding:8px 10px;border-radius:6px}
+ol.tasks li:hover{background:var(--surface)}
+ol.tasks input{width:18px;height:18px;margin-top:4px;accent-color:var(--accent);cursor:pointer}
+ol.tasks label{cursor:pointer}
+ol.tasks li.checked label{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line)}
+.where{display:block;font-size:.88rem;color:var(--muted);margin-top:2px}
+
+.done-when{border-left:3px solid var(--ok);background:var(--surface);padding:10px 14px;border-radius:0 6px 6px 0;margin:16px 0}
+.done-when b{font-family:var(--f-display);font-weight:500}
+.note{border-left:3px solid var(--warn);background:var(--warn-soft);padding:10px 14px;border-radius:0 6px 6px 0;margin:16px 0;font-size:.95rem}
+
+.tbl{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:.92rem;background:var(--surface)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:500 .75rem var(--f-mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);background:var(--sunk)}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.rec td:first-child{font-weight:600}
+tr.rec td:first-child::after{content:" · recomendado";font:500 .7rem var(--f-mono);color:var(--accent)}
+
+.code{position:relative;margin:14px 0}
+.code pre{background:var(--code-bg);color:var(--code-fg);font:400 .8rem/1.55 var(--f-mono);padding:16px;border-radius:8px;overflow-x:auto;margin:0;white-space:pre}
+.code .label{display:block;font:500 .72rem var(--f-mono);color:var(--muted);margin-bottom:4px;letter-spacing:.04em}
+.code button{position:absolute;top:28px;right:8px;font:500 .74rem var(--f-mono);padding:5px 9px;border-radius:5px;border:1px solid #3A4842;background:#26322D;color:#E3ECE8;cursor:pointer}
+.code button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.reset{margin-top:48px;font-size:.88rem;color:var(--muted)}
+.reset button{font:inherit;color:var(--warn);background:none;border:1px solid var(--line);border-radius:6px;padding:6px 10px;cursor:pointer}
+footer{margin-top:40px;font-size:.85rem;color:var(--muted)}
+</style>
+
+<div class="wrap">
+<nav class="rail" id="rail" aria-label="Fases"></nav>
+
+<main>
+<p class="eyebrow">Guia de implantação · versão de 18/10/2026</p>
+<h1>Micro-CRM da Camila</h1>
+<p class="lead">O roteiro completo, em ordem, para montar o CRM que se preenche sozinho a partir do WhatsApp Business, do Instagram e das calls no Meet, com o Grok Bot como painel no Galaxy Tab S7.</p>
+
+<div class="facts">
+  <div><b>WhatsApp Business</b><span>Coexistence direto na Meta</span></div>
+  <div><b>Instagram profissional</b><span>API de mensagens</span></div>
+  <div><b>Painel: Grok Bot</b><span>app Android no Tab S7</span></div>
+  <div><b>CRM no Notion</b><span>kanban por estágio</span></div>
+</div>
+
+<div class="flow" aria-label="Arquitetura"><pre>WhatsApp Business ─┐  Coexistence (direto)
+Instagram (DMs) ───┼──── app Meta seu ─────►  n8n na sua VPS  ──► Postgres (mensagens brutas)
+Google Meet ───────┘  bot Recall.ai              │  regras fixas: cadências, alertas
+                                                 │  LLM (API do Grok): extrai campos
+                                                 ▼
+                                   NOTION  ·  Leads · Atividades · Reuniões
+                                                 ▲
+                                    conector Notion + MCP "crm-camila"
+                                                 │
+                                   GROK BOT "Gerente Comercial"
+                                   briefings · follow-ups em rascunho · pré e pós-call
+                                                 │
+                                   Você no Tab S7 (voz, notificações, aprovações)</pre></div>
+
+<p>Cada fase tem as tarefas na ordem em que devem ser feitas e um teste de "pronto quando". As marcações ficam salvas neste navegador. As etiquetas indicam quem faz: <span class="chip voce">você faz</span> são cliques em painéis; <span class="chip tec">técnico</span> pede alguém com experiência em servidor e n8n (ou uma sessão do Claude Code).</p>
+
+<!-- FASE 0 -->
+<section class="fase" id="f0" data-title="Preparação">
+  <div class="fase-head"><span class="num">0</span><h2>Preparação: contas e acessos</h2></div>
+  <div class="meta"><span class="chip voce">você faz</span><span class="chip">1–2 h</span></div>
+  <p>Tudo o que as próximas fases vão pedir. Fazer antes evita parar no meio de uma configuração.</p>
+  <ol class="tasks">
+    <li><input type="checkbox" id="t0-1"><label for="t0-1">Criar um <b>gerenciador de senhas</b> (Bitwarden, 1Password) e um cofre "CRM" para guardar chaves e tokens.</label></li>
+    <li><input type="checkbox" id="t0-2"><label for="t0-2">Ter um <b>domínio</b> e reservar um subdomínio para o n8n, por exemplo <code>crm.seudominio.com.br</code>.<span class="where">Se o site já usa um domínio, basta criar o subdomínio no painel de DNS dele.</span></label></li>
+    <li><input type="checkbox" id="t0-3"><label for="t0-3">Criar ou conferir o <b>portfólio empresarial da Meta</b> com o seu nome empresarial e ativar a <b>autenticação em dois fatores</b> para todos os administradores. Separar CNPJ, comprovante de endereço e site: a verificação da empresa pode ser pedida.<span class="where">business.facebook.com → Configurações. O WhatsApp e o Instagram vão ficar ligados a ele.</span></label></li>
+    <li><input type="checkbox" id="t0-4"><label for="t0-4">Criar a conta de desenvolvedora em <b>developers.facebook.com</b> (mesmo login do Facebook que administra o portfólio).</label></li>
+    <li><input type="checkbox" id="t0-5"><label for="t0-5">Publicar uma <b>política de privacidade</b> (pode ser uma página pública do Notion) que diga que conversas comerciais são registradas em CRM com apoio de IA. A Meta exige essa URL para colocar o app no ar.</label></li>
+    <li><input type="checkbox" id="t0-6"><label for="t0-6">Atualizar o <b>Tab S7</b> (Configurações → Atualização de software) e o app <b>WhatsApp Business</b> no celular principal.</label></li>
+    <li><input type="checkbox" id="t0-7"><label for="t0-7">Ter um <b>computador (Windows ou Mac)</b> disponível na fase 3: rotinas do Grok Bot só são criadas e editadas pelo app de desktop. No Tab S7 você acompanha, conversa e aprova.</label></li>
+  </ol>
+  <div class="done-when"><b>Pronto quando:</b> domínio, portfólio Meta, conta de desenvolvedora e política de privacidade existem e estão anotados no cofre.</div>
+</section>
+
+<!-- FASE 1 -->
+<section class="fase" id="f1" data-title="n8n na sua instância">
+  <div class="fase-head"><span class="num">1</span><h2>Subir o n8n na sua instância</h2></div>
+  <div class="meta"><span class="chip tec">técnico</span><span class="chip">2–4 h</span></div>
+  <p>O n8n é quem recebe as mensagens do WhatsApp, do Instagram e do bot do Meet. Ele precisa ficar <b>sempre ligado</b> e com <b>HTTPS válido</b>, que a Meta exige para webhooks.</p>
+
+  <h3>Alternativas</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Opção</th><th>Custo/mês</th><th>Esforço</th><th>Observações</th></tr></thead>
+    <tbody>
+      <tr class="rec"><td>Hostinger VPS KVM 2 (datacenter em São Paulo)</td><td class="num">~US$ 8–10</td><td>baixo</td><td>Tem modelo de sistema com n8n pronto. Cobrança em reais e dados no Brasil (bom para LGPD). Se o modelo não aparecer, use Ubuntu + Docker (abaixo)</td></tr>
+      <tr><td>VPS + Easypanel ou Coolify</td><td class="num">só a VPS</td><td>baixo-médio</td><td>Painel visual que instala n8n e Postgres em poucos cliques e cuida do HTTPS. Bom se você for hospedar outras coisas no mesmo servidor</td></tr>
+      <tr><td>Hetzner CX23 + Docker Compose</td><td class="num">~€ 3,50–8</td><td>médio</td><td>O mais barato. Servidor na Europa ou nos EUA. Backup, firewall e atualização ficam por sua conta</td></tr>
+      <tr><td>Railway / Render</td><td class="num">US$ 8–45</td><td>baixo</td><td>Plataforma gerenciada. O plano grátis do Render "dorme" e perde webhooks: não serve</td></tr>
+      <tr><td>n8n Cloud (não é instância sua)</td><td class="num">~US$ 24</td><td>nenhum</td><td>Sem manutenção, mas limitado a 2.500 execuções/mês no Starter</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Passo a passo (VPS com Docker)</h3>
+  <ol class="tasks">
+    <li><input type="checkbox" id="t1-1"><label for="t1-1">Contratar a VPS (2 vCPU, 4–8 GB de RAM) com Ubuntu 24.04 ou com o modelo n8n. Escolher São Paulo se houver.</label></li>
+    <li><input type="checkbox" id="t1-2"><label for="t1-2">No DNS do domínio, criar um registro <b>A</b> de <code>crm</code> apontando para o IP da VPS.</label></li>
+    <li><input type="checkbox" id="t1-3"><label for="t1-3">Proteger o servidor: login por chave SSH, firewall liberando só as portas 22, 80 e 443, atualizações automáticas.</label></li>
+    <li><input type="checkbox" id="t1-4"><label for="t1-4">Instalar Docker e subir o <code>docker-compose.yml</code> abaixo (n8n + Postgres + Caddy, que gera o HTTPS sozinho).</label></li>
+    <li><input type="checkbox" id="t1-5"><label for="t1-5">Abrir <code>https://crm.seudominio.com.br</code>, criar a conta de dona e ativar a verificação em duas etapas.</label></li>
+    <li><input type="checkbox" id="t1-6"><label for="t1-6">Criar no mesmo Postgres um banco <code>crm</code> para guardar as mensagens brutas (separado do banco interno do n8n).</label></li>
+    <li><input type="checkbox" id="t1-7"><label for="t1-7">Ativar <b>backup diário</b> da VPS (painel do provedor) e anotar a <code>N8N_ENCRYPTION_KEY</code> no cofre. Sem ela, as credenciais salvas não voltam.</label></li>
+  </ol>
+
+  <div class="code"><span class="label">.env</span><pre>N8N_HOST=crm.seudominio.com.br
+POSTGRES_PASSWORD=troque-por-uma-senha-longa
+N8N_ENCRYPTION_KEY=troque-por-32-caracteres-aleatorios</pre><button type="button">Copiar</button></div>
+
+  <div class="code"><span class="label">docker-compose.yml</span><pre>services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: n8n
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: n8n
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:stable
+    restart: unless-stopped
+    depends_on: [postgres]
+    environment:
+      DB_TYPE: postgresdb
+      DB_POSTGRESDB_HOST: postgres
+      DB_POSTGRESDB_DATABASE: n8n
+      DB_POSTGRESDB_USER: n8n
+      DB_POSTGRESDB_PASSWORD: ${POSTGRES_PASSWORD}
+      N8N_HOST: ${N8N_HOST}
+      N8N_PROTOCOL: https
+      N8N_PROXY_HOPS: 1
+      WEBHOOK_URL: https://${N8N_HOST}/
+      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY}
+      GENERIC_TIMEZONE: America/Sao_Paulo
+      TZ: America/Sao_Paulo
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports: ["80:80", "443:443"]
+    command: caddy reverse-proxy --from ${N8N_HOST} --to n8n:5678
+    volumes:
+      - caddy_data:/data
+
+volumes:
+  pg_data:
+  n8n_data:
+  caddy_data:</pre><button type="button">Copiar</button></div>
+
+  <div class="done-when"><b>Pronto quando:</b> o n8n abre com cadeado no navegador do Tab S7, e um fluxo de teste com nó <i>Webhook</i> recebe uma chamada no endereço de produção.</div>
+</section>
+
+<!-- FASE 2 -->
+<section class="fase" id="f2" data-title="CRM no Notion">
+  <div class="fase-head"><span class="num">2</span><h2>Montar o CRM no Notion</h2></div>
+  <div class="meta"><span class="chip voce">você faz</span><span class="chip">2–3 h</span></div>
+  <ol class="tasks">
+    <li><input type="checkbox" id="t2-1"><label for="t2-1">Criar a página <b>CRM</b> com quatro bancos de dados: <b>Leads</b>, <b>Atividades</b>, <b>Interações</b> e <b>Reuniões</b>, relacionados ao lead.</label></li>
+    <li><input type="checkbox" id="t2-2"><label for="t2-2">Em <b>Leads</b>, criar as propriedades da tabela abaixo.</label></li>
+    <li><input type="checkbox" id="t2-3"><label for="t2-3">Criar a visualização <b>Quadro</b> agrupada por <b>Estágio</b>: esse é o kanban. Fixar no Tab S7 como favorito.</label></li>
+    <li><input type="checkbox" id="t2-4"><label for="t2-4">Em <b>Atividades</b>: Tipo, Lead, Vencimento, Status, Criada por (IA/Camila), Rascunho da mensagem. Criar a visualização "Hoje" (vencimento ≤ hoje e status aberto).</label></li>
+    <li><input type="checkbox" id="t2-5"><label for="t2-5">Criar uma <b>integração interna</b> em notion.so/profile/integrations chamada "CRM n8n", copiar o token para o cofre e <b>conectar</b> os quatro bancos a ela (menu ••• da página → Conexões).</label></li>
+    <li><input type="checkbox" id="t2-6"><label for="t2-6">Cadastrar à mão 3 leads reais em estágios diferentes para testar as fases seguintes.</label></li>
+  </ol>
+  <div class="tbl"><table>
+    <thead><tr><th>Propriedade (Leads)</th><th>Tipo</th><th>Quem preenche</th></tr></thead>
+    <tbody>
+      <tr><td>Nome · WhatsApp · Instagram</td><td>título · telefone · texto</td><td>n8n (automático)</td></tr>
+      <tr><td>Origem</td><td>seleção: Instagram, WhatsApp, Indicação, Evento, Anúncio</td><td>n8n</td></tr>
+      <tr><td>Estágio</td><td>status: Novo contato → Em conversa → Qualificado → Call agendada → Call realizada → Proposta enviada → Negociação → Ganho / Perdido / Nutrição</td><td>você confirma</td></tr>
+      <tr><td>Estágio sugerido · Motivo</td><td>seleção · texto</td><td>IA</td></tr>
+      <tr><td>Programa de interesse</td><td>seleção: Aceleração, O MAPA, Comunidade Impulso, Consultoria</td><td>IA</td></tr>
+      <tr><td>Nicho · Faturamento atual · Dor principal · Objeções</td><td>texto / seleção múltipla</td><td>IA (só se vazio)</td></tr>
+      <tr><td>Temperatura · Score</td><td>seleção · número 0–100</td><td>IA</td></tr>
+      <tr><td>Resumo vivo · Próximo passo · Data do follow-up</td><td>texto · texto · data</td><td>IA + regras do n8n</td></tr>
+      <tr><td>Último contato · Valor potencial · Motivo de perda</td><td>data · número · seleção</td><td>n8n / você</td></tr>
+    </tbody>
+  </table></div>
+  <div class="done-when"><b>Pronto quando:</b> o quadro aparece no Tab S7 com os 3 leads de teste, e a integração "CRM n8n" está conectada aos quatro bancos.</div>
+</section>
+
+<!-- FASE 3 -->
+<section class="fase" id="f3" data-title="Grok Bot">
+  <div class="fase-head"><span class="num">3</span><h2>Configurar o Grok Bot</h2></div>
+  <div class="meta"><span class="chip voce">você faz</span><span class="chip">1–2 h</span></div>
+  <p>Já dá valor nesta fase: com Notion e Agenda conectados, o Bot faz o briefing do dia antes mesmo de WhatsApp e Instagram estarem ligados.</p>
+  <ol class="tasks">
+    <li><input type="checkbox" id="t3-1"><label for="t3-1">Escolher o acesso: <b>SuperGrok</b> (~US$ 30/mês) ou <b>Cursor Pro</b> (~US$ 20/mês). Começar pelo teste grátis de 7 dias.<span class="where">Os preços variam entre fontes. Confira em grok.com e cursor.com/help/grok-bot/plans.</span></label></li>
+    <li><input type="checkbox" id="t3-2"><label for="t3-2">Instalar o app de <b>desktop</b> (Windows ou Mac) e o app <b>Android</b> no Tab S7 (pede Android 9 ou mais novo). Entrar com a mesma conta nos dois.<span class="where">Links oficiais em docs.x.ai/grok-bot/mobile.</span></label></li>
+    <li><input type="checkbox" id="t3-3"><label for="t3-3">No Tab S7, liberar o app para rodar em segundo plano, senão as notificações atrasam.<span class="where">Configurações → Bateria → Limites de uso em segundo plano → Apps que nunca suspendem → adicionar Grok Bot.</span></label></li>
+    <li><input type="checkbox" id="t3-4"><label for="t3-4">Criar o Bot <b>"Gerente Comercial"</b> e colar a instrução abaixo como primeira mensagem.</label></li>
+    <li><input type="checkbox" id="t3-5"><label for="t3-5">Em <b>Connect apps</b>: adicionar <b>Notion</b> (só a página CRM), <b>Google Calendar</b>, <b>Gmail</b> e <b>Google Drive</b>.</label></li>
+    <li><input type="checkbox" id="t3-6"><label for="t3-6">Regras de aprovação: <b>"Pergunte antes"</b> para enviar e-mail, apagar qualquer coisa, mover lead para Ganho/Perdido/para trás e editar mais de 5 leads de uma vez.</label></li>
+    <li><input type="checkbox" id="t3-7"><label for="t3-7">Ligar <b>Notificações</b> nas configurações do Bot.</label></li>
+    <li><input type="checkbox" id="t3-8"><label for="t3-8">No desktop, criar a primeira rotina: <b>briefing às 7h30, de segunda a sábado</b>, fuso America/Sao_Paulo. Fazer um teste de execução.</label></li>
+    <li><input type="checkbox" id="t3-9"><label for="t3-9">Criar o Bot <b>"Preparadora de Reuniões"</b> com a rotina "1 hora antes de cada evento com link do Meet: ficha da lead + roteiro de diagnóstico".</label></li>
+  </ol>
+
+  <div class="code"><span class="label">Instrução inicial do "Gerente Comercial"</span><pre>Você é a gerente comercial da Camila Martins Finger, mentora de empresárias
+(Método Lucro Anti-Exaustão®, Programa de Aceleração, Mentoria O MAPA,
+Comunidade Impulso, Consultoria).
+
+O CRM fica no Notion, página "CRM": bancos Leads, Atividades, Interações e Reuniões.
+Estágios: Novo contato → Em conversa → Qualificado → Call agendada → Call realizada
+→ Proposta enviada → Negociação → Ganho / Perdido / Nutrição.
+
+Seu trabalho:
+1. Manter cada lead com "Resumo vivo", "Próximo passo" e "Data do follow-up" atualizados.
+2. Sugerir mudança de estágio em "Estágio sugerido" com o motivo e a evidência
+   (trecho da conversa + data). Só mude "Estágio" depois que eu confirmar.
+3. Criar Atividades de follow-up com um rascunho de mensagem no meu tom:
+   direto, acolhedor, sem pressão, em português do Brasil.
+4. Preencher campos só quando estiverem vazios.
+
+Regras: nunca envie mensagem a ninguém. Nunca apague registros.
+Na dúvida, pergunte.
+
+Briefing diário (7h30): follow-ups de hoje com rascunhos; calls de hoje com
+resumo de cada lead; leads quentes sem resposta há mais de 24h; uma prioridade do dia.</pre><button type="button">Copiar</button></div>
+
+  <div class="tbl"><table>
+    <thead><tr><th>Rotina</th><th>Quando</th><th>Bot</th></tr></thead>
+    <tbody>
+      <tr><td>Briefing do dia</td><td class="num">seg–sáb 7h30</td><td>Gerente Comercial</td></tr>
+      <tr><td>Processar conversas novas (fase 7)</td><td class="num">a cada 2 h, 8h–20h</td><td>Gerente Comercial</td></tr>
+      <tr><td>Preparar call</td><td class="num">1 h antes do evento</td><td>Preparadora</td></tr>
+      <tr><td>Pós-call (fase 8)</td><td class="num">de hora em hora, ou por e-mail no alias</td><td>Preparadora</td></tr>
+      <tr><td>Relatório da semana + ideias de conteúdo a partir das objeções</td><td class="num">dom 18h</td><td>Gerente Comercial</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note">O Grok Bot está em beta. Ele não recebe mensagens do WhatsApp nem do Instagram, não entra no Meet e varia de uma execução para outra. Por isso a coleta e as regras com data ficam no n8n. Não deixe o Bot abrir o WhatsApp Web: isso viola os termos do WhatsApp e expõe as conversas das clientes.</div>
+  <div class="done-when"><b>Pronto quando:</b> às 7h30 chega uma notificação no Tab S7 com o briefing, que cita os 3 leads de teste e os eventos do dia.</div>
+</section>
+
+<!-- FASE 4 -->
+<section class="fase" id="f4" data-title="Instagram">
+  <div class="fase-head"><span class="num">4</span><h2>Integrar o Instagram</h2></div>
+  <div class="meta"><span class="chip voce">você: itens 1–3</span><span class="chip tec">técnico: 4–9</span><span class="chip">3–4 h</span></div>
+  <p>Usa a <b>Instagram API com login do Instagram</b>: dispensa página do Facebook e entrega cada DM ao n8n, inclusive as que você envia (marcadas como <code>is_echo</code>).</p>
+  <ol class="tasks">
+    <li><input type="checkbox" id="t4-1"><label for="t4-1">No app do Instagram: liberar o acesso de ferramentas às mensagens.<span class="where">Configurações → Mensagens e respostas ao story → Controles de mensagem → Ferramentas conectadas → Permitir acesso às mensagens.</span></label></li>
+    <li><input type="checkbox" id="t4-2"><label for="t4-2">Em developers.facebook.com → <b>Criar app</b> → caso de uso "Gerenciar mensagens e conteúdo no Instagram" → vincular ao seu portfólio empresarial.</label></li>
+    <li><input type="checkbox" id="t4-3"><label for="t4-3">No painel do app → Instagram → <b>Configuração da API com login do Instagram</b> → adicionar a sua conta (@) e gerar o token. Aceitar o convite de testadora se ele aparecer.</label></li>
+    <li><input type="checkbox" id="t4-4"><label for="t4-4">No n8n, criar o fluxo <b>"IG · entrada"</b> com um Webhook (GET e POST no mesmo caminho) que responde ao desafio de verificação da Meta.</label></li>
+    <li><input type="checkbox" id="t4-5"><label for="t4-5">No painel do app → Webhooks: URL <code>https://crm.seudominio.com.br/webhook/instagram</code>, token de verificação do cofre → Verificar e salvar → assinar o campo <code>messages</code> (opcional: <code>comments</code>).</label></li>
+    <li><input type="checkbox" id="t4-6"><label for="t4-6">Ativar a assinatura da sua conta: <code>POST graph.instagram.com/me/subscribed_apps?subscribed_fields=messages</code> com o token.</label></li>
+    <li><input type="checkbox" id="t4-7"><label for="t4-7">No fluxo: validar a assinatura <code>X-Hub-Signature-256</code> com o App Secret, gravar a mensagem no Postgres <code>crm</code> (sem duplicar pelo ID), buscar nome e @ da pessoa pela API e criar ou atualizar o lead no Notion com Origem = Instagram.</label></li>
+    <li><input type="checkbox" id="t4-8"><label for="t4-8">Preencher a URL da política de privacidade e colocar o app <b>Ao vivo</b>. Se DMs de clientes não chegarem (só as de testadoras), pedir <b>Acesso avançado</b> para <code>instagram_business_manage_messages</code> na Análise do app.</label></li>
+    <li><input type="checkbox" id="t4-9"><label for="t4-9">Criar o fluxo agendado <b>"IG · renovar token"</b> a cada 30 dias (o token longo dura 60).</label></li>
+  </ol>
+  <div class="code"><span class="label">Resposta ao desafio de verificação (nó "Respond to Webhook", quando método = GET)</span><pre>{{ $json.query['hub.verify_token'] === $env.IG_VERIFY_TOKEN
+   ? $json.query['hub.challenge']
+   : 'token inválido' }}</pre><button type="button">Copiar</button></div>
+  <div class="note">Limites do Instagram: a conversa só existe se a pessoa escrever primeiro; DMs paradas há mais de 30 dias na pasta "Solicitações" não voltam pela API; post compartilhado chega só como link.</div>
+  <div class="done-when"><b>Pronto quando:</b> uma amiga manda DM, e em menos de 1 minuto o lead dela aparece em "Novo contato" no quadro do Notion, com a mensagem gravada.</div>
+</section>
+
+<!-- FASE 5 -->
+<section class="fase" id="f5" data-title="WhatsApp direto na Meta">
+  <div class="fase-head"><span class="num">5</span><h2>Integrar o WhatsApp Business direto na Meta</h2></div>
+  <div class="meta"><span class="chip voce">você: cliques na Meta</span><span class="chip tec">técnico: Claude Code local</span><span class="chip">1–2 dias (+ ~24 h se precisar de App Review)</span></div>
+  <p>Sem provedor (BSP): um <b>app seu no portfólio empresarial</b> liga o número do WhatsApp Business à Cloud API em modo <b>Coexistence</b>. Você continua usando o app no celular, e o n8n recebe cada mensagem recebida (<code>messages</code>), cada resposta sua pelo celular (<code>smb_message_echoes</code>) e o histórico de 180 dias (<code>history</code>). O CRM <b>só lê</b>: nada é enviado pela API, então não há cobrança.</p>
+  <p>O passo a passo técnico completo está em <code>docs/micro-crm/whatsapp-meta-direto.md</code>. Abra esse arquivo no seu Claude Code local e peça: <i>"execute o runbook whatsapp-meta-direto.md"</i>. Ele constrói as partes técnicas e para nos pontos em que você precisa clicar.</p>
+
+  <div class="note">A Meta só ativa a Coexistence pelo <b>Embedded Signup</b>, e a documentação pede que o app seja <b>Tech Provider</b>. O runbook tenta primeiro sem isso, porque o app e o número são da mesma empresa. Se a Meta bloquear, o caminho oficial é gratuito: verificação da empresa (CNPJ) + App Review com 2 vídeos, com resposta média de ~24 h.</div>
+
+  <ol class="tasks">
+    <li><input type="checkbox" id="t5-1"><label for="t5-1">Conferir: WhatsApp Business no celular na versão 2.24.17 ou mais nova; <b>autenticação em dois fatores</b> ativa no portfólio Meta; política de privacidade e ícone do app prontos (fase 0).</label></li>
+    <li><input type="checkbox" id="t5-2"><label for="t5-2">developers.facebook.com → Criar app → caso de uso <b>WhatsApp</b> → vincular ao seu portfólio. Guardar App ID e App Secret no cofre.<span class="where">Runbook, seção 2.</span></label></li>
+    <li><input type="checkbox" id="t5-3"><label for="t5-3">Adicionar <b>Login do Facebook para Empresas</b>, liberar o domínio do n8n e criar a configuração "WhatsApp Embedded Signup". Guardar o <code>config_id</code>.</label></li>
+    <li><input type="checkbox" id="t5-4"><label for="t5-4">Claude local: criar as tabelas no Postgres e o fluxo <b>"WA · webhook"</b> (verificação, assinatura, idempotência, exclusões, áudio).<span class="where">Runbook, seção 3.</span></label></li>
+    <li><input type="checkbox" id="t5-5"><label for="t5-5">No app → WhatsApp → Configuração: URL de callback + token de verificação; assinar <code>messages</code>, <code>smb_message_echoes</code>, <code>history</code>, <code>smb_app_state_sync</code> e <code>account_update</code>.</label></li>
+    <li><input type="checkbox" id="t5-6"><label for="t5-6">Claude local: publicar a página de cadastro e o fluxo que troca o código pelo token, inscreve o app na conta e pede a sincronização de contatos e do histórico.<span class="where">Runbook, seções 4 e 5. O código vale ~30 s e o histórico tem que ser pedido em até 24 h.</span></label></li>
+    <li><input type="checkbox" id="t5-7"><label for="t5-7">Criar a <b>lista de exclusão</b> (família, amigas, fornecedores).</label></li>
+    <li><input type="checkbox" id="t5-8"><label for="t5-8">No <b>computador</b>, abrir a página de cadastro → Conectar → escolher <b>conectar o WhatsApp Business app existente</b> → confirmar no celular e <b>aceitar compartilhar o histórico</b>.</label></li>
+    <li><input type="checkbox" id="t5-9"><label for="t5-9">Reconectar os aparelhos (Tab S7, WhatsApp Web), porque o cadastro desconecta todos. Não usar o WhatsApp para Windows.</label></li>
+    <li><input type="checkbox" id="t5-10"><label for="t5-10">Se aparecer erro de permissão: fazer a <b>verificação da empresa</b> e o <b>App Review</b> de Tech Provider e repetir o cadastro.<span class="where">Runbook, seção 6, "Se o Caminho A falhar".</span></label></li>
+    <li><input type="checkbox" id="t5-11"><label for="t5-11">Gerar um <b>token de usuário do sistema</b> sem expiração para o n8n (Configurações do negócio → Usuários do sistema).</label></li>
+  </ol>
+  <div class="note">O que muda no app: grupos não entram no CRM; mensagens temporárias, de visualização única e localização em tempo real ficam desligadas nas conversas 1:1; listas de transmissão ficam só leitura; recursos como etiquetas e respostas rápidas podem deixar de funcionar. Abra o WhatsApp Business no celular pelo menos a cada 14 dias. Para desfazer: WhatsApp Business → Configurações → Conta → Plataforma comercial → Desconectar.</div>
+  <div class="done-when"><b>Pronto quando:</b> uma mensagem recebida e a sua resposta pelo celular aparecem as duas no Postgres em segundos, o lead é criado no Notion, e o histórico dos últimos meses começa a entrar.</div>
+</section>
+
+<!-- FASE 6 -->
+<section class="fase" id="f6" data-title="Cérebro LLM">
+  <div class="fase-head"><span class="num">6</span><h2>Cérebro: a LLM preenche o CRM</h2></div>
+  <div class="meta"><span class="chip tec">técnico</span><span class="chip">2–3 dias + 2 semanas de ajuste</span></div>
+  <p>Separação de papéis: o <b>n8n</b> faz o que precisa ser sempre igual (datas, alertas); a <b>API do Grok</b> extrai os campos de cada conversa; o <b>Grok Bot</b> fica com o julgamento (fase 7).</p>
+  <ol class="tasks">
+    <li><input type="checkbox" id="t6-1"><label for="t6-1">Criar a chave em <b>console.x.ai</b> e cadastrar no n8n como credencial OpenAI com URL base <code>https://api.x.ai/v1</code>. Usar o modelo rápido mais recente da família Grok 4.x e definir um limite de gasto mensal.</label></li>
+    <li><input type="checkbox" id="t6-2"><label for="t6-2">Fluxo <b>"Analisar conversas"</b> a cada 15 min: pegar conversas pendentes <b>sem mensagem nova há 30 min</b>, montar o contexto (resumo atual do lead + mensagens novas + regras) e pedir a saída em JSON.</label></li>
+    <li><input type="checkbox" id="t6-3"><label for="t6-3">Validar o JSON e gravar no Notion <b>só campos vazios</b>, mais Estágio sugerido, Resumo vivo e uma linha em Interações com a evidência.</label></li>
+    <li><input type="checkbox" id="t6-4"><label for="t6-4">Fluxo <b>"Cadências"</b> (regras fixas): calcular a Data do follow-up por estágio e criar as Atividades. Por exemplo: proposta enviada → D+1, D+3, D+7, D+14; lead novo sem resposta → D+1, D+3, D+7 → Nutrição. A cadência pausa quando a lead responde.</label></li>
+    <li><input type="checkbox" id="t6-5"><label for="t6-5">Fluxo <b>"Alertas"</b>: lead pediu valor ou informação e você não respondeu em 4 horas úteis → notificação imediata (e-mail ou push).</label></li>
+    <li><input type="checkbox" id="t6-6"><label for="t6-6">Durante 2 semanas, corrigir no Notion o que a IA errou e ajustar o prompt toda sexta. Guardar o prompt como arquivo neste repositório.</label></li>
+  </ol>
+  <div class="code"><span class="label">Formato de saída pedido à LLM</span><pre>{
+  "nome": "", "programa_de_interesse": "Aceleração|O MAPA|Comunidade Impulso|Consultoria|indefinido",
+  "nicho": "", "faturamento_atual": "", "dor_principal": "", "objecoes": [],
+  "temperatura": "quente|morna|fria", "score": 0,
+  "estagio_sugerido": "", "motivo": "",
+  "proximo_passo": "", "data_follow_up": "AAAA-MM-DD",
+  "resumo_atualizado": "",
+  "evidencias": [{ "data": "", "trecho": "" }]
+}</pre><button type="button">Copiar</button></div>
+  <div class="done-when"><b>Pronto quando:</b> numa conversa de teste em que a lead pergunta o valor, em até 45 min o lead aparece com Estágio sugerido "Qualificado", a dor preenchida e uma Atividade com rascunho de resposta.</div>
+</section>
+
+<!-- FASE 7 -->
+<section class="fase" id="f7" data-title="MCP + rotinas">
+  <div class="fase-head"><span class="num">7</span><h2>Ligar o Grok Bot ao CRM (MCP) e ativar as rotinas</h2></div>
+  <div class="meta"><span class="chip tec">técnico: 1–3</span><span class="chip voce">você: 4–6</span><span class="chip">3–4 h</span></div>
+  <ol class="tasks">
+    <li><input type="checkbox" id="t7-1"><label for="t7-1">No n8n, criar o fluxo <b>"MCP crm-camila"</b> com o nó <i>MCP Server Trigger</i> e autenticação <b>Bearer</b>.</label></li>
+    <li><input type="checkbox" id="t7-2"><label for="t7-2">Ligar ferramentas (subfluxos): <code>conversas_pendentes</code>, <code>ler_conversa(lead)</code>, <code>buscar_lead</code>, <code>pipeline_resumo</code>, <code>criar_atividade</code>, <code>registrar_nota(lead, texto)</code>. Nenhuma ferramenta apaga dados.</label></li>
+    <li><input type="checkbox" id="t7-3"><label for="t7-3">Ativar o fluxo e copiar a <b>URL de produção</b> e o token para o cofre.</label></li>
+    <li><input type="checkbox" id="t7-4"><label for="t7-4">No Grok Bot (desktop) → Connect apps → <b>servidor MCP personalizado (Remote HTTPS)</b> → colar URL e token.<span class="where">Se essa opção não aparecer na sua conta individual (a documentação cita MCP próprio na parte de Team Bots), siga só com o conector do Notion: o Bot lê os leads direto lá.</span></label></li>
+    <li><input type="checkbox" id="t7-5"><label for="t7-5">Criar a rotina <b>"Processar conversas"</b> a cada 2 h, das 8h às 20h: revisar as sugestões da IA, priorizar e escrever rascunhos melhores para as leads quentes.</label></li>
+    <li><input type="checkbox" id="t7-6"><label for="t7-6">Teste de voz pelo Tab S7: <i>"registra: a Ana vai falar com o sócio e me responde sexta"</i>. Conferir a nota e a data de follow-up no Notion.</label></li>
+  </ol>
+  <div class="done-when"><b>Pronto quando:</b> você pergunta no app "como está meu pipeline?" e o Bot responde com contagem por estágio, valor previsto e os 3 leads mais urgentes.</div>
+</section>
+
+<!-- FASE 8 -->
+<section class="fase" id="f8" data-title="Google Meet">
+  <div class="fase-head"><span class="num">8</span><h2>Google Meet: bot de anotações</h2></div>
+  <div class="meta"><span class="chip tec">técnico: 1–4</span><span class="chip voce">você: 5–6</span><span class="chip">1 dia</span></div>
+  <p>Um participante "Notas da Camila" entra pelo link da reunião. Funciona com você no app do Meet no Tab S7, porque o bot roda no servidor.</p>
+  <ol class="tasks">
+    <li><input type="checkbox" id="t8-1"><label for="t8-1">Criar a conta na <b>Recall.ai</b> (ou Meeting BaaS) e guardar a chave da API. Configurar a transcrição em <b>português</b>.</label></li>
+    <li><input type="checkbox" id="t8-2"><label for="t8-2">Fluxo <b>"Meet · agendar bot"</b> a cada 15 min: ler o Google Calendar, achar eventos com link do Meet e convidada externa, ligar o evento ao lead (por e-mail, telefone ou nome) e agendar o bot para a hora de início (sem duplicar pelo ID do evento).</label></li>
+    <li><input type="checkbox" id="t8-3"><label for="t8-3">Fluxo <b>"Meet · pós-call"</b> (webhook da Recall ao terminar): buscar a transcrição; a LLM gera resumo, dores, objeções, compromissos, próximo passo, data de follow-up e % de fala sua × dela; gravar em Reuniões e no Lead; mudar o Estágio sugerido para "Call realizada".</label></li>
+    <li><input type="checkbox" id="t8-4"><label for="t8-4">Opcional: o n8n manda um e-mail para um alias seu (ex.: <code>voce+poscall@…</code>) para disparar a rotina da Preparadora, se o seu Grok Bot aceitar gatilho por e-mail. Senão, a rotina de hora em hora pega a reunião.</label></li>
+    <li><input type="checkbox" id="t8-5"><label for="t8-5">Incluir no convite das calls: <i>"Esta conversa terá anotações automáticas (Notas da Camila)."</i></label></li>
+    <li><input type="checkbox" id="t8-6"><label for="t8-6">Na call, <b>admitir</b> o participante "Notas da Camila" quando o Meet pedir. Dica do Tab S7: abra o Grok Bot em <b>tela dividida</b> ao lado do Meet para ver a ficha da lead durante a conversa.</label></li>
+  </ol>
+  <div class="note">Se o seu Google Workspace tiver o Gemini com "Fazer anotações para mim", ele é uma alternativa sem custo extra: o n8n lê o documento que o Meet salva no Drive. Mas não dá o % de fala nem a transcrição completa.</div>
+  <div class="done-when"><b>Pronto quando:</b> depois de uma call de teste, em até 15 minutos o lead tem o resumo, os próximos passos e uma Atividade de follow-up com data.</div>
+</section>
+
+<!-- FASE 9 -->
+<section class="fase" id="f9" data-title="Playbook">
+  <div class="fase-head"><span class="num">9</span><h2>Playbook a partir das suas conversas reais</h2></div>
+  <div class="meta"><span class="chip voce">você faz</span><span class="chip">1 tarefa do Bot + 1 h de revisão</span></div>
+  <p>A ideia vem do copiloto da tecpet, cujo playbook saiu de 277 calls reais. Aqui, a base é o histórico do WhatsApp e as transcrições das suas calls.</p>
+  <ol class="tasks">
+    <li><input type="checkbox" id="t9-1"><label for="t9-1">Pedir ao Gerente Comercial: <i>"Use as conversas dos últimos 6 meses e as transcrições das calls. Separe ganhas e perdidas e escreva o playbook_mentoria: objeções reais com as respostas que funcionaram, sinais de compra, perguntas que mais convertem e motivos de perda."</i></label></li>
+    <li><input type="checkbox" id="t9-2"><label for="t9-2">Revisar o playbook e incluir o <b>roteiro da call de diagnóstico</b>: situação → problema → <b>quanto a dor custa em R$ e em horas por mês</b> → necessidade → programa → oferta.</label></li>
+    <li><input type="checkbox" id="t9-3"><label for="t9-3">Anexar o playbook às instruções dos dois Bots e ao prompt da fase 6.</label></li>
+  </ol>
+  <div class="done-when"><b>Pronto quando:</b> os rascunhos de follow-up passam a citar as objeções no seu vocabulário, e a ficha pré-call traz perguntas do roteiro.</div>
+</section>
+
+<!-- FASE 10 -->
+<section class="fase" id="f10" data-title="Sussurro ao vivo">
+  <div class="fase-head"><span class="num">10</span><h2>Opcional: sussurro ao vivo durante a call</h2></div>
+  <div class="meta"><span class="chip tec">técnico</span><span class="chip">2–3 dias</span></div>
+  <p>Só vale fazer depois de 1 mês de uso, se você sentir falta. O pré e o pós-call já entregam a maior parte do valor.</p>
+  <ol class="tasks">
+    <li><input type="checkbox" id="t10-1"><label for="t10-1">Ativar a transcrição em tempo real em pt-BR no bot da reunião (provedor de streaming; o modo rápido nativo da Recall é só em inglês).</label></li>
+    <li><input type="checkbox" id="t10-2"><label for="t10-2">n8n: regras por palavra-chave (preço, "vou pensar", sócio, marido) com resposta instantânea + LLM rápida para cartões de 1 frase.</label></li>
+    <li><input type="checkbox" id="t10-3"><label for="t10-3">Entregar os cartões no <b>celular</b> ao lado do tablet. O Tab S7 fica livre para o Meet.</label></li>
+  </ol>
+  <div class="done-when"><b>Pronto quando:</b> numa call de teste, quando a "lead" fala em preço, um cartão chega ao celular em menos de 10 segundos.</div>
+</section>
+
+<section class="fase" id="custos" data-title="Custos">
+  <div class="fase-head"><h2>Custos mensais estimados</h2></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Item</th><th>Custo</th></tr></thead>
+    <tbody>
+      <tr><td>VPS para o n8n</td><td class="num">US$ 4–10</td></tr>
+      <tr><td>Grok Bot (SuperGrok ou Cursor Pro)</td><td class="num">US$ 20–30+</td></tr>
+      <tr><td>API do Grok (extração)</td><td class="num">US$ 5–20</td></tr>
+      <tr><td>WhatsApp (direto na Meta, só leitura)</td><td class="num">US$ 0</td></tr>
+      <tr><td>Bot do Meet (~20 calls)</td><td class="num">~US$ 13</td></tr>
+      <tr><td>Instagram API · Notion (já tem)</td><td class="num">US$ 0</td></tr>
+      <tr><td><b>Total</b></td><td class="num"><b>~US$ 40–75</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="where">Valores de outubro/2026, tirados de sites de fornecedores e guias. Confirme antes de contratar.</p>
+</section>
+
+<div class="reset"><button type="button" id="reset">Limpar marcações</button></div>
+
+<footer>
+  Análise completa e fontes: <code>docs/micro-crm/analise-micro-crm-ai-first.md</code> no repositório.
+  Documentação do Grok Bot: <a href="https://docs.x.ai/grok-bot/overview" target="_blank" rel="noopener">docs.x.ai/grok-bot</a> ·
+  Instagram: <a href="https://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login/messaging-api" target="_blank" rel="noopener">Messaging API</a> ·
+  n8n MCP: <a href="https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.mcptrigger/" target="_blank" rel="noopener">MCP Server Trigger</a> ·
+  Meet: <a href="https://www.recall.ai/product/meeting-bot-api/google-meet" target="_blank" rel="noopener">Recall.ai</a>
+</footer>
+</main>
+</div>
+
+<script>
+(function(){
+  var KEY='micro-crm-camila-v1';
+  var state={};
+  try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){state={}}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+
+  var sections=[].slice.call(document.querySelectorAll('section.fase'));
+  var rail=document.getElementById('rail');
+  var links={};
+  sections.forEach(function(s){
+    var a=document.createElement('a');
+    a.href='#'+s.id;
+    var num=s.querySelector('.num');
+    a.innerHTML='<span class="n">'+(num?num.textContent:'·')+'</span><span class="t"></span><span class="c"></span>';
+    a.querySelector('.t').textContent=s.dataset.title;
+    if(!num){a.querySelector('.n').textContent='$';}
+    rail.appendChild(a); links[s.id]=a;
+  });
+  var total=document.createElement('div');
+  total.className='total';
+  total.innerHTML='<span id="tot">0 de 0 tarefas</span><div class="bar"><i id="bar"></i></div>';
+  rail.appendChild(total);
+
+  var boxes=[].slice.call(document.querySelectorAll('ol.tasks input[type=checkbox]'));
+  function render(){
+    var done=0;
+    boxes.forEach(function(b){b.checked=!!state[b.id];b.closest('li').classList.toggle('checked',b.checked);if(b.checked)done++;});
+    sections.forEach(function(s){
+      var bs=s.querySelectorAll('ol.tasks input'); if(!bs.length){links[s.id].querySelector('.c').textContent='';return;}
+      var d=0; bs.forEach(function(b){if(b.checked)d++;});
+      links[s.id].querySelector('.c').textContent=d+'/'+bs.length;
+      links[s.id].classList.toggle('done',d===bs.length);
+    });
+    document.getElementById('tot').textContent=done+' de '+boxes.length+' tarefas';
+    document.getElementById('bar').style.width=(boxes.length?Math.round(done/boxes.length*100):0)+'%';
+  }
+  boxes.forEach(function(b){b.addEventListener('change',function(){state[b.id]=b.checked;save();render();});});
+  document.getElementById('reset').addEventListener('click',function(){state={};save();render();});
+  render();
+
+  document.querySelectorAll('.code button').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var pre=btn.parentNode.querySelector('pre');
+      var done=function(){btn.textContent='Copiado';setTimeout(function(){btn.textContent='Copiar'},1600)};
+      var fallback=function(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selecionado';};
+      try{navigator.clipboard.writeText(pre.textContent).then(done,fallback)}catch(e){fallback()}
+    });
+  });
+})();
+</script>

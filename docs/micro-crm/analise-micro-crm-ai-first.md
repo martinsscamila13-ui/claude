@@ -1,6 +1,8 @@
 # Micro-CRM AI-first: análise e arquitetura recomendada
 
 > Para: Camila Martins Finger (mentorias Método Lucro Anti-Exaustão®, Programa de Aceleração, O MAPA)
+> Decisões (18/10): WhatsApp Business · Instagram profissional · painel no Grok Bot · Galaxy Tab S7 (Android) · WhatsApp direto na Meta, sem BSP.
+> Guia de implantação passo a passo: artefato "Micro-CRM da Camila". Runbook do WhatsApp: [`whatsapp-meta-direto.md`](whatsapp-meta-direto.md).
 > Data da pesquisa: 18/10/2026. Preços e recursos de terceiros mudam rápido: confirme nos links antes de contratar.
 
 ---
@@ -10,7 +12,7 @@
 1. **O Grok Bot não recebe mensagens, mas é forte como "gerente comercial".** Ele roda num computador
    persistente na nuvem e cumpre rotinas agendadas. Tem conectores para Gmail, Google Calendar,
    Drive/Docs/Sheets e Notion, aceita **servidores MCP próprios** e gera documentos e planilhas.
-   O app dele roda no iPad, com voz. Por outro lado, a documentação não traz nenhuma integração com
+   O app dele roda no Android (Galaxy Tab S7), com voz. Por outro lado, a documentação não traz nenhuma integração com
    WhatsApp, Instagram ou Telegram, não há webhook de entrada nem processo servidor, e ele não entra
    em chamada de vídeo. Por isso ele fica com a **análise e a rotina**, e a **coleta** fica com outro
    componente.
@@ -26,7 +28,7 @@
    conservadora no CRM e cliente achado pelo link do Meet (seção 4).
 5. **Arquitetura:** `WhatsApp/Instagram/Meet → n8n (coleta + regras fixas) → Notion (CRM) ⇄ Grok Bot
    (análise, briefings, follow-ups, preparação e pós-reunião)`. Nessa versão, você conversa com o CRM
-   **pelo app do Grok Bot no iPad**. O Telegram fica como alternativa sem assinatura.
+   **pelo app do Grok Bot no Galaxy Tab S7**. O Telegram fica como alternativa sem assinatura.
 
 ---
 
@@ -95,7 +97,7 @@ ensinada **gravando você fazendo a tarefa no navegador** (até 10 min).
 | **Arquivos de saída** | Documento com fontes, planilha com fórmulas, apresentação com notas, pasta com prints. Anexos de até 25 MB (áudio incluído) | Relatório semanal, análise de objeções, proposta personalizada em rascunho |
 | **Memória** | Preferências, papel e resumo de trabalhos anteriores, por Bot | Ele aprende os seus estágios, o seu tom e as suas regras |
 | **Vários Bots** | Até 6 Bots num grupo, um passando trabalho ao outro | Ex.: "Pesquisadora" + "Gerente comercial" (ver 3.4) |
-| **App no iPad** | iPadOS 18+, ditado, chat de voz, memo de voz do Bot, foto e arquivos, aprovações, notificação push quando termina ou precisa de você. Editar rotinas só pelo desktop | É a sua "interface" do CRM |
+| **App Android (Tab S7)** | Android 9+, ditado, chat de voz, memo de voz do Bot, foto e arquivos, aprovações, notificação push quando termina ou precisa de você. Editar rotinas só pelo desktop | É a sua "interface" do CRM |
 | **Envio** | E-mail e Slack com cartão "Enviar / Descartar". **Nada de WhatsApp** | Follow-ups ficam como rascunho para você copiar |
 | **Aprovações** | Regras "Pergunte antes" (sempre vencem) e "Permita automaticamente" (com revisão por modelo), "Take over" para senhas e 2FA, "Stop now" | "Pergunte antes" para enviar, apagar, mudar estágio para Ganho/Perdido |
 | **Reuniões de vídeo** | ❌ Não entra. Só faz chat de voz com você | O bot do Meet tem que ser outro (Recall) |
@@ -224,7 +226,7 @@ n8n: regras locais (palavras de objeção/compra) + LLM rápido (Grok API ou Cla
 
 ```
  WhatsApp Business (seu celular/tablet)        Instagram (conta profissional)
-        │  Coexistence (BSP oficial)                   │  Instagram API (DM webhooks)
+        │  Coexistence (app Meta próprio)              │  Instagram API (DM webhooks)
         └──────────────┬───────────────────────────────┘
                        ▼
                n8n (orquestrador)  ◄──── Google Calendar (reuniões com link do Meet)
@@ -248,7 +250,7 @@ n8n: regras locais (palavras de objeção/compra) + LLM rápido (Grok API ou Cla
         briefings · follow-ups em rascunho · preparo e pós-call · relatórios
                        │
                        ▼
-              Você, no app do Grok Bot no iPad (voz, push, aprovações)
+              Você, no app do Grok Bot no Tab S7 (voz, push, aprovações)
               (alternativa sem assinatura: bot do Telegram ligado ao n8n)
 ```
 
@@ -265,7 +267,7 @@ n8n: regras locais (palavras de objeção/compra) + LLM rápido (Grok API ou Cla
 
 | Opção | Como funciona | Risco | Custo | Recomendação |
 |---|---|---|---|---|
-| **Coexistence (oficial)** | Você conecta o número do **WhatsApp Business** a um BSP (provedor oficial Meta) e segue usando o app normalmente. Mensagens recebidas chegam pelo webhook `messages`; as **que você envia pelo celular** chegam como `smb_message_echoes`. Há sincronização inicial do histórico | Baixo: é o caminho oficial | BSP de ~US$ 0 a 50/mês. Só receber não gera cobrança por mensagem da Meta | ✅ **Usar** |
+| **Coexistence (oficial)** | Você conecta o número do **WhatsApp Business** à Cloud API, com um **app próprio no portfólio da Meta** (decisão: sem BSP; runbook em `whatsapp-meta-direto.md`) ou por um BSP, e segue usando o app normalmente. Mensagens recebidas chegam pelo webhook `messages`; as **que você envia pelo celular** chegam como `smb_message_echoes`. Há sincronização inicial do histórico | Baixo: é o caminho oficial | App próprio: US$ 0 (pode exigir virar Tech Provider: verificação + App Review). BSP: ~US$ 12–50/mês. Só receber não gera cobrança por mensagem da Meta | ✅ **Usar** |
 | Evolution API / Baileys | Simula o WhatsApp Web como "aparelho conectado" | Médio a alto: viola os termos, pode banir o número sem recurso | Servidor ~US$ 5–10/mês | ⚠️ Só se o seu número for WhatsApp **pessoal** e você aceitar o risco. Use somente leitura e nunca envio em massa |
 | Exportar conversa manualmente | "Exportar conversa" → arquivo .txt → pasta no Drive → n8n processa | Zero | Zero | Plano B para importar o histórico antigo |
 
@@ -386,7 +388,7 @@ atrasados · taxa call→proposta→ganho · motivos de perda · faturamento pre
 
 Você **escolhe um dos dois** como "painel". Fazer os dois duplica o trabalho.
 
-| Critério | **Grok Bot** (app no iPad) | **Telegram** (bot próprio ligado ao n8n) |
+| Critério | **Grok Bot** (app no Tab S7) | **Telegram** (bot próprio ligado ao n8n) |
 |---|---|---|
 | Custo | assinatura Cursor/SuperGrok (~US$ 20–30+/mês, uso semanal) | grátis (só a LLM via API) |
 | Conversa livre e com memória | ✅ excelente, inclusive por voz | ⚠️ limitada ao que você programar |
@@ -414,7 +416,7 @@ os **alertas urgentes por push do n8n** (Telegram ou e-mail) como rede de segura
    - domingo 18h: relatório da semana + objeções mais frequentes → ideias de conteúdo para o Instagram
 5. **Tarefas pontuais:** "Analise as conversas exportadas e as transcrições em /workspace e escreva o
    playbook de vendas da mentoria" (seção 4.3). "Pesquisa a @fulana."
-6. **No dia a dia, pelo iPad:** "como está meu pipeline?", "prepara a call das 15h", "registra:
+6. **No dia a dia, pelo Tab S7:** "como está meu pipeline?", "prepara a call das 15h", "registra:
    a Ana vai falar com o sócio e me dá retorno sexta" (por voz).
 
 ### No Telegram (se escolher o caminho sem assinatura, ou só para alertas)
@@ -440,7 +442,7 @@ Bot próprio criado no @BotFather e ligado ao n8n:
 | **1. CRM no Notion** | Bancos Leads, Atividades, Interações e Reuniões + quadro kanban | 1 dia | já incluso no Notion |
 | **2. n8n + painel** | n8n + MCP `crm-camila`; Grok Bot "Gerente Comercial" (ou Telegram) com briefing | 1–2 dias | n8n cloud ~€20–24 ou VPS ~US$ 6 · Grok Bot ~US$ 20–30+ |
 | **3. Instagram** | App Meta + webhook de DM → leads automáticos | 1 dia | grátis |
-| **4. WhatsApp (Coexistence)** | BSP + webhooks + importação do histórico | 1–2 dias | BSP US$ 0–50 |
+| **4. WhatsApp (Coexistence)** | App Meta próprio + Embedded Signup + webhooks + histórico (`whatsapp-meta-direto.md`) | 1–2 dias (+ App Review ~24h se exigido) | US$ 0 |
 | **5. Cérebro LLM** | Extração, estágios, cadências e rascunhos no seu tom | 2–3 dias + ajuste fino por 2 semanas | LLM US$ 5–20 |
 | **6. Google Meet** | Bot de reunião via Calendar + resumo no lead | 1 dia | ~US$ 0,65 por reunião |
 | **7. Playbook** | Grok Bot analisa o histórico de conversas e calls → `playbook_mentoria.md` | 1 tarefa | incluso |
