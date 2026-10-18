@@ -7,23 +7,26 @@
 
 ## 1. Resumo executivo
 
-1. **O Grok Bot não consegue ser o CRM inteiro sozinho.** Ele roda num computador na nuvem e
-   cumpre rotinas agendadas, mas a documentação oficial não traz nenhuma integração com WhatsApp,
-   Instagram, Telegram ou webhooks de entrada, e ele não entra em chamadas de vídeo. Ele pode ser o
-   **analista** do CRM (rotinas diárias, revisão de pipeline, rascunhos de follow-up), não o
-   **coletor** de mensagens.
+1. **O Grok Bot não recebe mensagens, mas é forte como "gerente comercial".** Ele roda num computador
+   persistente na nuvem e cumpre rotinas agendadas. Tem conectores para Gmail, Google Calendar,
+   Drive/Docs/Sheets e Notion, aceita **servidores MCP próprios** e gera documentos e planilhas.
+   O app dele roda no iPad, com voz. Por outro lado, a documentação não traz nenhuma integração com
+   WhatsApp, Instagram ou Telegram, não há webhook de entrada nem processo servidor, e ele não entra
+   em chamada de vídeo. Por isso ele fica com a **análise e a rotina**, e a **coleta** fica com outro
+   componente.
 2. **A coleta tem que ser feita por vias oficiais.** WhatsApp via *Coexistence* (você continua usando
    o app WhatsApp Business no celular/tablet, e cada mensagem recebida ou enviada chega por webhook);
-   Instagram via *Instagram API with Instagram Login* (webhook de DMs).
+   Instagram via *Instagram API with Instagram Login* (webhook de DMs). Quem recebe é o **n8n**.
 3. **O "CRM sem interface" fica no Notion, que você já usa.** Um banco de dados de Leads com
-   visualização em quadro é o kanban. A conversa com o CRM acontece por um **bot no Telegram**
-   (briefing diário, alertas de follow-up e comandos).
+   visualização em quadro é o kanban. O Grok Bot lê e escreve nele pelo conector.
 4. **Para o Google Meet, use um bot que entra na reunião como participante** (Recall.ai ou Meeting
-   BaaS, por volta de US$ 0,50–0,70 por reunião). Como o bot roda no servidor, funciona mesmo você
-   estando no app do Meet no tablet. Se o seu Google Workspace tiver o Gemini "Anotações por mim",
-   essa é a alternativa sem custo extra.
-5. **Arquitetura:** `WhatsApp/Instagram/Meet → n8n (orquestrador) → LLM (Grok API ou Claude) →
-   Notion (CRM) → Telegram (você)`. O Grok Bot fica opcional, como camada de rotinas e análise.
+   BaaS, por volta de US$ 0,50–0,70 por reunião). Ele funciona com você no app do Meet no tablet. O
+   copiloto ao vivo da tecpet (extensão do Chrome) **não roda no tablet**, mas quase todo o desenho
+   dele pode ser reaproveitado: playbook tirado de dados reais, três camadas de decisão, gravação
+   conservadora no CRM e cliente achado pelo link do Meet (seção 4).
+5. **Arquitetura:** `WhatsApp/Instagram/Meet → n8n (coleta + regras fixas) → Notion (CRM) ⇄ Grok Bot
+   (análise, briefings, follow-ups, preparação e pós-reunião)`. Nessa versão, você conversa com o CRM
+   **pelo app do Grok Bot no iPad**. O Telegram fica como alternativa sem assinatura.
 
 ---
 
@@ -59,48 +62,165 @@ faz isso bem em português sobre WhatsApp pessoal. Montar o seu sai mais barato 
 
 ---
 
-## 3. Grok Bot: o que ele faz e o que não faz
+## 3. Grok Bot: pesquisa aprofundada
 
-Fonte: documentação oficial ([overview](https://docs.x.ai/grok-bot/overview),
-[FAQ](https://docs.x.ai/grok-bot/faq), [rotinas](https://docs.x.ai/grok-bot/skills-routines-and-automations),
-[computador e apps](https://docs.x.ai/grok-bot/computer-and-apps),
-[aprovações e privacidade](https://docs.x.ai/grok-bot/approvals-security-and-privacy)).
+Fontes: a documentação oficial (overview, FAQ, rotinas, computador e apps, bots, arquivos, notificações,
+mobile, team bots, aprovações, @bot no X, planos no Cursor), o anúncio da xAI e análises independentes
+(Flavio Copes, Vellum, Composio, RohitAI, AlphaSignal, Jay Mount, Agent Finder). Links no fim.
 
-**O que é:** agente da xAI, em beta desde 11/08/2026. Cada "Bot" é um colega de IA com nome, função
-e memória, e trabalha num **computador persistente na nuvem** (navegador, arquivos e terminal). Ele
-continua trabalhando com o app fechado. Funciona no Mac, Windows, Linux, iPhone/iPad e Android.
-Vem incluído nos planos pagos do Cursor ou pode ser ligado a uma assinatura SuperGrok / Plus / Heavy.
-A cobrança é por uso semanal, com uso extra opcional.
+> **Nível de evidência:** o produto está em **beta desde 11/08/2026**. Não encontrei nenhum teste
+> independente, feito na prática, de Grok Bot com CRM. As análises são leitura de documentação ou
+> relatos isolados, e as fontes discordam sobre preços. Trate o que segue como "documentado", não
+> como "comprovado".
 
-| Capacidade | Situação | Relevância para o CRM |
+### 3.1 O que é
+
+Agente da xAI, operado junto com o Cursor. Cada **Bot** é um "colega de IA" com nome, função e memória
+própria. Todos os Bots da sua conta compartilham **um computador na nuvem** (navegador, terminal e
+arquivos em `/workspace`) que continua trabalhando com o app fechado. Você configura **conversando**
+("Setup is a message, not a workflow builder"), por texto, ditado ou chat de voz. Quando um processo
+dá certo, você pede para salvá-lo como **skill** e agendá-lo como **rotina**. Uma skill também pode ser
+ensinada **gravando você fazendo a tarefa no navegador** (até 10 min).
+
+### 3.2 Capacidades relevantes para o seu CRM
+
+| Capacidade | O que a documentação diz | Uso no seu caso |
 |---|---|---|
-| Rotinas agendadas ("todo dia útil às 8h") | ✅ até 50 por Bot, intervalo mínimo de 5 min | Briefing diário, revisão de follow-ups, relatório semanal |
-| Gatilhos por evento | ⚠️ só Slack e GitHub documentados | Não recebe WhatsApp, Instagram nem webhook |
-| Conectores | ⚠️ lista não publicada; exemplos: Slack, GitHub, X, Trello, "um CRM" | Não há Google Calendar, Notion, WhatsApp, Instagram ou Telegram documentados. Ele usaria o **navegador** para acessá-los |
-| Uso de navegador ("computer use") | ✅ | Poderia abrir o Notion ou o WhatsApp Web, mas veja os riscos abaixo |
-| Memória | ✅ preferências, papel e resumos de trabalhos anteriores | Lembra as suas regras de CRM |
-| Enviar e-mail/Slack | ✅ com a sua revisão antes | Não envia WhatsApp |
-| Conversar via Telegram/WhatsApp | ❌ não documentado | Você fala com ele pelo app próprio (no tablet, inclusive) ou marcando @bot no X |
-| Entrar em reunião de vídeo | ❌ só existe chat de voz com você | Não serve para o Meet |
-| Aprovações | ✅ regras "Pergunte antes" e "Permita automaticamente", botão "Stop now" | Bom para garantir que ele não mande nada sozinho |
-| Privacidade | ⚠️ exige armazenamento em nuvem (Cursor). Todos os Bots compartilham o mesmo computador | Conversas de clientes ficariam na nuvem do Cursor/xAI: atenção à LGPD |
+| **Rotinas agendadas** | Até 50 por Bot, intervalo mínimo de 5 min, fuso configurável. Cada execução consome uso, e uma rotina a cada 15 min roda 96×/dia | Briefing 7h30, varredura de follow-ups a cada 1–2h, relatório de domingo |
+| **Gatilhos por evento** | Documentados: mensagem no Slack e eventos do GitHub. Segundo a AlphaSignal (não confirmado na doc), também **e-mail que chega a um alias** (`voce+crm@…`) | **Gancho importante:** o n8n pode mandar um e-mail para o alias quando uma conversa nova fechar, e esse e-mail dispara a rotina do Bot. Validar no beta |
+| **Conectores** | Citados em fontes diferentes: Gmail, Google Calendar, Drive, Docs, Sheets, Slides, Notion, Outlook/Teams, Salesforce, Slack, Trello, X, Stripe, Plaid… Há um marketplace aberto a terceiros | Notion (CRM), Calendar (reuniões), Gmail (propostas e contratos), Drive (contratos e transcrições), Sheets (relatórios) |
+| **MCP próprio** | "Custom MCP server, Remote HTTPS" (precisa estar acessível publicamente). Composio é um plugin com mais de 1.000 apps | O **n8n expõe o seu CRM como ferramentas MCP**: `conversas_novas`, `buscar_lead`, `atualizar_lead`, `criar_atividade`. Mais confiável que clicar em telas |
+| **Uso de navegador** | Para sites sem conector. Mais frágil: CAPTCHAs, sessões que expiram, sites que bloqueiam IP de nuvem, ação que "parece feita" sem ter sido | Pesquisa de leads (Instagram público, site). **Evitar** WhatsApp Web |
+| **Terminal** | Existe no computador da nuvem | Scripts de análise pontuais. A doc **não** prevê servidor ou ouvinte rodando |
+| **Arquivos de saída** | Documento com fontes, planilha com fórmulas, apresentação com notas, pasta com prints. Anexos de até 25 MB (áudio incluído) | Relatório semanal, análise de objeções, proposta personalizada em rascunho |
+| **Memória** | Preferências, papel e resumo de trabalhos anteriores, por Bot | Ele aprende os seus estágios, o seu tom e as suas regras |
+| **Vários Bots** | Até 6 Bots num grupo, um passando trabalho ao outro | Ex.: "Pesquisadora" + "Gerente comercial" (ver 3.4) |
+| **App no iPad** | iPadOS 18+, ditado, chat de voz, memo de voz do Bot, foto e arquivos, aprovações, notificação push quando termina ou precisa de você. Editar rotinas só pelo desktop | É a sua "interface" do CRM |
+| **Envio** | E-mail e Slack com cartão "Enviar / Descartar". **Nada de WhatsApp** | Follow-ups ficam como rascunho para você copiar |
+| **Aprovações** | Regras "Pergunte antes" (sempre vencem) e "Permita automaticamente" (com revisão por modelo), "Take over" para senhas e 2FA, "Stop now" | "Pergunte antes" para enviar, apagar, mudar estágio para Ganho/Perdido |
+| **Reuniões de vídeo** | ❌ Não entra. Só faz chat de voz com você | O bot do Meet tem que ser outro (Recall) |
+| **Telegram / WhatsApp / Instagram / webhook** | ❌ Não documentados. A Vellum afirma: "no reach through email, Slack, Telegram, or phone" | Coleta via n8n |
 
-**Sobre deixar o Grok Bot ler o WhatsApp Web:** é tecnicamente possível (ele mantém sessões
-de navegador), mas **não recomendo**. A sessão cai, a leitura por tela é frágil e lenta,
-automatizar o WhatsApp Web viola os termos do WhatsApp (risco de bloqueio do número) e todo o
-histórico das clientes passa por um computador de terceiros. Use isso no máximo como teste.
+### 3.3 Limites e riscos
 
-**Comunidade:** existe um projeto não oficial
-([grok-telegram-bot](https://github.com/artickc/grok-telegram-bot)) que controla o *Grok Build CLI*
-pelo Telegram. Ele não é o Grok Bot, é voltado para programação e não serve de base para um CRM.
+- **Não determinístico:** o Bot planeja cada execução do zero. "Na segunda ele pula o contato que já
+  está na cadência; na terça, com uma visão um pouco diferente do CRM, talvez não" (Jay Mount).
+  ➜ **Regras com data e estágio ficam no n8n (código fixo). O Bot fica com o julgamento.**
+- **Um computador para todos os Bots:** os logins e arquivos são compartilhados. Um Bot não é
+  fronteira de segurança, e uma página com *prompt injection* lida por um Bot pode afetar outro
+  (RohitAI: "one blast radius"). ➜ Não dê ao Bot acesso a banco/financeiro na mesma conta do CRM.
+- **Privacidade:** exige armazenamento na nuvem do Cursor, as gravações de ações ficam 90 dias e a
+  xAI não publica o prazo de retenção da memória. ➜ Leve **resumos** ao Bot, não o histórico
+  bruto das clientes (LGPD).
+- **Uso semanal:** quem roda muitas tarefas relata travar no meio quando o limite semanal acaba
+  (Composio). ➜ Rotinas espaçadas e enxutas.
+- **Beta:** recursos e nomes mudam toda semana.
 
-**Veredito:** use o Grok Bot (se quiser) como **"gerente de pipeline"**, com rotinas que leem o
-Notion e te entregam análises. A coleta e o preenchimento ficam no n8n + LLM via API (a própria
-API do Grok serve, com function calling).
+### 3.4 Preço (as fontes divergem)
+
+O acesso vem incluso no Cursor Pro (~US$ 20/mês), Pro+ (~US$ 60), Ultra (~US$ 200) e Teams (US$ 40 ou 120 por
+pessoa), e dá para ligar uma assinatura SuperGrok (~US$ 30) / Plus / Heavy ou X Premium+. O uso do Bot é
+**semanal e separado** do uso do chat, com consumo extra sob demanda opcional. Há um teste grátis com
+crédito de 7 dias. Os valores vêm de blogs de consultoria (set/2026), e a xAI não publica preço
+unitário. ➜ Para começar, o **plano mais barato com teste** basta: o volume de uma mentora é pequeno.
+
+### 3.5 Desenho com Grok Bot: os "Bots" da Camila
+
+| Bot | Função | Rotinas e gatilhos | Ferramentas |
+|---|---|---|---|
+| **Gerente Comercial** (principal) | Mantém o pipeline vivo | 7h30 briefing do dia · a cada 2h (8h–20h) processa conversas novas · domingo 18h relatório | MCP do CRM (n8n), Notion, Calendar, Gmail |
+| **Preparadora de Reuniões** | Antes de cada call: ficha da lead, dores, histórico, roteiro de diagnóstico personalizado. Depois: resumo, próximos passos, rascunho de proposta | 1h antes de cada evento com link do Meet · gatilho por e-mail quando a transcrição chega | Calendar, Drive (transcrições), Notion |
+| **Pesquisadora** (opcional) | Enriquece leads novos: nicho, porte, presença digital | Sob demanda ("pesquisa a @fulana") | Navegador (Instagram e site públicos) |
+
+Instrução inicial para o Bot principal (cole no chat dele):
+
+> Você é a gerente comercial da Camila Martins Finger (mentorias Método Lucro Anti-Exaustão®,
+> Programa de Aceleração, O MAPA, Comunidade Impulso). O CRM fica no Notion, banco "Leads",
+> com os estágios [lista da seção 6]. Use as ferramentas do MCP "crm-camila" para ler as conversas novas.
+> Para cada lead: atualize o resumo vivo, sugira o estágio com o motivo e a evidência (trecho e data),
+> crie uma Atividade de follow-up com um rascunho de mensagem no tom da Camila. **Nunca envie
+> mensagem para ninguém.** Mudanças para Ganho/Perdido ou para trás: pergunte antes. Às 7h30
+> me mande: follow-ups de hoje, calls de hoje com resumo e leads quentes sem resposta há mais de 24h.
+
+### 3.6 O que **não** fazer com o Grok Bot
+
+- Ler o WhatsApp Web pelo navegador do Bot: viola os termos do WhatsApp, a sessão cai e o
+  histórico das clientes vai para a nuvem de terceiros.
+- Deixar o Bot **calcular datas de follow-up ou mover estágios sozinho** sem regra fixa por trás,
+  por causa da variação de uma execução para outra.
+- Usar o Bot como **coach ao vivo** durante a call: ele é um agente que leva de segundos a minutos,
+  e o coaching ao vivo pede respostas em menos de 10 s (seção 4).
+- Usar o mesmo computador do Bot para logins financeiros.
+
+### 3.7 Alternativas não oficiais
+
+O projeto da comunidade [grok-telegram-bot](https://github.com/artickc/grok-telegram-bot) controla o
+*Grok Build CLI* (programação) pelo Telegram, **não** o Grok Bot. A API do Grok (modelos 4.x, com
+function calling e MCP remoto) pode ser o "cérebro" do n8n sem o Grok Bot.
 
 ---
 
-## 4. Arquitetura recomendada
+## 4. O copiloto da tecpet: o que dá para trazer para a Camila
+
+### 4.1 O que ele é (resumo)
+
+Extensão do Chrome que **ouve a demo no Google Meet** (captura de áudio WebRTC + reconhecimento de
+voz do Chrome), **coacha ao vivo** (perguntas SPIN, objeções, concorrentes, aviso de monólogo,
+roteiro 45+15), **preenche a apresentação comercial** e no fim **grava a demo no Bitrix24**. A
+infraestrutura é n8n (4 fluxos) + LLM (GLM) + base de conhecimento. O playbook foi tirado de **277 call
+reviews reais**.
+
+### 4.2 Por que não dá para copiar como está
+
+| Ponto do copiloto | Situação da Camila |
+|---|---|
+| Extensão do Chrome no computador do closer | Você usa o **app do Meet no tablet**: extensões não rodam lá |
+| Captura de áudio por ganchos no Meet (quebrou 4 vezes em 7 dias; os testes simulados passavam e a call real falhava) | Um **bot participante** (Recall) recebe o áudio por API oficial: não depende do DOM do Meet |
+| Bitrix24 | Notion |
+| Vários closers, telemetria por vendedor | Uma pessoa só |
+| Captura por aba não dispara o aviso de gravação do Meet (risco LGPD) | O bot aparece na sala, o que é mais transparente |
+
+### 4.3 O que vale reaproveitar (e como)
+
+| Ideia do copiloto | Versão para a Camila |
+|---|---|
+| **Playbook tirado de dados reais** (277 calls → "a trava é a implantação", "falta perguntar o custo da dor em R$") | O Grok Bot analisa o seu histórico: conversas exportadas do WhatsApp + transcrições das últimas calls de diagnóstico (ganhas e perdidas) → `playbook_mentoria.md` com objeções reais, sinais de compra, perguntas que mais convertem e motivos de perda. É uma tarefa ideal para ele (arquivos em `/workspace`, saída em documento) |
+| **Três camadas de decisão** (regra local imediata → IA 4–9 s → base de conhecimento 20–60 s) | **Regras fixas no n8n** (datas, cadências, alertas) → **LLM via API** (extração por conversa) → **Grok Bot** (análise, preparação, relatórios) |
+| **Cliente achado pelo link do Meet**, não digitado | O evento do Calendar com o link do Meet é ligado ao lead. A transcrição cai no lead certo automaticamente |
+| **Preenchimento conservador**: só campo vazio, modo `simular` antes de gravar | A IA só preenche campo vazio. Mudança de estágio vira **sugestão** que você confirma |
+| **Prompt e playbook como arquivo versionado** | Ficam neste repositório (`docs/micro-crm/`), e o fluxo do n8n e o Bot leem dali |
+| **Roteiro de call que se marca sozinho** + **pergunta do "custo da dor em reais"** | Roteiro da call de diagnóstico (SPIN adaptado ao método): Situação (faturamento, equipe) → Problema (exaustão, lucro) → **Implicação (quanto custa em R$ e em horas por mês)** → Necessidade → apresentação do programa → oferta. O pós-call mede o % do roteiro coberto |
+| **Gravação no CRM ao fim da call**: resumo, dores, objeções, desfecho, % de fala | Pós-reunião no Notion: resumo, dores, objeções, compromissos, próximo passo, data de follow-up, **% de fala sua × dela** |
+| **Telemetria sem conteúdo** | Log simples no n8n: mensagens recebidas, conversas processadas, erros. Serve para saber se a coleta parou |
+| **Lições de integração** (limite de requisições do Bitrix, retentativas, idempotência) | A API do Notion tem limite (~3 req/s): espaçar as chamadas e tentar de novo. Gravar por ID da mensagem para não duplicar |
+
+### 4.4 Coaching **ao vivo** no tablet: é possível?
+
+Sim, com outro caminho técnico e com ressalvas:
+
+```
+Meet (você no tablet) ← bot Recall na sala
+        │ áudio em tempo real (websocket ~200 ms)
+        ▼
+Transcrição streaming pt-BR (Deepgram/AssemblyAI/Gladia via Recall)
+        ▼
+n8n: regras locais (palavras de objeção/compra) + LLM rápido (Grok API ou Claude)
+        ▼
+"Sussurro" no **celular** ao lado (Telegram/push) ou numa página aberta em outra janela
+```
+
+- O modo de baixa latência nativo do Recall é **só em inglês**. Para português é preciso um provedor de
+  streaming (verificar o suporte a pt-BR e o custo, de US$ 0,12 a 0,15/h segundo o próprio documento da tecpet).
+- A latência total fica em ~3–10 s, suficiente para cartões ("ela citou preço: pergunte o custo da
+  dor"), lenta para frases prontas.
+- **Recomendação:** começar **sem** o ao vivo (só pré e pós-call, que dão 80% do valor) e acrescentar o
+  sussurro na fase final, se você sentir falta. Se em algum momento você fizer as calls de venda no
+  **notebook com Chrome**, a própria extensão da tecpet pode ser adaptada (trocar Bitrix por Notion
+  e o playbook), mas a lição registrada lá é que a captura de áudio do Meet é a parte que mais quebra.
+
+---
+
+## 5. Arquitetura recomendada
 
 ```
  WhatsApp Business (seu celular/tablet)        Instagram (conta profissional)
@@ -120,14 +240,28 @@ API do Grok serve, com function calling).
                        │
                        ▼
                  NOTION (CRM): Leads · Atividades · Interações · Reuniões
+                       ▲
+                       │ conector Notion + MCP "crm-camila" (exposto pelo n8n)
+                       │ gatilho: rotina agendada ou e-mail no alias (n8n avisa)
+                       ▼
+        GROK BOT "Gerente Comercial" (computador na nuvem)
+        briefings · follow-ups em rascunho · preparo e pós-call · relatórios
                        │
-          ┌────────────┴─────────────┐
-          ▼                          ▼
-   Bot do Telegram (você)     Grok Bot (opcional): rotinas de análise
-   briefing, alertas, comandos
+                       ▼
+              Você, no app do Grok Bot no iPad (voz, push, aprovações)
+              (alternativa sem assinatura: bot do Telegram ligado ao n8n)
 ```
 
-### 4.1 WhatsApp: coleta somente leitura
+**Quem faz o quê:**
+
+| Componente | Responsabilidade | Por quê |
+|---|---|---|
+| n8n | Receber webhooks (WhatsApp, Instagram, Recall), gravar mensagens, **regras fixas** (datas de cadência, alertas de "sem resposta há 4h"), expor o MCP | O Grok Bot não recebe webhooks, e regras precisam ser determinísticas |
+| LLM via API | Extração estruturada por conversa (campos, estágio sugerido, evidência) | Barato, rápido, previsível, com JSON validado |
+| Notion | Fonte da verdade e kanban | Você já usa, e funciona no tablet |
+| Grok Bot | Julgamento e preparo: briefing, priorização, rascunhos no seu tom, pré e pós-call, análise semanal, pesquisa de leads | É onde um agente com memória e conectores rende mais |
+
+### 5.1 WhatsApp: coleta somente leitura
 
 | Opção | Como funciona | Risco | Custo | Recomendação |
 |---|---|---|---|---|
@@ -143,7 +277,7 @@ Grave tudo de forma idempotente pelo ID da mensagem, porque o histórico chega c
 > **Decisão sua:** o número que você usa com clientes é WhatsApp **pessoal** ou **Business**? Se for
 > pessoal, migrar para o app Business (mantém número e conversas) é o que destrava o caminho oficial.
 
-### 4.2 Instagram
+### 5.2 Instagram
 
 - Conta **profissional** (Criadora ou Empresa) + app no Meta for Developers com *Instagram API with
   Instagram Login* e a permissão `instagram_business_manage_messages`. Para a sua própria conta basta
@@ -155,7 +289,7 @@ Grave tudo de forma idempotente pelo ID da mensagem, porque o histórico chega c
 - O `@` da pessoa já indica o nicho, e a LLM pode usar a bio para enriquecer o lead (como na sua
   skill do Notion).
 
-### 4.3 Google Meet com usuário-bot
+### 5.3 Google Meet com usuário-bot
 
 | Opção | Funciona no tablet? | Custo | Observações |
 |---|---|---|---|
@@ -168,7 +302,7 @@ Após a reunião, a LLM gera: resumo, dores citadas, objeções, compromissos ("
 meu marido"), próximo passo e **data de follow-up**, e anexa tudo ao lead no Notion.
 **Ética/LGPD:** avise no convite que a sessão é gravada para anotações ("Notas por IA").
 
-### 4.4 O cérebro (LLM)
+### 5.4 O cérebro (LLM)
 
 - **Quando roda:** não a cada mensagem. Após 30 min sem novas mensagens numa conversa (debounce)
   e após cada reunião. Assim fica barato e com contexto completo.
@@ -184,7 +318,7 @@ meu marido"), próximo passo e **data de follow-up**, e anexa tudo ao lead no No
 
 ---
 
-## 5. Modelo do CRM no Notion
+## 6. Modelo do CRM no Notion
 
 ### Bancos de dados
 
@@ -248,65 +382,75 @@ atrasados · taxa call→proposta→ganho · motivos de perda · faturamento pre
 
 ---
 
-## 6. O que fazer no Telegram e o que fazer no Grok Bot
+## 7. O que fazer pelo Grok Bot e o que fazer pelo Telegram
 
-### Telegram (o seu "painel" diário). Recomendo como interface principal
+Você **escolhe um dos dois** como "painel". Fazer os dois duplica o trabalho.
 
-Bot próprio criado no @BotFather e ligado ao n8n. Funciona no celular e no tablet.
+| Critério | **Grok Bot** (app no iPad) | **Telegram** (bot próprio ligado ao n8n) |
+|---|---|---|
+| Custo | assinatura Cursor/SuperGrok (~US$ 20–30+/mês, uso semanal) | grátis (só a LLM via API) |
+| Conversa livre e com memória | ✅ excelente, inclusive por voz | ⚠️ limitada ao que você programar |
+| Pré e pós-reunião, relatórios em documento/planilha | ✅ nativo | ⚠️ texto simples |
+| Pesquisa de leads na web | ✅ navegador próprio | ❌ |
+| Previsibilidade | ⚠️ varia de uma execução para outra | ✅ sempre igual |
+| Alertas em tempo real ("sem resposta há 4h") | ⚠️ só com rotina ou gatilho por e-mail | ✅ imediato |
+| Maturidade | beta | estável |
+
+**Recomendação:** o **Grok Bot como painel** (é o que você quer usar e é onde está o valor de IA), com
+os **alertas urgentes por push do n8n** (Telegram ou e-mail) como rede de segurança.
+
+### No Grok Bot (configurar conversando, no desktop na 1ª vez)
+
+1. Criar o Bot **"Gerente Comercial"** com a instrução da seção 3.5.
+2. **Conectar apps:** Notion, Google Calendar, Gmail, Google Drive. Adicionar o MCP remoto
+   `crm-camila` (URL do n8n + chave).
+3. **Regras de aprovação:** "Pergunte antes" para enviar e-mail, apagar, mover para Ganho/Perdido
+   e editar mais de 5 leads de uma vez.
+4. **Rotinas:**
+   - 7h30 (seg–sáb): briefing do dia
+   - a cada 2h, das 8h às 20h: processar conversas novas → atualizar leads e criar atividades
+   - 1h antes de cada call com link do Meet: ficha + roteiro de diagnóstico
+   - quando chegar a transcrição (gatilho por e-mail, se disponível; senão, rotina de hora em hora): pós-call
+   - domingo 18h: relatório da semana + objeções mais frequentes → ideias de conteúdo para o Instagram
+5. **Tarefas pontuais:** "Analise as conversas exportadas e as transcrições em /workspace e escreva o
+   playbook de vendas da mentoria" (seção 4.3). "Pesquisa a @fulana."
+6. **No dia a dia, pelo iPad:** "como está meu pipeline?", "prepara a call das 15h", "registra:
+   a Ana vai falar com o sócio e me dá retorno sexta" (por voz).
+
+### No Telegram (se escolher o caminho sem assinatura, ou só para alertas)
+
+Bot próprio criado no @BotFather e ligado ao n8n:
 
 | Comando/automação | O que faz |
 |---|---|
-| ☀️ Briefing 8h (automático) | Follow-ups do dia com rascunhos, calls de hoje com resumo do lead, leads quentes parados |
-| 🔔 Alertas (automático) | "Lead pediu valor e está sem resposta há 4h", "call em 30 min: resumo da Ana" |
-| ✅ Confirmações | "IA quer mover Ana → Proposta enviada [Confirmar] [Corrigir]" |
-| `/hoje` | Agenda + follow-ups |
-| `/lead ana` | Ficha resumida + último contato + próximo passo |
-| `/pipeline` | Contagem por estágio e valor previsto |
+| ☀️ Briefing 8h | Follow-ups do dia com rascunhos, calls de hoje, leads quentes parados |
+| 🔔 Alertas | "Lead pediu valor e está sem resposta há 4h", "call em 30 min" |
+| ✅ Confirmações | "Mover Ana → Proposta enviada? [Confirmar] [Corrigir]" |
+| `/hoje` · `/lead ana` · `/pipeline` | Consultas rápidas |
 | `/nota ana ...` (ou **áudio**) | Registra uma informação. O áudio é transcrito pela LLM |
 | `/ganho ana` · `/perdido ana preço` | Fecha o lead (ganho dispara o onboarding no Notion) |
-| Pergunta livre | "quem está em proposta há mais de uma semana?" |
-| 📊 Relatório de domingo | Métricas da semana |
-
-### Grok Bot (opcional, como "gerente de pipeline")
-
-Se você já tem ou quer assinar o SuperGrok, crie **um Bot "Gerente Comercial"** e configure por
-mensagem (o Grok Bot é configurado conversando):
-
-1. **Rotina diária 7h30:** "Abra o banco Leads no Notion, liste follow-ups vencidos e leads
-   quentes sem contato há mais de 3 dias, e me mande o resumo." (Ele acessa o Notion pelo navegador
-   logado. Faça o login uma vez com o "Take over".)
-2. **Rotina semanal:** análise do funil, motivos de perda e sugestões de conteúdo para o Instagram
-   a partir das objeções mais frequentes.
-3. **Pesquisa de lead sob demanda:** "pesquise o @ dela e o site e me diga o tamanho do negócio".
-4. **Regras de aprovação:** "Pergunte antes" para qualquer envio de mensagem e edição em massa.
-
-**Não use o Grok Bot para:** receber mensagens do WhatsApp/Instagram, entrar no Meet ou ser o
-único lugar onde ficam os dados. Ele não tem gatilhos para isso, e os dados dos clientes ficariam
-num computador de nuvem compartilhado.
-
-> Se o objetivo for **um único assinante e um único lugar**, dá para pular o Grok Bot: o próprio
-> n8n faz as rotinas e manda tudo no Telegram, e a LLM via API (Grok ou Claude) faz a análise.
 
 ---
 
-## 7. Roteiro de implantação
+## 8. Roteiro de implantação
 
 | Fase | Entrega | Esforço | Custo mensal estimado |
 |---|---|---|---|
 | **0. Decisões** | WhatsApp pessoal ou Business; plano do Workspace; Notion como CRM | 1 conversa | — |
 | **1. CRM no Notion** | Bancos Leads, Atividades, Interações e Reuniões + quadro kanban | 1 dia | já incluso no Notion |
-| **2. Telegram + n8n** | Bot, briefing, comandos `/lead` e `/nota` (com áudio) | 1–2 dias | n8n cloud ~€20–24 ou VPS ~US$ 6 |
+| **2. n8n + painel** | n8n + MCP `crm-camila`; Grok Bot "Gerente Comercial" (ou Telegram) com briefing | 1–2 dias | n8n cloud ~€20–24 ou VPS ~US$ 6 · Grok Bot ~US$ 20–30+ |
 | **3. Instagram** | App Meta + webhook de DM → leads automáticos | 1 dia | grátis |
 | **4. WhatsApp (Coexistence)** | BSP + webhooks + importação do histórico | 1–2 dias | BSP US$ 0–50 |
 | **5. Cérebro LLM** | Extração, estágios, cadências e rascunhos no seu tom | 2–3 dias + ajuste fino por 2 semanas | LLM US$ 5–20 |
 | **6. Google Meet** | Bot de reunião via Calendar + resumo no lead | 1 dia | ~US$ 0,65 por reunião |
-| **7. (Opcional) Grok Bot** | Rotinas de análise | 1h | assinatura SuperGrok/Cursor |
+| **7. Playbook** | Grok Bot analisa o histórico de conversas e calls → `playbook_mentoria.md` | 1 tarefa | incluso |
+| **8. (Opcional) Sussurro ao vivo** | Transcrição streaming pt-BR + cartões no celular durante a call | 2–3 dias | ~US$ 0,15/h + LLM |
 
 Total recorrente aproximado: **US$ 30–100/mês**, contra US$ 50–150/usuário/mês de CRMs prontos com IA.
 
 ---
 
-## 8. LGPD e cuidados
+## 9. LGPD e cuidados
 
 - **Base legal:** legítimo interesse/procedimentos preliminares de contrato para leads e execução de
   contrato para clientes. Inclua uma linha na política de privacidade e na bio/link do Instagram.
@@ -319,13 +463,14 @@ Total recorrente aproximado: **US$ 30–100/mês**, contra US$ 50–150/usuário
 
 ---
 
-## 9. Próximos passos práticos para você
+## 10. Próximos passos práticos para você
 
 1. Responder: o WhatsApp de atendimento é **pessoal** ou **Business**? O Instagram é conta **profissional**?
    O seu Google Workspace tem Gemini (Anotações no Meet)?
-2. Validar os **estágios** e as **cadências** das seções 5 e 6 (ajustar nomes ao seu jeito de vender).
-3. Decidir se o Grok Bot entra (opcional) ou se fica tudo em n8n + Telegram.
-4. Começar pela **Fase 1 + 2** (Notion + Telegram): em poucos dias você já tem kanban e briefing,
+2. Validar os **estágios** e as **cadências** das seções 6 e 7 (ajustar nomes ao seu jeito de vender).
+3. Decidir o painel: **Grok Bot** (recomendado; começar pelo teste grátis de 7 dias) ou Telegram.
+   Dá para testar o Grok Bot já: crie o Bot, conecte o Notion e o Calendar e peça o briefing do dia.
+4. Começar pela **Fase 1 + 2** (Notion + painel): em poucos dias você já tem kanban e briefing,
    mesmo antes de ligar WhatsApp/Instagram.
 
 ---
@@ -337,7 +482,18 @@ Total recorrente aproximado: **US$ 30–100/mês**, contra US$ 50–150/usuário
   [computador e apps](https://docs.x.ai/grok-bot/computer-and-apps) ·
   [aprovações e privacidade](https://docs.x.ai/grok-bot/approvals-security-and-privacy) ·
   [@bot no X](https://docs.x.ai/grok-bot/tag-on-x) · [Vellum: breakdown](https://www.vellum.ai/blog/official-grok-bot-breakdown) ·
-  [AlphaSignal: conectores](https://alphasignal.ai/news/xai-s-grok-bot-runs-tasks-3x-faster-and-trades-stocks-on-your-behalf)
+  [AlphaSignal: conectores](https://alphasignal.ai/news/xai-s-grok-bot-runs-tasks-3x-faster-and-trades-stocks-on-your-behalf) ·
+  [bots](https://docs.x.ai/grok-bot/bots) · [arquivos](https://docs.x.ai/grok-bot/files-and-results) ·
+  [notificações](https://docs.x.ai/grok-bot/settings-and-notifications) · [mobile](https://docs.x.ai/grok-bot/mobile) ·
+  [team bots / MCP](https://docs.x.ai/grok-bot/team-bots) · [casos de uso](https://docs.x.ai/grok-bot/use-cases) ·
+  [planos (Cursor)](https://cursor.com/help/grok-bot/plans) · [anúncio xAI](https://x.ai/news/introducing-grok-bot)
+- Análises do Grok Bot: [Flavio Copes](https://flaviocopes.com/grok-bot/) · [Composio](https://composio.dev/content/guide-to-frok-bot) ·
+  [RohitAI: "one blast radius"](https://rohitai.com/blog/xai-grok-bot-always-on-ai-teammates) ·
+  [Jay Mount: GTM e preços](https://jaymountconsulting.com/blog/grok-bot-for-gtm) · [Agent Finder](https://agent-finder.co/reviews/grok-bot) ·
+  [Latent Digital: casos](https://latentdigitalsolutions.com/grok-bot-use-cases/) ·
+  [Whisker Beacon: WhatsApp](https://whiskerbeacon.com/guides/grok-bot-whatsapp-customer-support-workflow/)
+- Recall tempo real: [docs](https://docs.recall.ai/v1.10/docs/real-time-transcription) · [baixa latência](https://www.recall.ai/blog/low-latency-transcription-api)
+- Copiloto tecpet: documento interno `copiloto_estrutura_18out2026.md` (v0.7.3, 18/10/2026)
 - Grok + mensageria: [Blueticks: Grok no WhatsApp](https://blueticks.co/blog/grok-whatsapp) ·
   [Whautomate: termos Meta/IA](https://whautomate.com/integrations/xai-grok) ·
   [Layer3: Grok Telegram bot](https://www.layer3labs.io/guides/grok-telegram-bot) ·
