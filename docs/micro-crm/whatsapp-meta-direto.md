@@ -1,5 +1,9 @@
 # WhatsApp direto na Meta (sem BSP): runbook para o Claude Code local
 
+> Faz parte do [`runbook-projeto-completo.md`](runbook-projeto-completo.md) (fase 5). Valem as regras
+> gerais de lá: pontos de parada 🛑, segredos fora do repositório e registro em `STATUS.md`.
+> Aqui, **[CLAUDE]** significa terminal ou Chrome, conforme o passo.
+
 > **Para quem:** o Claude Code rodando no computador da Camila, com acesso ao n8n dela
 > (`https://crm.seudominio.com.br`). As etapas marcadas **[CAMILA]** são cliques nos painéis da Meta
 > que só a dona da conta pode fazer: o Claude deve parar, explicar o clique e esperar a confirmação.
