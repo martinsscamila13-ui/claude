@@ -15,6 +15,42 @@ def waves(w=900, h=520, n=14, color="#FBF6F1", op=0.55, amp=70, freq=1.25, tilt=
         paths.append(f'<polyline points="{" ".join(pts)}" fill="none" stroke="{color}" stroke-width="{sw}" stroke-opacity="{op}"/>')
     return f'<svg class="waves" width="{w}" height="{h}" viewBox="0 0 {w} {h}">{"".join(paths)}</svg>'
 
+
+def ill(kind):
+    T, S, C, I, L = "#B65F3A", "#F2E1D5", "#FBF6F1", "#272322", "#DCD3C9"
+    if kind == "gcal":
+        cells = "".join(f'<rect x="{30+j*48}" y="{70+i*34}" width="42" height="28" rx="5" fill="{C}" stroke="{L}"/>' for i in range(3) for j in range(5))
+        ev = f'<rect x="30" y="70" width="42" height="28" rx="5" fill="{T}"/><rect x="126" y="104" width="42" height="28" rx="5" fill="{T}"/><rect x="78" y="138" width="42" height="28" rx="5" fill="{I}"/><rect x="222" y="70" width="42" height="62" rx="5" fill="{S}" stroke="{T}"/>'
+        return f'<rect x="20" y="20" width="260" height="160" rx="16" fill="#fff" stroke="{L}" stroke-width="2"/><rect x="20" y="20" width="260" height="40" rx="16" fill="{T}"/><rect x="20" y="44" width="260" height="16" fill="{T}"/><circle cx="60" cy="16" r="6" fill="{I}"/><circle cx="240" cy="16" r="6" fill="{I}"/>{cells}{ev}'
+    if kind == "trello":
+        cols = ""
+        for k,(x,n) in enumerate([(24,3),(116,2),(208,1)]):
+            cols += f'<rect x="{x}" y="22" width="80" height="156" rx="12" fill="{S if k<2 else "#E8D5C4"}"/>' + "".join(f'<rect x="{x+8}" y="{40+c*38}" width="64" height="30" rx="6" fill="#fff"/><rect x="{x+8}" y="{40+c*38}" width="5" height="30" rx="2" fill="{T}"/>' for c in range(n))
+        return cols
+    if kind == "notion":
+        lines = "".join(f'<rect x="70" y="{84+i*22}" width="{170-i*25}" height="8" rx="4" fill="{L}"/><path d="M50 {84+i*22} l8 4 l-8 4z" fill="{T}"/>' for i in range(4))
+        return f'<rect x="30" y="18" width="240" height="164" rx="14" fill="#fff" stroke="{L}" stroke-width="2"/><rect x="50" y="36" width="34" height="34" rx="8" fill="{S}"/><text x="67" y="61" font-family="Gilda" font-size="24" text-anchor="middle" fill="{T}">N</text><rect x="96" y="44" width="130" height="14" rx="7" fill="{I}"/>{lines}'
+    if kind == "agenda":
+        spiral = "".join(f'<circle cx="150" cy="{40+i*20}" r="5" fill="none" stroke="{I}" stroke-width="2"/>' for i in range(7))
+        lines = "".join(f'<rect x="{x}" y="{60+i*20}" width="90" height="4" rx="2" fill="{L}"/>' for x in (45,165) for i in range(5))
+        return f'<path d="M30 30 h110 v150 h-110z" fill="#fff" stroke="{L}" stroke-width="2"/><path d="M160 30 h110 v150 h-110z" fill="#fff" stroke="{L}" stroke-width="2"/><rect x="45" y="40" width="50" height="8" rx="4" fill="{T}"/><rect x="165" y="40" width="50" height="8" rx="4" fill="{T}"/>{lines}{spiral}<path d="M250 20 v40 l8 -8 l8 8 v-40z" fill="{T}"/>'
+    if kind == "planner":
+        days = "".join(f'<rect x="{34+i*34}" y="62" width="28" height="100" rx="6" fill="{S if i%2 else C}" stroke="{L}"/>' for i in range(7))
+        return f'<rect x="20" y="20" width="260" height="160" rx="16" fill="#fff" stroke="{L}" stroke-width="2"/><rect x="34" y="34" width="120" height="12" rx="6" fill="{I}"/>{days}<path d="M254 32 c-6 -10 -20 -4 -14 6 l14 12 l14 -12 c6 -10 -8 -16 -14 -6z" fill="{T}"/>'
+    if kind == "lista":
+        items = ""
+        for i, done in enumerate([1,1,0,0]):
+            y = 46 + i*34
+            box = f'<rect x="52" y="{y}" width="22" height="22" rx="5" fill="{T if done else "#fff"}" stroke="{T}" stroke-width="2"/>'
+            chk = f'<path d="M57 {y+11} l5 5 l9 -10" stroke="#fff" stroke-width="3" fill="none"/>' if done else ""
+            bar = f'<rect x="86" y="{y+7}" width="{150-i*15}" height="8" rx="4" fill="{L if done else I}"/>'
+            items += box + chk + bar
+        return f'<rect x="34" y="18" width="232" height="168" rx="14" fill="#fff" stroke="{L}" stroke-width="2"/><rect x="120" y="10" width="60" height="18" rx="6" fill="{T}"/>{items}'
+    return ""
+
+def tool_card(kind, name, func, use, tip):
+    return f'<div class="tcard"><svg viewBox="0 0 300 200" class="till">{ill(kind)}</svg><span class="tk">{func}</span><h4>{name}</h4><p>{use}</p><p class="tip"><b>Dica:</b> {tip}</p></div>'
+
 SLIDES = []
 def add(html, cls="cream", deco=""):
     SLIDES.append((cls, html, deco))
@@ -36,6 +72,14 @@ def section(num, title, sub):
 <div class="sec"><div class="sec-n">{num}</div><h2 class="sec-t">{title}</h2><p class="sec-s">{sub}</p></div>
 """, "dark nofoot", waves(1100, 520, 18, "#B65F3A", 0.55))
 
+def section_photo(num, title, sub, img):
+    add(f"""
+<div class="secp">
+  <div class="sec"><div class="sec-n">{num}</div><h2 class="sec-t">{title}</h2><p class="sec-s">{sub}</p></div>
+</div>
+<div class="secp-img" style="background-image:url('img/{img}')"></div>
+""", "dark nofoot", "")
+
 def qr_slide(tag, title, steps, foot, qr):
     lis = "".join(f"<li>{s}</li>" for s in steps)
     add(f"""
@@ -52,12 +96,13 @@ def qr_slide(tag, title, steps, foot, qr):
 
 # 1 CAPA
 add("""
-<div class="min-cover">
+<div class="min-cover narrow">
   <div class="mc-top">Gestão do tempo para nutricionistas</div>
   <h1 class="mega">Agenda cheia,<br>vida em equilíbrio</h1>
   <div class="mc-line"></div>
   <div class="mc-name">Camila Martins Finger</div>
 </div>
+<div class="cover-photo" style="background-image:url('img/f_mesa.jpg')"></div>
 """, "terra nofoot", waves(900, 360, 12, "#FBF6F1", 0.22))
 
 # 2
@@ -105,18 +150,23 @@ add("""
 """, "cream ag-notime", waves(700, 380, 12, "#B65F3A", 0.35))
 
 # 7
-section("01", "A rotina da nutri real", "Sozinha, centralizadora e com demanda que não para.")
+section_photo("01", "A rotina da<br>nutri real", "Sozinha, centralizadora e com demanda que não para.", "f_tablet.jpg")
 
 # 8 VOCÊ SE RECONHECE
 add("""
-<h2 class="title">Você se reconhece?</h2>
-<div class="grid3">
-  <div class="tile"><span class="ti">01</span><h4>Faz tudo sozinha</h4><p>Atende, monta plano, responde WhatsApp, posta, cobra e ainda estuda.</p></div>
-  <div class="tile"><span class="ti">02</span><h4>No máximo, uma secretária</h4><p>E mesmo assim tudo passa por você antes de sair.</p></div>
-  <div class="tile"><span class="ti">03</span><h4>“Ninguém faz como eu”</h4><p>Centralizar parece mais rápido. Até virar gargalo.</p></div>
-  <div class="tile"><span class="ti">04</span><h4>Demanda que não para</h4><p>Paciente novo, retorno, dúvida, encaixe, mensagem às 23h.</p></div>
-  <div class="tile"><span class="ti">05</span><h4>Plano feito de madrugada</h4><p>O trabalho “invisível” invade a noite e o fim de semana.</p></div>
-  <div class="tile"><span class="ti">06</span><h4>Pratos caindo</h4><p>Saúde, família, relacionamento, descanso: sempre depois.</p></div>
+<div class="photo-split">
+  <div class="ps-img" style="background-image:url('img/f_estresse.jpg')"></div>
+  <div>
+    <h2 class="title">Você se reconhece?</h2>
+    <ul class="pains">
+      <li><b>Faz tudo sozinha:</b> atende, monta plano, responde WhatsApp, posta, cobra e estuda</li>
+      <li><b>No máximo, uma secretária,</b> e tudo ainda passa por você</li>
+      <li><b>“Ninguém faz como eu”:</b> centralizar parece mais rápido, até virar gargalo</li>
+      <li><b>Demanda que não para:</b> paciente novo, retorno, encaixe, mensagem às 23h</li>
+      <li><b>Plano alimentar de madrugada:</b> o trabalho invisível invade a noite</li>
+      <li><b>Pratos caindo:</b> saúde, família e descanso sempre depois</li>
+    </ul>
+  </div>
 </div>
 """)
 
@@ -126,7 +176,7 @@ day = [("Atendimentos", 6, "t"), ("Planos alimentares", 2.5, "t2"), ("WhatsApp e
 bar = "".join(f'<div class="seg {c}" style="flex:{h}"><b>{h:g}h</b><span>{n}</span></div>' for n, h, c in day)
 add(f"""
 <div class="tag">Exemplo · um dia comum</div>
-<h2 class="title">14 horas trabalhando. 1 hora para você.</h2>
+<h2 class="title">13 horas trabalhando. 1 hora para você.</h2>
 <div class="daybar">{bar}</div>
 <div class="split daynotes">
   <p class="bigserif sm">Quando a agenda é de todo mundo,<br><em>ela não é sua.</em></p>
@@ -135,36 +185,52 @@ add(f"""
 """)
 
 # 10 INIMIGOS
-add("""
-<h2 class="title">O inimigo é o sistema, não você</h2>
-<div class="errs light-on-cream en">
-  <div><span>01</span><p><b>Centralização</b> parece eficiente no começo e vira gargalo.</p></div>
-  <div><span>02</span><p><b>Cultura faz-tudo</b> custa em decisões adiadas.</p></div>
-  <div><span>03</span><p><b>Falta de processos:</b> decidir a mesma coisa toda vez.</p></div>
-  <div><span>04</span><p><b>Gestão por urgência:</b> a urgência come o tempo de planejar.</p></div>
-  <div><span>05</span><p><b>“Ninguém faz tão bem quanto eu”:</b> o custo real dos 20% de diferença.</p></div>
-  <div><span>06</span><p><b>Trabalhar mais = lucrar mais?</b> Existe um ponto em que a curva vira.</p></div>
+mitos = [("“Se eu não fizer, ninguém faz.”","Centralização","Parece eficiente no começo e vira gargalo: o consultório não cresce além das suas horas."),
+         ("“É mais rápido eu mesma fazer.”","Cultura faz-tudo","Rápido hoje, caro amanhã: você paga com decisões adiadas e noites ocupadas."),
+         ("“Cada paciente é único.”","Falta de processos","O paciente é único; o agendamento, o lembrete e o pós-consulta não precisam ser."),
+         ("“Depois eu organizo.”","Gestão por urgência","A urgência come o tempo de planejar, e a falta de plano gera mais urgência."),
+         ("“Mais pacientes, mais lucro.”","Trabalhar mais = lucrar mais","Existe um ponto em que mais horas trazem mais cansaço, não mais lucro.")]
+rows = "".join(f'<div class="mv"><p class="m">{m}</p><span class="arrow">→</span><div><h4>{t}</h4><p>{v}</p></div></div>' for m, t, v in mitos)
+add(f"""
+<div class="photo-split right">
+  <div>
+    <h2 class="title">O inimigo é o sistema</h2>
+    <div class="mitos">{rows}</div>
+  </div>
+  <div class="ps-img" style="background-image:url('img/f_equipe.jpg')"></div>
 </div>
-<p class="note">O problema nunca foi você. <b>É a forma como a rotina foi montada</b> e isso se reorganiza.</p>
 """)
 
-# 11 QUANTO VALE SUA HORA
+# 11 QUANTO VALE SUA HORA (detalhado)
 add("""
-<div class="tag">Exemplo ilustrativo</div>
-<h2 class="title">Quanto vale a sua hora?</h2>
-<div class="calc">
-  <div><span class="v">R$ 12 mil</span><span class="l">faturamento por mês</span></div>
-  <div class="op">÷</div>
-  <div><span class="v">220 h</span><span class="l">horas trabalhadas no mês</span></div>
-  <div class="op">=</div>
-  <div class="hl"><span class="v">R$ 54</span><span class="l">valor da sua hora</span></div>
+<div class="tag">Exemplo ilustrativo · faça com os seus números</div>
+<h2 class="title">Quanto vale a sua hora, de verdade?</h2>
+<div class="hour">
+  <div class="hc"><span class="hn">1</span><h4>Faturamento</h4><p class="big">R$ 15.000</p><p>consultas, retornos e acompanhamentos no mês</p></div>
+  <div class="hc"><span class="hn">2</span><h4>Custos do mês</h4>
+    <ul class="costs">
+      <li><span>Sala / aluguel</span><b>R$ 1.800</b></li>
+      <li><span>Secretária</span><b>R$ 2.000</b></li>
+      <li><span>Impostos (Simples ~6%)</span><b>R$ 900</b></li>
+      <li><span>Marketing e anúncios</span><b>R$ 600</b></li>
+      <li><span>Contador</span><b>R$ 400</b></li>
+      <li><span>Sistemas e apps</span><b>R$ 200</b></li>
+      <li class="tot"><span>Total</span><b>R$ 5.900</b></li>
+    </ul></div>
+  <div class="hc"><span class="hn">3</span><h4>Lucro</h4><p class="big">R$ 9.100</p><p>o que sobra para você: R$ 15.000 − R$ 5.900</p></div>
+  <div class="hc"><span class="hn">4</span><h4>Horas reais</h4><p class="big">286 h</p><p>13 h por dia × 22 dias. Conte <b>todas</b>: planos, WhatsApp, conteúdo, financeiro</p></div>
 </div>
-<div class="calc2">
-  <div><b>2 h por dia</b> no WhatsApp <small>≈ 44 h por mês</small></div>
-  <div><b>≈ R$ 2.400</b> do seu tempo <small>todo mês, respondendo mensagens</small></div>
-  <div><b>Faça a sua conta</b> <small>e decida o que merece a sua hora</small></div>
+<div class="band"><span>A conta</span><p>Lucro ÷ horas reais = <b>R$ 9.100 ÷ 286 h ≈ R$ 32 por hora</b></p></div>
+""")
+
+add("""
+<h2 class="title">A hora que você acha × a hora real</h2>
+<div class="hvs">
+  <div class="hv"><span>O que você pensa</span><p class="hbig">R$ 200</p><p>“Minha consulta custa R$ 200, então ganho R$ 200 por hora.”</p></div>
+  <div class="hv real"><span>O que acontece</span><p class="hbig">R$ 32</p><p>Para cada hora de consulta, há mais de 1 hora de trabalho invisível: <b>154 h por mês</b> sem receita direta.</p></div>
+  <div class="hv up"><span>Devolvendo 2 h por dia</span><p class="hbig">R$ 38</p><p>Janelas de WhatsApp + modelos de plano: <b>44 h a menos</b> no mês e a hora sobe <b>18%</b>, com o mesmo faturamento.</p></div>
 </div>
-<p class="note">Tempo é o único recurso da nutri que não se repõe. <b>Faturamento não é saúde.</b></p>
+<p class="note">E as 44 horas devolvidas viram o que você escolher: <b>descanso, família ou crescimento do consultório.</b></p>
 """)
 
 # 12
@@ -213,14 +279,6 @@ add("""
 <p class="note">Produtividade não é exaustão: é fazer o que importa com menos esforço e menos estresse.</p>
 """)
 
-# 15 30 SEGUNDOS
-add("""
-<div class="center">
-  <div class="tag light">Dinâmica</div>
-  <h2 class="title light huge c">Quanto tempo têm<br>30 segundos?</h2>
-  <p class="lead light">Fechem os olhos. Abram quando acharem que passaram 30 segundos.</p>
-</div>
-""", "terra nofoot", waves(1100, 480, 16, "#FBF6F1", 0.3))
 
 # 16 PRATOS
 pratos = ["Saúde e corpo", "Família", "Relacionamento", "Finanças", "Consultório", "Descanso e lazer"]
@@ -296,22 +354,73 @@ add("""
 """)
 
 # 23
-section("04", "A semana modelo da nutri", "Gestão do tempo do jeito Lucro Anti-Exaustão®.")
+section_photo("04", "O método<br>na sua agenda", "Lucro Anti-Exaustão®: quatro fases para sair do modo “faço tudo sozinha”.", "f_caderno.jpg")
 
-# 24 4 PASSOS
+# 24 VISÃO GERAL
 add("""
-<h2 class="title">Retome a sua agenda em 4 passos</h2>
+<h2 class="title">Método Lucro Anti-Exaustão®</h2>
+<p class="sub">Quatro fases, nesta ordem. Pular uma é o motivo de tanta agenda nova não durar.</p>
 <div class="anat">
-  <div class="an"><span>01</span><h4>Raio-X</h4><p class="w">Para onde vai o seu tempo?</p><p class="ex">Anote tudo o que fizer por <b>7 dias</b>, sem julgar.</p></div>
+  <div class="an"><span>01</span><h4>Raio-X</h4><p class="w">Operacional</p><p class="ex">Enxergar para onde vão o seu <b>tempo, energia e dinheiro</b>.</p></div>
   <div class="arr">→</div>
-  <div class="an"><span>02</span><h4>Extração</h4><p class="w">O que gera lucro e o que só cansa?</p><p class="ex">Marque o que <b>só você</b> pode fazer.</p></div>
+  <div class="an"><span>02</span><h4>Extração</h4><p class="w">Comportamental Lucrativa</p><p class="ex">Separar o que <b>gera lucro</b> do que só gera cansaço.</p></div>
   <div class="arr">→</div>
-  <div class="an"><span>03</span><h4>Rotina</h4><p class="w">Como fica a semana ideal?</p><p class="ex">Monte a <b>semana modelo</b> com blocos fixos.</p></div>
+  <div class="an"><span>03</span><h4>Rotina</h4><p class="w">Anti-Exaustão</p><p class="ex">Uma semana que funciona <b>sem depender do seu esgotamento</b>.</p></div>
   <div class="arr">→</div>
-  <div class="an hl"><span>04</span><h4>Patrimônio</h4><p class="w">O que trabalha por você?</p><p class="ex">Modelos, protocolos e processos que <b>se repetem sem você</b>.</p></div>
+  <div class="an hl"><span>04</span><h4>Patrimônio</h4><p class="w">Ativação de Patrimônio Valioso</p><p class="ex">O que você criou passa a <b>trabalhar por você</b>.</p></div>
 </div>
 <p class="statement sm">O objetivo não é fazer mais. É <em>parar de fazer tudo.</em></p>
 """)
+
+fases = [
+ ("01","Raio-X Operacional","Mapear com clareza onde o seu tempo, a sua energia e o seu dinheiro estão indo, antes de mudar qualquer coisa.",
+  ["Registre a semana real, hora a hora, por 7 dias","Dê nota aos pratos da vida","Mapeie a rotina: consultas, planos, WhatsApp, conteúdo, financeiro"],
+  "O que consome o meu tempo sem gerar lucro proporcional?","O mapa da sua semana real, sem filtro."),
+ ("02","Extração Comportamental Lucrativa","Descobrir os comportamentos que já geram resultado e os hábitos que estão sabotando o seu lucro.",
+  ["Entenda o seu perfil (MBTI): como você decide e se organiza","Liste as atividades de maior retorno × maior desgaste","Separe: eliminar, delegar, transformar em modelo"],
+  "O que só eu, com o meu CRN, posso fazer?","A lista do que fica com você e do que sai da sua mesa."),
+ ("03","Rotina Anti-Exaustão","Construir uma rotina sustentável, em que você atua com intenção e o consultório para de depender do seu cansaço.",
+  ["Monte a semana modelo com dias temáticos","Crie processos: agendamento, confirmação, pós-consulta","Delegue à secretária e defina as janelas de WhatsApp"],
+  "A minha semana cabe na minha vida?","Uma nova rotina implementada e testada."),
+ ("04","Ativação de Patrimônio Valioso","Transformar o seu método, a sua autoridade e o que você já construiu em patrimônio que gera lucro recorrente.",
+  ["Protocolos e modelos de plano que você não refaz do zero","Programas de acompanhamento em vez de consultas avulsas","Conteúdo que atrai o paciente certo enquanto você atende"],
+  "O que pode gerar resultado mesmo quando eu não estou?","Um ativo estruturado e o plano dos próximos 90 dias."),
+]
+for i,(n,t,obj,pr,q,res) in enumerate(fases):
+    lis = "".join(f"<li>{x}</li>" for x in pr)
+    add(f"""
+<div class="phase">
+  <div class="ph-l{' last' if i==3 else ''}">
+    <span class="ph-k">Fase {n} de 04</span>
+    <div class="ph-n">{n}</div>
+    <h2>{t}</h2>
+    <p>{obj}</p>
+  </div>
+  <div class="ph-r">
+    <div class="ph-b"><span>Na prática, para a nutri</span><ul class="checks">{lis}</ul></div>
+    <div class="ph-b q"><span>Pergunta-chave</span><p>{q}</p></div>
+    <div class="ph-b res"><span>Você sai com</span><p>{res}</p></div>
+  </div>
+</div>
+""")
+
+add("""
+<div class="photo-split right">
+  <div>
+    <div class="tag">Programa de Aceleração</div>
+    <h2 class="title">Aplicar o método com acompanhamento</h2>
+    <ul class="pains">
+      <li><b>12 semanas,</b> 4 fases de 3 semanas cada</li>
+      <li><b>Sessões individuais</b> na abertura, no meio e no fechamento</li>
+      <li><b>Hot seats quinzenais</b> para destravar o que emperrou</li>
+      <li><b>Ferramentas de cada fase</b> e acompanhamento no Trello</li>
+    </ul>
+    <p class="note">Quer saber se faz sentido para o seu consultório? <b>Me chama no direct: @martinsscamila</b></p>
+  </div>
+  <div class="ps-img" style="background-image:url('img/f_duas.jpg')"></div>
+</div>
+""")
+
 
 # 25 SEMANA MODELO
 leg = {"at":"Atendimentos","pl":"Planos e devolutivas","ct":"Conteúdo","ad":"Financeiro e admin.","es":"Estudo","vi":"Vida (inegociável)"}
@@ -373,20 +482,27 @@ add("""
 """)
 
 # 29
-section("05", "Ferramentas", "Não existe ferramenta certa. Existe a que você usa.")
+section_photo("05", "Ferramentas", "Não existe ferramenta certa. Existe a que você usa.", "f_mesa.jpg")
 
-# 30 FERRAMENTAS
-tools = [
- ("Google Agenda","Quando","Atendimentos, blocos da semana modelo e lembretes.","Uma cor por tipo de bloco. Agendamento online e lembrete automático para o paciente."),
- ("Trello","O quê","Quadro visual: pacientes em acompanhamento, conteúdos, pendências.","Colunas A fazer · Fazendo · Feito. Um card por paciente ou tarefa."),
- ("Notion","Onde fica","Central do consultório: protocolos, modelos de plano, banco de conteúdo.","Comece com 3 páginas: Protocolos, Modelos e Ideias de conteúdo."),
- ("Agenda física","Foco","As 3 prioridades do dia, longe das notificações.","Escreva à mão, de manhã, antes de abrir o WhatsApp."),
- ("Planner","Visão","Semana e mês inteiros: metas, revisão de domingo, pratos da vida.","15 minutos no domingo para planejar a semana."),
-]
-tc = "".join(f'<div class="tool"><span class="tk">{k}</span><h4>{n}</h4><p>{u}</p><p class="tip"><b>Dica:</b> {t}</p></div>' for n, k, u, t in tools)
+# 30 FERRAMENTAS DIGITAIS
 add(f"""
-<h2 class="title">Cinco ferramentas, cinco funções</h2>
-<div class="tools">{tc}</div>
+<div class="tag">No celular e no computador</div>
+<h2 class="title">Ferramentas digitais</h2>
+<div class="tgrid">
+  {tool_card("gcal","Google Agenda","Quando","Atendimentos, blocos da semana modelo e lembretes.","uma cor por tipo de bloco e lembrete automático para o paciente.")}
+  {tool_card("trello","Trello","O quê","Quadro visual: pacientes em acompanhamento, conteúdos e pendências.","colunas A fazer, Fazendo e Feito, um cartão por tarefa.")}
+  {tool_card("notion","Notion","Onde fica","A central do consultório: protocolos, modelos de plano e ideias de conteúdo.","comece com 3 páginas: Protocolos, Modelos e Conteúdo.")}
+</div>
+""")
+
+add(f"""
+<div class="tag">No papel</div>
+<h2 class="title">Ferramentas analógicas</h2>
+<div class="tgrid">
+  {tool_card("agenda","Agenda física","Foco do dia","Compromissos e as 3 prioridades do dia, longe das notificações.","escreva de manhã, antes de abrir o WhatsApp.")}
+  {tool_card("planner","Planner","Visão","Semana e mês inteiros: metas, pratos da vida e revisão de domingo.","15 minutos no domingo para planejar a semana.")}
+  {tool_card("lista","Lista de tarefas","Execução","Tudo o que precisa ser feito, em um só lugar, para tirar da cabeça.","no máximo 3 itens prioritários por dia. Riscar dá energia!")}
+</div>
 """)
 
 # 31 COMBINAR
@@ -397,7 +513,7 @@ add("""
   <div class="pl">+</div>
   <div><span>O quê</span><h4>Trello ou Notion</h4><p>tarefas, processos e modelos</p></div>
   <div class="pl">+</div>
-  <div class="hl"><span>Foco</span><h4>Planner ou agenda física</h4><p>as 3 prioridades do dia</p></div>
+  <div class="hl"><span>Foco</span><h4>Planner, agenda ou lista</h4><p>as 3 prioridades do dia</p></div>
 </div>
 <div class="tips">
   <div>Uma ferramenta por função</div><div>Comece com uma só</div><div>Revise todo domingo</div><div>Simples que funciona &gt; perfeito</div>
