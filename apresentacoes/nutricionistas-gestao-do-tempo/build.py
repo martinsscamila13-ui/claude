@@ -102,7 +102,7 @@ add("""
   <div class="mc-line"></div>
   <div class="mc-name">Camila Martins Finger</div>
 </div>
-<div class="cover-photo" style="background-image:url('img/f_mesa.jpg')"></div>
+<div class="cover-photo" style="background-image:url('img/c_evento.jpg')"></div>
 """, "terra nofoot", waves(900, 360, 12, "#FBF6F1", 0.22))
 
 # 2
@@ -122,13 +122,16 @@ add("""
 add("""
 <h2 class="title">Prazer, Camila.</h2>
 <p class="sub">Venho da saúde, como vocês. E sei o que é não ter tempo.</p>
-<div class="timeline">
-  <div class="tl"><div class="dot"></div><div class="tl-k">Origem</div><h4>Técnica de enfermagem</h4><p>Rotina das 7h às 17h, ônibus, plantão. Cuidando de todo mundo.</p></div>
-  <div class="tl"><div class="dot"></div><div class="tl-k">Virada</div><h4>Maternidade e empresa na pandemia</h4><p>Aprendi a empreender com pouco tempo e muita coisa ao mesmo tempo.</p></div>
-  <div class="tl"><div class="dot"></div><div class="tl-k">Método</div><h4>Lucro Anti-Exaustão®</h4><p>Para mulheres que querem crescer sem pagar o crescimento com a própria saúde.</p></div>
-  <div class="tl"><div class="dot"></div><div class="tl-k">Hoje</div><h4>Mentora de empresárias</h4><p>Profissionais liberais que saíram do modo “faço tudo sozinha”.</p></div>
+<div class="story">
+  <div class="st-c"><div class="pola r1"><div class="pimg" style="background-image:url('img/c_enfermagem.jpg')"></div></div>
+    <span class="tl-k">Origem</span><h4>Técnica de enfermagem</h4><p>Rotina das 7h às 17h, ônibus, plantão. Cuidando de todo mundo.</p></div>
+  <div class="st-c"><div class="pola r2"><div class="pimg" style="background-image:url('img/c_familia.jpg')"></div></div>
+    <span class="tl-k">Virada</span><h4>Maternidade e empresa</h4><p>Na pandemia, mãe e empreendedora: aprendi a fazer muito com pouco tempo.</p></div>
+  <div class="st-c"><div class="pola r3 method"><span>Lucro<br>Anti-Exaustão®</span></div>
+    <span class="tl-k">Método</span><h4>Criei o meu método</h4><p>Para mulheres que querem crescer sem pagar com a própria saúde.</p></div>
+  <div class="st-c"><div class="pola r4"><div class="pimg" style="background-image:url('img/c_grupo2.jpg')"></div></div>
+    <span class="tl-k">Hoje</span><h4>Mentora de empresárias</h4><p>Centenas de mulheres em workshops, eventos e programas.</p></div>
 </div>
-<p class="statement">Uma empresa lucrativa <em>não precisa custar a paz da mulher que a construiu.</em></p>
 """)
 
 # 5 INSTAGRAM
@@ -150,12 +153,12 @@ add("""
 """, "cream ag-notime", waves(700, 380, 12, "#B65F3A", 0.35))
 
 # 7
-section_photo("01", "A rotina da<br>nutri real", "Sozinha, centralizadora e com demanda que não para.", "f_tablet.jpg")
+section_photo("01", "A rotina da<br>nutri real", "Sozinha, centralizadora e com demanda que não para.", "c_grupo3.jpg")
 
 # 8 VOCÊ SE RECONHECE
 add("""
 <div class="photo-split">
-  <div class="ps-img" style="background-image:url('img/f_estresse.jpg')"></div>
+  <div class="ps-me"><div class="ps-img" style="background-image:url('img/c_enfermagem.jpg')"></div><p class="cap">Eu também já vivi isso: cuidando de todo mundo, menos de mim.</p></div>
   <div>
     <h2 class="title">Você se reconhece?</h2>
     <ul class="pains">
@@ -197,7 +200,7 @@ add(f"""
     <h2 class="title">O inimigo é o sistema</h2>
     <div class="mitos">{rows}</div>
   </div>
-  <div class="ps-img" style="background-image:url('img/f_equipe.jpg')"></div>
+  <div class="ps-me"><div class="ps-img" style="background-image:url('img/c_grupo1.jpg')"></div><p class="cap">Mulheres que já saíram do modo “faço tudo sozinha”.</p></div>
 </div>
 """)
 
@@ -417,7 +420,7 @@ add("""
     </ul>
     <p class="note">Quer saber se faz sentido para o seu consultório? <b>Me chama no direct: @martinsscamila</b></p>
   </div>
-  <div class="ps-img" style="background-image:url('img/f_duas.jpg')"></div>
+  <div class="ps-me"><div class="ps-img" style="background-image:url('img/c_grupo2.jpg')"></div><p class="cap">Turma do Workshop Realize.</p></div>
 </div>
 """)
 

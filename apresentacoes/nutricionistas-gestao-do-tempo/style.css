@@ -535,3 +535,18 @@ b{font-weight:600}
 .hv .hbig{font-size:124px;white-space:nowrap}
 .ph-b .checks li{font-size:32px}.ph-b.q p{font-size:50px}.ph-b.res p{font-size:33px}.ph-r{gap:30px}
 .photo-split .note{margin-top:36px}
+/* ---- fotos da Camila ---- */
+.story{display:grid;grid-template-columns:repeat(4,1fr);gap:46px;align-items:start}
+.pola{background:#fff;padding:16px 16px 54px;box-shadow:0 14px 30px rgba(39,35,34,.16);margin:0 14px 34px;height:400px}
+.pola .pimg{width:100%;height:100%;background-size:cover;background-position:center top}
+.pola.r1{transform:rotate(-3deg)}.pola.r2{transform:rotate(2.5deg)}.pola.r3{transform:rotate(-1.5deg)}.pola.r4{transform:rotate(3deg)}
+.pola.method{background:var(--terra);display:flex;align-items:center;justify-content:center;padding:16px}
+.pola.method span{font-family:Gilda;font-size:48px;line-height:1.1;color:var(--cream);text-align:center}
+.st-c .tl-k{font-size:20px;letter-spacing:3px;text-transform:uppercase;font-weight:600;color:var(--terra)}
+.st-c h4{font-family:Gilda;font-weight:400;font-size:40px;line-height:1.1;margin:8px 0 10px}
+.st-c p{font-size:25px;line-height:1.4;color:var(--muted)}
+.story+.foot{}
+.ps-me{height:100%;display:flex;flex-direction:column;gap:16px}
+.ps-me .ps-img{flex:1;height:auto}
+.ps-me .cap{font-family:Gilda;font-size:28px;line-height:1.25;color:var(--terra)}
+.photo-split{grid-template-columns:560px 1fr}
