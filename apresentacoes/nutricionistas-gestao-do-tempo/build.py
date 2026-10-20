@@ -97,7 +97,7 @@ def qr_slide(tag, title, steps, foot, qr):
 # 1 CAPA
 add("""
 <div class="min-cover">
-  <div class="mc-top">Gestão do tempo para nutricionistas</div>
+  <div class="mc-top">digi.nutri · Gestão do tempo para nutricionistas</div>
   <h1 class="mega">Agenda cheia,<br>vida em equilíbrio</h1>
   <div class="mc-line"></div>
   <div class="mc-name">Camila Martins Finger</div>
@@ -563,6 +563,7 @@ add(f"""
 <div class="bye">
   <div>
     <h2 class="mega">Obrigada!</h2>
+    <p class="thanks">Júlia e comunidade <b>digi.nutri</b>, obrigada pelo convite.</p>
     <p class="lead light">Seu relatório MBTI: me mande o resultado no direct com a palavra <b>LUCRO</b>.</p>
     <p class="bye-h">@martinsscamila</p>
   </div>
@@ -574,7 +575,7 @@ add(f"""
 css = (OUT / "style.css").read_text()
 pages = []
 for i, (cls, html, deco) in enumerate(SLIDES, 1):
-    foot = "" if "nofoot" in cls else f'<div class="foot"><span>Gestão do tempo para nutricionistas</span><span>@martinsscamila &nbsp;·&nbsp; {i:02d}</span></div>'
+    foot = "" if "nofoot" in cls else f'<div class="foot"><span>digi.nutri · Gestão do tempo para nutricionistas</span><span>@martinsscamila &nbsp;·&nbsp; {i:02d}</span></div>'
     pages.append(f'<section class="s {cls}">{deco}{html}{foot}</section>')
 doc = f"<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><title>Agenda cheia, vida em equilíbrio</title><style>{css}</style></head><body>{''.join(pages)}</body></html>"
 (OUT / "deck.html").write_text(doc)
