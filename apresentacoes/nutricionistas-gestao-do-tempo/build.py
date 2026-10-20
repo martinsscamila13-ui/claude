@@ -397,18 +397,6 @@ for i,(n,t,obj,pr,q,res) in enumerate(fases):
 </div>
 """)
 
-add("""
-<div class="tag">Programa de Aceleração</div>
-<h2 class="title">Aplicar o método com acompanhamento</h2>
-<div class="prog">
-  <div><span class="pn2">12</span><p><b>semanas</b>, em 4 fases de 3 semanas cada</p></div>
-  <div><span class="pn2">3</span><p><b>sessões individuais</b>: abertura, meio e fechamento</p></div>
-  <div><span class="pn2">2×</span><p><b>hot seats por mês</b> para destravar o que emperrou</p></div>
-  <div class="hl"><span class="pn2">4</span><p><b>kits de ferramentas</b>, um por fase, com acompanhamento no Trello</p></div>
-</div>
-<p class="note">Quer saber se faz sentido para o seu consultório? <b>Me chama no direct: @martinsscamila</b></p>
-""")
-
 
 # 25 SEMANA MODELO
 leg = {"at":"Atendimentos","pl":"Planos e devolutivas","ct":"Conteúdo","ad":"Financeiro e admin.","es":"Estudo","vi":"Vida (inegociável)"}
