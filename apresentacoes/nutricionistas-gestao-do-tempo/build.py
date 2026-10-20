@@ -556,6 +556,8 @@ add("""
 </div>
 """, "dark nofoot", waves(1100, 480, 18, "#B65F3A", 0.5))
 
+quote("Uma empresa lucrativa<br>não precisa custar a sua paz.")
+
 # 39 OBRIGADA
 add(f"""
 <div class="bye">
