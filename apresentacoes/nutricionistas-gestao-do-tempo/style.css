@@ -560,3 +560,4 @@ b{font-weight:600}
 .prog .hl{background:var(--terra);border:none;color:var(--cream)}.prog .hl .pn2{color:var(--cream)}
 .pola.r2 .pimg{background-position:center 25%}
 .thanks{font-family:Gilda;font-size:40px;line-height:1.3;color:var(--cream);margin-top:28px}.bye .lead{margin-top:28px}
+.pola{box-shadow:none!important;border:2px solid #E2D9CF}.pola.method{border:none}
