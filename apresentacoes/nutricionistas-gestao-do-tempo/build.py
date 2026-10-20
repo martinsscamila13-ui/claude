@@ -122,13 +122,13 @@ add("""
 <h2 class="title">Prazer, Camila.</h2>
 <p class="sub">Venho da saúde, como vocês. E sei o que é não ter tempo.</p>
 <div class="story">
-  <div class="st-c"><div class="pola r1"><div class="pimg" style="background-image:url('img/c_enfermagem.jpg')"></div></div>
+  <div class="st-c"><div class="pola r1"><div class="pimg" style="background-image:url('img/c_enfermagem_hd.jpg')"></div></div>
     <span class="tl-k">Origem</span><h4>Técnica de enfermagem</h4><p>Rotina das 7h às 17h, ônibus, plantão. Cuidando de todo mundo.</p></div>
   <div class="st-c"><div class="pola r2"><div class="pimg" style="background-image:url('img/c_familia_herbert.jpg')"></div></div>
     <span class="tl-k">Virada</span><h4>Maternidade e empresa</h4><p>Na pandemia, mãe e empreendedora: aprendi a fazer muito com pouco tempo.</p></div>
   <div class="st-c"><div class="pola r3 method"><span>Lucro<br>Anti-Exaustão®</span></div>
     <span class="tl-k">Método</span><h4>Criei o meu método</h4><p>Para mulheres que querem crescer sem pagar com a própria saúde.</p></div>
-  <div class="st-c"><div class="pola r4"><div class="pimg" style="background-image:url('img/c_grupo2.jpg')"></div></div>
+  <div class="st-c"><div class="pola r4"><div class="pimg" style="background-image:url('img/c_grupo2_hd.jpg')"></div></div>
     <span class="tl-k">Hoje</span><h4>Mentora de empresárias</h4><p>Centenas de mulheres em workshops, eventos e programas.</p></div>
 </div>
 """)
