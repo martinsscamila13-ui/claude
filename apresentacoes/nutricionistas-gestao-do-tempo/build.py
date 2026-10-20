@@ -96,13 +96,12 @@ def qr_slide(tag, title, steps, foot, qr):
 
 # 1 CAPA
 add("""
-<div class="min-cover narrow">
+<div class="min-cover">
   <div class="mc-top">Gestão do tempo para nutricionistas</div>
   <h1 class="mega">Agenda cheia,<br>vida em equilíbrio</h1>
   <div class="mc-line"></div>
   <div class="mc-name">Camila Martins Finger</div>
 </div>
-<div class="cover-photo" style="background-image:url('img/c_evento.jpg')"></div>
 """, "terra nofoot", waves(900, 360, 12, "#FBF6F1", 0.22))
 
 # 2
@@ -125,7 +124,7 @@ add("""
 <div class="story">
   <div class="st-c"><div class="pola r1"><div class="pimg" style="background-image:url('img/c_enfermagem.jpg')"></div></div>
     <span class="tl-k">Origem</span><h4>Técnica de enfermagem</h4><p>Rotina das 7h às 17h, ônibus, plantão. Cuidando de todo mundo.</p></div>
-  <div class="st-c"><div class="pola r2"><div class="pimg" style="background-image:url('img/c_familia.jpg')"></div></div>
+  <div class="st-c"><div class="pola r2"><div class="pimg" style="background-image:url('img/c_familia_herbert.jpg')"></div></div>
     <span class="tl-k">Virada</span><h4>Maternidade e empresa</h4><p>Na pandemia, mãe e empreendedora: aprendi a fazer muito com pouco tempo.</p></div>
   <div class="st-c"><div class="pola r3 method"><span>Lucro<br>Anti-Exaustão®</span></div>
     <span class="tl-k">Método</span><h4>Criei o meu método</h4><p>Para mulheres que querem crescer sem pagar com a própria saúde.</p></div>
@@ -153,24 +152,20 @@ add("""
 """, "cream ag-notime", waves(700, 380, 12, "#B65F3A", 0.35))
 
 # 7
-section_photo("01", "A rotina da<br>nutri real", "Sozinha, centralizadora e com demanda que não para.", "c_grupo3.jpg")
+section("01", "A rotina da nutri real", "Sozinha, centralizadora e com demanda que não para.")
 
 # 8 VOCÊ SE RECONHECE
 add("""
-<div class="photo-split">
-  <div class="ps-me"><div class="ps-img" style="background-image:url('img/c_enfermagem.jpg')"></div><p class="cap">Eu também já vivi isso: cuidando de todo mundo, menos de mim.</p></div>
-  <div>
-    <h2 class="title">Você se reconhece?</h2>
-    <ul class="pains">
-      <li><b>Faz tudo sozinha:</b> atende, monta plano, responde WhatsApp, posta, cobra e estuda</li>
-      <li><b>No máximo, uma secretária,</b> e tudo ainda passa por você</li>
-      <li><b>“Ninguém faz como eu”:</b> centralizar parece mais rápido, até virar gargalo</li>
-      <li><b>Demanda que não para:</b> paciente novo, retorno, encaixe, mensagem às 23h</li>
-      <li><b>Plano alimentar de madrugada:</b> o trabalho invisível invade a noite</li>
-      <li><b>Pratos caindo:</b> saúde, família e descanso sempre depois</li>
-    </ul>
-  </div>
+<h2 class="title">Você se reconhece?</h2>
+<div class="grid3">
+  <div class="tile"><span class="ti">01</span><h4>Faz tudo sozinha</h4><p>Atende, monta plano, responde WhatsApp, posta, cobra e ainda estuda.</p></div>
+  <div class="tile"><span class="ti">02</span><h4>No máximo, uma secretária</h4><p>E mesmo assim tudo passa por você antes de sair.</p></div>
+  <div class="tile"><span class="ti">03</span><h4>“Ninguém faz como eu”</h4><p>Centralizar parece mais rápido. Até virar gargalo.</p></div>
+  <div class="tile"><span class="ti">04</span><h4>Demanda que não para</h4><p>Paciente novo, retorno, dúvida, encaixe, mensagem às 23h.</p></div>
+  <div class="tile"><span class="ti">05</span><h4>Plano feito de madrugada</h4><p>O trabalho “invisível” invade a noite e o fim de semana.</p></div>
+  <div class="tile"><span class="ti">06</span><h4>Pratos caindo</h4><p>Saúde, família, relacionamento, descanso: sempre depois.</p></div>
 </div>
+<p class="note">Se você marcou mais de duas, <b>esta aula foi feita para você.</b></p>
 """)
 
 # 9 UM DIA
@@ -195,13 +190,8 @@ mitos = [("“Se eu não fizer, ninguém faz.”","Centralização","Parece efic
          ("“Mais pacientes, mais lucro.”","Trabalhar mais = lucrar mais","Existe um ponto em que mais horas trazem mais cansaço, não mais lucro.")]
 rows = "".join(f'<div class="mv"><p class="m">{m}</p><span class="arrow">→</span><div><h4>{t}</h4><p>{v}</p></div></div>' for m, t, v in mitos)
 add(f"""
-<div class="photo-split right">
-  <div>
-    <h2 class="title">O inimigo é o sistema</h2>
-    <div class="mitos">{rows}</div>
-  </div>
-  <div class="ps-me"><div class="ps-img" style="background-image:url('img/c_grupo1.jpg')"></div><p class="cap">Mulheres que já saíram do modo “faço tudo sozinha”.</p></div>
-</div>
+<h2 class="title">O inimigo é o sistema, não você</h2>
+<div class="mitos wide">{rows}</div>
 """)
 
 # 11 QUANTO VALE SUA HORA (detalhado)
@@ -357,7 +347,7 @@ add("""
 """)
 
 # 23
-section_photo("04", "O método<br>na sua agenda", "Lucro Anti-Exaustão®: quatro fases para sair do modo “faço tudo sozinha”.", "f_caderno.jpg")
+section("04", "O método na sua agenda", "Lucro Anti-Exaustão®: quatro fases para sair do modo “faço tudo sozinha”.")
 
 # 24 VISÃO GERAL
 add("""
@@ -408,20 +398,15 @@ for i,(n,t,obj,pr,q,res) in enumerate(fases):
 """)
 
 add("""
-<div class="photo-split right">
-  <div>
-    <div class="tag">Programa de Aceleração</div>
-    <h2 class="title">Aplicar o método com acompanhamento</h2>
-    <ul class="pains">
-      <li><b>12 semanas,</b> 4 fases de 3 semanas cada</li>
-      <li><b>Sessões individuais</b> na abertura, no meio e no fechamento</li>
-      <li><b>Hot seats quinzenais</b> para destravar o que emperrou</li>
-      <li><b>Ferramentas de cada fase</b> e acompanhamento no Trello</li>
-    </ul>
-    <p class="note">Quer saber se faz sentido para o seu consultório? <b>Me chama no direct: @martinsscamila</b></p>
-  </div>
-  <div class="ps-me"><div class="ps-img" style="background-image:url('img/c_grupo2.jpg')"></div><p class="cap">Turma do Workshop Realize.</p></div>
+<div class="tag">Programa de Aceleração</div>
+<h2 class="title">Aplicar o método com acompanhamento</h2>
+<div class="prog">
+  <div><span class="pn2">12</span><p><b>semanas</b>, em 4 fases de 3 semanas cada</p></div>
+  <div><span class="pn2">3</span><p><b>sessões individuais</b>: abertura, meio e fechamento</p></div>
+  <div><span class="pn2">2×</span><p><b>hot seats por mês</b> para destravar o que emperrou</p></div>
+  <div class="hl"><span class="pn2">4</span><p><b>kits de ferramentas</b>, um por fase, com acompanhamento no Trello</p></div>
 </div>
+<p class="note">Quer saber se faz sentido para o seu consultório? <b>Me chama no direct: @martinsscamila</b></p>
 """)
 
 
@@ -485,7 +470,7 @@ add("""
 """)
 
 # 29
-section_photo("05", "Ferramentas", "Não existe ferramenta certa. Existe a que você usa.", "f_mesa.jpg")
+section("05", "Ferramentas", "Não existe ferramenta certa. Existe a que você usa.")
 
 # 30 FERRAMENTAS DIGITAIS
 add(f"""

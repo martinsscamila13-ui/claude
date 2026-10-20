@@ -550,3 +550,12 @@ b{font-weight:600}
 .ps-me .ps-img{flex:1;height:auto}
 .ps-me .cap{font-family:Gilda;font-size:28px;line-height:1.25;color:var(--terra)}
 .photo-split{grid-template-columns:560px 1fr}
+/* ---- sem fotos fora da apresentação pessoal ---- */
+.mitos.wide{gap:16px}.mitos.wide .mv{grid-template-columns:520px 60px 1fr;padding:20px 36px}
+.mitos.wide .mv .m{font-size:36px}.mitos.wide .mv h4{font-size:28px}.mitos.wide .mv p{font-size:27px}
+.prog{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin:10px 0 40px}
+.prog div{background:#fff;border:1.5px solid var(--line);border-radius:28px;padding:44px 38px}
+.pn2{font-family:Gilda;font-size:110px;line-height:1;color:var(--terra);display:block;margin-bottom:18px}
+.prog p{font-size:30px;line-height:1.4}.prog b{font-weight:600}
+.prog .hl{background:var(--terra);border:none;color:var(--cream)}.prog .hl .pn2{color:var(--cream)}
+.pola.r2 .pimg{background-position:center 25%}
