@@ -573,3 +573,22 @@ b{font-weight:600}
 .wg-c.as{background:#fff;border:2px dashed var(--terra);color:var(--terra)}
 .grid4 .tile{min-height:300px}
 .min-cover .mega{font-size:150px}
+/* ---- paleta Outubro Rosa (convite B.Brasil) ---- */
+:root{--terra:#A9466F;--terra-d:#7A2A4A;--terra-s:#F7E4EC;--cream:#FDF8FA;--paper:#FBF3F6;--sand:#F3E5EB;--ink:#3E2430;--graph:#5A1E3A;--muted:#836873;--line:#EBD6DF}
+.title{color:var(--terra-d)}
+.title.light,.dark .title{color:var(--cream)}
+.sec-n,.pn,.ti,.tl-k,.ck.dk,.st span,.errs span{color:#C77593}
+.dark .sec-n,.dark .pn,.dark .errs span{color:#E7A7BF}
+.formula u,.nums .f,.band span,.url,.hv.up span,.hv.up .hbig,.agenda-ci b,.mr.end .md,.im.dk .id{color:#F2B8CC}
+.topbar{background:var(--terra-d)}
+.qmark,.quote{color:var(--terra-d)}
+.bottombars{background:var(--sand);border-color:#D9B7C6}.bottombars div:first-child{border-color:#D9B7C6}
+.seg.t{background:#7A2A4A}.seg.t2{background:#A9466F}.seg.w{background:#C77593}.seg.w2{background:#DDA3B9}.seg.w3{background:#EFCDDA;color:var(--ink)}.seg.me{background:#3E2430}
+.wg-c.ct{background:#F1D3DF}.wg-c.vi{background:#5A1E3A}
+.tips div,.pill{background:var(--terra-d)}
+.terra{background:#A9466F}
+.cover-meta .vr{background:rgba(253,248,250,.5)}
+.ribbon{width:26px;height:44px;vertical-align:middle;margin-right:18px;color:#F7C9D8}
+.mc-date{font-size:24px;letter-spacing:2px;margin-top:14px;opacity:.85}
+.bye-rib .ribbon{width:46px;height:78px;margin:0 0 20px 0;color:#F7C9D8}
+.mon-stats .hl{background:var(--terra)}

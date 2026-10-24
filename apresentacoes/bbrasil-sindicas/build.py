@@ -4,7 +4,7 @@ OUT = pathlib.Path(__file__).parent
 QR_TEST = (OUT / "qr.svg").read_text()
 QR_INSTA = (OUT / "qr_insta.svg").read_text()
 
-def waves(w=900, h=520, n=14, color="#FBF6F1", op=0.55, amp=70, freq=1.25, tilt=0.35, sw=1.4):
+def waves(w=900, h=520, n=14, color="#FDF8FA", op=0.55, amp=70, freq=1.25, tilt=0.35, sw=1.4):
     paths = []
     for i in range(n):
         pts = []
@@ -17,7 +17,7 @@ def waves(w=900, h=520, n=14, color="#FBF6F1", op=0.55, amp=70, freq=1.25, tilt=
 
 
 def ill(kind):
-    T, S, C, I, L = "#B65F3A", "#F2E1D5", "#FBF6F1", "#272322", "#DCD3C9"
+    T, S, C, I, L = "#C77593", "#F7E4EC", "#FDF8FA", "#3E2430", "#EBD6DF"
     if kind == "gcal":
         cells = "".join(f'<rect x="{30+j*48}" y="{70+i*34}" width="42" height="28" rx="5" fill="{C}" stroke="{L}"/>' for i in range(3) for j in range(5))
         ev = f'<rect x="30" y="70" width="42" height="28" rx="5" fill="{T}"/><rect x="126" y="104" width="42" height="28" rx="5" fill="{T}"/><rect x="78" y="138" width="42" height="28" rx="5" fill="{I}"/><rect x="222" y="70" width="42" height="62" rx="5" fill="{S}" stroke="{T}"/>'
@@ -70,7 +70,7 @@ def quote(text, sub=None):
 def section(num, title, sub):
     add(f"""
 <div class="sec"><div class="sec-n">{num}</div><h2 class="sec-t">{title}</h2><p class="sec-s">{sub}</p></div>
-""", "dark nofoot", waves(1100, 520, 18, "#B65F3A", 0.55))
+""", "dark nofoot", waves(1100, 520, 18, "#C77593", 0.55))
 
 def section_photo(num, title, sub, img):
     add(f"""
@@ -97,12 +97,13 @@ def qr_slide(tag, title, steps, foot, qr):
 # 1 CAPA
 add("""
 <div class="min-cover">
-  <div class="mc-top">B.Brasil Higiene Profissional · Encontro de Síndicas</div>
+  <div class="mc-top"><svg class="ribbon" viewBox="0 0 40 70"><path d="M20 6c-7 0-10 6-10 11 0 8 6 14 10 21-4 8-12 18-16 26M20 6c7 0 10 6 10 11 0 8-6 14-10 21 4 8 12 18 16 26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>B.Brasil Higiene Profissional · Workshop Gestão do Tempo</div>
   <h1 class="mega">Condomínio em ordem,<br>vida em equilíbrio</h1>
   <div class="mc-line"></div>
   <div class="mc-name">Camila Martins Finger &nbsp;·&nbsp; Monica Bruno</div>
+  <div class="mc-date">28 de outubro de 2026 &nbsp;·&nbsp; B.Brasil São José &nbsp;·&nbsp; Outubro Rosa</div>
 </div>
-""", "terra nofoot", waves(900, 360, 12, "#FBF6F1", 0.22))
+""", "terra nofoot", waves(900, 360, 12, "#FDF8FA", 0.22))
 
 # 2 MONICA
 add("""
@@ -145,7 +146,7 @@ add("""
   <div class="prompt"><span class="pn">01</span><p>Qual <b>palavra</b> define a sua rotina de síndica hoje?</p></div>
   <div class="prompt"><span class="pn">02</span><p>De 0 a 10: quanto da sua agenda <b>é realmente sua</b>?</p></div>
 </div>
-""", "dark", waves(900, 460, 16, "#FBF6F1", 0.28))
+""", "dark", waves(900, 460, 16, "#FDF8FA", 0.28))
 
 # 4
 add("""
@@ -179,7 +180,7 @@ add("""
   <div class="ag"><span class="n">05</span><span class="d">Ferramentas: Google Agenda, Trello, Notion, agenda física e planner</span></div>
   <div class="ag"><span class="n">06</span><span class="d">Seu plano de 7 dias</span></div>
 </div>
-""", "cream ag-notime", waves(700, 380, 12, "#B65F3A", 0.35))
+""", "cream ag-notime", waves(700, 380, 12, "#C77593", 0.35))
 
 # 7
 section("01", "A rotina da síndica real", "Moradores, equipe, fornecedores e urgências. Tudo ao mesmo tempo.")
@@ -560,7 +561,7 @@ add("""
   <div class="prompt"><span class="pn">02</span><p>Uma coisa que eu vou <b>delegar</b> ou transformar em modelo</p></div>
   <div class="prompt"><span class="pn">03</span><p>Um prato da vida que vai <b>entrar na agenda</b> esta semana</p></div>
 </div>
-""", "dark", waves(900, 460, 16, "#FBF6F1", 0.28))
+""", "dark", waves(900, 460, 16, "#FDF8FA", 0.28))
 
 # 36 CONSTÂNCIA
 add("""
@@ -573,7 +574,7 @@ add("""
   <div><span>05</span><p>Peça apoio: ninguém cresce sozinha</p></div>
   <div><span>06</span><p>Comemore cada pequena vitória</p></div>
 </div>
-""", "dark", waves(800, 380, 12, "#B65F3A", 0.45))
+""", "dark", waves(800, 380, 12, "#C77593", 0.45))
 
 # 37
 quote("Quem decide, realiza.<br>Quem adia, apenas sonha.")
@@ -584,7 +585,7 @@ add("""
   <div class="tag light">Encerramento</div>
   <h2 class="title light huge c">Qual palavra define<br>o encontro de hoje?</h2>
 </div>
-""", "dark nofoot", waves(1100, 480, 18, "#B65F3A", 0.5))
+""", "dark nofoot", waves(1100, 480, 18, "#C77593", 0.5))
 
 quote("Cuidar do condomínio<br>não precisa custar a sua paz.")
 
@@ -592,6 +593,7 @@ quote("Cuidar do condomínio<br>não precisa custar a sua paz.")
 add(f"""
 <div class="bye">
   <div>
+    <div class="bye-rib"><svg class="ribbon" viewBox="0 0 40 70"><path d="M20 6c-7 0-10 6-10 11 0 8 6 14 10 21-4 8-12 18-16 26M20 6c7 0 10 6 10 11 0 8-6 14-10 21 4 8 12 18 16 26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></div>
     <h2 class="mega">Obrigada!</h2>
     <p class="thanks">Monica e equipe <b>B.Brasil</b>, obrigada pelo convite.</p>
     <p class="lead light">Seu relatório MBTI: me mande o resultado no direct com a palavra <b>LUCRO</b>.</p>
@@ -599,13 +601,13 @@ add(f"""
   </div>
   <div class="qr">{QR_INSTA}</div>
 </div>
-""", "terra nofoot", waves(1100, 480, 16, "#FBF6F1", 0.25))
+""", "terra nofoot", waves(1100, 480, 16, "#FDF8FA", 0.25))
 
 # ---------------- RENDER ----------------
 css = (OUT / "style.css").read_text()
 pages = []
 for i, (cls, html, deco) in enumerate(SLIDES, 1):
-    foot = "" if "nofoot" in cls else f'<div class="foot"><span>B.Brasil · Encontro de Síndicas</span><span>@martinsscamila &nbsp;·&nbsp; {i:02d}</span></div>'
+    foot = "" if "nofoot" in cls else f'<div class="foot"><span>B.Brasil · Workshop Gestão do Tempo · Outubro Rosa</span><span>@martinsscamila &nbsp;·&nbsp; {i:02d}</span></div>'
     pages.append(f'<section class="s {cls}">{deco}{html}{foot}</section>')
 doc = f"<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><title>Condomínio em ordem, vida em equilíbrio</title><style>{css}</style></head><body>{''.join(pages)}</body></html>"
 (OUT / "deck.html").write_text(doc)
