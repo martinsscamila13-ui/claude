@@ -598,3 +598,9 @@ b{font-weight:600}
 .mc-date{font-size:24px;letter-spacing:2px;margin-top:14px;opacity:.85}
 .bye-rib .ribbon{width:46px;height:78px;margin:0 0 20px 0;color:#F7C9D8}
 .mon-stats .hl{background:var(--terra)}
+.min-cover.hook .mega{font-size:120px;line-height:1.02}
+.min-cover.hook .mega em{font-style:normal;color:#F7E4EC}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:26px 60px;margin-top:30px;max-width:1500px}
+.opts div{display:flex;align-items:center;gap:30px;font-size:46px;font-weight:300;color:var(--cream);border-top:1.5px solid rgba(251,246,241,.25);padding-top:26px}
+.opts span{font-family:Gilda;font-size:56px;color:#E7A3BE;width:50px}
+.note.light{color:var(--cream)}

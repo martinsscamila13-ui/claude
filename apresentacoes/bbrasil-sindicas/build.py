@@ -94,20 +94,9 @@ def qr_slide(tag, title, steps, foot, qr):
 </div>
 """, "dark nofoot", "")
 
-# 1 CAPA
-add("""
-<div class="min-cover">
-  <div class="mc-top"><svg class="ribbon" viewBox="0 0 40 70"><path d="M20 6c-7 0-10 6-10 11 0 8 6 14 10 21-4 8-12 18-16 26M20 6c7 0 10 6 10 11 0 8-6 14-10 21 4 8 12 18 16 26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>B.Brasil Higiene Profissional · Workshop Gestão do Tempo</div>
-  <h1 class="mega">Condomínio em ordem,<br>vida em equilíbrio</h1>
-  <div class="mc-line"></div>
-  <div class="mc-name">Camila Martins Finger &nbsp;·&nbsp; Monica Bruno</div>
-  <div class="mc-date">28 de outubro de 2026 &nbsp;·&nbsp; B.Brasil São José &nbsp;·&nbsp; Outubro Rosa</div>
-</div>
-""", "terra nofoot", waves(900, 360, 12, "#FDF8FA", 0.22))
-
 # 2 MONICA
 add("""
-<div class="tag">Quem recebe vocês hoje</div>
+<div class="tag">Bem-vindas · quem recebe vocês hoje</div>
 <h2 class="title">Prazer, Monica.</h2>
 <p class="sub">Monica Bruno · B.Brasil Higiene Profissional</p>
 <div class="mon">
@@ -136,7 +125,24 @@ add("""
 <p class="note">Condomínio limpo do jeito certo = <b>menos reclamação de morador</b> chegando no seu WhatsApp.</p>
 """)
 
-quote("Você cuida do condomínio<br>de todo mundo.<br>Quem está cuidando da sua agenda?")
+# 1 CAPA
+add("""
+<div class="min-cover">
+  <div class="mc-top"><svg class="ribbon" viewBox="0 0 40 70"><path d="M20 6c-7 0-10 6-10 11 0 8 6 14 10 21-4 8-12 18-16 26M20 6c7 0 10 6 10 11 0 8-6 14-10 21 4 8 12 18 16 26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>B.Brasil Higiene Profissional · Workshop Gestão do Tempo</div>
+  <h1 class="mega">Condomínio em ordem,<br>vida em equilíbrio</h1>
+  <div class="mc-line"></div>
+  <div class="mc-name">Camila Martins Finger &nbsp;·&nbsp; Monica Bruno</div>
+  <div class="mc-date">28 de outubro de 2026 &nbsp;·&nbsp; B.Brasil São José &nbsp;·&nbsp; Outubro Rosa</div>
+</div>
+""", "terra nofoot", waves(900, 360, 12, "#FDF8FA", 0.22))
+
+# HOOK
+add("""
+<div class="min-cover hook">
+  <div class="mc-top">Antes de começar</div>
+  <h1 class="mega">O condomínio funciona<br>24 horas por dia.<br><em>Você não precisa<br>funcionar junto.</em></h1>
+</div>
+""", "terra nofoot", waves(900, 360, 12, "#FDF8FA", 0.22))
 
 # 3
 add("""
@@ -168,6 +174,8 @@ add("""
 qr_slide("Vamos manter contato", "@martinsscamila",
          ["Aponte a câmera para o QR code", "Me siga: conteúdo de gestão e rotina toda semana", "Ficou alguma dúvida? <b>Me chama no direct</b>"],
          "instagram.com/martinsscamila", QR_INSTA)
+
+quote("Você cuida do condomínio<br>de todo mundo.<br>Quem está cuidando da sua agenda?")
 
 # 6 AGENDA
 add("""
@@ -443,21 +451,6 @@ add(f"""
 </div>
 """)
 
-# 26 SÓ EU POSSO
-add("""
-<h2 class="title">Só eu posso fazer isso?</h2>
-<div class="eis">
-  <div class="axis-y"><span>Precisa de você</span><span>Não precisa de você</span></div>
-  <div class="eis-grid">
-    <div class="q1"><span>Exige a síndica</span><h4>Só eu posso</h4><p>Decisões, contratos, assembleias, conflitos graves</p></div>
-    <div class="q2"><span>Se repete toda semana</span><h4>Vira modelo</h4><p>Comunicados, checklists de ronda e limpeza, cronograma de manutenção</p></div>
-    <div class="q3"><span>Operacional</span><h4>Delegue</h4><p>Zelador, portaria, administradora e equipe de limpeza bem orientada</p></div>
-    <div class="q4"><span>Só consome</span><h4>Elimine</h4><p>Discussão no grupo, áudio de 5 minutos, retrabalho, reunião sem pauta</p></div>
-  </div>
-</div>
-<p class="note"><b>Regra de ouro:</b> se você fez a mesma coisa 3 vezes, ela vira processo.</p>
-""")
-
 # 27 WHATSAPP
 add("""
 <h2 class="title">WhatsApp sob controle</h2>
@@ -488,11 +481,27 @@ add("""
   <div class="eis-grid">
     <div class="q1"><span>Urgente e importante</span><h4>Faça agora</h4><p>Vazamento, elevador parado, problema de segurança</p></div>
     <div class="q2"><span>Importante, não urgente</span><h4>Agende</h4><p>Manutenção preventiva, prestação de contas, orientar a equipe, descanso</p></div>
-    <div class="q3"><span>Urgente, não importante</span><h4>Delegue</h4><p>Recados, agendamentos, compras de reposição com fornecedor fixo</p></div>
-    <div class="q4"><span>Nem urgente, nem importante</span><h4>Elimine</h4><p>Discutir no grupo de moradores, reunião sem pauta</p></div>
+    <div class="q3"><span>Urgente, não importante</span><h4>Delegue</h4><p>Zelador, portaria, administradora: recados, agendamentos, reposição com fornecedor fixo</p></div>
+    <div class="q4"><span>Nem urgente, nem importante</span><h4>Elimine</h4><p>Discussão no grupo, áudio de 5 minutos, reunião sem pauta</p></div>
   </div>
 </div>
+<p class="note"><b>Regra de ouro:</b> se você fez a mesma coisa 3 vezes, ela vira processo.</p>
 """)
+
+# PLANEJAMENTO HOJE
+add("""
+<div class="tag light">Pergunta para vocês · mão para cima</div>
+<h2 class="title light">Como você planeja a sua semana hoje?</h2>
+<div class="opts">
+  <div><span>A</span>Agenda de papel ou caderno</div>
+  <div><span>B</span>Google Agenda ou celular</div>
+  <div><span>C</span>Planner</div>
+  <div><span>D</span>Trello, Notion ou planilha</div>
+  <div><span>E</span>WhatsApp e memória</div>
+  <div><span>F</span>Ainda não planejo</div>
+</div>
+<p class="note light">Não existe resposta errada. <b>Existe o próximo passo para cada uma.</b></p>
+""", "dark", waves(900, 460, 16, "#FDF8FA", 0.28))
 
 # 29
 section("05", "Ferramentas", "Não existe ferramenta certa. Existe a que você usa.")
