@@ -225,38 +225,6 @@ add(f"""
 <div class="mitos wide">{rows}</div>
 """)
 
-# 11 QUANTO VALE SUA HORA (detalhado)
-add("""
-<div class="tag">Exemplo ilustrativo · síndica profissional</div>
-<h2 class="title">Quanto vale a sua hora, de verdade?</h2>
-<div class="hour">
-  <div class="hc"><span class="hn">1</span><h4>Faturamento</h4><p class="big">R$ 10.000</p><p>4 condomínios × R$ 2.500 de honorário por mês</p></div>
-  <div class="hc"><span class="hn">2</span><h4>Custos do mês</h4>
-    <ul class="costs">
-      <li><span>Combustível e deslocamento</span><b>R$ 900</b></li>
-      <li><span>Impostos (Simples ~6%)</span><b>R$ 600</b></li>
-      <li><span>Contador</span><b>R$ 400</b></li>
-      <li><span>Celular, sistemas e apps</span><b>R$ 300</b></li>
-      <li><span>Cursos e atualização</span><b>R$ 300</b></li>
-      <li><span>Seguro e outros</span><b>R$ 100</b></li>
-      <li class="tot"><span>Total</span><b>R$ 2.600</b></li>
-    </ul></div>
-  <div class="hc"><span class="hn">3</span><h4>Lucro</h4><p class="big">R$ 7.400</p><p>o que sobra para você: R$ 10.000 − R$ 2.600</p></div>
-  <div class="hc"><span class="hn">4</span><h4>Horas reais</h4><p class="big">242 h</p><p>11 h por dia × 22 dias. Conte <b>todas</b>: WhatsApp, rondas, fornecedores, contas</p></div>
-</div>
-<div class="band"><span>A conta</span><p>Lucro ÷ horas reais = <b>R$ 7.400 ÷ 242 h ≈ R$ 31 por hora</b></p></div>
-""")
-
-add("""
-<h2 class="title">A hora que você acha × a hora real</h2>
-<div class="hvs">
-  <div class="hv"><span>O que você pensa</span><p class="hbig">R$ 2.500</p><p>“Cada condomínio me paga R$ 2.500. Está ótimo.”</p></div>
-  <div class="hv real"><span>O que acontece</span><p class="hbig">R$ 31</p><p>Dividido pelas horas reais, incluindo WhatsApp e urgências, cada hora sua vale <b>R$ 31</b>.</p></div>
-  <div class="hv up"><span>Devolvendo 2 h por dia</span><p class="hbig">R$ 37</p><p>Janelas de WhatsApp + processos: <b>44 h a menos</b> no mês e a hora sobe <b>22%</b>, com os mesmos honorários.</p></div>
-</div>
-<p class="note">E as 44 horas devolvidas viram o que você escolher: <b>descanso, família ou um novo condomínio.</b></p>
-""")
-
 # 12
 section("02", "Os ladrões do seu tempo", "Antes da ferramenta, a mentalidade.")
 
@@ -303,6 +271,33 @@ add("""
 <p class="note">Produtividade não é exaustão: é fazer o que importa com menos esforço e menos estresse.</p>
 """)
 
+
+
+# PROCRASTINAÇÃO
+quote("O que é procrastinar?", "É adiar o que é importante, colocando tarefas menores ou distrações no lugar.<br><b>Procrastinação não é preguiça. É um sintoma.</b>")
+
+add("""
+<h2 class="title">Por que adiamos o que importa?</h2>
+<div class="grid4">
+  <div class="tile"><span class="ti">01</span><h4>Falta de clareza</h4><p>“Resolver o condomínio” não é tarefa. É uma lista inteira sem prioridade.</p></div>
+  <div class="tile"><span class="ti">02</span><h4>Medo de errar</h4><p>Adiar a decisão difícil: o orçamento, a advertência, a conversa com o morador.</p></div>
+  <div class="tile"><span class="ti">03</span><h4>Distrações</h4><p>Notificação a cada minuto. O WhatsApp decide a sua agenda por você.</p></div>
+  <div class="tile"><span class="ti">04</span><h4>Urgência no lugar do importante</h4><p>O vazamento de hoje sempre ganha da manutenção que evitaria o de amanhã.</p></div>
+</div>
+<p class="note">Clareza antes de tudo. Não adianta acelerar uma rotina que funciona no improviso.</p>
+""")
+
+# TÉCNICAS
+add("""
+<h2 class="title">Técnicas que funcionam</h2>
+<div class="tech">
+  <div><span class="pn2">1</span><h4>Time blocking</h4><p>Cada atividade tem um bloco fixo na agenda. Ex.: terça de manhã é dia de fornecedores.</p></div>
+  <div><span class="pn2">2</span><h4>Regra 80/20</h4><p>20% das suas ações geram 80% do resultado. Qual é o seu 20% desta semana?</p></div>
+  <div><span class="pn2">3</span><h4>Pomodoro</h4><p>25 minutos de foco total, 5 de pausa. Ideal para prestação de contas e atas.</p></div>
+  <div class="hl"><span class="pn2">4</span><h4>Fechamento do dia</h4><p>10 minutos: o que resolvi hoje, o que fica para amanhã. E desligar.</p></div>
+</div>
+<p class="note">Comece por <b>uma técnica só</b>. Quando ela virar hábito, acrescente a próxima.</p>
+""")
 
 # 16 PRATOS
 pratos = ["Saúde e corpo", "Família", "Relacionamento", "Finanças", "Condomínios", "Descanso e lazer"]
@@ -472,6 +467,17 @@ add("""
   <div class="col"><h3>Combinado claro</h3><p class="q">Aprovado em assembleia</p><p>Horário de atendimento e o que é emergência de verdade. Morador bem orientado não cobra resposta às 23h.</p></div>
 </div>
 <p class="note">Disponibilidade total não é cuidado. <b>Cuidado é ter limite e cumprir o combinado.</b></p>
+""")
+
+
+# HÁBITOS
+add("""
+<h2 class="title">Três hábitos que sustentam a rotina</h2>
+<div class="cols3 qs">
+  <div class="col"><span class="bign">3</span><h3>Prioridades por semana</h3><p>No máximo três. Se tudo é prioridade, nada é.</p></div>
+  <div class="col"><span class="bign">15′</span><h3>Revisão de domingo</h3><p>O que foi feito? O que travou? Quais as 3 prioridades da semana?</p></div>
+  <div class="col"><span class="bign">10′</span><h3>Fechamento do dia</h3><p>Anotar pendências, separar o que é de amanhã e desligar o condomínio da cabeça.</p></div>
+</div>
 """)
 
 # 28 EISENHOWER
