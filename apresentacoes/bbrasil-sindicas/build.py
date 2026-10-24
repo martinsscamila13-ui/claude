@@ -95,6 +95,17 @@ def qr_slide(tag, title, steps, foot, qr):
 </div>
 """, "dark nofoot", "")
 
+# 1 CAPA
+add("""
+<div class="min-cover">
+  <div class="mc-top"><svg class="ribbon" viewBox="0 0 40 70"><path d="M20 6c-7 0-10 6-10 11 0 8 6 14 10 21-4 8-12 18-16 26M20 6c7 0 10 6 10 11 0 8-6 14-10 21 4 8 12 18 16 26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>B.Brasil Higiene Profissional · Workshop Gestão do Tempo</div>
+  <h1 class="mega">Condomínio em ordem,<br>vida em equilíbrio</h1>
+  <div class="mc-line"></div>
+  <div class="mc-name">Camila Martins Finger &nbsp;·&nbsp; Monica Bruno</div>
+  <div class="mc-date">28 de outubro de 2026 &nbsp;·&nbsp; B.Brasil São José &nbsp;·&nbsp; Outubro Rosa</div>
+</div>
+""", "terra nofoot", waves(900, 360, 12, "#FDF8FA", 0.22))
+
 # 2 MONICA
 add("""
 <div class="tag">Bem-vindas · quem recebe vocês hoje</div>
@@ -142,17 +153,6 @@ add(f"""
   <div class="qr">{QR_BB}</div>
 </div>
 """, "dark nofoot", "")
-
-# 1 CAPA
-add("""
-<div class="min-cover">
-  <div class="mc-top"><svg class="ribbon" viewBox="0 0 40 70"><path d="M20 6c-7 0-10 6-10 11 0 8 6 14 10 21-4 8-12 18-16 26M20 6c7 0 10 6 10 11 0 8-6 14-10 21 4 8 12 18 16 26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>B.Brasil Higiene Profissional · Workshop Gestão do Tempo</div>
-  <h1 class="mega">Condomínio em ordem,<br>vida em equilíbrio</h1>
-  <div class="mc-line"></div>
-  <div class="mc-name">Camila Martins Finger &nbsp;·&nbsp; Monica Bruno</div>
-  <div class="mc-date">28 de outubro de 2026 &nbsp;·&nbsp; B.Brasil São José &nbsp;·&nbsp; Outubro Rosa</div>
-</div>
-""", "terra nofoot", waves(900, 360, 12, "#FDF8FA", 0.22))
 
 # HOOK
 add("""
