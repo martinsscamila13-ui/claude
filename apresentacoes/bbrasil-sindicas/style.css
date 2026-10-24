@@ -604,3 +604,8 @@ b{font-weight:600}
 .opts div{display:flex;align-items:center;gap:30px;font-size:46px;font-weight:300;color:var(--cream);border-top:1.5px solid rgba(251,246,241,.25);padding-top:26px}
 .opts span{font-family:Gilda;font-size:56px;color:#E7A3BE;width:50px}
 .note.light{color:var(--cream)}
+.ig-h{font-family:Gilda;font-size:52px;color:#E7A3BE;margin:6px 0 34px}
+.sec30{width:560px;height:560px;border-radius:50%;border:3px solid #E7A3BE;display:flex;align-items:center;justify-content:center;justify-self:center}
+.sec30 span{font-family:Gilda;font-size:260px;line-height:1;color:var(--cream)}
+.sec30 i{font-style:normal;color:#E7A3BE}
+.qr-wrap .note.light{margin-top:44px}

@@ -3,6 +3,7 @@ import math, pathlib
 OUT = pathlib.Path(__file__).parent
 QR_TEST = (OUT / "qr.svg").read_text()
 QR_INSTA = (OUT / "qr_insta.svg").read_text()
+QR_BB = (OUT / "qr_bbrasil.svg").read_text()
 
 def waves(w=900, h=520, n=14, color="#FDF8FA", op=0.55, amp=70, freq=1.25, tilt=0.35, sw=1.4):
     paths = []
@@ -124,6 +125,23 @@ add("""
 </div>
 <p class="note">Condomínio limpo do jeito certo = <b>menos reclamação de morador</b> chegando no seu WhatsApp.</p>
 """)
+
+# INSTAGRAM B.BRASIL
+add(f"""
+<div class="qr-wrap">
+  <div>
+    <div class="tag light">Siga a B.Brasil</div>
+    <h2 class="title light">Limpeza profissional<br>no seu feed</h2>
+    <p class="ig-h">@b.brasilhigieneprofissional</p>
+    <ol class="steps-v">
+      <li>Aponte a câmera para o QR code</li>
+      <li>Siga o perfil da B.Brasil</li>
+      <li>Ficou com dúvida sobre produto? <b>Fale com a equipe da Monica</b></li>
+    </ol>
+  </div>
+  <div class="qr">{QR_BB}</div>
+</div>
+""", "dark nofoot", "")
 
 # 1 CAPA
 add("""
@@ -280,6 +298,24 @@ add("""
 """)
 
 
+
+# DINÂMICA 30 SEGUNDOS
+add("""
+<div class="qr-wrap">
+  <div>
+    <div class="tag light">Dinâmica · 2 min</div>
+    <h2 class="title light">Quanto tempo tem 30 segundos?</h2>
+    <ol class="steps-v">
+      <li>Todas de pé, <b>olhos fechados</b></li>
+      <li>Eu dou o sinal e começo a cronometrar</li>
+      <li>Sente quando achar que <b>passaram 30 segundos</b></li>
+      <li>Abra os olhos e veja quem acertou</li>
+    </ol>
+    <p class="note light">Se 30 segundos já enganam, imagine um dia inteiro <b>sem planejamento</b>.</p>
+  </div>
+  <div class="sec30"><span>30<i>″</i></span></div>
+</div>
+""", "dark nofoot", waves(900, 460, 16, "#FDF8FA", 0.18))
 
 # PROCRASTINAÇÃO
 quote("O que é procrastinar?", "É adiar o que é importante, colocando tarefas menores ou distrações no lugar.<br><b>Procrastinação não é preguiça. É um sintoma.</b>")
