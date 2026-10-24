@@ -95,35 +95,34 @@ def qr_slide(tag, title, steps, foot, qr):
 </div>
 """, "dark nofoot", "")
 
-# 2 MONICA
+# 1 MONICA · BOAS-VINDAS
 add("""
-<div class="tag">Bem-vindas · quem recebe vocês hoje</div>
-<h2 class="title">Prazer, Monica.</h2>
-<p class="sub">Monica Bruno · B.Brasil Higiene Profissional</p>
-<div class="mon">
+<div class="min-cover welcome">
+  <div class="mc-top"><svg class="ribbon" viewBox="0 0 40 70"><path d="M20 6c-7 0-10 6-10 11 0 8 6 14 10 21-4 8-12 18-16 26M20 6c7 0 10 6 10 11 0 8-6 14-10 21 4 8 12 18 16 26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>B.Brasil Higiene Profissional · Outubro Rosa</div>
+  <h1 class="mega">Sejam muito<br>bem-vindas!</h1>
+  <div class="mc-line"></div>
+  <div class="mc-name">Monica Bruno &nbsp;·&nbsp; Gerente de Vendas</div>
+  <div class="mc-date">Um momento especial de conexão, aprendizado e cuidado.</div>
+</div>
+""", "terra nofoot", waves(900, 360, 12, "#FDF8FA", 0.22))
+
+# 2 B.BRASIL
+add("""
+<div class="tag">Quem recebe vocês hoje</div>
+<h2 class="title">B.Brasil Higiene Profissional</h2>
+<p class="sub">Distribuição de produtos de higiene, limpeza, descartáveis e equipamentos para empresas de diversos segmentos.</p>
+<div class="mon bb">
   <div class="mon-stats">
-    <div><span class="pn2">36</span><p><b>anos de história</b> da B.Brasil</p></div>
-    <div><span class="pn2">7</span><p><b>lojas</b> de higiene profissional</p></div>
-    <div class="hl"><span class="pn2">1</span><p><b>propósito:</b> servir bem quem cuida dos espaços</p></div>
+    <div><span class="pn2">36+</span><p><b>anos de experiência</b> no mercado de higiene profissional</p></div>
+    <div><span class="pn2">7</span><p><b>lojas</b> em Santa Catarina, Paraná e São Paulo</p></div>
+    <div class="hl"><span class="pn2">4</span><p><b>linhas:</b> higiene, limpeza, descartáveis e equipamentos</p></div>
   </div>
   <div class="card dark mon-q">
-    <div class="ck">Perfil Protagonista · ENFJ</div>
-    <p class="formula">“Ninguém constrói um negócio sozinha. A gente constrói inspirando quem está ao redor a crescer junto.”</p>
+    <div class="ck">O que buscamos entregar</div>
+    <ul class="bb-vals"><li>Qualidade</li><li>Praticidade</li><li>Economia</li><li>Eficiência</li></ul>
+    <p class="bb-foot">no dia a dia das empresas, com trabalho, dedicação e compromisso com cada cliente.</p>
   </div>
 </div>
-""")
-
-# 3 B.BRASIL E O CONDOMÍNIO
-add("""
-<div class="tag">B.Brasil e o seu condomínio</div>
-<h2 class="title">Limpeza profissional também é gestão do tempo</h2>
-<div class="grid4">
-  <div class="tile"><span class="ti">01</span><h4>Produto certo</h4><p>Para cada superfície e cada sujeira: menos retrabalho e menos desperdício.</p></div>
-  <div class="tile"><span class="ti">02</span><h4>Equipamento certo</h4><p>A equipe limpa mais em menos tempo, com padrão.</p></div>
-  <div class="tile"><span class="ti">03</span><h4>Equipe orientada</h4><p>Quem sabe usar bem o produto faz certo da primeira vez.</p></div>
-  <div class="tile"><span class="ti">04</span><h4>Reposição programada</h4><p>Pedido planejado, sem compra de urgência no meio da semana.</p></div>
-</div>
-<p class="note">Condomínio limpo do jeito certo = <b>menos reclamação de morador</b> chegando no seu WhatsApp.</p>
 """)
 
 # INSTAGRAM B.BRASIL

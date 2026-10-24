@@ -609,3 +609,14 @@ b{font-weight:600}
 .sec30 span{font-family:Gilda;font-size:260px;line-height:1;color:var(--cream)}
 .sec30 i{font-style:normal;color:#E7A3BE}
 .qr-wrap .note.light{margin-top:44px}
+.min-cover.welcome .mega{font-size:170px}
+.min-cover.welcome .mc-date{font-size:34px;letter-spacing:0;text-transform:none}
+.bb-vals{list-style:none;display:flex;flex-direction:column;gap:14px;margin:18px 0 26px}
+.bb-vals li{font-family:Gilda;font-size:56px;line-height:1.1;color:var(--cream);border-bottom:1.5px solid rgba(251,246,241,.2);padding-bottom:12px}
+.bb-foot{font-size:26px;line-height:1.4;color:#F7E4EC;font-weight:300}
+.mon.bb .mon-stats div{padding:16px 34px}
+.mon.bb .mon-stats .pn2{font-size:80px;min-width:150px}
+.mon.bb .mon-stats p{font-size:29px}
+.mon.bb .bb-vals{gap:6px;margin:10px 0 16px}
+.mon.bb .bb-vals li{font-size:44px;padding-bottom:8px}
+.mon.bb .mon-q{padding:34px 44px}
