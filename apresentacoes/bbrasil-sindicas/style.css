@@ -620,3 +620,7 @@ b{font-weight:600}
 .mon.bb .bb-vals{gap:6px;margin:10px 0 16px}
 .mon.bb .bb-vals li{font-size:44px;padding-bottom:8px}
 .mon.bb .mon-q{padding:34px 44px}
+.bye.two{grid-template-columns:1fr 820px;gap:70px}
+.bye-qrs{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.bye-qrs .qr{width:390px;height:390px;padding:36px}
+.bye-qrs .bye-h{font-size:30px;margin-top:20px;text-align:center;color:var(--cream)}

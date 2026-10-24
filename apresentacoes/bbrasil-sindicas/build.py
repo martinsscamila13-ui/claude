@@ -642,15 +642,17 @@ quote("Cuidar do condomínio<br>não precisa custar a sua paz.")
 
 # 39 OBRIGADA
 add(f"""
-<div class="bye">
+<div class="bye two">
   <div>
     <div class="bye-rib"><svg class="ribbon" viewBox="0 0 40 70"><path d="M20 6c-7 0-10 6-10 11 0 8 6 14 10 21-4 8-12 18-16 26M20 6c7 0 10 6 10 11 0 8-6 14-10 21 4 8 12 18 16 26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></div>
     <h2 class="mega">Obrigada!</h2>
     <p class="thanks">Monica e equipe <b>B.Brasil</b>, obrigada pelo convite.</p>
     <p class="lead light">Seu relatório MBTI: me mande o resultado no direct com a palavra <b>LUCRO</b>.</p>
-    <p class="bye-h">@martinsscamila</p>
   </div>
-  <div class="qr">{QR_INSTA}</div>
+  <div class="bye-qrs">
+    <div><div class="qr">{QR_INSTA}</div><p class="bye-h">@martinsscamila</p></div>
+    <div><div class="qr">{QR_BB}</div><p class="bye-h">@b.brasilhigieneprofissional</p></div>
+  </div>
 </div>
 """, "terra nofoot", waves(1100, 480, 16, "#FDF8FA", 0.25))
 
