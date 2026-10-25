@@ -117,10 +117,7 @@ add("""
     <div><span class="pn2">7</span><p><b>lojas</b> em Santa Catarina, Paraná e São Paulo</p></div>
     <div class="hl"><span class="pn2">4</span><p><b>compromissos:</b> qualidade, praticidade, economia e eficiência</p></div>
   </div>
-  <div class="card dark mon-q">
-    <div class="ck">Perfil Protagonista · ENFJ</div>
-    <p class="formula">“Ninguém constrói um negócio sozinha. A gente constrói inspirando quem está ao redor a crescer junto.”</p>
-  </div>
+  <div class="mon-logo"><img src="img/logo_bbrasil.jpg" alt="B.Brasil Produtos de Higiene Profissional"></div>
 </div>
 """)
 

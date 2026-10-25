@@ -624,3 +624,5 @@ b{font-weight:600}
 .bye-qrs{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .bye-qrs .qr{width:390px;height:390px;padding:36px}
 .bye-qrs .bye-h{font-size:30px;margin-top:20px;text-align:center;color:var(--cream)}
+.mon-logo{background:#F7F7F7;border:1.5px solid var(--line);border-radius:26px;display:flex;align-items:center;justify-content:center;padding:40px}
+.mon-logo img{width:100%;height:auto;display:block}
