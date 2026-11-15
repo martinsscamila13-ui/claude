@@ -20,6 +20,7 @@
 9. [Textos prontos: curso, sobre você, FAQ, e-mails e WhatsApp](#9-textos-prontos)
 10. [Checklist final de qualidade](#10-checklist-final-de-qualidade)
 11. [O que a extensão NÃO deve fazer](#11-o-que-a-extensão-não-deve-fazer)
+12. [Materiais complementares: onde subir cada um na Kiwify e no Classroom](#12-materiais-complementares-onde-subir-cada-um-na-kiwify-e-no-classroom)
 
 ---
 
@@ -37,6 +38,9 @@
 | 8. Criar a landing page | Canva Sites ou Google Sites | **Extensão** + você revisa | 1–2 h |
 | 9. Liberar as mentoradas | Kiwify | **Extensão** | 10 min |
 | 10. Fazer uma compra de teste e o checklist final | Kiwify | **Você** | 20 min |
+| 11. Subir os materiais complementares (Workbook, ebook, kit de IA, quizzes) | Kiwify + Classroom | **Extensão** + você faz os uploads | 1 h |
+
+> **Antes de divulgar a página de vendas:** publique o quiz Índice de Exaustão (`curso-alicerce/guerrilha/01-quiz-indice-exaustao.html`) e o grupo VIP. Eles são a porta de entrada do tráfego frio.
 
 **Estratégia recomendada:**
 - **Kiwify** é a plataforma oficial, tanto para o público pago quanto para o gratuito. Ela não tem mensalidade, e adicionar alunas manualmente é grátis (política oficial da Kiwify).
@@ -56,7 +60,7 @@ Ao cruzar o roteiro com os arquivos, encontrei estes pontos:
 | Aula 19 – Plano Anti-Exaustão | Não há arquivo | Localizar ou gravar |
 | Aula 23 – Protocolo de Disciplina Sustentável | Não há arquivo | Localizar ou gravar |
 | Aula 30 – Visão de Legado | Não há arquivo "Aula 30" | Confirmar se o vídeo "INTRODUÇAOFASE4" é a Aula 25, o que deslocaria a numeração |
-| "Finalização fase 3" | Só 6 MB, muito curto | Assistir e confirmar se está completo |
+| "Finalização fase 3" | Arquivo de só 6 MB (pode ter sido cortado na exportação) | Assistir e confirmar se o arquivo está completo — as aulas são curtas de propósito, a checagem é só de integridade |
 | Vídeos "Introdução" das Fases 2, 3 e 4 | Não estão no roteiro | Manter como aula "Introdução" no início de cada módulo |
 | Pasta "Módulo 0000" dentro do Módulo 1 | Organização confusa | Será o **Módulo 0 – Comece por aqui** |
 
@@ -161,13 +165,14 @@ A estrutura do curso que você deve seguir está abaixo:
 
 **Nome do produto:** Método Lucro Anti-Exaustão® – Alicerce
 **Promessa:** Uma empresa lucrativa não precisa custar a sua paz.
-**Formato:** 5 módulos, cerca de 31 aulas, cerca de 3h20 de conteúdo, mais planilhas de ferramentas por fase.
+**Formato:** 5 módulos e cerca de 31 aulas **curtas de propósito** (5 a 8 minutos, cada uma termina com uma ação), mais Workbook, planilhas de ferramentas por fase e o kit de IA. As aulas curtas são diferencial de venda: não proponha alongá-las.
 
 ### Módulo 0 — Comece por aqui
 *Conheça a história por trás do método, descubra em que estágio você está como empresária e aprenda a aproveitar as ferramentas que vão te acompanhar na jornada.*
 
 | # | Título da aula | Descrição | Arquivo |
 |---|---|---|---|
+| 0 | Sua primeira hora: o Filtro dos 90 Dias | Antes da primeira aula de conteúdo, você descobre o tamanho do problema e elimina um item da sua semana. | **Nova:** aula de texto (Workbook, pág. "Filtro dos 90 Dias") ou vídeo curto opcional |
 | 1 | Boas-vindas: como aproveitar o método | Como o processo funciona, a ordem das etapas e o checklist para começar. | Aula 1 |
 | 2 | Como tudo começou | A história real de sobrecarga que deu origem ao Método Lucro Anti-Exaustão®. | Aula 2 |
 | 3 | Em que estágio você está? | O método se adapta ao seu momento, seja ideia, negócio começando ou negócio sobrecarregado. | Aula 3 |
@@ -458,7 +463,7 @@ Personalize o checkout:
 Salve.
 ```
 
-> Use só depoimentos **reais**, com autorização das alunas. Na sua bio consta "+200 mentoradas", e essa prova social pode ir no banner.
+> Use só depoimentos **reais**, com autorização das alunas. A prova social oficial é "+400 mentoradas · +2 mil mulheres impactadas com palestras e treinamentos", e ela pode ir no banner.
 
 ### 6.3 Order bump e upsell (aumentam o ticket)
 Sugestões alinhadas à sua escada de produtos:
@@ -495,6 +500,7 @@ Em "Integrações / Pixels" do produto:
 Salve.
 ```
 > Se você ainda não tem Pixel, crie no Gerenciador de Eventos da Meta antes de anunciar.
+> Use UTMs em todos os links (padrão em `curso-alicerce/guerrilha/00-plano-guerrilha-90-dias.md`, seção 6) e confira se o relatório de vendas da Kiwify registra as UTMs.
 
 ### 6.6 E-mails automáticos
 A Kiwify envia o e-mail de acesso automaticamente. Confira o **remetente**, o **nome do produto** e o **e-mail de suporte**. Se a plataforma permitir personalizar, use o e-mail da seção 9.4.
@@ -541,6 +547,7 @@ Use quando você não tiver o e-mail da aluna e quiser que ela mesma se cadastre
 | `COMUNIDADE` | 40% (R$ 298,20) | Membros da comunidade R$ 97/mês que não têm o curso incluso | sem limite, revisar a cada 3 meses |
 | `DESAFIO` | R$ 100 OFF | Participantes do Desafio Lucro Anti-Exaustão (7 dias) | 72 h após o desafio |
 | `LANCAMENTO` | R$ 150 OFF | Primeira turma | 50 usos ou 7 dias |
+| `INDICA-[NOME]` | 10% | Alunas e mentoradas que indicam outra empresária (ver `curso-alicerce/guerrilha/02-programa-indicacao.md`) | sem limite, validade de 6 meses |
 
 ```
 Vá em "Cupons" (ou "Promoções") do produto Alicerce → "Novo cupom" e crie:
@@ -550,6 +557,9 @@ Me mostre cada cupom antes de salvar.
 ```
 
 **Link de checkout com cupom já aplicado:** se a Kiwify suportar parâmetro de cupom na URL, peça à extensão para gerar o link. Assim a aluna não precisa digitar o código.
+
+### 7.4 Licenças B2B e In Company
+Empresa ou rede compra N acessos (por exemplo, junto com uma palestra ou o Workshop Realize In Company) → liberação manual na Kiwify (gratuita, seção 7.1) → controle na planilha "Controle de Acessos – Alicerce" com Origem = `B2B/[empresa]`. Scripts de proposta em `curso-alicerce/guerrilha/03-scripts-parcerias-e-palestra.md`.
 
 ---
 
@@ -565,38 +575,28 @@ A Kiwify **não tem construtor de landing page** completo: o produto só aponta 
 
 ### 8.1 Estrutura da LP (ordem de alta conversão)
 
-1. **Topo (hero)**
-   - Título: **"Uma empresa lucrativa não precisa custar a sua paz."**
-   - Subtítulo: "O Método Lucro Anti-Exaustão® ensina empresárias a sair do caos operacional e construir uma empresa organizada, lucrativa e menos dependente delas, em 4 fases."
-   - Botão: **"Quero começar agora"** → link do checkout
-   - Sua foto à direita.
-2. **Identificação com a dor**
-   - "Você sente que a empresa cresceu, mas a sua vida encolheu?"
-   - Lista: apaga incêndio o dia todo · tudo passa por você · não tem rotina · culpa por não estar com a família · lucro que não vira liberdade.
-3. **O mecanismo** (do seu Arquivo de Mentoria)
-   - "Você não está exausta porque a empresa cresceu. Está exausta porque o crescimento aconteceu sem uma estrutura operacional compatível com a nova fase."
-4. **O método: 4 fases**, com um cartão para cada:
-   - Raio-X Operacional: clareza antes da expansão.
-   - Extração Comportamental Lucrativa: liderança alinhada à sua melhor performance.
-   - Rotina Anti-Exaustão: estrutura leve para crescimento sustentável.
-   - Ativação de Patrimônio Valioso: empresa forte, vida leve e legado construído.
-5. **O que você recebe**
-   - Cerca de 31 aulas gravadas (cerca de 3h20), em 5 módulos.
-   - 4 planilhas de ferramentas, uma por fase.
-   - Bônus: Planilha Financeira e Filtro dos 90 Dias.
-   - Certificado de conclusão.
-   - Acesso por [12 meses / vitalício].
-6. **Para quem é / para quem não é**
-   - É para: empresárias de negócio físico ou prestadoras de serviço, com equipe, que querem crescer sem se esgotar.
-   - Não é para: quem procura fórmula mágica ou não está disposta a aplicar as ferramentas.
-7. **Sobre a Camila** (texto da seção 9.2 + "+200 mentoradas")
-8. **Depoimentos reais** (prints ou vídeos, com autorização)
-9. **Oferta**
-   - ~~R$ 997~~ só se você já tiver vendido por esse valor. Não invente preço "de". O preço é **R$ 497 ou 12x no cartão**.
-   - Botão "Quero começar agora".
-10. **Garantia de 7 dias:** "Se em 7 dias você sentir que não é para você, devolvemos 100% do valor."
-11. **FAQ** (seção 9.3)
-12. **Botão final** + link de WhatsApp para dúvidas.
+> O arquivo `curso-alicerce/landing-page.html` já está pronto nesta ordem. Use-o como página (Netlify/hospedagem) ou como roteiro para recriar no Canva Sites.
+
+1. **Faixa de credenciais no topo:** "+400 mentoradas · +2 mil mulheres impactadas em palestras e treinamentos".
+2. **Hero:** "Uma empresa lucrativa não precisa custar a sua paz." + público específico (clínicas, salões, lojas, estúdios, empresas de serviço) + promessa de produto (plano de 12 semanas, 3 metas, rotina que cabe na semana real, primeira tarefa fora das suas costas) + botão + **CTA secundário para o quiz** ("Ainda em dúvida? Descubra o seu Índice de Exaustão em 2 min").
+3. **Credenciais:** +400 · +2 mil · 12 edições do Drink to Talk · Workshop Realize.
+4. **Dor:** "Lembra a última vez que você começou o dia sem abrir o WhatsApp primeiro?" + lista.
+5. **Mecanismo + balde furado** + o mito "Empresária de verdade dá conta de tudo sozinha".
+6. **As 4 fases**, com o que ela sai de cada uma.
+7. **Aulas curtas de propósito:** assista (5–8 min) → aplique no Workbook → revise com o Assistente de IA.
+8. **O que muda na sua primeira semana** (Dia 1 a Dia 7, começando pelo Filtro dos 90 Dias).
+9. **Tudo o que você recebe** (value stack — sem valores inventados; o Plantão ao vivo só se você decidir oferecer).
+10. **Conteúdo do curso** (módulos).
+11. **Para quem é / não é.**
+12. **Sobre a Camila** (R$ 10 por hora, enfermagem, maternidade, Drink to Talk, Realize, palestras).
+13. **"Quem já caminhou comigo":** faixa de credenciais verificáveis **até haver depoimentos autorizados** (formulário de saída em `complementares/avaliacoes-por-modulo.md`).
+14. **Objeções** ("não tenho tempo", "já comprei curso e não apliquei", "sou desorganizada"...).
+15. **Oferta:** R$ 497 ou 12x, âncora honesta ("o mesmo método da mentoria individual, 12 encontros em 3 meses"). Sem "preço de" inventado.
+16. **Garantia de 7 dias.**
+17. **"E depois do Alicerce?"** — Comunidade Impulso, Workshop Realize e Mentoria.
+18. **FAQ** (inclui "Por que as aulas são tão curtas?" e o link do quiz).
+19. **Fechamento:** "Quem decide, realiza. Quem adia, apenas sonha."
+20. **Barra fixa no celular** com preço e botão.
 
 ### 8.2 Prompt para a extensão (Canva Sites)
 ```
@@ -622,7 +622,7 @@ do produto Alicerce na Kiwify. Salve.
 - Coloque o botão de compra visível a cada 2 ou 3 seções.
 - Use imagens leves (até 300 KB cada).
 - Coloque o Pixel da Meta na LP, se a ferramenta permitir.
-- Link na bio do Instagram: LP → checkout. Não mande o tráfego direto para o checkout.
+- Link na bio do Instagram: **quiz** (`QUIZ_URL`) → LP → checkout. Não mande tráfego frio direto para o checkout.
 
 ---
 
@@ -632,26 +632,26 @@ do produto Alicerce na Kiwify. Salve.
 > **Método Lucro Anti-Exaustão® – Alicerce**
 > Uma empresa lucrativa não precisa custar a sua paz.
 >
-> Você não está exausta porque a sua empresa cresceu. Está exausta porque ela cresceu sem uma estrutura compatível com a nova fase, e tudo continua passando por você.
+> Você não está exausta porque a sua empresa cresceu. Está exausta porque ela cresceu sem uma estrutura compatível com a nova fase — e tudo continua passando por você.
 >
-> Neste curso você vai aplicar, passo a passo, as 4 fases do método que já transformou a rotina de mais de 200 mentoradas:
-> **1. Raio-X Operacional:** enxergue onde você perde tempo, dinheiro e energia.
+> Neste curso você aplica, passo a passo, as 4 fases que eu aplico com mais de 400 mentoradas:
+> **1. Raio-X Operacional:** clareza antes de tudo — descubra por onde o lucro está vazando.
 > **2. Extração Comportamental Lucrativa:** lidere e produza respeitando o seu perfil.
-> **3. Rotina Anti-Exaustão:** construa uma rotina leve, funcional e lucrativa.
+> **3. Rotina Anti-Exaustão:** semana com função por dia, prioridades inteligentes e disciplina sem culpa.
 > **4. Ativação de Patrimônio Valioso:** faça a empresa depender menos de você e construa legado.
 >
-> São cerca de 31 aulas práticas, com planilhas de ferramentas em cada fase, para você sair do improviso e recuperar a sua liberdade.
+> São cerca de 31 aulas **curtas de propósito** (5 a 8 minutos), cada uma terminando com uma ação, mais o Workbook das 4 fases, as planilhas de ferramentas e o Assistente Anti-Exaustão (IA).
 
 ### 9.2 Sobre você (bio)
 **Curta (checkout e Instagram):**
-> Camila Martins Finger | Mentora de Empresárias. Criadora do Método Lucro Anti-Exaustão®. +200 mentoradas. Uma empresa lucrativa não precisa custar a sua paz.
+> Camila Martins Finger | Mentora de Empresárias. Criadora do Método Lucro Anti-Exaustão®. +400 mentoradas · +2 mil mulheres impactadas com palestras e treinamentos. Uma empresa lucrativa não precisa custar a sua paz.
 
 **Longa (LP e área de membros):**
-> Eu sou a Camila Martins Finger, mentora de empresárias e criadora do Método Lucro Anti-Exaustão®.
-> Antes de ajudar outras mulheres a organizar suas empresas, eu vivi a exaustão na pele. Eu era técnica de enfermagem, trabalhava das 7h às 17h e saía de madrugada de ônibus para chegar a tempo. Me tornei mãe em plena pandemia. Foi dessa sobrecarga que nasceu a minha reinvenção profissional e, com ela, um método construído na prática, não na teoria.
-> Hoje, com mais de 200 mentoradas, eu ajudo empresárias a sair do caos operacional e construir empresas lucrativas, organizadas e menos dependentes delas, com tempo para a família e para si mesmas.
+> Eu sou a Camila Martins Finger, mentora de empresárias, palestrante e criadora do Método Lucro Anti-Exaustão®.
+> Antes de ajudar outras mulheres a organizar suas empresas, eu vivi a exaustão na pele. Eu fui a técnica de enfermagem que ganhava R$ 10 por hora: trabalhava das 7h às 17h e saía de madrugada, de ônibus, para chegar a tempo. Anos assim me ensinaram que tempo é o recurso mais caro que existe. Me tornei mãe em plena pandemia. Foi dessa sobrecarga que nasceu a minha reinvenção profissional e, com ela, um método construído na prática, não na teoria.
+> Hoje são mais de 400 mentoradas e mais de 2 mil mulheres impactadas com palestras e treinamentos — como as 12 edições do Drink to Talk e o Workshop Realize, na Grande Florianópolis e online. Eu ajudo empresárias a sair do caos operacional e construir empresas lucrativas, organizadas e menos dependentes delas, com tempo para a família e para si mesmas.
 
-*(Revise os detalhes da sua história antes de publicar.)*
+*(Fonte dos fatos: `curso-alicerce/contexto-marca.md`.)*
 
 ### 9.3 FAQ
 - **Por quanto tempo terei acesso?** [12 meses / vitalício] a partir da compra.
@@ -683,7 +683,7 @@ do produto Alicerce na Kiwify. Salve.
 > Oi, [NOME]! 💛 Liberei o seu acesso gratuito ao curso gravado do Método Lucro Anti-Exaustão®. Você vai receber um e-mail da Kiwify no [E-MAIL]. Confere também o spam! Comece pelo Módulo 0 e me conta o que achou da primeira aula 😉
 
 ### 9.6 Aviso para o público pago (descrição da Aula 1)
-> 💡 **Nota:** este curso foi gravado a partir da minha mentoria individual. Quando eu falar em "Trello", "Notion" ou "encontro individual", use as **planilhas de ferramentas** de cada módulo, porque elas têm as mesmas perguntas e exercícios. Se quiser acompanhamento comigo, conheça a Comunidade Impulso e a Mentoria.
+> 💡 **Nota:** este curso foi gravado a partir da minha mentoria individual. Quando eu falar em "Trello", "Notion" ou "encontro individual", use o **Workbook Método Alicerce** e as **planilhas de ferramentas** de cada módulo: eles têm as mesmas perguntas e exercícios. Para revisar suas respostas, use o **Assistente Anti-Exaustão (IA)**. Se quiser acompanhamento comigo, conheça a Comunidade Impulso e a Mentoria.
 
 ---
 
@@ -695,6 +695,9 @@ do produto Alicerce na Kiwify. Salve.
 - [ ] Títulos padronizados ("Aula 05 — ...")
 - [ ] Planilhas com links /copy funcionando em janela anônima
 - [ ] Aviso da seção 9.6 na Aula 1
+- [ ] Aula "Sua primeira hora" criada no Módulo 0
+- [ ] Workbook, ebook, quizzes, Índice Anti-Exaustão e kit de IA publicados (seção 12)
+- [ ] Assistente de IA testado (checklist em `complementares/ia/assistente-anti-exaustao-instrucoes.md`, seção 6)
 
 **Kiwify**
 - [ ] Conta aprovada, dados bancários conferidos e 2FA ativo
@@ -710,7 +713,8 @@ do produto Alicerce na Kiwify. Salve.
 **Landing page**
 - [ ] Todos os botões levam ao checkout certo
 - [ ] Teste no celular
-- [ ] Só depoimentos reais e autorizados
+- [ ] Só depoimentos reais e autorizados (até lá, a faixa de credenciais)
+- [ ] Link do quiz (`QUIZ_URL`) funcionando no hero, no FAQ e no rodapé
 - [ ] Nenhum preço "de" inventado
 - [ ] Link na bio do Instagram
 
@@ -735,6 +739,65 @@ do produto Alicerce na Kiwify. Salve.
 
 ---
 
+## 12. Materiais complementares: onde subir cada um na Kiwify e no Classroom
+
+Os materiais estão em `curso-alicerce/complementares/`. O plano completo (por que cada um existe) está em `complementares/00-diagnostico-e-plano-10x.md`.
+
+### 12.1 Nova estrutura de bônus (o que entra na oferta)
+
+| # | Item | Tipo | Arquivo |
+|---|---|---|---|
+| 1 | Método gravado (aulas de 5 a 8 min) | Núcleo | vídeos |
+| 2 | **Workbook Método Alicerce** (35 págs.) | Implementação | `complementares/workbook-metodo-alicerce.pdf` |
+| 3 | Planilhas das 4 fases | Implementação | Drive (versões MODELO, link `/copy`) |
+| 4 | **Assistente Anti-Exaustão (IA) + Biblioteca de Prompts** | Bônus | `complementares/ia/` |
+| 5 | **Ebook "Raio-X da Empresária Exausta"** (15 págs.) | Bônus (e isca) | `complementares/ebook-raio-x-empresaria-exausta.pdf` |
+| 6 | Filtro dos 90 Dias + Planilha Financeira | Bônus | Drive |
+| 7 | Índice Anti-Exaustão (entrada/saída), quizzes e certificado | Acompanhamento | `complementares/avaliacoes-por-modulo.md` |
+| 8 | Plantão Anti-Exaustão ao vivo | Opcional — **decisão sua** | Zoom/Meet |
+
+### 12.2 Onde subir cada material
+
+| Material | Kiwify | Google Classroom |
+|---|---|---|
+| Workbook (PDF) | Módulo 0 → Aula 1: anexo/material para download. Repetir o link na descrição da primeira aula de cada módulo. | Tópico "Módulo 0" → *Criar → Material* → anexar PDF do Drive. |
+| Aula "Sua primeira hora" | Módulo 0, **primeira aula**: aula de texto com as instruções do Filtro dos 90 Dias + link da planilha (`/copy`). | Primeiro material do tópico "Módulo 0". |
+| Índice Anti-Exaustão — entrada | Aula de texto "📊 Seu ponto de partida" no Módulo 0, com link do Google Forms (`LINK_FORM_ENTRADA`). | *Criar → Atividade com teste* (Forms) no Módulo 0. |
+| Quizzes por módulo | Última aula de cada módulo: "✅ Quiz do Módulo X" (recurso de quiz da Kiwify, se houver, ou link do Forms). | *Criar → Atividade com teste* no fim de cada tópico. |
+| Ebook (PDF) | Módulo 0 → material de bônus. Também como entrega da isca (e-mail 17). | Material no Módulo 0. |
+| Kit de IA | Novo módulo **"Bônus · Assistente Anti-Exaustão"** com uma aula de texto (texto pronto na seção 5 de `ia/assistente-anti-exaustao-instrucoes.md`), os links `LINK_GPT`/`LINK_GEM` e os 3 arquivos para download. | Novo tópico "Bônus · Assistente de IA" com os mesmos links e arquivos. |
+| Biblioteca de prompts | Anexo no módulo de IA **e** colar o prompt de cada aula no fim da descrição da aula correspondente. | Anexo no tópico de IA. |
+| Índice Anti-Exaustão — saída + depoimento | Última aula do Módulo 4: "🏁 Seu número de transformação" com o link do formulário de saída (`LINK_FORM_SAIDA`). | Atividade com teste no Módulo 4. |
+| Plantão ao vivo (se houver) | Aula "🎙️ Plantão Anti-Exaustão" com data, link (`LINK_PLANTAO`) e, depois, a gravação. | Aviso no Mural + material com a gravação. |
+
+### 12.3 Prompt para a extensão (Kiwify)
+```
+Na área de membros do produto Alicerce:
+1. No Módulo 0, crie como PRIMEIRA aula uma aula de texto chamada "Sua primeira hora: o Filtro dos 90 Dias".
+   Cole o texto que eu vou te passar e o link da planilha. Pare e me peça o texto.
+2. Crie a aula "📊 Seu ponto de partida" (Módulo 0) com o link LINK_FORM_ENTRADA.
+3. No fim de cada módulo, crie a aula "✅ Quiz do Módulo X" com o link do quiz correspondente.
+4. Crie o módulo "Bônus · Assistente Anti-Exaustão" com uma aula de texto. Pare e me peça o texto e os links.
+5. Onde houver campo de anexo/material, pare e me peça para fazer o upload do PDF (Workbook e Ebook).
+Me mostre a estrutura antes de publicar.
+```
+
+### 12.4 Prompt para a extensão (Classroom)
+```
+Na turma "Método Lucro Anti-Exaustão® – Alicerce":
+1. No tópico "Módulo 0 — Comece por aqui", crie os materiais: "Sua primeira hora: o Filtro dos 90 Dias",
+   "📘 Workbook Método Alicerce" e "📕 Ebook Raio-X da Empresária Exausta" (anexe do Google Drive:
+   pasta "Alicerce – Método Lucro Anti-Exaustão (CURSO FINAL)/Materiais").
+2. Crie o tópico "Bônus · Assistente de IA" com um material contendo os links e os 3 arquivos do kit.
+3. No fim de cada tópico de módulo, crie "Atividade com teste" com o título "✅ Quiz do Módulo X".
+   Pare e me deixe colar as questões (estão no arquivo de avaliações).
+Me mostre antes de publicar cada item.
+```
+
+> **Antes de subir os PDFs:** confira os campos `[PREENCHER]` dos arquivos e, se mudar algum texto, gere o PDF de novo (o HTML de origem está na mesma pasta; abra no Chrome → Imprimir → Salvar como PDF, tamanho A4, "Gráficos de plano de fundo" ligado).
+
+---
+
 **Ordem de amanhã (resumo):**
 1. Resolver as aulas faltantes, pegar os vídeos e converter para MP4.
 2. Instalar a extensão.
@@ -742,7 +805,8 @@ do produto Alicerce na Kiwify. Salve.
 4. Kiwify: conta (você) e depois produto e área de membros com a extensão.
 5. Subir os vídeos.
 6. Checkout e cupons.
-7. Landing page.
-8. Liberar as mentoradas.
-9. Compra de teste.
-10. Divulgar.
+7. Materiais complementares (seção 12).
+8. Landing page (e quiz).
+9. Liberar as mentoradas.
+10. Compra de teste.
+11. Divulgar.

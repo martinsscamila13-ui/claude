@@ -1,7 +1,9 @@
 # Copy de divulgação: Método Lucro Anti-Exaustão® – Alicerce
 
-> Os textos usam a sua promessa, o seu mecanismo e a sua história (Arquivo de Mentoria e Roteiro do Curso).
-> Troque o que está entre [COLCHETES]. **Não use números ou depoimentos que não sejam reais.**
+> Fonte única de fatos e tom: `contexto-marca.md`. Prova social oficial: **+400 mentoradas** e **+2 mil mulheres impactadas com palestras e treinamentos**.
+> Troque o que está entre [COLCHETES]. **Não use números, cases ou depoimentos que não sejam reais e autorizados.** Nenhum nome de cliente sem autorização expressa.
+> Padrão de voz: "você" nos materiais de venda; "tu" pontualmente em stories e Reels (é o jeito da Camila falar).
+> Para o plano completo de 90 dias, o calendário de 30 dias, parcerias, palestra e indicação, veja a pasta `guerrilha/`.
 
 ---
 
@@ -10,51 +12,54 @@
 **Nome do produto:** Método Lucro Anti-Exaustão® – Alicerce
 
 **Descrição curta (até cerca de 200 caracteres):**
-> Para empresárias que querem lucrar sem viver no caos operacional. Um método em 4 fases para construir uma empresa organizada, lucrativa e menos dependente de você.
+> Aulas curtas (5 a 8 min) em 4 fases para empresárias saírem do caos operacional, com workbook, planilhas e assistente de IA. Uma empresa lucrativa não precisa custar a sua paz.
 
 **Descrição completa:**
-> Você não está exausta porque a sua empresa cresceu. Está exausta porque ela cresceu sem uma estrutura compatível com a nova fase, e tudo continua passando por você.
+> Você não está exausta porque a sua empresa cresceu. Está exausta porque ela cresceu sem uma estrutura compatível com a nova fase — e tudo continua passando por você.
 >
-> No Método Lucro Anti-Exaustão® você aplica, passo a passo, as 4 fases que já transformaram a rotina de mais de 200 mentoradas:
-> 1. Raio-X Operacional: clareza antes da expansão.
-> 2. Extração Comportamental Lucrativa: liderança alinhada à sua melhor performance.
-> 3. Rotina Anti-Exaustão: estrutura leve para um crescimento sustentável.
-> 4. Ativação de Patrimônio Valioso: empresa forte, vida leve e legado construído.
+> No Método Lucro Anti-Exaustão® você aplica, passo a passo, as 4 fases que eu aplico com mais de 400 mentoradas:
+> 1. **Raio-X Operacional:** clareza antes de tudo — descubra por onde o lucro está vazando.
+> 2. **Extração Comportamental Lucrativa:** lidere e produza respeitando o seu perfil.
+> 3. **Rotina Anti-Exaustão:** semana com função por dia, prioridades inteligentes e disciplina sem culpa.
+> 4. **Ativação de Patrimônio Valioso:** a empresa depende menos de você.
 >
-> Inclui mais de 30 aulas gravadas, 4 planilhas de ferramentas, bônus (Planilha Financeira + Filtro dos 90 Dias), certificado e 7 dias de garantia.
+> As aulas são **curtas de propósito** (5 a 8 minutos) e cada uma termina com uma ação. Você recebe o Workbook das 4 fases, as planilhas de cada ferramenta, o Assistente Anti-Exaustão (IA), o ebook "Raio-X da Empresária Exausta", o Filtro dos 90 Dias, a Planilha Financeira, quizzes, Índice Anti-Exaustão e certificado. 7 dias de garantia.
 
 **Texto do botão do checkout:** Quero começar agora
 
 **Mensagem de boas-vindas da área de membros:**
-> Bem-vinda! 💛 Comece pelo Módulo 0. Assista na ordem, preencha a planilha de cada fase e lembre: você não precisa fazer tudo de uma vez, só dar o próximo passo. — Camila
+> Bem-vinda! 💛 Comece pela aula "Sua primeira hora": em menos de uma hora você tira um peso da sua semana. Assista na ordem (as aulas são curtas de propósito), responda no Workbook e lembre: você não precisa fazer tudo de uma vez — só dar o próximo passo. — Camila
 
 ---
 
-## 2. Bio do Instagram
+## 2. Bio do Instagram (@martinsscamila)
 
 > Camila Martins Finger | Mentora Anti-Exaustão
-> Ajudo empresárias a lucrar sem viver no caos 💛
-> Criadora do Método Lucro Anti-Exaustão® · +200 mentoradas
-> ⬇️ Comece aqui
+> Empresária de verdade NÃO dá conta de tudo sozinha 💛
+> Método Lucro Anti-Exaustão® · +400 mentoradas · +2 mil mulheres em palestras
+> Drink to Talk · Workshop Realize · Grande Floripa
+> ⬇️ Faça o teste: qual é o seu Índice de Exaustão?
+
+*(O link da bio aponta para o quiz `QUIZ_URL`, não direto para a página de vendas. Bio atual e destaques: [PREENCHER].)*
 
 ---
 
 ## 3. Carrossel de lançamento (7 lâminas)
 
-1. **Capa:** "Você não está exausta porque a sua empresa cresceu."
-2. "Você está exausta porque ela cresceu **sem estrutura** para a nova fase."
-3. "Isso gera: centralização · excesso de decisões · equipe dependente · sobrecarga mental · lucro sem liberdade."
-4. "E enquanto você for o centro de tudo, o lucro vem junto com exaustão, culpa e falta de presença."
-5. "O Método Lucro Anti-Exaustão® resolve a raiz em 4 fases: Raio-X → Comportamento → Rotina → Patrimônio."
-6. "Agora em formato gravado: mais de 30 aulas + planilhas de ferramentas + 7 dias de garantia."
-7. **CTA:** "Uma empresa lucrativa não precisa custar a sua paz. Link na bio 💛"
+1. **Capa:** "Empresária de verdade dá conta de tudo sozinha." ~~Mentira.~~
+2. "Você não está exausta porque a sua empresa cresceu. Está exausta porque ela cresceu **sem estrutura** para a nova fase."
+3. "O lucro entra e vaza. É um **balde furado**: retrabalho · tarefas que só você faz · falta de processo · preço mal calculado · urgências."
+4. "Se mais horas dessem mais lucro, você já estaria rica. **Produtividade não é exaustão.**"
+5. "O Método Lucro Anti-Exaustão® tapa os furos em 4 fases: Raio-X → Comportamento → Rotina → Patrimônio."
+6. "Agora gravado, em **aulas de 5 a 8 minutos** — de propósito. Cada aula termina com uma ação. + Workbook + Assistente de IA."
+7. **CTA:** "Uma empresa lucrativa não precisa custar a sua paz. Comenta **LUCRO** 💛"
 
 **Legenda:**
-> Durante anos eu achei que cansaço era o preço de crescer. Não é.
-> A exaustão não vem do tamanho da sua empresa, vem da falta de uma estrutura que acompanhe esse tamanho.
-> Foi por isso que eu criei o Método Lucro Anti-Exaustão®, e agora ele está disponível em formato gravado, para você aplicar no seu ritmo.
-> 👉 Link na bio para conhecer.
-> #empresarias #gestaoempresarial #rotina #empreendedorismofeminino #lucro
+> Durante anos eu achei que cansaço era o preço de crescer. Eu fui a técnica de enfermagem que ganhava R$ 10 por hora — e aprendi cedo que tempo é o recurso mais caro que existe.
+> A exaustão não vem do tamanho da sua empresa. Vem da falta de uma estrutura que acompanhe esse tamanho.
+> Foi por isso que eu criei o Método Lucro Anti-Exaustão®, e agora ele está disponível em formato gravado, com aulas curtas para empresária sem tempo.
+> 👉 Comenta **LUCRO** que eu te mando o teste do Índice de Exaustão.
+> #empresarias #gestaoempresarial #rotina #empreendedorismofeminino #lucro #floripa
 
 ---
 
@@ -62,73 +67,93 @@
 
 | # | Tipo | Texto |
 |---|---|---|
-| 1 | Pergunta (enquete) | "Sinceramente: a sua empresa depende demais de você? Sim / Muito" |
-| 2 | Texto | "Quase todas responderam SIM. E isso não é falta de capacidade, é falta de estrutura." |
-| 3 | Vídeo seu (selfie) | "Eu vivi isso. Técnica de enfermagem, das 7h às 17h, ônibus de madrugada, mãe na pandemia. Da exaustão nasceu o meu método." |
-| 4 | Texto | "Hoje eu abri o Método Lucro Anti-Exaustão® em formato gravado. 4 fases. Mais de 30 aulas. Planilhas de ferramentas." |
-| 5 | Print da área de membros | "Olha por dentro 👀" |
-| 6 | Link (figurinha) | "Quer conhecer? Toca aqui 👇" → LP |
+| 1 | Pergunta (enquete) | "Lembra a última vez que tu começou o dia sem abrir o WhatsApp primeiro? Ontem / Nem lembro" |
+| 2 | Texto | "Quase todas responderam 'nem lembro'. E isso não é falta de disciplina — é falta de estrutura." |
+| 3 | Vídeo seu (selfie) | "Eu fui a técnica de enfermagem que ganhava R$ 10 por hora. 7h às 17h, ônibus de madrugada, mãe na pandemia. Da exaustão nasceu o meu método." |
+| 4 | Texto | "Abri hoje o Método Lucro Anti-Exaustão® gravado. 4 fases. Aulas de 5 a 8 minutos — de propósito. Cada uma termina com uma ação." |
+| 5 | Print da área de membros / workbook | "Olha por dentro 👀 (e o assistente de IA que revisa as tuas respostas)" |
+| 6 | Link (figurinha) | "Quer conhecer? Toca aqui 👇" → `LINK_LP` |
 | 7 | Caixa de perguntas | "Ficou alguma dúvida sobre o método? Me pergunta aqui" |
 
-**Story único (reaproveitado do seu Arquivo de Mentoria):**
-> Pessoal, preciso de UMA empresária que queira mais lucro, menos caos e uma rotina com liberdade. Eu vou te ajudar com o Método Lucro Anti-Exaustão®. Se você ESTÁ DECIDIDA em 2026, manda "EU QUERO".
+**Story único:**
+> Pessoal, preciso de UMA empresária que queira mais lucro, menos caos e uma rotina com liberdade. Eu vou te ajudar com o Método Lucro Anti-Exaustão®. Se tu ESTÁS DECIDIDA, manda "LUCRO". Quem decide, realiza. Quem adia, apenas sonha.
 
 ---
 
 ## 5. Roteiro de Reels (30 a 45 s)
 
-- **Gancho (0–3 s):** "Se a sua empresa para quando você para, assiste isso."
-- **Contexto (3–15 s):** "Você não está exausta porque cresceu. Está exausta porque cresceu sem estrutura."
-- **Virada (15–30 s):** "No meu método a gente começa pelo Raio-X Operacional: você descobre onde está perdendo tempo, dinheiro e energia, antes de tentar crescer mais."
-- **CTA (30–45 s):** "O Método Lucro Anti-Exaustão® agora está gravado. Comenta MÉTODO que eu te mando o link."
+- **Gancho (0–3 s):** "Se a tua empresa para quando tu paras, assiste isso."
+- **Contexto (3–15 s):** "Tu não estás exausta porque cresceu. Estás exausta porque cresceu sem estrutura. Balde furado."
+- **Virada (15–30 s):** "No meu método a gente começa pelo Raio-X Operacional: descobrir por onde o lucro vaza, antes de tentar crescer mais. Clareza antes de tudo."
+- **CTA (30–45 s):** "O Método Lucro Anti-Exaustão® agora está gravado, em aulas de 5 minutos. Comenta **LUCRO** que eu te mando o link."
 
 ---
 
 ## 6. WhatsApp
 
 **Mentorada (acesso gratuito):**
-> Oi, [NOME]! 💛 Liberei o seu acesso gratuito ao curso gravado do Método Lucro Anti-Exaustão®. Você vai receber um e-mail da Kiwify no [E-MAIL]. Confere também o spam! Comece pelo Módulo 0 e me conta o que achou da primeira aula 😉
+> Oi, [NOME]! 💛 Liberei o seu acesso gratuito ao curso gravado do Método Lucro Anti-Exaustão®, com o Workbook e o assistente de IA. Você vai receber um e-mail da Kiwify no [E-MAIL]. Confere também o spam! Comece pela aula "Sua primeira hora" e me conta qual item você eliminou da semana 😉
 
 **Lista de leads (abertura):**
-> Oi, [NOME]! Tudo bem? Abri hoje o Método Lucro Anti-Exaustão® em formato gravado: as 4 fases que eu aplico na minha mentoria, para você organizar a empresa e a rotina sem se esgotar. Quer que eu te mande o link com todos os detalhes?
+> Oi, [NOME]! Tudo bem? Abri hoje o Método Lucro Anti-Exaustão® em formato gravado: as 4 fases que eu aplico na minha mentoria, em aulas curtas de 5 a 8 minutos, para você organizar a empresa e a rotina sem se esgotar. Quer que eu te mande o link com todos os detalhes?
 
 **Funil "Nova Oportunidade" adaptado (leads parados):**
 > [NOME], preciso te falar uma coisa que não é para todo mundo. Você já passou por uma das minhas experiências anteriores, e por isso quero te dar prioridade: o Método Lucro Anti-Exaustão® agora está disponível em formato gravado, com uma condição especial só para quem já esteve comigo (cupom [CUPOM]). Quer que eu te mande o link?
 
+**Ex-participante do Workshop Realize ou do Drink to Talk (só com consentimento — `guerrilha/03`, item 1.1b):**
+> Oi, [NOME]! Aqui é a Camila 💛 Tu esteve comigo no [Realize / Drink to Talk ed. N] e eu nunca esqueci [DETALHE REAL]. Desde então eu organizei o Método Lucro Anti-Exaustão® em aulas curtas (5 a 8 min, de propósito, porque empresária não tem tempo) e criei um teste de 2 minutos que mostra por qual furo do balde o lucro da tua empresa está vazando: QUIZ_URL?utm_source=realize — faz e me conta a tua nota?
+
 **Dúvida sobre preço:**
-> Entendo totalmente! O investimento é R$ 497, que pode ser em até 12x no cartão, e você tem 7 dias de garantia: se entrar e sentir que não é para você, recebe 100% de volta. Quer que eu te mande o link?
+> Entendo totalmente! O investimento é R$ 497, que pode ser em até 12x no cartão, e você tem 7 dias de garantia: se entrar, fizer a sua primeira hora e sentir que não é para você, recebe 100% de volta. Quer que eu te mande o link?
+
+**Entrega do ebook (quem comentou LUCRO):**
+> Oi, [NOME]! 💛 Aqui está o teu ebook "Raio-X da Empresária Exausta": LINK_EBOOK. Começa pelo teste da página 5 — leva 3 minutos. Depois me conta: deu quantos "sim"?
 
 ---
 
 ## 7. Anúncios (Meta Ads)
 
-**Anúncio A: dor**
-> Título: A sua empresa depende demais de você?
-> Texto: Você não está exausta porque a sua empresa cresceu. Está exausta porque ela cresceu sem estrutura. O Método Lucro Anti-Exaustão® mostra, em 4 fases, como sair do caos operacional e lucrar com liberdade.
-> CTA: Saiba mais
+**Anúncio A — inimigo cultural**
+> Título: Empresária de verdade dá conta de tudo sozinha? Não.
+> Texto: Você não está exausta porque a sua empresa cresceu. Está exausta porque ela cresceu sem estrutura. Faça o teste gratuito do Índice de Exaustão e descubra por onde o seu lucro está vazando.
+> CTA: Saiba mais → `QUIZ_URL`
 
-**Anúncio B: história**
+**Anúncio B — história**
 > Título: Da exaustão nasceu um método
-> Texto: Técnica de enfermagem, ônibus de madrugada, mãe na pandemia. Eu vivi a sobrecarga na pele, e foi dela que nasceu o Método Lucro Anti-Exaustão®. Hoje, mais de 200 mentoradas depois, ele está disponível em formato gravado.
-> CTA: Saiba mais
+> Texto: Eu fui a técnica de enfermagem que ganhava R$ 10 por hora. Ônibus de madrugada, mãe na pandemia. Eu vivi a sobrecarga na pele, e foi dela que nasceu o Método Lucro Anti-Exaustão®. Hoje, com mais de 400 mentoradas e mais de 2 mil mulheres impactadas em palestras, ele está disponível em formato gravado, com aulas curtas para empresária sem tempo.
+> CTA: Saiba mais → `LINK_LP`
 
-**Anúncio C: oferta**
-> Título: Mais lucro, menos caos e uma rotina com liberdade
-> Texto: Mais de 30 aulas + 4 planilhas de ferramentas + bônus. R$ 497 ou em até 12x. 7 dias de garantia.
-> CTA: Comprar agora
+**Anúncio C — oferta**
+> Título: Aulas de 5 minutos. De propósito.
+> Texto: 4 fases, mais de 30 aulas curtas, Workbook, planilhas e um assistente de IA treinado no método. R$ 497 ou em até 12x. 7 dias de garantia.
+> CTA: Comprar agora → `LINK_LP`
 
-> **Público inicial sugerido:** mulheres de 28 a 50 anos, interesses em empreendedorismo, gestão de pequenas empresas e administração de empresas, mais públicos semelhantes de compradoras e de engajamento no Instagram.
+> **Público inicial sugerido:** mulheres de 28 a 50 anos, interesses em empreendedorismo, gestão de pequenas empresas, estética, beleza, varejo; Grande Florianópolis + Brasil; públicos semelhantes de quem fez o quiz e de compradoras.
 
 ---
 
-## 8. Calendário de lançamento (7 dias)
+## 8. Funil de isca (ebook + quiz)
+
+| Etapa | Peça | Arquivo |
+|---|---|---|
+| Atração | Post/Reels com CTA "comenta LUCRO" | seções 3 e 5 |
+| Captura | Quiz Índice de Exaustão (2 min) | `guerrilha/01-quiz-indice-exaustao.html` |
+| Entrega | Resultado + e-mail 10 · ebook "Raio-X da Empresária Exausta" (e-mail 17) | `emails/10`, `emails/17`, `complementares/ebook-raio-x-empresaria-exausta.pdf` |
+| Nutrição | E-mails 11 (D+2) e 12 (D+5) | `emails/11`, `emails/12` |
+| Venda | Página de vendas | `landing-page.html` |
+
+---
+
+## 9. Calendário de lançamento (7 dias)
+
+> Para o calendário completo de 30 dias e o plano de 90 dias, veja `guerrilha/04-conteudo-guerrilha-30-dias.md` e `guerrilha/00-plano-guerrilha-90-dias.md`.
 
 | Dia | Feed | Stories | E-mail / WhatsApp |
 |---|---|---|---|
-| D-3 | Carrossel "o mecanismo" | Enquete de dor | — |
-| D-2 | Reels da sua história | Bastidores da gravação | — |
-| D-1 | Post "amanhã abre" | Lista de espera ("manda EU QUERO") | WhatsApp para a lista de espera |
+| D-3 | Carrossel "balde furado" | Enquete do WhatsApp | — |
+| D-2 | Reels da sua história (R$ 10 por hora) | Bastidores da gravação | — |
+| D-1 | Post "amanhã abre" | Lista VIP ("manda LUCRO") | WhatsApp para a Lista VIP |
 | D0 | Carrossel de lançamento | Sequência da seção 4 | E-mail 08 + WhatsApp |
 | D+2 | Reels "Raio-X Operacional" | Caixa de perguntas | — |
-| D+4 | Post de prova social (real) | Respostas às dúvidas | WhatsApp para quem perguntou |
+| D+4 | Post de credenciais (+400 · +2 mil · 12 Drink to Talk) — depoimento só se autorizado | Respostas às dúvidas | WhatsApp para quem perguntou |
 | D+6 | Post "último dia" (só se houver prazo real) | Contagem regressiva | E-mail 09 |
