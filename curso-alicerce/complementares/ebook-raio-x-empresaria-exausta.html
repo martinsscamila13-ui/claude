@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raio-X da Empresária Exausta — Método Lucro Anti-Exaustão®</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root{--p:#9C4A3A;--pd:#7A3528;--d:#C9A27E;--n:#FBF6F1;--n2:#F2E7DD;--t:#2B211D;--s:#6B5A52;--line:#E3D3C4}
+*{box-sizing:border-box;margin:0;padding:0}
+@page{size:A4;margin:16mm 15mm 18mm 15mm}
+@page :first{margin:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:Inter,Arial,Helvetica,sans-serif;color:var(--t);font-size:10.5pt;line-height:1.55;background:#fff}
+h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif;color:var(--t);line-height:1.2}
+h2{font-size:22pt;margin:0 0 6pt}
+h3{font-size:14pt;margin:14pt 0 4pt;color:var(--pd)}
+h4{font-size:11pt;margin:10pt 0 3pt;font-family:Inter,Arial,sans-serif;font-weight:600;color:var(--t)}
+p{margin:0 0 7pt}
+ul,ol{margin:0 0 8pt 16pt}
+li{margin-bottom:3pt}
+strong{color:var(--t)}
+.page{page-break-before:always;break-before:page}
+.avoid{break-inside:avoid;page-break-inside:avoid}
+.tag{font-size:8pt;letter-spacing:.16em;text-transform:uppercase;color:var(--p);font-weight:600;margin-bottom:4pt;display:block}
+.lead{font-size:11.5pt;color:var(--s)}
+.box{background:var(--n);border-left:4px solid var(--d);padding:9pt 12pt;margin:8pt 0 10pt;border-radius:4pt}
+.box.p{border-left-color:var(--p)}
+.quote{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:14pt;color:var(--pd);margin:10pt 0;line-height:1.35}
+.q{margin:8pt 0 2pt;font-weight:500}
+.lines{height:calc(var(--n,3) * 19pt);background:repeating-linear-gradient(to bottom,transparent 0,transparent 18pt,var(--line) 18pt,var(--line) 19pt);margin-bottom:6pt}
+table{width:100%;border-collapse:collapse;margin:6pt 0 10pt;font-size:9pt;break-inside:auto}
+th{background:var(--n2);text-align:left;padding:5pt 6pt;font-weight:600;border:1px solid var(--line);vertical-align:bottom}
+td{border:1px solid var(--line);padding:5pt 6pt;vertical-align:top}
+tr{break-inside:avoid;page-break-inside:avoid}
+td.blank{height:22pt}
+td.lbl{font-weight:500;background:#fffdfb}
+.hint{font-size:8.5pt;color:var(--s)}
+.check{list-style:none;margin-left:0}
+.check li{padding-left:18pt;position:relative}
+.check li::before{content:"";position:absolute;left:0;top:2pt;width:10pt;height:10pt;border:1.4px solid var(--p);border-radius:2pt}
+.selo{border:2px dashed var(--d);border-radius:10pt;padding:10pt 14pt;margin:12pt 0;display:flex;gap:12pt;align-items:center;background:#fffdfb}
+.selo .ic{font-size:22pt}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+.aula{margin-top:14pt;padding-top:8pt;border-top:1px solid var(--line)}
+.aula .num{font-family:"Playfair Display",Georgia,serif;color:var(--d);font-size:10pt;letter-spacing:.08em}
+.modhead{background:var(--n);border-radius:8pt;padding:18pt 20pt;margin-bottom:10pt;border-top:5px solid var(--p)}
+.modhead h2{font-size:24pt}
+.footer-note{font-size:8pt;color:var(--s);text-align:center;margin-top:14pt}
+/* cover */
+.cover{height:296mm;width:210mm;background:var(--n);position:relative;padding:28mm 22mm;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.cover::before{content:"";position:absolute;right:-60mm;top:-40mm;width:170mm;height:170mm;border-radius:50%;background:var(--n2)}
+.cover::after{content:"";position:absolute;left:-30mm;bottom:-50mm;width:120mm;height:120mm;border-radius:50%;border:2px solid var(--d)}
+.cover>*{position:relative;z-index:1}
+.cover .brand{font-size:9pt;letter-spacing:.22em;text-transform:uppercase;color:var(--p);font-weight:600}
+.cover h1{font-size:40pt;margin:14pt 0 12pt;color:var(--t)}
+.cover .sub{font-size:13pt;color:var(--s);max-width:140mm}
+.cover .author{font-family:"Playfair Display",Georgia,serif;font-size:13pt}
+.cover .bar{width:40mm;height:4px;background:var(--p);margin:10pt 0}
+.toc{list-style:none;margin:10pt 0}
+.toc li{display:flex;justify-content:space-between;border-bottom:1px dotted var(--line);padding:6pt 0;font-size:11pt}
+.toc li span:first-child{font-weight:500}
+.score{display:flex;gap:6pt;flex-wrap:wrap}
+.cta{background:var(--p);color:#fff;border-radius:10pt;padding:16pt 18pt;margin:12pt 0}
+.cta h3{color:#fff;margin-top:0}
+.cta p,.cta li{color:#fff}
+.cta a{color:#fff;font-weight:600}
+@media screen{
+  body{background:#e9e1d9;padding:20px 0}
+  .sheet{background:#fff;max-width:210mm;margin:0 auto 16px;padding:16mm 15mm;box-shadow:0 4px 18px rgba(0,0,0,.12)}
+  .sheet.cover-sheet{padding:0}
+  .cover{width:100%;height:auto;min-height:297mm}
+}
+@media screen and (max-width:600px){
+  body{padding:0}
+  .sheet{padding:18px 16px;margin:0 0 8px}
+  .cover{padding:36px 22px;min-height:auto}
+  .cover h1{font-size:30pt}
+  table{display:block;overflow-x:auto}
+  .grid2{grid-template-columns:1fr}
+}
+@media print{.sheet{padding:0;box-shadow:none;margin:0}}
+.sheet+.sheet{break-before:page;page-break-before:always}
+</style></head>
+<body><section class="sheet cover-sheet"><div class="cover"><div><span class="brand">Método Lucro Anti-Exaustão®</span><div class="bar"></div>
+<h1>Raio-X da<br>Empresária<br>Exausta</h1>
+<p class="sub">Descubra em uma hora onde a sua empresa está drenando o seu tempo, o seu lucro e a sua paz — e o que fazer primeiro.</p></div>
+<div><p class="author">Camila Martins Finger</p>
+<p class="sub" style="font-size:10pt">Mentora de empresárias · +400 mentoradas · +2 mil mulheres impactadas em palestras e treinamentos</p></div></div></section>
+<section class="sheet "><span class="tag">Sumário</span><h2>O que você vai encontrar</h2>
+<ul class="toc">
+<li><span>Uma carta antes de começar</span><span>3</span></li>
+<li><span>1 · Você não está exausta porque cresceu</span><span>4</span></li>
+<li><span>Teste rápido: você está no modo sobrevivência?</span><span>5</span></li>
+<li><span>2 · Os vazios invisíveis da sua empresa</span><span>6</span></li>
+<li><span>3 · O Mapa da Sobrecarga e a regra EDE</span><span>7</span></li>
+<li><span>4 · A sua rotina real (não a imaginada)</span><span>8</span></li>
+<li><span>5 · O gargalo que mais te custa</span><span>9</span></li>
+<li><span>6 · A Roda da Empresária</span><span>10</span></li>
+<li><span>7 · O Filtro dos 90 Dias</span><span>11</span></li>
+<li><span>8 · Do diagnóstico às 3 metas que importam</span><span>12</span></li>
+<li><span>Os 5 erros que mantêm a empresária no caos</span><span>13</span></li>
+<li><span>Seu plano para os próximos 7 dias</span><span>14</span></li>
+<li><span>O próximo passo</span><span>15</span></li></ul>
+<div class="box"><strong>Como usar este ebook:</strong> separe uma hora, um café e uma caneta. Leia um capítulo e faça o exercício logo em seguida — é o exercício que gera a clareza, não a leitura. Não existe resposta certa; existe resposta honesta.</div>
+<p class="hint">Este material é a porta de entrada da Fase 1 — Raio-X Operacional — do Método Lucro Anti-Exaustão®.</p></section>
+<section class="sheet "><span class="tag">Uma carta antes de começar</span><h2>Eu sei como é.</h2>
+<p>Antes de ajudar outras mulheres a organizar as suas empresas, eu vivi a exaustão na pele.</p>
+<p>Fui técnica de enfermagem. Trabalhava das 7h às 17h e saía de casa de madrugada, de ônibus, para chegar a tempo. Me tornei mãe em plena pandemia. Eu sei o que é terminar o dia sem ter feito nada por mim — e ainda assim sentir que não fiz o suficiente por ninguém.</p>
+<p>Foi dessa sobrecarga que nasceu a minha reinvenção profissional. E foi acompanhando de perto <strong>mais de 400 mentoradas</strong> — e falando com <strong>mais de 2 mil mulheres</strong> em palestras e treinamentos — que eu percebi um padrão que se repete em quase todas as empresárias que chegam até mim:</p>
+<p class="quote">Elas acham que o problema é falta de disciplina. Quase nunca é.</p>
+<p>O problema é que a empresa cresceu e a estrutura ficou para trás. E quem passou a segurar a diferença foi ela: a dona. Com o corpo, com as noites, com a culpa.</p>
+<p>Este ebook é o primeiro passo do método que eu uso nas minhas mentorias. Ele não vai resolver tudo — e nem deveria. Ele vai fazer algo mais importante: <strong>mostrar com clareza onde você está</strong>. Porque não dá para sair de um lugar que você ainda não enxergou.</p>
+<p>Clareza antes da expansão. Vamos juntas?</p>
+<p class="quote" style="font-size:13pt">— Camila Martins Finger</p></section>
+<section class="sheet "><span class="tag">Capítulo 1</span><h2>Você não está exausta porque cresceu</h2><p class="lead">Você está exausta porque cresceu sem uma estrutura compatível com a nova fase da empresa.</p>
+<p>Quando uma empresa é pequena, a dona consegue fazer quase tudo: vende, atende, entrega, cobra, resolve. Funciona — porque cabe nela.</p>
+<p>Mas a empresa cresce. Chegam mais clientes, mais pessoas na equipe, mais decisões por dia. E a estrutura — processos, combinados, rotina, papéis — continua a mesma de quando tudo cabia em uma pessoa só. Esse <strong>descompasso entre crescimento e estrutura</strong> é o verdadeiro motor da exaustão.</p>
+<h4>O que esse descompasso gera</h4>
+<div class="grid2"><div class="box"><strong>Centralização</strong><br>Tudo passa por você, inclusive o que não precisaria.</div>
+<div class="box"><strong>Excesso de decisões</strong><br>Dezenas de microdecisões por dia esgotam a sua mente antes do meio-dia.</div>
+<div class="box"><strong>Equipe dependente</strong><br>Ninguém resolve sem perguntar. E você resolve para não perder tempo explicando.</div>
+<div class="box"><strong>Sobrecarga mental</strong><br>Você "carrega a empresa na cabeça" até quando está com a família.</div>
+<div class="box"><strong>Operação desorganizada</strong><br>Cada dia é um improviso diferente, com urgências que se repetem.</div>
+<div class="box"><strong>Lucro sem vida</strong><br>O faturamento até vem — mas não vira tempo, saúde nem liberdade.</div></div>
+<p class="quote">Enquanto você for o centro de tudo, o lucro vai vir acompanhado de exaustão, culpa e falta de presença.</p>
+<p>A boa notícia: estrutura se constrói. E começa por enxergar. É isso que você vai fazer nos próximos capítulos.</p></section>
+<section class="sheet "><span class="tag">Teste rápido · 3 minutos</span><h2>Você está no modo sobrevivência?</h2>
+<p class="lead">Marque com honestidade. Ninguém vai ver além de você.</p>
+<table><thead><tr><th>Afirmação</th><th>Sim</th><th>Não</th></tr></thead><tbody><tr><td>1. Se eu ficar dois dias fora, a empresa trava.</td><td style="width:11%;text-align:center">☐ Sim</td><td style="width:11%;text-align:center">☐ Não</td></tr><tr><td>2. Eu respondo mensagens de trabalho à noite ou no fim de semana com frequência.</td><td style="width:11%;text-align:center">☐ Sim</td><td style="width:11%;text-align:center">☐ Não</td></tr><tr><td>3. Não sei com precisão quanto a empresa lucrou no último mês.</td><td style="width:11%;text-align:center">☐ Sim</td><td style="width:11%;text-align:center">☐ Não</td></tr><tr><td>4. Minha equipe me pergunta coisas que já deveria saber resolver.</td><td style="width:11%;text-align:center">☐ Sim</td><td style="width:11%;text-align:center">☐ Não</td></tr><tr><td>5. Eu termino a maioria dos dias sem ter feito o que era importante.</td><td style="width:11%;text-align:center">☐ Sim</td><td style="width:11%;text-align:center">☐ Não</td></tr><tr><td>6. Sinto culpa quando estou com a família e quando estou trabalhando.</td><td style="width:11%;text-align:center">☐ Sim</td><td style="width:11%;text-align:center">☐ Não</td></tr><tr><td>7. Já peguei de volta uma tarefa que tinha delegado porque “era mais rápido fazer”.</td><td style="width:11%;text-align:center">☐ Sim</td><td style="width:11%;text-align:center">☐ Não</td></tr><tr><td>8. Tenho mais de cinco “prioridades” ao mesmo tempo.</td><td style="width:11%;text-align:center">☐ Sim</td><td style="width:11%;text-align:center">☐ Não</td></tr><tr><td>9. Não tenho nenhum horário fixo na semana para pensar o negócio.</td><td style="width:11%;text-align:center">☐ Sim</td><td style="width:11%;text-align:center">☐ Não</td></tr><tr><td>10. Já pensei que talvez o problema seja eu ser desorganizada.</td><td style="width:11%;text-align:center">☐ Sim</td><td style="width:11%;text-align:center">☐ Não</td></tr></tbody></table>
+<p><strong>Total de “Sim”:</strong> ______</p>
+<table><thead><tr><th style="width:22%">Resultado</th><th>Leitura</th></tr></thead><tbody>
+<tr><td>0 a 3 “Sim”</td><td><strong>Estrutura em pé.</strong> Há sinais pontuais. Use este ebook para proteger o que já funciona.</td></tr>
+<tr><td>4 a 6 “Sim”</td><td><strong>Esforço sem estrutura.</strong> A empresa funciona — à custa da sua energia. Os capítulos 2 a 5 vão mostrar onde.</td></tr>
+<tr><td>7 a 10 “Sim”</td><td><strong>Modo sobrevivência.</strong> Você está segurando a empresa com o corpo. Comece pelo capítulo 7 (Filtro dos 90 Dias) hoje — e depois volte ao início.</td></tr></tbody></table>
+<div class="box p">Repare na última afirmação. Se você marcou “Sim”, leia de novo o capítulo 1: <strong>quase nunca é desorganização. É falta de estrutura.</strong></div></section>
+<section class="sheet "><span class="tag">Capítulo 2</span><h2>Os vazios invisíveis da sua empresa</h2><p class="lead">Antes de crescer mais, enxergue como a empresa funciona hoje — de verdade.</p>
+<p>Vazio invisível é tudo aquilo que deveria existir na empresa e não existe — e que, por isso, é preenchido por você. Um processo que não foi escrito. Um combinado que nunca foi feito. Uma decisão que ninguém mais está autorizado a tomar.</p>
+<h4>Exercício · Diagnóstico Operacional</h4><p class="hint">Dê nota de 1 (não existe / depende totalmente de mim) a 5 (funciona com autonomia). Anote uma evidência — um fato, não uma impressão.</p><table><thead><tr><th style="width:58%">Área — pergunta</th><th style="width:12%">Nota 1–5</th><th style="width:30%">Evidência</th></tr></thead><tbody><tr><td class="lbl">Estratégia — A empresa tem prioridades claras para os próximos 90 dias?</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Processos — As atividades principais têm passo a passo definido?</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Equipe — Cada pessoa sabe pelo que é responsável?</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Comunicação — Decisões e combinados ficam registrados?</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Agenda — A minha agenda reflete prioridades reais?</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Financeiro — Acompanho faturamento, custos e lucro?</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Vendas — Existe fluxo claro de captação, atendimento e conversão?</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Operação — A empresa funciona sem mim em atividades simples?</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Vida pessoal — Existe espaço real para descanso, família e saúde?</td><td class="blank"></td><td class="blank"></td></tr></tbody></table>
+<table><thead><tr><th>Nota</th><th>O que significa</th><th>Próxima decisão</th></tr></thead><tbody>
+<tr><td>1 a 2</td><td>Área crítica, altamente dependente de você</td><td>Estruturar imediatamente</td></tr>
+<tr><td>3</td><td>Área instável, funciona parcialmente</td><td>Padronizar e simplificar</td></tr>
+<tr><td>4</td><td>Funcional, mas vulnerável</td><td>Ajustar pontos de falha</td></tr>
+<tr><td>5</td><td>Madura e autônoma</td><td>Manter e documentar</td></tr></tbody></table>
+<p><strong>A minha área com menor nota é:</strong> ____________________ &nbsp; ← guarde. Ela vai aparecer de novo no capítulo 8.</p></section>
+<section class="sheet "><span class="tag">Capítulo 3</span><h2>O Mapa da Sobrecarga e a regra EDE</h2><p class="lead">Transforme a sensação de cansaço em uma lista — e decida o destino de cada item.</p>
+<p>Cansaço difuso não se resolve. Cansaço com nome, sim. O Mapa da Sobrecarga tira da sua cabeça tudo o que pesa — tarefas, decisões, emoções, conversas, urgências — e coloca no papel, onde dá para decidir.</p>
+<h4>A regra EDE: todo peso tem um de três destinos</h4>
+<div class="grid2" style="grid-template-columns:repeat(3,1fr)"><div class="box"><strong>ELIMINAR</strong><br>Não gera valor, lucro, clareza nem cuidado. <span class="hint">Ex.: reunião sem pauta, aprovação duplicada.</span></div>
+<div class="box"><strong>DELEGAR</strong><br>Outra pessoa pode assumir com orientação e critério. <span class="hint">Ex.: respostas recorrentes, checklists.</span></div>
+<div class="box"><strong>ESTRUTURAR</strong><br>Precisa continuar, mas falta processo. <span class="hint">Ex.: atendimento, financeiro, onboarding.</span></div></div>
+<h4>Exercício</h4><table><thead><tr><th>O que pesa sobre mim</th><th>Frequência</th><th>Peso 1–5</th><th>Só eu posso fazer?</th><th>E / D / E</th></tr></thead><tbody><tr><td class="hint">Ex.: aprovar todo orçamento</td><td class="hint">Diária</td><td class="hint">4</td><td class="hint">Parcialmente</td><td class="hint">Estruturar</td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr></tbody></table><p class="q">O que eu faço por obrigação, sem gerar resultado nenhum?</p><div class="lines" style="--n:2"></div><p class="q">O que eu preciso parar de tolerar?</p><div class="lines" style="--n:2"></div></section>
+<section class="sheet "><span class="tag">Capítulo 4</span><h2>A sua rotina real (não a imaginada)</h2><p class="lead">A agenda que você planeja e a semana que você vive raramente são a mesma.</p>
+<p>Quase toda empresária tem uma rotina ideal na cabeça. O problema é que a empresa não funciona com a rotina ideal — funciona com a real. E só dá para melhorar o que se enxerga.</p>
+<h4>Exercício · 3 dias de registro honesto</h4><p class="hint">No fim de cada dia, anote. Sem maquiar.</p><table><thead><tr><th>Dia</th><th>Hora de início / fim</th><th>O que consumiu mais tempo</th><th>O que gerou resultado</th><th>Energia no fim do dia (0–10)</th></tr></thead><tbody><tr><td class="lbl">Dia 1</td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Dia 2</td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Dia 3</td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr></tbody></table>
+<h4>Onde foi o seu tempo?</h4><p class="hint">Estime as horas dos 3 dias em cada categoria.</p><table><thead><tr><th>Categoria</th><th>Horas</th><th>Era prioridade?</th></tr></thead><tbody><tr><td class="lbl">Estratégia e crescimento</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Operação e execução</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Urgências e imprevistos</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Gestão da equipe</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Comercial e vendas</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Família, saúde e descanso</td><td class="blank"></td><td class="blank"></td></tr></tbody></table><p class="q">Em que horário eu tenho mais energia — e o que costumo fazer nele?</p><div class="lines" style="--n:2"></div><p class="q">Onde eu digo “sim” quando deveria dizer “não”?</p><div class="lines" style="--n:2"></div></section>
+<section class="sheet "><span class="tag">Capítulo 5</span><h2>O gargalo que mais te custa</h2><p class="lead">Nem todo problema merece sua energia agora. O gargalo certo, sim.</p>
+<p>Gargalo é o ponto onde a operação trava, atrasa, gera retrabalho ou volta para você. A empresária sobrecarregada costuma tentar resolver todos ao mesmo tempo — e não resolve nenhum. O método pede outra coisa: <strong>pontuar e escolher.</strong></p>
+<h4>A fórmula do gargalo prioritário</h4>
+<div class="box"><strong>Impacto no lucro</strong> (1–5) + <strong>Frequência</strong> (1–5) + <strong>Dependência de você</strong> (1–5) = <strong>Prioridade</strong> (3–15)</div>
+<h4>Exercício</h4><table><thead><tr><th>Gargalo (onde trava)</th><th>Impacto no lucro</th><th>Frequência</th><th>Dependência de mim</th><th>Total</th></tr></thead><tbody><tr><td class="hint">Ex.: orçamentos só saem quando eu respondo</td><td class="hint">5</td><td class="hint">5</td><td class="hint">5</td><td class="hint">15</td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr></tbody></table><p class="q">O meu gargalo de maior pontuação é:</p><div class="lines" style="--n:1"></div><p class="q">Se ele fosse resolvido, o que mudaria na minha semana?</p><div class="lines" style="--n:2"></div><p class="hint">O foco não é resolver tudo. É destravar o que mais compromete lucro, energia e a experiência do seu cliente.</p></section>
+<section class="sheet "><span class="tag">Capítulo 6</span><h2>A Roda da Empresária</h2><p class="lead">Você é mulher, mãe, esposa, líder e empresária. A empresa é uma parte da sua vida — não pode ocupar todos os lugares dela.</p><p class="hint">Dê uma nota de 0 a 10 para a sua satisfação atual em cada pilar.</p><table><thead><tr><th style="width:38%">Pilar</th><th style="width:12%">Nota 0–10</th><th style="width:50%">O que esta nota está me custando?</th></tr></thead><tbody><tr><td class="lbl">Lucro e previsibilidade</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Operação e processos</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Equipe e delegação</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Liderança e comunicação</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Tempo e rotina</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Energia e saúde</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Família e presença</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Relacionamento afetivo</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Desenvolvimento pessoal</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Espiritualidade e sentido</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Lazer e prazer</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Mulher além da empresária</td><td class="blank"></td><td class="blank"></td></tr></tbody></table><p class="hint"><strong>0–3:</strong> crítico — não ignore · <strong>4–6:</strong> instável · <strong>7–8:</strong> funcional, mas vulnerável · <strong>9–10:</strong> forte — use como alavanca.</p><p class="q">Que área, se melhorasse dois pontos, mudaria a minha rotina imediatamente?</p><div class="lines" style="--n:2"></div></section>
+<section class="sheet "><span class="tag">Capítulo 7</span><h2>O Filtro dos 90 Dias</h2><p class="lead">“Deixar como está” não é decisão. É escolher continuar cansada por mais 90 dias.</p>
+<p class="q">Minha meta dos próximos 90 dias:</p><div class="lines" style="--n:1"></div>
+<ol><li>Liste tudo que ocupou a sua semana.</li><li>Para cada item: <strong>aproxima da meta?</strong> Responda em 10 segundos. Sem “depende”.</li><li>Todo “Não” vai para uma de três pilhas. <strong>Não existe quarta pilha.</strong></li></ol>
+<div class="grid2" style="grid-template-columns:repeat(3,1fr)"><div class="box"><strong>ELIMINAR</strong><br>Ninguém vai sentir falta.</div><div class="box"><strong>DELEGAR</strong><br>Outra pessoa faz — mesmo que faça 80% do seu jeito.</div><div class="box"><strong>RENEGOCIAR</strong><br>Continua, com outro prazo, preço ou combinado.</div></div>
+<table><thead><tr><th>Tarefa da semana</th><th style="width:20%">Aproxima da meta?</th><th style="width:26%">Se não: Eliminar / Delegar / Renegociar</th></tr></thead><tbody><tr><td class="hint">Ex.: responder orçamento à noite</td><td class="hint">Não</td><td class="hint">Renegociar</td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr><tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr></tbody></table>
+<p><strong>Total de “Não”:</strong> ______ ← esse número é o tamanho do problema.</p>
+<p class="q">O item que eu elimino <strong>hoje</strong>:</p><div class="lines" style="--n:1"></div></section>
+<section class="sheet "><span class="tag">Capítulo 8</span><h2>Do diagnóstico às 3 metas que importam</h2><p class="lead">Clareza sem decisão vira consciência acumulada. Agora é hora de escolher.</p>
+<p>No Método Lucro Anti-Exaustão®, cada ciclo de 12 semanas tem <strong>no máximo três metas macro</strong> — uma para cada dimensão que precisa avançar junto:</p><table><thead><tr><th>Meta</th><th>Pergunta central</th><th>Exemplo</th></tr></thead><tbody><tr><td><strong>Lucro</strong></td><td>Que avanço financeiro precisa acontecer neste ciclo?</td><td>Aumentar o faturamento recorrente sem aumentar a minha carga horária.</td></tr><tr><td><strong>Estrutura</strong></td><td>Que parte da empresa precisa parar de depender tanto de mim?</td><td>Delegar o atendimento inicial com checklist, responsável e indicador.</td></tr><tr><td><strong>Vida e Energia</strong></td><td>Que mudança precisa proteger minha saúde, presença e liberdade?</td><td>Ter três noites livres por semana.</td></tr></tbody></table><h4>Exercício · Minhas 3 metas</h4><p class="hint">Use as respostas dos capítulos 2 (menor nota), 5 (gargalo) e 6 (roda).</p><table><thead><tr><th>Meta</th><th>Resultado em 12 semanas</th><th>Como vou medir</th></tr></thead><tbody><tr><td class="lbl">Lucro</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Estrutura</td><td class="blank"></td><td class="blank"></td></tr><tr><td class="lbl">Vida e Energia</td><td class="blank"></td><td class="blank"></td></tr></tbody></table><div class="box p"><strong>Regra de ouro:</strong> se uma meta não melhora lucro, estrutura ou vida, ela não pertence a este ciclo.</div><p class="q">Qual é a <strong>uma</strong> ação desta semana que aproxima cada meta? (tarefa ocupa tempo; tática aproxima da meta)</p><div class="lines" style="--n:3"></div></section>
+<section class="sheet "><span class="tag">Atenção</span><h2>Os 5 erros que mantêm a empresária no caos</h2>
+<h3>1. Tentar crescer antes de enxergar</h3><p>Mais clientes, mais equipe, mais produtos — em cima de uma estrutura que já não aguenta. Crescer sem Raio-X é aumentar a pressão, não a empresa.</p>
+<h3>2. Copiar a rotina de outra pessoa</h3><p>A rotina da empresária que acorda às 5h pode ser perfeita para ela e destrutiva para você. Uma rotina sustentável respeita o seu perfil, a sua energia e a sua vida real.</p>
+<h3>3. Delegar tarefa sem critério — e pegar de volta</h3><p>Delegar não é “passar tarefa”. É transferir responsabilidade com contexto, padrão e acompanhamento. Sem isso, a tarefa volta — e você conclui, injustamente, que “ninguém faz direito”.</p>
+<h3>4. Ter prioridades demais</h3><p>Dez prioridades são zero prioridades. Três metas macro e três prioridades por semana: essa limitação é intencional e é o que protege o seu foco.</p>
+<h3>5. Tratar semana difícil como fracasso</h3><p>A vida vai acontecer: filho doente, cliente urgente, equipe desfalcada. Semana difícil pede <strong>versão mínima</strong>, não abandono. Disciplina sustentável é a que sobrevive à vida real.</p>
+<p class="quote">Você não precisa fazer tudo de uma vez — só dar o próximo passo.</p></section>
+<section class="sheet "><span class="tag">Mão na massa</span><h2>Seu plano para os próximos 7 dias</h2><p class="lead">Um exercício por dia, de 15 a 30 minutos. No fim da semana, você terá o seu Raio-X completo.</p><ul class="check"><li><strong>Dia 1</strong> — Faça o Filtro dos 90 Dias (cap. 7) e elimine um item.</li><li><strong>Dia 2</strong> — Faça o Diagnóstico Operacional (cap. 2) e circule a menor nota.</li><li><strong>Dia 3</strong> — Comece o registro de 3 dias da sua rotina real (cap. 4).</li><li><strong>Dia 4</strong> — Faça o Mapa da Sobrecarga e classifique cada item em EDE (cap. 3).</li><li><strong>Dia 5</strong> — Pontue seus gargalos e escolha o prioritário (cap. 5).</li><li><strong>Dia 6</strong> — Preencha a Roda da Empresária (cap. 6).</li><li><strong>Dia 7</strong> — Escreva suas 3 metas macro e a ação desta semana para cada uma (cap. 8).</li></ul><div class="box"><strong>Dica:</strong> marque na agenda, agora, o horário de cada dia. O que não está na agenda vira “quando der” — e “quando der” não chega.</div><p class="q">O que eu descobri sobre a minha empresa nesta semana?</p><div class="lines" style="--n:3"></div><p class="q">O que eu já decidi mudar?</p><div class="lines" style="--n:3"></div></section>
+<section class="sheet "><span class="tag">O próximo passo</span><h2>O Raio-X é só a Fase 1.</h2>
+<p class="lead">Agora que você enxergou, vem a parte que transforma: entender como você funciona, construir uma rotina que cabe na sua vida e tirar a empresa das suas costas.</p>
+<table><thead><tr><th>Fase</th><th>O que você conquista</th></tr></thead><tbody>
+<tr><td><strong>1 · Raio-X Operacional</strong></td><td>Clareza sobre os vazios, a sobrecarga e os gargalos — o que você começou aqui.</td></tr>
+<tr><td><strong>2 · Extração Comportamental Lucrativa</strong></td><td>O seu manual de funcionamento: como você decide, lidera e recupera energia.</td></tr>
+<tr><td><strong>3 · Rotina Anti-Exaustão</strong></td><td>Uma rotina em blocos, com prioridades inteligentes e disciplina sem culpa.</td></tr>
+<tr><td><strong>4 · Ativação de Patrimônio Valioso</strong></td><td>Delegação com níveis de autonomia, cultura de equipe e visão de legado.</td></tr></tbody></table>
+<div class="cta"><h3>Método Lucro Anti-Exaustão® — Alicerce</h3>
+<ul><li>Aulas <strong>curtas e diretas</strong>, feitas para empresária sem tempo — cada aula termina com uma ação</li>
+<li>Workbook completo das 4 fases e planilhas de ferramentas</li><li>Assistente Anti-Exaustão (IA) e biblioteca de prompts por aula</li>
+<li>Garantia de 7 dias</li></ul>
+<p>Conheça: <a href="LINK_LP">LINK_LP</a></p></div>
+<p class="hint">Se você recebeu este ebook como bônus do curso, siga direto para o Módulo 1 — você já está um passo à frente.</p>
+<h3>Sobre a autora</h3>
+<p><strong>Camila Martins Finger</strong> é mentora de empresárias, palestrante e criadora do Método Lucro Anti-Exaustão®. Já acompanhou mais de 400 mentoradas e impactou mais de 2 mil mulheres em palestras e treinamentos. Ex-técnica de enfermagem e mãe, transformou a própria exaustão em um método prático para empresárias que querem lucrar sem viver no caos.</p>
+<p class="footer-note">© Método Lucro Anti-Exaustão® · Camila Martins Finger. Este material pode ser compartilhado na íntegra, sem alterações, citando a autora.</p></section></body></html>
