@@ -1,16 +1,35 @@
 {
-  "_instrucoes": "Copie este arquivo para valores.json, preencha os valores e rode: python3 aplicar-valores.py. Campos vazios ficam pendentes no relatório. Chaves que começam com _ são ignoradas.",
+  "_instrucoes": "Copie para valores.json, preencha e rode: python3 aplicar-valores.py. Campos vazios ficam pendentes no relatório. Chaves que começam com _ são ignoradas. QUIZ_URL também preenche LINK_QUIZ e LINK_QUIZ_PUBLICO automaticamente.",
+
+  "_venda": "---- Kiwify e página de vendas ----",
   "LINK_CHECKOUT": "",
   "LINK_CHECKOUT_COM_CUPOM": "",
   "LINK_LP": "",
+  "LINK_OBRIGADO": "",
   "LINK_AREA_MEMBROS": "",
+  "PRAZO_ACESSO": "12 meses",
+  "CUPOM_LANCAMENTO": "",
+
+  "_contato": "---- Contato e comunidade ----",
   "LINK_WHATSAPP": "https://wa.me/55DDDNUMERO",
-  "LINK_WHATSAPP_GRUPO": "",
+  "LINK_GRUPO_VIP": "",
   "LINK_DESCADASTRO": "",
+
+  "_quiz": "---- Quiz Índice de Exaustão ----",
   "QUIZ_URL": "",
   "FORM_ACTION_URL": "",
+
+  "_complementares": "---- Materiais complementares ----",
+  "LINK_EBOOK": "",
+  "LINK_FORM_ENTRADA": "",
+  "LINK_FORM_SAIDA": "",
+  "LINK_GPT": "",
+  "LINK_GEM": "",
+  "LINK_PLANTAO": "",
+
+  "_imagens": "---- Imagens (caminho relativo dentro de site/, ex.: img/camila.jpg) ----",
   "FOTO_CAMILA.jpg": "",
-  "IMAGEM_COMPARTILHAMENTO.jpg": "",
-  "PRAZO_ACESSO": "12 meses",
-  "CUPOM_LANCAMENTO": "LANCAMENTO"
+  "FOTO_PALCO.jpg": "",
+  "MOCKUP_ALICERCE.png": "",
+  "IMAGEM_COMPARTILHAMENTO.jpg": ""
 }

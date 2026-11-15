@@ -25,7 +25,7 @@ REGRAS = [
     ("PROVA SOCIAL DESATUALIZADA", re.compile(r"(\+\s?200\b|200 mentoradas|mais de 200)", re.I)),
     ("DEPOIMENTO-MODELO", re.compile(r"DEPOIMENTO REAL|Espaço reservado para depoimento", re.I)),
     ("MARCADOR PARA PREENCHER", re.compile(r"\[(PREENCHER|VALIDAR|CONFIRMAR|NOME|E-MAIL|LINK)[^\]]*\]", re.I)),
-    ("CAMPO SEM VALOR", re.compile(r"\b(LINK_[A-Z_]+|FOTO_[A-Z_]+|PRAZO_ACESSO|CUPOM_[A-Z_]+|QUIZ_URL|FORM_ACTION_URL)\b")),
+    ("CAMPO SEM VALOR", re.compile(r"\b(LINK_[A-Z_]+|FOTO_[A-Z_]+|IMAGEM_[A-Z_]+|MOCKUP_[A-Z_]+|PRAZO_ACESSO|CUPOM_[A-Z_]+|QUIZ_URL|FORM_ACTION_URL)\b")),
     ("PROMESSA ARRISCADA", re.compile(r"(resultado garantido|lucro garantido|garantimos (que|o) (você|lucro))", re.I)),
 ]
 
@@ -38,7 +38,7 @@ def main():
             continue
         txt = f.read_text(encoding="utf-8", errors="ignore")
         for nome, rx in REGRAS:
-            if nome == "PROVA SOCIAL DESATUALIZADA" and "recomendacoes" in f.name:
+            if nome == "PROVA SOCIAL DESATUALIZADA" and ("recomendacoes" in f.name or f.name in {"contexto-marca.md", "RUNBOOK-CLAUDE-LOCAL.md", "CLAUDE.md"}):
                 continue  # o arquivo de recomendações cita o "+200" de propósito (instrução TROCAR/POR)
             ms = rx.findall(txt)
             if ms:

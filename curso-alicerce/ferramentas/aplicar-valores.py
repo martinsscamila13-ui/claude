@@ -21,7 +21,7 @@ VALORES = AQUI / "valores.json"
 TEXTO = {".html", ".md", ".txt", ".csv", ".json"}
 IGNORAR = {"publicar", "ferramentas", ".git"}
 # padrões de campo usados no kit
-PADRAO = re.compile(r"\b(LINK_[A-Z_]+|FOTO_[A-Z_]+|IMAGEM_[A-Z_]+|PRAZO_ACESSO|CUPOM_[A-Z_]+|QUIZ_URL|FORM_ACTION_URL|INSTAGRAM_[A-Z_]+|EMAIL_[A-Z_]+|WHATSAPP_[A-Z_]+)\b")
+PADRAO = re.compile(r"\b(LINK_[A-Z_]+|FOTO_[A-Z_]+|IMAGEM_[A-Z_]+|MOCKUP_[A-Z_]+|PRAZO_ACESSO|CUPOM_[A-Z_]+|QUIZ_URL|FORM_ACTION_URL|INSTAGRAM_[A-Z_]+|EMAIL_[A-Z_]+|WHATSAPP_[A-Z_]+)\b")
 
 
 def main():
@@ -29,6 +29,10 @@ def main():
         sys.exit(f"Crie {VALORES.name} a partir de valores.exemplo.json antes de rodar.")
     valores = {k: v for k, v in json.load(open(VALORES, encoding="utf-8")).items()
                if not k.startswith("_") and v not in ("", None)}
+    # apelidos usados pelos arquivos de guerrilha para o mesmo link do quiz
+    if "QUIZ_URL" in valores:
+        valores.setdefault("LINK_QUIZ", valores["QUIZ_URL"])
+        valores.setdefault("LINK_QUIZ_PUBLICO", valores["QUIZ_URL"])
     if SAIDA.exists():
         shutil.rmtree(SAIDA)
     pendentes = {}

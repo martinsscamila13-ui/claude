@@ -81,7 +81,7 @@ Nova aula de abertura (texto + 5 min de vídeo opcional), no Módulo 0:
 > 5. Conte os "Não". Esse número é o tamanho do problema.
 > 6. **Elimine um item hoje.**
 
-Resultado: a aluna sente alívio real antes de completar a primeira aula de conteúdo. Está no Workbook (página "Sua primeira hora") e no e-mail de onboarding D0.
+Resultado: a aluna sente alívio real antes de completar a primeira aula de conteúdo. Está no Workbook (página "Sua primeira hora"), no e-mail 02 (boas-vindas) e no e-mail 13 (lembrete D+1).
 
 ### 2.3 Adaptação do curso para quem NÃO é mentorada
 
@@ -114,13 +114,13 @@ Na Kiwify: usar barra de progresso, quizzes (ou Google Forms linkado) e certific
 
 | Dia | Ação da aluna | Ação do sistema (e-mail/WhatsApp) |
 |---|---|---|
-| D0 | Acessa, faz Índice de entrada, faz Filtro dos 90 Dias | E-mail 02 (boas-vindas) + E-mail 10 (primeira hora) |
+| D0 | Acessa, faz Índice de entrada, faz Filtro dos 90 Dias | E-mail 02 (boas-vindas) · D+1: E-mail 13 (primeira hora, se não fez) |
 | D1 | Aulas 1–4 (Módulo 0) | — |
 | D3 | Aula 6 — Roda da Vida + 3 metas | E-mail 03 |
-| D7 | Fecha Fase 1 + quiz | E-mail 04 + convite ao Plantão (E-mail 11) |
+| D7 | Fecha Fase 1 + quiz | E-mail 04 + convite ao Plantão (E-mail 14, se houver) · D+10: E-mail 15 (Consultoria) |
 | D14 | Fase 2 em andamento | E-mail 05 (reengajamento, se não avançou) |
 | D21 | Fase 3: rotina mínima em teste | Check-in no Workbook |
-| D30 | Fase 4 + delegação + Índice de saída | E-mail 06 (conclusão) + E-mail 14 (depoimento) + E-mail 12/13 (ascensão) |
+| D30 | Fase 4 + delegação + Índice de saída | E-mail 06 (conclusão, Índice de saída, depoimento autorizado, indicação) + E-mail 16 (Comunidade, Realize, Mentoria) |
 
 ### 2.6 Ascensão (o curso como porta de entrada)
 
@@ -150,6 +150,14 @@ Na Kiwify: usar barra de progresso, quizzes (ou Google Forms linkado) e certific
 | Δ Índice Anti-Exaustão | Saída − entrada (média) | Seu "número de transformação" para a LP — **só use quando houver dados reais** |
 | Ascensão | Compradoras que viram Consultoria/Comunidade/PAD em 90 dias | O número que define se o curso "se paga" de verdade |
 | NPS | Formulário de saída | — |
+
+---
+
+## Parte 2.9 — Porta de entrada (integração com a guerrilha)
+
+O agente de guerrilha criou o **quiz "Índice de Exaustão"** (`guerrilha/01`) como porta de entrada do tráfego frio. A jornada completa fica: **post "comenta LUCRO" → quiz → e-mail 10 (resultado) + ebook (e-mail 17) → e-mails 11 e 12 → página de vendas → compra → jornada de 30 dias acima → ascensão.**
+
+> Atenção aos nomes: o **Índice de Exaustão** do quiz (maior = pior) é diferente do **Índice Anti-Exaustão** das alunas (maior = melhor, entrada e saída).
 
 ---
 
