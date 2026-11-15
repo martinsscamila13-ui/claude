@@ -354,7 +354,7 @@ Use `complementares/ia/assistente-anti-exaustao-instrucoes.md`, que tem as instr
 ## 9. Canva: palestra e peças
 
 A palestra **"Raio-X da Empresária Exausta"** já está no Canva da Camila, com 16 slides. O slide 3 tem a foto real e o slide 14 a prova social corrigida.
-1. Cole as **notas do apresentador** de `guerrilha/03-scripts-parcerias-e-palestra.md` (Parte 3) em cada slide: botão **Notas**, embaixo do slide.
+1. **Notas do apresentador:** a Camila decidiu **não** colocá-las no Canva. Elas ficam em `guerrilha/03-scripts-parcerias-e-palestra.md` (Parte 3). Não cole notas nos slides, a menos que ela peça.
 2. Gere os **QR codes** em Apps → QR Code:
    - slide 15 aponta para a LP;
    - slide 16 aponta para o quiz.
