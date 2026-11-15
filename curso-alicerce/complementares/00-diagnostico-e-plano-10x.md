@@ -16,6 +16,8 @@
 | **Método com sequência lógica** | Enxergar (Raio-X) → entender como funciono (Comportamento) → transformar em rotina (Rotina) → tirar a empresa das minhas costas (Patrimônio). Cada fase responde uma pergunta. |
 | **Ferramentas reais** | Diagnóstico por nota, Mapa EDE (eliminar/delegar/estruturar), Gargalos com pontuação, Roda da Empresária com 12 pilares, 3 metas macro (lucro/estrutura/vida), níveis de autonomia 1–4. Isso é entregável, não "conteúdo motivacional". |
 | **História de origem autêntica** | Técnica de enfermagem, ônibus de madrugada, maternidade na pandemia. Gera identificação imediata com o público feminino sobrecarregado. |
+| **Autoridade comprovada** | **+400 mentoradas** e **+2 mil mulheres impactadas** em palestras e treinamentos. A Camila já é palestrante e treinadora — isso precisa aparecer no topo da LP, não só no "sobre mim". |
+| **Aulas curtas e diretas (de propósito)** | Cada aula vai direto à ferramenta e termina com uma ação. Para a empresária sem tempo, isso é **diferencial de venda**, não limitação: "você assiste no intervalo entre dois compromissos e já sai aplicando". O 10x não vem de mais minutos de vídeo. |
 | **Escada de produtos já desenhada** | Entrada → Alicerce (R$ 497) → Consultoria (R$ 1.997) → Comunidade Impulso → PAD (R$ 5–8 mil). O curso tem para onde levar a aluna. |
 
 ### 1.2 Os 9 problemas que hoje limitam o resultado
@@ -27,14 +29,14 @@
 | 3 | **Desalinhamento de público.** O avatar definido é "empresária física, +R$ 50 mil/mês, equipe de 8–10". Quem compra um curso de R$ 497 tende a estar antes disso (R$ 10–50 mil, equipe pequena). | Promessa e exemplos que não conversam com quem compra. | 🟠 Média |
 | 4 | **Sem quick win.** A primeira vitória concreta só aparece no meio da Fase 1 (Aula 6+). | Abandono nas primeiras 48 h — o ponto onde a maioria dos cursos perde a aluna. | 🔴 Alta |
 | 5 | **Oferta "nua".** Hoje: aulas + planilhas + certificado. Não há bônus que aumente percepção de valor nem um motivo para comprar agora (sem escassez falsa). | Conversão baixa na LP e mais objeção de preço. | 🟠 Média |
-| 6 | **3 aulas faltando** (19, 23 e possivelmente 30) e fechamentos curtos. | Buraco na Fase 3 — justamente a fase de rotina, a mais desejada. | 🟠 Média |
+| 6 | **3 aulas faltando** (19, 23 e possivelmente 30). | Buraco na Fase 3 — justamente a fase de rotina, a mais desejada. O Workbook já cobre as perguntas dessas aulas enquanto não forem gravadas. | 🟠 Média |
 | 7 | **Nenhum mecanismo de conclusão.** Sem marcos, sem avaliação, sem acompanhamento, sem comunidade. | Cursos gravados sem acompanhamento costumam ter conclusão baixa; aluna que não conclui não vira depoimento nem compra de novo. | 🔴 Alta |
 | 8 | **Ascensão não está desenhada dentro do curso.** A Consultoria e a Comunidade aparecem só no FAQ. | O curso de R$ 497 deixa de ser a porta de entrada para os produtos de R$ 2–8 mil. | 🔴 Alta |
-| 9 | **Sem prova social estruturada.** "+200 mentoradas" é forte, mas não há captação sistemática de depoimentos com dados de antes/depois. | LP sem evidência; anúncios menos eficientes. | 🟠 Média |
+| 9 | **Prova social pouco explorada.** "+400 mentoradas" e "+2 mil mulheres impactadas" são números fortes, mas não há captação sistemática de depoimentos com dados de antes/depois. | LP com pouca evidência específica; anúncios menos eficientes. | 🟠 Média |
 
 ### 1.3 Leitura da oferta e do preço
 
-- **R$ 497 é coerente** com a escada e com o volume de conteúdo (≈3h20 + ferramentas). Não recomendo subir o preço agora; recomendo **aumentar o valor percebido** e criar a ponte para os produtos maiores.
+- **R$ 497 é coerente** com a escada. O valor do Alicerce não está em horas de vídeo — está em **aulas curtas que terminam em ação + ferramentas que fazem o trabalho com a aluna**. Não recomendo subir o preço agora; recomendo **aumentar o valor percebido com implementação** (workbook, IA, plantão, marcos) e criar a ponte para os produtos maiores.
 - **Âncora honesta disponível:** o curso é o *mesmo método* aplicado na Mentoria Individual (R$ 3.500, 12 encontros) e base da Consultoria (R$ 1.997). Isso pode e deve ser comunicado — sem "preço de" inventado.
 - **Promessa atual** ("uma empresa lucrativa não precisa custar a sua paz") é ótima como *assinatura de marca*, mas fraca como *promessa de produto*. Falta dizer **o que ela terá nas mãos** ao final. Sugestão de promessa de produto:
   > **"Em 4 fases, você sai do caos operacional com um plano de 12 semanas: 3 metas (lucro, estrutura e vida), uma rotina que cabe na sua semana real e a primeira tarefa fora das suas costas."**
@@ -44,7 +46,7 @@
 
 ## Parte 2 — Plano 10x
 
-O 10x não vem de "mais aulas". Vem de 6 alavancas: **(1) ativar** a aluna na 1ª hora, **(2) substituir a mentora** por ferramentas que guiam, **(3) fazer concluir**, **(4) medir a transformação**, **(5) aumentar o valor percebido** e **(6) desenhar a ascensão**.
+O 10x não vem de "mais aulas" nem de aulas mais longas — as aulas curtas são um diferencial e devem ser vendidas como tal ("feitas para empresária sem tempo: cada aula termina com uma ação"). O 10x vem de 6 alavancas: **(1) ativar** a aluna na 1ª hora, **(2) substituir a mentora** por ferramentas que guiam, **(3) fazer concluir**, **(4) medir a transformação**, **(5) aumentar o valor percebido** e **(6) desenhar a ascensão**.
 
 ### 2.1 Nova arquitetura da oferta (value stack)
 

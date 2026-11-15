@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Índice de Exaustão da Empresária</title>
+<meta name="description" content="Teste gratuito de 2 minutos: descubra o seu Índice de Exaustão e qual fase da sua empresa está drenando a sua energia.">
+<meta property="og:title" content="Qual é o seu Índice de Exaustão?">
+<meta property="og:description" content="12 perguntas, 2 minutos. Descubra qual fase da sua empresa está te drenando — Método Lucro Anti-Exaustão®.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!--
+  =====================================================================
+  COMO PERSONALIZAR (busque e substitua):
+  - LINK_LP          → URL da landing page do Alicerce
+  - LINK_WHATSAPP    → https://wa.me/55DDDNUMERO
+  - LINK_GRUPO_VIP   → link de convite do grupo VIP / Comunidade WhatsApp
+  - FORM_ACTION_URL  → endpoint que recebe os leads (ver bloco CONFIG no <script>)
+  Cores: variáveis no :root (mesma identidade da landing page).
+  Pixel: cole o código base do Pixel/GA4 aqui no <head>. O evento "Lead"
+  pode ser disparado na função enviarLead() (há um comentário indicando).
+  =====================================================================
+-->
+<style>
+  :root{
+    --cor-primaria:#9C4A3A;
+    --cor-primaria-escura:#7A3528;
+    --cor-fundo:#FBF6F1;
+    --cor-fundo-alt:#F2E7DD;
+    --cor-texto:#2B211D;
+    --cor-texto-suave:#6B5A52;
+    --cor-detalhe:#C9A27E;
+    --branco:#FFFFFF;
+    --raio:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{overflow-x:hidden}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--cor-fundo);color:var(--cor-texto);line-height:1.6;font-size:17px;min-height:100vh}
+  h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.2}
+  .wrap{max-width:680px;margin:0 auto;padding:28px 16px 48px}
+  .marca{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cor-primaria);font-weight:600;text-align:center;margin-bottom:18px}
+  .card{background:var(--branco);border-radius:24px;padding:32px 24px;box-shadow:0 18px 44px rgba(0,0,0,.07);border-top:6px solid var(--cor-detalhe)}
+  .tela{display:none}
+  .tela.ativa{display:block;animation:entra .35s ease}
+  @keyframes entra{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  h1{font-size:clamp(1.7rem,6vw,2.4rem);text-align:center;margin-bottom:14px}
+  h2{font-size:clamp(1.3rem,4.6vw,1.7rem);margin-bottom:18px}
+  p.sub{color:var(--cor-texto-suave);text-align:center;margin-bottom:22px}
+  .lista-intro{list-style:none;margin:0 auto 26px;max-width:440px}
+  .lista-intro li{padding:8px 0 8px 30px;position:relative}
+  .lista-intro li::before{content:"✓";position:absolute;left:0;color:var(--cor-primaria);font-weight:700}
+  .btn{display:block;width:100%;background:var(--cor-primaria);color:var(--branco);border:0;font:600 1.05rem Inter,sans-serif;padding:17px 22px;border-radius:999px;cursor:pointer;text-align:center;text-decoration:none;box-shadow:0 8px 22px rgba(156,74,58,.25);transition:background .15s,transform .15s}
+  .btn:hover{background:var(--cor-primaria-escura);transform:translateY(-1px)}
+  .btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+  .btn.sec{background:var(--branco);color:var(--cor-primaria);border:2px solid var(--cor-primaria);box-shadow:none}
+  .btn.whats{background:#25D366;box-shadow:none}
+  .nota-mini{font-size:.82rem;color:var(--cor-texto-suave);text-align:center;margin-top:12px}
+
+  /* progresso */
+  .topo-q{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;font-size:.85rem;color:var(--cor-texto-suave)}
+  .fase-tag{font-weight:600;color:var(--cor-primaria)}
+  .barra{height:8px;background:var(--cor-fundo-alt);border-radius:99px;overflow:hidden;margin-bottom:24px}
+  .barra span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cor-detalhe),var(--cor-primaria));transition:width .3s}
+  .opcoes{display:grid;gap:10px}
+  .opcao{width:100%;text-align:left;background:var(--cor-fundo);border:2px solid transparent;border-radius:var(--raio);padding:15px 18px;font:500 1rem Inter,sans-serif;color:var(--cor-texto);cursor:pointer;transition:border-color .15s,background .15s}
+  @media (hover:hover){.opcao:hover{border-color:var(--cor-detalhe)}}
+  .opcao:focus-visible{outline:3px solid var(--cor-detalhe);outline-offset:2px}
+  .opcao.sel{border-color:var(--cor-primaria);background:#F7EAE4}
+  .voltar{background:none;border:0;color:var(--cor-texto-suave);font:500 .9rem Inter,sans-serif;cursor:pointer;margin-top:18px;padding:6px 0}
+  .voltar:disabled{visibility:hidden}
+
+  /* formulário */
+  form{display:grid;gap:14px;margin-top:6px}
+  label{font-weight:600;font-size:.92rem;display:block;margin-bottom:6px}
+  input[type=text],input[type=tel],input[type=email]{width:100%;padding:14px 16px;border:2px solid var(--cor-fundo-alt);border-radius:12px;font:400 1rem Inter,sans-serif;background:var(--cor-fundo);color:var(--cor-texto)}
+  input:focus{outline:none;border-color:var(--cor-primaria)}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:.85rem;color:var(--cor-texto-suave);font-weight:400}
+  .consent input{margin-top:4px;width:18px;height:18px;flex:0 0 auto;accent-color:var(--cor-primaria)}
+  .erro{color:#B3261E;font-size:.85rem;min-height:1em}
+
+  /* resultado */
+  .indice{text-align:center;margin:6px 0 22px}
+  .indice .num{font-family:"Playfair Display",serif;font-size:clamp(3.2rem,14vw,4.6rem);color:var(--cor-primaria);line-height:1}
+  .indice .de{color:var(--cor-texto-suave);font-size:.95rem}
+  .nivel{display:inline-block;margin-top:10px;padding:6px 14px;border-radius:999px;font-weight:600;font-size:.9rem}
+  .nivel.n1{background:#E8F0E3;color:#3F6A3A}
+  .nivel.n2{background:#FBEBD3;color:#8A5A12}
+  .nivel.n3{background:#F7DCD5;color:#8E2F1F}
+  .perfil{background:var(--cor-fundo);border-radius:var(--raio);padding:22px;margin:18px 0}
+  .perfil h3{font-size:1.35rem;margin-bottom:8px;color:var(--cor-primaria-escura)}
+  .fases-res{display:grid;gap:12px;margin:18px 0 8px}
+  .fr-linha{display:grid;grid-template-columns:1fr auto;gap:4px 10px;font-size:.92rem}
+  .fr-linha .lab{font-weight:600}
+  .fr-linha .pct{color:var(--cor-texto-suave)}
+  .fr-barra{grid-column:1 / -1;height:10px;background:var(--cor-fundo-alt);border-radius:99px;overflow:hidden}
+  .fr-barra span{display:block;height:100%;background:var(--cor-detalhe);border-radius:99px}
+  .fr-barra span.max{background:var(--cor-primaria)}
+  .comece{border-left:4px solid var(--cor-detalhe);padding:12px 16px;background:var(--cor-fundo);border-radius:0 12px 12px 0;margin:16px 0}
+  .acoes{display:grid;gap:12px;margin-top:22px}
+  .aviso-saude{font-size:.8rem;color:var(--cor-texto-suave);margin-top:22px;border-top:1px solid var(--cor-fundo-alt);padding-top:14px}
+  footer{text-align:center;font-size:.8rem;color:var(--cor-texto-suave);margin-top:22px}
+  @media (min-width:600px){.card{padding:40px 40px}.acoes{grid-template-columns:1fr 1fr}.acoes .full{grid-column:1 / -1}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <p class="marca">Método Lucro Anti-Exaustão®</p>
+  <div class="card">
+
+    <!-- TELA 1: INTRO -->
+    <section class="tela ativa" id="t-intro" aria-labelledby="h-intro">
+      <h1 id="h-intro">Qual é o seu Índice de Exaustão?</h1>
+      <p class="sub">12 perguntas · 2 minutos · gratuito.<br>Descubra o quanto a sua empresa depende de você — e qual fase está drenando a sua energia.</p>
+      <ul class="lista-intro">
+        <li>Sua nota de 0 a 100</li>
+        <li>Seu perfil de empresária</li>
+        <li>A fase do método por onde começar</li>
+      </ul>
+      <button class="btn" id="btn-comecar" type="button">Começar o teste</button>
+      <p class="nota-mini">Responda pensando nas últimas 4 semanas. Não existe resposta certa.</p>
+    </section>
+
+    <!-- TELA 2: PERGUNTAS -->
+    <section class="tela" id="t-quiz" aria-live="polite">
+      <div class="topo-q"><span class="fase-tag" id="q-fase"></span><span id="q-cont"></span></div>
+      <div class="barra" aria-hidden="true"><span id="q-barra"></span></div>
+      <h2 id="q-texto"></h2>
+      <div class="opcoes" id="q-opcoes" role="radiogroup"></div>
+      <button class="voltar" id="btn-voltar" type="button">← Voltar</button>
+    </section>
+
+    <!-- TELA 3: CAPTURA -->
+    <section class="tela" id="t-lead" aria-labelledby="h-lead">
+      <h2 id="h-lead" style="text-align:center">Seu resultado está pronto 💛</h2>
+      <p class="sub">Para onde eu envio o seu Índice de Exaustão e as recomendações da sua fase?</p>
+      <!-- FORM_ACTION_URL: o envio é feito via JavaScript (ver CONFIG abaixo). -->
+      <form id="form-lead" novalidate>
+        <div><label for="f-nome">Seu primeiro nome</label><input type="text" id="f-nome" name="nome" autocomplete="given-name" required></div>
+        <div><label for="f-whats">WhatsApp (com DDD)</label><input type="tel" id="f-whats" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" required></div>
+        <div><label for="f-email">E-mail</label><input type="email" id="f-email" name="email" autocomplete="email" required></div>
+        <label class="consent"><input type="checkbox" id="f-consent" name="consentimento" required> Aceito receber o meu resultado e conteúdos do Método Lucro Anti-Exaustão® por WhatsApp e e-mail. Posso cancelar quando quiser.</label>
+        <!-- campos ocultos preenchidos automaticamente -->
+        <input type="hidden" name="indice" id="h-indice">
+        <input type="hidden" name="perfil" id="h-perfil">
+        <input type="hidden" name="fase1" id="h-f1"><input type="hidden" name="fase2" id="h-f2">
+        <input type="hidden" name="fase3" id="h-f3"><input type="hidden" name="fase4" id="h-f4">
+        <input type="hidden" name="utm_source" id="h-utm_source"><input type="hidden" name="utm_medium" id="h-utm_medium">
+        <input type="hidden" name="utm_campaign" id="h-utm_campaign"><input type="hidden" name="utm_content" id="h-utm_content">
+        <p class="erro" id="f-erro" role="alert"></p>
+        <button class="btn" type="submit" id="btn-ver">Ver meu resultado</button>
+        <p class="nota-mini">🔒 Seus dados não são compartilhados com terceiros.</p>
+      </form>
+    </section>
+
+    <!-- TELA 4: RESULTADO -->
+    <section class="tela" id="t-res" aria-labelledby="h-res">
+      <p class="marca" style="margin-bottom:6px" id="r-ola"></p>
+      <h2 id="h-res" style="text-align:center;margin-bottom:6px">Seu Índice de Exaustão</h2>
+      <div class="indice">
+        <div class="num" id="r-num">0</div>
+        <div class="de">de 100</div>
+        <span class="nivel" id="r-nivel"></span>
+      </div>
+      <p id="r-nivel-txt" style="text-align:center;color:var(--cor-texto-suave)"></p>
+
+      <div class="perfil">
+        <p class="marca" style="text-align:left;margin-bottom:6px">Seu perfil</p>
+        <h3 id="r-perfil"></h3>
+        <p id="r-perfil-txt"></p>
+      </div>
+
+      <h3 style="font-size:1.1rem">Onde a sua energia está escapando</h3>
+      <div class="fases-res" id="r-fases"></div>
+
+      <div class="comece">
+        <strong>Por onde começar:</strong> <span id="r-comece"></span>
+      </div>
+
+      <div class="acoes">
+        <a class="btn full" id="cta-lp" href="LINK_LP">Conhecer o Método Lucro Anti-Exaustão®</a>
+        <a class="btn whats" id="cta-whats" href="LINK_WHATSAPP" target="_blank" rel="noopener">Falar com a Camila</a>
+        <a class="btn sec" id="cta-vip" href="LINK_GRUPO_VIP" target="_blank" rel="noopener">Entrar na Lista VIP</a>
+        <a class="btn sec full" id="cta-share" href="#" target="_blank" rel="noopener">Enviar o teste para uma amiga empresária</a>
+      </div>
+      <p class="aviso-saude">Este teste é uma ferramenta de autoavaliação da rotina e da gestão do seu negócio. <strong>Não é diagnóstico de saúde.</strong> Se você sente cansaço extremo persistente, insônia, crises de ansiedade ou outros sinais de esgotamento, procure um(a) profissional de saúde.</p>
+    </section>
+
+  </div>
+  <footer>Método Lucro Anti-Exaustão® · Camila Martins Finger<br>Uma empresa lucrativa não precisa custar a sua paz.</footer>
+</main>
+
+<script>
+/* ======================== CONFIG ========================
+   FORM_ACTION_URL: cole aqui o endpoint que deve receber os leads.
+   Exemplos:
+   - Google Apps Script (Web App publicado) que grava numa planilha
+   - Webhook do Make / Zapier / n8n
+   - Endpoint de formulário do Brevo / MailerLite / RD Station
+   Enquanto estiver "FORM_ACTION_URL", NENHUM dado é enviado para lugar nenhum
+   (o resultado aparece normalmente — útil para testes).
+   ======================================================== */
+const CONFIG = {
+  FORM_ACTION_URL: "FORM_ACTION_URL",
+  LINK_LP: "LINK_LP",
+  LINK_QUIZ_PUBLICO: location.href.split("?")[0]
+};
+
+const ESCALA = [
+  {t:"Nunca ou quase nunca", v:0},
+  {t:"Às vezes", v:1},
+  {t:"Com frequência", v:2},
+  {t:"Quase sempre", v:3}
+];
+
+const FASES = {
+  1:{nome:"Fase 1 · Raio-X Operacional", curto:"Clareza (Raio-X)"},
+  2:{nome:"Fase 2 · Extração Comportamental", curto:"Comportamento e liderança"},
+  3:{nome:"Fase 3 · Rotina Anti-Exaustão", curto:"Rotina"},
+  4:{nome:"Fase 4 · Patrimônio Valioso", curto:"Dependência de você"}
+};
+
+const PERGUNTAS = [
+  {f:1, q:"Termino o dia sem saber exatamente para onde foi o meu tempo."},
+  {f:1, q:"Não sei dizer com clareza quais atividades da empresa mais consomem a minha energia."},
+  {f:1, q:"Tomo decisões de crescimento (contratar, investir, expandir) sem saber direito onde estão os gargalos."},
+  {f:2, q:"Sinto que estou forçando uma rotina que não combina com o meu jeito de funcionar."},
+  {f:2, q:"Resolvo os problemas da equipe antes mesmo de perguntar o que eles já tentaram."},
+  {f:2, q:"Faço as tarefas mais importantes nos horários em que estou mais cansada."},
+  {f:3, q:"Meu dia é tomado por urgências e “incêndios” que eu não planejei."},
+  {f:3, q:"Começo a semana sem prioridades claras definidas."},
+  {f:3, q:"Quando a semana desanda, abandono a rotina inteira em vez de fazer uma versão mínima."},
+  {f:4, q:"Se eu ficasse uma semana fora, a empresa pararia ou daria muito errado."},
+  {f:4, q:"As tarefas que eu delego acabam voltando para mim."},
+  {f:4, q:"A empresa cresce, mas eu tenho cada vez menos tempo para a minha família e para mim."}
+];
+
+const PERFIS = {
+  1:{nome:"A Empresária no Escuro",
+     txt:"Você corre o dia todo, mas sem um mapa. A energia escapa por lugares que você ainda não enxerga — e por isso qualquer tentativa de organizar a rotina dura pouco. O primeiro passo não é fazer mais: é enxergar.",
+     comece:"Módulo 1 — Raio-X Operacional, a partir da Aula 7 (Diagnóstico Operacional) e da Aula 8 (Mapa da Sobrecarga)."},
+  2:{nome:"A Empresária Contra a Corrente",
+     txt:"Você funciona contra o próprio jeito: força rotinas que não combinam com você e acaba resolvendo tudo pela equipe. O cansaço vem menos do volume de trabalho e mais do atrito de operar fora da sua melhor forma.",
+     comece:"Módulo 2 — Extração Comportamental Lucrativa, a partir da Aula 12 (Onde nasce a sua sobrecarga) e da Aula 15 (Perfil de Liderança)."},
+  3:{nome:"A Empresária Bombeira",
+     txt:"Seu dia é decidido pelas urgências. Você é ótima em apagar incêndio — e é exatamente por isso que eles não param de aparecer. Falta uma rotina com blocos inegociáveis e uma versão mínima para as semanas difíceis.",
+     comece:"Módulo 3 — Rotina Anti-Exaustão, a partir da Aula 20 (Prioridades Inteligentes) e da Aula 22 (Estrutura de Rotina Lucrativa)."},
+  4:{nome:"A Empresária Indispensável",
+     txt:"A empresa gira em torno de você. Isso já foi motivo de orgulho, mas hoje custa a sua presença, a sua saúde e o crescimento do negócio. O próximo nível não é trabalhar mais: é a empresa precisar menos de você.",
+     comece:"Módulo 4 — Ativação de Patrimônio Valioso, a partir da Aula 26 (Estrutura de Delegação) e da Aula 29 (Ativação de Liderança)."}
+};
+
+const NIVEIS = [
+  {max:33, cls:"n1", nome:"Sinal amarelo", txt:"Sua rotina ainda tem espaço, mas já mostra pontos de desgaste. É o melhor momento para estruturar — antes de virar incêndio."},
+  {max:66, cls:"n2", nome:"Alerta", txt:"A empresa já cobra um preço alto da sua energia. Sem estrutura, a tendência é piorar conforme o negócio cresce."},
+  {max:100, cls:"n3", nome:"Exaustão instalada", txt:"Você está carregando a empresa nas costas. Não é falta de capacidade — é falta de estrutura. E isso tem solução."}
+];
+
+const respostas = new Array(PERGUNTAS.length).fill(null);
+let atual = 0;
+let resultado = null;
+
+const $ = id => document.getElementById(id);
+function mostrar(id){
+  document.querySelectorAll(".tela").forEach(t=>t.classList.remove("ativa"));
+  $(id).classList.add("ativa");
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function renderPergunta(){
+  const p = PERGUNTAS[atual];
+  $("q-fase").textContent = FASES[p.f].nome;
+  $("q-cont").textContent = (atual+1) + " de " + PERGUNTAS.length;
+  $("q-barra").style.width = ((atual)/PERGUNTAS.length*100) + "%";
+  $("q-texto").textContent = p.q;
+  const box = $("q-opcoes");
+  box.innerHTML = "";
+  ESCALA.forEach(op=>{
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "opcao" + (respostas[atual]===op.v ? " sel" : "");
+    b.setAttribute("role","radio");
+    b.setAttribute("aria-checked", respostas[atual]===op.v ? "true":"false");
+    b.textContent = op.t;
+    b.addEventListener("click", ()=>{
+      respostas[atual] = op.v;
+      b.classList.add("sel");
+      setTimeout(()=>{
+        if(atual < PERGUNTAS.length-1){ atual++; renderPergunta(); }
+        else { calcular(); mostrar("t-lead"); }
+      }, 180);
+    });
+    box.appendChild(b);
+  });
+  $("btn-voltar").disabled = atual === 0;
+}
+
+function calcular(){
+  const somas = {1:0,2:0,3:0,4:0}, maxes = {1:0,2:0,3:0,4:0};
+  PERGUNTAS.forEach((p,i)=>{ somas[p.f] += respostas[i]||0; maxes[p.f] += 3; });
+  const total = Object.values(somas).reduce((a,b)=>a+b,0);
+  const indice = Math.round(total / (PERGUNTAS.length*3) * 100);
+  const pct = {}; [1,2,3,4].forEach(f=> pct[f] = Math.round(somas[f]/maxes[f]*100));
+  // fase crítica: maior %; empate → a fase mais "de base" (menor número), pois o método é sequencial
+  let critica = 1; [2,3,4].forEach(f=>{ if(pct[f] > pct[critica]) critica = f; });
+  const nivel = NIVEIS.find(n=> indice <= n.max);
+  resultado = {indice, pct, critica, nivel, perfil:PERFIS[critica]};
+  $("h-indice").value = indice; $("h-perfil").value = PERFIS[critica].nome;
+  [1,2,3,4].forEach(f=> $("h-f"+f).value = pct[f]);
+}
+
+function utms(){
+  const qs = new URLSearchParams(location.search);
+  ["utm_source","utm_medium","utm_campaign","utm_content"].forEach(k=>{ $("h-"+k).value = qs.get(k)||""; });
+  return qs;
+}
+
+function comUtm(url, extra){
+  if(!url || url.indexOf("LINK_")===0) return url;
+  try{
+    const u = new URL(url, location.href);
+    const qs = new URLSearchParams(location.search);
+    ["utm_source","utm_medium","utm_campaign","utm_content"].forEach(k=>{ if(qs.get(k) && !u.searchParams.get(k)) u.searchParams.set(k, qs.get(k)); });
+    if(extra) Object.entries(extra).forEach(([k,v])=>u.searchParams.set(k,v));
+    return u.toString();
+  }catch(e){ return url; }
+}
+
+async function enviarLead(dados){
+  // Disparo de Pixel (opcional): if(window.fbq) fbq('track','Lead');
+  if(!CONFIG.FORM_ACTION_URL || CONFIG.FORM_ACTION_URL === "FORM_ACTION_URL") return; // modo teste: não envia nada
+  try{
+    await fetch(CONFIG.FORM_ACTION_URL, {method:"POST", mode:"no-cors", body:new URLSearchParams(dados)});
+  }catch(e){ /* não bloqueia o resultado se o envio falhar */ }
+}
+
+function renderResultado(nome){
+  const r = resultado;
+  $("r-ola").textContent = nome ? ("Olá, " + nome + "!") : "";
+  $("r-nivel").textContent = r.nivel.nome; $("r-nivel").className = "nivel " + r.nivel.cls;
+  $("r-nivel-txt").textContent = r.nivel.txt;
+  $("r-perfil").textContent = r.perfil.nome;
+  $("r-perfil-txt").textContent = r.perfil.txt;
+  $("r-comece").textContent = r.perfil.comece;
+  const box = $("r-fases"); box.innerHTML = "";
+  [1,2,3,4].forEach(f=>{
+    const d = document.createElement("div"); d.className = "fr-linha";
+    d.innerHTML = '<span class="lab"></span><span class="pct"></span><div class="fr-barra"><span></span></div>';
+    d.querySelector(".lab").textContent = FASES[f].curto;
+    d.querySelector(".pct").textContent = r.pct[f] + "%";
+    const s = d.querySelector(".fr-barra span"); s.style.width = Math.max(r.pct[f],3) + "%"; if(f===r.critica) s.classList.add("max");
+    box.appendChild(d);
+  });
+  // animação do número
+  let n = 0; const alvo = r.indice; const passo = Math.max(1, Math.round(alvo/30));
+  const t = setInterval(()=>{ n = Math.min(alvo, n+passo); $("r-num").textContent = n; if(n>=alvo) clearInterval(t); }, 25);
+  // CTAs com UTM e perfil
+  $("cta-lp").href = comUtm(CONFIG.LINK_LP, {quiz_perfil: "fase"+r.critica});
+  const msg = "Oi, Camila! Fiz o teste do Índice de Exaustão: deu " + r.indice + "/100, perfil \"" + r.perfil.nome + "\". Quero entender por onde começar.";
+  const w = $("cta-whats").getAttribute("href");
+  if(w.indexOf("LINK_")!==0){ $("cta-whats").href = w + (w.includes("?")?"&":"?") + "text=" + encodeURIComponent(msg); }
+  const share = "Fiz um teste de 2 minutos que mostra o quanto a empresa depende da gente. Faz também e me conta a sua nota: " + comUtm(CONFIG.LINK_QUIZ_PUBLICO, {utm_source:"indicacao", utm_medium:"whatsapp"});
+  $("cta-share").href = "https://wa.me/?text=" + encodeURIComponent(share);
+}
+
+$("btn-comecar").addEventListener("click", ()=>{ atual = 0; renderPergunta(); mostrar("t-quiz"); });
+$("btn-voltar").addEventListener("click", ()=>{ if(atual>0){ atual--; renderPergunta(); } });
+
+$("form-lead").addEventListener("submit", async (e)=>{
+  e.preventDefault();
+  const nome = $("f-nome").value.trim();
+  const whats = $("f-whats").value.replace(/\D/g,"");
+  const email = $("f-email").value.trim();
+  const erro = $("f-erro");
+  if(nome.length < 2){ erro.textContent = "Digite o seu nome."; $("f-nome").focus(); return; }
+  if(whats.length < 10 || whats.length > 13){ erro.textContent = "Digite um WhatsApp válido, com DDD."; $("f-whats").focus(); return; }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ erro.textContent = "Digite um e-mail válido."; $("f-email").focus(); return; }
+  if(!$("f-consent").checked){ erro.textContent = "Marque a autorização para receber o seu resultado."; return; }
+  erro.textContent = "";
+  $("btn-ver").disabled = true; $("btn-ver").textContent = "Calculando…";
+  const dados = Object.fromEntries(new FormData($("form-lead")).entries());
+  dados.whatsapp = whats; dados.data = new Date().toISOString();
+  await enviarLead(dados);
+  renderResultado(nome.split(" ")[0]);
+  mostrar("t-res");
+});
+
+utms();
+</script>
+</body>
+</html>
