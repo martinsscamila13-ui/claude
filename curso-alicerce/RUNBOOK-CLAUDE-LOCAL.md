@@ -53,6 +53,24 @@ Anote qualquer erro visual.
 
 ---
 
+## 1A. Provas sociais e autorizações (antes de publicar qualquer case com nome)
+
+1. Leia `prova-social-e-autoridade.md` (versão pública) e `privado/banco-de-provas.md` (nomes, fontes e status).
+   - A pasta `privado/` **não pode** ir para o GitHub nem para a hospedagem. Ao montar `site/`, nunca copie `privado/`.
+2. 🛑 Pergunte à Camila quais cases ela quer pedir autorização primeiro. A ordem sugerida está no §5 do banco de provas.
+3. Para cada mentorada, monte a mensagem de WhatsApp do §5 com o texto do case.
+   - 🛑 A Camila envia pelo WhatsApp dela. Você **não** envia.
+4. Registre as respostas no banco de provas: **com nome e @**, **só primeiro nome** ou **sem nome**.
+5. Com a autorização, atualize nos cards da página de vendas (seção `#cases`): o campo `.quem` com o primeiro nome e o @, e o depoimento com as palavras dela.
+6. Confirme dois pontos antes de publicar:
+   - o **prêmio da ACIF** (Case C);
+   - a frase "parou de correr atrás do tempo e nada mais fica atrasado" (Case B).
+7. Nunca publique faturamento de mentorada sem o ok dela.
+
+✅ **Pronto quando:** cada case estiver marcado como autorizado (com o nível) ou mantido sem nome.
+
+---
+
 ## 2. Vídeos: localizar, conferir e converter
 
 **Contexto:** as aulas gravadas estão no Google Drive, na pasta *"Metodologia - Lucro Anti-Exaustão (Camila Martins)"*, que pertence à conta de quem editou (luizaramosmarketing). A Camila só tem permissão de leitura. Os arquivos são .mov, somam cerca de 5,3 GB e há aulas com mais de 500 MB.
@@ -359,7 +377,7 @@ A palestra **"Raio-X da Empresária Exausta"** já está no Canva da Camila, com
    - slide 15 aponta para a LP;
    - slide 16 aponta para o quiz.
    Teste com a câmera do celular.
-3. Slide 14: troque os 3 cartões de depoimento pela faixa de credenciais até haver depoimentos autorizados.
+3. **Slide 14:** use 3 cases curtos de `prova-social-e-autoridade.md` §4 (15 minutos por atendimento · meta por vendedor · preço de R$ 5 mil para R$ 8 mil), marcados como "caso real, nome preservado". Com autorização, inclua o primeiro nome.
 4. Gere as capas da Kiwify (produto, módulos, banner do checkout) com **Redimensionar**, a partir das "Capas Notion - Fase 1 a 4" existentes.
 5. 🛑 Mostre os slides finais à Camila antes de qualquer apresentação.
 

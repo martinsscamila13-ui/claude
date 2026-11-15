@@ -157,3 +157,49 @@
 | D+2 | Reels "Raio-X Operacional" | Caixa de perguntas | — |
 | D+4 | Post de credenciais (+400 · +2 mil · 12 Drink to Talk) — depoimento só se autorizado | Respostas às dúvidas | WhatsApp para quem perguntou |
 | D+6 | Post "último dia" (só se houver prazo real) | Contagem regressiva | E-mail 09 |
+
+
+---
+
+## 10. Prova social e cases (conteúdo pronto, sem nomes)
+
+> Fonte: `prova-social-e-autoridade.md`. Use sempre "caso real, nome preservado". Com autorização, troque pelo primeiro nome e @ da mentorada (ver `privado/banco-de-provas.md`).
+
+### Carrossel "3 viradas reais" (8 lâminas)
+1. **Capa:** "3 empresárias. 3 viradas. Nenhuma trabalhou mais."
+2. "Nail designer, com estúdio próprio: agenda lotada, estúdio bagunçado, tudo em cima da hora."
+3. "Ainda na Fase 1 do método: **+15 minutos em cada atendimento** e dinheiro guardado todo mês. Não foi mais esforço, foi processo."
+4. "Empresária com 7 lojas: campanha sem meta, equipe sem direção."
+5. "Depois: primeira campanha com meta, clientes inativos reativados e **meta e supermeta por vendedor**."
+6. "Cerimonialista e terapeuta, 60 anos: 12 propostas, 1 fechamento, medo de cobrar."
+7. "Em 30 dias: **preço de R$ 5 mil para R$ 8 mil** e a própria mentoria fora do papel."
+8. **CTA:** "Qual dessas é você hoje? Comenta LUCRO que eu te mando o teste que mostra por onde começar."
+
+**Legenda:**
+> Nenhuma dessas mulheres resolveu a exaustão trabalhando mais. Elas resolveram com estrutura: clareza (Raio-X Operacional), um jeito de trabalhar que respeita quem elas são, uma rotina que cabe na semana real e uma empresa que depende menos delas.
+> Isso é o Método Lucro Anti-Exaustão®. Comenta LUCRO 💛
+> (Casos reais de mentoradas, nomes preservados.)
+
+### Stories "bastidor de resultado" (4 telas)
+1. "Ontem uma mentorada me mandou isso…" [print autorizado, ou texto: "Acompanhar por semana faz a diferença."]
+2. "Ela escreveu 5 projetos em 1 mês e conseguiu descansar de verdade, com a cabeça aliviada."
+3. "O que mudou? Janela fixa para imprevistos + financeiro na agenda. Simples assim."
+4. "Quer descobrir onde está o furo do teu balde? Responde LUCRO" (caixa de resposta).
+
+### Reels "15 minutos" (30 s)
+- **Gancho:** "15 minutos. Foi isso que uma nail designer ganhou em cada atendimento, sem trabalhar mais."
+- **Meio:** "Ela não acelerou. Ela olhou o processo de cada procedimento na Fase 1 do meu método e tirou o que sobrava."
+- **Virada:** "15 minutos vezes a agenda do mês = horas de volta para a vida."
+- **CTA:** "Comenta LUCRO que eu te mostro por onde começar."
+
+### Anúncio D: prova social
+> **Título:** 8 em cada 9 mentoradas dariam nota 10
+> **Texto:** +400 mentoradas e +2 mil mulheres impactadas. Uma nail designer ganhou 15 minutos por atendimento; uma empresária com 7 lojas passou a ter meta por vendedor; uma cerimonialista reajustou o preço de R$ 5 mil para R$ 8 mil em 30 dias. O Método Lucro Anti-Exaustão® agora em aulas curtas. (Casos reais, nomes preservados.)
+> **CTA:** Saiba mais
+
+### Bio de palco (para apresentadoras de eventos lerem)
+> "Nossa próxima convidada transformou a própria exaustão num método. Ex-técnica de enfermagem, hoje é mentora de empresárias, com mais de 400 mentoradas e mais de 2 mil mulheres impactadas em palestras e treinamentos. Criadora do Drink to Talk e do Workshop Realize, já levou o Método Lucro Anti-Exaustão® à FURB, a programas de aceleração e a empresas. Com vocês, Camila Martins Finger!"
+
+### Prova no checkout (Kiwify)
+- **Faixa:** "+400 mentoradas · +2 mil mulheres impactadas · 9,8/10 de recomendação"
+- **Case curto:** "Nail designer ganhou +15 minutos por atendimento ainda na Fase 1. (caso real, nome preservado)"

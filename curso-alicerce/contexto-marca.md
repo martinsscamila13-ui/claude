@@ -7,6 +7,7 @@
 ## 1. Prova social oficial (confirmada pela Camila)
 - **+400 mentoradas**
 - **+2 mil mulheres impactadas com palestras e treinamentos**
+- **9,8 de 10** de nota média de recomendação (pesquisa interna com mentoradas, nov/2026; 8 em cada 9 deram nota 10). Sempre cite a fonte em nota de rodapé.
 - ❌ Nunca usar "+200 mentoradas", que é um dado desatualizado.
 
 ## 2. Quem ela é
@@ -31,7 +32,10 @@
   - "Da procrastinação à AÇÃO!"
   - Palestra para síndicas em empresa de higiene profissional com 36 anos de mercado
   - "Do papel à entrega" na FURB
-- **B2B:** proposta comercial do método para uma rede com **50 mil mulheres empreendedoras** (consultoras de vendas). Formato: "Caminho 1: Palestra Impactante" + "Parceria contínua de mentoria".
+- **Aula convidada** no programa de aceleração digital de outra mentora (Palestra Gestão do Tempo, set/2026).
+- **Workshop "Do papel à entrega" na FURB** (16/10/2026), para estudantes de saúde, com MBTI ao vivo.
+- **Mentora de mentoras:** mentoradas criaram as próprias mentorias e treinamentos (saúde pública, neuropsicopedagogia, terapia de casais, consultoria esportiva).
+- **B2B:** proposta comercial do método para uma rede com **50 mil mulheres empreendedoras** (⚠️ é proposta, não cliente: não cite como case) (consultoras de vendas). Formato: "Caminho 1: Palestra Impactante" + "Parceria contínua de mentoria".
 - **Lives recorrentes:** "Live + escolher mentorada por um dia".
 - **Hot seats** com mentoradas.
 - **Comunidade** (R$ 97/mês, com almoço mensal e grupo de WhatsApp) e o **Desafio Lucro Anti-Exaustão** (7 dias, com pontuação, prêmios e certificado).
@@ -80,11 +84,17 @@
 - **As aulas são curtas de propósito:** diretas e super produtivas, de cerca de 5 a 8 minutos, cada uma terminando em uma ação. É coerente com o método (empresária sem tempo).
 - **Nunca propor alongar as aulas.** O ganho de 10x vem de implementação, materiais, comunidade, IA, oferta e jornada, não de mais minutos.
 
-## 8. Cases (usar só com autorização e dados validados)
-- Cliente dona de **7 lojas de higiene profissional**: "parou de correr atrás do tempo e nada mais fica atrasado". [VALIDAR com a cliente]
-- Mentorada que **tirou a primeira palestra do papel** depois do método. [VALIDAR]
-- Massoterapeuta que reorganizou a agenda. [PREENCHER resultado]
-- ⚠️ Não publicar nomes de clientes sem autorização expressa.
+## 8. Cases (versão pública sem nomes em `prova-social-e-autoridade.md`; nomes e fontes em `privado/banco-de-provas.md`, que só existe no .zip)
+| Case (sem nome) | Resultado documentado |
+|---|---|
+| Nail designer, estúdio próprio | +15 min por atendimento ainda na Fase 1; estúdio organizado; entrega com antecedência; guardando dinheiro todo mês |
+| Empresária com 7 lojas de higiene profissional | 1ª campanha com meta (6 combos), clientes inativos reativados, meta e supermeta por vendedor; depois levou a Camila para palestrar para as clientes |
+| Cerimonialista e terapeuta, 60 anos (Express) | Em 30 dias: preço de R$ 5 mil para R$ 8 mil; tirou a própria mentoria do papel ("Gratidão") |
+| Neuropsicopedagoga | Sexta à tarde livre; agenda por dia e local; prospecção; treinamento próprio para clínicas |
+| Consultora de projetos esportivos | 5 projetos em 1 mês; "Acompanhar por semana faz a diferença"; descansou de cabeça aliviada |
+| Empresária, negócio familiar | Profissional de nota 3 ("estagnada") a "empresa está redonda" |
+- ⚠️ Nome, @, foto ou print só com autorização por escrito. O script de pedido está no banco de provas.
+- ⚠️ Não publicar faturamento de mentorada sem o ok dela.
 
 ## 9. Ativos visuais existentes no Canva
 - Capas do Notion por fase (Fase 1 a 4), capas de destaques e posts, moldes de post, sequência de stories "Rotina Anti-Exaustão", apresentação comercial do método, palestra de Gestão do Tempo, Workshop Realize.

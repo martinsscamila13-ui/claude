@@ -12,6 +12,8 @@
 |---|---|
 | `CLAUDE.md` | Regras inegociáveis para qualquer Claude que for trabalhar nesta pasta |
 | `contexto-marca.md` | Fatos, prova social, história, eventos, tom de voz e frases-assinatura da Camila |
+| `prova-social-e-autoridade.md` | **Cases reais sem nome**, nota 9,8, bios de autoridade, "Onde o método já esteve" e onde cada prova entra |
+| `privado/banco-de-provas.md` | 🔒 **Só no .zip, fora do GitHub:** nomes, fontes, status de autorização e script para pedir autorização às mentoradas |
 | `RUNBOOK-CLAUDE-LOCAL.md` | Roteiro de execução (vídeos, Classroom, Kiwify, IA, hospedagem, e-mails, Canva) com pontos de parada |
 | `README.md` | Este mapa |
 | `../Guia_Classroom_Kiwify_Lucro_Anti-Exaustao.md` | Passo a passo detalhado com a extensão Claude in Chrome (inclui a seção 12: onde subir cada material complementar) |
@@ -43,13 +45,14 @@
 | `11-quiz-erro-comum` | Lead do quiz, D+2 (se não comprou) |
 | `12-quiz-convite` | Lead do quiz, D+5 (se não comprou) |
 | `17-entrega-ebook` | Quem pediu o ebook (CTA "comenta LUCRO", palestra, Drink to Talk) |
+| `18-tres-viradas-reais` | Nutrição com 3 cases reais (quiz D+8, lista, lançamento) |
 
 ### Materiais complementares (`complementares/`)
 | Arquivo | O que é |
 |---|---|
 | `00-diagnostico-e-plano-10x.md` | Auditoria franca do curso e da oferta + plano 10x (value stack, quick win, marcos, jornada de 30 dias, ascensão, métricas) e as decisões pendentes |
 | `workbook-metodo-alicerce.html` / `.pdf` | Workbook das 4 fases (35 págs. A4): uma seção por aula com as perguntas das ferramentas reais, Filtro dos 90 Dias, Índice Anti-Exaustão, Mapa de 12 semanas, check-in semanal e selos. Substitui Trello/Notion para quem compra o curso |
-| `ebook-raio-x-empresaria-exausta.html` / `.pdf` | Ebook de 15 págs. (bônus e isca): mecanismo, balde furado, teste do modo sobrevivência, 8 exercícios da Fase 1, 5 erros, plano de 7 dias, CTA |
+| `ebook-raio-x-empresaria-exausta.html` / `.pdf` | Ebook de 16 págs. (bônus e isca): mecanismo, balde furado, teste do modo sobrevivência, 8 exercícios da Fase 1, 5 erros, plano de 7 dias, CTA |
 | `avaliacoes-por-modulo.md` | Quizzes por módulo (31 questões com gabarito comentado) + Índice Anti-Exaustão de entrada/saída + formulário de saída com depoimento autorizado |
 | `ia/assistente-anti-exaustao-instrucoes.md` | Instruções de sistema + passo a passo para criar o GPT (ChatGPT), o Projeto (Claude) e o Gem (Gemini), com limites éticos e checklist de teste |
 | `ia/base-conhecimento-metodo.md` | Arquivo de conhecimento do método (fases, ferramentas, perguntas, faixas, glossário, manifesto) para subir no assistente |

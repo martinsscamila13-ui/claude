@@ -140,6 +140,18 @@
   .depo p{font-style:italic;margin-bottom:12px}
   .depo span{font-weight:600;color:var(--cor-primaria)}
 
+  /* CASES REAIS */
+  .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+  .case{background:var(--branco);border-radius:var(--raio);padding:24px;border-top:4px solid var(--cor-detalhe);display:flex;flex-direction:column}
+  .case .quem{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--cor-primaria);font-weight:600;margin-bottom:8px}
+  .case h3{font-size:1.15rem;margin-bottom:10px}
+  .case p{font-size:.93rem;color:var(--cor-texto-suave);margin-bottom:8px}
+  .case blockquote{font-style:italic;font-size:.92rem;color:var(--cor-texto);border-left:3px solid var(--cor-detalhe);padding-left:10px;margin-top:auto}
+  .nota-cases{font-size:.8rem;color:var(--cor-texto-suave);text-align:center;margin-top:18px}
+  .palcos{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+  .palco{background:var(--branco);border:1px solid var(--cor-fundo-alt);border-radius:999px;padding:8px 16px;font-size:.88rem}
+  .prova-oferta{font-size:.9rem;color:var(--cor-texto);background:var(--cor-fundo);border-radius:12px;padding:10px 14px;margin:0 0 16px}
+
   /* OBJEÇÕES */
   .objs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
   .obj{background:var(--branco);border-radius:var(--raio);padding:22px}
@@ -178,6 +190,7 @@
     .hero-foto{max-width:250px;margin:8px auto 0}
     .pills{justify-content:center}
     .aut-grid{grid-template-columns:1fr 1fr}
+    .cases{grid-template-columns:1fr}
     .fases,.passos,.depos{grid-template-columns:1fr}
     .garantia{flex-direction:column;text-align:center}
     .sticky{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--branco);box-shadow:0 -6px 18px rgba(0,0,0,.1);padding:10px 14px;gap:10px;align-items:center;justify-content:space-between}
@@ -215,7 +228,7 @@
     <div><div class="n">+400</div><p>mentoradas</p></div>
     <div><div class="n">+2 mil</div><p>mulheres impactadas em palestras e treinamentos</p></div>
     <div><div class="n">12</div><p>edições do Drink to Talk</p></div>
-    <div><div class="n">Realize</div><p>workshop presencial e In Company</p></div>
+    <div><div class="n">9,8<small style="font-size:1rem">/10</small></div><p>nota de recomendação das mentoradas*</p></div>
   </div>
 </div>
 
@@ -379,24 +392,66 @@
       <p>Eu fui a técnica de enfermagem que ganhava R$ 10 por hora. Trabalhava das 7h às 17h e saía de madrugada, de ônibus, para chegar a tempo. Anos assim me ensinaram que <strong>tempo é o recurso mais caro que existe</strong>. Depois, me tornei mãe em plena pandemia.</p>
       <p>Foi dessa sobrecarga que nasceu a minha reinvenção — e um método construído na prática, não na teoria. Hoje são <strong>mais de 400 mentoradas</strong> e <strong>mais de 2 mil mulheres impactadas</strong> em palestras e treinamentos.</p>
       <p>Criei o <strong>Drink to Talk</strong> (12 edições de networking entre empresárias) e o <strong>Workshop Realize</strong> (presencial e In Company), e levo palestras como “O Poder da Gestão do Tempo” e “Da procrastinação à AÇÃO!” para empresas e instituições, na Grande Florianópolis e online.</p>
+      <p>Já levei o método a uma <strong>universidade (FURB)</strong>, dei <strong>aula convidada em programa de aceleração para mentoras</strong> e palestrei para as clientes de uma empresa com <strong>36 anos de mercado</strong>, a convite de uma mentorada. E ajudo profissionais a transformar experiência em método: mentoradas minhas já tiraram do papel as próprias mentorias e treinamentos.</p>
       <div class="eventos"><span class="evento">Drink to Talk · 12 edições</span><span class="evento">Workshop Realize</span><span class="evento">“O Poder da Gestão do Tempo”</span><span class="evento">“Da procrastinação à AÇÃO!”</span></div>
     </div>
   </div>
 </section>
 
-<!-- 12. PROVA: faixa de credenciais verificáveis.
-     Quando houver depoimentos AUTORIZADOS (formulário de saída), troque os 3 cards por:
-     <div class="depo"><p>“TEXTO DO DEPOIMENTO”</p><span>Primeiro nome, segmento</span></div>
-     Nenhum nome de cliente sem autorização expressa. -->
-<section class="alt">
+<!-- 12. PROVA: cases reais (nomes preservados). Fonte e autorização: privado/banco-de-provas.md (só no .zip).
+     Quando houver autorização, acrescente "Primeiro nome, @" no campo .quem e, se houver, um depoimento com as palavras dela. -->
+<section class="alt" id="cases">
   <div class="wrap">
-    <h2>Quem já caminhou comigo</h2>
-    <p class="lead">Antes de virar curso, o método foi testado em mentorias, palestras e eventos com empresárias de verdade — lojas, estética, saúde, advocacia, terapias, confeitaria, moda.</p>
-    <div class="depos">
-      <div class="depo" style="text-align:center"><p style="font-style:normal;font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--cor-primaria);margin:0">+400</p><span>mentoradas</span></div>
-      <div class="depo" style="text-align:center"><p style="font-style:normal;font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--cor-primaria);margin:0">+2 mil</p><span>mulheres impactadas em palestras e treinamentos</span></div>
-      <div class="depo" style="text-align:center"><p style="font-style:normal;font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--cor-primaria);margin:0">12</p><span>edições do Drink to Talk</span></div>
+    <span class="tag" style="display:block;text-align:center">Resultados reais</span>
+    <h2>O que muda quando a empresa deixa de depender do seu cansaço</h2>
+    <p class="lead">O método foi testado em mentorias com empresárias de verdade, antes de virar curso. Alguns dos caminhos (com os nomes preservados):</p>
+    <div class="cases">
+      <div class="case">
+        <div class="quem">Nail designer · estúdio próprio</div>
+        <h3>+15 minutos em cada atendimento, ainda na Fase 1</h3>
+        <p>Organizou o estúdio, ajustou o processo de cada procedimento e passou a entregar com antecedência. E começou a guardar dinheiro todo mês.</p>
+        <blockquote>“Nail designer de sucesso não é a que trabalha mais horas. É a que tem processo.”</blockquote>
+      </div>
+      <div class="case">
+        <div class="quem">Empresária · 7 lojas de higiene profissional</div>
+        <h3>Da campanha sem meta à meta por vendedor</h3>
+        <p>Fez a primeira campanha com meta, reativou clientes inativos e passou a ter meta e supermeta para cada vendedor. Depois, abriu a empresa para eu palestrar para as clientes dela.</p>
+      </div>
+      <div class="case">
+        <div class="quem">Cerimonialista e terapeuta · 60 anos</div>
+        <h3>Preço de R$ 5 mil para R$ 8 mil em 30 dias</h3>
+        <p>Chegou com 12 propostas enviadas e 1 fechada, medo de cobrar e de aparecer. Em 30 dias reajustou o preço e tirou do papel a própria mentoria.</p>
+        <blockquote>A palavra que ela escolheu para o mês: “Gratidão”.</blockquote>
+      </div>
+      <div class="case">
+        <div class="quem">Neuropsicopedagoga</div>
+        <h3>A sexta à tarde voltou a ser dela</h3>
+        <p>Organizou a semana por dia e local de atendimento, criou rotina de prospecção e hoje estrutura o próprio treinamento para clínicas.</p>
+        <blockquote>“Levo conhecimento, segurança e clareza nos objetivos, metas e resultados.”</blockquote>
+      </div>
+      <div class="case">
+        <div class="quem">Consultora de projetos esportivos</div>
+        <h3>5 projetos em 1 mês e descanso sem culpa</h3>
+        <p>Janelas fixas para imprevistos, financeiro e estudos na agenda. O marco: dar conta de tudo e descansar de verdade, com a cabeça aliviada.</p>
+        <blockquote>“Acompanhar por semana faz a diferença.”</blockquote>
+      </div>
+      <div class="case">
+        <div class="quem">Empresária · negócio familiar</div>
+        <h3>De “estagnada” a “empresa redonda”</h3>
+        <p>Chegou com a área profissional em nota 3 de 10. Meses depois: rotina da semana desenhada, finanças com planilha e, nas palavras dela, “a empresa está redonda”.</p>
+      </div>
     </div>
+    <p class="nota-cases">Casos reais de mentoradas, com nomes preservados. Resultados individuais dependem da aplicação de cada uma.<br>*Média de 9,8 (0 a 10) para “o quanto você indicaria a mentoria para uma amiga” — pesquisa interna com mentoradas, nov/2026; 8 em cada 9 deram nota 10.</p>
+    <h3 style="text-align:center;margin-top:44px">Onde o método já esteve</h3>
+    <div class="palcos">
+      <span class="palco">Workshop Realize · presencial e In Company</span>
+      <span class="palco">Drink to Talk · 12 edições</span>
+      <span class="palco">Workshop “Do papel à entrega” · FURB</span>
+      <span class="palco">Aula convidada em programa de aceleração para mentoras</span>
+      <span class="palco">Palestra para síndicas · empresa com 36 anos</span>
+      <span class="palco">Programa de Aceleração · O MAPA · Mentoria Express</span>
+    </div>
+    <p style="text-align:center;margin-top:30px"><a class="btn" href="LINK_CHECKOUT">Quero o mesmo caminho</a></p>
   </div>
 </section>
 
@@ -430,6 +485,7 @@
         <li>Índice Anti-Exaustão, quizzes e certificado</li>
         <li>Acesso por PRAZO_ACESSO</li>
       </ul>
+      <p class="prova-oferta">⭐ <strong>8 em cada 9 mentoradas</strong> dariam nota 10 para indicar o método a uma amiga.</p>
       <p class="ancora">O mesmo método que eu aplico na mentoria individual (12 encontros em 3 meses), em aulas curtas para você aplicar no seu ritmo — com ferramentas de implementação.</p>
       <p class="preco-parc">em até 12x no cartão ou</p>
       <p class="preco">R$ 497</p>
