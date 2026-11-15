@@ -1,6 +1,6 @@
 # RUNBOOK: execução do curso Alicerce pelo Claude local
 
-> **Para o Claude que vai executar este arquivo:** você está no computador da Camila Martins Finger, com acesso a esta pasta e, de preferência, à extensão **Claude in Chrome**. Sua missão é publicar e configurar o curso **Método Lucro Anti-Exaustão® – Alicerce** (R$ 497) na **Kiwify** e no **Google Classroom**, revisar todos os materiais e deixar tudo pronto para vender e para liberar as mentoradas gratuitamente.
+> **Para o Claude que vai executar este arquivo:** você está no computador da Camila Martins Finger, com acesso a esta pasta e a um navegador que você controla: o **navegador embutido do app Claude para computador** (ícone de globo, Ctrl/Cmd+Shift+B) ou a extensão **Claude in Chrome**. Sua missão é publicar e configurar o curso **Método Lucro Anti-Exaustão® – Alicerce** (R$ 497) na **Kiwify** e no **Google Classroom**, revisar todos os materiais e deixar tudo pronto para vender e para liberar as mentoradas gratuitamente.
 >
 > Siga as fases **na ordem**. Cada fase tem: objetivo, passos, critério de pronto e pontos de parada (🛑) em que você **precisa** da Camila. Registre tudo em `progresso.md` (modelo no final).
 
@@ -16,7 +16,7 @@
 6. **Antes de publicar, salvar oferta, enviar convite ou e-mail, ou ativar cupom,** mostre um resumo e espere o "ok" dela.
 7. **Nunca exclua** nada (aula, aluna, produto, arquivo) sem confirmação explícita. Janelas de confirmação do navegador podem travar a extensão: peça para a Camila clicar.
 8. **Não publique nomes de clientes ou mentoradas** sem autorização por escrito.
-9. **Uploads do computador:** a extensão do Chrome normalmente não consegue escolher arquivos na janela do sistema. Quando precisar subir um arquivo local, diga exatamente qual arquivo e onde arrastar, e espere a Camila. Anexos do **Google Drive** você consegue fazer pelo seletor do Drive.
+9. **Uploads do computador:** o navegador (embutido ou extensão) normalmente não consegue escolher arquivos na janela do sistema. Quando precisar subir um arquivo local, diga exatamente qual arquivo e onde arrastar, e espere a Camila. Anexos do **Google Drive** você consegue fazer pelo seletor do Drive.
 10. **Na dúvida, pergunte.** Uma pergunta custa menos do que desfazer uma publicação.
 11. Se uma ação falhar 2 vezes, pare, explique o que aconteceu e proponha alternativas.
 
@@ -426,5 +426,5 @@ A palestra **"Raio-X da Empresária Exausta"** já está no Canva da Camila, com
 Leia CLAUDE.md, RUNBOOK-CLAUDE-LOCAL.md e contexto-marca.md desta pasta.
 Execute o runbook a partir da Fase 1, respeitando todas as regras de ouro e
 parando em cada 🛑 para me perguntar. Crie e mantenha progresso.md.
-Use a extensão Claude in Chrome para Kiwify, Classroom, Canva e Netlify.
+Use o navegador embutido do app Claude (ou a extensão Claude in Chrome) para Kiwify, Classroom, Canva e Netlify.
 ```

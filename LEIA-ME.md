@@ -3,14 +3,14 @@
 1. **Descompacte** este .zip numa pasta do seu computador (ex.: `Documentos/Alicerce-kit`).
 2. Abra o **Claude Code** (ou o app do Claude com acesso a pastas) **dentro da pasta `curso-alicerce/`**.
    - O Claude lê sozinho o `CLAUDE.md`, com as regras e os fatos da sua marca.
-3. Instale e conecte a extensão **Claude in Chrome**. Faça login antes na Kiwify, no Gmail/Classroom, no Canva e no Netlify.
+3. Use o **navegador embutido do app Claude para computador** (ícone de globo ou Ctrl/Cmd+Shift+B) ou a extensão **Claude in Chrome**. Faça login nele, antes, na Kiwify, no Gmail/Classroom, no Canva e no Netlify.
 4. Cole este pedido para o Claude:
 
 ```
 Leia CLAUDE.md, RUNBOOK-CLAUDE-LOCAL.md e contexto-marca.md desta pasta.
 Execute o runbook a partir da Fase 1, respeitando todas as regras de ouro e
 parando em cada 🛑 para me perguntar. Crie e mantenha progresso.md.
-Use a extensão Claude in Chrome para Kiwify, Classroom, Canva e Netlify.
+Use o navegador embutido do app Claude (ou a extensão Claude in Chrome) para Kiwify, Classroom, Canva e Netlify.
 ```
 
 **O que tem aqui**
