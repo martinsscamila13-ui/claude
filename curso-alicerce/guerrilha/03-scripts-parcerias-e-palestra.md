@@ -13,7 +13,31 @@
 > São 40 minutos, com dois exercícios práticos ao vivo, e cada participante sai com o gargalo nº 1 identificado e 3 movimentos para a semana.
 > Faz sentido para o [GRUPO/EVENTO] no [MÊS]? Tenho disponibilidade em [DATA 1], [DATA 2] ou [DATA 3].
 
-## 1.2 Associação comercial, CDL, Conselho da Mulher Empresária, núcleos setoriais
+## 1.1b Ex-participantes do Workshop Realize e do Drink to Talk (reativação, só com consentimento)
+> Oi, [NOME]! Aqui é a Camila 💛 Tu esteve comigo no [Realize / Drink to Talk ed. N] e eu nunca esqueci [DETALHE REAL, ex.: a palavra que tu escolheu para o teu momento].
+> Desde então eu organizei o **Método Lucro Anti-Exaustão®** em aulas curtas (5 a 8 min, de propósito, porque empresária não tem tempo) e criei um teste de 2 minutos que mostra por qual furo do balde o lucro da tua empresa está vazando: [LINK_QUIZ?utm_source=realize]
+> Faz e me conta a tua nota? E se quiser, tem lugar para ti no próximo [Drink to Talk / almoço da comunidade] em [DATA].
+
+## 1.1c Patrocinadoras do Realize e do Drink to Talk (parceria anual)
+> Oi, [NOME]! Obrigada mais uma vez por ter apoiado o [EVENTO]. Para 2027, eu quero propor uma **parceria contínua** em vez de patrocínio pontual:
+> - a tua marca em todas as edições do Drink to Talk e do Realize e nas lives "mentorada por um dia";
+> - um display com o teste "Índice de Exaustão" no teu espaço (as tuas clientes empresárias fazem o teste e tu ganha visibilidade comigo);
+> - uma palestra-assinatura "Raio-X da Empresária Exausta" para as tuas clientes.
+> Posso te mostrar a proposta em 20 minutos esta semana?
+
+## 1.1d In Company com o Alicerce (empresas que já te contrataram)
+> Olá, [NOME]! Foi muito especial levar a palestra [TÍTULO] para a equipe da [EMPRESA]. Muita gente me perguntou depois: "e como eu aplico isso no dia a dia?".
+> Por isso eu montei um formato que continua depois do evento: **palestra ou Workshop Realize In Company + acesso ao Método Lucro Anti-Exaustão® – Alicerce** para as gestoras e líderes. São aulas curtas, de 5 a 8 minutos, com uma ferramenta prática em cada uma, que cabem na rotina de quem lidera.
+> **A palestra inspira, o Alicerce implementa.** Posso enviar a proposta com as faixas de acessos?
+
+## 1.1e Rede de 50 mil empreendedoras (complemento à proposta B2B)
+> Olá, [NOME]! Retomando a proposta "Caminho 1: Palestra Impactante + Parceria contínua de mentoria", eu incluí um **Caminho 2, escalável para toda a rede**:
+> 1. **Diagnóstico gratuito para as consultoras:** o teste "Índice de Exaustão da Empresária", co-branded com a [REDE].
+> 2. **Licenças do Alicerce** (aulas curtas + planilhas por fase + certificado), com condição por volume.
+> 3. **Piloto** com [100] líderes por [60] dias, medindo a conclusão das aulas e o preenchimento das ferramentas, antes de expandir.
+> Podemos agendar 30 minutos para eu apresentar o piloto?
+
+## 1.2 Associação comercial, CDL, Conselho da Mulher Empresária, núcleos setoriais (Grande Florianópolis)
 **E-mail. Assunto:** Palestra gratuita para as empresárias do [NOME DA ENTIDADE]: "Raio-X da Empresária Exausta"
 > Olá, [NOME],
 > Sou Camila Martins Finger, mentora de empresárias e criadora do Método Lucro Anti-Exaustão®. Já são mais de 400 mentoradas e mais de 2 mil mulheres impactadas com palestras e treinamentos.
@@ -131,7 +155,7 @@
 **Tempo:** 3 min (4:00–7:00)
 **Fala:**
 > "Antes de ser mentora, eu fui técnica de enfermagem. A minha rotina era das 7h às 17h, e para chegar a tempo eu pegava ônibus de madrugada. Aí eu me tornei mãe, em plena pandemia. Eu sei o que é acordar já cansada e dormir com a cabeça cheia de pendências. Foi dessa exaustão que nasceu a minha virada, e foi dela que eu construí o Método Lucro Anti-Exaustão®. Hoje são mais de 400 mentoradas e mais de 2 mil mulheres que eu já encontrei em palestras e treinamentos como esta. E o que eu aprendi com todas elas eu vou te mostrar agora."
-**Interação:** nenhuma. É o momento de conexão. Fale devagar.
+**Interação:** nenhuma. É o momento de conexão. Fale devagar. *(Opcional, se fizer sentido para o público: "Sou casada e até hoje a minha mãe faz comida para mim, e aprendi que aceitar ajuda não é fraqueza.")*
 
 ### Slide 4: O mito
 **Texto do slide:** ~~"Estou cansada porque a empresa cresceu."~~
@@ -165,14 +189,14 @@
 **Texto do slide:** Exaustão · Culpa · Falta de presença · Saúde
 **Tempo:** 2 min (14:00–16:00)
 **Fala:**
-> "E esses sintomas cobram um preço que não aparece no DRE. Exaustão. Culpa, de não estar com os filhos, de não dar conta, de estar sempre devendo alguma coisa. Falta de presença: você está no jantar, mas a cabeça está na loja. E a saúde, que vai avisando baixinho até um dia gritar. Esse é o custo invisível de uma empresa sem estrutura."
+> "E esses sintomas são os furos do balde: o lucro entra e vaza por retrabalho, por tarefa que só a dona faz, por falta de processo, por urgência. E cobram um preço que não aparece no DRE. Exaustão. Culpa, de não estar com os filhos, de não dar conta, de estar sempre devendo alguma coisa. Falta de presença: você está no jantar, mas a cabeça está na loja. E a saúde, que vai avisando baixinho até um dia gritar. Esse é o custo invisível de uma empresa sem estrutura."
 **Interação:** pausa de silêncio de 3 segundos depois de "a saúde". Não preencha.
 
 ### Slide 8: Produtividade não é a solução
 **Texto do slide:** "Produtividade não é a solução." (subtexto: "Fazer mais rápido o que nem deveria ser seu só acelera a exaustão.")
 **Tempo:** 1 min (16:00–17:00)
 **Fala:**
-> "E aí a gente faz o quê? Baixa aplicativo, compra planner, acorda às 5h. Mais produtividade. Só que produtividade, sem estrutura, é fazer **mais rápido** o que nem deveria ser seu. Você não precisa dar conta de mais coisas. Precisa que menos coisas dependam de você."
+> "E aí a gente faz o quê? Baixa aplicativo, compra planner, acorda às 5h. Mais produtividade. Só que produtividade, sem estrutura, é fazer **mais rápido** o que nem deveria ser seu. Você não precisa dar conta de mais coisas. Precisa que menos coisas dependam de você. Produtividade não é exaustão. E se mais horas dessem mais lucro, a gente já estaria rica."
 **Interação:** "Quem já acordou às 5h e terminou o dia mais cansada?" (mãos, risos).
 
 ### Slide 9: As 4 fases do método
@@ -278,10 +302,10 @@ Cresceu SEM ESTRUTURA COMPATÍVEL. "Empresa nova rodando com manual velho." Não
 Contar nos dedos: centralização, excesso de decisões ("cor do guardanapo"), equipe dependente, sobrecarga mental, improviso, lucro sem qualidade de vida. Mãos: 3 ou mais? Os 6?
 
 **Slide 7: Custo invisível (2 min · 14:00–16:00)**
-Exaustão, culpa, falta de presença ("no jantar com a cabeça na loja"), saúde. SILÊNCIO de 3 segundos depois de "saúde".
+Furos do balde (retrabalho, tarefa que só a dona faz, falta de processo, urgência). Exaustão, culpa, falta de presença ("no jantar com a cabeça na loja"), saúde. SILÊNCIO de 3 segundos depois de "saúde".
 
 **Slide 8: Produtividade não é a solução (1 min · 16:00–17:00)**
-App, planner, acordar às 5h. "Fazer mais rápido o que nem deveria ser seu." Você precisa que MENOS coisas dependam de você. Mãos: "acordou às 5h e terminou mais cansada?"
+App, planner, acordar às 5h. "Fazer mais rápido o que nem deveria ser seu." Você precisa que MENOS coisas dependam de você. Frase-assinatura: "Produtividade não é exaustão." / "Se mais horas dessem mais lucro, a gente já estaria rica." Mãos: "acordou às 5h e terminou mais cansada?"
 
 **Slide 9: 4 fases (2 min · 17:00–19:00)**
 Enxergar (Raio-X) → entender como funciona e lidera (Comportamental) → rotina que se sustenta (Rotina) → depender menos de você (Patrimônio). Hoje: praticar a Fase 1.

@@ -1,305 +1,323 @@
 # Plano de Guerrilha: 90 dias
-## Método Lucro Anti-Exaustão® – Alicerce (R$ 497) → Comunidade Impulso → Consultoria → Mentoria PAD
+## Método Lucro Anti-Exaustão® – Alicerce (R$ 497) → Comunidade Impulso → Consultoria → Mentoria
 
-> **Período sugerido:** de 16/11/2026 a 14/02/2027. Ele começa na semana do **Dia do Empreendedorismo Feminino (19/11)**, passa pela Black Friday (27/11), pelo "planejamento 2027" e pelo "janeiro sem exaustão".
-> **Orçamento total estimado:** R$ 1.500 a R$ 3.500 nos 90 dias, quase tudo em impressão, café ou almoço e um pequeno impulsionamento.
-> **Regra de ouro:** as metas abaixo são de **ATIVIDADE** (o que você controla). As de resultado (leads, vendas) você mede e ajusta, mas não promete. Nada de depoimento inventado, escassez falsa ou "preço de" fictício.
+> **Base:** Grande Florianópolis (SC) + online. **Prova oficial:** **+400 mentoradas** · **+2 mil mulheres impactadas com palestras e treinamentos.**
+> **Período sugerido:** de 16/11/2026 a 14/02/2027. Começa na semana do **Dia do Empreendedorismo Feminino (19/11)**, passa pela Black Friday (27/11), pelo "planejamento 2027" e pelo "janeiro sem exaustão".
+> **Orçamento estimado:** R$ 1.500 a R$ 3.500 em 90 dias. Quase tudo é impressão, café e pequeno impulsionamento, porque os eventos já existem.
+> **Princípio deste plano:** **não inventar do zero.** Você já tem palco (+2 mil mulheres), comunidade, eventos com 12 edições, workshop presencial, versão In Company e uma proposta B2B para uma rede de 50 mil empreendedoras. A guerrilha é **ligar todos esses ativos a um único funil**, que termina no Alicerce e sobe para a Comunidade e a Mentoria.
+> **Regras:** as metas são de **ATIVIDADE**. Nada de depoimento inventado, número fictício, "preço de", escassez falsa ou nome de cliente sem autorização.
 
 ---
 
 ## 1. Diagnóstico do material atual: o que está fraco para conversão orgânica
 
-| # | Problema | Por que trava a venda | Correção (neste kit) |
+| # | Problema | Por que trava a venda | Correção |
 |---|---|---|---|
-| 1 | **Não existe porta de entrada gratuita.** A página de vendas leva direto para um checkout de R$ 497. | Seguidora fria do Instagram não compra R$ 497 no primeiro contato. Falta um micro-compromisso. | Quiz **"Índice de Exaustão da Empresária"** (`01-quiz-indice-exaustao.html`) + grupo VIP + Desafio aberto |
-| 2 | **O seu maior ativo não está ligado ao funil.** Você já fez palestras e treinamentos que impactaram **mais de 2 mil mulheres**, mas o material online não cita isso e nenhuma palestra termina capturando leads ou levando ao Alicerce. O público é de **negócio físico** e local. | Cada palestra sem QR, quiz e próximo passo é uma plateia inteira que vai embora sem caminho. A concorrência online briga por atenção no feed, e você já tem palco. | Táticas 5 a 14: palestra como motor central, com captura obrigatória, além de associações, balcão e contadoras |
-| 3 | **Nenhum mecanismo de indicação**, apesar de mais de 400 mentoradas. | É o ativo mais barato e mais confiável que você tem, e hoje está parado. | `02-programa-indicacao.md` |
-| 4 | **A prova social está vazia** (os depoimentos são espaços em branco). | Página de vendas sem prova converte pouco. | Sistema de coleta de prova (tática 22) |
-| 5 | **O público aparece genérico** ("empresária ou prestadora"). | O seu cliente ideal é a dona de **clínica, salão, loja, escola, restaurante ou escritório**, com mais de 8 pessoas na equipe. Quem se vê no texto compra. | Recomendações no arquivo 05 |
-| 6 | **R$ 497 sem âncora real.** | Para quem fatura mais de R$ 50 mil, o preço não é o problema. O problema é a percepção de valor. Você TEM uma âncora real: a mentoria individual de R$ 3.500, com o mesmo método. | Arquivo 05 |
-| 7 | **Não há ponte para os produtos de cima.** | O curso de R$ 497 é o "Alicerce". Ele tem que levar naturalmente para a Comunidade e a PAD, e hoje não leva. | Táticas 17, 18 e 24 |
-| 8 | **O calendário cobre só 7 dias.** | Conteúdo orgânico precisa de constância e de narrativa ao longo de semanas. | `04-conteudo-guerrilha-30-dias.md` |
-| 9 | **Nenhuma nutrição de leads.** Os e-mails existentes falam só com compradoras e mentoradas. | Quem fez o quiz e não comprou some. | 3 e-mails de nutrição no arquivo 05 |
-| 10 | **Não há rastreamento** (UTM por canal). | Sem isso você não sabe qual tática vende. | Padrão de UTM na seção 6 |
+| 1 | **Os ativos de autoridade não aparecem no material de venda.** Drink to Talk (12 edições), Workshop Realize, palestras e "+2 mil mulheres impactadas" não estão na página de vendas, nos e-mails nem na copy. | Quem chega frio não sabe que você já tem palco, comunidade e histórico. A autoridade existe, mas está invisível. | Seção "Quem vai te guiar" + faixa de credenciais (arquivo 05) |
+| 2 | **Os eventos não estão ligados ao funil.** Palestra, Drink to Talk e Realize terminam sem captura padronizada (QR, quiz, lista com consentimento) e sem próximo passo. | Cada evento sem captura é uma plateia inteira que vai embora sem caminho. | Táticas 1 a 8 + quiz + palestra-assinatura (arquivo 03) |
+| 3 | **Não existe porta de entrada gratuita online.** A página de vendas leva direto para um checkout de R$ 497. | Seguidora fria não compra R$ 497 no primeiro contato. | Quiz **"Índice de Exaustão da Empresária"** + CTA "comenta **LUCRO**" + grupo VIP |
+| 4 | **Nenhum mecanismo de indicação**, com +400 mentoradas e participantes de 12 Drink to Talks. | É o ativo mais barato e mais confiável que você tem, e hoje está parado. | `02-programa-indicacao.md` |
+| 5 | **A prova social está vazia** (depoimentos em branco) e os cases ainda não foram validados. | Página de vendas sem prova converte pouco. | Tática 24 (coleta ética) e validar os cases da seção 8 do contexto de marca |
+| 6 | **O público aparece genérico.** | Quem se vê no texto compra: estética, beleza, saúde, varejo, alimentação, serviços, com equipe. | Arquivo 05 |
+| 7 | **R$ 497 sem âncora real.** | Você TEM uma âncora real e ética: o mesmo método aplicado na mentoria individual (12 encontros em 3 meses). | Arquivo 05 |
+| 8 | **O diferencial "aulas curtas" não é comunicado.** As aulas são curtas **de propósito** (5 a 8 min, cada uma termina numa ação). | Para empresária sem tempo, isso é um argumento de compra, não uma limitação. | "Aulas de 5 a 8 minutos. Cada uma termina numa ação." (arquivo 05) |
+| 9 | **O B2B não está ligado ao Alicerce.** A proposta para a rede de 50 mil empreendedoras e o In Company vendem palestra e mentoria, mas não o curso como licença. | O Alicerce é o produto escalável perfeito para entregar a redes e empresas. | Tática 6 (licenças corporativas) |
+| 10 | **Não há nutrição de leads nem rastreamento** (UTM). | Quem fez o quiz e não comprou some, e você não sabe qual canal vende. | 3 e-mails de nutrição (arquivo 05) + padrão de UTM (seção 6) |
 
 ---
 
-## 2. Posicionamento de guerrilha
+## 2. Posicionamento de guerrilha (na sua voz)
 
-**Inimigo comum:** a **cultura do "dar conta de tudo"**. É a ideia de que a boa empresária acorda às 5h, resolve tudo, está em todas e ainda posta sorrindo. *(O inimigo é a cultura, nunca uma pessoa ou concorrente.)*
+**Inimigo cultural (o inimigo é a crença, nunca uma pessoa):**
+> **"Empresária de verdade dá conta de tudo sozinha."**
+> E os primos dele: "trabalhar mais para lucrar mais" e "se mais horas dessem mais lucro, você já estaria rica".
 
-**Nome do movimento:** **#EmpresaSemExaustão**. A versão curta para stories e camiseta é **"Movimento Anti-Exaustão"**.
+**A sua prova contra o inimigo (vulnerabilidade que gera conexão):** "Sou casada e até hoje a minha mãe faz comida para mim." Aceitar ajuda é estratégia, não fraqueza.
 
-**Frase-bandeira (já é sua, use em TUDO):**
-> **"Uma empresa lucrativa não precisa custar a sua paz."**
+**Movimento:** **#EmpresaSemExaustão**, com a frase de stories "**E a sexta-feira volta a ser tua.**"
 
-**Frases de combate (para gerar debate):**
-- "Produtividade não é a solução. É parte do problema."
-- "Você não é desorganizada. A sua empresa é que cresceu sem estrutura."
-- "Se a empresa para quando você para, você não tem uma empresa: tem um emprego que não te deixa tirar férias."
-- "Equipe que não decide foi treinada por você para não decidir."
-- "Descanso não é prêmio. É estratégia de lucro."
+**Frase-bandeira (use em TUDO):** **"Uma empresa lucrativa não precisa custar a sua paz."**
 
-**Prova de autoridade (use sempre, nesta ordem):** **+400 mentoradas** · **+2 mil mulheres impactadas com palestras e treinamentos** · criadora do Método Lucro Anti-Exaustão®.
+**Frases de combate (já são suas, use para gerar debate):**
+- "Produtividade não é exaustão."
+- "Procrastinação não é preguiça. É um sintoma."
+- "Clareza antes de tudo. Não adianta acelerar uma rotina que funciona na base do improviso."
+- "Se mais horas dessem mais lucro, você já estaria rica."
+- "Tenha coragem de adaptar, não de abandonar."
 
-**Diferencial do formato:** **aulas curtas de propósito** (cerca de 5 a 8 minutos), diretas e práticas, feitas para empresária sem tempo. Na comunicação: "Você não precisa de mais 40 horas de curso. Precisa de 5 minutos de clareza e uma ferramenta para aplicar hoje."
+**Metáfora central: o balde furado.** O lucro vaza por retrabalho, tarefas que só a dona faz, falta de processo, preço mal calculado, falta de controle financeiro e urgências. "Você não precisa de mais água. Precisa tapar os furos."
 
-**Mecanismo único (para nomear em toda a comunicação):** o **Índice de Exaustão** (mede) → o **Raio-X Operacional** (diagnostica) → as **4 Fases** (resolvem).
+**Mecanismo nomeado:** **Índice de Exaustão** (mede) → **Raio-X Operacional** (encontra os furos do balde) → **4 Fases** (tapam os furos e fazem a empresa depender menos de você).
 
-**O que o movimento promete (sem prometer número):** sair do improviso, ter uma rotina com estrutura e fazer a empresa depender menos de você.
+**Diferencial do formato:** **aulas curtas de propósito** (5 a 8 min), cada uma terminando numa ação. "Você não precisa de mais 40 horas de curso. Precisa de 5 minutos de clareza e uma ferramenta para usar hoje."
+
+**CTA padrão de conteúdo:** **"Comenta LUCRO"**, para receber o link do quiz (o Índice de Exaustão).
+
+**Tom:** "você" como padrão nos materiais de venda e "**tu**" pontual em stories e Reels ("Lembra a última vez que tu começou o dia sem abrir o WhatsApp primeiro?").
 
 ---
 
-## 3. O funil de guerrilha (como as táticas se conectam)
+## 3. O funil de guerrilha
 
 ```
- OFFLINE (palestra, balcão, associação, almoço)      ONLINE (Reels, collab, live, podcast)
-                    │                                              │
-                    └────────────►  QUIZ "Índice de Exaustão"  ◄───┘
-                                         │  (captura nome + WhatsApp + e-mail)
-                                         ▼
-                     Grupo VIP no WhatsApp  +  3 e-mails de nutrição
-                                         │
-                ┌────────────────────────┼─────────────────────────┐
-                ▼                        ▼                         ▼
-     Desafio 7 dias aberto     Raio-X relâmpago (15 min)    Página de vendas → Alicerce R$ 497
-                │                        │                         │
-                └────────────┬───────────┘                         ▼
-                             ▼                         Alunas → Indicação (02) + Almoço
-                 Comunidade Impulso / Consultoria / PAD  ◄──── ascensão natural
+ATIVOS QUE JÁ EXISTEM                                       CANAIS NOVOS
+Drink to Talk · Workshop Realize · Palestras                Reels "comenta LUCRO" · collabs
+In Company · B2B (rede 50 mil) · Lives "mentorada por um dia" · balcão/QR · contadoras · PR
+Almoço da Comunidade · Desafio 7 dias · +400 mentoradas
+          │                                                      │
+          └───────────────►  QUIZ "Índice de Exaustão"  ◄────────┘
+                                   │ (nome + WhatsApp + e-mail, com consentimento)
+                                   ▼
+                    Grupo VIP no WhatsApp + 3 e-mails de nutrição
+                                   │
+        ┌──────────────────────────┼───────────────────────────┐
+        ▼                          ▼                           ▼
+  Desafio 7 dias ABERTO    Drink to Talk / Almoço        Página de vendas → ALICERCE R$ 497
+        │                  (evento de conversão)               │
+        └──────────────┬───────────┘                           ▼
+                       ▼                           Alunas → indicação + Realize + Comunidade
+        Comunidade Impulso · Consultoria · Mentoria · Realize  ◄──── ascensão natural
+                       ▲
+        B2B / In Company: licenças do Alicerce para redes e empresas (escala)
 ```
 
 ---
 
 ## 4. As táticas
 
-> **Responsáveis:** **C** = Camila · **A** = assistente/secretária · **SM** = social media/designer (pode ser você com Canva).
+> **Responsáveis:** **C** = Camila · **A** = assistente · **SM** = social media/designer (pode ser você com Canva, reaproveitando os moldes que já existem).
 > **Custo:** estimativa em R$. "0" = só tempo.
 
-### BLOCO A: Captura e base (fazer primeiro)
+### BLOCO 0: Ativos que você já tem (o centro do plano)
 
-**Tática 1: Quiz "Índice de Exaustão da Empresária"**
-- **O que é:** um teste de 2 minutos, com 12 perguntas, que dá uma nota de 0 a 100 e mostra qual das 4 fases está mais crítica. É a sua isca principal, online e offline.
+**Tática 1: Drink to Talk como evento de conversão do movimento**
+- **O que é:** o evento de networking que já teve 12 edições e deu origem à comunidade vira a **vitrine presencial** do #EmpresaSemExaustão.
+- **Passo a passo (por edição):**
+  1. **Antes:** convite com "traga uma empresária que precisa ouvir isso" (cada participante leva uma convidada). Inscrição por formulário com consentimento LGPD (isso gera lista).
+  2. **Durante:** um momento de 10 minutos da dinâmica "**Qual é o furo do teu balde?**". Cada mesa escreve em cartões os vazamentos de lucro, e você comenta os 3 mais citados. No fim, QR do quiz nas mesas: "faz agora, me conta a nota".
+  3. **Fechamento (3 min):** "quem quiser continuar": Alicerce, Comunidade e próximo Realize. Condição para participantes só se for real e com prazo real.
+  4. **Depois (até 48 h):** fotos com autorização, stories marcando as patrocinadoras e mensagem para quem consentiu.
+- **Script do convite:** "Edição nº [13] do Drink to Talk 🥂 Tema: 'O furo do teu balde: por onde o lucro da tua empresa está vazando'. Traz uma empresária que vive dizendo 'se eu não fizer, ninguém faz'. [DATA] · [LOCAL] · vagas limitadas ao espaço do local: [N]."
+- **Custo:** o mesmo de hoje (patrocínio cobre parte) · **Responsável:** C + A
+- **Métrica:** convidadas novas por edição, % que faz o quiz no evento e conversas e vendas em até 7 dias (UTM `drinktotalk-ed13`).
+
+**Tática 2: Workshop Realize como degrau e como prova**
+- **O que é:** a imersão presencial (Vision Board, metas, MBTI, gestão do tempo, Roda da Vida) já tem público, dinâmicas e patrocinadoras. Ela entra na jornada em **dois sentidos**:
+  - **Realize → Alicerce:** quem participou leva o método para casa e aplica no dia a dia. Oferta de pós-evento: "você fez a Roda da Vida e o MBTI no Realize; o Alicerce é o passo a passo para transformar isso em rotina." Use uma condição para participantes, real e com prazo real.
+  - **Alicerce → Realize:** alunas do Alicerce têm prioridade ou condição na próxima edição presencial, que é a experiência ao vivo do método.
 - **Passo a passo:**
-  1. Hospede o `01-quiz-indice-exaustao.html` (Netlify Drop, GitHub Pages ou o mesmo lugar da página de vendas).
-  2. Conecte a captura: Google Forms, planilha via Apps Script, Brevo ou Make. Veja o comentário `FORM_ACTION_URL` no arquivo.
-  3. Troque `LINK_LP` e `LINK_WHATSAPP`.
-  4. Gere um QR Code (qr-code-generator ou Canva) para cada canal, com UTM diferente.
-- **Script (bio/stories):** "Em 2 minutos você descobre o seu Índice de Exaustão e qual fase da sua empresa está te drenando. Teste gratuito 👇"
-- **Custo:** 0 · **Responsável:** C + SM
-- **Métrica:** pessoas que começam × pessoas que terminam × leads capturados, por canal (UTM).
+  1. Liste todas as participantes das edições anteriores que deram consentimento.
+  2. Mande a mensagem de reativação (script no arquivo 03).
+  3. Em toda nova edição, use o mesmo kit de captura da palestra (QR do quiz + lista).
+- **Custo:** 0 (já existe) · **Responsável:** C + A
+- **Métrica:** ex-participantes reativadas e compras com UTM `realize`.
 
-**Tática 2: Grupo VIP "Lista Anti-Exaustão" no WhatsApp**
-- **O que é:** um grupo silenciado (só admins falam) para quem fez o quiz ou quer ser avisada das aberturas, aulas abertas e almoços.
+**Tática 3: Palestra-assinatura "Raio-X da Empresária Exausta" (padronizar o que você já domina)**
+- **O que é:** você já impactou mais de 2 mil mulheres e tem palestras prontas ("O Poder da Gestão do Tempo", "Da procrastinação à AÇÃO!", "Do papel à entrega"). A guerrilha não é "começar a palestrar". É criar uma **palestra-assinatura de 40 minutos em 16 slides** (roteiro, falas e notas do apresentador no arquivo 03) e fazer com que **toda palestra, inclusive as antigas, termine em captura** (QR do quiz + lista com consentimento + próximo passo).
+- **Onde ofertar:**
+  - Organizadoras que já te contrataram (reativação primeiro).
+  - Associações empresariais da Grande Florianópolis: Florianópolis, São José, Palhoça e Biguaçu, com seus núcleos ou conselhos de mulheres empresárias [confirmar nomes e contatos].
+  - CDLs da região, Sebrae/SC (pelo caminho oficial), faculdades (como a FURB, onde você já palestrou) e sindicatos patronais de beleza, saúde e varejo.
+- **Custo:** R$ 0 a R$ 100 por palestra · **Responsável:** C (palco) + A (agenda)
+- **Métrica:** palestras feitas, participantes, % que faz o quiz no local e conversas depois.
+
+**Tática 4: In Company com o Alicerce como entregável**
+- **O que é:** quando uma empresa contrata o Realize In Company ou uma palestra, inclua um pacote opcional: **acesso ao Alicerce para as gestoras e líderes da equipe**, para que o conteúdo continue depois do evento.
+- **Argumento para a empresa:** "a palestra inspira, o Alicerce implementa": aulas de 5 a 8 minutos que cabem no dia de uma gestora.
+- **Operação:** a empresa paga o pacote (palestra + N acessos), você libera manualmente na Kiwify e emite a nota.
+- **Custo:** 0 · **Responsável:** C · **Métrica:** propostas enviadas e licenças vendidas.
+
+**Tática 5: Clientes corporativas de palestras anteriores (ex.: empresa de higiene profissional, palestra para síndicas)**
+- **O que é:** voltar a quem já te contratou com uma **segunda entrega**: a palestra-assinatura nova para outro público da empresa (clientes, franqueadas, revendedoras) ou o pacote In Company + Alicerce.
+- **Custo:** 0 · **Responsável:** C · **Métrica:** recontratações.
+
+**Tática 6: Proposta B2B para a rede de 50 mil empreendedoras, com o Alicerce como produto escalável**
+- **O que é:** a proposta "Caminho 1: Palestra Impactante + Parceria contínua de mentoria" ganha um **Caminho 2: licenças do Alicerce** para a rede, com condição por volume, ou uma versão co-branded do quiz para a rede usar como diagnóstico das consultoras.
 - **Passo a passo:**
-  1. Crie a **Comunidade WhatsApp** com um grupo de avisos.
-  2. Coloque o link na tela de resultado do quiz e na bio.
-  3. Publique no máximo 3 mensagens por semana: 1 conteúdo, 1 convite e 1 bastidor.
-  4. Nunca adicione ninguém sem consentimento. A pessoa entra pelo link.
-- **Script de boas-vindas:** "Bem-vinda à Lista Anti-Exaustão 💛 Aqui eu aviso primeiro das aulas abertas, almoços e condições para empresárias. Prometo: no máximo 3 mensagens por semana. Se não fizer mais sentido, é só sair, sem ressentimento."
-- **Custo:** 0 · **Responsável:** A
-- **Métrica:** número de membros, % que sai por semana e cliques nos links.
+  1. Acrescente uma página na apresentação comercial (Canva) com "Alicerce para redes": aulas curtas, planilhas por fase e certificado.
+  2. Defina 3 faixas de volume [PREENCHER preços].
+  3. Proponha um **piloto** com um grupo da rede (ex.: 100 líderes), com métricas de uso: conclusão de módulos e preenchimento das ferramentas.
+- **Por que é guerrilha:** um "sim" de uma rede leva o método a milhares de mulheres sem mídia paga.
+- **Custo:** 0 · **Responsável:** C · **Métrica:** reuniões, piloto fechado e conclusão das aulas no piloto.
 
-**Tática 3: Status do WhatsApp todos os dias**
-- **O que é:** os seus contatos (clientes, ex-mentoradas, fornecedores) veem o seu Status. É um feed sem algoritmo.
-- **Passo a passo:** poste diariamente 1 status de valor (dica de rotina) e, 2 vezes por semana, 1 status com o link do quiz.
-- **Custo:** 0 · **Responsável:** C
-- **Métrica:** visualizações e respostas.
+**Tática 7: Lives "Mentorada por um dia" como prova ao vivo**
+- **O que é:** o formato que você já faz vira série fixa (quinzenal) com uma regra: a escolhida passa pelo **Raio-X** com você por 20 minutos (consentimento por escrito, sem números do negócio). No fim, CTA para o quiz e o Alicerce.
+- **Mecânica de inscrição:** "Comenta **LUCRO** + responde o quiz → você entra no sorteio da próxima live 'mentorada por um dia'." Isso gera lead em toda live.
+- **Custo:** 0 · **Responsável:** C · **Métrica:** inscritas, pessoas ao vivo e cliques no quiz durante a live.
 
-**Tática 4: Assinaturas e respostas automáticas**
-- **O que é:** colocar o link do quiz na assinatura do e-mail, na mensagem de ausência e na saudação do WhatsApp Business.
-- **Script da saudação:** "Oi! Obrigada pela mensagem 💛 Já te respondo. Enquanto isso: você sabe qual é o seu Índice de Exaustão? Teste em 2 min: [LINK_QUIZ]"
-- **Custo:** 0 · **Responsável:** A · **Métrica:** cliques com UTM `whatsapp-saudacao`.
+**Tática 8: Almoço mensal da Comunidade ("Almoço Raio-X")**
+- **O que é:** o almoço que já existe passa a ter **uma convidada por membro** e uma dinâmica fixa de 15 minutos ("nota de exaustão + a tarefa que só você faz"). Convidadas recebem o quiz e o convite para a Comunidade e o Alicerce.
+- **Custo:** cada uma paga o próprio almoço · **Responsável:** C + A
+- **Métrica:** convidadas por almoço e conversões em 30 dias.
 
-### BLOCO B: Território local (onde a concorrência digital não chega)
-
-**Tática 5: Palestra-isca "Raio-X da Empresária Exausta" (o seu motor central)**
-- **O que é:** você **já domina o palco**, com mais de 2 mil mulheres impactadas em palestras e treinamentos. A guerrilha aqui não é "começar a palestrar". É **padronizar uma palestra-assinatura de 40 minutos** (16 slides, roteiro no arquivo 03) e fazer **toda** palestra, nova ou já agendada, terminar em captura: QR do quiz, lista com consentimento e próximo passo. Use também os seus contatos de palestras anteriores: organizadoras que já te contrataram são a porta mais rápida para novas datas.
-- **Onde:** Conselho da Mulher Empresária da ACI/ACE da sua cidade, CDL, núcleos setoriais (beleza, saúde, varejo), Sebrae (eventos regionais e parceiros), Rede Mulher Empreendedora, BNI, Rotary/Lions, sindicatos patronais (salões, clínicas), faculdades com MBA executivo.
-- **Passo a passo:**
-  1. Liste **as organizadoras que já te receberam** (reativação, mais rápida) + 20 entidades novas da região.
-  2. Envie o script do arquivo 03, citando "mais de 2 mil mulheres impactadas".
-  3. Faça follow-up em 5 dias.
-  4. Ofereça 3 datas.
-  5. Leve QR impresso e a lista de presença com consentimento.
-- **Custo:** R$ 0 a R$ 100 por palestra (impressos e deslocamento) · **Responsável:** C (palestra) + A (agenda)
-- **Métrica:** palestras feitas, participantes, % que faz o quiz no local e conversas no WhatsApp depois.
-
-**Tática 6: Visita como convidada no BNI e em grupos de networking**
-- **O que é:** o BNI e grupos parecidos permitem visitantes. Você apresenta seus 60 segundos e pede indicação de "empresárias sobrecarregadas com equipe".
-- **Script de 60 segundos:** "Eu sou a Camila, mentora de empresárias. Eu ajudo donas de clínicas, salões, lojas e escritórios que faturam bem, mas vivem apagando incêndio, a montar uma estrutura para a empresa depender menos delas. Uma boa indicação para mim é: aquela cliente sua que é dona do negócio e vive dizendo 'se eu não fizer, ninguém faz'."
-- **Custo:** café da manhã do encontro (R$ 30 a R$ 80) · **Responsável:** C · **Métrica:** indicações recebidas.
-
-**Tática 7: Parceria com contadoras e escritórios contábeis**
-- **O que é:** a contadora atende exatamente o seu público e ouve a reclamação de "não tenho tempo". Ela oferece o quiz e um material seu como **mimo de valor para as clientes**.
-- **Passo a passo:**
-  1. Liste 10 escritórios que atendem pequenas e médias empresas.
-  2. Ofereça uma palestra in company para as clientes deles ou um e-book/planilha co-branded.
-  3. Se fizer sentido, cadastre a contadora como **afiliada Kiwify** com comissão transparente.
-- **Script:** no arquivo 03.
-- **Custo:** 0 · **Responsável:** C · **Métrica:** parcerias ativas e leads com UTM `contadora-[nome]`.
-
-**Tática 8: Collab com advogadas, consultoras de RH, agências e fornecedoras do mesmo público**
-- **O que é:** uma live ou aula conjunta. Exemplo: "Equipe que não depende de você", com uma consultora de RH, ou "Contrato e processo: o que tirar da sua cabeça", com uma advogada.
-- **Custo:** 0 · **Responsável:** C · **Métrica:** collabs feitas e novas seguidoras/leads.
-
-**Tática 9: QR no balcão de negócios parceiros**
-- **O que é:** um display de mesa (A5 ou A6) em salões, clínicas de estética, estúdios de pilates, academias femininas e cafés de bairro nobre, onde a dona do negócio é cliente.
-- **Texto do display:**
-  > **Você carrega a sua empresa nas costas?**
-  > Descubra o seu Índice de Exaustão em 2 minutos.
-  > [QR CODE] · Teste gratuito · Método Lucro Anti-Exaustão®
-- **Contrapartida para a parceira:** você divulga o negócio dela nos seus stories e no grupo VIP, ou dá uma vaga no almoço da comunidade.
-- **Custo:** cerca de R$ 15 por display impresso · **Responsável:** A · **Métrica:** escaneamentos por QR (UTM `balcao-[nome]`).
-
-**Tática 10: "Cartão Anti-Exaustão" (cartão de visita com QR)**
-- **O que é:** frente "Uma empresa lucrativa não precisa custar a sua paz"; verso com o QR do quiz e "Faça o teste em 2 min".
-- **Custo:** cerca de R$ 80 a R$ 150 por 500 unidades · **Responsável:** SM · **Métrica:** escaneamentos (UTM `cartao`).
-
-**Tática 11: Mini-planner impresso "Minha Semana Anti-Exaustão"**
-- **O que é:** um bloco A5 com a grade semanal em blocos (Aula 22) e a "tática inegociável" (Aula 17), com QR no rodapé. É um brinde em palestras e eventos e fica na mesa da empresária por semanas.
-- **Custo:** cerca de R$ 4 a R$ 8 por unidade em gráfica rápida (tiragem de 100) · **Responsável:** SM · **Métrica:** escaneamentos (UTM `planner`).
-
-**Tática 12: Almoço da Comunidade como evento de conversão ("Almoço Raio-X")**
-- **O que é:** o almoço mensal que você já faz vira vitrine. **Cada membro pode levar 1 convidada empresária.**
-- **Dinâmica de 2 horas:**
-  1. Acolhimento.
-  2. Exercício de 15 minutos: "a nota de exaustão + a tarefa que só você faz".
-  3. Uma membro conta a sua evolução (só se ela quiser).
-  4. Você apresenta, em 5 minutos, a Comunidade e o Alicerce.
-  5. Convidadas recebem o link do quiz e uma condição para convidadas (real e com prazo real).
-- **Custo:** cada uma paga o próprio almoço; você só paga o seu e algum mimo (até R$ 100) · **Responsável:** C + A · **Métrica:** convidadas por almoço e conversas depois.
-
-**Tática 13: PR local (jornal, rádio, portal, revista de bairro)**
-- **O que é:** pautas, não anúncios. Jornalista quer história e dado. Sugestões:
-  - "Ex-técnica de enfermagem que já impactou mais de 2 mil mulheres com palestras cria método para empresárias pararem de se esgotar" (a sua história é pauta).
-  - Depois de 60 dias de quiz: **"Levantamento com [N] empresárias de [cidade] mostra que [X]% sentem que a empresa para sem elas"**. Use **somente dados reais** do quiz, agregados e anônimos.
-- **Passo a passo:** monte um release de 1 página (modelo no arquivo 03) e envie a 10 veículos locais e colunistas de negócios.
-- **Custo:** 0 · **Responsável:** C · **Métrica:** matérias publicadas e entrevistas.
-
-**Tática 14: Ser convidada em podcasts e canais de negócios**
-- **O que é:** podcasts de empreendedorismo feminino, de nichos (estética, odontologia, varejo) e de associações. A conversa é longa e gera confiança.
-- **Script:** no arquivo 03.
-- **Custo:** 0 · **Responsável:** C · **Métrica:** participações e leads com UTM `podcast-[nome]`.
-
-### BLOCO C: Instagram e conteúdo de guerrilha
-
-**Tática 15: Série de debate "Produtividade é o problema"**
-- **O que é:** Reels e carrosséis com tese polêmica e saudável (calendário completo no arquivo 04). O objetivo é **comentário e compartilhamento**, não curtida.
-- **Custo:** 0 · **Responsável:** C + SM · **Métrica:** compartilhamentos, salvamentos e comentários por post.
-
-**Tática 16: Palavra-chave nos comentários ("comenta EXAUSTÃO")**
-- **O que é:** CTA para comentar uma palavra e receber o link do quiz por DM. Dá para fazer manualmente ou com ManyChat (plano grátis ou pago).
-- **Custo:** 0 a cerca de R$ 80 por mês · **Responsável:** A · **Métrica:** DMs enviadas e % de quiz concluído.
-
-**Tática 17: "Cadeira Quente ao vivo" (hot seat público)**
-- **O que é:** uma live quinzenal em que uma empresária voluntária (consentimento por escrito, sem números do negócio) passa pelo Raio-X com você por 20 minutos. Mostra o método funcionando, sem promessa.
-- **Custo:** 0 · **Responsável:** C · **Métrica:** pessoas ao vivo, replays e inscrições no quiz durante a live.
-
-**Tática 18: Série de lives "Empresárias que soltaram o controle"**
-- **O que é:** uma live por semana com uma ex-mentorada ou parceira contando o que mudou na rotina (só com autorização e sem inventar resultado).
-- **Custo:** 0 · **Responsável:** C · **Métrica:** pessoas ao vivo e DMs depois.
-
-**Tática 19: UGC "#MinhaNotaDeExaustão" e "#EuSolteiUmaTarefa"**
-- **O que é:** a seguidora posta nos stories a nota do quiz ou a tarefa que delegou e marca você. Você repostar dá visibilidade e cria a sensação de movimento.
-- **Peça:** um template de stories no Canva ("Minha nota de exaustão hoje: __ / Amanhã eu vou soltar: __").
-- **Custo:** 0 · **Responsável:** SM · **Métrica:** número de marcações.
-
-**Tática 20: 30 comentários de valor por dia em perfis do mesmo público**
-- **O que é:** comentar com substância (não "amei!") em perfis de associações, páginas de empreendedorismo feminino, fornecedoras do nicho e influenciadoras locais.
-- **Custo:** 0 (20 min por dia) · **Responsável:** C · **Métrica:** visitas ao perfil e novas seguidoras qualificadas.
-
-**Tática 21: Impulsionamento mínimo do que já funcionou**
-- **O que é:** não é anúncio do zero. É impulsionar **só** o Reels ou carrossel orgânico que mais gerou compartilhamentos, levando para o **quiz** e não para a venda, com público da cidade ou região.
-- **Custo:** R$ 10 a R$ 20 por dia, em 2 a 3 janelas de 7 dias (cerca de R$ 300 a R$ 600 no total) · **Responsável:** SM · **Métrica:** custo por lead do quiz.
-
-### BLOCO D: Prova, indicação e ascensão
-
-**Tática 22: Sistema de coleta de prova social (ético)**
-- **O que é:** um formulário de 3 perguntas, enviado no fim de cada fase e no fim do curso: "Como estava sua rotina antes? O que mudou? Posso usar seu relato (com nome / só iniciais / não)?"
-- **Regra:** só publique o que a aluna autorizou por escrito. Guarde o print da autorização.
-- **Custo:** 0 · **Responsável:** A · **Métrica:** depoimentos autorizados por mês.
-
-**Tática 23: Programa "Indique uma Empresária"** (detalhado no arquivo 02)
-- **Custo:** baixo (as recompensas são experiências com você) · **Responsável:** A · **Métrica:** indicações e vendas por indicação.
-
-**Tática 24: Bilhete escrito à mão para as mais de 400 mentoradas**
-- **O que é:** um cartão físico ou foto de bilhete no WhatsApp: "Obrigada por fazer parte da minha história. Lembrei de você porque…". Junto vai o convite para o programa de indicação e o acesso gratuito ao Alicerce, se ela ainda não tiver.
-- **Custo:** cerca de R$ 1 a R$ 3 por cartão, ou 0 se for digital · **Responsável:** C · **Métrica:** respostas e indicações.
-
-**Tática 25: Embaixadoras Anti-Exaustão**
-- **O que é:** 3 a 5 mentoradas engajadas que, com consentimento, levam você para eventos onde já circulam, apresentam você para associações e contam a experiência delas. Elas recebem destaque, uma sessão extra e prioridade nos almoços.
-- **Custo:** cerca de 1 h por mês de sessão extra por embaixadora · **Responsável:** C · **Métrica:** portas abertas por embaixadora.
-
-**Tática 26: Desafio Lucro Anti-Exaustão ABERTO (7 dias) como funil**
-- **O que é:** uma versão pública e gratuita do desafio que você já tem. Grupo temporário, um áudio ou vídeo curto por dia e as mesmas 7 atividades, sem pedir números do negócio.
-- **No dia 7:**
-  - apresentação do Alicerce, com condição exclusiva real e prazo real;
-  - convite para a Comunidade.
-- **Premiação** (a mesma estrutura do desafio interno): sessão 1:1, acesso ao Alicerce e destaque.
+**Tática 9: Desafio Lucro Anti-Exaustão ABERTO (7 dias) como funil**
+- **O que é:** o desafio que você já roda dentro da Comunidade ganha uma **edição aberta e gratuita** em janeiro (tema: "a sexta-feira volta a ser tua em 2027"). Mesmas 7 atividades, mesmas regras (sem números do negócio), mesma pontuação e prêmios.
+- **Dia 7:**
+  - apresentação do Alicerce, com condição real e prazo real;
+  - convite para a Comunidade;
+  - convite para o próximo Realize.
 - **Custo:** 0 · **Responsável:** C + A · **Métrica:** inscritas, % que posta no Dia 1 e no Dia 7, e vendas no fechamento.
 
-**Tática 27: Raio-X relâmpago (15 min) pelo WhatsApp ou Meet**
-- **O que é:** para quem tirou nota alta no quiz, uma conversa de 15 minutos para olhar o gargalo principal. Limite pela sua agenda real (por exemplo, 5 por semana). No final: "Faz sentido o Alicerce, a Comunidade ou uma conversa sobre a Mentoria?"
-- **Custo:** 0 (cerca de 75 min por semana) · **Responsável:** C · **Métrica:** conversas e próximo passo escolhido.
+**Tática 10: Reativar a base histórica (participantes de 12 Drink to Talks, Realize, palestras e +400 mentoradas)**
+- **O que é:** organizar numa única planilha todos os contatos com consentimento e mandar uma mensagem pessoal e segmentada:
+  - ex-mentoradas → acesso gratuito ou cupom + programa de indicação;
+  - participantes de eventos → quiz + grupo VIP.
+- **Regra LGPD:** só quem consentiu receber contato. Ofereça sempre a saída.
+- **Custo:** 0 · **Responsável:** A (organiza) + C (mensagens-chave) · **Métrica:** respostas e entradas no VIP.
 
-**Tática 28: Presente "Dê o Alicerce para uma empresária"**
-- **O que é:** uma comunicação para quem quer presentear a sócia, a gerente, a irmã ou a amiga empresária. Datas: Natal, Dia Internacional da Mulher (8/3) e Dia do Empreendedorismo Feminino (19/11). Operação: a compradora compra e você libera manualmente para o e-mail da presenteada, com um cartão digital.
+### BLOCO A: Captura e base
+
+**Tática 11: Quiz "Índice de Exaustão da Empresária"** (`01-quiz-indice-exaustao.html`)
+- **O que é:** teste de 2 minutos, 12 perguntas, nota de 0 a 100, fase crítica e por onde começar no Alicerce. É a isca única para eventos, Reels, balcão e parcerias.
+- **Passo a passo:**
+  1. Hospede o arquivo (Netlify Drop ou GitHub Pages).
+  2. Conecte o `FORM_ACTION_URL` a uma planilha (Apps Script), ao Brevo ou ao Make.
+  3. Gere QRs com UTM por canal.
+- **Script:** "Em 2 minutos tu descobre o teu Índice de Exaustão e por qual furo do balde o teu lucro está vazando. Comenta **LUCRO** que eu te mando."
+- **Custo:** 0 · **Responsável:** C + SM · **Métrica:** começaram × terminaram × leads, por UTM.
+
+**Tática 12: Grupo VIP "Lista Anti-Exaustão" no WhatsApp**
+- **O que é:** um grupo silenciado, de entrada voluntária pelo link, com no máximo 3 mensagens por semana: avisos de Drink to Talk, Realize, lives, aberturas e conteúdos.
+- **Mensagem de boas-vindas:** "Bem-vinda à Lista Anti-Exaustão 💛 Aqui tu fica sabendo primeiro do Drink to Talk, do Realize, das lives e das condições para empresárias. No máximo 3 mensagens por semana. Se não fizer mais sentido, é só sair."
+- **Custo:** 0 · **Responsável:** A · **Métrica:** membros e % de saída por semana.
+
+**Tática 13: CTA "comenta LUCRO" com automação**
+- **O que é:** todo Reels e carrossel termina com "comenta **LUCRO**". A resposta por DM leva o link do quiz (manual ou com ManyChat).
+- **Custo:** 0 a cerca de R$ 80 por mês · **Responsável:** A · **Métrica:** comentários "LUCRO" e % que conclui o quiz.
+
+**Tática 14: Status do WhatsApp, saudação automática e assinatura**
+- **O que é:** um Status por dia (dica de rotina) e, 2 vezes por semana, o link do quiz. Saudação do WhatsApp Business e assinatura de e-mail com o quiz.
+- **Script da saudação:** "Oi! Já te respondo 💛 Enquanto isso: tu sabe qual é o teu Índice de Exaustão? Teste de 2 min: [LINK_QUIZ]"
+- **Custo:** 0 · **Responsável:** A · **Métrica:** cliques com UTM `whatsapp-saudacao`.
+
+### BLOCO B: Território local (Grande Florianópolis)
+
+**Tática 15: Visita a grupos de networking (BNI e similares) com pitch de 60 segundos**
+- **Pitch:** "Eu sou a Camila, mentora de empresárias: mais de 400 mentoradas e mais de 2 mil mulheres em palestras. Ajudo donas de negócios de estética, saúde, varejo e serviços que faturam bem, mas vivem apagando incêndio, a tapar os furos do balde e fazer a empresa depender menos delas. Uma boa indicação para mim é aquela cliente tua que vive dizendo 'se eu não fizer, ninguém faz'."
+- **Custo:** café (R$ 30 a R$ 80) · **Responsável:** C · **Métrica:** indicações.
+
+**Tática 16: Contadoras e escritórios contábeis da região**
+- **O que é:** palestra-mimo para as clientes do escritório e o quiz co-branded. A contadora pode virar afiliada com comissão transparente (tática 30).
+- **Custo:** 0 · **Responsável:** C · **Métrica:** parcerias ativas e leads com UTM `contadora-[nome]`.
+
+**Tática 17: Patrocinadoras do Realize e do Drink to Talk como parceiras contínuas**
+- **O que é:** quem já patrocinou recebe uma proposta de **parceria anual** (logo nos eventos e nas lives + display de QR no espaço delas + uma palestra para as clientes delas).
+- **Custo:** 0 · **Responsável:** C · **Métrica:** patrocínios renovados.
+
+**Tática 18: QR no balcão de negócios parceiros**
+- **O que é:** um display A5 ou A6 em salões, clínicas de estética, estúdios e cafés, inclusive os das próprias participantes do Drink to Talk.
+- **Texto:** "**Tu carrega a tua empresa nas costas?** Descubra o teu Índice de Exaustão em 2 minutos. [QR] · Teste gratuito · @martinsscamila"
+- **Contrapartida:** divulgação do negócio parceiro nos seus stories e no grupo VIP.
+- **Custo:** cerca de R$ 15 por display · **Responsável:** A · **Métrica:** escaneamentos (UTM `balcao-[nome]`).
+
+**Tática 19: Cartão Anti-Exaustão + mini-planner "Semana com função por dia"**
+- **O que é:**
+  - **Cartão de visita com QR do quiz.**
+  - **Mini-planner A5** com a sua "semana com função por dia" (atendimento, financeiro, vendas, conteúdo, tempo livre protegido) e o QR no rodapé.
+  - São brindes para Drink to Talk, Realize e palestras, e o planner fica na mesa da empresária por semanas.
+- **Custo:** cartões R$ 80 a R$ 150 por 500; planners R$ 4 a R$ 8 cada (100 unidades) · **Responsável:** SM · **Métrica:** escaneamentos (UTMs `cartao`, `planner`).
+
+**Tática 20: PR local (jornais, rádios, portais e colunas de negócios de SC)**
+- **Pauta:** "Ex-técnica de enfermagem que ganhava R$ 10 por hora já impactou mais de 2 mil mulheres e criou um método para empresárias pararem de se esgotar". Depois de 60 dias de quiz, uma pauta de dado **real e agregado** ("[X]% das empresárias que fizeram o teste dizem que a empresa pararia sem elas").
+- **Release:** modelo no arquivo 03.
+- **Custo:** 0 · **Responsável:** C · **Métrica:** matérias e entrevistas.
+
+**Tática 21: Podcasts e canais de negócios**
+- **Pitch:** no arquivo 03.
+- **Custo:** 0 · **Responsável:** C · **Métrica:** participações e leads com UTM `podcast-[nome]`.
+
+### BLOCO C: Instagram (@martinsscamila) e conteúdo
+
+**Tática 22: Série de debate contra o inimigo cultural**
+- **O que é:** um calendário de 30 dias com temas que confrontam "empresária de verdade dá conta de tudo sozinha" (arquivo 04).
+- **Custo:** 0 · **Responsável:** C + SM · **Métrica:** compartilhamentos, salvamentos e comentários "LUCRO".
+
+**Tática 23: UGC "#MinhaNotaDeExaustão" e "#EuSolteiUmaTarefa"**
+- **O que é:** um template de stories no Canva ("Minha nota de exaustão: __ / Esta semana eu vou soltar: __"). Use nos eventos, no desafio e depois do quiz. Você reposta.
+- **Custo:** 0 · **Responsável:** SM · **Métrica:** marcações.
+
+**Tática 24: Sistema de coleta de prova social (ético)**
+- **O que é:** um formulário de 3 perguntas no fim de cada fase, de cada evento e de cada mentoria ("antes / o que mudou / autorização: nome, iniciais ou não"). Valide primeiro os cases que você já tem: a dona de 7 lojas de higiene profissional, a mentorada que tirou a primeira palestra do papel e a massoterapeuta.
+- **Regra:** sem nome de cliente sem autorização escrita. Guarde o print da autorização.
+- **Custo:** 0 · **Responsável:** A · **Métrica:** depoimentos autorizados por mês.
+
+**Tática 25: 30 comentários de valor por dia**
+- **O que é:** comentar em perfis de associações da região, páginas de empreendedorismo feminino, patrocinadoras e participantes do Drink to Talk.
+- **Custo:** 0 (20 min por dia) · **Responsável:** C · **Métrica:** visitas ao perfil e seguidoras qualificadas.
+
+**Tática 26: Impulsionamento mínimo do que já funcionou**
+- **O que é:** só o Reels ou carrossel com mais compartilhamentos, levando para o **quiz**, com público da Grande Florianópolis + interesses de empreendedorismo.
+- **Custo:** R$ 10 a R$ 20 por dia, em 2 a 3 janelas de 7 dias · **Responsável:** SM · **Métrica:** custo por lead.
+
+### BLOCO D: Indicação e ascensão
+
+**Tática 27: Programa "Indique uma Empresária"** (arquivo 02)
+- **Custo:** baixo · **Responsável:** A · **Métrica:** indicações válidas.
+
+**Tática 28: Bilhete pessoal para as mais de 400 mentoradas**
+- **O que é:** um cartão físico (para quem vem nos eventos) ou foto do bilhete escrito à mão pelo WhatsApp. Leva o convite para o programa de indicação e o acesso ao Alicerce (gratuito para mentoradas, conforme a sua política).
+- **Custo:** R$ 1 a R$ 3 por cartão, ou 0 se digital · **Responsável:** C · **Métrica:** respostas e indicações.
+
+**Tática 29: Embaixadoras Anti-Exaustão**
+- **O que é:** 3 a 5 mentoradas ou frequentadoras do Drink to Talk que, com consentimento, levam você a outros eventos, apresentam associações e contam a própria experiência. Elas recebem destaque, uma sessão extra e prioridade no Realize.
+- **Custo:** cerca de 1 h por mês por embaixadora · **Responsável:** C · **Métrica:** portas abertas.
+
+**Tática 30: Afiliadas Kiwify (parceiras profissionais com comissão transparente)**
+- **Quem:** contadoras, consultoras e patrocinadoras. Comissão de 20 a 30%, sempre sinalizada como parceria.
+- **Custo:** só a comissão · **Responsável:** A · **Métrica:** vendas por afiliada.
+
+**Tática 31: Raio-X relâmpago (15 min)**
+- **O que é:** para quem tirou nota alta no quiz ou se destacou no desafio, uma conversa de 15 minutos sobre o furo principal do balde. O limite é a sua agenda real (ex.: 5 por semana). No fim, o próximo passo: Alicerce, Comunidade, Consultoria ou Mentoria.
+- **Custo:** 0 · **Responsável:** C · **Métrica:** conversas e próximo passo escolhido.
+
+**Tática 32: "Dê o Alicerce de presente"**
+- **O que é:** para a sócia, a gerente, a irmã ou a amiga empresária. Datas: Natal, 8/3 e 19/11. A compradora compra, você libera para o e-mail da presenteada e manda um cartão digital.
 - **Custo:** 0 · **Responsável:** A · **Métrica:** vendas presente.
-
-**Tática 29: Aula aberta mensal "Raio-X ao vivo"**
-- **O que é:** uma masterclass online de 60 minutos, com uma inscrição que captura o lead. Conteúdo da Fase 1 de verdade e oferta no final (Alicerce + convite para a Comunidade).
-- **Custo:** 0 (Zoom, Meet ou YouTube) · **Responsável:** C · **Métrica:** inscritas, pessoas ao vivo e vendas no fechamento.
-
-**Tática 30: Afiliadas Kiwify (parceiras com comissão transparente)**
-- **O que é:** contadoras, consultoras e influenciadoras locais divulgam com link próprio. Comissão sugerida: 20 a 30%. A parceira deve deixar claro para a audiência que é parceria comissionada.
-- **Custo:** só a comissão sobre a venda · **Responsável:** A · **Métrica:** vendas por afiliada.
 
 ---
 
 ## 5. Plano semana a semana (90 dias)
 
-> **Metas de atividade.** Ajuste as metas de resultado depois de medir a linha de base nas semanas 1 e 2.
+> **Metas de atividade.** Meça a linha de base nas semanas 1 e 2 antes de definir metas de resultado.
+> Ajuste as datas do Drink to Talk, do Realize e das palestras conforme a sua agenda real: **[PREENCHER datas]**.
 
-| Semana | Datas (2026/27) | Foco | Metas de ATIVIDADE | Custo est. | Resp. |
+| Semana | Datas | Foco | Metas de ATIVIDADE | Custo est. | Resp. |
 |---|---|---|---|---|---|
-| 1 | 16–22/11 | **Base + Dia do Empreendedorismo Feminino (19/11)** | Quiz no ar e testado · grupo VIP criado · bio, saudação e assinatura com o quiz · 1 live em 19/11 ("O mito da empresária que dá conta de tudo") · lista de organizadoras de palestras anteriores + 20 entidades novas + 10 contadoras · padronizar a palestra-assinatura (16 slides) · 30 comentários/dia | R$ 0 | C, A, SM |
-| 2 | 23–29/11 | **Black Friday ética + indicação** | Bilhete para as mais de 400 mentoradas (pelo menos 50 na semana) · programa de indicação lançado · condição de Black Friday **real** (ex.: cupom com prazo real de 27 a 30/11) · 4 Reels da série de debate · 10 abordagens a entidades | R$ 0–150 | C, A |
-| 3 | 30/11–06/12 | **Território local** | 10 contadoras abordadas · 1 visita ao BNI ou grupo de networking · 500 cartões e 10 displays impressos · 5 displays instalados em parceiros · 1 Cadeira Quente ao vivo | R$ 250–400 | C, A, SM |
-| 4 | 07–13/12 | **Almoço Raio-X de dezembro** | Almoço com convidadas (meta: cada membro convidar 1) · 1 live com convidada · 5 Raio-X relâmpago · release enviado a 10 veículos locais | R$ 100–200 | C, A |
-| 5 | 14–20/12 | **"Não comece 2027 exausta"** | Aula aberta "Raio-X ao vivo: planeje 2027 sem exaustão" · campanha presente de Natal (tática 28) · 2 pitches para podcasts | R$ 0 | C |
-| 6 | 21–27/12 | **Festas: conteúdo leve** | Conteúdo de descanso como estratégia · Status diário · organizar os dados do quiz | R$ 0 | C, SM |
-| 7 | 28/12–03/01 | **Virada** | Reels "3 coisas que eu NÃO vou carregar em 2027" + UGC #EuSolteiUmaTarefa · e-mail e grupo VIP: convite para o Desafio de janeiro | R$ 0 | C, SM |
-| 8 | 04–10/01 | **Desafio Anti-Exaustão ABERTO (inscrições)** | Divulgação diária · meta de atividade: 3 posts + 7 stories + 2 envios no grupo VIP + convite a parceiras · 1 palestra agendada em associação | R$ 0–300 (impulsionar o melhor post para o quiz/desafio) | C, A, SM |
-| 9 | 11–17/01 | **Desafio rodando (7 dias)** | 7 atividades diárias · lives de apoio · no Dia 7, oferta do Alicerce com prazo real · Raio-X relâmpago para as mais engajadas | R$ 0 | C, A |
-| 10 | 18–24/01 | **Fechamento + ascensão** | Follow-up individual das participantes · convite para a Comunidade Impulso · coleta de relatos autorizados · Almoço Raio-X de janeiro | R$ 100–200 | C, A |
-| 11 | 25–31/01 | **Palestras e PR** | 2 palestras-assinatura (associações, empresas ou reativação de organizadoras antigas) · 1 podcast gravado · revisão dos displays (trocar os que não geram escaneamento) | R$ 100 | C, A |
-| 12 | 01–07/02 | **Prova social** | Publicar 3 relatos autorizados · 1 live "Empresárias que soltaram o controle" · 5 Raio-X relâmpago · aula aberta de fevereiro | R$ 0–300 | C, SM |
-| 13 | 08–14/02 | **Revisão de 90 dias** | Relatório por canal (UTM): quais 5 táticas geraram mais leads e vendas → dobrar nelas · cortar as 5 piores · planejar o trimestre seguinte (8/3, Dia da Mulher) | R$ 0 | C, A |
+| 1 | 16–22/11 | **Base + Dia do Empreendedorismo Feminino (19/11)** | Quiz no ar e testado · grupo VIP · "comenta LUCRO" ativo · bio, saudação e assinatura · live em 19/11: "Empresária de verdade dá conta de tudo sozinha? (spoiler: não)" · planilha única da base histórica (Drink to Talk, Realize, palestras, mentoradas) · lista de organizadoras antigas + 15 entidades novas na Grande Florianópolis · palestra-assinatura de 16 slides montada | R$ 0 | C, A, SM |
+| 2 | 23–29/11 | **Reativação + Black Friday ética** | Bilhete para as +400 mentoradas (mín. 80 na semana) · programa de indicação lançado · reativação de ex-participantes do Realize · condição de Black Friday **real** (ex.: 27 a 30/11) · 4 Reels da série de debate | R$ 0–150 | C, A |
+| 3 | 30/11–06/12 | **Palestras + B2B** | 10 abordagens a organizadoras e entidades · página "Alicerce para redes" na apresentação comercial · follow-up da proposta para a rede de 50 mil com o piloto · 1 live "mentorada por um dia" · 500 cartões + 10 displays impressos | R$ 250–400 | C, A, SM |
+| 4 | 07–13/12 | **Drink to Talk de fim de ano** (ou o almoço da comunidade) | Edição com "traga uma empresária" + dinâmica do balde furado + QR nas mesas · 5 displays instalados (começando pelas participantes) · release para 10 veículos de SC | R$ 100–300 | C, A |
+| 5 | 14–20/12 | **"Não comece 2027 exausta"** | Aula aberta online "Raio-X ao vivo: planeje 2027 sem exaustão" · campanha "Dê o Alicerce de presente" · 2 pitches para podcasts · proposta In Company + Alicerce para 3 empresas que já te contrataram | R$ 0 | C |
+| 6 | 21–27/12 | **Festas: conteúdo leve** | "Descanso é estratégia" · Status diário · organizar os dados do quiz | R$ 0 | C, SM |
+| 7 | 28/12–03/01 | **Virada** | Reels "3 coisas que eu NÃO vou carregar em 2027" + UGC #EuSolteiUmaTarefa · convite para o Desafio aberto de janeiro (VIP + e-mail) | R$ 0 | C, SM |
+| 8 | 04–10/01 | **Inscrições do Desafio aberto** ("a sexta-feira volta a ser tua em 2027") | 3 posts + 7 stories + 2 envios no VIP por semana · convite às embaixadoras e parceiras · 1 palestra agendada · impulsionar o melhor post para o desafio | R$ 0–300 | C, A, SM |
+| 9 | 11–17/01 | **Desafio rodando (7 dias)** | 7 atividades diárias · live de apoio · Dia 7: oferta do Alicerce (prazo real) + convite para Comunidade e Realize · Raio-X relâmpago para as mais engajadas | R$ 0 | C, A |
+| 10 | 18–24/01 | **Fechamento + ascensão** | Follow-up individual · convite para a Comunidade Impulso · coleta de relatos autorizados · almoço da comunidade com convidadas · abertura das inscrições do próximo Realize | R$ 100–200 | C, A |
+| 11 | 25–31/01 | **Palco** | 2 palestras-assinatura (entidades, empresas ou reativação) · 1 podcast · troca dos displays que não geram escaneamento · reunião do piloto B2B | R$ 100 | C, A |
+| 12 | 01–07/02 | **Prova social** | 3 relatos autorizados publicados · 1 live "mentorada por um dia" · 5 Raio-X relâmpago · Drink to Talk ou almoço de fevereiro | R$ 0–300 | C, SM |
+| 13 | 08–14/02 | **Revisão de 90 dias** | Relatório por UTM: dobrar as 5 melhores táticas, cortar as 5 piores · planejar o trimestre com o Dia da Mulher (8/3) e o próximo Realize | R$ 0 | C, A |
 
-**Rotina mínima semanal (para não se esgotar com o próprio marketing):**
-- Segunda: planejar a semana (30 min).
-- Terça e quinta: gravar em lote (2 h cada).
-- Quarta: abordagens e parcerias (1 h).
-- Sexta: métricas (30 min).
-- Todo dia: 20 minutos de comentários e Status.
+**Rotina mínima semanal (o seu marketing também não pode te esgotar):**
+- Segunda: planejar (30 min).
+- Terça e quinta: gravar em lote (2 h).
+- Quarta: abordagens, parcerias e B2B (1 h).
+- Sexta: métricas (30 min). E a sexta-feira volta a ser tua.
+- Todo dia: 20 min de comentários e Status.
 
 ---
 
 ## 6. Rastreamento (UTM) e painel
 
 **Padrão de UTM:**
-- `?utm_source=` com o canal (`instagram`, `whatsapp`, `palestra`, `balcao`, `contadora`, `podcast`, `cartao`, `planner`, `indicacao`, `afiliada`).
-- `&utm_medium=` com o formato (`bio`, `story`, `reels`, `qr`, `grupo-vip`, `email`).
-- `&utm_campaign=` com a campanha (`quiz-2026`, `blackfriday-2026`, `desafio-jan-2027`, `almoco-dez`).
-- `&utm_content=` com o detalhe (`acie-centro`, `salao-[nome]`, `contadora-[nome]`).
+- `utm_source` = canal: `instagram`, `whatsapp`, `palestra`, `drinktotalk`, `realize`, `incompany`, `b2b-rede`, `balcao`, `contadora`, `podcast`, `cartao`, `planner`, `indicacao`, `afiliada`
+- `utm_medium` = formato: `bio`, `story`, `reels`, `qr`, `grupo-vip`, `email`, `live`
+- `utm_campaign` = campanha: `quiz-2026`, `blackfriday-2026`, `desafio-jan-2027`, `dtt-ed13`
+- `utm_content` = detalhe: `[nome-do-evento]`, `salao-[nome]`, `contadora-[nome]`
 
-**Exemplo:** `LINK_QUIZ?utm_source=balcao&utm_medium=qr&utm_campaign=quiz-2026&utm_content=salao-[nome]`
-
-O quiz guarda as UTMs da URL em campos ocultos e as repassa para a página de vendas.
+O quiz guarda as UTMs e as repassa para a página de vendas.
 
 **Planilha "Painel Guerrilha"** (uma linha por semana):
-`Semana | Quizzes concluídos | Leads capturados | Entradas no grupo VIP | Conversas no WhatsApp | Palestras/eventos | Parcerias ativas | Vendas Alicerce (por UTM) | Vendas por indicação | Upgrades Comunidade/PAD | Custo | Observações`
+`Semana | Quizzes concluídos | Leads | Entradas no VIP | Comentários LUCRO | Conversas no WhatsApp | Eventos (DTT/Realize/palestra) e participantes | Parcerias ativas | Propostas B2B/In Company | Vendas Alicerce por UTM | Vendas por indicação | Upgrades (Comunidade/Consultoria/Mentoria/Realize) | Custo | Observações`
 
 ---
 
@@ -308,17 +326,20 @@ O quiz guarda as UTMs da URL em campos ocultos e as repassa para a página de ve
 | Item | Faixa |
 |---|---|
 | Impressos (cartões, displays, mini-planners) | R$ 500–1.200 |
-| Cafés, almoços e deslocamentos | R$ 300–800 |
-| Impulsionamento mínimo para o quiz | R$ 300–900 |
+| Cafés, deslocamentos e mimos de evento | R$ 300–800 |
+| Impulsionamento mínimo para o quiz e o desafio | R$ 300–900 |
 | ManyChat (opcional) | R$ 0–250 |
-| Mimos e bilhetes | R$ 100–350 |
+| Bilhetes para mentoradas | R$ 100–350 |
 | **Total** | **R$ 1.500–3.500** |
+
+*(Os custos de Drink to Talk e Realize seguem o modelo atual, com patrocínio e ingresso.)*
 
 ---
 
 ## 8. Limites éticos (não negociáveis)
-- Não inventar depoimento, número, "preço de", vagas ou prazo.
+- Não inventar depoimento, número, "preço de", vagas ou prazo. As vagas de evento são limitadas **só pela capacidade real do local**.
+- Não publicar nome de cliente sem autorização expressa.
 - Não adicionar ninguém em grupo sem consentimento. Não comprar listas. Respeitar a LGPD: dizer para que serve o dado e oferecer descadastro.
-- Palestra em entidade: o pitch só com autorização do organizador e sempre depois de entregar conteúdo de verdade.
-- O quiz **não é diagnóstico de saúde**. A tela de resultado indica procurar um profissional de saúde se houver sinais de esgotamento físico ou emocional.
-- Parceria comissionada é declarada para a audiência.
+- Em evento de terceiros, o pitch só com autorização do organizador e sempre depois de entregar conteúdo de verdade. No Sebrae e em entidades públicas, siga as regras deles.
+- O quiz **não é diagnóstico de saúde**. A tela de resultado orienta procurar um profissional se houver sinais de esgotamento.
+- Parceria comissionada é sempre declarada.

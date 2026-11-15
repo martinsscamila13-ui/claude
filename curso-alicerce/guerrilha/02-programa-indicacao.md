@@ -1,7 +1,7 @@
 # Programa "Indique uma Empresária"
 ### Método Lucro Anti-Exaustão®
 
-> **Para quem:** mais de 400 mentoradas (atuais e antigas), alunas do Alicerce, membros da Comunidade Impulso e embaixadoras.
+> **Para quem:** mais de 400 mentoradas (atuais e antigas), alunas do Alicerce, membros da Comunidade Impulso, participantes do Drink to Talk e do Workshop Realize, e embaixadoras.
 > **Objetivo:** transformar quem já confia em você no canal de vendas mais barato e mais qualificado.
 > **Princípio:** a indicação é um **favor para a amiga**, não um "esquema". A recompensa é um agradecimento e a transparência vem sempre em primeiro lugar.
 
@@ -125,7 +125,8 @@ INDICA-[...]
 
 1. **Logo depois de uma vitória da aluna:** fim de fase, delegou a primeira tarefa, tirou um dia de folga.
 2. **No fim da mentoria ou do curso:** no e-mail de conclusão e na última sessão.
-3. **No almoço da comunidade:** "Na próxima, traga uma empresária que precisa ouvir isso."
+3. **No almoço da comunidade e no Drink to Talk:** "Na próxima edição, traz uma empresária que precisa ouvir isso." Uma convidada que vem com uma indicadora e depois compra conta como indicação, se ela usar o cupom ou disser "vim pela [nome]".
+3b. **No fim do Workshop Realize:** as participantes recebem o cupom de indicação junto com o certificado.
 4. **Datas de presente:** Natal, Dia Internacional da Mulher (8/3) e Dia do Empreendedorismo Feminino (19/11).
 5. **Depois de um depoimento autorizado:** "Obrigada por compartilhar! Quer o seu cupom para indicar?"
 
